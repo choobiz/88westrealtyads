@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Script from "next/script";
 import { TRACKING } from "@/lib/constants";
+import ClarityTracking from "@/components/shared/ClarityTracking";
+import EventTracking from "@/components/shared/EventTracking";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -72,6 +74,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
         </noscript>
         {children}
+        <ClarityTracking projectId="w9ozxkkibt" />
+        <EventTracking />
       </body>
     </html>
   );

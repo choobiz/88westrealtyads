@@ -17,6 +17,7 @@ export default function RegistrationForm() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
   const [form, setForm] = useState({ name: "", email: "", phone: "", privacy: false });
+  const [formStarted, setFormStarted] = useState(false);
   const [tracking, setTracking] = useState({
     gclid: "", utm_source: "", utm_medium: "", utm_campaign: "", utm_content: "", utm_term: "",
   });
@@ -33,6 +34,34 @@ export default function RegistrationForm() {
       utm_term: get("_lp_utm_term") || "",
     });
   }, []);
+
+  // Form abandon tracking
+  useEffect(() => {
+    function handleBeforeUnload() {
+      if (formStarted && !submitted) {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "form_abandon",
+          form_name: "medical_registration",
+          fields_filled: [
+            form.name ? "name" : "",
+            form.email ? "email" : "",
+            form.phone ? "phone" : "",
+          ].filter(Boolean).join(","),
+        });
+      }
+    }
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    return () => window.removeEventListener("beforeunload", handleBeforeUnload);
+  }, [formStarted, submitted, form]);
+
+  function handleFormFocus() {
+    if (!formStarted) {
+      setFormStarted(true);
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: "form_start", form_name: "medical_registration" });
+    }
+  }
 
   function formatPhone(value: string) {
     const digits = value.replace(/\D/g, "").slice(0, 10);
@@ -115,7 +144,7 @@ export default function RegistrationForm() {
               <p className="text-text-secondary text-base">We&apos;ll be in touch within 24 hours with priority access details.</p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} onFocus={handleFormFocus} className="space-y-4">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-brand-dark mb-1">Name</label>
