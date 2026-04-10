@@ -17,7 +17,7 @@ export default function MedicalFooter() {
           <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
             {/* Brand Column */}
             <div className="lg:col-span-2 flex flex-col gap-6">
-              <Image src="/logo.png" alt="88 West Realty" width={100} height={40} className="h-9 w-auto" />
+              <Image src="/logo.png" alt="88 West Realty" width={100} height={40} className="h-10 w-auto max-w-[100px]" />
               <p className="text-white/90 text-sm leading-relaxed max-w-sm">
                 Elevating the standard of real estate in British Columbia through
                 expert service, strategic mentorship, and community leadership.
