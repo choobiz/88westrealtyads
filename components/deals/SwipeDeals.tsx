@@ -65,8 +65,9 @@ export default function SwipeDeals({ deals }: SwipeDealsProps) {
   };
 
   return (
-    <section className="bg-med-navy py-16 md:py-24 overflow-hidden">
-      <div className="max-w-[440px] mx-auto px-5">
+    <section className="bg-med-navy py-16 md:py-24 overflow-hidden relative" style={{ backgroundImage: "url(/images/deals/scroll-hero-sunset.webp)", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <div className="absolute inset-0 bg-med-navy/90" />
+      <div className="max-w-[440px] mx-auto px-5 relative z-10">
         <p className="text-med-teal text-xs font-semibold tracking-[3px] uppercase text-center mb-2">
           SWIPE THROUGH DEALS
         </p>

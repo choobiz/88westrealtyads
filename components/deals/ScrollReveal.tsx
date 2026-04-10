@@ -83,6 +83,12 @@ function AnimatedBar({ width, color, label }: { width: string; color: string; la
 
 export default function ScrollReveal() {
   const heroRef = useRef<HTMLDivElement>(null);
+  // Images for background sections
+  const bgImages = {
+    hero: "/images/deals/scroll-hero-sunset.webp",
+    priceSection: "/images/deals/scroll-aerial.webp",
+    windowSection: "/images/deals/scroll-mountains.webp",
+  };
 
   useEffect(() => {
     // Parallax on hero number
@@ -98,8 +104,9 @@ export default function ScrollReveal() {
   return (
     <div className="bg-med-navy">
       {/* Screen 1: The Big Number */}
-      <section className="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
-        <div ref={heroRef} className="text-center">
+      <section className="min-h-screen flex items-center justify-center px-6 relative overflow-hidden" style={{ backgroundImage: `url(${bgImages.hero})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+        <div className="absolute inset-0 bg-med-navy/85" />
+        <div ref={heroRef} className="text-center relative z-10">
           <p className="text-med-teal text-sm font-semibold tracking-[3px] uppercase mb-4">
             RIGHT NOW IN METRO VANCOUVER
           </p>
@@ -196,8 +203,9 @@ export default function ScrollReveal() {
       </section>
 
       {/* Screen 4: The Window */}
-      <section className="min-h-[70vh] flex items-center px-6 py-20">
-        <div className="max-w-[800px] mx-auto w-full text-center">
+      <section className="min-h-[70vh] flex items-center px-6 py-20 relative" style={{ backgroundImage: `url(${bgImages.windowSection})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+        <div className="absolute inset-0 bg-med-navy/90" />
+        <div className="max-w-[800px] mx-auto w-full text-center relative z-10">
           <RevealSection>
             <p className="text-med-teal text-xs font-semibold tracking-[3px] uppercase mb-6">
               BUT HERE&apos;S THE THING
