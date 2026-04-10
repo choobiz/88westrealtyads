@@ -1,34 +1,32 @@
-import { Activity, Zap, ArrowUpDown, Eye, Lock, Combine } from "lucide-react";
+import { Monitor, Building2, FlaskConical, Radio, Server, Users } from "lucide-react";
 
 const FEATURES = [
-  { icon: Activity, title: "Medical-Ready Infrastructure", desc: "High-capacity water, medical-grade mechanical systems, and dedicated clinical infrastructure from inception." },
-  { icon: Zap, title: "200AMP / 3-Phase Power", desc: "Heavy-duty electrical per unit with upgrade options. Run imaging equipment, dental chairs, or surgical tools without compromise." },
-  { icon: ArrowUpDown, title: "14ft Slab-to-Slab Ceilings", desc: "Generous ceiling heights allow for suspended medical equipment, proper HVAC routing, and a bright, open patient experience." },
-  { icon: Eye, title: "Dual Frontage & Visibility", desc: "Strong street presence on both Marine Drive and W 15th, maximizing patient access and signage exposure." },
-  { icon: Lock, title: "Separate Public & Service Access", desc: "Dedicated patient entry and back-of-house service access for clinical efficiency and privacy." },
-  { icon: Combine, title: "Flexible, Combinable Units", desc: "Units from 1,000-2,000 SF can be combined for larger clinics. Design your exact practice layout during pre-construction." },
+  { icon: Monitor, title: "Medical-Grade HVAC", desc: "Independent climate control per unit. Hospital-grade air filtration meets infection control standards." },
+  { icon: Building2, title: "Reinforced Floors", desc: "Engineered for heavy diagnostic equipment — MRI, X-ray, CT, and dental imaging systems." },
+  { icon: FlaskConical, title: "Plumbing Pre-Rough", desc: "Pre-roughed plumbing for exam rooms, sterilization areas, and laboratory spaces." },
+  { icon: Radio, title: "Sound Insulation", desc: "STC 55+ rated walls between units ensure patient privacy and acoustic comfort." },
+  { icon: Server, title: "Data Infrastructure", desc: "Fiber optic backbone, backup power systems, and enterprise-grade network infrastructure." },
+  { icon: Users, title: "Accessibility", desc: "Barrier-free design, wide corridors, and medical-grade elevator for patient accessibility." },
 ];
 
 export default function MedicalFeatures() {
   return (
-    <section id="features" className="bg-med-light py-16 md:py-24">
-      <div className="max-w-[1200px] mx-auto px-5 md:px-6">
-        <h2 className="text-med-navy text-[26px] md:text-[38px] font-bold leading-[1.15] text-center mb-3">
-          Designed as a Medical Asset from Day One
-        </h2>
-        <p className="text-center text-text-secondary text-base md:text-[17px] mb-12 max-w-[640px] mx-auto">
-          Not a retrofit. Not a conversion. Purpose-built for clinical excellence.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section id="features" className="bg-med-light py-16 lg:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-med-navy mb-4">Purpose-Built for Clinical Excellence</h2>
+          <p className="text-text-secondary max-w-2xl mx-auto">Every detail designed for modern medical practice.</p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-8">
           {FEATURES.map((f, i) => {
             const Icon = f.icon;
             return (
-              <div key={i} className="bg-white border border-med-border rounded-xl p-6 md:p-7">
-                <div className="w-12 h-12 rounded-xl bg-med-teal/10 flex items-center justify-center mb-4">
+              <div key={i} className="bg-white p-8 rounded-xl border border-med-border shadow-sm">
+                <div className="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center mb-4">
                   <Icon className="w-6 h-6 text-med-teal" />
                 </div>
-                <h3 className="text-med-navy text-lg font-semibold mb-2">{f.title}</h3>
-                <p className="text-text-secondary text-[15px] leading-relaxed">{f.desc}</p>
+                <h3 className="font-semibold text-med-navy mb-2">{f.title}</h3>
+                <p className="text-sm text-text-secondary">{f.desc}</p>
               </div>
             );
           })}

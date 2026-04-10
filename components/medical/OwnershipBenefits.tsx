@@ -1,30 +1,29 @@
-import { TrendingUp, Shield, PieChart, Landmark, Award } from "lucide-react";
+import { TrendingUp, Receipt, Puzzle, Wallet } from "lucide-react";
 
 const BENEFITS = [
-  { icon: TrendingUp, title: "Equity Creation", desc: "Every mortgage payment builds wealth. Stop paying your landlord's mortgage and start building your own asset." },
-  { icon: Shield, title: "Control & Security", desc: "No more lease renewals, rent hikes, or landlord restrictions. Own your space, control your practice environment." },
-  { icon: PieChart, title: "Portfolio Diversification", desc: "Healthcare real estate is one of the most recession-resistant asset classes. Diversify beyond RRSPs and your primary residence." },
-  { icon: Landmark, title: "Access to Capital", desc: "Commercial ownership unlocks financing options unavailable to tenants — use equity for practice expansion or additional units." },
-  { icon: Award, title: "Succession & Practice Value", desc: "Your practice is worth more when it comes with real estate. Sell or lease your unit when you're ready to retire." },
+  { icon: TrendingUp, title: "Build Equity", desc: "Monthly payments build your wealth, not your landlord's. Medical strata values appreciate with the market." },
+  { icon: Receipt, title: "Tax Advantages", desc: "Depreciation, mortgage interest deduction, and capital cost allowance reduce your tax burden significantly." },
+  { icon: Puzzle, title: "Design Control", desc: "Your space, your layout, your brand. Customize every detail to match your clinical workflow." },
+  { icon: Wallet, title: "Retirement Asset", desc: "Sell or lease your unit when you retire. Your practice space becomes a valuable income-generating asset." },
 ];
 
 export default function OwnershipBenefits() {
   return (
-    <section id="benefits" className="bg-white py-16 md:py-24">
-      <div className="max-w-[1200px] mx-auto px-5 md:px-6">
-        <h2 className="text-med-navy text-[26px] md:text-[38px] font-bold leading-[1.15] text-center mb-12">
-          Why Own Instead of Lease?
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section id="benefits" className="bg-white py-16 lg:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-med-navy mb-4">Why Own Instead of Lease?</h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {BENEFITS.map((b, i) => {
             const Icon = b.icon;
             return (
-              <div key={i} className={`border border-med-border rounded-xl p-6 md:p-7 ${i === 4 ? "sm:col-span-2 lg:col-span-1" : ""}`}>
-                <div className="w-12 h-12 rounded-xl bg-brand-red/8 flex items-center justify-center mb-4">
-                  <Icon className="w-6 h-6 text-brand-red" />
+              <div key={i} className="bg-med-light p-8 rounded-xl border border-med-border">
+                <div className="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center mb-4">
+                  <Icon className="w-6 h-6 text-med-teal" />
                 </div>
-                <h3 className="text-med-navy text-lg font-semibold mb-2">{b.title}</h3>
-                <p className="text-text-secondary text-[15px] leading-relaxed">{b.desc}</p>
+                <h3 className="font-semibold text-med-navy text-lg mb-2">{b.title}</h3>
+                <p className="text-sm text-text-secondary">{b.desc}</p>
               </div>
             );
           })}
