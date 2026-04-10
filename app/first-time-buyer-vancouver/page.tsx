@@ -32,18 +32,21 @@ const DEALS: Deal[] = [
     project: "Park & Maven", location: "Surrey, City Centre", unitType: "Studio · 485 SF",
     originalPrice: "$459,000", currentPrice: "$379,000", saving: "Save $80K",
     incentives: ["GST Rebate", "5% Deposit", "Rent Guarantee"], completion: "Move-in Ready",
+    image: "/images/deals/deal-park.webp",
   },
   {
     tag: "FIRST-TIME BUYER", tagColor: "teal",
     project: "Aspire at Lougheed", location: "Burquitlam", unitType: "1 Bed · 545 SF",
     originalPrice: "$549,000", currentPrice: "$469,000", saving: "Save $80K",
     incentives: ["GST Rebate", "$30K Credit", "Storage Incl."], completion: "Completion 2027",
+    image: "/images/deals/deal-aspire.webp",
   },
   {
     tag: "BEST VALUE", tagColor: "green",
     project: "The Langley", location: "Willoughby", unitType: "1 Bed · 560 SF",
     originalPrice: "$499,000", currentPrice: "$429,000", saving: "Save $70K",
     incentives: ["GST Rebate", "Free Parking", "5% Deposit"], completion: "Completion 2027",
+    image: "/images/deals/deal-langley.webp",
   },
 ];
 
@@ -81,6 +84,7 @@ export default function FirstTimeBuyerPage() {
         headline="Your First Home. Brand New. $43,000 Head Start."
         subheadline="The government gives you $43K. Developers add $40K+ in credits. For the first time in years, owning is cheaper than renting."
         ctaText="Calculate My Savings"
+        bgImage="/images/deals/hero-ftb.webp"
       />
 
       <StatsBar

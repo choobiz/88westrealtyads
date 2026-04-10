@@ -31,24 +31,28 @@ const DEALS: Deal[] = [
     project: "The Burrard Collection", location: "Burnaby, Metrotown", unitType: "1 Bed + Den · 612 SF",
     originalPrice: "$689,000", currentPrice: "$549,000", saving: "Save $140K",
     incentives: ["5% Deposit", "$40K Credit", "Free Parking"], completion: "Move-in Ready",
+    image: "/images/deals/deal-burrard.webp",
   },
   {
     tag: "FIRST-TIME BUYER", tagColor: "teal",
     project: "Aspire at Lougheed", location: "Coquitlam, Burquitlam", unitType: "2 Bed · 785 SF",
     originalPrice: "$749,000", currentPrice: "$629,000", saving: "Save $120K",
     incentives: ["GST Rebate", "$35K Credit", "Storage Incl."], completion: "Completion 2027",
+    image: "/images/deals/deal-aspire.webp",
   },
   {
     tag: "INVESTOR SPECIAL", tagColor: "navy",
     project: "Park & Maven", location: "Surrey, City Centre", unitType: "Studio · 485 SF",
     originalPrice: "$459,000", currentPrice: "$379,000", saving: "Save $80K",
     incentives: ["5% Deposit", "Rent Guarantee", "Zero Assignment"], completion: "Move-in Ready",
+    image: "/images/deals/deal-park.webp",
   },
   {
     tag: "NEW LISTING", tagColor: "green",
     project: "Marine & 15th", location: "North Vancouver", unitType: "2 Bed + Den · 920 SF",
     originalPrice: "$899,000", currentPrice: "$769,000", saving: "Save $130K",
     incentives: ["$50K Credit", "Free Parking", "Customize Layout"], completion: "Completion 2028",
+    image: "/images/deals/deal-marine.webp",
   },
 ];
 
@@ -85,6 +89,7 @@ export default function VancouverCondoDeals() {
         headline="Developers Are Offering $100,000+ in Incentives. The Window Is Open."
         subheadline="Brand-new condos at 2020 prices. 5% deposits, cash credits, free parking — stacked incentives most buyers don't know exist. We show you where the deals are."
         ctaText="See This Week's Best Deals"
+        bgImage="/images/deals/hero-deals.webp"
       />
 
       <StatsBar

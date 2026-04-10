@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 interface DealsHeroProps {
@@ -7,14 +8,28 @@ interface DealsHeroProps {
   headline: string;
   subheadline: string;
   ctaText: string;
+  bgImage?: string;
 }
 
-export default function DealsHero({ badge, badgeColor = "red", eyebrow, headline, subheadline, ctaText }: DealsHeroProps) {
+export default function DealsHero({ badge, badgeColor = "red", eyebrow, headline, subheadline, ctaText, bgImage }: DealsHeroProps) {
   const badgeBg = badgeColor === "teal" ? "bg-med-teal" : "bg-brand-red";
 
   return (
-    <section className="relative bg-med-navy overflow-hidden">
-      <div className="max-w-[1200px] mx-auto px-5 md:px-6 py-16 md:py-24">
+    <section className="relative bg-med-navy overflow-hidden min-h-[500px] md:min-h-[600px] flex items-center">
+      {bgImage && (
+        <>
+          <Image
+            src={bgImage}
+            alt=""
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-med-navy/95 via-med-navy/85 to-med-navy/50" />
+        </>
+      )}
+      <div className="max-w-[1200px] mx-auto px-5 md:px-6 py-16 md:py-24 relative z-10">
         <div className="max-w-[680px]">
           <span className={`inline-flex items-center h-7 px-4 ${badgeBg} text-white text-[10px] font-semibold rounded-full mb-5 tracking-wide uppercase`}>
             {badge}
