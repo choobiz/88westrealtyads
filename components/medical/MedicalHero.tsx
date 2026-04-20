@@ -125,13 +125,24 @@ function InlineHeroForm({ ctaText }: { ctaText: string }) {
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    setSubmitting(true);
     setError("");
 
+    // Defensive validation — browser `required` can be bypassed by custom
+    // clients. Webhook workflows (and our own attribution) rely on all three
+    // fields being present and non-trivial.
+    const name = form.name.trim();
+    const email = form.email.trim();
+    const phone = form.phone.trim();
+    if (name.length < 2) { setError("Please enter your full name."); return; }
+    if (!email.includes("@") || !email.includes(".")) { setError("Please enter a valid email."); return; }
+    if (phone.replace(/\D/g, "").length < 10) { setError("Please enter a valid phone number."); return; }
+
+    setSubmitting(true);
+
     const payload = {
-      name: form.name,
-      email: form.email,
-      phone: form.phone,
+      name,
+      email,
+      phone,
       source: "north-shore-health-pavilion",
       form_location: "hero_inline",
       page_url: window.location.href,
@@ -187,8 +198,10 @@ function InlineHeroForm({ ctaText }: { ctaText: string }) {
             <input
               type="text"
               required
-              placeholder="Full name"
+              minLength={2}
+              placeholder="Full name *"
               autoComplete="name"
+              aria-label="Full name (required)"
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
               className={inputClass}
@@ -196,8 +209,9 @@ function InlineHeroForm({ ctaText }: { ctaText: string }) {
             <input
               type="email"
               required
-              placeholder="Email"
+              placeholder="Email *"
               autoComplete="email"
+              aria-label="Email (required)"
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
               className={inputClass}
@@ -205,8 +219,10 @@ function InlineHeroForm({ ctaText }: { ctaText: string }) {
             <input
               type="tel"
               required
-              placeholder="Phone"
+              inputMode="tel"
+              placeholder="Phone *"
               autoComplete="tel"
+              aria-label="Phone (required)"
               value={form.phone}
               onChange={(e) => setForm({ ...form, phone: formatPhone(e.target.value) })}
               className={inputClass}

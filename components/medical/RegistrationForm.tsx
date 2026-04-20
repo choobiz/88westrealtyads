@@ -16,7 +16,7 @@ export default function RegistrationForm() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
-  const [form, setForm] = useState({ name: "", email: "", phone: "", privacy: false });
+  const [form, setForm] = useState({ name: "", email: "", phone: "" });
   const [formStarted, setFormStarted] = useState(false);
   const [tracking, setTracking] = useState({
     gclid: "", utm_source: "", utm_medium: "", utm_campaign: "", utm_content: "", utm_term: "",
@@ -72,31 +72,41 @@ export default function RegistrationForm() {
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    setSubmitting(true);
     setError("");
 
+    // Defensive validation — browser `required` can be bypassed by custom
+    // clients. All three fields matter for attribution + CRM workflow.
+    const name = form.name.trim();
+    const email = form.email.trim();
+    const phone = form.phone.trim();
+    if (name.length < 2) { setError("Please enter your full name."); return; }
+    if (!email.includes("@") || !email.includes(".")) { setError("Please enter a valid email."); return; }
+    if (phone.replace(/\D/g, "").length < 10) { setError("Please enter a valid phone number."); return; }
+
+    setSubmitting(true);
+
     const payload = {
-      name: form.name,
-      email: form.email,
-      phone: form.phone,
+      name,
+      email,
+      phone,
       source: "north-shore-health-pavilion",
+      form_location: "register_section",
       page_url: window.location.href,
-      consent: form.privacy ? "consented" : "not_consented",
-      privacy_consent: form.privacy ? "on" : "off",
+      consent: "implied_submit",
+      privacy_consent: "on",
       ...tracking,
     };
 
-    // Grant consent on form submit if checkbox is checked
-    if (form.privacy) {
-      localStorage.setItem("cookie_consent", "accepted");
-      if (window.gtag) {
-        window.gtag("consent", "update", {
-          ad_storage: "granted",
-          analytics_storage: "granted",
-          ad_user_data: "granted",
-          ad_personalization: "granted",
-        });
-      }
+    // Submitting the form implies consent (per the inline notice) — mirror
+    // the hero form: grant GA4/Ads consent automatically.
+    localStorage.setItem("cookie_consent", "accepted");
+    if (window.gtag) {
+      window.gtag("consent", "update", {
+        ad_storage: "granted",
+        analytics_storage: "granted",
+        ad_user_data: "granted",
+        ad_personalization: "granted",
+      });
     }
 
     try {
@@ -147,39 +157,52 @@ export default function RegistrationForm() {
             <form onSubmit={handleSubmit} onFocus={handleFormFocus} className="space-y-4">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-brand-dark mb-1">Name</label>
-                  <input type="text" required placeholder="Dr. Jane Smith" autoComplete="name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className={inputClass} />
+                  <label className="block text-sm font-medium text-brand-dark mb-1">
+                    Full name <span className="text-brand-red">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    minLength={2}
+                    placeholder="Dr. Jane Smith"
+                    autoComplete="name"
+                    aria-label="Full name (required)"
+                    value={form.name}
+                    onChange={(e) => setForm({ ...form, name: e.target.value })}
+                    className={inputClass}
+                  />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-brand-dark mb-1">Email</label>
-                  <input type="email" required placeholder="jane@clinic.com" autoComplete="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className={inputClass} />
+                  <label className="block text-sm font-medium text-brand-dark mb-1">
+                    Email <span className="text-brand-red">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    required
+                    placeholder="jane@clinic.com"
+                    autoComplete="email"
+                    aria-label="Email (required)"
+                    value={form.email}
+                    onChange={(e) => setForm({ ...form, email: e.target.value })}
+                    className={inputClass}
+                  />
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-medium text-brand-dark mb-1">Phone</label>
+                <label className="block text-sm font-medium text-brand-dark mb-1">
+                  Phone <span className="text-brand-red">*</span>
+                </label>
                 <input
                   type="tel"
                   required
+                  inputMode="tel"
                   placeholder="(604) 555-0123"
                   autoComplete="tel"
+                  aria-label="Phone (required)"
                   value={form.phone}
                   onChange={(e) => setForm({ ...form, phone: formatPhone(e.target.value) })}
                   className={inputClass}
                 />
-              </div>
-              <div className="pt-2">
-                <label className="flex items-start gap-3 text-xs leading-relaxed text-text-secondary cursor-pointer">
-                  <input
-                    type="checkbox"
-                    required
-                    checked={form.privacy}
-                    onChange={(e) => setForm({ ...form, privacy: e.target.checked })}
-                    className="mt-1 h-4 w-4 text-med-teal focus:ring-med-teal border-gray-300 rounded"
-                  />
-                  <span className="flex-1">
-                    I agree to the <a href="/privacy-policy" className="text-med-teal hover:underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and consent to 88 West Realty collecting my contact details. I understand my information may be used to communicate with me regarding medical strata pre-sales and securely shared with third-party platforms (like our CRM and advertising partners) to measure marketing performance.
-                  </span>
-                </label>
               </div>
               {error && <p className="text-brand-red text-sm text-center">{error}</p>}
               <button
@@ -194,7 +217,13 @@ export default function RegistrationForm() {
                   </>
                 )}
               </button>
-              <p className="text-xs text-text-muted text-center">No obligation. Your information is confidential.</p>
+              <p className="text-xs text-text-muted text-center leading-relaxed">
+                By submitting, you agree to the{" "}
+                <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-med-teal hover:underline">
+                  Privacy Policy
+                </a>{" "}
+                and consent to 88 West Realty contacting you about this pre-sale.
+              </p>
             </form>
           )}
         </div>
