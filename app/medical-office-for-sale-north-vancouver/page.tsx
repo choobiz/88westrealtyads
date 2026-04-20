@@ -73,12 +73,13 @@ export default function MedicalPage() {
       <MedicalNavbar />
 
       <MedicalHero
-        eyebrow="NOW SELLING — NORTH VANCOUVER'S FIRST MEDICAL STRATA"
-        headline="The North Shore's First Purpose-Built Medical Strata. There Won't Be a Second Chance at First."
-        subheadline="Own your practice space in a 34,733 SF, 5-storey medical building designed from the ground up for clinical excellence. Pre-sale units from 1,000 SF on Marine Drive. Completion 2028."
+        eyebrow="NORTH VANCOUVER — MARINE DRIVE"
+        headline="Own your medical office on the North Shore."
+        subheadline="5-storey, 34,733 SF purpose-built medical building. Units from 1,000 SF starting at ~$640/SF. Pre-sale now open — 2028 completion. Register for the current price list and floor plans."
         ctaText="Register for Priority Access"
-        badge="PRE-SALE NOW OPEN — LIMITED UNITS"
+        badge="PRE-SALE NOW OPEN"
         bgImage="/images/medical/hero-exterior.jpg"
+        showInlineForm
       />
 
       <MedicalSocialProof
