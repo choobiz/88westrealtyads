@@ -1,14 +1,16 @@
 import Image from "next/image";
 
-const SPECS = [
-  { label: "Total Area", value: "34,733 SF" },
-  { label: "Floors", value: "5 Storeys" },
-  { label: "Unit Sizes", value: "From 1,000 SF" },
-  { label: "Completion", value: "2028" },
-  { label: "Parking", value: "Underground Secured" },
-  { label: "Location", value: "Marine Drive, North Van" },
-  { label: "Elevator", value: "Medical-Grade" },
-  { label: "HVAC", value: "Independent per Unit" },
+// Each card links to the most relevant deeper section so the 14% dead-click
+// rate (Apr 26 audit) becomes useful navigation rather than dead-end taps.
+const SPECS: { label: string; value: string; href: string }[] = [
+  { label: "Total Area", value: "34,733 SF", href: "#register" },
+  { label: "Floors", value: "5 Storeys", href: "#register" },
+  { label: "Unit Sizes", value: "From 1,000 SF", href: "#register" },
+  { label: "Completion", value: "2028", href: "#faq" },
+  { label: "Parking", value: "Underground Secured", href: "#features" },
+  { label: "Location", value: "Marine Drive, North Van", href: "#location" },
+  { label: "Elevator", value: "Medical-Grade", href: "#features" },
+  { label: "HVAC", value: "Independent per Unit", href: "#features" },
 ];
 
 export default function BuildingSpecs() {
@@ -21,10 +23,14 @@ export default function BuildingSpecs() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="grid grid-cols-2 gap-6">
             {SPECS.map((spec, i) => (
-              <div key={i} className="bg-med-light p-5 rounded-xl border border-med-border">
+              <a
+                key={i}
+                href={spec.href}
+                className="block bg-med-light p-5 rounded-xl border border-med-border hover:border-med-teal hover:shadow-md hover:-translate-y-0.5 transition-all group"
+              >
                 <p className="text-text-muted text-xs uppercase tracking-wider mb-1">{spec.label}</p>
-                <p className="text-med-navy font-bold text-lg">{spec.value}</p>
-              </div>
+                <p className="text-med-navy font-bold text-lg group-hover:text-med-teal transition-colors">{spec.value}</p>
+              </a>
             ))}
           </div>
           <div className="rounded-xl overflow-hidden shadow-lg">

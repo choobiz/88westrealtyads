@@ -65,9 +65,24 @@ export default function MedicalHero({ eyebrow, headline, subheadline, ctaText, b
               </div>
             )}
             {showInlineForm && (
-              <a href="tel:+16042811828" className="hidden lg:inline-flex items-center text-white/70 hover:text-white text-sm font-medium gap-2 transition-colors">
-                Or call 604-281-1828
-              </a>
+              // Desktop-only CTAs — visible alongside the inline form on the
+              // right. Without these, desktop visitors don't realize the form
+              // box IS the CTA (Apr 26 heatmap: 0% desktop clicks on the form).
+              <div className="hidden lg:flex flex-col sm:flex-row gap-3 mt-2">
+                <a
+                  href="#register"
+                  className="inline-flex items-center justify-center h-[52px] px-7 bg-brand-red text-white font-semibold rounded-full hover:bg-brand-red-hover transition-all hover:-translate-y-0.5 gap-2 text-[15px] shadow-[0_10px_30px_rgba(197,34,4,0.3)]"
+                >
+                  {ctaText}
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+                <a
+                  href="tel:+16042811828"
+                  className="inline-flex items-center justify-center h-[52px] px-7 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all gap-2 text-[15px]"
+                >
+                  Call 604-281-1828
+                </a>
+              </div>
             )}
           </div>
 
@@ -176,23 +191,27 @@ function InlineHeroForm({ ctaText }: { ctaText: string }) {
     }
   }
 
-  const inputClass = "w-full bg-white border border-white/10 rounded-lg px-4 py-3 text-sm text-med-navy placeholder:text-text-muted focus:ring-2 focus:ring-med-teal/40 focus:border-med-teal outline-none transition-colors";
+  // Inputs sit on a white form-card — use the standard navy text + light grey border
+  const inputClass = "w-full bg-white border border-med-border rounded-lg px-4 py-3 text-sm text-med-navy placeholder:text-text-muted focus:ring-2 focus:ring-med-teal/30 focus:border-med-teal outline-none transition-colors";
 
+  // Form box: opaque white card with a colored top accent so it reads as
+  // the primary CTA at a glance (was previously translucent — Apr 26 heatmap
+  // showed 0% desktop clicks; the box was disappearing into the navy hero).
   return (
-    <div className="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-5 md:p-6 shadow-2xl">
+    <div className="bg-white rounded-2xl shadow-2xl border-t-4 border-brand-red overflow-hidden">
       {submitted ? (
-        <div className="text-center py-6">
-          <div className="w-14 h-14 bg-med-teal/20 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Check className="w-7 h-7 text-white" />
+        <div className="text-center py-10 px-6">
+          <div className="w-14 h-14 bg-med-teal/15 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Check className="w-7 h-7 text-med-teal" />
           </div>
-          <h3 className="text-white text-xl font-bold mb-2">Thank you — you&apos;re registered.</h3>
-          <p className="text-white/75 text-sm">We&apos;ll be in touch within 24 hours with floor plans, pricing, and priority access details.</p>
+          <h3 className="text-med-navy text-xl font-bold mb-2">Thank you — you&apos;re registered.</h3>
+          <p className="text-text-secondary text-sm">We&apos;ll be in touch within 24 hours with floor plans, pricing, and priority access details.</p>
         </div>
       ) : (
-        <>
+        <div className="p-5 md:p-6">
           <div className="mb-4">
-            <h3 className="text-white text-lg md:text-xl font-bold leading-tight">Get the price list and floor plans</h3>
-            <p className="text-white/70 text-xs md:text-sm mt-1">Priority access for medical professionals and investors.</p>
+            <h3 className="text-med-navy text-lg md:text-xl font-bold leading-tight">Get the price list and floor plans</h3>
+            <p className="text-text-secondary text-xs md:text-sm mt-1">Priority access for medical professionals and investors.</p>
           </div>
           <form onSubmit={handleSubmit} onFocus={handleFormFocus} className="space-y-3">
             <input
@@ -227,7 +246,7 @@ function InlineHeroForm({ ctaText }: { ctaText: string }) {
               onChange={(e) => setForm({ ...form, phone: formatPhone(e.target.value) })}
               className={inputClass}
             />
-            {error && <p className="text-white bg-brand-red/90 rounded px-3 py-2 text-xs text-center">{error}</p>}
+            {error && <p className="text-brand-red bg-brand-red/10 border border-brand-red/30 rounded px-3 py-2 text-xs text-center">{error}</p>}
             <button
               type="submit"
               disabled={submitting}
@@ -240,11 +259,11 @@ function InlineHeroForm({ ctaText }: { ctaText: string }) {
                 </>
               )}
             </button>
-            <p className="text-[11px] text-white/55 leading-relaxed">
-              By submitting, you agree to the <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">Privacy Policy</a> and consent to 88 West Realty contacting you about this pre-sale.
+            <p className="text-[11px] text-text-muted leading-relaxed">
+              By submitting, you agree to the <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-med-teal hover:underline">Privacy Policy</a> and consent to 88 West Realty contacting you about this pre-sale.
             </p>
           </form>
-        </>
+        </div>
       )}
     </div>
   );
