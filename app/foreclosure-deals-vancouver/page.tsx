@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import MedicalNavbar from "@/components/medical/MedicalNavbar";
+import ForeclosureNavbar from "@/components/foreclosure/ForeclosureNavbar";
 import MedicalFooter from "@/components/medical/MedicalFooter";
 import MedicalStickyMobileCTA from "@/components/medical/MedicalStickyMobileCTA";
 import CookieConsent from "@/components/medical/CookieConsent";
@@ -86,7 +86,7 @@ export default function ForeclosurePage() {
   return (
     <>
       <JsonLd />
-      <MedicalNavbar />
+      <ForeclosureNavbar />
       <ForeclosureHero />
       <InventoryPreview />
       <MortgageCliffCallout />
