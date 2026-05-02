@@ -3,7 +3,7 @@ import Image from "next/image";
 const INVESTOR_BULLETS: { strong: string; rest: string }[] = [
   {
     strong: "The volume is the moat.",
-    rest: "~389 active BC court-ordered listings means you're shopping a real pipeline, not a once-a-quarter unicorn. We send the new ones every business morning with comp anchors, gross-yield estimates at current CMHC market rents, and a bring-current cost band on each property.",
+    rest: "~389 active BC court-ordered listings means you're shopping a real pipeline, not a once-a-quarter unicorn. Your specialist sends a buy-box-matched shortlist with comp anchors, gross-yield estimates at current CMHC market rents, and a bring-current cost band on each property.",
   },
   {
     strong: "Court-date strategy is the unlock.",
@@ -19,11 +19,11 @@ const INVESTOR_BULLETS: { strong: string; rest: string }[] = [
   },
   {
     strong: "Decision timeline: 24–72 hours.",
-    rest: "Speed beats polish in this segment. Saved searches push real-time SMS alerts the moment a match hits the Sheet, so you're at the showing before the third investor logs in.",
+    rest: "Speed beats polish in this segment. Your specialist pushes real-time SMS alerts the moment a buy-box match hits the registry, so you're at the showing before the third investor logs in.",
   },
   {
     strong: "Cash-flippers, BRRRR holders, long-hold landlords — different strategies, same data.",
-    rest: "Tell us your archetype on the form and we sort the Sheet to match.",
+    rest: "Tell us your archetype on the form and your specialist tailors the shortlist to match.",
   },
 ];
 
@@ -50,7 +50,7 @@ const OWNER_BULLETS: { strong: string; rest: string }[] = [
   },
   {
     strong: "Decision timeline: weeks to months.",
-    rest: "No rush. The Sheet runs on its own schedule. When a property fits and you're ready, we move fast. Until then, you read the daily list at your own pace.",
+    rest: "No rush. The court registry runs on its own schedule. When a property fits and you're ready, we move fast. Until then, your specialist keeps the dialogue open at your own pace.",
   },
 ];
 

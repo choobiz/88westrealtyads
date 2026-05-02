@@ -63,25 +63,26 @@ export default function DeveloperHero({ formLocation = "hero_inline" }: Develope
         <div className="grid lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 items-start">
           <div className="max-w-[640px]">
             <p className="text-brand-red text-[13px] font-semibold uppercase tracking-[2px] mb-4">
-              THE DEVELOPER INCENTIVE TRACKER · GREATER VANCOUVER
+              GREATER VANCOUVER · PRE-SALE SPECIALIST
             </p>
             <h1 className="text-eightyw-blue text-[32px] md:text-[52px] font-bold leading-[1.08] mb-6">
-              $100,000 Off a Brand-New Vancouver Condo. We Track Every Developer Concession.
+              $100,000 Off a Brand-New Vancouver Condo. We Negotiate the Stack For You.
             </h1>
             <p className="text-text-secondary text-base md:text-[18px] leading-relaxed mb-6 max-w-[580px]">
               5,458 unsold condos sit across Vancouver, Burnaby, Richmond and North Van — a 24-year high.
-              Builders are stacking cash credits, free parking, rate buy-downs and waived assignment fees
-              instead of cutting list prices. We list every concession in one Monday digest. Free.
+              Builders aren&apos;t cutting list prices; they&apos;re stacking cash credits, free parking,
+              rate buy-downs and waived assignment fees instead. We&apos;re a buyer-side brokerage that
+              hunts the right project for you — and negotiates the stack on your behalf, building by building.
             </p>
             <div className="bg-white border border-eightyw-border rounded-2xl p-4 md:p-5 mb-6 shadow-sm">
               <p className="text-[11px] text-brand-red font-semibold uppercase tracking-wider mb-2">
-                THIS WEEK&apos;S TOP STACK
+                A STACK WE NEGOTIATED THIS WEEK
               </p>
               <p className="text-eightyw-blue text-base md:text-lg font-semibold leading-snug mb-1">
                 $94,500 off — $40K decorating credit + $48K parking &amp; storage + 1.99% rate buy-down (12&nbsp;mo)
               </p>
               <p className="text-text-muted text-xs md:text-sm">
-                Brentwood high-rise · 17 new incentives this week
+                Brentwood high-rise · 17 active stacks across our watch-list
               </p>
             </div>
 
@@ -94,7 +95,7 @@ export default function DeveloperHero({ formLocation = "hero_inline" }: Develope
                 href="#register"
                 className="inline-flex items-center justify-center h-[52px] px-7 bg-brand-red text-white font-semibold rounded-full hover:bg-brand-red-hover transition-all hover:-translate-y-0.5 gap-2 text-[15px] shadow-[0_10px_30px_rgba(197,34,4,0.3)]"
               >
-                Get This Monday&apos;s Tracker
+                Get Matched With Our Specialist
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
@@ -105,7 +106,7 @@ export default function DeveloperHero({ formLocation = "hero_inline" }: Develope
               </a>
             </div>
             <p className="hidden lg:block text-text-muted text-xs mt-3">
-              Buyer-side line · Mon–Sat, 8 AM – 8 PM PT
+              We call back within 24 hours · Mon–Sat, 8 AM – 8 PM PT
             </p>
           </div>
 
@@ -243,11 +244,11 @@ export function DeveloperLeadForm({ formLocation = "hero_inline" }: DeveloperHer
         <div className="w-14 h-14 bg-brand-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
           <Check className="w-7 h-7 text-brand-red" />
         </div>
-        <h3 className="text-eightyw-blue text-xl font-bold mb-2">You&apos;re on the Tracker.</h3>
+        <h3 className="text-eightyw-blue text-xl font-bold mb-2">We&apos;ll call within 24 hours.</h3>
         <p className="text-text-secondary text-sm">
-          Monday at 7 AM PT, you&apos;ll get the full itemized incentive list for every Greater
-          Vancouver building that fits your budget and areas. Plus mid-week flash alerts when a
-          stack changes. We&apos;ll also reach out within 24 hours to confirm your saved-search filters.
+          A buyer-side pre-sale specialist will reach out, get specific about what you&apos;re looking
+          for, and start a personal shortlist from the 40+ Greater Vancouver projects we already monitor.
+          We negotiate the stack on your behalf — no fee charged to buyers.
         </p>
       </div>
     );
@@ -258,10 +259,10 @@ export function DeveloperLeadForm({ formLocation = "hero_inline" }: DeveloperHer
       <div className="p-5 md:p-6">
         <div className="mb-4">
           <h3 className="text-eightyw-blue text-lg md:text-xl font-bold leading-tight">
-            Get this Monday&apos;s Tracker.
+            Get matched with our pre-sale specialist.
           </h3>
           <p className="text-text-secondary text-xs md:text-sm mt-1">
-            Every Greater Vancouver developer concession we know about — itemized, per project.
+            Free, buyer-side only. We call within 24 hours.
           </p>
         </div>
         <form onSubmit={handleSubmit} onFocus={handleFormFocus} className="space-y-3">
@@ -376,13 +377,13 @@ export function DeveloperLeadForm({ formLocation = "hero_inline" }: DeveloperHer
           >
             {submitting ? <Loader2 className="w-5 h-5 animate-spin" /> : (
               <>
-                Get This Monday&apos;s Tracker
+                Get Matched With Our Specialist
                 <ArrowRight className="w-4 h-4" />
               </>
             )}
           </button>
           <p className="text-[11px] text-text-muted leading-relaxed">
-            Free. Monday at 7 AM PT. Mid-week flash alerts when a stack changes. Unsubscribe in one click.
+            Free, buyer-side only. We call within 24 hours.
             Developer commissions paid at closing per the BC Real Estate Services Act —
             no fee charged to buyers.{" "}
             <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-brand-red hover:underline">

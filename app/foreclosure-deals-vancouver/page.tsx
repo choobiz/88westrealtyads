@@ -13,16 +13,16 @@ import ForeclosureFAQ from "@/components/foreclosure/ForeclosureFAQ";
 import GuaranteeAndFinalCTA from "@/components/foreclosure/GuaranteeAndFinalCTA";
 
 export const metadata: Metadata = {
-  title: "Vancouver Foreclosure Sheet | Court-Ordered Sales Daily",
+  title: "Vancouver Foreclosure Specialist | Court-Ordered Sales Buyer Agent",
   description:
-    "Get every Greater Vancouver court-ordered sale, emailed every business morning. Free, buyer-side only — no bank affiliation. 30-day match guarantee. 88 West Realty.",
+    "88 West Realty's buyer-side foreclosure specialist hunts Greater Vancouver court-ordered sales for you — Schedule A drafted, court hearing attended, possession risk screened. Free, no fee charged to buyers.",
   alternates: {
     canonical: "https://go.88westrealty.com/foreclosure-deals-vancouver",
   },
   openGraph: {
-    title: "Vancouver Foreclosure Sheet | Court-Ordered Sales Daily",
+    title: "Vancouver Foreclosure Specialist | Court-Ordered Sales Buyer Agent",
     description:
-      "Every Greater Vancouver court-ordered sale, emailed every business morning. Free, buyer-side only. 30-day match guarantee.",
+      "Get matched with 88 West Realty's buyer-side foreclosure specialist. We hunt Greater Vancouver court-ordered sales for you and attend the hearing. Free, buyer-side only.",
     url: "https://go.88westrealty.com/foreclosure-deals-vancouver",
     type: "website",
     images: [{ url: "/images/foreclosure/hero-vancouver.jpg", width: 1200, height: 630 }],
@@ -66,11 +66,11 @@ function JsonLd() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "The Vancouver Foreclosure Sheet",
-    serviceType: "Real estate buyer agency for court-ordered sales",
+    name: "Greater Vancouver Court-Ordered Sales Buyer Representation",
+    serviceType: "Buyer-side real estate agency for court-ordered sales and foreclosures",
     provider: { "@type": "RealEstateAgent", name: "88 West Realty" },
     areaServed: "Greater Vancouver, British Columbia",
-    description: "Daily-updated email digest of every Greater Vancouver court-ordered, power-of-sale, and bank-listed property — with buyer-side advisory, court-date strategy, and a 30-day match guarantee.",
+    description: "Personalized buyer-side representation for Greater Vancouver court-ordered sales and foreclosures: shortlist matching, Schedule A drafting, BC Supreme Court hearing attendance, and possession-risk research. 30-day match guarantee. No fee charged to buyers.",
   };
 
   return (

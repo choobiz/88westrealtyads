@@ -12,16 +12,16 @@ import DeveloperFAQ from "@/components/developer/DeveloperFAQ";
 import DeveloperFinalCTA from "@/components/developer/DeveloperFinalCTA";
 
 export const metadata: Metadata = {
-  title: "Vancouver Developer Incentive Tracker | $100K Off New Condos",
+  title: "Vancouver Pre-Sale Specialist | $100K Off New Condos · 88 West Realty",
   description:
-    "5,458 unsold Greater Vancouver condos. Builders are stacking $50K–$120K in cash credits, free parking, rate buy-downs and waived fees. We itemize every concession, every Monday. Free.",
+    "5,458 unsold Greater Vancouver condos. Get matched with 88 West Realty's buyer-side pre-sale specialist — we negotiate the developer's stack on your behalf, project by project. Free, no fee charged to buyers.",
   alternates: {
     canonical: "https://go.88westrealty.com/developer-condo-deals-vancouver",
   },
   openGraph: {
-    title: "Vancouver Developer Incentive Tracker | $100K Off New Condos",
+    title: "Vancouver Pre-Sale Specialist | $100K Off New Condos",
     description:
-      "Greater Vancouver developer concession stacks itemized every Monday. Free, buyer-side only — no developer affiliation.",
+      "Personalized buyer-side representation for Greater Vancouver new-construction pre-sales. We negotiate the stack for you — no developer affiliation.",
     url: "https://go.88westrealty.com/developer-condo-deals-vancouver",
     type: "website",
   },
@@ -64,11 +64,11 @@ function JsonLd() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "The Developer Incentive Tracker",
-    serviceType: "Real estate buyer agency for new-construction pre-sale and standing-inventory deals",
+    name: "Greater Vancouver Pre-Sale Buyer Representation",
+    serviceType: "Buyer-side real estate agency for new-construction pre-sale and standing-inventory deals",
     provider: { "@type": "RealEstateAgent", name: "88 West Realty" },
     areaServed: "Greater Vancouver, British Columbia",
-    description: "Weekly Monday-morning digest of every published Greater Vancouver developer incentive — itemized cash credits, free parking, rate buy-downs and waived fees — with a 30-day incentive-match promise.",
+    description: "Personalized buyer-side representation for Greater Vancouver pre-sale and standing-inventory condo deals: shortlist matching, itemized incentive-stack analysis, builder-direct negotiation, and a 30-day incentive-match promise. No fee charged to buyers.",
   };
 
   return (

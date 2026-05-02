@@ -49,13 +49,13 @@ export default function DeveloperAgentTrust() {
             THE INCENTIVE-MATCH PROMISE
           </p>
           <p className="text-eightyw-blue text-base md:text-lg font-semibold leading-relaxed mb-3">
-            If the Tracker doesn&apos;t surface a match in 30 days, our broker walks you through every
-            project where 88 West has off-the-record builder relationships and pre-negotiates a
-            builder-direct concession on your behalf — at no charge.
+            If we don&apos;t surface a fit within 30 days of the intro call, our broker walks you
+            through every project where 88 West has off-the-record builder relationships and
+            pre-negotiates a builder-direct concession on your behalf — at no charge.
           </p>
           <p className="text-text-muted text-sm">
-            Eligibility: subscribers who complete the full intake form and respond within 7 days to
-            the broker&apos;s outreach. The 30 days runs from the first Tracker delivery after sign-up.
+            Eligibility: clients who complete the intake form and respond within 7 days to the
+            broker&apos;s outreach. The 30 days runs from the intro call.
           </p>
         </div>
 

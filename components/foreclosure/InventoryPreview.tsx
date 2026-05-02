@@ -83,18 +83,19 @@ export default function InventoryPreview() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-4">
           <h2 className="text-3xl md:text-4xl font-bold text-eightyw-blue mb-4">
-            This Week&apos;s Greater Vancouver Court-Ordered Sample.
+            A Sample of What We&apos;re Already Tracking This Week.
           </h2>
           <p className="text-text-secondary text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
-            Six current listings from the Sheet. Addresses are masked until you subscribe —
-            court files are public, but we don&apos;t run a billboard. The full list lands in
-            your inbox every business morning.
+            Six current Greater Vancouver court-ordered listings from our active watch-list.
+            Addresses are masked here — the unmasked file, court date, Schedule A draft, and
+            possession-risk note all come from your specialist on the intro call.
           </p>
         </div>
 
         <p className="text-center text-xs text-text-muted mb-8">
-          Sample data refreshed weekly. Full list — including unmasked addresses,
-          photos, court file numbers, and BC Assessment deltas — emailed every business morning to subscribers.
+          Sample shown for illustration. We&apos;re currently tracking ~389 active BC
+          court-ordered listings — your specialist shortlists the right handful for you
+          on the intro call.
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
@@ -180,7 +181,7 @@ export default function InventoryPreview() {
             href="#register"
             className="inline-flex items-center justify-center h-[52px] px-8 bg-brand-red text-white font-semibold rounded-full hover:bg-brand-red-hover transition-all hover:-translate-y-0.5 gap-2 text-[15px] shadow-[0_10px_30px_rgba(197,34,4,0.3)]"
           >
-            See all current listings — get the Sheet →
+            Tell us what you&apos;re looking for →
           </a>
         </div>
       </div>

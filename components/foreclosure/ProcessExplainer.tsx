@@ -20,7 +20,7 @@ const SUB_BLOCKS: { h3: string; paragraphs: string[] }[] = [
     paragraphs: [
       `Court approval transfers the title to you. It does not, by itself, remove people from the property.`,
       `In a small share of court-ordered sales, the former owner or a tenant is still living in the home on possession day. Sometimes they leave willingly when title transfers. Sometimes they don't, and the new owner has to go through the BC Residential Tenancy Branch or, for former owners, a writ of possession through the court. That can take 30–90 days and modest legal fees.`,
-      `This risk is small but real. Before you submit an offer, we drive by the property, look for signs of occupation, ask the listing realtor on the record, and flag the result on every Sheet listing as "vacant," "owner-occupied," or "tenanted — [number]-day notice." Investors usually accept this risk for the right price. Owner-occupiers usually want to start with vacant listings, and we sort the Sheet that way.`,
+      `This risk is small but real. Before you submit an offer, we drive by the property, look for signs of occupation, ask the listing realtor on the record, and flag every property in your shortlist as "vacant," "owner-occupied," or "tenanted — [number]-day notice." Investors usually accept this risk for the right price. Owner-occupiers usually want to start with vacant listings, and we screen accordingly.`,
     ],
   },
   {

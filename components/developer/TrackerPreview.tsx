@@ -114,18 +114,19 @@ export default function TrackerPreview() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-4">
           <h2 className="text-3xl md:text-4xl font-bold text-eightyw-blue mb-4">
-            Live Tracker Preview — 6 Greater Vancouver Buildings With $50K+ Stacked Incentives Right Now.
+            A Sample of Stacks We&apos;re Negotiating Right Now.
           </h2>
           <p className="text-text-secondary text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
             Every week we audit Greater Vancouver pre-sale and standing-inventory projects, itemize the
-            developer&apos;s published concessions, and total them in dollars. Subscribers get the full
-            list. Below: this week&apos;s top six.
+            developer&apos;s published concessions, and total them in dollars. Below: six current ones.
+            Your specialist shortlists the right project for your buy-box on the intro call —
+            then negotiates the stack on your behalf.
           </p>
         </div>
 
         <p className="text-center text-xs text-text-muted mb-8">
-          Sample tiles refreshed weekly. The full Tracker covers 40+ Greater Vancouver buildings every
-          Monday at 7 AM PT.
+          Illustrative sample. We&apos;re actively negotiating across 40+ Greater Vancouver projects;
+          clients get a buy-box-matched shortlist from their specialist after the intro call.
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
@@ -180,14 +181,14 @@ export default function TrackerPreview() {
 
         <div className="text-center">
           <p className="text-text-secondary text-sm md:text-base mb-5 max-w-2xl mx-auto">
-            The full Tracker covers 40+ Greater Vancouver buildings every Monday — itemized incentive stacks,
-            absorption-status tags, and flash alerts when a stack changes mid-week.
+            We track absorption status on 40+ Greater Vancouver projects in real time — and know
+            which ones are open to a backchannel offer beyond what the developer publishes.
           </p>
           <a
             href="#register"
             className="inline-flex items-center justify-center h-[52px] px-8 bg-brand-red text-white font-semibold rounded-full hover:bg-brand-red-hover transition-all hover:-translate-y-0.5 gap-2 text-[15px] shadow-[0_10px_30px_rgba(197,34,4,0.3)]"
           >
-            Get This Monday&apos;s Tracker →
+            Tell us your buy-box →
           </a>
         </div>
       </div>

@@ -26,8 +26,8 @@ export default function DeveloperAudienceSplit() {
           </h2>
           <p className="text-text-secondary text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             The same incentive stack means different things to a yield-focused investor, a couple shopping
-            their forever home, and a first-time buyer stacking government rebates. The Tracker delivers
-            the same data; the playbook around it is different.
+            their forever home, and a first-time buyer stacking government rebates. The data is the same;
+            the playbook your specialist runs is different.
           </p>
         </div>
 
@@ -59,8 +59,8 @@ export default function DeveloperAudienceSplit() {
               ))}
             </ul>
             <p className="mt-5 text-eightyw-blue text-sm md:text-base font-semibold leading-relaxed">
-              We model this for you on every Tracker entry that fits your buy-box. Subscribers also get
-              our monthly &ldquo;best yields after stack&rdquo; shortlist.
+              Your specialist models this for you on every project that fits your buy-box, plus a
+              monthly &ldquo;best yields after stack&rdquo; round-up of new opportunities.
             </p>
             </div>
           </article>

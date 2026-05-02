@@ -57,18 +57,20 @@ export default function ForeclosureHero({ formLocation = "hero_inline" }: Forecl
         <div className="grid lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 items-center">
           <div className="max-w-[640px]">
             <p className="text-brand-red text-[13px] font-semibold uppercase tracking-[2px] mb-4">
-              GREATER VANCOUVER · COURT-ORDERED SALES
+              GREATER VANCOUVER · COURT-ORDERED SPECIALIST
             </p>
             <h1 className="text-eightyw-blue text-[32px] md:text-[52px] font-bold leading-[1.08] mb-6">
-              Greater Vancouver&apos;s Daily-Updated Court-Ordered Sales List.
+              Vancouver&apos;s Court-Ordered Sales Are Won at the Hearing — Not the MLS.
             </h1>
             <p className="text-text-secondary text-base md:text-[18px] leading-relaxed mb-6 max-w-[580px]">
-              The new Vancouver, North Van, Burnaby, and Richmond court-ordered listings,
-              emailed every business morning. Free, buyer-side only — no bank affiliation.
+              We&apos;re a buyer-side brokerage that hunts Greater Vancouver foreclosures full-time —
+              shortlisting the ones that fit your budget and risk tolerance, drafting Schedule A,
+              and attending the BC Supreme Court hearing on your behalf so you don&apos;t lose the
+              deposit you&apos;ve already spent on inspection.
             </p>
             <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 bg-white border border-eightyw-border rounded-full text-eightyw-text text-xs md:text-sm shadow-sm">
               <span className="inline-block w-2 h-2 rounded-full bg-brand-red animate-pulse" />
-              ~389 active BC court-ordered listings as of today
+              We&apos;re tracking ~389 active BC court-ordered listings right now
             </div>
 
             <div className="hidden lg:flex flex-col sm:flex-row gap-3 mt-2">
@@ -76,7 +78,7 @@ export default function ForeclosureHero({ formLocation = "hero_inline" }: Forecl
                 href="#register"
                 className="inline-flex items-center justify-center h-[52px] px-7 bg-brand-red text-white font-semibold rounded-full hover:bg-brand-red-hover transition-all hover:-translate-y-0.5 gap-2 text-[15px] shadow-[0_10px_30px_rgba(197,34,4,0.3)]"
               >
-                Send Me Tomorrow&apos;s List
+                Get Matched With Our Specialist
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
@@ -87,7 +89,7 @@ export default function ForeclosureHero({ formLocation = "hero_inline" }: Forecl
               </a>
             </div>
             <p className="hidden lg:block text-text-muted text-xs mt-3">
-              Monday–Saturday, 8 AM – 8 PM PT
+              We call back within 24 hours · Mon–Sat, 8 AM – 8 PM PT
             </p>
           </div>
 
@@ -219,11 +221,12 @@ export function ForeclosureLeadForm({ formLocation = "hero_inline" }: Foreclosur
         <div className="w-14 h-14 bg-eightyw-cta/15 rounded-full flex items-center justify-center mx-auto mb-4">
           <Check className="w-7 h-7 text-eightyw-cta" />
         </div>
-        <h3 className="text-eightyw-blue text-xl font-bold mb-2">You&apos;re on the list.</h3>
+        <h3 className="text-eightyw-blue text-xl font-bold mb-2">We&apos;ll call within 24 hours.</h3>
         <p className="text-text-secondary text-sm">
-          Tomorrow morning at 7 AM PT, you&apos;ll get every Greater Vancouver
-          court-ordered listing that matches your budget and areas. We&apos;ll
-          also call within 24 hours to confirm your saved-search filters.
+          A buyer-side foreclosure specialist will reach out, get specific about
+          what you&apos;re looking for, and start a personal shortlist from the
+          ~389 active BC court-ordered listings we already monitor. No pressure,
+          no obligation, no fee.
         </p>
       </div>
     );
@@ -234,10 +237,10 @@ export function ForeclosureLeadForm({ formLocation = "hero_inline" }: Foreclosur
       <div className="p-5 md:p-6">
         <div className="mb-4">
           <h3 className="text-eightyw-blue text-lg md:text-xl font-bold leading-tight">
-            Get the Foreclosure Sheet.
+            Get matched with our court-ordered specialist.
           </h3>
           <p className="text-text-secondary text-xs md:text-sm mt-1">
-            Free. Every business morning. No phone required to start.
+            Free, buyer-side only. We call within 24 hours.
           </p>
         </div>
         <form onSubmit={handleSubmit} onFocus={handleFormFocus} className="space-y-3">
@@ -336,13 +339,13 @@ export function ForeclosureLeadForm({ formLocation = "hero_inline" }: Foreclosur
           >
             {submitting ? <Loader2 className="w-5 h-5 animate-spin" /> : (
               <>
-                Send Me Tomorrow&apos;s List
+                Get Matched With Our Specialist
                 <ArrowRight className="w-4 h-4" />
               </>
             )}
           </button>
           <p className="text-[11px] text-text-muted leading-relaxed">
-            Free. No credit check. No phone required to start. Unsubscribe anytime.
+            Free, buyer-side only. No credit check. We call within 24 hours.
             By submitting, you agree to the{" "}
             <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-eightyw-cta hover:underline">
               Privacy Policy

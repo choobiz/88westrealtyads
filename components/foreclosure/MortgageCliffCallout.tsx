@@ -9,7 +9,7 @@ export default function MortgageCliffCallout() {
           ~2 million Canadian mortgages renew across 2025–2026.
         </p>
         <p className="text-text-secondary text-base md:text-lg leading-relaxed">
-          And it&apos;s in your inbox before MLS subscribers see it.
+          Your specialist screens the new files the morning they hit the court registry.
         </p>
         <p className="text-text-muted text-xs mt-4">
           Source: CMHC Mortgage Industry Report (Nov 2024).
