@@ -55,9 +55,10 @@ export default function DeveloperHero({ formLocation = "hero_inline" }: Develope
         fill
         priority
         sizes="100vw"
-        className="object-cover opacity-25"
+        className="object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-white via-white/95 to-white/70 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/75 to-white/10 lg:to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-white/30 lg:to-transparent pointer-events-none" />
       <div className="max-w-[1200px] mx-auto px-5 md:px-6 relative py-16 md:py-24">
         <div className="grid lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 items-start">
           <div className="max-w-[640px]">

@@ -47,10 +47,11 @@ export default function ForeclosureHero({ formLocation = "hero_inline" }: Forecl
         alt="Greater Vancouver skyline with North Shore mountains — backdrop for 88 West Realty's daily-updated court-ordered sales list"
         fill
         priority
-        className="object-cover opacity-25"
+        className="object-cover"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/75 to-white/10 lg:to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-white/30 lg:to-transparent" />
 
       <div className="max-w-[1200px] mx-auto px-5 md:px-6 relative z-10 py-16 md:py-24 w-full">
         <div className="grid lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 items-center">
