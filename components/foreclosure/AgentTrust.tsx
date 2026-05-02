@@ -19,7 +19,7 @@ export default function AgentTrust() {
         </div>
 
         <div className="bg-eightyw-light border border-eightyw-border rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center">
-          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-eightyw-blue to-eightyw-cta flex items-center justify-center text-white shrink-0">
+          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-eightyw-blue flex items-center justify-center text-white shrink-0">
             <span className="text-3xl md:text-4xl font-bold tracking-wider">88W</span>
           </div>
           <div className="flex-1 text-center md:text-left">

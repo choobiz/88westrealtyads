@@ -47,26 +47,26 @@ export default function ForeclosureHero({ formLocation = "hero_inline" }: Forecl
         alt="Greater Vancouver skyline with North Shore mountains — backdrop for 88 West Realty's daily-updated court-ordered sales list"
         fill
         priority
-        className="object-cover"
+        className="object-cover opacity-25"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-eightyw-blue/95 via-eightyw-blue/85 to-eightyw-blue/60" />
+      <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/70" />
 
       <div className="max-w-[1200px] mx-auto px-5 md:px-6 relative z-10 py-16 md:py-24 w-full">
         <div className="grid lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 items-center">
           <div className="max-w-[640px]">
-            <p className="text-eightyw-cta text-[13px] font-semibold uppercase tracking-[2px] mb-4">
+            <p className="text-brand-red text-[13px] font-semibold uppercase tracking-[2px] mb-4">
               GREATER VANCOUVER · COURT-ORDERED SALES
             </p>
-            <h1 className="text-white text-[32px] md:text-[52px] font-bold leading-[1.08] mb-6">
+            <h1 className="text-eightyw-blue text-[32px] md:text-[52px] font-bold leading-[1.08] mb-6">
               Greater Vancouver&apos;s Daily-Updated Court-Ordered Sales List.
             </h1>
-            <p className="text-white/75 text-base md:text-[18px] leading-relaxed mb-6 max-w-[580px]">
+            <p className="text-text-secondary text-base md:text-[18px] leading-relaxed mb-6 max-w-[580px]">
               The new Vancouver, North Van, Burnaby, and Richmond court-ordered listings,
               emailed every business morning. Free, buyer-side only — no bank affiliation.
             </p>
-            <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full text-white/90 text-xs md:text-sm">
-              <span className="inline-block w-2 h-2 rounded-full bg-eightyw-cta animate-pulse" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 bg-white border border-eightyw-border rounded-full text-eightyw-text text-xs md:text-sm shadow-sm">
+              <span className="inline-block w-2 h-2 rounded-full bg-brand-red animate-pulse" />
               ~389 active BC court-ordered listings as of today
             </div>
 
@@ -80,12 +80,12 @@ export default function ForeclosureHero({ formLocation = "hero_inline" }: Forecl
               </a>
               <a
                 href="tel:+16042811828"
-                className="inline-flex items-center justify-center h-[52px] px-7 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all gap-2 text-[15px]"
+                className="inline-flex items-center justify-center h-[52px] px-7 border-2 border-eightyw-border bg-white text-eightyw-blue font-semibold rounded-full hover:border-eightyw-blue/40 transition-all gap-2 text-[15px]"
               >
                 Call 604-281-1828
               </a>
             </div>
-            <p className="hidden lg:block text-white/55 text-xs mt-3">
+            <p className="hidden lg:block text-text-muted text-xs mt-3">
               Monday–Saturday, 8 AM – 8 PM PT
             </p>
           </div>
@@ -94,7 +94,7 @@ export default function ForeclosureHero({ formLocation = "hero_inline" }: Forecl
             <ForeclosureLeadForm formLocation={formLocation} />
             <a
               href="tel:+16042811828"
-              className="lg:hidden mt-4 inline-flex items-center justify-center w-full h-[48px] border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all gap-2 text-[15px]"
+              className="lg:hidden mt-4 inline-flex items-center justify-center w-full h-[48px] border-2 border-eightyw-border bg-white text-eightyw-blue font-semibold rounded-full hover:border-eightyw-blue/40 transition-all gap-2 text-[15px]"
             >
               Or call 604-281-1828
             </a>
