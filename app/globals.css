@@ -18,6 +18,20 @@
   --color-med-light: #F8FAFB;
   --color-med-border: #E2E8F0;
 
+  /* 88West Realty brand colors (sourced from 88westrealty.com 2026-05-01).
+   * Medical-strata page intentionally still uses med-* tokens above so
+   * that page is untouched. Foreclosure + future LPs use eightyw-* instead.
+   * To revert: `git revert` the commit that introduced this block. */
+  --color-eightyw-blue: #0056A7;        /* primary brand blue (was med-navy on foreclosure) */
+  --color-eightyw-blue-hover: #003F7D;  /* ~30% darker for hovers */
+  --color-eightyw-cta: #1863DC;         /* CTA blue (was med-teal) */
+  --color-eightyw-cta-hover: #0F4DB8;   /* ~20% darker for hovers */
+  --color-eightyw-text: #212121;
+  --color-eightyw-light: #F4F4F4;       /* light backgrounds (was med-light) */
+  --color-eightyw-border: #EBEBEB;      /* borders (was med-border) */
+  --color-eightyw-grey: #D0D5D2;        /* cool neutral accent */
+  --color-eightyw-red: #CC0000;         /* 88West red — sparingly used */
+
   --font-poppins: "Poppins", sans-serif;
 }
 

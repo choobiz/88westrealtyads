@@ -2,10 +2,10 @@ import { ForeclosureLeadForm } from "./ForeclosureHero";
 
 export default function GuaranteeAndFinalCTA() {
   return (
-    <section id="register" className="bg-med-navy py-16 lg:py-24">
+    <section id="register" className="bg-eightyw-blue py-16 lg:py-24">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white/5 backdrop-blur-sm border-t-4 border-brand-red border border-white/10 rounded-2xl p-6 md:p-8 mb-8 text-center">
-          <p className="text-med-teal text-[13px] font-semibold uppercase tracking-[2px] mb-3">
+          <p className="text-eightyw-cta text-[13px] font-semibold uppercase tracking-[2px] mb-3">
             THE 30-DAY MATCH GUARANTEE
           </p>
           <p className="text-white text-lg md:text-xl font-semibold leading-relaxed mb-3">

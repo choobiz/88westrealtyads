@@ -36,10 +36,10 @@ const SUB_BLOCKS: { h3: string; paragraphs: string[] }[] = [
 
 export default function ProcessExplainer() {
   return (
-    <section id="process" className="bg-med-light py-16 lg:py-24">
+    <section id="process" className="bg-eightyw-light py-16 lg:py-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-med-navy mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-eightyw-blue mb-6">
             How BC Court-Ordered Sales Actually Work.
           </h2>
           <p className="text-text-secondary text-base md:text-lg leading-relaxed">
@@ -55,8 +55,8 @@ export default function ProcessExplainer() {
 
         <div className="space-y-10">
           {SUB_BLOCKS.map((block, i) => (
-            <article key={i} className="bg-white rounded-2xl border border-med-border p-6 md:p-8">
-              <h3 className="text-med-navy text-xl md:text-2xl font-bold mb-4">
+            <article key={i} className="bg-white rounded-2xl border border-eightyw-border p-6 md:p-8">
+              <h3 className="text-eightyw-blue text-xl md:text-2xl font-bold mb-4">
                 {block.h3}
               </h3>
               <div className="space-y-3 text-text-secondary text-sm md:text-base leading-relaxed">

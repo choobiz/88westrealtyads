@@ -5,10 +5,10 @@ export default function AgentTrust() {
     <section className="bg-white py-16 lg:py-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <p className="text-med-teal text-[13px] font-semibold uppercase tracking-[2px] mb-3">
+          <p className="text-eightyw-cta text-[13px] font-semibold uppercase tracking-[2px] mb-3">
             BUYER-SIDE ONLY
           </p>
-          <h2 className="text-2xl md:text-3xl font-bold text-med-navy mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-eightyw-blue mb-4">
             We don&apos;t represent banks — only buyers.
           </h2>
           <p className="text-text-secondary text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
@@ -18,12 +18,12 @@ export default function AgentTrust() {
           </p>
         </div>
 
-        <div className="bg-med-light border border-med-border rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center">
-          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-med-navy to-med-teal flex items-center justify-center text-white shrink-0">
+        <div className="bg-eightyw-light border border-eightyw-border rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center">
+          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-eightyw-blue to-eightyw-cta flex items-center justify-center text-white shrink-0">
             <span className="text-3xl md:text-4xl font-bold tracking-wider">88W</span>
           </div>
           <div className="flex-1 text-center md:text-left">
-            <h3 className="text-med-navy text-xl md:text-2xl font-bold mb-1">
+            <h3 className="text-eightyw-blue text-xl md:text-2xl font-bold mb-1">
               [Agent Name — Placeholder]
             </h3>
             <p className="text-text-secondary text-sm md:text-base mb-1">
@@ -46,7 +46,7 @@ export default function AgentTrust() {
               </a>
               <a
                 href="mailto:info@88westrealty.com"
-                className="inline-flex items-center justify-center gap-2 px-5 h-[44px] border-2 border-med-navy/20 text-med-navy font-semibold text-sm rounded-full hover:bg-med-navy hover:text-white transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-5 h-[44px] border-2 border-eightyw-blue/20 text-eightyw-blue font-semibold text-sm rounded-full hover:bg-eightyw-blue hover:text-white transition-colors"
               >
                 <Mail className="w-4 h-4" />
                 Email

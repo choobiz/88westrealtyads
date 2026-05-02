@@ -37,12 +37,12 @@ const FAQS: { q: string; a: string }[] = [
 export default function ForeclosureFAQ() {
   const [open, setOpen] = useState<number>(0);
   return (
-    <section id="faq" className="bg-med-light py-16 lg:py-24">
+    <section id="faq" className="bg-eightyw-light py-16 lg:py-24">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-med-navy text-center mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-eightyw-blue text-center mb-10">
           Frequently Asked Questions
         </h2>
-        <div className="bg-white border border-med-border rounded-2xl overflow-hidden divide-y divide-med-border">
+        <div className="bg-white border border-eightyw-border rounded-2xl overflow-hidden divide-y divide-eightyw-border">
           {FAQS.map((f, i) => {
             const isOpen = open === i;
             return (
@@ -53,11 +53,11 @@ export default function ForeclosureFAQ() {
                   className="w-full flex items-center justify-between text-left p-5 md:p-6 group"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-med-navy font-semibold text-base md:text-lg group-hover:text-med-teal transition-colors pr-4">
+                  <span className="text-eightyw-blue font-semibold text-base md:text-lg group-hover:text-eightyw-cta transition-colors pr-4">
                     {f.q}
                   </span>
                   <ChevronDown
-                    className={`w-5 h-5 text-med-navy/60 shrink-0 transition-transform ${
+                    className={`w-5 h-5 text-eightyw-blue/60 shrink-0 transition-transform ${
                       isOpen ? "rotate-180" : ""
                     }`}
                   />

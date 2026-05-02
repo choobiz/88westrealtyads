@@ -57,7 +57,7 @@ export default function AudienceSplit() {
     <section id="who" className="bg-white py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-med-navy mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-eightyw-blue mb-6">
             Whether You&apos;re an Investor or a First-Time Buyer, This List Works for You.
           </h2>
           <p className="text-text-secondary text-base md:text-lg leading-relaxed">
@@ -68,29 +68,29 @@ export default function AudienceSplit() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
-          <article className="bg-med-light border border-med-border rounded-2xl p-6 md:p-8">
-            <h3 className="text-med-navy text-2xl font-bold mb-6 flex items-center gap-2">
-              <span className="inline-block w-1 h-6 bg-med-teal rounded-full" />
+          <article className="bg-eightyw-light border border-eightyw-border rounded-2xl p-6 md:p-8">
+            <h3 className="text-eightyw-blue text-2xl font-bold mb-6 flex items-center gap-2">
+              <span className="inline-block w-1 h-6 bg-eightyw-cta rounded-full" />
               For Investors
             </h3>
             <ul className="space-y-4">
               {INVESTOR_BULLETS.map((b, i) => (
                 <li key={i} className="text-text-secondary text-sm md:text-base leading-relaxed">
-                  <strong className="text-med-navy">{b.strong}</strong> {b.rest}
+                  <strong className="text-eightyw-blue">{b.strong}</strong> {b.rest}
                 </li>
               ))}
             </ul>
           </article>
 
-          <article className="bg-med-light border border-med-border rounded-2xl p-6 md:p-8">
-            <h3 className="text-med-navy text-2xl font-bold mb-6 flex items-center gap-2">
+          <article className="bg-eightyw-light border border-eightyw-border rounded-2xl p-6 md:p-8">
+            <h3 className="text-eightyw-blue text-2xl font-bold mb-6 flex items-center gap-2">
               <span className="inline-block w-1 h-6 bg-brand-red rounded-full" />
               For Owner-Occupiers and First-Time Buyers
             </h3>
             <ul className="space-y-4">
               {OWNER_BULLETS.map((b, i) => (
                 <li key={i} className="text-text-secondary text-sm md:text-base leading-relaxed">
-                  <strong className="text-med-navy">{b.strong}</strong> {b.rest}
+                  <strong className="text-eightyw-blue">{b.strong}</strong> {b.rest}
                 </li>
               ))}
             </ul>

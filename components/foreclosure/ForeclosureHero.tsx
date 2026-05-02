@@ -50,12 +50,12 @@ export default function ForeclosureHero({ formLocation = "hero_inline" }: Forecl
         className="object-cover"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-med-navy/95 via-med-navy/85 to-med-navy/60" />
+      <div className="absolute inset-0 bg-gradient-to-r from-eightyw-blue/95 via-eightyw-blue/85 to-eightyw-blue/60" />
 
       <div className="max-w-[1200px] mx-auto px-5 md:px-6 relative z-10 py-16 md:py-24 w-full">
         <div className="grid lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 items-center">
           <div className="max-w-[640px]">
-            <p className="text-med-teal text-[13px] font-semibold uppercase tracking-[2px] mb-4">
+            <p className="text-eightyw-cta text-[13px] font-semibold uppercase tracking-[2px] mb-4">
               GREATER VANCOUVER · COURT-ORDERED SALES
             </p>
             <h1 className="text-white text-[32px] md:text-[52px] font-bold leading-[1.08] mb-6">
@@ -66,7 +66,7 @@ export default function ForeclosureHero({ formLocation = "hero_inline" }: Forecl
               emailed every business morning. Free, buyer-side only — no bank affiliation.
             </p>
             <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full text-white/90 text-xs md:text-sm">
-              <span className="inline-block w-2 h-2 rounded-full bg-med-teal animate-pulse" />
+              <span className="inline-block w-2 h-2 rounded-full bg-eightyw-cta animate-pulse" />
               ~389 active BC court-ordered listings as of today
             </div>
 
@@ -210,15 +210,15 @@ export function ForeclosureLeadForm({ formLocation = "hero_inline" }: Foreclosur
     }
   }
 
-  const inputClass = "w-full bg-white border border-med-border rounded-lg px-4 py-3 text-sm text-med-navy placeholder:text-text-muted focus:ring-2 focus:ring-med-teal/30 focus:border-med-teal outline-none transition-colors";
+  const inputClass = "w-full bg-white border border-eightyw-border rounded-lg px-4 py-3 text-sm text-eightyw-text placeholder:text-text-muted focus:ring-2 focus:ring-eightyw-cta/30 focus:border-eightyw-cta outline-none transition-colors";
 
   if (submitted) {
     return (
       <div className="bg-white rounded-2xl shadow-2xl border-t-4 border-brand-red overflow-hidden p-8 md:p-10 text-center">
-        <div className="w-14 h-14 bg-med-teal/15 rounded-full flex items-center justify-center mx-auto mb-4">
-          <Check className="w-7 h-7 text-med-teal" />
+        <div className="w-14 h-14 bg-eightyw-cta/15 rounded-full flex items-center justify-center mx-auto mb-4">
+          <Check className="w-7 h-7 text-eightyw-cta" />
         </div>
-        <h3 className="text-med-navy text-xl font-bold mb-2">You&apos;re on the list.</h3>
+        <h3 className="text-eightyw-blue text-xl font-bold mb-2">You&apos;re on the list.</h3>
         <p className="text-text-secondary text-sm">
           Tomorrow morning at 7 AM PT, you&apos;ll get every Greater Vancouver
           court-ordered listing that matches your budget and areas. We&apos;ll
@@ -232,7 +232,7 @@ export function ForeclosureLeadForm({ formLocation = "hero_inline" }: Foreclosur
     <div className="bg-white rounded-2xl shadow-2xl border-t-4 border-brand-red overflow-hidden">
       <div className="p-5 md:p-6">
         <div className="mb-4">
-          <h3 className="text-med-navy text-lg md:text-xl font-bold leading-tight">
+          <h3 className="text-eightyw-blue text-lg md:text-xl font-bold leading-tight">
             Get the Foreclosure Sheet.
           </h3>
           <p className="text-text-secondary text-xs md:text-sm mt-1">
@@ -282,8 +282,8 @@ export function ForeclosureLeadForm({ formLocation = "hero_inline" }: Foreclosur
                   key={opt.value}
                   className={`px-3 py-2 text-xs font-medium rounded-full border cursor-pointer transition-colors ${
                     form.intent === opt.value
-                      ? "bg-med-teal text-white border-med-teal"
-                      : "bg-white text-med-navy border-med-border hover:border-med-teal"
+                      ? "bg-eightyw-cta text-white border-eightyw-cta"
+                      : "bg-white text-eightyw-blue border-eightyw-border hover:border-eightyw-cta"
                   }`}
                 >
                   <input
@@ -313,7 +313,7 @@ export function ForeclosureLeadForm({ formLocation = "hero_inline" }: Foreclosur
                     className={`px-3 py-2 text-xs font-medium rounded-full border transition-colors ${
                       active
                         ? "bg-brand-red text-white border-brand-red"
-                        : "bg-white text-med-navy border-med-border hover:border-brand-red"
+                        : "bg-white text-eightyw-blue border-eightyw-border hover:border-brand-red"
                     }`}
                   >
                     {a.label}
@@ -343,7 +343,7 @@ export function ForeclosureLeadForm({ formLocation = "hero_inline" }: Foreclosur
           <p className="text-[11px] text-text-muted leading-relaxed">
             Free. No credit check. No phone required to start. Unsubscribe anytime.
             By submitting, you agree to the{" "}
-            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-med-teal hover:underline">
+            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-eightyw-cta hover:underline">
               Privacy Policy
             </a>{" "}
             and consent to 88 West Realty contacting you about Greater Vancouver

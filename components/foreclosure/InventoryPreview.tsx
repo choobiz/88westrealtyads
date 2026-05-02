@@ -66,7 +66,7 @@ export default function InventoryPreview() {
     <section className="bg-white py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-med-navy mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-eightyw-blue mb-4">
             This Week&apos;s Greater Vancouver Court-Ordered Sample.
           </h2>
           <p className="text-text-secondary text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
@@ -85,42 +85,42 @@ export default function InventoryPreview() {
           {SAMPLE_LISTINGS.map((l, i) => (
             <article
               key={i}
-              className="bg-white border border-med-border rounded-2xl p-5 hover:shadow-lg hover:border-med-teal/40 transition-all"
+              className="bg-white border border-eightyw-border rounded-2xl p-5 hover:shadow-lg hover:border-eightyw-cta/40 transition-all"
             >
               <div className="flex items-start justify-between mb-3 gap-3">
                 <div>
-                  <p className="text-xs font-semibold text-med-teal uppercase tracking-wider">
+                  <p className="text-xs font-semibold text-eightyw-cta uppercase tracking-wider">
                     {l.type}
                   </p>
-                  <p className="text-med-navy font-bold text-base mt-0.5">{l.area}</p>
+                  <p className="text-eightyw-blue font-bold text-base mt-0.5">{l.area}</p>
                 </div>
-                <span className="px-2 py-1 bg-med-light text-med-navy text-[10px] font-semibold rounded-full whitespace-nowrap">
+                <span className="px-2 py-1 bg-eightyw-light text-eightyw-blue text-[10px] font-semibold rounded-full whitespace-nowrap">
                   {l.daysOnMarket} DOM
                 </span>
               </div>
               <p className="text-text-secondary text-sm mb-3 font-mono">{l.street}</p>
-              <div className="grid grid-cols-3 gap-2 mb-4 pb-4 border-b border-med-border">
+              <div className="grid grid-cols-3 gap-2 mb-4 pb-4 border-b border-eightyw-border">
                 <div>
                   <p className="text-[10px] text-text-muted uppercase tracking-wider">Beds</p>
-                  <p className="text-med-navy font-semibold text-sm">{l.beds}</p>
+                  <p className="text-eightyw-blue font-semibold text-sm">{l.beds}</p>
                 </div>
                 <div>
                   <p className="text-[10px] text-text-muted uppercase tracking-wider">Baths</p>
-                  <p className="text-med-navy font-semibold text-sm">{l.baths}</p>
+                  <p className="text-eightyw-blue font-semibold text-sm">{l.baths}</p>
                 </div>
                 <div>
                   <p className="text-[10px] text-text-muted uppercase tracking-wider">Size</p>
-                  <p className="text-med-navy font-semibold text-sm">{l.sqft}</p>
+                  <p className="text-eightyw-blue font-semibold text-sm">{l.sqft}</p>
                 </div>
               </div>
               <div className="space-y-1.5 mb-3">
                 <div className="flex justify-between text-sm">
                   <span className="text-text-muted">Listed</span>
-                  <span className="text-med-navy font-bold">{l.listed}</span>
+                  <span className="text-eightyw-blue font-bold">{l.listed}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-text-muted">Last assessed</span>
-                  <span className="text-med-navy font-semibold">{l.assessed}</span>
+                  <span className="text-eightyw-blue font-semibold">{l.assessed}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-text-muted">Court date</span>
@@ -134,19 +134,19 @@ export default function InventoryPreview() {
           ))}
         </div>
 
-        <div className="bg-med-light border border-med-border rounded-2xl p-6 mb-10">
-          <h3 className="text-med-navy font-bold text-sm uppercase tracking-wider mb-3">Card legend</h3>
+        <div className="bg-eightyw-light border border-eightyw-border rounded-2xl p-6 mb-10">
+          <h3 className="text-eightyw-blue font-bold text-sm uppercase tracking-wider mb-3">Card legend</h3>
           <dl className="space-y-3 text-sm text-text-secondary">
             <div>
-              <dt className="font-semibold text-med-navy">Court date</dt>
+              <dt className="font-semibold text-eightyw-blue">Court date</dt>
               <dd>The BC Supreme Court hearing where the lender&apos;s lawyer applies for sale approval. Other buyers can submit competing offers that day; the judge usually awards to the highest bid.</dd>
             </div>
             <div>
-              <dt className="font-semibold text-med-navy">Listed vs. last assessed</dt>
+              <dt className="font-semibold text-eightyw-blue">Listed vs. last assessed</dt>
               <dd>The spread between the current ask and the most recent BC Assessment value. Useful as a sanity check, not a guarantee — assessments lag the market by 6–18 months.</dd>
             </div>
             <div>
-              <dt className="font-semibold text-med-navy">Schedule A</dt>
+              <dt className="font-semibold text-eightyw-blue">Schedule A</dt>
               <dd>The lender/court addendum that releases the lender from any condition or warranty responsibility. Every BC court-ordered offer requires it. We draft it line-by-line with you.</dd>
             </div>
           </dl>
