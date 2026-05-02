@@ -1,18 +1,20 @@
+import Image from "next/image";
+
 const TILES: {
   name: string;
   area: string;
   total: string;
-  totalRaw: number;
   concessions: string[];
   stage: "Standing Inventory" | "Construction" | "Public Launch";
   unitsLeft: number;
   expires: string;
+  image: string;
+  imageAlt: string;
 }[] = [
   {
     name: "Solhaven 6035",
     area: "Brentwood (Burnaby)",
     total: "$94,500",
-    totalRaw: 94500,
     concessions: [
       "$40,000 decorating credit",
       "$48,000 parking + storage included",
@@ -22,12 +24,13 @@ const TILES: {
     stage: "Standing Inventory",
     unitsLeft: 11,
     expires: "When project hits 70% sold",
+    image: "/images/shared/properties/condo-modern-glass.jpg",
+    imageAlt: "Modern glass-tower condo facade — illustrative example of a Standing Inventory building.",
   },
   {
     name: "The Pier West",
     area: "Lower Lonsdale (North Vancouver)",
     total: "$78,200",
-    totalRaw: 78200,
     concessions: [
       "$35,000 cash credit at completion",
       "Parking included ($38K value)",
@@ -36,12 +39,13 @@ const TILES: {
     stage: "Construction",
     unitsLeft: 6,
     expires: "June 30, 2026",
+    image: "/images/shared/properties/condo-courtyard.jpg",
+    imageAlt: "Modern apartment complex with landscaped courtyard — illustrative example of a Construction-stage project.",
   },
   {
     name: "Aalto on Marine",
     area: "Cambie (Vancouver)",
     total: "$112,000",
-    totalRaw: 112000,
     concessions: [
       "$55,000 buyer's bonus (cash at closing)",
       "5% deposit structure",
@@ -52,12 +56,13 @@ const TILES: {
     stage: "Public Launch",
     unitsLeft: 22,
     expires: "When project hits 60% sold",
+    image: "/images/shared/properties/condo-minimalist.jpg",
+    imageAlt: "Minimalist contemporary apartment facade — illustrative example of a Public Launch project.",
   },
   {
     name: "Park & Lansdowne",
     area: "Richmond Centre (Richmond)",
     total: "$68,400",
-    totalRaw: 68400,
     concessions: [
       "GST included on units up to $1.05M (~$45K saved)",
       "Parking included ($28K)",
@@ -66,12 +71,13 @@ const TILES: {
     stage: "Standing Inventory",
     unitsLeft: 19,
     expires: "May 15, 2026 (quick-close component)",
+    image: "/images/shared/properties/townhouse-brick.jpg",
+    imageAlt: "Brick low-rise residential exterior — illustrative example of an urban Standing Inventory project.",
   },
   {
     name: "Citizen Brewery District",
     area: "Edmonds (Burnaby)",
     total: "$56,000",
-    totalRaw: 56000,
     concessions: [
       "$30,000 decorating allowance",
       "One-year strata-fee holiday (~$5,800)",
@@ -81,12 +87,13 @@ const TILES: {
     stage: "Construction",
     unitsLeft: 14,
     expires: "July 1, 2026",
+    image: "/images/shared/properties/detached-craftsman.jpg",
+    imageAlt: "Craftsman-style two-story home with porch — illustrative example of a mixed-use project area.",
   },
   {
     name: "Marine Gateway South",
     area: "Marpole (Vancouver)",
     total: "$83,750",
-    totalRaw: 83750,
     concessions: [
       "$50,000 buyer's bonus (cash at closing)",
       "5% deposit",
@@ -96,6 +103,8 @@ const TILES: {
     stage: "Standing Inventory",
     unitsLeft: 8,
     expires: "Until 80% sold (currently 71%)",
+    image: "/images/shared/properties/detached-suburban.jpg",
+    imageAlt: "Suburban detached home with garden — illustrative example of a transit-oriented Standing Inventory project.",
   },
 ];
 
@@ -123,25 +132,34 @@ export default function TrackerPreview() {
           {TILES.map((t, i) => (
             <article
               key={i}
-              className="bg-white border border-eightyw-border rounded-2xl p-5 hover:shadow-lg hover:border-brand-red/40 transition-all flex flex-col"
+              className="bg-white border border-eightyw-border rounded-2xl overflow-hidden hover:shadow-lg hover:border-brand-red/40 transition-all flex flex-col"
             >
-              <div className="flex items-start justify-between mb-3 gap-3">
-                <div>
-                  <p className="text-xs font-semibold text-brand-red uppercase tracking-wider">
-                    {t.stage}
-                  </p>
-                  <p className="text-eightyw-blue font-bold text-base mt-0.5">{t.name}</p>
-                  <p className="text-text-secondary text-sm">{t.area}</p>
-                </div>
-                <span className="px-2 py-1 bg-eightyw-light text-eightyw-blue text-[10px] font-semibold rounded-full whitespace-nowrap">
-                  {t.unitsLeft} left
+              <div className="relative aspect-[4/3] bg-eightyw-light">
+                <Image
+                  src={t.image}
+                  alt={t.imageAlt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover"
+                />
+                <span className="absolute top-3 right-3 px-2 py-1 bg-white/95 backdrop-blur-sm text-eightyw-blue text-[10px] font-semibold rounded-full shadow-sm whitespace-nowrap">
+                  {t.unitsLeft} units left
+                </span>
+                <span className="absolute bottom-3 left-3 px-2 py-1 bg-brand-red text-white text-[10px] font-semibold rounded-full uppercase tracking-wider">
+                  {t.stage}
                 </span>
               </div>
 
-              <div className="bg-eightyw-light border border-eightyw-border rounded-lg px-4 py-3 mb-4">
-                <p className="text-[10px] text-text-muted uppercase tracking-wider">Total stacked</p>
-                <p className="text-brand-red text-2xl md:text-3xl font-bold leading-tight">{t.total}</p>
-              </div>
+              <div className="p-5 flex flex-col flex-1">
+                <div className="mb-3">
+                  <p className="text-eightyw-blue font-bold text-base">{t.name}</p>
+                  <p className="text-text-secondary text-sm">{t.area}</p>
+                </div>
+
+                <div className="bg-eightyw-light border border-eightyw-border rounded-lg px-4 py-3 mb-4">
+                  <p className="text-[10px] text-text-muted uppercase tracking-wider">Total stacked</p>
+                  <p className="text-brand-red text-2xl md:text-3xl font-bold leading-tight">{t.total}</p>
+                </div>
 
               <ul className="space-y-1.5 text-sm text-text-secondary mb-4 flex-1">
                 {t.concessions.map((c, j) => (
@@ -152,9 +170,10 @@ export default function TrackerPreview() {
                 ))}
               </ul>
 
-              <p className="text-xs text-text-muted border-t border-eightyw-border pt-3">
-                <span className="font-semibold text-eightyw-blue">Expires:</span> {t.expires}
-              </p>
+                <p className="text-xs text-text-muted border-t border-eightyw-border pt-3">
+                  <span className="font-semibold text-eightyw-blue">Expires:</span> {t.expires}
+                </p>
+              </div>
             </article>
           ))}
         </div>

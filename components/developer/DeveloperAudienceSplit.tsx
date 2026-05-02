@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const INVESTORS = [
   "Gross and net yield at the post-incentive purchase price — not the list price",
   "Assignment-clause review (waived fees vs. permitted re-marketing — these are not the same right)",
@@ -30,7 +32,17 @@ export default function DeveloperAudienceSplit() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 mb-6">
-          <article className="bg-eightyw-light border border-eightyw-border rounded-2xl p-6 md:p-8">
+          <article className="bg-eightyw-light border border-eightyw-border rounded-2xl overflow-hidden">
+            <div className="relative aspect-[16/9] bg-eightyw-border">
+              <Image
+                src="/images/shared/lifestyle/investor-laptop.jpg"
+                alt="Investor reviewing post-incentive purchase price math on a laptop — running the numbers before signing."
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="p-6 md:p-8">
             <h3 className="text-eightyw-blue text-xl md:text-2xl font-bold mb-2 flex items-center gap-2">
               <span className="inline-block w-1 h-6 bg-brand-red rounded-full" />
               For Investors
@@ -50,9 +62,20 @@ export default function DeveloperAudienceSplit() {
               We model this for you on every Tracker entry that fits your buy-box. Subscribers also get
               our monthly &ldquo;best yields after stack&rdquo; shortlist.
             </p>
+            </div>
           </article>
 
-          <article className="bg-eightyw-light border border-eightyw-border rounded-2xl p-6 md:p-8">
+          <article className="bg-eightyw-light border border-eightyw-border rounded-2xl overflow-hidden">
+            <div className="relative aspect-[16/9] bg-eightyw-border">
+              <Image
+                src="/images/shared/lifestyle/owner-keys.jpg"
+                alt="Couple receiving keys to their new home — the owner-occupier path through new-construction pre-sale incentives."
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="p-6 md:p-8">
             <h3 className="text-eightyw-blue text-xl md:text-2xl font-bold mb-2 flex items-center gap-2">
               <span className="inline-block w-1 h-6 bg-brand-red rounded-full" />
               For Owner-Occupiers
@@ -71,6 +94,7 @@ export default function DeveloperAudienceSplit() {
             <p className="mt-5 text-eightyw-blue text-sm md:text-base font-semibold leading-relaxed">
               We walk you through the answers on a 30-minute call. No buyer-agency required to talk.
             </p>
+            </div>
           </article>
         </div>
 

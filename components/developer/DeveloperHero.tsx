@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect, type FormEvent } from "react";
 import { ArrowRight, Check, Loader2 } from "lucide-react";
 import { DEVELOPER_WEBHOOK_URL, TRACKING } from "@/lib/constants";
@@ -48,7 +49,15 @@ interface DeveloperHeroProps {
 export default function DeveloperHero({ formLocation = "hero_inline" }: DeveloperHeroProps) {
   return (
     <section className="relative bg-white overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-eightyw-light via-white to-white pointer-events-none" />
+      <Image
+        src="/images/developer/hero-vancouver-skyline.jpg"
+        alt="Greater Vancouver downtown skyline — modern condo towers along Burrard Inlet with North Shore mountains."
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover opacity-25"
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-white via-white/95 to-white/70 pointer-events-none" />
       <div className="max-w-[1200px] mx-auto px-5 md:px-6 relative py-16 md:py-24">
         <div className="grid lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 items-start">
           <div className="max-w-[640px]">

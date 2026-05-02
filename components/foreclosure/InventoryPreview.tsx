@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const SAMPLE_LISTINGS: {
   type: string;
   area: string;
@@ -10,6 +12,8 @@ const SAMPLE_LISTINGS: {
   courtDate: string;
   daysOnMarket: number;
   tag: string;
+  image: string;
+  imageAlt: string;
 }[] = [
   {
     type: "Detached",
@@ -18,6 +22,8 @@ const SAMPLE_LISTINGS: {
     beds: "4 bed", baths: "2 bath", sqft: "1,820 sqft",
     listed: "$1.28M", assessed: "$1.42M", courtDate: "Jul 15",
     daysOnMarket: 142, tag: "Schedule A required",
+    image: "/images/shared/properties/detached-craftsman.jpg",
+    imageAlt: "Sample detached Vancouver residential exterior — illustrative court-ordered listing placeholder.",
   },
   {
     type: "Townhouse",
@@ -26,6 +32,8 @@ const SAMPLE_LISTINGS: {
     beds: "3 bed", baths: "2.5 bath", sqft: "1,510 sqft",
     listed: "$898K", assessed: "$964K", courtDate: "Jun 28",
     daysOnMarket: 87, tag: "Vacant — easy showings",
+    image: "/images/shared/properties/townhouse-brick.jpg",
+    imageAlt: "Sample Burnaby townhouse exterior — illustrative court-ordered listing placeholder.",
   },
   {
     type: "Condo",
@@ -34,6 +42,8 @@ const SAMPLE_LISTINGS: {
     beds: "2 bed", baths: "2 bath", sqft: "905 sqft",
     listed: "$649K", assessed: "$702K", courtDate: "Jul 8",
     daysOnMarket: 113, tag: "Owner-occupier friendly",
+    image: "/images/shared/properties/condo-minimalist.jpg",
+    imageAlt: "Sample Richmond condo facade — illustrative court-ordered listing placeholder.",
   },
   {
     type: "Detached",
@@ -42,6 +52,8 @@ const SAMPLE_LISTINGS: {
     beds: "5 bed", baths: "3 bath", sqft: "2,640 sqft",
     listed: "$1.80M", assessed: "$1.95M", courtDate: "Aug 12",
     daysOnMarket: 168, tag: "Tenanted — 60-day notice",
+    image: "/images/shared/properties/detached-suburban.jpg",
+    imageAlt: "Sample North Vancouver detached home — illustrative court-ordered listing placeholder.",
   },
   {
     type: "Condo",
@@ -50,6 +62,8 @@ const SAMPLE_LISTINGS: {
     beds: "1 bed + den", baths: "1 bath", sqft: "712 sqft",
     listed: "$568K", assessed: "$612K", courtDate: "Jun 18",
     daysOnMarket: 96, tag: "First-time buyer eligible",
+    image: "/images/shared/properties/condo-modern-glass.jpg",
+    imageAlt: "Sample Vancouver mid-rise condo exterior — illustrative court-ordered listing placeholder.",
   },
   {
     type: "Half-duplex",
@@ -58,6 +72,8 @@ const SAMPLE_LISTINGS: {
     beds: "4 bed", baths: "3 bath", sqft: "2,180 sqft",
     listed: "$1.15M", assessed: "$1.24M", courtDate: "Jul 22",
     daysOnMarket: 124, tag: "Schedule A required",
+    image: "/images/shared/properties/condo-courtyard.jpg",
+    imageAlt: "Sample East Burnaby low-rise residential exterior — illustrative court-ordered listing placeholder.",
   },
 ];
 
@@ -85,19 +101,25 @@ export default function InventoryPreview() {
           {SAMPLE_LISTINGS.map((l, i) => (
             <article
               key={i}
-              className="bg-white border border-eightyw-border rounded-2xl p-5 hover:shadow-lg hover:border-eightyw-cta/40 transition-all"
+              className="bg-white border border-eightyw-border rounded-2xl overflow-hidden hover:shadow-lg hover:border-eightyw-cta/40 transition-all"
             >
-              <div className="flex items-start justify-between mb-3 gap-3">
-                <div>
-                  <p className="text-xs font-semibold text-eightyw-cta uppercase tracking-wider">
-                    {l.type}
-                  </p>
-                  <p className="text-eightyw-blue font-bold text-base mt-0.5">{l.area}</p>
-                </div>
-                <span className="px-2 py-1 bg-eightyw-light text-eightyw-blue text-[10px] font-semibold rounded-full whitespace-nowrap">
+              <div className="relative aspect-[4/3] bg-eightyw-light">
+                <Image
+                  src={l.image}
+                  alt={l.imageAlt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover"
+                />
+                <span className="absolute top-3 left-3 px-2 py-1 bg-brand-red text-white text-[10px] font-semibold rounded-full uppercase tracking-wider">
+                  {l.type}
+                </span>
+                <span className="absolute top-3 right-3 px-2 py-1 bg-white/95 backdrop-blur-sm text-eightyw-blue text-[10px] font-semibold rounded-full shadow-sm whitespace-nowrap">
                   {l.daysOnMarket} DOM
                 </span>
               </div>
+              <div className="p-5">
+              <p className="text-eightyw-blue font-bold text-base mb-1">{l.area}</p>
               <p className="text-text-secondary text-sm mb-3 font-mono">{l.street}</p>
               <div className="grid grid-cols-3 gap-2 mb-4 pb-4 border-b border-eightyw-border">
                 <div>
@@ -130,6 +152,7 @@ export default function InventoryPreview() {
               <span className="inline-block px-3 py-1 bg-brand-red/10 text-brand-red text-[11px] font-semibold rounded-full">
                 {l.tag}
               </span>
+              </div>
             </article>
           ))}
         </div>

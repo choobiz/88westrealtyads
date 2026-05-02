@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const INVESTOR_BULLETS: { strong: string; rest: string }[] = [
   {
     strong: "The volume is the moat.",
@@ -68,32 +70,54 @@ export default function AudienceSplit() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
-          <article className="bg-eightyw-light border border-eightyw-border rounded-2xl p-6 md:p-8">
-            <h3 className="text-eightyw-blue text-2xl font-bold mb-6 flex items-center gap-2">
-              <span className="inline-block w-1 h-6 bg-eightyw-cta rounded-full" />
-              For Investors
-            </h3>
-            <ul className="space-y-4">
-              {INVESTOR_BULLETS.map((b, i) => (
-                <li key={i} className="text-text-secondary text-sm md:text-base leading-relaxed">
-                  <strong className="text-eightyw-blue">{b.strong}</strong> {b.rest}
-                </li>
-              ))}
-            </ul>
+          <article className="bg-eightyw-light border border-eightyw-border rounded-2xl overflow-hidden">
+            <div className="relative aspect-[16/9] bg-eightyw-border">
+              <Image
+                src="/images/shared/lifestyle/investor-laptop.jpg"
+                alt="Investor running ROI math on a court-ordered listing — gross yield, cash-on-cash, all-in carry."
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="p-6 md:p-8">
+              <h3 className="text-eightyw-blue text-2xl font-bold mb-6 flex items-center gap-2">
+                <span className="inline-block w-1 h-6 bg-brand-red rounded-full" />
+                For Investors
+              </h3>
+              <ul className="space-y-4">
+                {INVESTOR_BULLETS.map((b, i) => (
+                  <li key={i} className="text-text-secondary text-sm md:text-base leading-relaxed">
+                    <strong className="text-eightyw-blue">{b.strong}</strong> {b.rest}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </article>
 
-          <article className="bg-eightyw-light border border-eightyw-border rounded-2xl p-6 md:p-8">
-            <h3 className="text-eightyw-blue text-2xl font-bold mb-6 flex items-center gap-2">
-              <span className="inline-block w-1 h-6 bg-brand-red rounded-full" />
-              For Owner-Occupiers and First-Time Buyers
-            </h3>
-            <ul className="space-y-4">
-              {OWNER_BULLETS.map((b, i) => (
-                <li key={i} className="text-text-secondary text-sm md:text-base leading-relaxed">
-                  <strong className="text-eightyw-blue">{b.strong}</strong> {b.rest}
-                </li>
-              ))}
-            </ul>
+          <article className="bg-eightyw-light border border-eightyw-border rounded-2xl overflow-hidden">
+            <div className="relative aspect-[16/9] bg-eightyw-border">
+              <Image
+                src="/images/shared/lifestyle/owner-keys.jpg"
+                alt="First-time buyers receiving keys to their new home — owner-occupier path through court-ordered sales."
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="p-6 md:p-8">
+              <h3 className="text-eightyw-blue text-2xl font-bold mb-6 flex items-center gap-2">
+                <span className="inline-block w-1 h-6 bg-brand-red rounded-full" />
+                For Owner-Occupiers and First-Time Buyers
+              </h3>
+              <ul className="space-y-4">
+                {OWNER_BULLETS.map((b, i) => (
+                  <li key={i} className="text-text-secondary text-sm md:text-base leading-relaxed">
+                    <strong className="text-eightyw-blue">{b.strong}</strong> {b.rest}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </article>
         </div>
       </div>
