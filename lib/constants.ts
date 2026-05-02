@@ -56,10 +56,26 @@ export const MEDICAL_WEBHOOK_URL = assertWebhookLocation(
   "medical-strata",
 );
 
+/** GHL webhook for 88 West Realty foreclosure / court-ordered sales leads.
+ *
+ * NOTE: trigger ID below is a PLACEHOLDER. Before launch, user must:
+ *   1. Create a new "Inbound Webhook" workflow in 88West GHL location
+ *   2. Replace the trigger ID below with the new workflow's URL
+ *   3. The location-prefix assertion guarantees we can't accidentally use a
+ *      Brio URL — but a placeholder trigger will silently fail to capture leads
+ *      until the real ID is filled in.
+ */
+export const FORECLOSURE_WEBHOOK_URL = assertWebhookLocation(
+  "https://services.leadconnectorhq.com/hooks/7cP5dKRcwCgdBclC1d3m/webhook-trigger/PLACEHOLDER-FORECLOSURE-REPLACE-BEFORE-LAUNCH",
+  GHL_LOCATIONS.EIGHTY_EIGHT_WEST,
+  "foreclosure-deals-vancouver",
+);
+
 /** Campaign → webhook URL. Add new 88West Realty campaigns here; the
  * assertion above will catch any accidental Brio URL before build ships. */
 export const WEBHOOKS = {
   "medical-strata": MEDICAL_WEBHOOK_URL,
+  "foreclosure-deals-vancouver": FORECLOSURE_WEBHOOK_URL,
 } as const;
 
 /** Google Ads / GA4 IDs */
