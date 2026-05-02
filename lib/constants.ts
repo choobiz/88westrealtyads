@@ -71,11 +71,23 @@ export const FORECLOSURE_WEBHOOK_URL = assertWebhookLocation(
   "foreclosure-deals-vancouver",
 );
 
+/** GHL webhook for 88 West Realty developer-incentive Tracker leads.
+ *
+ * NOTE: trigger ID below is a PLACEHOLDER. Before launch, swap with the
+ * real Inbound Webhook trigger from the 88West GHL location.
+ */
+export const DEVELOPER_WEBHOOK_URL = assertWebhookLocation(
+  "https://services.leadconnectorhq.com/hooks/7cP5dKRcwCgdBclC1d3m/webhook-trigger/PLACEHOLDER-DEVELOPER-REPLACE-BEFORE-LAUNCH",
+  GHL_LOCATIONS.EIGHTY_EIGHT_WEST,
+  "developer-condo-deals-vancouver",
+);
+
 /** Campaign → webhook URL. Add new 88West Realty campaigns here; the
  * assertion above will catch any accidental Brio URL before build ships. */
 export const WEBHOOKS = {
   "medical-strata": MEDICAL_WEBHOOK_URL,
   "foreclosure-deals-vancouver": FORECLOSURE_WEBHOOK_URL,
+  "developer-condo-deals-vancouver": DEVELOPER_WEBHOOK_URL,
 } as const;
 
 /** Google Ads / GA4 IDs */
