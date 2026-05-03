@@ -44,7 +44,7 @@ export default function ForeclosureHero({ formLocation = "hero_inline" }: Forecl
     <section className="relative min-h-[640px] md:min-h-[760px] flex items-center overflow-hidden">
       <Image
         src="/images/foreclosure/hero-vancouver.jpg"
-        alt="Greater Vancouver skyline with North Shore mountains — backdrop for 88 West Realty's daily-updated court-ordered sales list"
+        alt="Detached home with manicured lawn and inviting facade — illustrative of the Greater Vancouver detached and townhouse stock that comes through BC court-ordered sales."
         fill
         priority
         className="object-cover"
