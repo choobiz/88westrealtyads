@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import DeveloperNavbar from "@/components/developer/DeveloperNavbar";
 import MedicalFooter from "@/components/medical/MedicalFooter";
-import MedicalStickyMobileCTA from "@/components/medical/MedicalStickyMobileCTA";
+import ConsultationStickyMobileCTA from "@/components/shared/ConsultationStickyMobileCTA";
 import CookieConsent from "@/components/medical/CookieConsent";
 import DeveloperHero from "@/components/developer/DeveloperHero";
 import TrackerPreview from "@/components/developer/TrackerPreview";
@@ -95,7 +95,7 @@ export default function DeveloperCondoDealsPage() {
       <DeveloperFAQ />
       <DeveloperFinalCTA />
       <MedicalFooter />
-      <MedicalStickyMobileCTA />
+      <ConsultationStickyMobileCTA />
       <CookieConsent />
     </>
   );

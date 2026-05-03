@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import ForeclosureNavbar from "@/components/foreclosure/ForeclosureNavbar";
 import MedicalFooter from "@/components/medical/MedicalFooter";
-import MedicalStickyMobileCTA from "@/components/medical/MedicalStickyMobileCTA";
+import ConsultationStickyMobileCTA from "@/components/shared/ConsultationStickyMobileCTA";
 import CookieConsent from "@/components/medical/CookieConsent";
 import ForeclosureHero from "@/components/foreclosure/ForeclosureHero";
 import InventoryPreview from "@/components/foreclosure/InventoryPreview";
@@ -96,7 +96,7 @@ export default function ForeclosurePage() {
       <ForeclosureFAQ />
       <GuaranteeAndFinalCTA />
       <MedicalFooter />
-      <MedicalStickyMobileCTA />
+      <ConsultationStickyMobileCTA />
       <CookieConsent />
     </>
   );
