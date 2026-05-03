@@ -181,7 +181,7 @@ export default function InventoryPreview() {
             href="#register"
             className="inline-flex items-center justify-center h-[52px] px-8 bg-brand-red text-white font-semibold rounded-full hover:bg-brand-red-hover transition-all hover:-translate-y-0.5 gap-2 text-[15px] shadow-[0_10px_30px_rgba(197,34,4,0.3)]"
           >
-            Tell us what you&apos;re looking for →
+            Book a Free Consultation →
           </a>
         </div>
       </div>

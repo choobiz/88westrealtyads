@@ -19,7 +19,7 @@ export default function GuaranteeAndFinalCTA() {
 
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-eightyw-blue mb-3">
-            Get matched with our court-ordered specialist.
+            Book a free consultation.
           </h2>
           <p className="text-text-secondary text-base md:text-lg max-w-xl mx-auto leading-relaxed">
             Free, buyer-side only. Greater Vancouver. Investors and first-time buyers welcome.

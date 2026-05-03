@@ -5,6 +5,7 @@ import MedicalStickyMobileCTA from "@/components/medical/MedicalStickyMobileCTA"
 import CookieConsent from "@/components/medical/CookieConsent";
 import DeveloperHero from "@/components/developer/DeveloperHero";
 import TrackerPreview from "@/components/developer/TrackerPreview";
+import SupplyPipelineCallout from "@/components/developer/SupplyPipelineCallout";
 import StageExplainer from "@/components/developer/StageExplainer";
 import DeveloperAudienceSplit from "@/components/developer/DeveloperAudienceSplit";
 import DeveloperAgentTrust from "@/components/developer/DeveloperAgentTrust";
@@ -87,6 +88,7 @@ export default function DeveloperCondoDealsPage() {
       <DeveloperNavbar />
       <DeveloperHero />
       <TrackerPreview />
+      <SupplyPipelineCallout />
       <StageExplainer />
       <DeveloperAudienceSplit />
       <DeveloperAgentTrust />

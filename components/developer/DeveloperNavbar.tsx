@@ -36,7 +36,7 @@ export default function DeveloperNavbar() {
             {COMPANY.phone}
           </a>
           <a href="#register" className="inline-flex items-center h-10 px-5 bg-white text-brand-red text-sm font-semibold rounded-full hover:bg-eightyw-light transition-colors">
-            Get Matched
+            Book a Consultation
           </a>
         </div>
 
@@ -45,7 +45,7 @@ export default function DeveloperNavbar() {
             <Phone className="w-5 h-5" />
           </a>
           <a href="#register" className="inline-flex items-center h-9 px-4 bg-white text-brand-red text-xs font-semibold rounded-full">
-            Get Matched
+            Book a Consultation
           </a>
           <button onClick={() => setMobileOpen(!mobileOpen)} className="w-10 h-10 flex items-center justify-center text-white" aria-label="Toggle menu">
             {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
