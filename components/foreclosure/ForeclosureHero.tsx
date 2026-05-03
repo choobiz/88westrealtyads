@@ -39,6 +39,7 @@ interface ForeclosureHeroProps {
   formLocation?: "hero_inline" | "final_cta" | "deals_section" | "property_modal";
   selectedProperty?: string;
   bare?: boolean;
+  submitLabel?: string;
 }
 
 export default function ForeclosureHero() {
@@ -65,7 +66,7 @@ export default function ForeclosureHero() {
           </h1>
           <p className="text-text-secondary text-base md:text-xl leading-relaxed mb-6 max-w-[600px]">
             <span className="lg:hidden">
-              Buyer-side specialist. Free 20-minute consultation. We attend the court hearing for you.
+              Buyer-side specialist. Free intro call. We attend the court hearing for you.
             </span>
             <span className="hidden lg:inline">
               We&apos;re a buyer-side brokerage that hunts Greater Vancouver foreclosures full-time —
@@ -90,7 +91,7 @@ export default function ForeclosureHero() {
               href="#register"
               className="inline-flex items-center justify-center h-[52px] px-7 border-2 border-eightyw-blue bg-white text-eightyw-blue font-semibold rounded-full hover:bg-eightyw-blue hover:text-white transition-all gap-2 text-[15px]"
             >
-              Book a Free Consultation
+              Find My Next Deal
             </a>
           </div>
           <p className="text-text-muted text-xs mt-4">
@@ -102,7 +103,12 @@ export default function ForeclosureHero() {
   );
 }
 
-export function ForeclosureLeadForm({ formLocation = "hero_inline", selectedProperty, bare = false }: ForeclosureHeroProps) {
+export function ForeclosureLeadForm({
+  formLocation = "hero_inline",
+  selectedProperty,
+  bare = false,
+  submitLabel = "Find My Next Deal",
+}: ForeclosureHeroProps) {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
@@ -216,7 +222,7 @@ export function ForeclosureLeadForm({ formLocation = "hero_inline", selectedProp
         <div className="w-14 h-14 bg-brand-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
           <Check className="w-7 h-7 text-brand-red" />
         </div>
-        <h3 className="text-eightyw-blue text-xl font-bold mb-2">Your consultation is booked.</h3>
+        <h3 className="text-eightyw-blue text-xl font-bold mb-2">We&apos;re on it.</h3>
         <p className="text-text-secondary text-sm">
           Your buyer-side foreclosure specialist will call within 24 hours to get specific
           about what you&apos;re looking for and walk you through a personal shortlist from
@@ -232,10 +238,10 @@ export function ForeclosureLeadForm({ formLocation = "hero_inline", selectedProp
       <div className="p-5 md:p-6">
         <div className="mb-4 pl-3 border-l-2 border-brand-red">
           <h3 className="text-eightyw-blue text-lg md:text-xl font-bold leading-tight">
-            Book a free consultation.
+            Find your next deal.
           </h3>
           <p className="text-text-secondary text-xs md:text-sm mt-1">
-            20 minutes with our court-ordered specialist. We call within 24 hours.
+            Tell us your buy-box. Your specialist calls within 24 hours.
           </p>
         </div>
         <form onSubmit={handleSubmit} onFocus={handleFormFocus} className="space-y-3">
@@ -334,7 +340,7 @@ export function ForeclosureLeadForm({ formLocation = "hero_inline", selectedProp
           >
             {submitting ? <Loader2 className="w-5 h-5 animate-spin" /> : (
               <>
-                Book My Free Consultation
+                {submitLabel}
                 <ArrowRight className="w-4 h-4" />
               </>
             )}

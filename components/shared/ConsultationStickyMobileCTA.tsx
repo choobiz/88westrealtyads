@@ -10,7 +10,7 @@ export default function ConsultationStickyMobileCTA() {
           <Phone className="w-5 h-5 text-white" />
         </a>
         <a href="#register" className="flex-1 h-12 bg-brand-red text-white font-semibold rounded-full hover:bg-brand-red-hover flex items-center justify-center gap-2 text-[15px]">
-          Book a Free Consultation
+          Find My Next Deal
           <ArrowRight className="w-4 h-4" />
         </a>
       </div>

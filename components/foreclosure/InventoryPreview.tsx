@@ -191,7 +191,7 @@ export default function InventoryPreview() {
         </div>
 
         <p className="text-center text-text-muted text-xs md:text-sm">
-          Click any listing above to book a free consultation — your specialist will walk you through it within 24 hours.
+          Click any listing above to start the deal hunt — your specialist will walk you through it within 24 hours.
         </p>
       </div>
 
@@ -201,7 +201,12 @@ export default function InventoryPreview() {
         contextHeadline="GET DETAILS ON THIS LISTING"
         contextSubtitle={openProperty ?? undefined}
       >
-        <ForeclosureLeadForm formLocation="property_modal" selectedProperty={openProperty ?? undefined} bare />
+        <ForeclosureLeadForm
+          formLocation="property_modal"
+          selectedProperty={openProperty ?? undefined}
+          submitLabel="Send Me the Details"
+          bare
+        />
       </LeadFormModal>
     </section>
   );

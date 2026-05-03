@@ -194,8 +194,8 @@ export default function TrackerPreview() {
         </div>
 
         <p className="text-center text-text-muted text-xs md:text-sm">
-          Click any project above to book a free consultation — your specialist will walk you
-          through the full stack within 24 hours.
+          Click any project above to start the deal hunt — your specialist walks you through
+          the full stack within 24 hours.
         </p>
       </div>
 
@@ -205,7 +205,12 @@ export default function TrackerPreview() {
         contextHeadline="GET DETAILS ON THIS STACK"
         contextSubtitle={openProperty ?? undefined}
       >
-        <DeveloperLeadForm formLocation="property_modal" selectedProperty={openProperty ?? undefined} bare />
+        <DeveloperLeadForm
+          formLocation="property_modal"
+          selectedProperty={openProperty ?? undefined}
+          submitLabel="Send Me the Details"
+          bare
+        />
       </LeadFormModal>
     </section>
   );

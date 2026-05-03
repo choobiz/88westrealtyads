@@ -9,10 +9,10 @@ export default function ForeclosureFormSection() {
             STEP 1 — TELL US WHAT YOU&apos;RE LOOKING FOR
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-eightyw-blue mb-3">
-            Book a free consultation.
+            Find your next deal.
           </h2>
           <p className="text-text-secondary text-base md:text-lg max-w-xl mx-auto leading-relaxed">
-            20 minutes with our buyer-side court-ordered specialist. We call within 24 hours
+            Tell us your buy-box. Your buyer-side court-ordered specialist calls within 24 hours
             with a personal shortlist matched to your budget, areas, and risk tolerance.
           </p>
         </div>

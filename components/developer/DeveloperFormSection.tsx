@@ -9,11 +9,11 @@ export default function DeveloperFormSection() {
             STEP 1 — TELL US ABOUT YOUR BUY-BOX
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-eightyw-blue mb-3">
-            Book a free consultation.
+            Find your next deal.
           </h2>
           <p className="text-text-secondary text-base md:text-lg max-w-xl mx-auto leading-relaxed">
-            20 minutes with our buyer-side pre-sale specialist. We call within 24 hours
-            with a personal shortlist matched to your budget and areas — and start
+            Tell us your buy-box. Your buyer-side pre-sale specialist calls within 24 hours
+            with a personal shortlist matched to your budget and areas — and starts
             negotiating the stack project by project.
           </p>
         </div>
