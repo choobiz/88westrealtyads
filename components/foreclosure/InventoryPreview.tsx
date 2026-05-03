@@ -1,4 +1,10 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
+import { ArrowRight } from "lucide-react";
+import LeadFormModal from "@/components/shared/LeadFormModal";
+import { ForeclosureLeadForm } from "./ForeclosureHero";
 
 const SAMPLE_LISTINGS: {
   type: string;
@@ -78,8 +84,9 @@ const SAMPLE_LISTINGS: {
 ];
 
 export default function InventoryPreview() {
+  const [openProperty, setOpenProperty] = useState<string | null>(null);
   return (
-    <section id="inventory" className="bg-white py-16 lg:py-24">
+    <section id="deals" className="bg-white py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-4">
           <h2 className="text-3xl md:text-4xl font-bold text-eightyw-blue mb-4">
@@ -100,9 +107,11 @@ export default function InventoryPreview() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
           {SAMPLE_LISTINGS.map((l, i) => (
-            <article
+            <button
+              type="button"
               key={i}
-              className="bg-white border border-eightyw-border rounded-2xl overflow-hidden hover:shadow-lg hover:border-eightyw-cta/40 transition-all"
+              onClick={() => setOpenProperty(`${l.area} — ${l.beds}, ${l.listed}`)}
+              className="text-left bg-white border border-eightyw-border rounded-2xl overflow-hidden hover:shadow-lg hover:border-brand-red/50 hover:-translate-y-0.5 transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-brand-red/40 focus:ring-offset-2"
             >
               <div className="relative aspect-[4/3] bg-eightyw-light">
                 <Image
@@ -150,11 +159,16 @@ export default function InventoryPreview() {
                   <span className="text-brand-red font-semibold">{l.courtDate}</span>
                 </div>
               </div>
-              <span className="inline-block px-3 py-1 bg-brand-red/10 text-brand-red text-[11px] font-semibold rounded-full">
-                {l.tag}
-              </span>
+              <div className="flex items-center justify-between gap-3">
+                <span className="inline-block px-3 py-1 bg-brand-red/10 text-brand-red text-[11px] font-semibold rounded-full">
+                  {l.tag}
+                </span>
+                <span className="inline-flex items-center gap-1 text-brand-red text-xs font-semibold">
+                  Get details <ArrowRight className="w-3.5 h-3.5" />
+                </span>
               </div>
-            </article>
+              </div>
+            </button>
           ))}
         </div>
 
@@ -176,15 +190,19 @@ export default function InventoryPreview() {
           </dl>
         </div>
 
-        <div className="text-center">
-          <a
-            href="#register"
-            className="inline-flex items-center justify-center h-[52px] px-8 bg-brand-red text-white font-semibold rounded-full hover:bg-brand-red-hover transition-all hover:-translate-y-0.5 gap-2 text-[15px] shadow-[0_10px_30px_rgba(197,34,4,0.3)]"
-          >
-            Book a Free Consultation →
-          </a>
-        </div>
+        <p className="text-center text-text-muted text-xs md:text-sm">
+          Click any listing above to book a free consultation — your specialist will walk you through it within 24 hours.
+        </p>
       </div>
+
+      <LeadFormModal
+        open={openProperty !== null}
+        onClose={() => setOpenProperty(null)}
+        contextHeadline="GET DETAILS ON THIS LISTING"
+        contextSubtitle={openProperty ?? undefined}
+      >
+        <ForeclosureLeadForm formLocation="property_modal" selectedProperty={openProperty ?? undefined} bare />
+      </LeadFormModal>
     </section>
   );
 }

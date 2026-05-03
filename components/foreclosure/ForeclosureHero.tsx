@@ -36,12 +36,14 @@ const AREA_OPTIONS = [
 ];
 
 interface ForeclosureHeroProps {
-  formLocation?: "hero_inline" | "final_cta";
+  formLocation?: "hero_inline" | "final_cta" | "deals_section" | "property_modal";
+  selectedProperty?: string;
+  bare?: boolean;
 }
 
-export default function ForeclosureHero({ formLocation = "hero_inline" }: ForeclosureHeroProps) {
+export default function ForeclosureHero() {
   return (
-    <section className="relative min-h-[640px] md:min-h-[760px] flex items-center overflow-hidden">
+    <section className="relative min-h-[520px] md:min-h-[600px] flex items-center overflow-hidden">
       <Image
         src="/images/foreclosure/hero-vancouver.jpg"
         alt="Detached home with manicured lawn and inviting facade — illustrative of the Greater Vancouver detached and townhouse stock that comes through BC court-ordered sales."
@@ -50,70 +52,57 @@ export default function ForeclosureHero({ formLocation = "hero_inline" }: Forecl
         className="object-cover"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/75 to-white/10 lg:to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-white/30 lg:to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-white/30" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-transparent to-white/40" />
 
-      <div className="max-w-[1200px] mx-auto px-5 md:px-6 relative z-10 py-16 md:py-24 w-full">
-        <div className="grid lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 items-center">
-          <div className="max-w-[640px]">
-            <p className="text-brand-red text-[13px] font-semibold uppercase tracking-[2px] mb-4">
-              GREATER VANCOUVER · COURT-ORDERED SPECIALIST
-            </p>
-            <h1 className="text-eightyw-blue text-[28px] md:text-[52px] font-bold leading-[1.08] mb-5">
-              Vancouver Foreclosures, Won at the Hearing.
-            </h1>
-            <p className="text-text-secondary text-base md:text-[18px] leading-relaxed mb-6 max-w-[580px]">
-              <span className="lg:hidden">
-                Buyer-side specialist. Free 20-minute consultation. We attend the court hearing for you.
-              </span>
-              <span className="hidden lg:inline">
-                We&apos;re a buyer-side brokerage that hunts Greater Vancouver foreclosures full-time —
-                shortlisting the ones that fit your budget and risk tolerance, drafting Schedule A,
-                and attending the BC Supreme Court hearing on your behalf so you don&apos;t lose the
-                deposit you&apos;ve already spent on inspection.
-              </span>
-            </p>
-            <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 bg-white border border-eightyw-border rounded-full text-eightyw-text text-xs md:text-sm shadow-sm">
-              <span className="inline-block w-2 h-2 rounded-full bg-brand-red animate-pulse" />
-              ~389 active BC court-ordered listings right now
-            </div>
-
-            <div className="hidden lg:flex flex-col sm:flex-row gap-3 mt-2">
-              <a
-                href="#register"
-                className="inline-flex items-center justify-center h-[52px] px-7 bg-brand-red text-white font-semibold rounded-full hover:bg-brand-red-hover transition-all hover:-translate-y-0.5 gap-2 text-[15px] shadow-[0_10px_30px_rgba(197,34,4,0.3)]"
-              >
-                Book a Free Consultation
-                <ArrowRight className="w-4 h-4" />
-              </a>
-              <a
-                href="tel:+16042811828"
-                className="inline-flex items-center justify-center h-[52px] px-7 border-2 border-eightyw-border bg-white text-eightyw-blue font-semibold rounded-full hover:border-eightyw-blue/40 transition-all gap-2 text-[15px]"
-              >
-                Call 604-281-1828
-              </a>
-            </div>
-            <p className="hidden lg:block text-text-muted text-xs mt-3">
-              We call back within 24 hours · Mon–Sat, 8 AM – 8 PM PT
-            </p>
+      <div className="max-w-[1200px] mx-auto px-5 md:px-6 relative z-10 py-14 md:py-20 w-full">
+        <div className="max-w-[720px]">
+          <p className="text-brand-red text-[12px] md:text-[13px] font-semibold uppercase tracking-[2px] mb-4">
+            GREATER VANCOUVER · COURT-ORDERED SPECIALIST
+          </p>
+          <h1 className="text-eightyw-blue text-[32px] md:text-[56px] font-bold leading-[1.05] mb-5">
+            Vancouver Foreclosures, Won at the Hearing.
+          </h1>
+          <p className="text-text-secondary text-base md:text-xl leading-relaxed mb-6 max-w-[600px]">
+            <span className="lg:hidden">
+              Buyer-side specialist. Free 20-minute consultation. We attend the court hearing for you.
+            </span>
+            <span className="hidden lg:inline">
+              We&apos;re a buyer-side brokerage that hunts Greater Vancouver foreclosures full-time —
+              shortlisting the ones that fit your budget, drafting Schedule A, and attending the BC
+              Supreme Court hearing on your behalf.
+            </span>
+          </p>
+          <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 bg-white border border-eightyw-border rounded-full text-eightyw-text text-xs md:text-sm shadow-sm">
+            <span className="inline-block w-2 h-2 rounded-full bg-brand-red animate-pulse" />
+            ~389 active BC court-ordered listings right now
           </div>
 
-          <div className="mt-4 lg:mt-0">
-            <ForeclosureLeadForm formLocation={formLocation} />
+          <div className="flex flex-col sm:flex-row gap-3">
             <a
-              href="tel:+16042811828"
-              className="lg:hidden mt-4 inline-flex items-center justify-center w-full h-[48px] border-2 border-eightyw-border bg-white text-eightyw-blue font-semibold rounded-full hover:border-eightyw-blue/40 transition-all gap-2 text-[15px]"
+              href="#deals"
+              className="inline-flex items-center justify-center h-[52px] px-7 bg-brand-red text-white font-semibold rounded-full hover:bg-brand-red-hover transition-all hover:-translate-y-0.5 gap-2 text-[15px] shadow-[0_10px_30px_rgba(197,34,4,0.3)]"
             >
-              Or call 604-281-1828
+              See This Week&apos;s Deals
+              <ArrowRight className="w-4 h-4" />
+            </a>
+            <a
+              href="#register"
+              className="inline-flex items-center justify-center h-[52px] px-7 border-2 border-eightyw-blue bg-white text-eightyw-blue font-semibold rounded-full hover:bg-eightyw-blue hover:text-white transition-all gap-2 text-[15px]"
+            >
+              Book a Free Consultation
             </a>
           </div>
+          <p className="text-text-muted text-xs mt-4">
+            We call back within 24 hours · Mon–Sat, 8 AM – 8 PM PT
+          </p>
         </div>
       </div>
     </section>
   );
 }
 
-export function ForeclosureLeadForm({ formLocation = "hero_inline" }: ForeclosureHeroProps) {
+export function ForeclosureLeadForm({ formLocation = "hero_inline", selectedProperty, bare = false }: ForeclosureHeroProps) {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
@@ -181,6 +170,7 @@ export function ForeclosureLeadForm({ formLocation = "hero_inline" }: Foreclosur
       areas: form.areas.join(","),
       source: "foreclosure-deals-vancouver",
       form_location: formLocation,
+      ...(selectedProperty ? { selected_property: selectedProperty } : {}),
       page_url: window.location.href,
       consent: "implied_inline",
       privacy_consent: "on",
@@ -222,9 +212,9 @@ export function ForeclosureLeadForm({ formLocation = "hero_inline" }: Foreclosur
 
   if (submitted) {
     return (
-      <div className="bg-white rounded-2xl shadow-2xl border-t-4 border-brand-red overflow-hidden p-8 md:p-10 text-center">
-        <div className="w-14 h-14 bg-eightyw-cta/15 rounded-full flex items-center justify-center mx-auto mb-4">
-          <Check className="w-7 h-7 text-eightyw-cta" />
+      <div className={bare ? "p-6 md:p-8 text-center" : "bg-white rounded-2xl shadow-2xl border-t-4 border-brand-red overflow-hidden p-8 md:p-10 text-center"}>
+        <div className="w-14 h-14 bg-brand-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
+          <Check className="w-7 h-7 text-brand-red" />
         </div>
         <h3 className="text-eightyw-blue text-xl font-bold mb-2">Your consultation is booked.</h3>
         <p className="text-text-secondary text-sm">
@@ -238,7 +228,7 @@ export function ForeclosureLeadForm({ formLocation = "hero_inline" }: Foreclosur
   }
 
   return (
-    <div className="bg-white rounded-2xl shadow-2xl border-t-4 border-brand-red overflow-hidden">
+    <div className={bare ? "" : "bg-white rounded-2xl shadow-2xl border-t-4 border-brand-red overflow-hidden"}>
       <div className="p-5 md:p-6">
         <div className="mb-4 pl-3 border-l-2 border-brand-red">
           <h3 className="text-eightyw-blue text-lg md:text-xl font-bold leading-tight">

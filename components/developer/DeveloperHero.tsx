@@ -43,12 +43,14 @@ const TIMEFRAME_OPTIONS = [
 ];
 
 interface DeveloperHeroProps {
-  formLocation?: "hero_inline" | "final_cta";
+  formLocation?: "hero_inline" | "final_cta" | "deals_section" | "property_modal";
+  selectedProperty?: string;
+  bare?: boolean;
 }
 
-export default function DeveloperHero({ formLocation = "hero_inline" }: DeveloperHeroProps) {
+export default function DeveloperHero() {
   return (
-    <section className="relative bg-white overflow-hidden">
+    <section className="relative bg-white overflow-hidden min-h-[520px] md:min-h-[600px] flex items-center">
       <Image
         src="/images/developer/hero-vancouver-skyline.jpg"
         alt="Greater Vancouver downtown skyline — modern condo towers along Burrard Inlet with North Shore mountains."
@@ -57,80 +59,62 @@ export default function DeveloperHero({ formLocation = "hero_inline" }: Develope
         sizes="100vw"
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/75 to-white/10 lg:to-transparent pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-white/30 lg:to-transparent pointer-events-none" />
-      <div className="max-w-[1200px] mx-auto px-5 md:px-6 relative py-16 md:py-24">
-        <div className="grid lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 items-start">
-          <div className="max-w-[640px]">
-            <p className="text-brand-red text-[13px] font-semibold uppercase tracking-[2px] mb-4">
-              GREATER VANCOUVER · PRE-SALE SPECIALIST
+      <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-white/30 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-transparent to-white/40 pointer-events-none" />
+      <div className="max-w-[1200px] mx-auto px-5 md:px-6 relative py-14 md:py-20 w-full">
+        <div className="max-w-[720px]">
+          <p className="text-brand-red text-[12px] md:text-[13px] font-semibold uppercase tracking-[2px] mb-4">
+            GREATER VANCOUVER · PRE-SALE SPECIALIST
+          </p>
+          <h1 className="text-eightyw-blue text-[32px] md:text-[56px] font-bold leading-[1.05] mb-5">
+            $100,000 Off a New Vancouver Condo.
+          </h1>
+          <p className="text-text-secondary text-base md:text-xl leading-relaxed mb-6 max-w-[600px]">
+            <span className="lg:hidden">
+              Buyer-side specialist. Free 20-minute consultation. We negotiate the developer&apos;s incentive stack on your behalf.
+            </span>
+            <span className="hidden lg:inline">
+              5,458 unsold condos sit across Vancouver, Burnaby, Richmond and North Van — a 24-year high.
+              We hunt the right project for you and negotiate the stack on your behalf, building by building.
+            </span>
+          </p>
+          <div className="bg-white border border-eightyw-border rounded-2xl p-4 md:p-5 mb-6 shadow-sm max-w-[600px]">
+            <p className="text-[11px] text-brand-red font-semibold uppercase tracking-wider mb-2">
+              A STACK WE NEGOTIATED THIS WEEK
             </p>
-            <h1 className="text-eightyw-blue text-[28px] md:text-[52px] font-bold leading-[1.08] mb-5">
-              $100,000 Off a New Vancouver Condo.
-            </h1>
-            <p className="text-text-secondary text-base md:text-[18px] leading-relaxed mb-6 max-w-[580px]">
-              <span className="lg:hidden">
-                Buyer-side specialist. Free 20-minute consultation. We negotiate the developer&apos;s incentive stack on your behalf.
-              </span>
-              <span className="hidden lg:inline">
-                5,458 unsold condos sit across Vancouver, Burnaby, Richmond and North Van — a 24-year high.
-                Builders aren&apos;t cutting list prices; they&apos;re stacking cash credits, free parking,
-                rate buy-downs and waived assignment fees instead. We hunt the right project for you and
-                negotiate the stack on your behalf, building by building.
-              </span>
+            <p className="text-eightyw-blue text-base md:text-lg font-semibold leading-snug mb-1">
+              $94,500 off — $40K decorating credit + $48K parking &amp; storage + 1.99% rate buy-down (12&nbsp;mo)
             </p>
-            <div className="bg-white border border-eightyw-border rounded-2xl p-4 md:p-5 mb-6 shadow-sm">
-              <p className="text-[11px] text-brand-red font-semibold uppercase tracking-wider mb-2">
-                A STACK WE NEGOTIATED THIS WEEK
-              </p>
-              <p className="text-eightyw-blue text-base md:text-lg font-semibold leading-snug mb-1">
-                $94,500 off — $40K decorating credit + $48K parking &amp; storage + 1.99% rate buy-down (12&nbsp;mo)
-              </p>
-              <p className="text-text-muted text-xs md:text-sm">
-                Brentwood high-rise · 17 active stacks across our watch-list
-              </p>
-            </div>
-
-            <p className="text-eightyw-blue text-base md:text-lg font-semibold mb-6">
-              We don&apos;t represent the developer — only you.
-            </p>
-
-            <div className="hidden lg:flex flex-col sm:flex-row gap-3">
-              <a
-                href="#register"
-                className="inline-flex items-center justify-center h-[52px] px-7 bg-brand-red text-white font-semibold rounded-full hover:bg-brand-red-hover transition-all hover:-translate-y-0.5 gap-2 text-[15px] shadow-[0_10px_30px_rgba(197,34,4,0.3)]"
-              >
-                Book a Free Consultation
-                <ArrowRight className="w-4 h-4" />
-              </a>
-              <a
-                href="tel:+16042811828"
-                className="inline-flex items-center justify-center h-[52px] px-7 border-2 border-eightyw-border bg-white text-eightyw-blue font-semibold rounded-full hover:border-eightyw-blue/40 transition-all gap-2 text-[15px]"
-              >
-                Call 604-281-1828
-              </a>
-            </div>
-            <p className="hidden lg:block text-text-muted text-xs mt-3">
-              We call back within 24 hours · Mon–Sat, 8 AM – 8 PM PT
+            <p className="text-text-muted text-xs md:text-sm">
+              Brentwood high-rise · 17 active stacks across our watch-list
             </p>
           </div>
 
-          <div className="mt-2 lg:mt-0">
-            <DeveloperLeadForm formLocation={formLocation} />
+          <div className="flex flex-col sm:flex-row gap-3">
             <a
-              href="tel:+16042811828"
-              className="lg:hidden mt-4 inline-flex items-center justify-center w-full h-[48px] border-2 border-eightyw-border bg-white text-eightyw-blue font-semibold rounded-full hover:border-eightyw-blue/40 transition-all gap-2 text-[15px]"
+              href="#deals"
+              className="inline-flex items-center justify-center h-[52px] px-7 bg-brand-red text-white font-semibold rounded-full hover:bg-brand-red-hover transition-all hover:-translate-y-0.5 gap-2 text-[15px] shadow-[0_10px_30px_rgba(197,34,4,0.3)]"
             >
-              Or call 604-281-1828
+              See This Week&apos;s Stacks
+              <ArrowRight className="w-4 h-4" />
+            </a>
+            <a
+              href="#register"
+              className="inline-flex items-center justify-center h-[52px] px-7 border-2 border-eightyw-blue bg-white text-eightyw-blue font-semibold rounded-full hover:bg-eightyw-blue hover:text-white transition-all gap-2 text-[15px]"
+            >
+              Book a Free Consultation
             </a>
           </div>
+          <p className="text-text-muted text-xs mt-4">
+            We don&apos;t represent the developer — only you · We call back within 24 hours
+          </p>
         </div>
       </div>
     </section>
   );
 }
 
-export function DeveloperLeadForm({ formLocation = "hero_inline" }: DeveloperHeroProps) {
+export function DeveloperLeadForm({ formLocation = "hero_inline", selectedProperty, bare = false }: DeveloperHeroProps) {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
@@ -204,6 +188,7 @@ export function DeveloperLeadForm({ formLocation = "hero_inline" }: DeveloperHer
       source: "developer-condo-deals-vancouver",
       lead_magnet: "developer-incentive-tracker",
       form_location: formLocation,
+      ...(selectedProperty ? { selected_property: selectedProperty } : {}),
       page_url: window.location.href,
       consent: "implied_inline",
       privacy_consent: "on",
@@ -245,7 +230,7 @@ export function DeveloperLeadForm({ formLocation = "hero_inline" }: DeveloperHer
 
   if (submitted) {
     return (
-      <div className="bg-white rounded-2xl shadow-2xl border-t-4 border-brand-red overflow-hidden p-8 md:p-10 text-center">
+      <div className={bare ? "p-6 md:p-8 text-center" : "bg-white rounded-2xl shadow-2xl border-t-4 border-brand-red overflow-hidden p-8 md:p-10 text-center"}>
         <div className="w-14 h-14 bg-brand-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
           <Check className="w-7 h-7 text-brand-red" />
         </div>
@@ -260,7 +245,7 @@ export function DeveloperLeadForm({ formLocation = "hero_inline" }: DeveloperHer
   }
 
   return (
-    <div className="bg-white rounded-2xl shadow-2xl border-t-4 border-brand-red overflow-hidden">
+    <div className={bare ? "" : "bg-white rounded-2xl shadow-2xl border-t-4 border-brand-red overflow-hidden"}>
       <div className="p-5 md:p-6">
         <div className="mb-4 pl-3 border-l-2 border-brand-red">
           <h3 className="text-eightyw-blue text-lg md:text-xl font-bold leading-tight">

@@ -7,8 +7,8 @@ import { Phone, Menu, X } from "lucide-react";
 import { COMPANY } from "@/lib/constants";
 
 const NAV_ITEMS = [
+  { label: "This Week's Deals", href: "#deals" },
   { label: "How It Works", href: "#process" },
-  { label: "What We've Tracked", href: "#inventory" },
   { label: "FAQ", href: "#faq" },
 ];
 

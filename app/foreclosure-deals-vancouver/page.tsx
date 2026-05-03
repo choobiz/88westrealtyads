@@ -5,6 +5,7 @@ import ConsultationStickyMobileCTA from "@/components/shared/ConsultationStickyM
 import CookieConsent from "@/components/medical/CookieConsent";
 import ForeclosureHero from "@/components/foreclosure/ForeclosureHero";
 import InventoryPreview from "@/components/foreclosure/InventoryPreview";
+import ForeclosureFormSection from "@/components/foreclosure/ForeclosureFormSection";
 import MortgageCliffCallout from "@/components/foreclosure/MortgageCliffCallout";
 import ProcessExplainer from "@/components/foreclosure/ProcessExplainer";
 import AudienceSplit from "@/components/foreclosure/AudienceSplit";
@@ -89,6 +90,7 @@ export default function ForeclosurePage() {
       <ForeclosureNavbar />
       <ForeclosureHero />
       <InventoryPreview />
+      <ForeclosureFormSection />
       <MortgageCliffCallout />
       <ProcessExplainer />
       <AudienceSplit />

@@ -1,4 +1,10 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
+import { ArrowRight } from "lucide-react";
+import LeadFormModal from "@/components/shared/LeadFormModal";
+import { DeveloperLeadForm } from "./DeveloperHero";
 
 const TILES: {
   name: string;
@@ -109,8 +115,9 @@ const TILES: {
 ];
 
 export default function TrackerPreview() {
+  const [openProperty, setOpenProperty] = useState<string | null>(null);
   return (
-    <section id="tracker" className="bg-white py-16 lg:py-24">
+    <section id="deals" className="bg-white py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-4">
           <h2 className="text-3xl md:text-4xl font-bold text-eightyw-blue mb-4">
@@ -131,9 +138,11 @@ export default function TrackerPreview() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
           {TILES.map((t, i) => (
-            <article
+            <button
+              type="button"
               key={i}
-              className="bg-white border border-eightyw-border rounded-2xl overflow-hidden hover:shadow-lg hover:border-brand-red/40 transition-all flex flex-col"
+              onClick={() => setOpenProperty(`${t.name} — ${t.area} · ${t.total} stacked`)}
+              className="text-left bg-white border border-eightyw-border rounded-2xl overflow-hidden hover:shadow-lg hover:border-brand-red/50 hover:-translate-y-0.5 transition-all flex flex-col cursor-pointer focus:outline-none focus:ring-2 focus:ring-brand-red/40 focus:ring-offset-2"
             >
               <div className="relative aspect-[4/3] bg-eightyw-light">
                 <Image
@@ -171,27 +180,33 @@ export default function TrackerPreview() {
                 ))}
               </ul>
 
-                <p className="text-xs text-text-muted border-t border-eightyw-border pt-3">
-                  <span className="font-semibold text-eightyw-blue">Expires:</span> {t.expires}
-                </p>
+                <div className="flex items-center justify-between gap-3 border-t border-eightyw-border pt-3">
+                  <p className="text-xs text-text-muted">
+                    <span className="font-semibold text-eightyw-blue">Expires:</span> {t.expires}
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-brand-red text-xs font-semibold whitespace-nowrap">
+                    Get details <ArrowRight className="w-3.5 h-3.5" />
+                  </span>
+                </div>
               </div>
-            </article>
+            </button>
           ))}
         </div>
 
-        <div className="text-center">
-          <p className="text-text-secondary text-sm md:text-base mb-5 max-w-2xl mx-auto">
-            We track absorption status on 40+ Greater Vancouver projects in real time — and know
-            which ones are open to a backchannel offer beyond what the developer publishes.
-          </p>
-          <a
-            href="#register"
-            className="inline-flex items-center justify-center h-[52px] px-8 bg-brand-red text-white font-semibold rounded-full hover:bg-brand-red-hover transition-all hover:-translate-y-0.5 gap-2 text-[15px] shadow-[0_10px_30px_rgba(197,34,4,0.3)]"
-          >
-            Book a Free Consultation →
-          </a>
-        </div>
+        <p className="text-center text-text-muted text-xs md:text-sm">
+          Click any project above to book a free consultation — your specialist will walk you
+          through the full stack within 24 hours.
+        </p>
       </div>
+
+      <LeadFormModal
+        open={openProperty !== null}
+        onClose={() => setOpenProperty(null)}
+        contextHeadline="GET DETAILS ON THIS STACK"
+        contextSubtitle={openProperty ?? undefined}
+      >
+        <DeveloperLeadForm formLocation="property_modal" selectedProperty={openProperty ?? undefined} bare />
+      </LeadFormModal>
     </section>
   );
 }
