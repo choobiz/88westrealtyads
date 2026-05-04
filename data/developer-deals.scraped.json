@@ -1,0 +1,136 @@
+{
+  "source": "mikestewart.ca/vancouver-presale-condo-incentives",
+  "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
+  "scrapedAt": "2026-05-04T21:55:26.767Z",
+  "parserVersion": "1.0",
+  "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
+  "count": 18,
+  "projects": [
+    {
+      "project_name": "West 57th at Cambie Gardens Vancouver – Prices & Floor Plans",
+      "city": "Vancouver",
+      "incentive_summary": "best value on Vancouver’s Westside, Save up to $100,000 at Gilmore Place, Save up to $58,000 at Cambie Gardens, Save ...",
+      "project_url": "https://www.mikestewart.ca/presale/west-57th-at-cambie-gardens-vancouver-prices-floor-plans/",
+      "headline_dollar": "$100,000"
+    },
+    {
+      "project_name": "Ironwood Coquitlam 609 Tyndall Street – Plans & Pricing",
+      "city": "Coquitlam",
+      "incentive_summary": "GST REBATES UP TO $50,000 OFF NEW HOMES UNDER $1M FOR FTHB*, Prices are inclusive of current incentives., GST Rebates...",
+      "project_url": "https://www.mikestewart.ca/presale/ironwood-coquitlam-by-qualex-landmark-plans-pricing/",
+      "headline_dollar": "$1M"
+    },
+    {
+      "project_name": "Moody Yards By Mosaic Homes – 3075 & 3055 Murray Street",
+      "city": "Port Moody",
+      "incentive_summary": "Invitation to an exclusive Realtor Open event., Enter to win $750 in prize draws at the event., Brand new homes ready...",
+      "project_url": "https://www.mikestewart.ca/presale/moody-yards-port-moody-centre-presale-condos-by-mosaic-homes/",
+      "headline_dollar": "$750"
+    },
+    {
+      "project_name": "6531 Fremlin Street – Eila on W49 by Alabaster",
+      "city": "Vancouver",
+      "incentive_summary": "GST included on the final home, $76,000 in additional savings on the final home, GST included ($76,000 in additional ...",
+      "project_url": "https://www.mikestewart.ca/presale/eila-on-west-49th/",
+      "headline_dollar": "$76,000"
+    },
+    {
+      "project_name": "King & Columbia by Forme Development",
+      "city": "Vancouver",
+      "incentive_summary": "Lunar New Year Savings: Up to $108,000 in Credits, Private Credits of up to $108,000 on a curated selection of homes ...",
+      "project_url": "https://www.mikestewart.ca/presale/king-and-columbia-cambie-corridor-bancouver-presale-townhomes-by-forme-development/",
+      "headline_dollar": "$108,000"
+    },
+    {
+      "project_name": "Florin Coquitlam by Allaire Living – Prices, Plans, Availability",
+      "city": "Coquitlam",
+      "incentive_summary": "final release promotions offering savings up to $109,495, Savings up to $109,495, 5% Savings, 5% Deposit, 5% Deposit ...",
+      "project_url": "https://www.mikestewart.ca/presale/rochester-burquitlam-coquitlam-presale-condos-townhomes-by-allaire-living/",
+      "headline_dollar": "$109,495,"
+    },
+    {
+      "project_name": "Frame Vancouver – 2727 Kingsway & 5189 Earles Street – Floor Plans & Prices",
+      "city": "Vancouver",
+      "incentive_summary": "1-Bed + Den: $3,000 buyer incentive, Jr. 2-Bed + Den: $6,000 buyer incentive, 2-Bed & 2-Bath + Den: $6,000 buyer ince...",
+      "project_url": "https://www.mikestewart.ca/presale/frame-vancouver-by-coromandel-and-peterson-plans-availability-prices/",
+      "headline_dollar": "$6,000"
+    },
+    {
+      "project_name": "The Robinsons Coquitlam by Formwerks – Prices & Plans",
+      "city": "Coquitlam",
+      "incentive_summary": "New GST relief for qualifying first-time buyers on new homes, 3 move-in-ready homes available starting from $979,900,...",
+      "project_url": "https://www.mikestewart.ca/presale/robinsons-by-formwerks-burquitlam-presale-townhouses/",
+      "headline_dollar": "$979,900,"
+    },
+    {
+      "project_name": "Queens on King George by Dawson + Sawyer – Plans & Pricing",
+      "city": "Surrey",
+      "incentive_summary": "We will be starting the new year with a promotion that is guaranteed to blow you away., We will be starting the new y...",
+      "project_url": "https://www.mikestewart.ca/presale/queens-on-king-george-surrey/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Skye at Holly Park by Bramor – Floorplans & Pricing",
+      "city": "Delta",
+      "incentive_summary": "Festive limited-time HOLIDAY PROMOTION! *Terms and conditions apply, please ask us for details., One-time Black Frida...",
+      "project_url": "https://www.mikestewart.ca/presale/skye-at-holly-park-delta-presales/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "6468 Willingdon Avenue- The Standard by Anthem",
+      "city": "Burnaby",
+      "incentive_summary": "New Pricing, Move-in ready and standing with confidence, 10 homes sold last month, B2 Plan (1 Bedroom) starting from ...",
+      "project_url": "https://www.mikestewart.ca/presale/the-standard-by-anthem/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Timber House – 310 Salter Street",
+      "city": "New Westminster",
+      "incentive_summary": "New reduced prices on all home types., Preferred mortgage rates with RBC for potential purchasers., Potential purchas...",
+      "project_url": "https://www.mikestewart.ca/presale/310-salter/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Hue Port Moody by Marcon @ 2015 St. Johns Street & 125 Albert Street",
+      "city": "Port Moody",
+      "incentive_summary": "Receive a complimentary eucalyptus room spray by attending the Open House., Limited quantities available on a first-c...",
+      "project_url": "https://www.mikestewart.ca/presale/hue-seaview-port-moody-presale-condos-by-marcon-developments/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Italia by Solterra – 2323 Fir Street",
+      "city": "Vancouver",
+      "incentive_summary": "For Monaco project: A few final units remain including the rare opportunity to own a penthouse unit!, For a limited t...",
+      "project_url": "https://www.mikestewart.ca/presale/solterra-italia/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Bromley Langley — Prices & Floor Plans",
+      "city": "Langley",
+      "incentive_summary": "1% initial deposit to start, Total deposit of 5% payable in stages through construction, 15 customization options ava...",
+      "project_url": "https://www.mikestewart.ca/presale/bromley-langley-prices-floor-plans/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Arte Squamish – Pricing & Floor Plans",
+      "city": "Squamish",
+      "incentive_summary": "Pre-construction pricing available before the community breaks ground and pricing changes, First pick of final units ...",
+      "project_url": "https://www.mikestewart.ca/presale/arte-squamish-pricing-floor-plans/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Origin at The Beachlands by Reliance-Seacliff – Plans & Prices",
+      "city": "Colwood",
+      "incentive_summary": "Hosting a special Crazy Cookie House pop-up at the Experience Centre., Enjoy fresh treats from the beloved bakery whi...",
+      "project_url": "https://www.mikestewart.ca/presale/origin-at-the-beachlands-colwood/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "The Glenmont by PCC Construction – Plans, Availability, Prices",
+      "city": "Surrey",
+      "incentive_summary": "New Pricing, Final Release of Trailside Homes",
+      "project_url": "https://www.mikestewart.ca/presale/the-glenmont-grandview-heights-south-surrey-presale-townhomes-by-pcc-construction/",
+      "headline_dollar": null
+    }
+  ]
+}

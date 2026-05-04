@@ -5,8 +5,9 @@ import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import LeadFormModal from "@/components/shared/LeadFormModal";
 import { DeveloperLeadForm } from "./DeveloperHero";
+import dealsData from "@/data/developer-deals.json";
 
-const TILES: {
+type DeveloperDeal = {
   name: string;
   area: string;
   total: string;
@@ -16,103 +17,9 @@ const TILES: {
   expires: string;
   image: string;
   imageAlt: string;
-}[] = [
-  {
-    name: "Solhaven 6035",
-    area: "Brentwood (Burnaby)",
-    total: "$94,500",
-    concessions: [
-      "$40,000 decorating credit",
-      "$48,000 parking + storage included",
-      "1.99% mortgage rate buy-down (12 months)",
-      "Free strata fees, year one (~$6,500)",
-    ],
-    stage: "Standing Inventory",
-    unitsLeft: 11,
-    expires: "When project hits 70% sold",
-    image: "/images/shared/properties/condo-modern-glass.jpg",
-    imageAlt: "Modern glass-tower condo facade — illustrative example of a Standing Inventory building.",
-  },
-  {
-    name: "The Pier West",
-    area: "Lower Lonsdale (North Vancouver)",
-    total: "$78,200",
-    concessions: [
-      "$35,000 cash credit at completion",
-      "Parking included ($38K value)",
-      "Assignment fee waived (typically $5,200)",
-    ],
-    stage: "Construction",
-    unitsLeft: 6,
-    expires: "June 30, 2026",
-    image: "/images/shared/properties/condo-courtyard.jpg",
-    imageAlt: "Modern apartment complex with landscaped courtyard — illustrative example of a Construction-stage project.",
-  },
-  {
-    name: "Aalto on Marine",
-    area: "Cambie (Vancouver)",
-    total: "$112,000",
-    concessions: [
-      "$55,000 buyer's bonus (cash at closing)",
-      "5% deposit structure",
-      "Free upgraded appliance package ($18K value)",
-      "2.49% rate buy-down (24 mo, ~$24K NPV)",
-      "$15,000 closing-cost coverage",
-    ],
-    stage: "Public Launch",
-    unitsLeft: 22,
-    expires: "When project hits 60% sold",
-    image: "/images/shared/properties/condo-minimalist.jpg",
-    imageAlt: "Minimalist contemporary apartment facade — illustrative example of a Public Launch project.",
-  },
-  {
-    name: "Park & Lansdowne",
-    area: "Richmond Centre (Richmond)",
-    total: "$68,400",
-    concessions: [
-      "GST included on units up to $1.05M (~$45K saved)",
-      "Parking included ($28K)",
-      "Quick-close: $5,400 cash if firm by May 15",
-    ],
-    stage: "Standing Inventory",
-    unitsLeft: 19,
-    expires: "May 15, 2026 (quick-close component)",
-    image: "/images/shared/properties/townhouse-brick.jpg",
-    imageAlt: "Brick low-rise residential exterior — illustrative example of an urban Standing Inventory project.",
-  },
-  {
-    name: "Citizen Brewery District",
-    area: "Edmonds (Burnaby)",
-    total: "$56,000",
-    concessions: [
-      "$30,000 decorating allowance",
-      "One-year strata-fee holiday (~$5,800)",
-      "Storage locker included ($12K)",
-      "$8,200 closing-cost coverage",
-    ],
-    stage: "Construction",
-    unitsLeft: 14,
-    expires: "July 1, 2026",
-    image: "/images/shared/properties/detached-craftsman.jpg",
-    imageAlt: "Craftsman-style two-story home with porch — illustrative example of a mixed-use project area.",
-  },
-  {
-    name: "Marine Gateway South",
-    area: "Marpole (Vancouver)",
-    total: "$83,750",
-    concessions: [
-      "$50,000 buyer's bonus (cash at closing)",
-      "5% deposit",
-      "Parking + storage included ($24K)",
-      "Rate buy-down to 2.99% for 12 mo (~$9,750 NPV)",
-    ],
-    stage: "Standing Inventory",
-    unitsLeft: 8,
-    expires: "Until 80% sold (currently 71%)",
-    image: "/images/shared/properties/detached-suburban.jpg",
-    imageAlt: "Suburban detached home with garden — illustrative example of a transit-oriented Standing Inventory project.",
-  },
-];
+};
+
+const TILES: DeveloperDeal[] = dealsData.deals as DeveloperDeal[];
 
 export default function TrackerPreview() {
   const [openProperty, setOpenProperty] = useState<string | null>(null);

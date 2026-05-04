@@ -5,8 +5,9 @@ import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import LeadFormModal from "@/components/shared/LeadFormModal";
 import { ForeclosureLeadForm } from "./ForeclosureHero";
+import dealsData from "@/data/foreclosure-deals.json";
 
-const SAMPLE_LISTINGS: {
+type ForeclosureDeal = {
   type: string;
   area: string;
   street: string;
@@ -20,68 +21,9 @@ const SAMPLE_LISTINGS: {
   tag: string;
   image: string;
   imageAlt: string;
-}[] = [
-  {
-    type: "Detached",
-    area: "Vancouver (Hastings-Sunrise)",
-    street: "████ E 26th Ave, Vancouver",
-    beds: "4 bed", baths: "2 bath", sqft: "1,820 sqft",
-    listed: "$1.28M", assessed: "$1.42M", courtDate: "Jul 15",
-    daysOnMarket: 142, tag: "Schedule A required",
-    image: "/images/shared/properties/detached-craftsman.jpg",
-    imageAlt: "Sample detached Vancouver residential exterior — illustrative court-ordered listing placeholder.",
-  },
-  {
-    type: "Townhouse",
-    area: "Burnaby (Highgate)",
-    street: "████ Marlborough Ave, Burnaby",
-    beds: "3 bed", baths: "2.5 bath", sqft: "1,510 sqft",
-    listed: "$898K", assessed: "$964K", courtDate: "Jun 28",
-    daysOnMarket: 87, tag: "Vacant — easy showings",
-    image: "/images/shared/properties/townhouse-brick.jpg",
-    imageAlt: "Sample Burnaby townhouse exterior — illustrative court-ordered listing placeholder.",
-  },
-  {
-    type: "Condo",
-    area: "Richmond (Brighouse)",
-    street: "████ No. 3 Rd, Richmond",
-    beds: "2 bed", baths: "2 bath", sqft: "905 sqft",
-    listed: "$649K", assessed: "$702K", courtDate: "Jul 8",
-    daysOnMarket: 113, tag: "Owner-occupier friendly",
-    image: "/images/shared/properties/condo-minimalist.jpg",
-    imageAlt: "Sample Richmond condo facade — illustrative court-ordered listing placeholder.",
-  },
-  {
-    type: "Detached",
-    area: "North Vancouver (Lynn Valley)",
-    street: "████ Mountain Hwy, North Vancouver",
-    beds: "5 bed", baths: "3 bath", sqft: "2,640 sqft",
-    listed: "$1.80M", assessed: "$1.95M", courtDate: "Aug 12",
-    daysOnMarket: 168, tag: "Tenanted — 60-day notice",
-    image: "/images/shared/properties/detached-suburban.jpg",
-    imageAlt: "Sample North Vancouver detached home — illustrative court-ordered listing placeholder.",
-  },
-  {
-    type: "Condo",
-    area: "Vancouver (Mount Pleasant)",
-    street: "████ Quebec St, Vancouver",
-    beds: "1 bed + den", baths: "1 bath", sqft: "712 sqft",
-    listed: "$568K", assessed: "$612K", courtDate: "Jun 18",
-    daysOnMarket: 96, tag: "First-time buyer eligible",
-    image: "/images/shared/properties/condo-modern-glass.jpg",
-    imageAlt: "Sample Vancouver mid-rise condo exterior — illustrative court-ordered listing placeholder.",
-  },
-  {
-    type: "Half-duplex",
-    area: "Burnaby (East Burnaby)",
-    street: "████ 14th Ave, Burnaby",
-    beds: "4 bed", baths: "3 bath", sqft: "2,180 sqft",
-    listed: "$1.15M", assessed: "$1.24M", courtDate: "Jul 22",
-    daysOnMarket: 124, tag: "Schedule A required",
-    image: "/images/shared/properties/condo-courtyard.jpg",
-    imageAlt: "Sample East Burnaby low-rise residential exterior — illustrative court-ordered listing placeholder.",
-  },
-];
+};
+
+const SAMPLE_LISTINGS: ForeclosureDeal[] = dealsData.deals;
 
 export default function InventoryPreview() {
   const [openProperty, setOpenProperty] = useState<string | null>(null);
