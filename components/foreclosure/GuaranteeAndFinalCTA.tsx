@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import foreclosureStats from "@/data/foreclosure-stats.json";
 
 export default function GuaranteeAndFinalCTA() {
   return (
@@ -23,7 +24,7 @@ export default function GuaranteeAndFinalCTA() {
             <ArrowRight className="w-4 h-4" />
           </a>
           <p className="text-text-muted text-xs mt-4">
-            We&apos;re tracking ~389 active BC court-ordered listings right now.
+            We&apos;re tracking ~{foreclosureStats.marketingNumber} active BC court-ordered listings right now.
           </p>
         </div>
       </div>

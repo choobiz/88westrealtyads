@@ -1,0 +1,58 @@
+name: scrape-daily
+
+# Runs the deal-data scrapers every morning and commits any updates back
+# to main. Vercel auto-deploys on the resulting push.
+#
+# Sources:
+#   - scripts/scrape-deals.mjs            → data/developer-deals.scraped.json
+#                                          (Mike Stewart pre-sale incentives)
+#   - scripts/scrape-foreclosure-stats.mjs → data/foreclosure-stats.json
+#                                          (active count from public aggregators)
+#
+# Cadence: 13:00 UTC = 6:00 AM PT, daily.
+# Manual: workflow_dispatch lets us trigger ad-hoc from the Actions tab.
+
+on:
+  schedule:
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Run scrapers
+        run: npm run scrape:all
+
+      - name: Commit and push (if changes)
+        run: |
+          git config user.name "88w-bot"
+          git config user.email "bot@88westrealty.com"
+          git add data/developer-deals.scraped.json data/foreclosure-stats.json
+          if git diff --staged --quiet; then
+            echo "[scrape-daily] no changes — skipping commit"
+            exit 0
+          fi
+          # Pull a one-line summary into the commit message body
+          DEV_COUNT=$(node -e "console.log(require('./data/developer-deals.scraped.json').count || 0)")
+          FCL_BEST=$(node -e "console.log(require('./data/foreclosure-stats.json').bestEstimate || 0)")
+          FCL_MARKETING=$(node -e "console.log(require('./data/foreclosure-stats.json').marketingNumber || 0)")
+          git commit -m "scrape-daily: ${DEV_COUNT} dev incentives · ${FCL_BEST}/${FCL_MARKETING} foreclosure stat"
+          git push origin HEAD:main

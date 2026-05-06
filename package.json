@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "scrape:deals": "node scripts/scrape-deals.mjs"
+    "scrape:deals": "node scripts/scrape-deals.mjs",
+    "scrape:foreclosure-stats": "node scripts/scrape-foreclosure-stats.mjs",
+    "scrape:all": "npm run scrape:deals && npm run scrape:foreclosure-stats"
   },
   "dependencies": {
     "gsap": "^3.14.2",

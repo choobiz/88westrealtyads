@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import LeadFormModal from "@/components/shared/LeadFormModal";
 import { ForeclosureLeadForm } from "./ForeclosureHero";
 import dealsData from "@/data/foreclosure-deals.json";
+import foreclosureStats from "@/data/foreclosure-stats.json";
 
 type ForeclosureDeal = {
   type: string;
@@ -42,7 +43,7 @@ export default function InventoryPreview() {
         </div>
 
         <p className="text-center text-xs text-text-muted mb-8">
-          Sample shown for illustration. We&apos;re currently tracking ~389 active BC
+          Sample shown for illustration. We&apos;re currently tracking ~{foreclosureStats.marketingNumber} active BC
           court-ordered listings — your specialist shortlists the right handful for you
           on the intro call.
         </p>

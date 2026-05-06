@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState, useEffect, type FormEvent } from "react";
 import { ArrowRight, Check, Loader2 } from "lucide-react";
 import { FORECLOSURE_WEBHOOK_URL, TRACKING } from "@/lib/constants";
+import foreclosureStats from "@/data/foreclosure-stats.json";
 
 declare global {
   interface Window {
@@ -76,7 +77,7 @@ export default function ForeclosureHero() {
           </p>
           <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 bg-white border border-eightyw-border rounded-full text-eightyw-text text-xs md:text-sm shadow-sm">
             <span className="inline-block w-2 h-2 rounded-full bg-brand-red animate-pulse" />
-            ~389 active BC court-ordered listings right now
+            ~{foreclosureStats.marketingNumber} active BC court-ordered listings right now
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3">
@@ -226,7 +227,7 @@ export function ForeclosureLeadForm({
         <p className="text-text-secondary text-sm">
           Your buyer-side foreclosure specialist will call within 24 hours to get specific
           about what you&apos;re looking for and walk you through a personal shortlist from
-          the ~389 active BC court-ordered listings we already monitor. No pressure,
+          the ~{foreclosureStats.marketingNumber} active BC court-ordered listings we already monitor. No pressure,
           no obligation, no fee.
         </p>
       </div>

@@ -1,9 +1,10 @@
 import Image from "next/image";
+import foreclosureStats from "@/data/foreclosure-stats.json";
 
 const INVESTOR_BULLETS: { strong: string; rest: string }[] = [
   {
     strong: "The volume is the moat.",
-    rest: "~389 active BC court-ordered listings means you're shopping a real pipeline, not a once-a-quarter unicorn. Your specialist sends a buy-box-matched shortlist with comp anchors, gross-yield estimates at current CMHC market rents, and a bring-current cost band on each property.",
+    rest: `~${foreclosureStats.marketingNumber} active BC court-ordered listings means you're shopping a real pipeline, not a once-a-quarter unicorn. Your specialist sends a buy-box-matched shortlist with comp anchors, gross-yield estimates at current CMHC market rents, and a bring-current cost band on each property.`,
   },
   {
     strong: "Court-date strategy is the unlock.",

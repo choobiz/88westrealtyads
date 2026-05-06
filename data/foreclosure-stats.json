@@ -1,0 +1,45 @@
+{
+  "scrapedAt": "2026-05-06T14:07:13.925Z",
+  "sources": [
+    {
+      "name": "Simon Clayton (Macdonald Realty)",
+      "url": "https://simonclayton.ca/foreclosures/",
+      "ok": true,
+      "mlsCount": 12
+    },
+    {
+      "name": "Macnabs (Royal LePage Elite West)",
+      "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/",
+      "ok": true,
+      "mlsCount": 12
+    },
+    {
+      "name": "Realtyvibe (Sutton Premier)",
+      "url": "https://realtyvibe.ca/vancouver-foreclosures-for-sale/",
+      "ok": false,
+      "mlsCount": 0,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "name": "Real Estate Coal Harbour — Vancouver",
+      "url": "https://realestatecoalharbour.com/vancouver-foreclosure-listings",
+      "ok": true,
+      "mlsCount": 0
+    },
+    {
+      "name": "Real Estate Coal Harbour — North Van",
+      "url": "https://realestatecoalharbour.com/north-vancouver-foreclosure-listings",
+      "ok": true,
+      "mlsCount": 0
+    },
+    {
+      "name": "Real Estate Coal Harbour — Burnaby",
+      "url": "https://realestatecoalharbour.com/burnaby-foreclosure-listings",
+      "ok": true,
+      "mlsCount": 0
+    }
+  ],
+  "bestEstimate": 12,
+  "marketingNumber": 389,
+  "note": "Stat scrape only — no listing details captured. Lightweight HTTP fetch, no headless browser, so JS-rendered pages return 0. Replace this entire script with a SQL count once GVR WebAPI is provisioned (see docs/gvr-database-schema.md)."
+}
