@@ -57,7 +57,15 @@
 
 - **Response time:** typically 3–10 business days for an initial reply with the application packet
 - **Setup time after approval:** 1–3 weeks for credentials to land in your inbox
-- **Fees:** GVR doesn't publish a public price sheet. Industry comparable: VOW WebAPI access typically runs **$50–$200/mo** in setup + monthly platform fees, sometimes plus a one-time setup ($300–$800). Confirm with them.
+- **Fees:** Per RealtyNinja's MLS Coverage table (cross-referenced against
+  the GVR member portal), the **direct GVR/FVREB/CADREB WebAPI carries no
+  separate data fee for member brokerages** — it's bundled into the MLS
+  service fees 88 West already pays via dues. There may be a one-time
+  administrative onboarding cost (we explicitly ask in the email). Bridge
+  Interactive (the hosting platform) does not charge brokerages directly.
+  The expensive options ($50–$200/mo) you'll see online are *vendor
+  wrappers* (Realtyna, Showcase IDX, MyRealPage) bundling a website with
+  data — not the underlying API. We're going direct.
 - **Compliance docs they may ask for:**
   - Brokerage Certificate of Authorization (issued by BCFSA)
   - Commercial General Liability insurance certificate

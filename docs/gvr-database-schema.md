@@ -359,11 +359,21 @@ GET /api/properties/{listingKey}
 | 9 | Set up VOW user-registration flow (per CREA rules — required to display address-on-detail) | 6h | Compliant client portal |
 | **Total** | | **~28h** (3-4 working days) | |
 
-**Cost:**
-- GVR setup + monthly: ~$50–$200/mo (pending application)
-- Postgres on existing guesty-vm: $0 (existing)
-- Photo storage: ~500GB local disk, ~$5/mo extra disk if VM needs it
-- Vercel: no change
+**Cost (revised after research):**
+- **GVR Direct WebAPI: $0/mo** — included in 88W's existing MLS service fees
+  (~$75–$100/mo) per RealtyNinja's coverage table. No separate data fee
+  for member brokerages, confirmed for GVR + FVREB + CADREB.
+- Bridge Interactive (the platform GVR uses): $0 — they don't charge
+  brokerages directly.
+- One-time GVR onboarding admin fee: $0–$500 (we asked them to confirm).
+- Postgres on existing guesty-vm: $0 (existing).
+- Photo storage: ~500GB local disk, $0–$5/mo extra disk if VM needs it.
+- Vercel: no change.
+- **Total recurring beyond what 88W already pays: $0/mo.**
+
+The expensive options online ($50–$200/mo from Realtyna / Showcase IDX /
+MyRealPage / SimplyRETS) are vendor wrappers bundling a hosted website
+with the data feed. We're going direct so we own the data and the UI.
 
 ---
 
