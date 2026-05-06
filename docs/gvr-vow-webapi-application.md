@@ -1,91 +1,125 @@
-# GVR VOW WebAPI Application — Email Draft
+# Getting GVR IDX + VOW WebAPI access — the real process
 
-**Send to:** `idx@gvrealtors.ca`
-**From:** an `@88westrealty.com` address (preferably the broker of record's mailbox so they can confirm authority)
-**Subject:** Request for IDX + VOW WebAPI access — 88 West Realty (License #X031527)
-
-> ## Email body
->
-> Hello,
->
-> I'm writing on behalf of **88 West Realty** (BC license **#X031527**, North Vancouver) to apply for **WebAPI feed access via the Bridge platform**, both **IDX** and **VOW** tiers.
->
-> ### About 88 West Realty
-> 88 West Realty is an active member brokerage of GVR (also covering FVREB, CADREB and BCNREB through reciprocity). Office: **970 Marine Drive, North Vancouver, BC**. Phone: **604-281-1828**.
->
-> ### What we're requesting
-> 1. **IDX WebAPI feed** — for the public-facing search and listings display on our buyer-side landing pages (`go.88westrealty.com/foreclosure-deals-vancouver`, `go.88westrealty.com/developer-condo-deals-vancouver`, and the broader `88westrealty.com` site).
-> 2. **VOW WebAPI feed** — for our authenticated client portal where registered buyers can see sold history, original list prices, days-on-market, off-market data, and full property remarks (including court-ordered/foreclosure flags) under the standard CREA VOW user-registration model.
-> 3. The **Combined Feed Types** option (per your transition FAQ) so we can hit a single endpoint and use the `FeedTypes` field to enforce IDX vs VOW display rules.
-> 4. The **mapping document** narrowed to IDX + VOW relevant fields (per your FAQ — *"available upon request"*).
->
-> ### Why VOW (not just IDX)
-> Two of our active campaigns require VOW-tier data:
-> - A buyer-side **foreclosure / court-ordered sales** practice — we need access to the remarks, conditions, and court-related flags that VOW exposes but IDX strips.
-> - A buyer-side **developer pre-sale tracking** practice — we need original list price, price history, and DOM to identify standing-inventory opportunities and sold comps.
->
-> Both will be served through an authenticated client portal that complies with the CREA VOW user-registration requirements.
->
-> ### Technical setup
-> - We'll be implementing **RESO Web API** (RESTful), not RETS.
-> - Sync will be **delta-based** (using `ModificationTimestamp` filtering) on an hourly cron, into our own PostgreSQL store.
-> - Image hosting will be proxy-cached on our own CDN to comply with Board uptime and brand-attribution rules.
-> - All listings will be displayed with the standard GVR/board attribution, brokerage credit, and disclaimer text per your display policies.
->
-> ### Who'll be developing
-> Implementation will be handled by our in-house technical team. Primary contact for technical onboarding: **[your email/phone]**.
->
-> Could you please send through:
-> - The application form / agreement(s) we need to sign,
-> - The fee schedule (setup + monthly), and
-> - The Bridge platform onboarding instructions and API credentials process?
->
-> Happy to provide additional documentation (commercial general liability cert, brokerage certificate of authorization, anything else).
->
-> Thank you,
->
-> **[Your name]**
-> [Title — e.g., Managing Broker / Owner]
-> 88 West Realty Inc.
-> 970 Marine Drive, North Vancouver, BC
-> [your phone] · [your email]
-> License #X031527
+**Important context — earlier version of this doc had a formal email
+application template. That was wrong. The actual path for an existing
+GVR member is self-service through the Bridge platform, not an email
+application. Ron Matin (matinhomes.ca, same brokerage as us) almost
+certainly used this path; ask him directly for the exact UI clicks.**
 
 ---
 
-## What to expect after sending
+## The path (per GVR's own Transition FAQ + Repliers' published guide)
 
-- **Response time:** typically 3–10 business days for an initial reply with the application packet
-- **Setup time after approval:** 1–3 weeks for credentials to land in your inbox
-- **Fees:** Per RealtyNinja's MLS Coverage table (cross-referenced against
-  the GVR member portal), the **direct GVR/FVREB/CADREB WebAPI carries no
-  separate data fee for member brokerages** — it's bundled into the MLS
-  service fees 88 West already pays via dues. There may be a one-time
-  administrative onboarding cost (we explicitly ask in the email). Bridge
-  Interactive (the hosting platform) does not charge brokerages directly.
-  The expensive options ($50–$200/mo) you'll see online are *vendor
-  wrappers* (Realtyna, Showcase IDX, MyRealPage) bundling a website with
-  data — not the underlying API. We're going direct.
-- **Compliance docs they may ask for:**
-  - Brokerage Certificate of Authorization (issued by BCFSA)
-  - Commercial General Liability insurance certificate
-  - Sample of how you'll display listings (we'll send the foreclosure LP screenshot)
-  - VOW user-agreement template (template needed only if we go VOW; CREA publishes a model agreement)
+### Step 1 — Log into the member portal
 
-## Things NOT to mention in the email
+`https://member.gvrealtors.ca` with your **REALTOR.ca SSO credentials**
+(GVR migrated to CREA's SSO in June 2025, so this is the same login as
+realtor.ca, WEBForms, and Paragon).
 
-- **Don't say "we want to scrape competitors"** — kills the application
-- **Don't say "we'll redistribute the data"** — IDX/VOW agreements explicitly prohibit redistribution; we display only
-- **Don't promise specific timelines** — we want to keep this open-ended
-- **Don't mention MyRealPage** — they're a third-party vendor; GVR cares about us as a brokerage, not our website builder
+If you haven't logged in since October 2023 you may need to register
+your CREA SSO first.
 
-## Once approved — what we get
+### Step 2 — Find the Bridge platform invitation
 
-Per the GVR transition FAQ:
-- A Bridge platform login
-- RESO Web API endpoints (separate for IDX, VOW, or combined)
-- Mapping documentation showing field names
-- A test sandbox we can hit before going live
-- Clear display compliance rules (attribution, brokerage credit, disclaimer)
+GVR transitioned from RETS to the Bridge WebAPI in 2025. Every active
+member was sent an invitation to join the Bridge platform. Look for:
 
-We then implement what's documented in `docs/gvr-database-schema.md` (workstream C).
+- An email from Bridge Interactive in your inbox (search:
+  `subject: bridge` or sender `@bridgeinteractive.com`)
+- A "Data Feeds" or "IDX" section inside `member.gvrealtors.ca`
+
+If neither is visible, this is the one place to email
+**`idx@gvrealtors.ca`** — but framed as "I haven't received my Bridge
+invitation, can you re-send?" not as a brokerage application.
+
+### Step 3 — In Bridge, request data access
+
+Once logged into Bridge:
+
+> **Data Access → Request Data Access**
+
+Pick the application titled:
+
+> **"Greater Vancouver REALTORS®, Fraser Valley Real Estate Board,
+> Chilliwack and District Real Estate Board, BC Northern Real Estate
+> Board – Residential"**
+
+Submit a request for **both IDX and VOW** feed types. The Bridge
+"Combined Feed Types" feature returns either feed from a single
+endpoint based on a `FeedTypes` field on each record.
+
+### Step 4 — Broker of Record authorizes
+
+Bridge auto-emails 88 West's Broker of Record — **Shirin Saleh**
+(Owner & Managing Broker per the brokerage's directory). She clicks an
+authorize link. This is the same pattern TRREB uses in Ontario; GVR
+mirrors it. No paperwork, no fee.
+
+### Step 5 — VOW compliance loop (only for VOW, not IDX)
+
+Per Repliers' published GVR onboarding guide:
+
+1. After Shirin authorizes, GVR's compliance contact (Tim Yee) sends
+   contracts to sign — primarily the VOW Data Agreement.
+2. Sign and return.
+3. GVR provides **test-feed credentials** to a sandbox.
+4. We build the integration against the test feed.
+5. Submit the live website to GVR for **compliance review** — they
+   check that listings show required attributions, brokerage credit,
+   user-registration gating for VOW data, etc.
+6. After approval, we get **full-dataset credentials**.
+
+### Step 6 — IDX-only case (faster)
+
+If we only need IDX (no sold history, no court-ordered remarks),
+there's no compliance review — credentials come right after broker
+authorization. Trade-off: we lose the foreclosure detection that VOW
+remarks unlock.
+
+For our use case (foreclosure + pre-sale tracking), VOW is what we want,
+so plan for the full compliance loop.
+
+---
+
+## Cost — confirmed (corrected from earlier draft)
+
+Per RealtyNinja's MLS Coverage table and the GVR member fee schedule:
+
+| Item | Cost |
+|---|---|
+| GVR Direct WebAPI (IDX + VOW) data fee | **$0** — bundled into existing MLS service fees |
+| Bridge platform itself | $0 — Bridge doesn't charge brokerages directly |
+| One-time admin onboarding | Likely $0; possibly small one-time setup |
+| **Total recurring** | **$0/mo** beyond what 88W already pays in dues |
+
+The only real cost is the time spent on Step 5's compliance review.
+
+---
+
+## Timeline
+
+| Step | Likely duration |
+|---|---|
+| Steps 1–3 (login, request) | 30 minutes |
+| Step 4 (broker auth) | Same day if Shirin is responsive |
+| Step 5a (contract signing) | 1–3 business days |
+| Step 5b (test feed credentials) | 1–5 business days after sign |
+| Building integration against test feed | 2–3 days of dev work |
+| Step 5c (compliance review of live site) | 5–15 business days |
+| Step 5d (full credentials) | Same week as approval |
+| **Total to live data** | **~3–5 weeks** |
+
+Worth knowing before we start: most of that is GVR-side wait time, not
+build time. We can build everything else (Postgres, sync worker, API
+layer, image cache) against the test feed during the wait.
+
+---
+
+## Lessons logged
+
+- **Don't write formal application emails for processes that have a
+  self-service portal.** Check whether the path exists in-app first.
+- **When the user references a specific person who has already done X,
+  ask "what did they actually do?" before designing a fresh process.**
+  Ron is at the same brokerage; he's the source of truth, not a
+  hypothetical brokerage-onboarding template.
