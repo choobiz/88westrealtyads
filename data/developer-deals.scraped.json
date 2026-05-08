@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-05-07T15:26:07.141Z",
+  "scrapedAt": "2026-05-08T14:48:02.508Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
@@ -14,53 +14,67 @@
       "headline_dollar": "$5,"
     },
     {
-      "project_name": "Reign Metrotown by Wesgroup Properties – 6325 Cassie Avenue & 6263 Cassie Avenue",
-      "city": "Burnaby",
-      "incentive_summary": "limited-time savings of up to $88,888.*, Attendees can enter our exclusive draw for a Leah Alexandra horseshoe gold b...",
-      "project_url": "https://www.mikestewart.ca/presale/reign-at-metrotown-by-wesgroup-properties-burnaby-presale-condos/",
-      "headline_dollar": "$88,888"
+      "project_name": "Emerald North Vancouver at Lions Gate Village – Availability, Plans, Prices",
+      "city": "North Vancouver",
+      "incentive_summary": "$10,000 off Garden Homes, $20,000 off City Homes, $30,000 off Townhomes, 5% deposit, only 5% deposit, limited-time pr...",
+      "project_url": "https://www.mikestewart.ca/presale/emerald-at-lions-gate-village-north-vancouver-presale-townhomes-by-citimark-and-woodbridge-homes/",
+      "headline_dollar": "$30,000"
     },
     {
-      "project_name": "133 West 49th Avenue – Thesis Vancouver by Alabaster Homes",
+      "project_name": "Onyx & Ivory by Vanquish Homes – 16358 90th Avenue",
+      "city": "Surrey",
+      "incentive_summary": "SAVE UP TO 15% OFF, Move-in-ready homes that are between 10-15% off, #20 H1 - 3 Bed - 1550 sq ft - Was $989,900, now ...",
+      "project_url": "https://www.mikestewart.ca/presale/onyx-and-ivory-fleetwood-surrey-presale-townhomes-by-vanquish-homes/",
+      "headline_dollar": "$989,900,"
+    },
+    {
+      "project_name": "York by Listraor @ 5381 Willow Street and 5383 Willow Street",
       "city": "Vancouver",
-      "incentive_summary": "First-Time Buyer GST Rebate: eligible buyers can receive up to $50,000 back when purchasing a new home, Homes under $...",
-      "project_url": "https://www.mikestewart.ca/presale/thesis-oakridge-vancouver-presale-condos-by-alabaster-homes/",
-      "headline_dollar": "$50,000"
+      "incentive_summary": "$88,000 Off Your New Home, Limited-time Lunar New Year incentives, Available on the final collection of townhomes, Lu...",
+      "project_url": "https://www.mikestewart.ca/presale/york-by-listraor-townhomes/",
+      "headline_dollar": "$88,000"
     },
     {
-      "project_name": "Harriswood Coquitlam by Domus – Plans & Pricing",
-      "city": "Coquitlam",
-      "incentive_summary": "Elimination of GST on new homes for qualified first-time buyers, unlocking potential savings of up to $50,000 (5% GST...",
-      "project_url": "https://www.mikestewart.ca/presale/harrison-by-domus-plans-pricing/",
-      "headline_dollar": "$50,000"
-    },
-    {
-      "project_name": "Rhodes Queen Elizabeth Park Vancouver – Plans & Pricing",
-      "city": "Vancouver",
-      "incentive_summary": "Up to $100,000 Price Reduction, $28,888 in Lunar New Year Incentives, Up to $128,888 off your new home (combined pric...",
-      "project_url": "https://www.mikestewart.ca/presale/rhodes-vancouver-presale-condos/",
-      "headline_dollar": "$128,888"
-    },
-    {
-      "project_name": "Rowen W47 by Alabaster Homes",
-      "city": "Vancouver",
-      "incentive_summary": "Ask about our year-end incentives!, Make sure to ask about our year-end incentives!, year-end incentives, $100,000 in...",
-      "project_url": "https://www.mikestewart.ca/presale/rowen-w47/",
+      "project_name": "Pura Surrey by Adera – Floor Plans & Price",
+      "city": "Surrey",
+      "incentive_summary": "Save up to $100,000*, Newly improved pricing, Chinese New Year Special Pricing, SAVINGS UP TO OVER $100,000, LIMITED ...",
+      "project_url": "https://www.mikestewart.ca/presale/pura-surrey-city-centre-presale-condos-by-adera-development/",
       "headline_dollar": "$100,000"
     },
     {
-      "project_name": "Tesoro Vancouver at 1601 Quebec Street",
-      "city": "Vancouver",
-      "incentive_summary": "Savings ranging from $202,300 to $633,600, Interior Design Package from Once a Tree: City Collection Plans ($75,000),...",
-      "project_url": "https://www.mikestewart.ca/presale/tesoro/",
-      "headline_dollar": "$633,600,"
+      "project_name": "Versant Burke Mountain – Floorplans & Prices",
+      "city": "Coquitlam",
+      "incentive_summary": "Limited new release of 3-Bedroom A Plan homes., Clients enjoy a limited time savings of $8,888 in savings on all home...",
+      "project_url": "https://www.mikestewart.ca/presale/versant-by-infinity-townhomes/",
+      "headline_dollar": "$8,888"
     },
     {
-      "project_name": "Bastille Coquitlam by Porte Homes – 209 & 215 McBay Lane",
+      "project_name": "Satori Coquitlam by Everglade – Floorplans & Prices",
       "city": "Coquitlam",
-      "incentive_summary": "Pricing at $800/sf on select 1 & 2 bedroom homes on Floors 2–5, Save up to $100,000, No property transfer tax for eli...",
-      "project_url": "https://www.mikestewart.ca/presale/bastille-maillardville-coquitlam-presale-condos-by-porte-homes/",
-      "headline_dollar": "$100,000,"
+      "incentive_summary": "A new incentive will be unlocked each week leading up to the Groundbreaking Ceremony, $20,000 off the E1 Townhome (4-...",
+      "project_url": "https://www.mikestewart.ca/presale/satori-townhomes-coquitlam/",
+      "headline_dollar": "$20,000"
+    },
+    {
+      "project_name": "Frame Vancouver – 2727 Kingsway & 5189 Earles Street – Floor Plans & Prices",
+      "city": "Vancouver",
+      "incentive_summary": "1-Bed + Den: $3,000 buyer incentive, Jr. 2-Bed + Den: $6,000 buyer incentive, 2-Bed & 2-Bath + Den: $6,000 buyer ince...",
+      "project_url": "https://www.mikestewart.ca/presale/frame-vancouver-by-coromandel-and-peterson-plans-availability-prices/",
+      "headline_dollar": "$6,000"
+    },
+    {
+      "project_name": "Umbra at Portwood by Edgar Development – Availability, Plans, Prices",
+      "city": "Port Moody",
+      "incentive_summary": "5% Deposit Program: Own with only 5% down, Zero GST for First-Time Buyers: skip the GST on homes up to $1M, $10,000 B...",
+      "project_url": "https://www.mikestewart.ca/presale/umbra-at-portwood-presale-port-moody-condos-and-townhomes-by-edgar-development/",
+      "headline_dollar": "$1M"
+    },
+    {
+      "project_name": "6531 Fremlin Street – Eila on W49 by Alabaster",
+      "city": "Vancouver",
+      "incentive_summary": "GST included on the final home, $76,000 in additional savings on the final home, GST included ($76,000 in additional ...",
+      "project_url": "https://www.mikestewart.ca/presale/eila-on-west-49th/",
+      "headline_dollar": "$76,000"
     },
     {
       "project_name": "Coral Vancouver — Prices & Floor Plans",
@@ -70,17 +84,38 @@
       "headline_dollar": "$150,000"
     },
     {
-      "project_name": "Skye at Holly Park by Bramor – Floorplans & Pricing",
-      "city": "Delta",
-      "incentive_summary": "Festive limited-time HOLIDAY PROMOTION! *Terms and conditions apply, please ask us for details., One-time Black Frida...",
-      "project_url": "https://www.mikestewart.ca/presale/skye-at-holly-park-delta-presales/",
+      "project_name": "Oakwoods Esquimalt by Aragon at 429 Lampson Street  – Prices, Availability, Plans",
+      "city": "Victoria",
+      "incentive_summary": "Oakwoods Esquimalt by Aragon at 429 Lampson Street – Prices, Availability, Plans Access to preferred mortgage rates through RBC.",
+      "project_url": "https://www.mikestewart.ca/presale/oakwoods-esquimalt-victoria-presale-condos-and-townhomes-by-aragon-properties/",
       "headline_dollar": null
     },
     {
-      "project_name": "Salton Surrey — Prices & Floor Plans",
+      "project_name": "Elmwood by Marcon Coquitlam – Availability, Plans, Prices",
+      "city": "Coquitlam",
+      "incentive_summary": "First access to homes for priority list members, Limited collection of one, two, and three bedroom homes (Upper Resid...",
+      "project_url": "https://www.mikestewart.ca/presale/elmwood-burquitlam-west-coquitlam-presale-condos-by-marcon-developments/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "The POCO by Rapture Developments – Plans & Pricing",
+      "city": "Port Coquitlam",
+      "incentive_summary": "Early pre-launch pricing is available for a limited time., Access to priority pricing and an exclusive first look for...",
+      "project_url": "https://www.mikestewart.ca/presale/the-poco-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "The Manhattan Surrey by ML Emporio – Floorplans & Prices",
       "city": "Surrey",
-      "incentive_summary": "2 years with no strata fees, Strata promotion applicable to the first 10 homes only; to be applied as a credit on clo...",
-      "project_url": "https://www.mikestewart.ca/presale/salton-surrey-prices-floor-plans/",
+      "incentive_summary": "20% OFF ALL HOMES with 10% deposit over 10 mo., 15% OFF ALL HOMES with 5% deposit over 5 mo., 2% PAID IN 60 DAYS of f...",
+      "project_url": "https://www.mikestewart.ca/presale/the-manhattan-surrey/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Emerson by Frame in Oaklands – Plans & Pricing",
+      "city": "Victoria",
+      "incentive_summary": "Ask about Emerson's Green Mortgage Program. You could save hundreds per month with our energy-efficient homes., If yo...",
+      "project_url": "https://www.mikestewart.ca/presale/emerson-by-frame-victoria-presale-townhomes/",
       "headline_dollar": null
     },
     {
@@ -91,45 +126,10 @@
       "headline_dollar": null
     },
     {
-      "project_name": "Azure at Southgate City by Ledingham McAllister – Plans, Prices, Availability",
-      "city": "Burnaby",
-      "incentive_summary": "Lunar New Year open house celebration with festive treats and red envelopes, Move-in ready homes available, Lunar New...",
-      "project_url": "https://www.mikestewart.ca/presale/azure-at-southgate-city-ledingham-mcallister-edmonds-burnaby-presale-condos/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Siena Burnaby by Landa Global – Plans, Prices, Availability",
-      "city": "Burnaby",
-      "incentive_summary": "Exclusive pre-public offering to secure a home at Siena before the public launch., Early window provides priority sel...",
-      "project_url": "https://www.mikestewart.ca/presale/siena-at-the-heights-by-i4-properties-presale-north-burnaby-condos/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Bromley Langley — Prices & Floor Plans",
-      "city": "Langley",
-      "incentive_summary": "1% initial deposit to start, Total deposit of 5% payable in stages through construction, 15 customization options ava...",
-      "project_url": "https://www.mikestewart.ca/presale/bromley-langley-prices-floor-plans/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Pine and Glen Onni in Coquitlam – Prices & Floor Plans",
-      "city": "Coquitlam",
-      "incentive_summary": "Price includes applicable incentives, GST relief (subject to government eligibility requirements), Property transfer ...",
-      "project_url": "https://www.mikestewart.ca/presale/1175-pinetree-way-coquitlam-city-centre-onni-presale-condos/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Jinju Anthem – 537 Cottonwood Avenue",
-      "city": "Coquitlam",
-      "incentive_summary": "Win a co-listing at NUVO by filming and submitting a video, Film content of the newly completed building for a chance...",
-      "project_url": "https://www.mikestewart.ca/presale/jinju-burquitlam-prices-plans-availability/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Coast Sidney at 9522 Lochside Drive",
-      "city": "Sidney",
-      "incentive_summary": "Refreshments from Farmer's Daughter at the Realtor Preview Event",
-      "project_url": "https://www.mikestewart.ca/presale/9522-lochside-drive-sidney-presales/",
+      "project_name": "Skye at Holly Park by Bramor – Floorplans & Pricing",
+      "city": "Delta",
+      "incentive_summary": "Festive limited-time HOLIDAY PROMOTION! *Terms and conditions apply, please ask us for details., One-time Black Frida...",
+      "project_url": "https://www.mikestewart.ca/presale/skye-at-holly-park-delta-presales/",
       "headline_dollar": null
     }
   ]
