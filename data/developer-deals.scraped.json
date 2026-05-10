@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-05-09T14:14:53.263Z",
+  "scrapedAt": "2026-05-10T14:17:54.054Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 17,
@@ -12,6 +12,20 @@
       "incentive_summary": "The Perfect 10 Deposit Builder: a new, lower initial deposit and the potential to earn up to $94,326 in credit on com...",
       "project_url": "https://www.mikestewart.ca/presale/solhouse-6035-metrotown-condos/",
       "headline_dollar": "$94,326"
+    },
+    {
+      "project_name": "Moody Yards By Mosaic Homes – 3075 & 3055 Murray Street",
+      "city": "Port Moody",
+      "incentive_summary": "Invitation to an exclusive Realtor Open event., Enter to win $750 in prize draws at the event., Brand new homes ready...",
+      "project_url": "https://www.mikestewart.ca/presale/moody-yards-port-moody-centre-presale-condos-by-mosaic-homes/",
+      "headline_dollar": "$750"
+    },
+    {
+      "project_name": "Trailside at Lynn by Mosaic – Plans & Pricing",
+      "city": "North Vancouver",
+      "incentive_summary": "First-timers can save up to $50,000 with the GST rebate on new homes, 30-Year Amortization for First-Timers, Save up ...",
+      "project_url": "https://www.mikestewart.ca/presale/trailside-at-lynn-presale-condos/",
+      "headline_dollar": "$50,000"
     },
     {
       "project_name": "Reign Metrotown by Wesgroup Properties – 6325 Cassie Avenue & 6263 Cassie Avenue",
@@ -77,34 +91,6 @@
       "headline_dollar": "$50,000"
     },
     {
-      "project_name": "602 East 2nd Street – Morrison Walk North Vancouver",
-      "city": "North Vancouver",
-      "incentive_summary": "Client Benefit: Up to $100,000 in total value., Client Incentive: $15,000 Decorator Allowance., Client Incentive: A/C...",
-      "project_url": "https://www.mikestewart.ca/presale/morrison-walk-north-vancouver-presale-townhomes/",
-      "headline_dollar": "$100,000"
-    },
-    {
-      "project_name": "1515 Rupert North Vancouver",
-      "city": "North Vancouver",
-      "incentive_summary": "Enjoy New Year’s savings of $100,000+., New, highly competitive pricing on 3-bedroom townhomes, Air conditioning for ...",
-      "project_url": "https://www.mikestewart.ca/presale/1515-rupert-by-areva-living-prices-plans-availability/",
-      "headline_dollar": "$100,000"
-    },
-    {
-      "project_name": "Bailey Vancouver – 4928 Quebec Street",
-      "city": "Vancouver",
-      "incentive_summary": "New lower pricing, Parking included, Parking included with homes starting from $629,900",
-      "project_url": "https://www.mikestewart.ca/presale/bailey-riley-park-vancouver-presale-condos-by-streetside-developments/",
-      "headline_dollar": "$629,900"
-    },
-    {
-      "project_name": "Rydge Maple Ridge – 10640 248 Street",
-      "city": "Maple Ridge",
-      "incentive_summary": "For a limited time, secure a move-in ready home with A/C included., For a limited time, secure a move-in ready home w...",
-      "project_url": "https://www.mikestewart.ca/presale/rydge-by-raicon-developments-albion-presale-maple-ridge-townhomes/",
-      "headline_dollar": null
-    },
-    {
       "project_name": "Greenhouse by Concord Pacific – Prices, Floor Plans, & Availability",
       "city": "Burnaby",
       "incentive_summary": "0.99% 3-Year Mortgage Rate, 5% GST & Property Transfer Tax Exemptions, Additional incentives include a further price ...",
@@ -112,17 +98,31 @@
       "headline_dollar": null
     },
     {
-      "project_name": "Landon Gate Abbotsford — Prices & Floor Plans",
-      "city": "Abbotsford",
-      "incentive_summary": "No strata fees, Quick completions available, Free-standing overheight garage, TELUS Residential SmartHome features in...",
-      "project_url": "https://www.mikestewart.ca/presale/landon-gate-abbotsford-prices-floor-plans/",
+      "project_name": "Hue Port Moody by Marcon @ 2015 St. Johns Street & 125 Albert Street",
+      "city": "Port Moody",
+      "incentive_summary": "Receive a complimentary eucalyptus room spray by attending the Open House., Limited quantities available on a first-c...",
+      "project_url": "https://www.mikestewart.ca/presale/hue-seaview-port-moody-presale-condos-by-marcon-developments/",
       "headline_dollar": null
     },
     {
-      "project_name": "Blacktail Maple Ridge — Prices & Floor Plans",
+      "project_name": "Skye at Holly Park by Bramor – Floorplans & Pricing",
+      "city": "Delta",
+      "incentive_summary": "Festive limited-time HOLIDAY PROMOTION! *Terms and conditions apply, please ask us for details., One-time Black Frida...",
+      "project_url": "https://www.mikestewart.ca/presale/skye-at-holly-park-delta-presales/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Belvedere Surrey by Square Nine Developments 9675 King George Boulevard",
+      "city": "Surrey",
+      "incentive_summary": "Court-Ordered Pricing, Pre-growth pricing in Surrey Centre, Move-in-ready concrete homes complete with A/C, parking, ...",
+      "project_url": "https://www.mikestewart.ca/presale/belvedere-by-square-nine-developments-surrey-city-centre-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Rydge Maple Ridge – 10640 248 Street",
       "city": "Maple Ridge",
-      "incentive_summary": "ONLY 5% down for the first 5 homes sold!",
-      "project_url": "https://www.mikestewart.ca/presale/blacktail-maple-ridge-prices-floor-plans/",
+      "incentive_summary": "For a limited time, secure a move-in ready home with A/C included., For a limited time, secure a move-in ready home w...",
+      "project_url": "https://www.mikestewart.ca/presale/rydge-by-raicon-developments-albion-presale-maple-ridge-townhomes/",
       "headline_dollar": null
     }
   ]
