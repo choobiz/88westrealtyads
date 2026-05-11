@@ -1,11 +1,25 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-05-10T14:17:54.054Z",
+  "scrapedAt": "2026-05-11T15:53:07.759Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
-  "count": 17,
+  "count": 18,
   "projects": [
+    {
+      "project_name": "Hamilton Village Richmond — Prices & Floor Plans",
+      "city": "Richmond",
+      "incentive_summary": "PTT exempt / PTT savings on all homes, First Time Home Buyers pay NO GST ON ALL HOMES, Own For as Low as $24,995 Down...",
+      "project_url": "https://www.mikestewart.ca/presale/hamilton-village-richmond-prices-floor-plans/",
+      "headline_dollar": "$24,995"
+    },
+    {
+      "project_name": "Chelsea at The Boroughs South Surrey — Prices & Floor Plans",
+      "city": "Surrey",
+      "incentive_summary": "$50,000 price reduction on select F1 plans, Limited time pricing on F1 plans, Limited time pricing on F1 plans (4 bed...",
+      "project_url": "https://www.mikestewart.ca/presale/chelsea-at-the-boroughs-south-surrey-prices-floor-plans/",
+      "headline_dollar": "$50,000"
+    },
     {
       "project_name": "Solhouse 6035 by Bosa Properties",
       "city": "Burnaby",
@@ -82,13 +96,6 @@
       "incentive_summary": "Save up to $100K*, Save up to $100,000*, Save up to $100,000* before the holidays., great opportunities on select 1- ...",
       "project_url": "https://www.mikestewart.ca/presale/kestrel-townhomes-coquitlam-presales/",
       "headline_dollar": "$100K"
-    },
-    {
-      "project_name": "Gradience Langley – Prices & Floor Plans",
-      "city": "Langley",
-      "incentive_summary": "Up to $50,000 back for eligible first-time buyers through the federal First-Time Home Buyer GST Rebate., Rebate is re...",
-      "project_url": "https://www.mikestewart.ca/presale/gradience-langley-prices-floor-plans/",
-      "headline_dollar": "$50,000"
     },
     {
       "project_name": "Greenhouse by Concord Pacific – Prices, Floor Plans, & Availability",
