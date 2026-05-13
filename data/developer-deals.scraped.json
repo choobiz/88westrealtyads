@@ -1,11 +1,18 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-05-12T15:37:15.837Z",
+  "scrapedAt": "2026-05-13T15:40:13.707Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
-  "count": 17,
+  "count": 16,
   "projects": [
+    {
+      "project_name": "133 West 49th Avenue – Thesis Vancouver by Alabaster Homes",
+      "city": "Vancouver",
+      "incentive_summary": "First-Time Buyer GST Rebate: eligible buyers can receive up to $50,000 back when purchasing a new home, Homes under $...",
+      "project_url": "https://www.mikestewart.ca/presale/thesis-oakridge-vancouver-presale-condos-by-alabaster-homes/",
+      "headline_dollar": "$50,000"
+    },
     {
       "project_name": "Satori Coquitlam by Everglade – Floorplans & Prices",
       "city": "Coquitlam",
@@ -49,31 +56,10 @@
       "headline_dollar": "$50,000"
     },
     {
-      "project_name": "Reign Metrotown by Wesgroup Properties – 6325 Cassie Avenue & 6263 Cassie Avenue",
-      "city": "Burnaby",
-      "incentive_summary": "limited-time savings of up to $88,888.*, Attendees can enter our exclusive draw for a Leah Alexandra horseshoe gold b...",
-      "project_url": "https://www.mikestewart.ca/presale/reign-at-metrotown-by-wesgroup-properties-burnaby-presale-condos/",
-      "headline_dollar": "$88,888"
-    },
-    {
-      "project_name": "7381 Preston Boulevard – Skyview Mission",
-      "city": "Mission",
-      "incentive_summary": "YEAR-END SAVINGS on select move-in ready homes, NO GST for First Time Home Buyers, NO Property Transfer Tax, ONLY $5,...",
-      "project_url": "https://www.mikestewart.ca/presale/skyview-mission-presale-townhomes/",
-      "headline_dollar": "$5,"
-    },
-    {
-      "project_name": "2268 East Broadway – Linx Vancouver",
-      "city": "Vancouver",
-      "incentive_summary": "Attend a private tour and you'll be entered to win one of several $200 giftcards to favourite East Van eateries, Atte...",
-      "project_url": "https://www.mikestewart.ca/presale/2268-east-broadway/",
-      "headline_dollar": "$200"
-    },
-    {
-      "project_name": "Aavand by Canada West Group – Prices, Plans, Availability",
-      "city": "Coquitlam",
-      "incentive_summary": "Significant price adjustments, Repriced remaining inventory, Immediate possession available, No presale timelines, no...",
-      "project_url": "https://www.mikestewart.ca/presale/aavand-burquitlam-presale-coquitlam-condos-by-canada-west-group/",
+      "project_name": "City Gate Condos by Highstreet – Pricing & Plans",
+      "city": "Langford",
+      "incentive_summary": "Two parking stalls included on select two-bedroom homes. One stall is standard, the second is a limited-time upgrade ...",
+      "project_url": "https://www.mikestewart.ca/presale/city-gate-langford-presales/",
       "headline_dollar": null
     },
     {
@@ -88,6 +74,20 @@
       "city": "Surrey",
       "incentive_summary": "0.99% 3-Year Mortgage Rate (subsidy payment based on assumptions and calculations determined solely by the Developers...",
       "project_url": "https://www.mikestewart.ca/presale/park-george-ii-by-concord-pacific-surrey-city-centre-presale-condominiums-and-townhomes/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Salton Surrey — Prices & Floor Plans",
+      "city": "Surrey",
+      "incentive_summary": "2 years with no strata fees, Strata promotion applicable to the first 10 homes only; to be applied as a credit on clo...",
+      "project_url": "https://www.mikestewart.ca/presale/salton-surrey-prices-floor-plans/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Aavand by Canada West Group – Prices, Plans, Availability",
+      "city": "Coquitlam",
+      "incentive_summary": "Significant price adjustments, Repriced remaining inventory, Immediate possession available, No presale timelines, no...",
+      "project_url": "https://www.mikestewart.ca/presale/aavand-burquitlam-presale-coquitlam-condos-by-canada-west-group/",
       "headline_dollar": null
     },
     {
@@ -116,13 +116,6 @@
       "city": "Surrey",
       "incentive_summary": "Court-Ordered Pricing, Pre-growth pricing in Surrey Centre, Move-in-ready concrete homes complete with A/C, parking, ...",
       "project_url": "https://www.mikestewart.ca/presale/belvedere-by-square-nine-developments-surrey-city-centre-presale-condos/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Rydge Maple Ridge – 10640 248 Street",
-      "city": "Maple Ridge",
-      "incentive_summary": "For a limited time, secure a move-in ready home with A/C included., For a limited time, secure a move-in ready home w...",
-      "project_url": "https://www.mikestewart.ca/presale/rydge-by-raicon-developments-albion-presale-maple-ridge-townhomes/",
       "headline_dollar": null
     }
   ]
