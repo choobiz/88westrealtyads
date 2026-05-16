@@ -4,90 +4,99 @@
   "compliance": {
     "status": "operator-override",
     "date": "2026-05-16",
-    "note": "OPERATOR OVERRIDE — real court-ordered MLS listings published on the public LP during the bridge period, before GVR WebAPI authorization. Standard rule is research-tier only (see scripts/scrape-foreclosure-deals.mjs header). Override accepted by Amir Omidvar; flagged for managing-broker awareness (Shirin Saleh, licence #X031527) — this is CREA Code-of-Ethics exposure on her licence. To stay as defensible as possible: street numbers fully removed (street name + neighbourhood only), no photos, no listing remarks, no agent names. Replace this file with the GVR-feed-backed source once the WebAPI is authorized, then revert to research-tier scraping.",
+    "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period, before GVR WebAPI authorization. Standard rule is research-tier only (see scripts/scrape-foreclosure-deals.mjs header). Override accepted by Amir Omidvar; flagged for managing-broker awareness (Shirin Saleh, licence #X031527) — CREA Code-of-Ethics exposure on her licence. To stay as defensible as possible: street numbers fully removed (street name + neighbourhood only); MLS numbers removed from the published cards (retained only in the research dump foreclosure-deals.scraped.json); card photos are generic representative-by-type images, NOT actual MLS listing photos (republishing licensed listing photos would be copyright infringement); no listing remarks, no agent names. Replace this file with the GVR-feed-backed source once the WebAPI is authorized — IDX feeds license real per-listing photos.",
     "replaceWith": "GVR WebAPI feed — see docs/gvr-database-schema.md"
   },
   "deals": [
     {
-      "mls": "R3056253",
-      "type": "Condo",
-      "area": "College Park, Port Moody",
-      "street": "Westhill Place",
-      "price": "$299K",
-      "sqft": "687 sq ft",
-      "courtOrdered": true
-    },
-    {
-      "mls": "R3061048",
-      "type": "Condo",
-      "area": "Central Lonsdale, North Vancouver",
-      "street": "W 17th Street",
-      "price": "$479K",
-      "sqft": "716 sq ft",
-      "courtOrdered": true
-    },
-    {
-      "mls": "R3042688",
-      "type": "Townhouse",
-      "area": "False Creek, Vancouver",
-      "street": "Lamey's Mill Road",
-      "price": "$499K",
-      "sqft": "1,057 sq ft",
-      "courtOrdered": true
-    },
-    {
-      "mls": "R3113630",
       "type": "Condo",
       "area": "Hastings, Vancouver",
       "street": "E Georgia Street",
       "price": "$500K",
       "sqft": "650 sq ft",
-      "courtOrdered": true
+      "courtOrdered": true,
+      "image": "/images/shared/properties/condo-modern-glass.jpg",
+      "imageAlt": "Representative modern Vancouver condo exterior — illustrative, not the actual listing."
     },
     {
-      "mls": "R3067073",
       "type": "Condo",
-      "area": "Park Royal, West Vancouver",
-      "street": "Taylor Way",
-      "price": "$739K",
-      "sqft": "1,286 sq ft",
-      "courtOrdered": true
+      "area": "Central Lonsdale, North Vancouver",
+      "street": "W 17th Street",
+      "price": "$479K",
+      "sqft": "716 sq ft",
+      "courtOrdered": true,
+      "image": "/images/shared/properties/condo-courtyard.jpg",
+      "imageAlt": "Representative low-rise condo with courtyard — illustrative, not the actual listing."
     },
     {
-      "mls": "R3107171",
       "type": "Townhouse",
-      "area": "Lynnmour, North Vancouver",
-      "street": "Hunter Street",
-      "price": "$1.18M",
-      "sqft": "1,538 sq ft",
-      "courtOrdered": true
+      "area": "False Creek, Vancouver",
+      "street": "Lamey's Mill Road",
+      "price": "$499K",
+      "sqft": "1,057 sq ft",
+      "courtOrdered": true,
+      "image": "/images/shared/properties/townhouse-brick.jpg",
+      "imageAlt": "Representative brick townhouse exterior — illustrative, not the actual listing."
     },
     {
-      "mls": "R3067667",
-      "type": "House",
-      "area": "Renfrew Heights, Vancouver",
-      "street": "Nanaimo Street",
-      "price": "$1.25M",
-      "sqft": "2,667 sq ft",
-      "courtOrdered": true
+      "type": "Condo",
+      "area": "College Park, Port Moody",
+      "street": "Westhill Place",
+      "price": "$299K",
+      "sqft": "687 sq ft",
+      "courtOrdered": true,
+      "image": "/images/shared/properties/condo-minimalist.jpg",
+      "imageAlt": "Representative contemporary condo exterior — illustrative, not the actual listing."
     },
     {
-      "mls": "R3115942",
       "type": "Condo",
       "area": "Coal Harbour, Vancouver",
       "street": "W Cordova Street",
       "price": "$1.28M",
       "sqft": "734 sq ft",
-      "courtOrdered": true
+      "courtOrdered": true,
+      "image": "/images/shared/properties/condo-modern-glass.jpg",
+      "imageAlt": "Representative glass-tower condo exterior — illustrative, not the actual listing."
     },
     {
-      "mls": "R3075724",
+      "type": "House",
+      "area": "Renfrew Heights, Vancouver",
+      "street": "Nanaimo Street",
+      "price": "$1.25M",
+      "sqft": "2,667 sq ft",
+      "courtOrdered": true,
+      "image": "/images/shared/properties/detached-craftsman.jpg",
+      "imageAlt": "Representative Craftsman detached home — illustrative, not the actual listing."
+    },
+    {
+      "type": "Condo",
+      "area": "Park Royal, West Vancouver",
+      "street": "Taylor Way",
+      "price": "$739K",
+      "sqft": "1,286 sq ft",
+      "courtOrdered": true,
+      "image": "/images/shared/properties/condo-courtyard.jpg",
+      "imageAlt": "Representative low-rise condo with courtyard — illustrative, not the actual listing."
+    },
+    {
+      "type": "Townhouse",
+      "area": "Lynnmour, North Vancouver",
+      "street": "Hunter Street",
+      "price": "$1.18M",
+      "sqft": "1,538 sq ft",
+      "courtOrdered": true,
+      "image": "/images/shared/properties/townhouse-brick.jpg",
+      "imageAlt": "Representative brick townhouse exterior — illustrative, not the actual listing."
+    },
+    {
       "type": "House",
       "area": "Morgan Creek, Surrey",
       "street": "159A Street",
       "price": "$2.54M",
       "sqft": "4,362 sq ft",
-      "courtOrdered": true
+      "courtOrdered": true,
+      "image": "/images/shared/properties/detached-suburban.jpg",
+      "imageAlt": "Representative detached suburban home — illustrative, not the actual listing."
     }
   ]
 }

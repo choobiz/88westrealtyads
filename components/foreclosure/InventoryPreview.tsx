@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { ArrowRight, Sparkles } from "lucide-react";
 import LeadFormModal from "@/components/shared/LeadFormModal";
@@ -8,13 +9,14 @@ import dealsData from "@/data/foreclosure-deals.json";
 import foreclosureStats from "@/data/foreclosure-stats.json";
 
 type ForeclosureDeal = {
-  mls: string;
   type: string;
   area: string;
   street: string;
   price: string;
   sqft: string;
   courtOrdered: boolean;
+  image: string;
+  imageAlt: string;
 };
 
 const LISTINGS: ForeclosureDeal[] = dealsData.deals;
@@ -30,8 +32,8 @@ export default function InventoryPreview() {
           </h2>
           <p className="text-text-secondary text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
             {LISTINGS.length} current Greater Vancouver court-ordered and foreclosure listings from this
-            week&apos;s MLS&reg; scan. Street numbers are withheld here — your specialist sends the full
-            address, court date, Schedule A draft, and possession-risk note on the intro call.
+            week&apos;s MLS&reg; scan. Photos are representative; your specialist sends the actual
+            listing, full address, court date, Schedule A draft, and possession-risk note on the intro call.
           </p>
         </div>
 
@@ -42,18 +44,24 @@ export default function InventoryPreview() {
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
-          {LISTINGS.map((l) => (
+          {LISTINGS.map((l, i) => (
             <button
               type="button"
-              key={l.mls}
+              key={i}
               onClick={() => setOpenProperty(`${l.type} · ${l.area} · ${l.price}`)}
               className="text-left bg-white border border-eightyw-border rounded-2xl overflow-hidden hover:shadow-lg hover:border-brand-red/50 hover:-translate-y-0.5 transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-brand-red/40 focus:ring-offset-2"
             >
-              <div className="flex items-center justify-between px-5 py-3 bg-eightyw-blue">
-                <span className="text-[11px] font-semibold uppercase tracking-wider text-white">
+              <div className="relative aspect-[4/3] bg-eightyw-light">
+                <Image
+                  src={l.image}
+                  alt={l.imageAlt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover"
+                />
+                <span className="absolute top-3 left-3 px-3 py-1 bg-eightyw-blue text-white text-[10px] font-semibold rounded-full uppercase tracking-wider">
                   {l.type}
                 </span>
-                <span className="text-[11px] font-mono text-white/65">MLS&reg; {l.mls}</span>
               </div>
               <div className="p-5">
                 <p className="text-eightyw-blue font-bold text-base mb-0.5">{l.area}</p>
