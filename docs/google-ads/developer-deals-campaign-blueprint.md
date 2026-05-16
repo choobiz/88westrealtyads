@@ -32,10 +32,9 @@
 
 | Page | URL | Best For |
 |---|---|---|
-| General (v1) | `https://go.88westrealty.com/vancouver-condo-deals` | Presale, Deals, Assignment, Investment |
-| First-Time Buyer | `https://go.88westrealty.com/first-time-buyer-vancouver` | First-time buyer intent |
-| Scroll Story (v2) | `https://go.88westrealty.com/vancouver-condo-deals-v2` | Market window, A/B test |
-| Swipe | `https://go.88westrealty.com/vancouver-deals-swipe` | Sitelink extension |
+| Consolidated LP | `https://go.88westrealty.com/developer-condo-deals-vancouver` | All ad groups — deals-first flow with click-to-modal lead capture |
+
+> **Note (2026-05-16):** the four separate pages (general / first-time-buyer / scroll-story-v2 / swipe) were consolidated into one deals-first page. The planned v1-vs-v2 A/B test is retired. All ad groups now route to this single URL, differentiated only by `utm_content`.
 
 ---
 
@@ -88,7 +87,7 @@ penthouse
 
 **Budget Allocation:** 25% ($450/mo, $14.80/day)
 **Max CPC:** $5.00
-**Landing Pages:** A/B test between `/vancouver-condo-deals` and `/vancouver-condo-deals-v2`
+**Landing Page:** `/developer-condo-deals-vancouver` (single consolidated page — A/B test retired)
 
 #### Keywords
 
@@ -105,7 +104,7 @@ penthouse
 
 #### RSA Ad 1 — Presale Condos (Final URL A)
 
-**Final URL:** `https://go.88westrealty.com/vancouver-condo-deals?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=presale-rsa1&utm_term={keyword}`
+**Final URL:** `https://go.88westrealty.com/developer-condo-deals-vancouver?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=presale-rsa1&utm_term={keyword}`
 
 | # | Headline | Chars |
 |---|---|---|
@@ -131,7 +130,7 @@ penthouse
 
 #### RSA Ad 2 — Presale Condos (Final URL B — A/B Test)
 
-**Final URL:** `https://go.88westrealty.com/vancouver-condo-deals-v2?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=presale-rsa2&utm_term={keyword}`
+**Final URL:** `https://go.88westrealty.com/developer-condo-deals-vancouver?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=presale-rsa2&utm_term={keyword}`
 
 | # | Headline | Chars |
 |---|---|---|
@@ -157,9 +156,9 @@ penthouse
 
 ### Ad Group 2: Condo Deals & Incentives
 
-**Budget Allocation:** 25% ($450/mo, $14.80/day)
+**Budget Allocation:** 30% ($540/mo, $17.76/day)
 **Max CPC:** $3.00
-**Landing Page:** `/vancouver-condo-deals`
+**Landing Page:** `/developer-condo-deals-vancouver`
 
 #### Keywords
 
@@ -174,7 +173,7 @@ penthouse
 
 #### RSA Ad 1 — Deals & Incentives
 
-**Final URL:** `https://go.88westrealty.com/vancouver-condo-deals?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=deals-rsa1&utm_term={keyword}`
+**Final URL:** `https://go.88westrealty.com/developer-condo-deals-vancouver?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=deals-rsa1&utm_term={keyword}`
 
 | # | Headline | Chars |
 |---|---|---|
@@ -198,7 +197,7 @@ penthouse
 
 #### RSA Ad 2 — Deals & Incentives
 
-**Final URL:** `https://go.88westrealty.com/vancouver-condo-deals?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=deals-rsa2&utm_term={keyword}`
+**Final URL:** `https://go.88westrealty.com/developer-condo-deals-vancouver?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=deals-rsa2&utm_term={keyword}`
 
 | # | Headline | Chars |
 |---|---|---|
@@ -227,7 +226,7 @@ penthouse
 
 **Budget Allocation:** 20% ($360/mo, $11.84/day)
 **Max CPC:** $3.00
-**Landing Page:** `/first-time-buyer-vancouver`
+**Landing Page:** `/developer-condo-deals-vancouver`
 
 #### Keywords
 
@@ -252,7 +251,7 @@ penthouse
 
 #### RSA Ad 1 — First-Time Buyer
 
-**Final URL:** `https://go.88westrealty.com/first-time-buyer-vancouver?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=ftb-rsa1&utm_term={keyword}`
+**Final URL:** `https://go.88westrealty.com/developer-condo-deals-vancouver?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=ftb-rsa1&utm_term={keyword}`
 
 | # | Headline | Chars |
 |---|---|---|
@@ -278,7 +277,7 @@ penthouse
 
 #### RSA Ad 2 — First-Time Buyer
 
-**Final URL:** `https://go.88westrealty.com/first-time-buyer-vancouver?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=ftb-rsa2&utm_term={keyword}`
+**Final URL:** `https://go.88westrealty.com/developer-condo-deals-vancouver?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=ftb-rsa2&utm_term={keyword}`
 
 | # | Headline | Chars |
 |---|---|---|
@@ -306,7 +305,7 @@ penthouse
 
 **Budget Allocation:** 15% ($270/mo, $8.88/day)
 **Max CPC:** $4.00
-**Landing Page:** `/vancouver-condo-deals` (with city UTM)
+**Landing Page:** `/developer-condo-deals-vancouver` (with city UTM)
 
 #### Keywords
 
@@ -322,7 +321,7 @@ penthouse
 
 #### RSA Ad 1 — City-Specific
 
-**Final URL:** `https://go.88westrealty.com/vancouver-condo-deals?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=city-rsa1&utm_term={keyword}`
+**Final URL:** `https://go.88westrealty.com/developer-condo-deals-vancouver?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=city-rsa1&utm_term={keyword}`
 
 | # | Headline | Chars |
 |---|---|---|
@@ -348,7 +347,7 @@ penthouse
 
 #### RSA Ad 2 — City-Specific
 
-**Final URL:** `https://go.88westrealty.com/vancouver-condo-deals?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=city-rsa2&utm_term={keyword}`
+**Final URL:** `https://go.88westrealty.com/developer-condo-deals-vancouver?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=city-rsa2&utm_term={keyword}`
 
 | # | Headline | Chars |
 |---|---|---|
@@ -376,7 +375,7 @@ penthouse
 
 **Budget Allocation:** 5% ($90/mo, $2.96/day)
 **Max CPC:** $2.00
-**Landing Page:** `/vancouver-condo-deals-v2` (scroll story)
+**Landing Page:** `/developer-condo-deals-vancouver` (scroll story)
 
 #### Keywords
 
@@ -398,7 +397,7 @@ penthouse
 
 #### RSA Ad 1 — Market Window
 
-**Final URL:** `https://go.88westrealty.com/vancouver-condo-deals-v2?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=market-rsa1&utm_term={keyword}`
+**Final URL:** `https://go.88westrealty.com/developer-condo-deals-vancouver?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=market-rsa1&utm_term={keyword}`
 
 | # | Headline | Chars |
 |---|---|---|
@@ -422,7 +421,7 @@ penthouse
 
 #### RSA Ad 2 — Market Window
 
-**Final URL:** `https://go.88westrealty.com/vancouver-condo-deals-v2?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=market-rsa2&utm_term={keyword}`
+**Final URL:** `https://go.88westrealty.com/developer-condo-deals-vancouver?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=market-rsa2&utm_term={keyword}`
 
 | # | Headline | Chars |
 |---|---|---|
@@ -446,83 +445,12 @@ penthouse
 
 ---
 
-### Ad Group 6: Assignment Deals
 
-**Budget Allocation:** 5% ($90/mo, $2.96/day)
-**Max CPC:** $4.00
-**Landing Page:** `/vancouver-condo-deals`
-
-#### Keywords
-
-| Keyword | Match Type |
-|---|---|
-| "assignment sale vancouver" | Phrase |
-| "presale assignment vancouver" | Phrase |
-| "condo assignment vancouver" | Phrase |
-
-#### Ad Group Negatives
-
-```
--how to sell assignment
--selling assignment
--list assignment
-```
-
-#### RSA Ad 1 — Assignment Deals
-
-**Final URL:** `https://go.88westrealty.com/vancouver-condo-deals?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=assign-rsa1&utm_term={keyword}`
-
-| # | Headline | Chars |
-|---|---|---|
-| 1 | Assignment Sales Vancouver | 26 |
-| 2 | Presale Assignments Live | 24 |
-| 3 | Below Original Pricing | 22 |
-| 4 | Motivated Sellers | 17 |
-| 5 | Save vs Buying Direct | 21 |
-| 6 | See Available Listings | 22 |
-| 7 | $100K+ Below Market | 19 |
-| 8 | Browse This Week's Deals | 24 |
-| 9 | Free for Buyers | 15 |
-| 10 | 88 West Realty | 14 |
-
-| # | Description | Chars |
-|---|---|---|
-| 1 | Presale assignment deals in Vancouver. Motivated sellers, below-market prices. | 77 |
-| 2 | Buy someone's presale contract at a discount. Move-in dates as early as 2026. | 76 |
-| 3 | Assignments offer instant equity. Browse available deals updated weekly. | 71 |
-| 4 | 88 West Realty helps buyers find the best assignment deals. Free service. | 72 |
-
-#### RSA Ad 2 — Assignment Deals
-
-**Final URL:** `https://go.88westrealty.com/vancouver-condo-deals?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=assign-rsa2&utm_term={keyword}`
-
-| # | Headline | Chars |
-|---|---|---|
-| 1 | Condo Assignments in Van | 24 |
-| 2 | Buy Below Original Price | 24 |
-| 3 | Presale Transfer Deals | 22 |
-| 4 | Near Completion Units | 20 |
-| 5 | Instant Equity Available | 24 |
-| 6 | See This Week's Deals | 21 |
-| 7 | No Cost to Buyers | 17 |
-| 8 | Limited Opportunities | 21 |
-| 9 | Calculate Your Savings | 22 |
-| 10 | 88 West Realty | 14 |
-
-| # | Description | Chars |
-|---|---|---|
-| 1 | Assignment sales let you skip the wait and buy below the original presale price. | 79 |
-| 2 | Motivated sellers offering presale contracts at deep discounts across Vancouver. | 79 |
-| 3 | Near-completion units available at 2020 pricing. Browse deals updated weekly. | 76 |
-| 4 | 88 West Realty specializes in presale assignment deals. Free buyer service. | 74 |
-
----
-
-### Ad Group 7: Investment
+### Ad Group 6: Investment
 
 **Budget Allocation:** 5% ($90/mo, $2.96/day)
 **Max CPC:** $5.00
-**Landing Page:** `/vancouver-condo-deals`
+**Landing Page:** `/developer-condo-deals-vancouver`
 
 #### Keywords
 
@@ -543,7 +471,7 @@ penthouse
 
 #### RSA Ad 1 — Investment
 
-**Final URL:** `https://go.88westrealty.com/vancouver-condo-deals?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=invest-rsa1&utm_term={keyword}`
+**Final URL:** `https://go.88westrealty.com/developer-condo-deals-vancouver?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=invest-rsa1&utm_term={keyword}`
 
 | # | Headline | Chars |
 |---|---|---|
@@ -567,7 +495,7 @@ penthouse
 
 #### RSA Ad 2 — Investment
 
-**Final URL:** `https://go.88westrealty.com/vancouver-condo-deals?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=invest-rsa2&utm_term={keyword}`
+**Final URL:** `https://go.88westrealty.com/developer-condo-deals-vancouver?utm_source=google&utm_medium=cpc&utm_campaign=developer-deals&utm_content=invest-rsa2&utm_term={keyword}`
 
 | # | Headline | Chars |
 |---|---|---|
@@ -597,10 +525,10 @@ penthouse
 
 | Sitelink | Final URL | Description Line 1 | Description Line 2 |
 |---|---|---|---|
-| This Week's Deals | `https://go.88westrealty.com/vancouver-condo-deals#deals` | Updated every Monday | Best developer incentives |
-| Calculate Savings | `https://go.88westrealty.com/vancouver-condo-deals#calculator` | See your real savings | Interactive calculator |
-| First-Time Buyers | `https://go.88westrealty.com/first-time-buyer-vancouver` | Save $43K+ in programs | GST + PTT + developer credits |
-| Swipe Through Deals | `https://go.88westrealty.com/vancouver-deals-swipe` | Find your match | Like Tinder for condos |
+| This Week's Deals | `https://go.88westrealty.com/developer-condo-deals-vancouver#deals` | Updated weekly | Best developer incentives |
+| How Presales Work | `https://go.88westrealty.com/developer-condo-deals-vancouver#stages` | Deposit, assignment, completion | Know the stages before you buy |
+| First-Time Buyers | `https://go.88westrealty.com/developer-condo-deals-vancouver#deals` | Save $43K+ in programs | GST + PTT + developer credits |
+| Common Questions | `https://go.88westrealty.com/developer-condo-deals-vancouver#faq` | Presale buyer FAQ | Straight answers, no pressure |
 
 ### Callout Extensions
 
@@ -617,7 +545,7 @@ GST Rebate Eligible
 
 | Header | Values |
 |---|---|
-| Types | Presale Condos; Townhomes; Assignments; Move-In Ready; Under Construction |
+| Types | Presale Condos; Townhomes; Move-In Ready; Under Construction |
 | Neighborhoods | Burnaby; Surrey; Coquitlam; North Van; Richmond; Vancouver |
 
 ### Call Extension
@@ -635,13 +563,12 @@ GST Rebate Eligible
 | Ad Group | Budget % | Monthly $ | Daily $ | Max CPC | Est. Clicks/Mo |
 |---|---|---|---|---|---|
 | 1. Presale Condos | 25% | $450 | $14.80 | $5.00 | 90 |
-| 2. Condo Deals & Incentives | 25% | $450 | $14.80 | $3.00 | 150 |
+| 2. Condo Deals & Incentives | 30% | $540 | $17.76 | $3.00 | 180 |
 | 3. First-Time Buyer | 20% | $360 | $11.84 | $3.00 | 120 |
 | 4. City-Specific | 15% | $270 | $8.88 | $4.00 | 68 |
 | 5. Market Window | 5% | $90 | $2.96 | $2.00 | 45 |
-| 6. Assignment Deals | 5% | $90 | $2.96 | $4.00 | 23 |
-| 7. Investment | 5% | $90 | $2.96 | $5.00 | 18 |
-| **Total** | **100%** | **$1,800** | **$59.21** | **$3.82 avg** | **~514** |
+| 6. Investment | 5% | $90 | $2.96 | $5.00 | 18 |
+| **Total** | **100%** | **$1,800** | **$59.21** | **$3.70 avg** | **~521** |
 
 ---
 
@@ -791,7 +718,6 @@ All final URLs use consistent UTM parameters:
 | First-Time Buyer | `ftb-rsa1` | `ftb-rsa2` |
 | City-Specific | `city-rsa1` | `city-rsa2` |
 | Market Window | `market-rsa1` | `market-rsa2` |
-| Assignment Deals | `assign-rsa1` | `assign-rsa2` |
 | Investment | `invest-rsa1` | `invest-rsa2` |
 
 ---

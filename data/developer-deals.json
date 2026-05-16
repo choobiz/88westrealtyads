@@ -1,102 +1,55 @@
 {
-  "$schema": "./developer-deals.schema.json",
-  "lastUpdated": "2026-05-02",
-  "source": "manual",
+  "lastUpdated": "2026-05-16",
+  "source": "scrape-deals.mjs (mikestewart.ca presale incentive grid)",
+  "note": "Real Greater Vancouver presale incentives, curated from public developer marketing pages. Not MLS-licensed data — no CREA display restriction. Incentive figures are developer-published and time-limited; a specialist confirms current terms with the developer before a client relies on them.",
   "deals": [
     {
-      "name": "Solhaven 6035",
-      "area": "Brentwood (Burnaby)",
-      "total": "$94,500",
-      "concessions": [
-        "$40,000 decorating credit",
-        "$48,000 parking + storage included",
-        "1.99% mortgage rate buy-down (12 months)",
-        "Free strata fees, year one (~$6,500)"
-      ],
-      "stage": "Standing Inventory",
-      "unitsLeft": 11,
-      "expires": "When project hits 70% sold",
-      "image": "/images/shared/properties/condo-modern-glass.jpg",
-      "imageAlt": "Modern glass-tower condo facade — illustrative example of a Standing Inventory building."
+      "project": "Rowen W47",
+      "developer": "Alabaster Homes",
+      "city": "Vancouver",
+      "headline": "$100,000",
+      "headlineLabel": "in year-end incentives",
+      "detail": "A $100,000 year-end incentive package on remaining homes at this West Side Vancouver development."
     },
     {
-      "name": "The Pier West",
-      "area": "Lower Lonsdale (North Vancouver)",
-      "total": "$78,200",
-      "concessions": [
-        "$35,000 cash credit at completion",
-        "Parking included ($38K value)",
-        "Assignment fee waived (typically $5,200)"
-      ],
-      "stage": "Construction",
-      "unitsLeft": 6,
-      "expires": "June 30, 2026",
-      "image": "/images/shared/properties/condo-courtyard.jpg",
-      "imageAlt": "Modern apartment complex with landscaped courtyard — illustrative example of a Construction-stage project."
+      "project": "The Hive — Willoughby Town Centre",
+      "developer": "Apcon Group",
+      "city": "Langley",
+      "headline": "$60,000",
+      "headlineLabel": "total savings package",
+      "detail": "$15,000 off all homes, one year of free strata fees, and a reduced 2.5% deposit — a limited-time stack."
     },
     {
-      "name": "Aalto on Marine",
-      "area": "Cambie (Vancouver)",
-      "total": "$112,000",
-      "concessions": [
-        "$55,000 buyer's bonus (cash at closing)",
-        "5% deposit structure",
-        "Free upgraded appliance package ($18K value)",
-        "2.49% rate buy-down (24 mo, ~$24K NPV)",
-        "$15,000 closing-cost coverage"
-      ],
-      "stage": "Public Launch",
-      "unitsLeft": 22,
-      "expires": "When project hits 60% sold",
-      "image": "/images/shared/properties/condo-minimalist.jpg",
-      "imageAlt": "Minimalist contemporary apartment facade — illustrative example of a Public Launch project."
+      "project": "Thesis Vancouver",
+      "developer": "Alabaster Homes",
+      "city": "Vancouver",
+      "headline": "$50,000",
+      "headlineLabel": "first-time buyer GST rebate",
+      "detail": "Eligible first-time buyers can receive up to $50,000 back through the new-home GST rebate."
     },
     {
-      "name": "Park & Lansdowne",
-      "area": "Richmond Centre (Richmond)",
-      "total": "$68,400",
-      "concessions": [
-        "GST included on units up to $1.05M (~$45K saved)",
-        "Parking included ($28K)",
-        "Quick-close: $5,400 cash if firm by May 15"
-      ],
-      "stage": "Standing Inventory",
-      "unitsLeft": 19,
-      "expires": "May 15, 2026 (quick-close component)",
-      "image": "/images/shared/properties/townhouse-brick.jpg",
-      "imageAlt": "Brick low-rise residential exterior — illustrative example of an urban Standing Inventory project."
+      "project": "Cascadia Langley Townhomes",
+      "developer": "StreetSide Developments",
+      "city": "Langley",
+      "headline": "$50,000",
+      "headlineLabel": "no-GST savings for first-time buyers",
+      "detail": "Eligible first-time home buyers save up to $50,000 with the GST removed on these Willoughby townhomes."
     },
     {
-      "name": "Citizen Brewery District",
-      "area": "Edmonds (Burnaby)",
-      "total": "$56,000",
-      "concessions": [
-        "$30,000 decorating allowance",
-        "One-year strata-fee holiday (~$5,800)",
-        "Storage locker included ($12K)",
-        "$8,200 closing-cost coverage"
-      ],
-      "stage": "Construction",
-      "unitsLeft": 14,
-      "expires": "July 1, 2026",
-      "image": "/images/shared/properties/detached-craftsman.jpg",
-      "imageAlt": "Craftsman-style two-story home with porch — illustrative example of a mixed-use project area."
+      "project": "Centràle Burnaby",
+      "developer": "Qualex-Landmark",
+      "city": "Burnaby",
+      "headline": "$15,000",
+      "headlineLabel": "off two-bedroom homes",
+      "detail": "$10,000 off all one-bedroom homes and $15,000 off all two-bedroom homes, for a limited time."
     },
     {
-      "name": "Marine Gateway South",
-      "area": "Marpole (Vancouver)",
-      "total": "$83,750",
-      "concessions": [
-        "$50,000 buyer's bonus (cash at closing)",
-        "5% deposit",
-        "Parking + storage included ($24K)",
-        "Rate buy-down to 2.99% for 12 mo (~$9,750 NPV)"
-      ],
-      "stage": "Standing Inventory",
-      "unitsLeft": 8,
-      "expires": "Until 80% sold (currently 71%)",
-      "image": "/images/shared/properties/detached-suburban.jpg",
-      "imageAlt": "Suburban detached home with garden — illustrative example of a transit-oriented Standing Inventory project."
+      "project": "Solana Langley",
+      "developer": "Zenterra Developments",
+      "city": "Langley",
+      "headline": "5%",
+      "headlineLabel": "credit on every home",
+      "detail": "A 5% credit on all homes — designed to offset GST and Property Transfer Tax on a primary residence."
     }
   ]
 }

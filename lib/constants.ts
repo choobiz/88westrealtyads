@@ -58,26 +58,26 @@ export const MEDICAL_WEBHOOK_URL = assertWebhookLocation(
 
 /** GHL webhook for 88 West Realty foreclosure / court-ordered sales leads.
  *
- * NOTE: trigger ID below is a PLACEHOLDER. Before launch, user must:
- *   1. Create a new "Inbound Webhook" workflow in 88West GHL location
- *   2. Replace the trigger ID below with the new workflow's URL
- *   3. The location-prefix assertion guarantees we can't accidentally use a
- *      Brio URL — but a placeholder trigger will silently fail to capture leads
- *      until the real ID is filled in.
+ * Shares the single "WF – Master Lead Form Intake" inbound webhook (same URL
+ * as MEDICAL_WEBHOOK_URL). That workflow's "Route by Landing Page Source" node
+ * branches on the `source` field — leads with source "foreclosure-deals-vancouver"
+ * hit the foreclosure branch (tag, opportunity, internal notification).
  */
 export const FORECLOSURE_WEBHOOK_URL = assertWebhookLocation(
-  "https://services.leadconnectorhq.com/hooks/7cP5dKRcwCgdBclC1d3m/webhook-trigger/PLACEHOLDER-FORECLOSURE-REPLACE-BEFORE-LAUNCH",
+  "https://services.leadconnectorhq.com/hooks/7cP5dKRcwCgdBclC1d3m/webhook-trigger/AuGxFj3BBA8IwzHQjMsT",
   GHL_LOCATIONS.EIGHTY_EIGHT_WEST,
   "foreclosure-deals-vancouver",
 );
 
 /** GHL webhook for 88 West Realty developer-incentive Tracker leads.
  *
- * NOTE: trigger ID below is a PLACEHOLDER. Before launch, swap with the
- * real Inbound Webhook trigger from the 88West GHL location.
+ * Shares the single "WF – Master Lead Form Intake" inbound webhook (same URL
+ * as MEDICAL_WEBHOOK_URL). The workflow's "Route by Landing Page Source" node
+ * branches leads with source "developer-condo-deals-vancouver" to the developer
+ * branch (tag, opportunity, internal notification).
  */
 export const DEVELOPER_WEBHOOK_URL = assertWebhookLocation(
-  "https://services.leadconnectorhq.com/hooks/7cP5dKRcwCgdBclC1d3m/webhook-trigger/PLACEHOLDER-DEVELOPER-REPLACE-BEFORE-LAUNCH",
+  "https://services.leadconnectorhq.com/hooks/7cP5dKRcwCgdBclC1d3m/webhook-trigger/AuGxFj3BBA8IwzHQjMsT",
   GHL_LOCATIONS.EIGHTY_EIGHT_WEST,
   "developer-condo-deals-vancouver",
 );

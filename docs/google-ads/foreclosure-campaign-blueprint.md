@@ -273,7 +273,6 @@ toronto foreclosure
 | "vancouver below market real estate" | Phrase |
 | "vancouver fixer upper for sale" | Phrase |
 | "vancouver real estate deals" | Phrase |
-| "below assessed value vancouver" | Phrase |
 | "vancouver real estate investment opportunities" | Phrase |
 
 #### RSA Ad 1 — Investor
@@ -284,7 +283,7 @@ toronto foreclosure
 |---|---|---|
 | 1 | Vancouver Below-Market Deals | 28 |
 | 2 | Court-Ordered Investment | 24 |
-| 3 | Properties Below Assessed | 25 |
+| 3 | Investor Court-Sale Deals | 25 |
 | 4 | Greater Vancouver Focus | 23 |
 | 5 | Daily List for Investors | 24 |
 | 6 | ~389 Active BC Listings | 23 |
@@ -295,7 +294,7 @@ toronto foreclosure
 
 | # | Description | Chars |
 |---|---|---|
-| 1 | Daily foreclosure list for Vancouver investors. Below-assessed, court-ordered. | 79 |
+| 1 | Daily court-ordered listings for Vancouver investors. Clear title, priced to sell. | 82 |
 | 2 | Court-ordered properties surfaced before MLS subscribers see them. Free daily. | 80 |
 | 3 | Surface deals with high equity gaps. Schedule A nuances explained per listing. | 79 |
 | 4 | 88 West Realty represents the buyer — daily email list, never paid by sellers. | 78 |
