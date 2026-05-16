@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-05-06T14:07:13.925Z",
+  "scrapedAt": "2026-05-16T15:50:51.511Z",
   "sources": [
     {
       "name": "Simon Clayton (Macdonald Realty)",
@@ -16,9 +16,8 @@
     {
       "name": "Realtyvibe (Sutton Premier)",
       "url": "https://realtyvibe.ca/vancouver-foreclosures-for-sale/",
-      "ok": false,
-      "mlsCount": 0,
-      "error": "The operation was aborted due to timeout"
+      "ok": true,
+      "mlsCount": 12
     },
     {
       "name": "Real Estate Coal Harbour — Vancouver",
