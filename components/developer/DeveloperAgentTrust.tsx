@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function DeveloperAgentTrust() {
   return (
     <section className="bg-white py-16 lg:py-24">
@@ -12,15 +14,24 @@ export default function DeveloperAgentTrust() {
         </div>
 
         <div className="bg-eightyw-light border border-eightyw-border rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center mb-8">
-          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-eightyw-blue flex items-center justify-center text-white shrink-0">
-            <span className="text-3xl md:text-4xl font-bold tracking-wider">88W</span>
+          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shrink-0 border-4 border-white shadow-md">
+            <Image
+              src="/images/agent/shirin-saleh.jpg"
+              alt="Shirin Saleh, Managing Broker and Owner of 88 West Realty"
+              width={160}
+              height={160}
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="flex-1 text-center md:text-left">
             <h3 className="text-eightyw-blue text-xl md:text-2xl font-bold mb-1">
-              [Agent Name — Placeholder]
+              Shirin Saleh
             </h3>
-            <p className="text-brand-red text-sm font-semibold mb-3">
-              Buyer-Side Agent · 88 West Realty · License #X031527
+            <p className="text-brand-red text-sm font-semibold mb-1">
+              Managing Broker &amp; Owner · 88 West Realty · License #X031527
+            </p>
+            <p className="text-text-muted text-sm mb-3">
+              REALTOR&reg; · Serving Greater Vancouver since 2015
             </p>
             <div className="space-y-3 text-text-secondary text-sm md:text-base leading-relaxed">
               <p>

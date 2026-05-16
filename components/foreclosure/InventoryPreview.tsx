@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import LeadFormModal from "@/components/shared/LeadFormModal";
 import { ForeclosureLeadForm } from "./ForeclosureHero";
 import dealsData from "@/data/foreclosure-deals.json";
@@ -70,35 +70,24 @@ export default function InventoryPreview() {
                     <p className="text-eightyw-blue font-semibold text-sm">{l.sqft}</p>
                   </div>
                 </div>
-                <div className="flex items-center justify-between gap-3">
-                  <span className="inline-block px-3 py-1 bg-brand-red/10 text-brand-red text-[11px] font-semibold rounded-full">
-                    Court-ordered sale
-                  </span>
-                  <span className="inline-flex items-center gap-1 text-brand-red text-xs font-semibold">
-                    Get details <ArrowRight className="w-3.5 h-3.5" />
-                  </span>
+                <div className="space-y-3">
+                  <div className="flex flex-wrap gap-2">
+                    <span className="inline-block px-3 py-1 bg-brand-red/10 text-brand-red text-[11px] font-semibold rounded-full">
+                      Court-ordered sale
+                    </span>
+                    <span className="inline-flex items-center gap-1 px-3 py-1 bg-brand-red text-white text-[11px] font-semibold rounded-full">
+                      <Sparkles className="w-3 h-3" /> Below-market opportunity
+                    </span>
+                  </div>
+                  <div className="flex justify-end">
+                    <span className="inline-flex items-center gap-1 text-brand-red text-xs font-semibold">
+                      Get details <ArrowRight className="w-3.5 h-3.5" />
+                    </span>
+                  </div>
                 </div>
               </div>
             </button>
           ))}
-        </div>
-
-        <div className="bg-eightyw-light border border-eightyw-border rounded-2xl p-6 mb-10">
-          <h3 className="text-eightyw-blue font-bold text-sm uppercase tracking-wider mb-3">How to read this list</h3>
-          <dl className="space-y-3 text-sm text-text-secondary">
-            <div>
-              <dt className="font-semibold text-eightyw-blue">Court-ordered sale</dt>
-              <dd>The lender has gone to BC Supreme Court to force the sale. Offers are submitted subject to court approval; at the approval hearing other buyers can table competing offers, and the judge usually awards to the highest bid.</dd>
-            </div>
-            <div>
-              <dt className="font-semibold text-eightyw-blue">Schedule A</dt>
-              <dd>The lender/court addendum that releases the lender from any condition or warranty responsibility. Every BC court-ordered offer requires it. We draft it line-by-line with you.</dd>
-            </div>
-            <div>
-              <dt className="font-semibold text-eightyw-blue">List price</dt>
-              <dd>The current court-supervised asking price. It is a starting point, not a ceiling or a guarantee — your specialist runs the comparables and possession-risk check before you offer.</dd>
-            </div>
-          </dl>
         </div>
 
         <p className="text-center text-text-muted text-xs md:text-sm">

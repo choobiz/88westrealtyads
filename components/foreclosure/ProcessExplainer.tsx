@@ -1,3 +1,8 @@
+"use client";
+
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
+
 const SUB_BLOCKS: { h3: string; paragraphs: string[] }[] = [
   {
     h3: "What a Judicial Sale Is",
@@ -35,6 +40,10 @@ const SUB_BLOCKS: { h3: string; paragraphs: string[] }[] = [
 ];
 
 export default function ProcessExplainer() {
+  const [open, setOpen] = useState<number[]>([0]);
+  const toggle = (i: number) =>
+    setOpen((cur) => (cur.includes(i) ? cur.filter((x) => x !== i) : [...cur, i]));
+
   return (
     <section id="process" className="bg-eightyw-light py-16 lg:py-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,24 +57,48 @@ export default function ProcessExplainer() {
             seizure-and-sell. Every sale is supervised by the BC Supreme Court,
             the title is clean at closing, and the buyer&apos;s rules are specific
             enough to either save or lose you money depending on whether you
-            know them. Five minutes of reading here is worth more than a year
-            of YouTube.
+            know them. Tap any of the four to open it.
           </p>
         </div>
 
-        <div className="space-y-10">
-          {SUB_BLOCKS.map((block, i) => (
-            <article key={i} className="bg-white rounded-2xl border border-eightyw-border p-6 md:p-8">
-              <h3 className="text-eightyw-blue text-xl md:text-2xl font-bold mb-4">
-                {block.h3}
-              </h3>
-              <div className="space-y-3 text-text-secondary text-sm md:text-base leading-relaxed">
-                {block.paragraphs.map((p, j) => (
-                  <p key={j}>{p}</p>
-                ))}
+        <div className="space-y-3">
+          {SUB_BLOCKS.map((block, i) => {
+            const isOpen = open.includes(i);
+            return (
+              <div
+                key={i}
+                className="bg-white rounded-2xl border border-eightyw-border overflow-hidden"
+              >
+                <button
+                  type="button"
+                  onClick={() => toggle(i)}
+                  aria-expanded={isOpen}
+                  className="w-full flex items-center gap-4 p-5 md:p-6 text-left cursor-pointer hover:bg-eightyw-light/60 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-red/40 focus:ring-inset"
+                >
+                  <span className="shrink-0 w-9 h-9 rounded-full bg-brand-red text-white font-bold flex items-center justify-center text-sm">
+                    {i + 1}
+                  </span>
+                  <span className="flex-1 text-eightyw-blue text-lg md:text-xl font-bold">
+                    {block.h3}
+                  </span>
+                  <ChevronDown
+                    className={`shrink-0 w-5 h-5 text-text-muted transition-transform duration-200 ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                <div
+                  className={`${
+                    isOpen ? "block" : "hidden"
+                  } px-5 md:px-6 pb-6 space-y-3 text-text-secondary text-sm md:text-base leading-relaxed`}
+                >
+                  {block.paragraphs.map((p, j) => (
+                    <p key={j}>{p}</p>
+                  ))}
+                </div>
               </div>
-            </article>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
