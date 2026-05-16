@@ -47,8 +47,8 @@ export default function ForeclosureHero() {
   return (
     <section className="relative min-h-[520px] md:min-h-[600px] flex items-center overflow-hidden">
       <Image
-        src="/images/foreclosure/hero-vancouver.jpg"
-        alt="Detached home with manicured lawn and inviting facade — illustrative of the Greater Vancouver detached and townhouse stock that comes through BC court-ordered sales."
+        src="/images/foreclosure/hero-court-ordered.jpg"
+        alt="A West Coast home overlooking Howe Sound and the Coast Mountains — illustrative of the Greater Vancouver homes that come through BC court-ordered sales."
         fill
         priority
         className="object-cover"
