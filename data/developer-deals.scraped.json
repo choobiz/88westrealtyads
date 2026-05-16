@@ -1,7 +1,11 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
+<<<<<<< HEAD
   "scrapedAt": "2026-05-16T15:51:26.597Z",
+=======
+  "scrapedAt": "2026-05-16T14:19:18.158Z",
+>>>>>>> edb696d937aec12f613a3dd2aab38cb74df32895
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
