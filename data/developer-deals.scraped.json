@@ -1,11 +1,60 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-05-16T17:15:33.440Z",
+  "scrapedAt": "2026-05-17T14:17:04.403Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "Wren Vancouver Townhomes by Tavanco – Plans & Pricing",
+      "city": "Vancouver",
+      "incentive_summary": "Recent repricing, With recent repricing, homes are now starting from $749,000, With recent repricing, homes are now s...",
+      "project_url": "https://www.mikestewart.ca/presale/wren-townhomes-vancouver-presales/",
+      "headline_dollar": "$749,000,"
+    },
+    {
+      "project_name": "Pura Surrey by Adera – Floor Plans & Price",
+      "city": "Surrey",
+      "incentive_summary": "Save up to $100,000*, Newly improved pricing, Chinese New Year Special Pricing, SAVINGS UP TO OVER $100,000, LIMITED ...",
+      "project_url": "https://www.mikestewart.ca/presale/pura-surrey-city-centre-presale-condos-by-adera-development/",
+      "headline_dollar": "$100,000"
+    },
+    {
+      "project_name": "Gradience Langley – Prices & Floor Plans",
+      "city": "Langley",
+      "incentive_summary": "Up to $50,000 back for eligible first-time buyers through the federal First-Time Home Buyer GST Rebate., Rebate is re...",
+      "project_url": "https://www.mikestewart.ca/presale/gradience-langley-prices-floor-plans/",
+      "headline_dollar": "$50,000"
+    },
+    {
+      "project_name": "Kestrel Townhomes by Adera – Floorplans & Pricing",
+      "city": "Coquitlam",
+      "incentive_summary": "Save up to $100K*, Save up to $100,000*, Save up to $100,000* before the holidays., great opportunities on select 1- ...",
+      "project_url": "https://www.mikestewart.ca/presale/kestrel-townhomes-coquitlam-presales/",
+      "headline_dollar": "$100K"
+    },
+    {
+      "project_name": "Moody Yards By Mosaic Homes – 3075 & 3055 Murray Street",
+      "city": "Port Moody",
+      "incentive_summary": "Invitation to an exclusive Realtor Open event., Enter to win $750 in prize draws at the event., Brand new homes ready...",
+      "project_url": "https://www.mikestewart.ca/presale/moody-yards-port-moody-centre-presale-condos-by-mosaic-homes/",
+      "headline_dollar": "$750"
+    },
+    {
+      "project_name": "Atlin at Clayton Crest by Zenterra Developments – Floorplans & Prices",
+      "city": "Surrey",
+      "incentive_summary": "$10,000 credit on purchase, Air conditioning included, Vinyl plank flooring upgrade in the bedrooms, Storage locker i...",
+      "project_url": "https://www.mikestewart.ca/presale/atlin-at-clayton-crest-presales/",
+      "headline_dollar": "$10,000"
+    },
+    {
+      "project_name": "Trailside at Lynn by Mosaic – Plans & Pricing",
+      "city": "North Vancouver",
+      "incentive_summary": "First-timers can save up to $50,000 with the GST rebate on new homes, 30-Year Amortization for First-Timers, Save up ...",
+      "project_url": "https://www.mikestewart.ca/presale/trailside-at-lynn-presale-condos/",
+      "headline_dollar": "$50,000"
+    },
     {
       "project_name": "7381 Preston Boulevard – Skyview Mission",
       "city": "Mission",
@@ -42,67 +91,11 @@
       "headline_dollar": "$499K"
     },
     {
-      "project_name": "The Hive Willoughby Town Centre at 7920 206 Street, Langley",
-      "city": "Langley",
-      "incentive_summary": "Save $60,000 for a limited time only, $15,000 off all homes, one year of free strata fees, just 2.5% deposit, additio...",
-      "project_url": "https://www.mikestewart.ca/presale/the-hive-at-willoughby-town-centre-by-apcon-group-langley-presale-condos/",
-      "headline_dollar": "$60,000"
-    },
-    {
-      "project_name": "The Falls at Kanaka Springs by Epic Homes – Availability, Plans, Prices",
-      "city": "Maple Ridge",
-      "incentive_summary": "Special pricing on the final 3 homes under $800k., Special pricing on the final three 3 Bed + Den townhomes, starting...",
-      "project_url": "https://www.mikestewart.ca/presale/the-falls-at-kanaka-springs-by-epic-homes-presale-maple-ridge-townhomes/",
-      "headline_dollar": "$800k"
-    },
-    {
-      "project_name": "6951 204 Street – Cascadia Langley Townhomes by StreetSide – Plans, Availability, Prices",
-      "city": "Langley",
-      "incentive_summary": "Eligible first-time home buyers can save up to $50,000 with no GST*, Save up to $50,000 with no GST for eligible firs...",
-      "project_url": "https://www.mikestewart.ca/presale/cascadia-willoughby-langley-presale-townhomes-by-streetside-developments/",
-      "headline_dollar": "$50,000"
-    },
-    {
-      "project_name": "133 West 49th Avenue – Thesis Vancouver by Alabaster Homes",
-      "city": "Vancouver",
-      "incentive_summary": "First-Time Buyer GST Rebate: eligible buyers can receive up to $50,000 back when purchasing a new home, Homes under $...",
-      "project_url": "https://www.mikestewart.ca/presale/thesis-oakridge-vancouver-presale-condos-by-alabaster-homes/",
-      "headline_dollar": "$50,000"
-    },
-    {
-      "project_name": "Gordon Square Langley Townhomes – 20645 68th Avenue",
-      "city": "Langley",
-      "incentive_summary": "Home #2 now offered at $899,900, Only three move-in ready townhomes remain, Only 2 final opportunities remaining",
-      "project_url": "https://www.mikestewart.ca/presale/gordon-square-townhomes-langley/",
-      "headline_dollar": "$899,900,"
-    },
-    {
       "project_name": "Centràle Burnaby — Prices & Floor Plans",
       "city": "Burnaby",
       "incentive_summary": "$10,000 off all 1 Bedroom Homes, $15,000 off all 2 Bedroom Homes",
       "project_url": "https://www.mikestewart.ca/presale/centrale/",
       "headline_dollar": "$15,000"
-    },
-    {
-      "project_name": "Artesia Metrotown – 5685 Halley Avenue –",
-      "city": "Burnaby",
-      "incentive_summary": "Credits exclude GST and are for a limited time only and subject to change without notice., Credits available, Credits...",
-      "project_url": "https://www.mikestewart.ca/presale/artesia-by-qualex-landmark/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "EIGHT in Edgemont Village by I4 – 3175 Canfield Crescent",
-      "city": "North Vancouver",
-      "incentive_summary": "Only four homes remain, Move-in ready duplex homes, Refined design, generous layouts, and a level of finish rarely se...",
-      "project_url": "https://www.mikestewart.ca/presale/canfield-edgemont-village-north-vancouver-presale-townhomes-by-i4-property-group/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "639 Aspen Street – The Grove by Foster Living",
-      "city": "Coquitlam",
-      "incentive_summary": "secure yours today with only a 5% deposit, Open House This Saturday from 12-4 PM, Limited Homes Remaining, Move in Th...",
-      "project_url": "https://www.mikestewart.ca/presale/the-grove-by-foster-living/",
-      "headline_dollar": null
     },
     {
       "project_name": "The POCO by Rapture Developments – Plans & Pricing",
@@ -112,24 +105,31 @@
       "headline_dollar": null
     },
     {
-      "project_name": "Little Mountain Vancouver by Holborn Properties",
-      "city": "Vancouver",
-      "incentive_summary": "Whistler Vacation Package & Cash Prizes!, Concrete construction at wood-frame pricing, Lucky Draws for amazing prizes...",
-      "project_url": "https://www.mikestewart.ca/presale/little-mountain/",
+      "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
+      "city": "Coquitlam",
+      "incentive_summary": "Ask About Our 3% Advance*, All homes qualify for a GST rebate.*, Limited-time incentive: 2 parking stalls included.*,...",
+      "project_url": "https://www.mikestewart.ca/presale/botanica-coquitlam-presale-condos-by-qualex-landmark/",
       "headline_dollar": null
     },
     {
-      "project_name": "Emerson by Frame in Oaklands – Plans & Pricing",
-      "city": "Victoria",
-      "incentive_summary": "Ask about Emerson's Green Mortgage Program. You could save hundreds per month with our energy-efficient homes., If yo...",
-      "project_url": "https://www.mikestewart.ca/presale/emerson-by-frame-victoria-presale-townhomes/",
+      "project_name": "Hue Port Moody by Marcon @ 2015 St. Johns Street & 125 Albert Street",
+      "city": "Port Moody",
+      "incentive_summary": "Receive a complimentary eucalyptus room spray by attending the Open House., Limited quantities available on a first-c...",
+      "project_url": "https://www.mikestewart.ca/presale/hue-seaview-port-moody-presale-condos-by-marcon-developments/",
       "headline_dollar": null
     },
     {
-      "project_name": "Savannah Vancouver – 7789 Yukon Street",
-      "city": "Vancouver",
-      "incentive_summary": "*On select homes only. All promotions are subject to change without notice. Speak with a sales representative for mor...",
-      "project_url": "https://www.mikestewart.ca/presale/savannah-cambie-corridor-vancouver-presale-condos-and-townhomes-by-imani-development/",
+      "project_name": "Belvedere Surrey by Square Nine Developments 9675 King George Boulevard",
+      "city": "Surrey",
+      "incentive_summary": "Court-Ordered Pricing, Pre-growth pricing in Surrey Centre, Move-in-ready concrete homes complete with A/C, parking, ...",
+      "project_url": "https://www.mikestewart.ca/presale/belvedere-by-square-nine-developments-surrey-city-centre-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Artesia Metrotown – 5685 Halley Avenue –",
+      "city": "Burnaby",
+      "incentive_summary": "Credits exclude GST and are for a limited time only and subject to change without notice., Credits available, Credits...",
+      "project_url": "https://www.mikestewart.ca/presale/artesia-by-qualex-landmark/",
       "headline_dollar": null
     }
   ]
