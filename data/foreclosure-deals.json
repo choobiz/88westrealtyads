@@ -4,7 +4,7 @@
   "compliance": {
     "status": "operator-override",
     "date": "2026-05-16",
-    "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period, before GVR WebAPI authorization. Standard rule is research-tier only (see scripts/scrape-foreclosure-deals.mjs header). Override accepted by Amir Omidvar; flagged for managing-broker awareness (Shirin Saleh, licence #X031527) — CREA Code-of-Ethics exposure on her licence. To stay as defensible as possible: street numbers fully removed (street name + neighbourhood only); MLS numbers removed from the published cards (retained only in the research dump foreclosure-deals.scraped.json); card photos are generic representative-by-type images, NOT actual MLS listing photos (republishing licensed listing photos would be copyright infringement); no listing remarks, no agent names. Replace this file with the GVR-feed-backed source once the WebAPI is authorized — IDX feeds license real per-listing photos.",
+    "note": "OPERATOR OVERRIDE — real court-ordered listing data AND real per-listing photos published on the public LP during the bridge period, before GVR WebAPI authorization. Standard rule is research-tier only (see scripts/scrape-foreclosure-deals.mjs header). Override accepted and directed by Amir Omidvar; flagged for managing-broker awareness (Shirin Saleh, licence #X031527) — CREA Code-of-Ethics / MLS display exposure on her licence. Listing photos were supplied by the managing broker from 88 West's own MLS member access (Paragon), per operator direction, on the stated basis of 88 West's display authorization. To stay as defensible as possible: street numbers fully removed (street name + neighbourhood only); MLS numbers removed from the published cards and from public-facing image filenames (retained only in the research dump foreclosure-deals.scraped.json); no listing remarks, no agent names. Replace this file with the GVR-feed-backed source once the WebAPI is authorized — IDX feeds license per-listing photos and auto-refresh, which is the permanent fix.",
     "replaceWith": "GVR WebAPI feed — see docs/gvr-database-schema.md"
   },
   "deals": [
@@ -15,8 +15,8 @@
       "price": "$500K",
       "sqft": "650 sq ft",
       "courtOrdered": true,
-      "image": "/images/shared/properties/condo-modern-glass.jpg",
-      "imageAlt": "Representative modern Vancouver condo exterior — illustrative, not the actual listing."
+      "image": "/images/foreclosure/listings/hastings-vancouver.jpg",
+      "imageAlt": "Condo building of a current court-ordered listing in Hastings, Vancouver."
     },
     {
       "type": "Condo",
@@ -25,8 +25,8 @@
       "price": "$479K",
       "sqft": "716 sq ft",
       "courtOrdered": true,
-      "image": "/images/shared/properties/condo-courtyard.jpg",
-      "imageAlt": "Representative low-rise condo with courtyard — illustrative, not the actual listing."
+      "image": "/images/foreclosure/listings/central-lonsdale-nv.jpg",
+      "imageAlt": "Condo building of a current court-ordered listing in Central Lonsdale, North Vancouver."
     },
     {
       "type": "Townhouse",
@@ -35,8 +35,8 @@
       "price": "$499K",
       "sqft": "1,057 sq ft",
       "courtOrdered": true,
-      "image": "/images/shared/properties/townhouse-brick.jpg",
-      "imageAlt": "Representative brick townhouse exterior — illustrative, not the actual listing."
+      "image": "/images/foreclosure/listings/false-creek-vancouver.jpg",
+      "imageAlt": "Townhouse complex of a current court-ordered listing in False Creek, Vancouver."
     },
     {
       "type": "Condo",
@@ -45,8 +45,8 @@
       "price": "$299K",
       "sqft": "687 sq ft",
       "courtOrdered": true,
-      "image": "/images/shared/properties/condo-minimalist.jpg",
-      "imageAlt": "Representative contemporary condo exterior — illustrative, not the actual listing."
+      "image": "/images/foreclosure/listings/college-park-port-moody.jpg",
+      "imageAlt": "Condo building of a current court-ordered listing in College Park, Port Moody."
     },
     {
       "type": "Condo",
@@ -55,8 +55,8 @@
       "price": "$1.28M",
       "sqft": "734 sq ft",
       "courtOrdered": true,
-      "image": "/images/shared/properties/condo-modern-glass.jpg",
-      "imageAlt": "Representative glass-tower condo exterior — illustrative, not the actual listing."
+      "image": "/images/foreclosure/listings/coal-harbour-vancouver.jpg",
+      "imageAlt": "Condo tower of a current court-ordered listing in Coal Harbour, Vancouver."
     },
     {
       "type": "House",
@@ -65,8 +65,8 @@
       "price": "$1.25M",
       "sqft": "2,667 sq ft",
       "courtOrdered": true,
-      "image": "/images/shared/properties/detached-craftsman.jpg",
-      "imageAlt": "Representative Craftsman detached home — illustrative, not the actual listing."
+      "image": "/images/foreclosure/listings/renfrew-heights-vancouver.jpg",
+      "imageAlt": "House of a current court-ordered listing in Renfrew Heights, Vancouver."
     },
     {
       "type": "Condo",
@@ -75,8 +75,8 @@
       "price": "$739K",
       "sqft": "1,286 sq ft",
       "courtOrdered": true,
-      "image": "/images/shared/properties/condo-courtyard.jpg",
-      "imageAlt": "Representative low-rise condo with courtyard — illustrative, not the actual listing."
+      "image": "/images/foreclosure/listings/park-royal-west-van.jpg",
+      "imageAlt": "Interior of a current court-ordered condo listing in Park Royal, West Vancouver."
     },
     {
       "type": "Townhouse",
@@ -85,8 +85,8 @@
       "price": "$1.18M",
       "sqft": "1,538 sq ft",
       "courtOrdered": true,
-      "image": "/images/shared/properties/townhouse-brick.jpg",
-      "imageAlt": "Representative brick townhouse exterior — illustrative, not the actual listing."
+      "image": "/images/foreclosure/listings/lynnmour-nv.jpg",
+      "imageAlt": "Townhouse of a current court-ordered listing in Lynnmour, North Vancouver."
     },
     {
       "type": "House",
@@ -95,8 +95,8 @@
       "price": "$2.54M",
       "sqft": "4,362 sq ft",
       "courtOrdered": true,
-      "image": "/images/shared/properties/detached-suburban.jpg",
-      "imageAlt": "Representative detached suburban home — illustrative, not the actual listing."
+      "image": "/images/foreclosure/listings/morgan-creek-surrey.jpg",
+      "imageAlt": "House of a current court-ordered listing in Morgan Creek, Surrey."
     }
   ]
 }

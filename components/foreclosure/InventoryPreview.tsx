@@ -32,8 +32,8 @@ export default function InventoryPreview() {
           </h2>
           <p className="text-text-secondary text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
             {LISTINGS.length} current Greater Vancouver court-ordered and foreclosure listings from this
-            week&apos;s MLS&reg; scan. Photos are representative; your specialist sends the actual
-            listing, full address, court date, Schedule A draft, and possession-risk note on the intro call.
+            week&apos;s MLS&reg; scan. Your specialist sends the full address, court date, Schedule A
+            draft, and possession-risk note on the intro call.
           </p>
         </div>
 
