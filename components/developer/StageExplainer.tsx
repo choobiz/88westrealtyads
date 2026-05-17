@@ -1,3 +1,8 @@
+"use client";
+
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
+
 const STAGES: { stage: string; h3: string; body: string }[] = [
   {
     stage: "Stage 1",
@@ -42,6 +47,10 @@ const PHRASES: { phrase: string; meaning: string }[] = [
 ];
 
 export default function StageExplainer() {
+  const [open, setOpen] = useState<number[]>([0]);
+  const toggle = (i: number) =>
+    setOpen((cur) => (cur.includes(i) ? cur.filter((x) => x !== i) : [...cur, i]));
+
   return (
     <section id="stages" className="bg-eightyw-light py-16 lg:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,27 +67,53 @@ export default function StageExplainer() {
         </div>
 
         <div className="mb-16">
-          <h3 className="text-eightyw-blue text-xl md:text-2xl font-bold text-center mb-8">
+          <h3 className="text-eightyw-blue text-xl md:text-2xl font-bold text-center mb-3">
             The 5-Stage Developer Release Pyramid
           </h3>
-          <div className="space-y-4">
-            {STAGES.map((s, i) => (
-              <article key={i} className="bg-white border border-eightyw-border rounded-2xl p-6 md:p-7">
-                <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-6">
-                  <div className="md:w-44 shrink-0">
-                    <p className="text-brand-red text-xs font-semibold uppercase tracking-wider mb-1">
-                      {s.stage}
-                    </p>
-                    <h4 className="text-eightyw-blue text-lg md:text-xl font-bold leading-tight">
-                      {s.h3}
-                    </h4>
-                  </div>
-                  <p className="text-text-secondary text-sm md:text-base leading-relaxed flex-1">
+          <p className="text-text-secondary text-sm md:text-base text-center mb-8">
+            Tap any stage to see how the discount works at that point in a project&apos;s life.
+          </p>
+          <div className="space-y-3">
+            {STAGES.map((s, i) => {
+              const isOpen = open.includes(i);
+              return (
+                <div
+                  key={i}
+                  className="bg-white border border-eightyw-border rounded-2xl overflow-hidden"
+                >
+                  <button
+                    type="button"
+                    onClick={() => toggle(i)}
+                    aria-expanded={isOpen}
+                    className="w-full flex items-center gap-4 p-5 md:p-6 text-left cursor-pointer hover:bg-eightyw-light/60 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-red/40 focus:ring-inset"
+                  >
+                    <span className="shrink-0 w-9 h-9 rounded-full bg-brand-red text-white font-bold flex items-center justify-center text-sm">
+                      {i + 1}
+                    </span>
+                    <span className="flex-1">
+                      <span className="block text-brand-red text-[11px] font-semibold uppercase tracking-wider">
+                        {s.stage}
+                      </span>
+                      <span className="block text-eightyw-blue text-lg md:text-xl font-bold leading-tight">
+                        {s.h3}
+                      </span>
+                    </span>
+                    <ChevronDown
+                      className={`shrink-0 w-5 h-5 text-text-muted transition-transform duration-200 ${
+                        isOpen ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                  <div
+                    className={`${
+                      isOpen ? "block" : "hidden"
+                    } px-5 md:px-6 pb-6 text-text-secondary text-sm md:text-base leading-relaxed`}
+                  >
                     {s.body}
-                  </p>
+                  </div>
                 </div>
-              </article>
-            ))}
+              );
+            })}
           </div>
           <p className="text-eightyw-blue text-base md:text-lg font-semibold text-center mt-8 max-w-3xl mx-auto leading-relaxed">
             In a normal market, Stage 2 saves $50K–$150K vs. Stage 5. In 2026, Stages 2 and 5 are both

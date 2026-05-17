@@ -57,16 +57,19 @@ export default function DeveloperAgentTrust() {
 
         <div className="bg-white border-t-4 border-brand-red border border-eightyw-border rounded-2xl p-6 md:p-8 mb-8 shadow-sm">
           <p className="text-brand-red text-[13px] font-semibold uppercase tracking-[2px] mb-3">
-            THE INCENTIVE-MATCH PROMISE
+            YOUR FREE 48-HOUR INCENTIVE AUDIT
           </p>
           <p className="text-eightyw-blue text-base md:text-lg font-semibold leading-relaxed mb-3">
-            If we don&apos;t surface a fit within 30 days of the intro call, our broker walks you
-            through every project where 88 West has off-the-record builder relationships and
-            pre-negotiates a builder-direct concession on your behalf — at no charge.
+            A written breakdown of the real incentive stack — in your inbox within 48 hours.
+          </p>
+          <p className="text-text-secondary text-sm md:text-base leading-relaxed mb-3">
+            Tell us your buy-box on the intro call. Within 48 hours you get a written audit of 3–5
+            matched Greater Vancouver projects — every cash credit, rate buy-down, fee waiver, and
+            upgrade allowance itemized in dollars, with the negotiable items flagged. A $500 analysis,
+            yours free with no obligation.
           </p>
           <p className="text-text-muted text-sm">
-            Eligibility: clients who complete the intake form and respond within 7 days to the
-            broker&apos;s outreach. The 30 days runs from the intro call.
+            For clients who complete the intake form and respond within 7 days to the broker&apos;s outreach.
           </p>
         </div>
 
