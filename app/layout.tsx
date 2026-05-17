@@ -15,7 +15,13 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://go.88westrealty.com"),
-  icons: { icon: "/favicon.png" },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({
