@@ -116,6 +116,7 @@ export function ForeclosureLeadForm({
   const [form, setForm] = useState({
     name: "",
     email: "",
+    phone: "",
     budget: "",
     intent: "",
     areas: [] as string[],
@@ -161,8 +162,10 @@ export function ForeclosureLeadForm({
 
     const name = form.name.trim();
     const email = form.email.trim();
+    const phone = form.phone.trim();
     if (name.length < 2) { setError("Please enter your first name."); return; }
     if (!email.includes("@") || !email.includes(".")) { setError("Please enter a valid email."); return; }
+    if (!/^[\d\s()+-]{7,}$/.test(phone)) { setError("Please enter a valid phone number."); return; }
     if (!form.budget) { setError("Please select a budget range."); return; }
     if (!form.intent) { setError("Please select an option for what you're doing."); return; }
     if (form.areas.length === 0) { setError("Please select at least one area."); return; }
@@ -172,6 +175,7 @@ export function ForeclosureLeadForm({
     const payload = {
       name,
       email,
+      phone,
       budget: form.budget,
       intent: form.intent,
       areas: form.areas.join(","),
@@ -267,6 +271,16 @@ export function ForeclosureLeadForm({
             onChange={(e) => setForm({ ...form, email: e.target.value })}
             className={inputClass}
           />
+          <input
+            type="tel"
+            required
+            placeholder="Phone *"
+            autoComplete="tel"
+            aria-label="Phone (required)"
+            value={form.phone}
+            onChange={(e) => setForm({ ...form, phone: e.target.value })}
+            className={inputClass}
+          />
           <select
             required
             aria-label="Budget range (required)"
@@ -353,8 +367,10 @@ export function ForeclosureLeadForm({
               Privacy Policy
             </a>{" "}
             and consent to 88 West Realty contacting you about Greater Vancouver
-            court-ordered sales. We don&apos;t share your information with banks,
-            lenders, or any third party.
+            court-ordered sales — including by SMS/text (deal alerts, appointment
+            confirmations, and follow-ups; up to 10 msgs/month, message &amp; data
+            rates may apply, reply STOP to opt out). We don&apos;t share your
+            information with banks, lenders, or any third party.
           </p>
         </form>
       </div>

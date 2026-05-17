@@ -174,8 +174,10 @@ export function DeveloperLeadForm({
 
     const name = form.name.trim();
     const email = form.email.trim();
+    const phone = form.phone.trim();
     if (name.length < 2) { setError("Please enter your first name."); return; }
     if (!email.includes("@") || !email.includes(".")) { setError("Please enter a valid email."); return; }
+    if (!/^[\d\s()+-]{7,}$/.test(phone)) { setError("Please enter a valid phone number."); return; }
     if (!form.budget) { setError("Please select a budget range."); return; }
     if (!form.intent) { setError("Please tell us what you're doing."); return; }
     if (!form.timeframe) { setError("Please select a timeframe."); return; }
@@ -186,7 +188,7 @@ export function DeveloperLeadForm({
     const payload = {
       name,
       email,
-      phone: form.phone.trim(),
+      phone,
       budget: form.budget,
       intent: form.intent,
       timeframe: form.timeframe,
@@ -283,6 +285,16 @@ export function DeveloperLeadForm({
             onChange={(e) => setForm({ ...form, email: e.target.value })}
             className={inputClass}
           />
+          <input
+            type="tel"
+            required
+            placeholder="Phone *"
+            autoComplete="tel"
+            aria-label="Phone (required)"
+            value={form.phone}
+            onChange={(e) => setForm({ ...form, phone: e.target.value })}
+            className={inputClass}
+          />
           <select
             required
             aria-label="Budget range (required)"
@@ -351,16 +363,6 @@ export function DeveloperLeadForm({
             </div>
           </fieldset>
 
-          <input
-            type="tel"
-            placeholder="Phone (optional — for flash alerts)"
-            autoComplete="tel"
-            aria-label="Phone (optional)"
-            value={form.phone}
-            onChange={(e) => setForm({ ...form, phone: e.target.value })}
-            className={inputClass}
-          />
-
           {error && (
             <p className="text-brand-red bg-brand-red/10 border border-brand-red/30 rounded px-3 py-2 text-xs text-center">
               {error}
@@ -379,12 +381,16 @@ export function DeveloperLeadForm({
             )}
           </button>
           <p className="text-[11px] text-text-muted leading-relaxed">
-            Free, buyer-side only. We call within 24 hours.
-            Developer commissions paid at closing per the BC Real Estate Services Act —
-            no fee charged to buyers.{" "}
+            Free, buyer-side only. We call within 24 hours. Developer commissions paid
+            at closing per the BC Real Estate Services Act — no fee charged to buyers.
+            By submitting, you agree to the{" "}
             <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-brand-red hover:underline">
               Privacy Policy
-            </a>.
+            </a>{" "}
+            and consent to 88 West Realty contacting you about Greater Vancouver
+            presale deals — including by SMS/text (deal alerts, appointment
+            confirmations, and follow-ups; up to 10 msgs/month, message &amp; data
+            rates may apply, reply STOP to opt out).
           </p>
         </form>
       </div>
