@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import LeadFormModal from "@/components/shared/LeadFormModal";
@@ -13,6 +14,8 @@ type DeveloperDeal = {
   headline: string;
   headlineLabel: string;
   detail: string;
+  image: string;
+  imageAlt: string;
 };
 
 const TILES: DeveloperDeal[] = dealsData.deals;
@@ -46,11 +49,17 @@ export default function TrackerPreview() {
               onClick={() => setOpenProperty(`${t.project} — ${t.city} · ${t.headline} ${t.headlineLabel}`)}
               className="text-left bg-white border border-eightyw-border rounded-2xl overflow-hidden hover:shadow-lg hover:border-brand-red/50 hover:-translate-y-0.5 transition-all flex flex-col cursor-pointer focus:outline-none focus:ring-2 focus:ring-brand-red/40 focus:ring-offset-2"
             >
-              <div className="flex items-center justify-between px-5 py-3 bg-eightyw-blue">
-                <span className="text-[11px] font-semibold uppercase tracking-wider text-white">
+              <div className="relative aspect-[4/3] bg-eightyw-light">
+                <Image
+                  src={t.image}
+                  alt={t.imageAlt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover"
+                />
+                <span className="absolute top-3 left-3 px-3 py-1 bg-eightyw-blue text-white text-[10px] font-semibold rounded-full uppercase tracking-wider">
                   {t.city}
                 </span>
-                <span className="text-[11px] font-mono text-white/65">Presale</span>
               </div>
 
               <div className="p-5 flex flex-col flex-1">

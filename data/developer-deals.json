@@ -1,7 +1,7 @@
 {
   "lastUpdated": "2026-05-16",
   "source": "scrape-deals.mjs (mikestewart.ca presale incentive grid)",
-  "note": "Real Greater Vancouver presale incentives, curated from public developer marketing pages. Not MLS-licensed data — no CREA display restriction. Incentive figures are developer-published and time-limited; a specialist confirms current terms with the developer before a client relies on them.",
+  "note": "Real Greater Vancouver presale incentives, curated from public developer marketing pages. Not MLS-licensed data — no CREA display restriction. Incentive figures are developer-published and time-limited; a specialist confirms current terms with the developer before a client relies on them. Project images are developer-issued marketing renderings, supplied for promoting the projects.",
   "deals": [
     {
       "project": "Rowen W47",
@@ -9,7 +9,9 @@
       "city": "Vancouver",
       "headline": "$100,000",
       "headlineLabel": "in year-end incentives",
-      "detail": "A $100,000 year-end incentive package on remaining homes at this West Side Vancouver development."
+      "detail": "A $100,000 year-end incentive package on remaining homes at this West Side Vancouver development.",
+      "image": "/images/developer/projects/rowen-w47.jpg",
+      "imageAlt": "Developer rendering of Rowen W47, a presale townhome development in Vancouver."
     },
     {
       "project": "The Hive — Willoughby Town Centre",
@@ -17,7 +19,9 @@
       "city": "Langley",
       "headline": "$60,000",
       "headlineLabel": "total savings package",
-      "detail": "$15,000 off all homes, one year of free strata fees, and a reduced 2.5% deposit — a limited-time stack."
+      "detail": "$15,000 off all homes, one year of free strata fees, and a reduced 2.5% deposit — a limited-time stack.",
+      "image": "/images/developer/projects/the-hive-willoughby.jpg",
+      "imageAlt": "Developer rendering of The Hive at Willoughby Town Centre, a presale condo development in Langley."
     },
     {
       "project": "Thesis Vancouver",
@@ -25,7 +29,9 @@
       "city": "Vancouver",
       "headline": "$50,000",
       "headlineLabel": "first-time buyer GST rebate",
-      "detail": "Eligible first-time buyers can receive up to $50,000 back through the new-home GST rebate."
+      "detail": "Eligible first-time buyers can receive up to $50,000 back through the new-home GST rebate.",
+      "image": "/images/developer/projects/thesis-vancouver.jpg",
+      "imageAlt": "Developer rendering of Thesis Vancouver, a presale condo development in Vancouver."
     },
     {
       "project": "Cascadia Langley Townhomes",
@@ -33,7 +39,9 @@
       "city": "Langley",
       "headline": "$50,000",
       "headlineLabel": "no-GST savings for first-time buyers",
-      "detail": "Eligible first-time home buyers save up to $50,000 with the GST removed on these Willoughby townhomes."
+      "detail": "Eligible first-time home buyers save up to $50,000 with the GST removed on these Willoughby townhomes.",
+      "image": "/images/developer/projects/cascadia-langley.jpg",
+      "imageAlt": "Developer rendering of Cascadia, a presale townhome development in Langley."
     },
     {
       "project": "Centràle Burnaby",
@@ -41,7 +49,9 @@
       "city": "Burnaby",
       "headline": "$15,000",
       "headlineLabel": "off two-bedroom homes",
-      "detail": "$10,000 off all one-bedroom homes and $15,000 off all two-bedroom homes, for a limited time."
+      "detail": "$10,000 off all one-bedroom homes and $15,000 off all two-bedroom homes, for a limited time.",
+      "image": "/images/developer/projects/centrale-burnaby.jpg",
+      "imageAlt": "Developer rendering of Centràle Burnaby, a presale condo development in Burnaby."
     },
     {
       "project": "Solana Langley",
@@ -49,7 +59,9 @@
       "city": "Langley",
       "headline": "5%",
       "headlineLabel": "credit on every home",
-      "detail": "A 5% credit on all homes — designed to offset GST and Property Transfer Tax on a primary residence."
+      "detail": "A 5% credit on all homes — designed to offset GST and Property Transfer Tax on a primary residence.",
+      "image": "/images/developer/projects/solana-langley.jpg",
+      "imageAlt": "Developer rendering of Solana Langley, a presale condo development in Langley."
     }
   ]
 }
