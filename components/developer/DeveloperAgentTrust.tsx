@@ -84,7 +84,7 @@ export default function DeveloperAgentTrust() {
           <p className="text-text-secondary text-sm md:text-base">
             <a href="tel:+16042811828" className="text-brand-red hover:underline font-semibold">604-281-1828</a>
             {" · "}
-            <a href="mailto:info@88westrealty.com" className="text-brand-red hover:underline">info@88westrealty.com</a>
+            <a href="mailto:shirin@88westrealty.com" className="text-brand-red hover:underline">shirin@88westrealty.com</a>
           </p>
         </div>
       </div>

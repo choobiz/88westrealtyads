@@ -65,7 +65,7 @@ export default function AgentTrust() {
 
         <p className="text-center text-text-muted text-xs mt-6">
           88 West Realty · Licensed in British Columbia (X031527) ·
-          970 Marine Drive, North Vancouver, BC · 604-281-1828 · info@88westrealty.com
+          970 Marine Drive, North Vancouver, BC · 604-281-1828 · shirin@88westrealty.com
         </p>
       </div>
     </section>

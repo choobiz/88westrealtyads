@@ -52,7 +52,7 @@ function JsonLd() {
     description: "Buyer-side specialist for Greater Vancouver court-ordered and foreclosure sales.",
     url: "https://go.88westrealty.com/foreclosure-deals-vancouver",
     telephone: "+1-604-281-1828",
-    email: "info@88westrealty.com",
+    email: "shirin@88westrealty.com",
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
