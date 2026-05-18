@@ -14,28 +14,6 @@ declare global {
   }
 }
 
-const BUDGET_OPTIONS = [
-  { value: "under-700k", label: "Under $700K" },
-  { value: "700k-1m", label: "$700K – $1M" },
-  { value: "1m-1.5m", label: "$1M – $1.5M" },
-  { value: "1.5m-2.5m", label: "$1.5M – $2.5M" },
-  { value: "2.5m-plus", label: "$2.5M+" },
-];
-
-const INTENT_OPTIONS = [
-  { value: "investing", label: "I'm investing" },
-  { value: "living-in", label: "I'm buying to live in" },
-  { value: "exploring", label: "I'm exploring" },
-];
-
-const AREA_OPTIONS = [
-  { value: "vancouver", label: "Vancouver" },
-  { value: "north-vancouver", label: "North Van" },
-  { value: "burnaby", label: "Burnaby" },
-  { value: "richmond", label: "Richmond" },
-  { value: "other", label: "Other GVA" },
-];
-
 interface ForeclosureHeroProps {
   formLocation?: "hero_inline" | "final_cta" | "deals_section" | "property_modal";
   selectedProperty?: string;
@@ -117,9 +95,6 @@ export function ForeclosureLeadForm({
     name: "",
     email: "",
     phone: "",
-    budget: "",
-    intent: "",
-    areas: [] as string[],
   });
   const [formStarted, setFormStarted] = useState(false);
   const [tracking, setTracking] = useState({
@@ -147,15 +122,6 @@ export function ForeclosureLeadForm({
     }
   }
 
-  function toggleArea(value: string) {
-    setForm((f) => ({
-      ...f,
-      areas: f.areas.includes(value)
-        ? f.areas.filter((a) => a !== value)
-        : [...f.areas, value],
-    }));
-  }
-
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
     setError("");
@@ -163,12 +129,9 @@ export function ForeclosureLeadForm({
     const name = form.name.trim();
     const email = form.email.trim();
     const phone = form.phone.trim();
-    if (name.length < 2) { setError("Please enter your first name."); return; }
+    if (name.length < 2) { setError("Please enter your full name."); return; }
     if (!email.includes("@") || !email.includes(".")) { setError("Please enter a valid email."); return; }
     if (!/^[\d\s()+-]{7,}$/.test(phone)) { setError("Please enter a valid phone number."); return; }
-    if (!form.budget) { setError("Please select a budget range."); return; }
-    if (!form.intent) { setError("Please select an option for what you're doing."); return; }
-    if (form.areas.length === 0) { setError("Please select at least one area."); return; }
 
     setSubmitting(true);
 
@@ -176,9 +139,12 @@ export function ForeclosureLeadForm({
       name,
       email,
       phone,
-      budget: form.budget,
-      intent: form.intent,
-      areas: form.areas.join(","),
+      // budget / intent / areas removed from the form 2026-05-17 — kept in the
+      // payload with empty defaults so existing GHL field mappings and
+      // automations continue to receive the keys and don't break.
+      budget: "",
+      intent: "",
+      areas: "",
       source: "foreclosure-deals-vancouver",
       form_location: formLocation,
       ...(selectedProperty ? { selected_property: selectedProperty } : {}),
@@ -254,9 +220,9 @@ export function ForeclosureLeadForm({
             type="text"
             required
             minLength={2}
-            placeholder="First name *"
-            autoComplete="given-name"
-            aria-label="First name (required)"
+            placeholder="Full name *"
+            autoComplete="name"
+            aria-label="Full name (required)"
             value={form.name}
             onChange={(e) => setForm({ ...form, name: e.target.value })}
             className={inputClass}
@@ -281,68 +247,6 @@ export function ForeclosureLeadForm({
             onChange={(e) => setForm({ ...form, phone: e.target.value })}
             className={inputClass}
           />
-          <select
-            required
-            aria-label="Budget range (required)"
-            value={form.budget}
-            onChange={(e) => setForm({ ...form, budget: e.target.value })}
-            className={`${inputClass} ${form.budget ? "" : "text-text-muted"}`}
-          >
-            <option value="" disabled>Budget range *</option>
-            {BUDGET_OPTIONS.map((b) => (
-              <option key={b.value} value={b.value}>{b.label}</option>
-            ))}
-          </select>
-
-          <fieldset>
-            <legend className="text-xs text-text-muted mb-1.5">I am... *</legend>
-            <div className="flex flex-wrap gap-2">
-              {INTENT_OPTIONS.map((opt) => (
-                <label
-                  key={opt.value}
-                  className={`px-3 py-2 text-xs font-medium rounded-full border cursor-pointer transition-colors ${
-                    form.intent === opt.value
-                      ? "bg-eightyw-cta text-white border-eightyw-cta"
-                      : "bg-white text-eightyw-blue border-eightyw-border hover:border-eightyw-cta"
-                  }`}
-                >
-                  <input
-                    type="radio"
-                    name="intent"
-                    value={opt.value}
-                    className="sr-only"
-                    checked={form.intent === opt.value}
-                    onChange={(e) => setForm({ ...form, intent: e.target.value })}
-                  />
-                  {opt.label}
-                </label>
-              ))}
-            </div>
-          </fieldset>
-
-          <fieldset>
-            <legend className="text-xs text-text-muted mb-1.5">Where are you looking? *</legend>
-            <div className="flex flex-wrap gap-2">
-              {AREA_OPTIONS.map((a) => {
-                const active = form.areas.includes(a.value);
-                return (
-                  <button
-                    type="button"
-                    key={a.value}
-                    onClick={() => toggleArea(a.value)}
-                    className={`px-3 py-2 text-xs font-medium rounded-full border transition-colors ${
-                      active
-                        ? "bg-brand-red text-white border-brand-red"
-                        : "bg-white text-eightyw-blue border-eightyw-border hover:border-brand-red"
-                    }`}
-                  >
-                    {a.label}
-                  </button>
-                );
-              })}
-            </div>
-          </fieldset>
-
           {error && (
             <p className="text-brand-red bg-brand-red/10 border border-brand-red/30 rounded px-3 py-2 text-xs text-center">
               {error}

@@ -13,35 +13,6 @@ declare global {
   }
 }
 
-const BUDGET_OPTIONS = [
-  { value: "under-700k", label: "Under $700K" },
-  { value: "700k-1m", label: "$700K – $1M" },
-  { value: "1m-1.5m", label: "$1M – $1.5M" },
-  { value: "1.5m-2.5m", label: "$1.5M – $2.5M" },
-  { value: "2.5m-plus", label: "$2.5M+" },
-];
-
-const INTENT_OPTIONS = [
-  { value: "investing", label: "Investing" },
-  { value: "living-in", label: "Buying to live in" },
-  { value: "first-time", label: "First-time buyer" },
-  { value: "exploring", label: "Just exploring" },
-];
-
-const AREA_OPTIONS = [
-  { value: "vancouver", label: "Vancouver" },
-  { value: "north-vancouver", label: "North Van" },
-  { value: "burnaby", label: "Burnaby" },
-  { value: "richmond", label: "Richmond" },
-  { value: "anywhere", label: "Anywhere GVA" },
-];
-
-const TIMEFRAME_OPTIONS = [
-  { value: "0-6", label: "Next 6 months" },
-  { value: "6-18", label: "6 – 18 months" },
-  { value: "18-plus", label: "18+ months" },
-];
-
 interface DeveloperHeroProps {
   formLocation?: "hero_inline" | "final_cta" | "deals_section" | "property_modal";
   selectedProperty?: string;
@@ -128,10 +99,6 @@ export function DeveloperLeadForm({
     name: "",
     email: "",
     phone: "",
-    budget: "",
-    intent: "",
-    timeframe: "",
-    areas: [] as string[],
   });
   const [formStarted, setFormStarted] = useState(false);
   const [tracking, setTracking] = useState({
@@ -159,15 +126,6 @@ export function DeveloperLeadForm({
     }
   }
 
-  function toggleArea(value: string) {
-    setForm((f) => ({
-      ...f,
-      areas: f.areas.includes(value)
-        ? f.areas.filter((a) => a !== value)
-        : [...f.areas, value],
-    }));
-  }
-
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
     setError("");
@@ -175,13 +133,9 @@ export function DeveloperLeadForm({
     const name = form.name.trim();
     const email = form.email.trim();
     const phone = form.phone.trim();
-    if (name.length < 2) { setError("Please enter your first name."); return; }
+    if (name.length < 2) { setError("Please enter your full name."); return; }
     if (!email.includes("@") || !email.includes(".")) { setError("Please enter a valid email."); return; }
     if (!/^[\d\s()+-]{7,}$/.test(phone)) { setError("Please enter a valid phone number."); return; }
-    if (!form.budget) { setError("Please select a budget range."); return; }
-    if (!form.intent) { setError("Please tell us what you're doing."); return; }
-    if (!form.timeframe) { setError("Please select a timeframe."); return; }
-    if (form.areas.length === 0) { setError("Please select at least one area."); return; }
 
     setSubmitting(true);
 
@@ -189,10 +143,13 @@ export function DeveloperLeadForm({
       name,
       email,
       phone,
-      budget: form.budget,
-      intent: form.intent,
-      timeframe: form.timeframe,
-      areas: form.areas.join(","),
+      // budget / intent / timeframe / areas removed from the form 2026-05-17 —
+      // kept in the payload with empty defaults so existing GHL field mappings
+      // and automations continue to receive the keys and don't break.
+      budget: "",
+      intent: "",
+      timeframe: "",
+      areas: "",
       source: "developer-condo-deals-vancouver",
       lead_magnet: "developer-incentive-tracker",
       form_location: formLocation,
@@ -268,9 +225,9 @@ export function DeveloperLeadForm({
             type="text"
             required
             minLength={2}
-            placeholder="First name *"
-            autoComplete="given-name"
-            aria-label="First name (required)"
+            placeholder="Full name *"
+            autoComplete="name"
+            aria-label="Full name (required)"
             value={form.name}
             onChange={(e) => setForm({ ...form, name: e.target.value })}
             className={inputClass}
@@ -295,74 +252,6 @@ export function DeveloperLeadForm({
             onChange={(e) => setForm({ ...form, phone: e.target.value })}
             className={inputClass}
           />
-          <select
-            required
-            aria-label="Budget range (required)"
-            value={form.budget}
-            onChange={(e) => setForm({ ...form, budget: e.target.value })}
-            className={`${inputClass} ${form.budget ? "" : "text-text-muted"}`}
-          >
-            <option value="" disabled>Budget range *</option>
-            {BUDGET_OPTIONS.map((b) => (
-              <option key={b.value} value={b.value}>{b.label}</option>
-            ))}
-          </select>
-          <select
-            required
-            aria-label="What's your intent (required)"
-            value={form.intent}
-            onChange={(e) => setForm({ ...form, intent: e.target.value })}
-            className={`${inputClass} ${form.intent ? "" : "text-text-muted"}`}
-          >
-            <option value="" disabled>I&apos;m... *</option>
-            {INTENT_OPTIONS.map((o) => (
-              <option key={o.value} value={o.value}>{o.label}</option>
-            ))}
-          </select>
-          {form.intent === "first-time" && (
-            <p className="text-xs text-brand-red bg-brand-red/5 border border-brand-red/20 rounded px-3 py-2">
-              You&apos;ll save more with our $43K Head Start guide →{" "}
-              <a href="/first-time-buyer-vancouver" className="font-semibold underline">
-                /first-time-buyer-vancouver
-              </a>
-            </p>
-          )}
-          <select
-            required
-            aria-label="When do you need to be in (required)"
-            value={form.timeframe}
-            onChange={(e) => setForm({ ...form, timeframe: e.target.value })}
-            className={`${inputClass} ${form.timeframe ? "" : "text-text-muted"}`}
-          >
-            <option value="" disabled>When do you need to be in? *</option>
-            {TIMEFRAME_OPTIONS.map((t) => (
-              <option key={t.value} value={t.value}>{t.label}</option>
-            ))}
-          </select>
-
-          <fieldset>
-            <legend className="text-xs text-text-muted mb-1.5">Areas of interest * (pick any)</legend>
-            <div className="flex flex-wrap gap-2">
-              {AREA_OPTIONS.map((a) => {
-                const active = form.areas.includes(a.value);
-                return (
-                  <button
-                    type="button"
-                    key={a.value}
-                    onClick={() => toggleArea(a.value)}
-                    className={`px-3 py-2 text-xs font-medium rounded-full border transition-colors ${
-                      active
-                        ? "bg-brand-red text-white border-brand-red"
-                        : "bg-white text-eightyw-blue border-eightyw-border hover:border-brand-red"
-                    }`}
-                  >
-                    {a.label}
-                  </button>
-                );
-              })}
-            </div>
-          </fieldset>
-
           {error && (
             <p className="text-brand-red bg-brand-red/10 border border-brand-red/30 rounded px-3 py-2 text-xs text-center">
               {error}
