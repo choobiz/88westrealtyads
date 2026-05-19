@@ -1,11 +1,18 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-05-18T16:19:16.385Z",
+  "scrapedAt": "2026-05-19T14:17:03.973Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "Ironwood Coquitlam 609 Tyndall Street – Plans & Pricing",
+      "city": "Coquitlam",
+      "incentive_summary": "GST REBATES UP TO $50,000 OFF NEW HOMES UNDER $1M FOR FTHB*, Prices are inclusive of current incentives., GST Rebates...",
+      "project_url": "https://www.mikestewart.ca/presale/ironwood-coquitlam-by-qualex-landmark-plans-pricing/",
+      "headline_dollar": "$1M"
+    },
     {
       "project_name": "Wren Vancouver Townhomes by Tavanco – Plans & Pricing",
       "city": "Vancouver",
@@ -77,25 +84,18 @@
       "headline_dollar": "$100,000"
     },
     {
-      "project_name": "Solana Langley by Zenterra – Floorplans & Pricing",
-      "city": "Langley",
-      "incentive_summary": "5% credit on all homes, helping offset both GST and Property Transfer Tax (PTT) on primary residences, Save nearly $4...",
-      "project_url": "https://www.mikestewart.ca/presale/solana-by-zenterra-presales/",
-      "headline_dollar": "$4"
-    },
-    {
-      "project_name": "Grafia Vancouver 2450 Garden Drive",
-      "city": "Vancouver",
-      "incentive_summary": "Sneak Peek Inside...Homes Starting at $499K, Tour our new, fully furnished Show Home this weekend to get a look at ou...",
-      "project_url": "https://www.mikestewart.ca/presale/grafia-on-garden-drive-grandview-woodland-east-vancouver-presale-condos-by-porte-homes/",
-      "headline_dollar": "$499K"
-    },
-    {
       "project_name": "Centràle Burnaby — Prices & Floor Plans",
       "city": "Burnaby",
       "incentive_summary": "$10,000 off all 1 Bedroom Homes, $15,000 off all 2 Bedroom Homes",
       "project_url": "https://www.mikestewart.ca/presale/centrale/",
       "headline_dollar": "$15,000"
+    },
+    {
+      "project_name": "Savannah Vancouver – 7789 Yukon Street",
+      "city": "Vancouver",
+      "incentive_summary": "*On select homes only. All promotions are subject to change without notice. Speak with a sales representative for mor...",
+      "project_url": "https://www.mikestewart.ca/presale/savannah-cambie-corridor-vancouver-presale-condos-and-townhomes-by-imani-development/",
+      "headline_dollar": null
     },
     {
       "project_name": "The POCO by Rapture Developments – Plans & Pricing",
