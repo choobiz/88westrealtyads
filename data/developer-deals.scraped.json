@@ -1,11 +1,32 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-05-19T16:14:59.698Z",
+  "scrapedAt": "2026-05-20T14:17:04.454Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "West Field at Cooper Meadows Abbotsford — Prices & Floor Plans",
+      "city": "Abbotsford",
+      "incentive_summary": "Own with just 5% down (ask for details)., Receive a $5000K Visa Gift Card with your new home purchase. Gift card avai...",
+      "project_url": "https://www.mikestewart.ca/presale/west-field-at-cooper-meadows-abbotsford-prices-floor-plans/",
+      "headline_dollar": "$5000K"
+    },
+    {
+      "project_name": "South Hill at Cooper Meadows Abbotsford — Prices & Floor Plans",
+      "city": "Abbotsford",
+      "incentive_summary": "Get up to 6 extra months to sell your home – or receive $10K closing credit if you close on time* (*Terms & condition...",
+      "project_url": "https://www.mikestewart.ca/presale/south-hill-at-cooper-meadows-abbotsford-prices-floor-plans/",
+      "headline_dollar": "$10K"
+    },
+    {
+      "project_name": "East Ridge by Polygon Homes – Floorplans & Prices",
+      "city": "Abbotsford",
+      "incentive_summary": "Mortgage helper based on a 1.99% rate for 3 years, Receive a cheque of up to $1,000 a month for two years or take adv...",
+      "project_url": "https://www.mikestewart.ca/presale/east-ridge-by-polygon/",
+      "headline_dollar": "$1,000"
+    },
     {
       "project_name": "Ironwood Coquitlam 609 Tyndall Street – Plans & Pricing",
       "city": "Coquitlam",
@@ -42,53 +63,46 @@
       "headline_dollar": "$100K"
     },
     {
-      "project_name": "Moody Yards By Mosaic Homes – 3075 & 3055 Murray Street",
-      "city": "Port Moody",
-      "incentive_summary": "Invitation to an exclusive Realtor Open event., Enter to win $750 in prize draws at the event., Brand new homes ready...",
-      "project_url": "https://www.mikestewart.ca/presale/moody-yards-port-moody-centre-presale-condos-by-mosaic-homes/",
-      "headline_dollar": "$750"
+      "project_name": "Landon Gate Abbotsford — Prices & Floor Plans",
+      "city": "Abbotsford",
+      "incentive_summary": "No strata fees, Quick completions available, Free-standing overheight garage, TELUS Residential SmartHome features in...",
+      "project_url": "https://www.mikestewart.ca/presale/landon-gate-abbotsford-prices-floor-plans/",
+      "headline_dollar": null
     },
     {
-      "project_name": "Atlin at Clayton Crest by Zenterra Developments – Floorplans & Prices",
-      "city": "Surrey",
-      "incentive_summary": "$10,000 credit on purchase, Air conditioning included, Vinyl plank flooring upgrade in the bedrooms, Storage locker i...",
-      "project_url": "https://www.mikestewart.ca/presale/atlin-at-clayton-crest-presales/",
-      "headline_dollar": "$10,000"
-    },
-    {
-      "project_name": "Trailside at Lynn by Mosaic – Plans & Pricing",
-      "city": "North Vancouver",
-      "incentive_summary": "First-timers can save up to $50,000 with the GST rebate on new homes, 30-Year Amortization for First-Timers, Save up ...",
-      "project_url": "https://www.mikestewart.ca/presale/trailside-at-lynn-presale-condos/",
-      "headline_dollar": "$50,000"
-    },
-    {
-      "project_name": "7381 Preston Boulevard – Skyview Mission",
-      "city": "Mission",
-      "incentive_summary": "YEAR-END SAVINGS on select move-in ready homes, NO GST for First Time Home Buyers, NO Property Transfer Tax, ONLY $5,...",
-      "project_url": "https://www.mikestewart.ca/presale/skyview-mission-presale-townhomes/",
-      "headline_dollar": "$5,"
-    },
-    {
-      "project_name": "2268 East Broadway – Linx Vancouver",
-      "city": "Vancouver",
-      "incentive_summary": "Attend a private tour and you'll be entered to win one of several $200 giftcards to favourite East Van eateries, Atte...",
-      "project_url": "https://www.mikestewart.ca/presale/2268-east-broadway/",
-      "headline_dollar": "$200"
-    },
-    {
-      "project_name": "Rowen W47 by Alabaster Homes",
-      "city": "Vancouver",
-      "incentive_summary": "Ask about our year-end incentives!, Make sure to ask about our year-end incentives!, year-end incentives, $100,000 in...",
-      "project_url": "https://www.mikestewart.ca/presale/rowen-w47/",
-      "headline_dollar": "$100,000"
-    },
-    {
-      "project_name": "Centràle Burnaby — Prices & Floor Plans",
+      "project_name": "Azure at Southgate City by Ledingham McAllister – Plans, Prices, Availability",
       "city": "Burnaby",
-      "incentive_summary": "$10,000 off all 1 Bedroom Homes, $15,000 off all 2 Bedroom Homes",
-      "project_url": "https://www.mikestewart.ca/presale/centrale/",
-      "headline_dollar": "$15,000"
+      "incentive_summary": "Lunar New Year open house celebration with festive treats and red envelopes, Move-in ready homes available, Lunar New...",
+      "project_url": "https://www.mikestewart.ca/presale/azure-at-southgate-city-ledingham-mcallister-edmonds-burnaby-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Shannon Lynn on the Lake Kelowna by Landmark West Group – 72 Understated West Kelowna Townhomes",
+      "city": "West Kelowna",
+      "incentive_summary": "D Plan features 3 Bedroom + Flex, 2.5 baths, 1,428 sq.ft interior space, 175 sq.ft outdoor space, and a private two c...",
+      "project_url": "https://www.mikestewart.ca/presale/shannon-lynn-on-the-lake-townhomes/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Salton Surrey — Prices & Floor Plans",
+      "city": "Surrey",
+      "incentive_summary": "2 years with no strata fees, Strata promotion applicable to the first 10 homes only; to be applied as a credit on clo...",
+      "project_url": "https://www.mikestewart.ca/presale/salton-surrey-prices-floor-plans/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Little Mountain Vancouver by Holborn Properties",
+      "city": "Vancouver",
+      "incentive_summary": "Whistler Vacation Package & Cash Prizes!, Concrete construction at wood-frame pricing, Lucky Draws for amazing prizes...",
+      "project_url": "https://www.mikestewart.ca/presale/little-mountain/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "7433 Cambie & 7418 Paulson Condos for Sale – Cambie Gardens Vancouver by Onni Group Phase 1",
+      "city": "Vancouver",
+      "incentive_summary": "Pricing includes incentives, Pricing includes incentives and are subject to change without prior notice., Lunar New Y...",
+      "project_url": "https://www.mikestewart.ca/presale/cambie-gardens-presale-luxury-vancouver-onni-condos/",
+      "headline_dollar": null
     },
     {
       "project_name": "Savannah Vancouver – 7789 Yukon Street",
@@ -116,20 +130,6 @@
       "city": "Port Moody",
       "incentive_summary": "Receive a complimentary eucalyptus room spray by attending the Open House., Limited quantities available on a first-c...",
       "project_url": "https://www.mikestewart.ca/presale/hue-seaview-port-moody-presale-condos-by-marcon-developments/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Belvedere Surrey by Square Nine Developments 9675 King George Boulevard",
-      "city": "Surrey",
-      "incentive_summary": "Court-Ordered Pricing, Pre-growth pricing in Surrey Centre, Move-in-ready concrete homes complete with A/C, parking, ...",
-      "project_url": "https://www.mikestewart.ca/presale/belvedere-by-square-nine-developments-surrey-city-centre-presale-condos/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Artesia Metrotown – 5685 Halley Avenue –",
-      "city": "Burnaby",
-      "incentive_summary": "Credits exclude GST and are for a limited time only and subject to change without notice., Credits available, Credits...",
-      "project_url": "https://www.mikestewart.ca/presale/artesia-by-qualex-landmark/",
       "headline_dollar": null
     }
   ]
