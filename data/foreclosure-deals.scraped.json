@@ -1,6 +1,6 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-05-20T14:17:09.567Z",
+  "scrapedAt": "2026-05-21T14:17:09.277Z",
   "parserVersion": "1.0",
   "sourceCount": 3,
   "rawCount": 35,
@@ -381,6 +381,20 @@
       "source": "Realtyvibe (Sutton Premier)"
     },
     {
+      "mls_number": "R3081811",
+      "property_type": "Condo",
+      "neighborhood": "South Marine",
+      "city": "Vancouver",
+      "fsa": "V5S",
+      "street_masked": "████ 3138 Riverwalk Avenue",
+      "price": 705000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 933,
+      "court_ordered_flag": true,
+      "source": "Realtyvibe (Sutton Premier)"
+    },
+    {
       "mls_number": "R3114944",
       "property_type": "Condo",
       "neighborhood": "South Marine",
@@ -391,20 +405,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 915,
-      "court_ordered_flag": true,
-      "source": "Realtyvibe (Sutton Premier)"
-    },
-    {
-      "mls_number": "R3081811",
-      "property_type": "Condo",
-      "neighborhood": "South Marine",
-      "city": "Vancouver",
-      "fsa": "V5S",
-      "street_masked": "████ 3138 Riverwalk Avenue",
-      "price": 739000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 933,
       "court_ordered_flag": true,
       "source": "Realtyvibe (Sutton Premier)"
     },
