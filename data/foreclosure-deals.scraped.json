@@ -1,6 +1,6 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-05-22T14:17:09.721Z",
+  "scrapedAt": "2026-05-23T14:17:09.181Z",
   "parserVersion": "1.0",
   "sourceCount": 3,
   "rawCount": 35,
@@ -311,20 +311,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R2875472",
-      "property_type": "House",
-      "neighborhood": "Pender Harbour Egmont",
-      "city": "Madeira Park",
-      "fsa": "V0N",
-      "street_masked": "DL 4055 E Dark Cove Jervis Road",
-      "price": 2650000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 1600,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3075724",
       "property_type": "House",
       "neighborhood": "Morgan Creek",
@@ -335,6 +321,20 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 4362,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3126896",
+      "property_type": "House",
+      "neighborhood": "Ironwood",
+      "city": "Richmond",
+      "fsa": "V7A",
+      "street_masked": "████ Seacrest Road",
+      "price": 2500000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 4900,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
