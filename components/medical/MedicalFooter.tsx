@@ -98,13 +98,22 @@ export default function MedicalFooter() {
           <div className="border-t border-white/10 py-6">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-sm text-white/50">
-                &copy; {currentYear} Apex Medical Realty | Powered by 88West Realty | All rights reserved.
+                &copy; {currentYear} 88 West Realty Ltd. · Licensed in British Columbia. All rights reserved.
               </p>
+              <div className="flex items-center gap-5 text-sm">
+                <a href="/privacy-policy" className="text-white/70 hover:text-[#C5A880] transition-colors">
+                  Privacy Policy
+                </a>
+                <a href="/terms" className="text-white/70 hover:text-[#C5A880] transition-colors">
+                  Terms of Use
+                </a>
+              </div>
             </div>
             <p className="text-xs text-white/30 mt-4 text-center md:text-left">
-              The information contained herein is provided for general informational purposes only.
-              All information is provided in good faith, however we make no representation or warranty
-              of any kind regarding the accuracy or completeness of any information.
+              The information contained herein is provided for general informational purposes only and
+              does not constitute investment, tax, legal, financial, or mortgage advice. All information
+              is provided in good faith, however we make no representation or warranty of any kind
+              regarding the accuracy or completeness of any information presented.
             </p>
           </div>
         </div>

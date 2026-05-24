@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       "Get matched with 88 West Realty's buyer-side foreclosure specialist. We hunt Greater Vancouver court-ordered sales for you and attend the hearing. Free, buyer-side only.",
     url: "https://go.88westrealty.com/foreclosure-deals-vancouver",
     type: "website",
-    images: [{ url: "/images/foreclosure/hero-vancouver.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/foreclosure/hero-court-ordered.jpg", width: 1200, height: 630 }],
   },
 };
 
@@ -71,7 +71,7 @@ function JsonLd() {
     serviceType: "Buyer-side real estate agency for court-ordered sales and foreclosures",
     provider: { "@type": "RealEstateAgent", name: "88 West Realty" },
     areaServed: "Greater Vancouver, British Columbia",
-    description: "Personalized buyer-side representation for Greater Vancouver court-ordered sales and foreclosures: shortlist matching, Schedule A drafting, BC Supreme Court hearing attendance, and possession-risk research. 30-day match guarantee. No fee charged to buyers.",
+    description: "Personalized buyer-side representation for Greater Vancouver court-ordered sales and foreclosures: shortlist matching, Schedule A drafting, BC Supreme Court hearing attendance, and possession-risk research. Free 48-Hour Deal Shortlist. No fee charged to buyers.",
   };
 
   return (

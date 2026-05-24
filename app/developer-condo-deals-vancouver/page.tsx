@@ -70,7 +70,7 @@ function JsonLd() {
     serviceType: "Buyer-side real estate agency for new-construction pre-sale and standing-inventory deals",
     provider: { "@type": "RealEstateAgent", name: "88 West Realty" },
     areaServed: "Greater Vancouver, British Columbia",
-    description: "Personalized buyer-side representation for Greater Vancouver pre-sale and standing-inventory condo deals: shortlist matching, itemized incentive-stack analysis, builder-direct negotiation, and a 30-day incentive-match promise. No fee charged to buyers.",
+    description: "Personalized buyer-side representation for Greater Vancouver pre-sale and standing-inventory condo deals: shortlist matching, itemized incentive-stack analysis, builder-direct negotiation, and a free 48-Hour Incentive Audit. No fee charged to buyers.",
   };
 
   return (
