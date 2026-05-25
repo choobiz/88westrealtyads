@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-05-24T14:20:42.082Z",
+  "scrapedAt": "2026-05-25T14:17:03.968Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
@@ -77,6 +77,13 @@
       "headline_dollar": null
     },
     {
+      "project_name": "Bromley Langley — Prices & Floor Plans",
+      "city": "Langley",
+      "incentive_summary": "1% initial deposit to start, Total deposit of 5% payable in stages through construction, 15 customization options ava...",
+      "project_url": "https://www.mikestewart.ca/presale/bromley-langley-prices-floor-plans/",
+      "headline_dollar": null
+    },
+    {
       "project_name": "Hue Port Moody by Marcon @ 2015 St. Johns Street & 125 Albert Street",
       "city": "Port Moody",
       "incentive_summary": "Receive a complimentary eucalyptus room spray by attending the Open House., Limited quantities available on a first-c...",
@@ -116,13 +123,6 @@
       "city": "Vancouver",
       "incentive_summary": "Whistler Vacation Package & Cash Prizes!, Concrete construction at wood-frame pricing, Lucky Draws for amazing prizes...",
       "project_url": "https://www.mikestewart.ca/presale/little-mountain/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Bromley Langley — Prices & Floor Plans",
-      "city": "Langley",
-      "incentive_summary": "1% initial deposit to start, Total deposit of 5% payable in stages through construction, 15 customization options ava...",
-      "project_url": "https://www.mikestewart.ca/presale/bromley-langley-prices-floor-plans/",
       "headline_dollar": null
     },
     {
