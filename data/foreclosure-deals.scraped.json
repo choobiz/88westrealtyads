@@ -1,10 +1,10 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-05-25T14:17:09.758Z",
+  "scrapedAt": "2026-05-26T14:17:14.193Z",
   "parserVersion": "1.0",
   "sourceCount": 3,
   "rawCount": 35,
-  "uniqueCount": 33,
+  "uniqueCount": 34,
   "perSource": [
     {
       "source": "Simon Clayton (Macdonald Realty)",
@@ -185,16 +185,16 @@
       "source": "Simon Clayton (Macdonald Realty)"
     },
     {
-      "mls_number": "R3068526",
-      "property_type": "House",
-      "neighborhood": "Kerrisdale",
+      "mls_number": "R3069716",
+      "property_type": "Condo",
+      "neighborhood": "South Marine",
       "city": "Vancouver",
-      "fsa": "V6N",
-      "street_masked": "████ W 45th Avenue",
-      "price": 4100000,
+      "fsa": "V5S",
+      "street_masked": "████ 3188 Riverwalk Avenue",
+      "price": 709888,
       "bedrooms": null,
       "bathrooms": null,
-      "area_sqft": 4868,
+      "area_sqft": 886,
       "court_ordered_flag": true,
       "source": "Simon Clayton (Macdonald Realty)"
     },
@@ -335,6 +335,20 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 4900,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R2875472",
+      "property_type": "House",
+      "neighborhood": "Pender Harbour Egmont",
+      "city": "Madeira Park",
+      "fsa": "V0N",
+      "street_masked": "DL 4055 E Dark Cove Jervis Road",
+      "price": 2495000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 1600,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
