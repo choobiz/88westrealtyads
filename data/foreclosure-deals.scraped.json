@@ -1,6 +1,6 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-05-27T14:17:09.768Z",
+  "scrapedAt": "2026-05-28T14:17:11.153Z",
   "parserVersion": "1.0",
   "sourceCount": 3,
   "rawCount": 35,
@@ -115,20 +115,6 @@
       "source": "Simon Clayton (Macdonald Realty)"
     },
     {
-      "mls_number": "R3056253",
-      "property_type": "Condo",
-      "neighborhood": "College Park PM",
-      "city": "Port Moody",
-      "fsa": "V3H",
-      "street_masked": "████ 200 Westhill Place",
-      "price": 299000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 687,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
       "mls_number": "R3061048",
       "property_type": "Condo",
       "neighborhood": "Central Lonsdale",
@@ -195,6 +181,20 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 886,
+      "court_ordered_flag": true,
+      "source": "Simon Clayton (Macdonald Realty)"
+    },
+    {
+      "mls_number": "R3070573",
+      "property_type": "Condo",
+      "neighborhood": "Sullivan Heights",
+      "city": "Burnaby",
+      "fsa": "V3J",
+      "street_masked": "████ 3755 Bartlett Court",
+      "price": 399000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 928,
       "court_ordered_flag": true,
       "source": "Simon Clayton (Macdonald Realty)"
     },
@@ -297,6 +297,20 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
+      "mls_number": "R3128961",
+      "property_type": "House",
+      "neighborhood": "Coquitlam West",
+      "city": "Coquitlam",
+      "fsa": "V3K",
+      "street_masked": "████ Delestre Avenue",
+      "price": 2790000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 5612,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
       "mls_number": "R3078978",
       "property_type": "House",
       "neighborhood": "Marpole",
@@ -335,20 +349,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1600,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
-      "mls_number": "R3104157",
-      "property_type": "House",
-      "neighborhood": "Grandview Surrey",
-      "city": "Surrey",
-      "fsa": "V3Z",
-      "street_masked": "████ Hillview Place",
-      "price": 2475000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 3010,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
