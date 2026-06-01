@@ -1,11 +1,18 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-05-31T14:26:31.679Z",
+  "scrapedAt": "2026-06-01T14:17:04.716Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "SkyLiving Surrey by Allure Ventures",
+      "city": "Surrey",
+      "incentive_summary": "Monthly deposit payments starting from $800/month, Deposit match of up to 5% at completion, Allure Promise 2.0: Month...",
+      "project_url": "https://www.mikestewart.ca/presale/skyliving-surrey-by-allure-ventures-condos/",
+      "headline_dollar": "$800"
+    },
     {
       "project_name": "388 Duncan Street – Mercer Village by Plat:form + Domus – Plans & Prices",
       "city": "New Westminster",
@@ -89,13 +96,6 @@
       "incentive_summary": "Save $60,000 for a limited time only, $15,000 off all homes, one year of free strata fees, just 2.5% deposit, additio...",
       "project_url": "https://www.mikestewart.ca/presale/the-hive-at-willoughby-town-centre-by-apcon-group-langley-presale-condos/",
       "headline_dollar": "$60,000"
-    },
-    {
-      "project_name": "SkyLiving Surrey by Allure Ventures",
-      "city": "Surrey",
-      "incentive_summary": "Monthly deposit payments starting from $800/month, Deposit match of up to 5% at completion",
-      "project_url": "https://www.mikestewart.ca/presale/skyliving-surrey-by-allure-ventures-condos/",
-      "headline_dollar": "$800"
     },
     {
       "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
