@@ -1,11 +1,39 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-06-01T18:33:52.973Z",
+  "scrapedAt": "2026-06-02T14:17:04.265Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "Harlin River District by Wesgroup – Prices, Plans, Availability",
+      "city": "Vancouver",
+      "incentive_summary": "10% deposits, $10K credit on studios & 1-bed, $15K credit on 2-beds, $20K credit on 3-beds, Significant savings of up...",
+      "project_url": "https://www.mikestewart.ca/presale/harlin-at-river-district-by-wesgroup-presale-east-vancouver-condos-and-townhomes/",
+      "headline_dollar": "$20K"
+    },
+    {
+      "project_name": "Reign Metrotown by Wesgroup Properties – 6325 Cassie Avenue & 6263 Cassie Avenue",
+      "city": "Burnaby",
+      "incentive_summary": "limited-time savings of up to $88,888.*, Attendees can enter our exclusive draw for a Leah Alexandra horseshoe gold b...",
+      "project_url": "https://www.mikestewart.ca/presale/reign-at-metrotown-by-wesgroup-properties-burnaby-presale-condos/",
+      "headline_dollar": "$88,888"
+    },
+    {
+      "project_name": "Inlet District Port Moody – Price & Floor Plans",
+      "city": "Port Moody",
+      "incentive_summary": "LIMITED-TIME INCENTIVE, Buyer Incentives: $5K on Studios, Buyer Incentives: $8K on Jr. 2-Bedrooms, Buyer Incentives: ...",
+      "project_url": "https://www.mikestewart.ca/presale/coronation-park-port-moody-presale-condos-by-wesgroup-properties/",
+      "headline_dollar": "$8K"
+    },
+    {
+      "project_name": "The Ridge at Vista Point – Pricing & Plans",
+      "city": "Langford",
+      "incentive_summary": "All homes are now $5,000 off list price, Ask about our Sunrise incentive!, Terms and conditions apply, prices and inc...",
+      "project_url": "https://www.mikestewart.ca/presale/the-ridge-at-vista-point-victoria-presales/",
+      "headline_dollar": "$5,000"
+    },
     {
       "project_name": "SkyLiving Surrey by Allure Ventures",
       "city": "Surrey",
@@ -49,53 +77,39 @@
       "headline_dollar": "$25,000,"
     },
     {
-      "project_name": "The Falls at Kanaka Springs by Epic Homes – Availability, Plans, Prices",
-      "city": "Maple Ridge",
-      "incentive_summary": "Special pricing on the final 3 homes under $800k., Special pricing on the final three 3 Bed + Den townhomes, starting...",
-      "project_url": "https://www.mikestewart.ca/presale/the-falls-at-kanaka-springs-by-epic-homes-presale-maple-ridge-townhomes/",
-      "headline_dollar": "$800k"
+      "project_name": "V on E49 Condominiums – Availability, Plans, Prices",
+      "city": "Vancouver",
+      "incentive_summary": "All promotions and incentives are available for a limited-time and are subject to change., All incentives will be pai...",
+      "project_url": "https://www.mikestewart.ca/presale/v-on-e49-victoria-fraserview-east-vancouver-presale-condos/",
+      "headline_dollar": null
     },
     {
-      "project_name": "Ironwood Coquitlam 609 Tyndall Street – Plans & Pricing",
-      "city": "Coquitlam",
-      "incentive_summary": "GST REBATES UP TO $50,000 OFF NEW HOMES UNDER $1M FOR FTHB*, Prices are inclusive of current incentives., GST Rebates...",
-      "project_url": "https://www.mikestewart.ca/presale/ironwood-coquitlam-by-qualex-landmark-plans-pricing/",
-      "headline_dollar": "$1M"
+      "project_name": "W16 Vancouver by Olson Kundig – 480 West 16th Avenue",
+      "city": "Vancouver",
+      "incentive_summary": "Take advantage of our limited-time savings this lunar new year., Attendees can enter our exclusive draw for a Leah Al...",
+      "project_url": "https://www.mikestewart.ca/presale/w16-by-olson-kundig-vancouver-presale-condos/",
+      "headline_dollar": null
     },
     {
-      "project_name": "602 East 2nd Street – Morrison Walk North Vancouver",
+      "project_name": "Ace on The Drive by Wesgroup – 1680 East 12th Avenue",
+      "city": "Vancouver",
+      "incentive_summary": "Own today with just 5% deposit.*, *Subject to terms and conditions. Contact the sales team for details., First-Time H...",
+      "project_url": "https://www.mikestewart.ca/presale/1650-e-12th-ave-ace-on-the-drive-by-wesgroup-grandview-woodland-homes/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Magnolia at Edgemont by Black Creek Group – Plans & Prices",
       "city": "North Vancouver",
-      "incentive_summary": "Client Benefit: Up to $100,000 in total value., Client Incentive: $15,000 Decorator Allowance., Client Incentive: A/C...",
-      "project_url": "https://www.mikestewart.ca/presale/morrison-walk-north-vancouver-presale-townhomes/",
-      "headline_dollar": "$100,000"
+      "incentive_summary": "Own Today With 10% Down, 3 BED 4 BATH | 3,008 SQFT, Sub penthouse residence, Private 2 car garage, Private wine cella...",
+      "project_url": "https://www.mikestewart.ca/presale/magnolia-at-edgemont-north-vancouver/",
+      "headline_dollar": null
     },
     {
-      "project_name": "Grafia Vancouver 2450 Garden Drive",
-      "city": "Vancouver",
-      "incentive_summary": "Sneak Peek Inside...Homes Starting at $499K, Tour our new, fully furnished Show Home this weekend to get a look at ou...",
-      "project_url": "https://www.mikestewart.ca/presale/grafia-on-garden-drive-grandview-woodland-east-vancouver-presale-condos-by-porte-homes/",
-      "headline_dollar": "$499K"
-    },
-    {
-      "project_name": "Eminence at Knox Mountain by Meridian – Prices, Availability, Plans",
-      "city": "Kelowna",
-      "incentive_summary": "Save $50,000 on all \"C\" type 2 bedroom & 2 bath floor plans., Save $50,000 on all 'C' type 2 bedroom & 2 bath floor p...",
-      "project_url": "https://www.mikestewart.ca/presale/eminence-glenmore-kelowna-presale-condos-by-meridian-development/",
-      "headline_dollar": "$50,000"
-    },
-    {
-      "project_name": "King & Columbia by Forme Development",
-      "city": "Vancouver",
-      "incentive_summary": "Lunar New Year Savings: Up to $108,000 in Credits, Private Credits of up to $108,000 on a curated selection of homes ...",
-      "project_url": "https://www.mikestewart.ca/presale/king-and-columbia-cambie-corridor-bancouver-presale-townhomes-by-forme-development/",
-      "headline_dollar": "$108,000"
-    },
-    {
-      "project_name": "The Hive Willoughby Town Centre at 7920 206 Street, Langley",
-      "city": "Langley",
-      "incentive_summary": "Save $60,000 for a limited time only, $15,000 off all homes, one year of free strata fees, just 2.5% deposit, additio...",
-      "project_url": "https://www.mikestewart.ca/presale/the-hive-at-willoughby-town-centre-by-apcon-group-langley-presale-condos/",
-      "headline_dollar": "$60,000"
+      "project_name": "Pinnacle by Mortise – Pricing & Floorplans",
+      "city": "Surrey",
+      "incentive_summary": "Buyer Incentive: 2.5% deposit, Buyer Incentive: Air conditioning included, Buyer Incentive: Oversized storage include...",
+      "project_url": "https://www.mikestewart.ca/presale/pinnacle-by-mortise-presale-condos/",
+      "headline_dollar": null
     },
     {
       "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
@@ -116,20 +130,6 @@
       "city": "Port Moody",
       "incentive_summary": "Receive a complimentary eucalyptus room spray by attending the Open House., Limited quantities available on a first-c...",
       "project_url": "https://www.mikestewart.ca/presale/hue-seaview-port-moody-presale-condos-by-marcon-developments/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Skye at Holly Park by Bramor – Floorplans & Pricing",
-      "city": "Delta",
-      "incentive_summary": "Festive limited-time HOLIDAY PROMOTION! *Terms and conditions apply, please ask us for details., One-time Black Frida...",
-      "project_url": "https://www.mikestewart.ca/presale/skye-at-holly-park-delta-presales/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "639 Aspen Street – The Grove by Foster Living",
-      "city": "Coquitlam",
-      "incentive_summary": "secure yours today with only a 5% deposit, Open House This Saturday from 12-4 PM, Limited Homes Remaining, Move in Th...",
-      "project_url": "https://www.mikestewart.ca/presale/the-grove-by-foster-living/",
       "headline_dollar": null
     }
   ]
