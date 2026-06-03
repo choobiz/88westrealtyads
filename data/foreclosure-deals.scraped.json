@@ -1,6 +1,6 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-06-02T14:17:09.938Z",
+  "scrapedAt": "2026-06-03T14:17:10.955Z",
   "parserVersion": "1.0",
   "sourceCount": 3,
   "rawCount": 35,
@@ -283,6 +283,20 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
+      "mls_number": "R3130977",
+      "property_type": "House",
+      "neighborhood": "Dunbar",
+      "city": "Vancouver",
+      "fsa": "V6N",
+      "street_masked": "████ W 36th Avenue",
+      "price": 2999999,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 3893,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
       "mls_number": "R3128961",
       "property_type": "House",
       "neighborhood": "Coquitlam West",
@@ -335,20 +349,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1600,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
-      "mls_number": "R3104157",
-      "property_type": "House",
-      "neighborhood": "Grandview Surrey",
-      "city": "Surrey",
-      "fsa": "V3Z",
-      "street_masked": "████ Hillview Place",
-      "price": 2475000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 3010,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },

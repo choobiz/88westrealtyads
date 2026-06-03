@@ -1,9 +1,136 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-06-02T17:14:54.181Z",
+  "scrapedAt": "2026-06-03T14:17:05.361Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
-  "count": 0,
-  "projects": []
+  "count": 18,
+  "projects": [
+    {
+      "project_name": "The Falls at Kanaka Springs by Epic Homes – Availability, Plans, Prices",
+      "city": "Maple Ridge",
+      "incentive_summary": "Special pricing on the final 3 homes under $800k., Special pricing on the final three 3 Bed + Den townhomes, starting...",
+      "project_url": "https://www.mikestewart.ca/presale/the-falls-at-kanaka-springs-by-epic-homes-presale-maple-ridge-townhomes/",
+      "headline_dollar": "$800k"
+    },
+    {
+      "project_name": "Harlin River District by Wesgroup – Prices, Plans, Availability",
+      "city": "Vancouver",
+      "incentive_summary": "10% deposits, $10K credit on studios & 1-bed, $15K credit on 2-beds, $20K credit on 3-beds, Significant savings of up...",
+      "project_url": "https://www.mikestewart.ca/presale/harlin-at-river-district-by-wesgroup-presale-east-vancouver-condos-and-townhomes/",
+      "headline_dollar": "$20K"
+    },
+    {
+      "project_name": "Reign Metrotown by Wesgroup Properties – 6325 Cassie Avenue & 6263 Cassie Avenue",
+      "city": "Burnaby",
+      "incentive_summary": "limited-time savings of up to $88,888.*, Attendees can enter our exclusive draw for a Leah Alexandra horseshoe gold b...",
+      "project_url": "https://www.mikestewart.ca/presale/reign-at-metrotown-by-wesgroup-properties-burnaby-presale-condos/",
+      "headline_dollar": "$88,888"
+    },
+    {
+      "project_name": "Inlet District Port Moody – Price & Floor Plans",
+      "city": "Port Moody",
+      "incentive_summary": "LIMITED-TIME INCENTIVE, Buyer Incentives: $5K on Studios, Buyer Incentives: $8K on Jr. 2-Bedrooms, Buyer Incentives: ...",
+      "project_url": "https://www.mikestewart.ca/presale/coronation-park-port-moody-presale-condos-by-wesgroup-properties/",
+      "headline_dollar": "$8K"
+    },
+    {
+      "project_name": "The Ridge at Vista Point – Pricing & Plans",
+      "city": "Langford",
+      "incentive_summary": "All homes are now $5,000 off list price, Ask about our Sunrise incentive!, Terms and conditions apply, prices and inc...",
+      "project_url": "https://www.mikestewart.ca/presale/the-ridge-at-vista-point-victoria-presales/",
+      "headline_dollar": "$5,000"
+    },
+    {
+      "project_name": "SkyLiving Surrey by Allure Ventures",
+      "city": "Surrey",
+      "incentive_summary": "Monthly deposit payments starting from $800/month, Deposit match of up to 5% at completion, Allure Promise 2.0: Month...",
+      "project_url": "https://www.mikestewart.ca/presale/skyliving-surrey-by-allure-ventures-condos/",
+      "headline_dollar": "$800"
+    },
+    {
+      "project_name": "388 Duncan Street – Mercer Village by Plat:form + Domus – Plans & Prices",
+      "city": "New Westminster",
+      "incentive_summary": "New limited-time purchase incentives will be available soon., Over $40,000 in savings for homebuyers, Full incentive ...",
+      "project_url": "https://www.mikestewart.ca/presale/mercer-village-new-west-presale-townhomes/",
+      "headline_dollar": "$40,000"
+    },
+    {
+      "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
+      "city": "Coquitlam",
+      "incentive_summary": "Ask About Our 3% Advance*, All homes qualify for a GST rebate.*, Limited-time incentive: 2 parking stalls included.*,...",
+      "project_url": "https://www.mikestewart.ca/presale/botanica-coquitlam-presale-condos-by-qualex-landmark/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Finch Drive Squamish by Diamond Head – Plans, Prices, Availability",
+      "city": "Squamish",
+      "incentive_summary": "Exclusive incentives currently offered for market rate rentals, Recently improved pricing on market rate rentals, Bel...",
+      "project_url": "https://www.mikestewart.ca/presale/finch-drive-squamish-presale-condominiums-and-townhomes-by-diamond-head-development/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "7433 Cambie & 7418 Paulson Condos for Sale – Cambie Gardens Vancouver by Onni Group Phase 1",
+      "city": "Vancouver",
+      "incentive_summary": "Pricing includes incentives, Pricing includes incentives and are subject to change without prior notice., Lunar New Y...",
+      "project_url": "https://www.mikestewart.ca/presale/cambie-gardens-presale-luxury-vancouver-onni-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Azure at Southgate City by Ledingham McAllister – Plans, Prices, Availability",
+      "city": "Burnaby",
+      "incentive_summary": "Lunar New Year open house celebration with festive treats and red envelopes, Move-in ready homes available, Lunar New...",
+      "project_url": "https://www.mikestewart.ca/presale/azure-at-southgate-city-ledingham-mcallister-edmonds-burnaby-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "V on E49 Condominiums – Availability, Plans, Prices",
+      "city": "Vancouver",
+      "incentive_summary": "All promotions and incentives are available for a limited-time and are subject to change., All incentives will be pai...",
+      "project_url": "https://www.mikestewart.ca/presale/v-on-e49-victoria-fraserview-east-vancouver-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "W16 Vancouver by Olson Kundig – 480 West 16th Avenue",
+      "city": "Vancouver",
+      "incentive_summary": "Take advantage of our limited-time savings this lunar new year., Attendees can enter our exclusive draw for a Leah Al...",
+      "project_url": "https://www.mikestewart.ca/presale/w16-by-olson-kundig-vancouver-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Ace on The Drive by Wesgroup – 1680 East 12th Avenue",
+      "city": "Vancouver",
+      "incentive_summary": "Own today with just 5% deposit.*, *Subject to terms and conditions. Contact the sales team for details., First-Time H...",
+      "project_url": "https://www.mikestewart.ca/presale/1650-e-12th-ave-ace-on-the-drive-by-wesgroup-grandview-woodland-homes/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Magnolia at Edgemont by Black Creek Group – Plans & Prices",
+      "city": "North Vancouver",
+      "incentive_summary": "Own Today With 10% Down, 3 BED 4 BATH | 3,008 SQFT, Sub penthouse residence, Private 2 car garage, Private wine cella...",
+      "project_url": "https://www.mikestewart.ca/presale/magnolia-at-edgemont-north-vancouver/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Pinnacle by Mortise – Pricing & Floorplans",
+      "city": "Surrey",
+      "incentive_summary": "Buyer Incentive: 2.5% deposit, Buyer Incentive: Air conditioning included, Buyer Incentive: Oversized storage include...",
+      "project_url": "https://www.mikestewart.ca/presale/pinnacle-by-mortise-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "The Cut East Van Phase 2 – Plans & Pricing",
+      "city": "Vancouver",
+      "incentive_summary": "exciting limited-time incentives available, Limited-time incentives available, Qualifies for the RBC Green Home Mortg...",
+      "project_url": "https://www.mikestewart.ca/presale/the-cut-phase-2-vancouver-presales/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Claridge House by Polygon – Prices, Availability, Plans",
+      "city": "Vancouver",
+      "incentive_summary": "1, 2 and 3 bedroom homes ranging in size from 594 to 1,278 square feet",
+      "project_url": "https://www.mikestewart.ca/presale/claridge-house-oakrige-west-side-vancouver-presale-condos-by-polygon-homes/",
+      "headline_dollar": null
+    }
+  ]
 }
