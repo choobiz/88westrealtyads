@@ -192,5 +192,107 @@ Frozen at PAUSED state. Re-enable only after:
 
 ---
 
+## Follow-up — 2026-06-02 — Optimization Score pass
+
+Third pass on the Foreclosure campaign, this time targeting the **Optimization Score** lever rather than performance metrics. Pre-state OS had drifted from 87% to **77.7%** because Google added a `CAMPAIGN_BUDGET` recommendation (it sees the 90% Lost-IS-Budget signal and wants more spend) after the 2026-05-30 mutations settled.
+
+### Recommendations Google was showing on 2026-06-02
+
+| Type | Decision | Reasoning |
+|---|---|---|
+| `SITELINK_ASSET` | **Accept — add 3 more** | Foreclosure had 4 sitelinks already; 7 is Google's "good" tier baseline |
+| `RESPONSIVE_SEARCH_AD_IMPROVE_AD_STRENGTH` | **Accept — create v2 RSAs** | The 2026-05-24 W2 RSA pass needed reinforcement; ad strength was GOOD on Foreclosure Listings but AVERAGE on City-Specific |
+| `TARGET_CPA_OPT_IN` | **Defer** | Premature — needs ≥15 lifetime conversions for stable Smart Bid learning; currently 3 |
+| `CAMPAIGN_BUDGET` (raise from $20/day) | **Defer** | Holding $20/day through 2026-06-13 day-14 checkpoint to validate the prior $10 → $20 bump before stacking another |
+| `DISPLAY_EXPANSION_OPT_IN` (from prior pass) | **Naturally expired** | Recommendation rotated off the active list before we got to it. No mutation needed. If it returns, the rationale to reject is documented in [the report file](#) — Display traffic has 5-10× lower conversion rate in real-estate niches; would dilute the niche-intent advantage Foreclosure has |
+
+### What was executed (12 mutations)
+
+**Sitelinks (6 mutations: 3 asset creates + 3 campaign-asset links)**
+
+| Link text | Desc 1 | Desc 2 |
+|---|---|---|
+| Book Free Call | 15-min call with Shirin Saleh | Foreclosure-specific guidance |
+| Weekly Sheet by Email | Business-day mornings, free | Greater Vancouver inventory |
+| Why Buyer-Side Only | No bank affiliation | We represent buyers exclusively |
+
+Foreclosure sitelink count: **4 → 7**
+
+**Image assets (4 campaign-asset links)** — required two attempts:
+
+- First attempt with `field_type = SQUARE_MARKETING_IMAGE` / `MARKETING_IMAGE` failed with INCOMPATIBLE field type for Search campaigns. Those field types are Performance Max specific.
+- **Retried with `AD_IMAGE` and `BUSINESS_LOGO`** — both work for Search.
+
+| Asset ID | Dimensions | Field type | What |
+|---|---|---|---|
+| 241890004314 | 6250×6250 (1:1) | `AD_IMAGE` | 88 West Realty logo |
+| 270297351337 | 6900×6900 (1:1) | `AD_IMAGE` | Office sign (square) |
+| 270307030788 | 6900×3611 (1.91:1) | `AD_IMAGE` | Office sign (landscape) |
+| 241890004314 | 6250×6250 (1:1) | `BUSINESS_LOGO` | 88 West Realty logo (also as business profile logo) |
+
+Image assets on Foreclosure: **0 → 4**.
+
+Deliberately excluded from this pass: Paragon-derived listing photos (`hero-court-ordered.jpg`, `Untitled design (X).jpg`) — pending MLS-compliance confirmation with Shirin before using identifiable property exteriors in ad imagery. Team photos also held — extra policy review for images with identifiable people.
+
+**RSAs (2 ad creates)** — new v2 RSAs in Foreclosure Listings + City-Specific ad groups with 8 fresh headlines + 4 fresh descriptions. Cleaner pattern than mutating existing RSAs (which would have re-triggered Google's full review). Both RSAs were created ENABLED and are now PENDING Google review.
+
+| New headline | Chars |
+|---|---|
+| Buyer-Side Foreclosure Help | 28 |
+| Free Foreclosure Sheet | 22 |
+| Schedule A Explained | 20 |
+| Court-Ordered Listings BC | 25 |
+| No Bank Affiliation | 19 |
+| Free for Buyers | 15 |
+| Updated Each Business Day | 25 |
+| Vancouver Foreclosure Pros | 26 |
+
+| New description | Chars |
+|---|---|
+| Greater Vancouver court-ordered sales. Daily email. Buyer-side only, no bank ties. | 83 |
+| Free Schedule A walkthrough with a 88 West agent. 15-min call, no obligation. | 77 |
+| We surface BC foreclosure inventory daily — Vancouver, Burnaby, Richmond, North Van. | 84 |
+| Investors + first-time buyers welcome. Shirin Saleh and the 88 West team represent you. | 87 |
+
+Court-Ordered Sales ad group RSA was left untouched — it's still under Google's initial review from 2026-05-30 creation; adding a second RSA before the first one's approved adds noise to the comparison data.
+
+### Post-mutation state
+
+```
+Foreclosure assets:
+  CALL                                            1
+  CALLOUT                                         8
+  IMAGE / AD_IMAGE                                3   ← new
+  IMAGE / BUSINESS_LOGO                           1   ← new
+  SITELINK                                        7   ← was 4
+  STRUCTURED_SNIPPET                              2
+
+Foreclosure RSAs (all ENABLED):
+  Foreclosure Listings   ad_id=809976066366   strength=GOOD
+  Foreclosure Listings   ad_id=811515815500   strength=PENDING  ← new
+  City-Specific          ad_id=809976066369   strength=AVERAGE
+  City-Specific          ad_id=811515816679   strength=PENDING  ← new
+  Court-Ordered Sales    ad_id=811132483914   strength=AVERAGE  (still in initial review)
+```
+
+OS at end of session: still **77.7%** — but the OS engine refreshes every 24-72h. The three addressed recommendations (`SITELINK_ASSET`, `RSA_IMPROVE_AD_STRENGTH`, partial `CAMPAIGN_BUDGET`) should auto-resolve as Google sees the new assets/ads.
+
+### Expected trajectory
+
+| Metric | When to expect | Projection |
+|---|---|---|
+| Optimization Score | 1-3 days | 77.7% → **85-90%** as `SITELINK_ASSET` + `RSA_IMPROVE_AD_STRENGTH` recs resolve |
+| RSA strength (Foreclosure Listings v2) | 12-24h | PENDING → **GOOD or EXCELLENT** post-review |
+| RSA strength (City-Specific v2) | 12-24h | PENDING → **GOOD** (more diverse headlines than the v1) |
+| Image-asset CTR lift | 7-10 days of data | +3-7% on mobile primarily |
+
+### Open follow-ups added by this pass
+
+- **MLS-compliance check on listing photos** — talk to Shirin before linking Paragon-derived hero images (`hero-court-ordered.jpg` etc) as image assets. Could meaningfully strengthen the visual appeal beyond brand-only imagery.
+- **Landscape logo asset** — none currently in inventory at the right aspect (1.91:1 logo). Either commission one or repurpose the existing landscape office sign as `LANDSCAPE_LOGO`. Low priority.
+- **Court-Ordered Sales RSA reinforcement** — wait for the 2026-05-30 RSA to clear initial review + accumulate some data, then add a v2 RSA the same way we did for the other two ad groups.
+
+---
+
 **Audit prepared by:** Cadence/Claude (via `brio-marketing-hub/builtbybrio-seo/google-ads/manage.py` + direct GAQL queries)
-**Source data:** Google Ads API v23, customer `7077162356`, queried 2026-05-28 + 2026-05-30
+**Source data:** Google Ads API v23, customer `7077162356`, queried 2026-05-28 + 2026-05-30 + 2026-06-02
