@@ -1,11 +1,25 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-06-03T17:56:54.220Z",
+  "scrapedAt": "2026-06-04T14:17:05.932Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "Hartley Surrey – 10488 138A Street",
+      "city": "Surrey",
+      "incentive_summary": "Buyers Save $25,000, The first 10 purchasers will save $25,000, First 10 purchasers will save $25,000, First 10 purch...",
+      "project_url": "https://www.mikestewart.ca/presale/hartley-surrey-city-centre-presale-condos-townhomes-by-porte-homes/",
+      "headline_dollar": "$25,000,"
+    },
+    {
+      "project_name": "Arbour at SFU UniverCity by Intergulf – 9688 University Crescent, Burnaby",
+      "city": "Burnaby",
+      "incentive_summary": "Savings of up to $80,000 on the next 8 homes, Own with just 5% down, Current 5% savings, Every home includes 1 parkin...",
+      "project_url": "https://www.mikestewart.ca/presale/arbour-at-sfu-univercity-burnaby-mountain-presale-condos-and-townhomes-by-intergulf/",
+      "headline_dollar": "$80,000"
+    },
     {
       "project_name": "The Falls at Kanaka Springs by Epic Homes – Availability, Plans, Prices",
       "city": "Maple Ridge",
@@ -35,25 +49,25 @@
       "headline_dollar": "$8K"
     },
     {
-      "project_name": "The Ridge at Vista Point – Pricing & Plans",
-      "city": "Langford",
-      "incentive_summary": "All homes are now $5,000 off list price, Ask about our Sunrise incentive!, Terms and conditions apply, prices and inc...",
-      "project_url": "https://www.mikestewart.ca/presale/the-ridge-at-vista-point-victoria-presales/",
-      "headline_dollar": "$5,000"
+      "project_name": "Naimo by Hudson Projects – Plans, Prices, Availability",
+      "city": "Vancouver",
+      "incentive_summary": "Speak with a sales representative for more information on our limited-time incentives., Homeownership Seminar Series ...",
+      "project_url": "https://www.mikestewart.ca/presale/naimo-by-hudson-projects-east-vancouver-presale-condos/",
+      "headline_dollar": null
     },
     {
-      "project_name": "SkyLiving Surrey by Allure Ventures",
-      "city": "Surrey",
-      "incentive_summary": "Monthly deposit payments starting from $800/month, Deposit match of up to 5% at completion, Allure Promise 2.0: Month...",
-      "project_url": "https://www.mikestewart.ca/presale/skyliving-surrey-by-allure-ventures-condos/",
-      "headline_dollar": "$800"
+      "project_name": "Little Mountain Vancouver by Holborn Properties",
+      "city": "Vancouver",
+      "incentive_summary": "Whistler Vacation Package & Cash Prizes!, Concrete construction at wood-frame pricing, Lucky Draws for amazing prizes...",
+      "project_url": "https://www.mikestewart.ca/presale/little-mountain/",
+      "headline_dollar": null
     },
     {
-      "project_name": "388 Duncan Street – Mercer Village by Plat:form + Domus – Plans & Prices",
-      "city": "New Westminster",
-      "incentive_summary": "New limited-time purchase incentives will be available soon., Over $40,000 in savings for homebuyers, Full incentive ...",
-      "project_url": "https://www.mikestewart.ca/presale/mercer-village-new-west-presale-townhomes/",
-      "headline_dollar": "$40,000"
+      "project_name": "Siena Burnaby by Landa Global – Plans, Prices, Availability",
+      "city": "Burnaby",
+      "incentive_summary": "Exclusive pre-public offering to secure a home at Siena before the public launch., Early window provides priority sel...",
+      "project_url": "https://www.mikestewart.ca/presale/siena-at-the-heights-by-i4-properties-presale-north-burnaby-condos/",
+      "headline_dollar": null
     },
     {
       "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
@@ -109,20 +123,6 @@
       "city": "North Vancouver",
       "incentive_summary": "Own Today With 10% Down, 3 BED 4 BATH | 3,008 SQFT, Sub penthouse residence, Private 2 car garage, Private wine cella...",
       "project_url": "https://www.mikestewart.ca/presale/magnolia-at-edgemont-north-vancouver/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Pinnacle by Mortise – Pricing & Floorplans",
-      "city": "Surrey",
-      "incentive_summary": "Buyer Incentive: 2.5% deposit, Buyer Incentive: Air conditioning included, Buyer Incentive: Oversized storage include...",
-      "project_url": "https://www.mikestewart.ca/presale/pinnacle-by-mortise-presale-condos/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "The Cut East Van Phase 2 – Plans & Pricing",
-      "city": "Vancouver",
-      "incentive_summary": "exciting limited-time incentives available, Limited-time incentives available, Qualifies for the RBC Green Home Mortg...",
-      "project_url": "https://www.mikestewart.ca/presale/the-cut-phase-2-vancouver-presales/",
       "headline_dollar": null
     },
     {
