@@ -1,10 +1,10 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-06-06T14:17:10.101Z",
+  "scrapedAt": "2026-06-07T14:17:11.428Z",
   "parserVersion": "1.0",
   "sourceCount": 3,
   "rawCount": 35,
-  "uniqueCount": 32,
+  "uniqueCount": 31,
   "perSource": [
     {
       "source": "Simon Clayton (Macdonald Realty)",
@@ -115,20 +115,6 @@
       "source": "Simon Clayton (Macdonald Realty)"
     },
     {
-      "mls_number": "R3067073",
-      "property_type": "Condo",
-      "neighborhood": "Park Royal",
-      "city": "West Vancouver",
-      "fsa": "V7T",
-      "street_masked": "3D 328 Taylor Way",
-      "price": 739000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 1286,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
       "mls_number": "R3067667",
       "property_type": "House",
       "neighborhood": "Renfrew Heights",
@@ -195,6 +181,20 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 16289,
+      "court_ordered_flag": true,
+      "source": "Simon Clayton (Macdonald Realty)"
+    },
+    {
+      "mls_number": "R3078978",
+      "property_type": "House",
+      "neighborhood": "Marpole",
+      "city": "Vancouver",
+      "fsa": "V6P",
+      "street_masked": "████ W 60th Avenue",
+      "price": 2690000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 3072,
       "court_ordered_flag": true,
       "source": "Simon Clayton (Macdonald Realty)"
     },
@@ -307,20 +307,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 5612,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
-      "mls_number": "R3078978",
-      "property_type": "House",
-      "neighborhood": "Marpole",
-      "city": "Vancouver",
-      "fsa": "V6P",
-      "street_masked": "████ W 60th Avenue",
-      "price": 2690000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 3072,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },

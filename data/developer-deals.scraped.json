@@ -1,11 +1,39 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-06-06T14:25:05.561Z",
+  "scrapedAt": "2026-06-07T14:17:06.211Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "Frame Vancouver – 2727 Kingsway & 5189 Earles Street – Floor Plans & Prices",
+      "city": "Vancouver",
+      "incentive_summary": "1-Bed + Den: $3,000 buyer incentive, Jr. 2-Bed + Den: $6,000 buyer incentive, 2-Bed & 2-Bath + Den: $6,000 buyer ince...",
+      "project_url": "https://www.mikestewart.ca/presale/frame-vancouver-by-coromandel-and-peterson-plans-availability-prices/",
+      "headline_dollar": "$6,000"
+    },
+    {
+      "project_name": "Chelsea at The Boroughs South Surrey — Prices & Floor Plans",
+      "city": "Surrey",
+      "incentive_summary": "$50,000 price reduction on select F1 plans, Limited time pricing on F1 plans, Limited time pricing on F1 plans (4 bed...",
+      "project_url": "https://www.mikestewart.ca/presale/chelsea-at-the-boroughs-south-surrey-prices-floor-plans/",
+      "headline_dollar": "$50,000"
+    },
+    {
+      "project_name": "South Village Condos at Latimer Heights by Vesta Properties – Availability, Plans, Prices",
+      "city": "Langley Township",
+      "incentive_summary": "SAVE up to $50,000 on quick possession homes, 100% GST REBATE for first-time home buyers (up to $50,000) on new homes...",
+      "project_url": "https://www.mikestewart.ca/presale/south-village-condos-at-latimer-heights-by-vesta-properties-presale-langley-willoughby-condos/",
+      "headline_dollar": "$50,000"
+    },
+    {
+      "project_name": "Trailside at Lynn by Mosaic – Plans & Pricing",
+      "city": "North Vancouver",
+      "incentive_summary": "First-timers can save up to $50,000 with the GST rebate on new homes, 30-Year Amortization for First-Timers, Save up ...",
+      "project_url": "https://www.mikestewart.ca/presale/trailside-at-lynn-presale-condos/",
+      "headline_dollar": "$50,000"
+    },
     {
       "project_name": "7381 Preston Boulevard – Skyview Mission",
       "city": "Mission",
@@ -63,18 +91,11 @@
       "headline_dollar": "$14,000"
     },
     {
-      "project_name": "Ravir Coquitlam – 1051 James Avenue – Plans & Prices",
-      "city": "Coquitlam",
-      "incentive_summary": "Up to $70,000 off your new home, FREE A/C Heat Pump (studio does not include A/C), Qualifies for No GST under the new...",
-      "project_url": "https://www.mikestewart.ca/presale/ravir-maillardville-presale-condos/",
-      "headline_dollar": "$70,000"
-    },
-    {
-      "project_name": "Centràle Burnaby — Prices & Floor Plans",
-      "city": "Burnaby",
-      "incentive_summary": "$10,000 off all 1 Bedroom Homes, $15,000 off all 2 Bedroom Homes, Grand Opening Incentives still on",
-      "project_url": "https://www.mikestewart.ca/presale/centrale/",
-      "headline_dollar": "$15,000"
+      "project_name": "Queens on King George by Dawson + Sawyer – Plans & Pricing",
+      "city": "Surrey",
+      "incentive_summary": "We will be starting the new year with a promotion that is guaranteed to blow you away., We will be starting the new y...",
+      "project_url": "https://www.mikestewart.ca/presale/queens-on-king-george-surrey/",
+      "headline_dollar": null
     },
     {
       "project_name": "Terrain Squamish by Polygon Squamish — Prices & Floor Plans",
@@ -109,27 +130,6 @@
       "city": "Coquitlam",
       "incentive_summary": "Ask About Our 3% Advance*, All homes qualify for a GST rebate.*, Limited-time incentive: 2 parking stalls included.*,...",
       "project_url": "https://www.mikestewart.ca/presale/botanica-coquitlam-presale-condos-by-qualex-landmark/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "EIGHT in Edgemont Village by I4 – 3175 Canfield Crescent",
-      "city": "North Vancouver",
-      "incentive_summary": "Only four homes remain, Move-in ready duplex homes, Refined design, generous layouts, and a level of finish rarely se...",
-      "project_url": "https://www.mikestewart.ca/presale/canfield-edgemont-village-north-vancouver-presale-townhomes-by-i4-property-group/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Liberty Encore by Platinum Group – Floorplans & Prices",
-      "city": "Surrey",
-      "incentive_summary": "Get Paid 100% before Christmas!, Get Paid 100% before Christmas, Write by December 8th & Get Paid 100% before Christm...",
-      "project_url": "https://www.mikestewart.ca/presale/liberty-encore-surrey-presales/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Andmar Chilliwack – 46187 Thomas Road",
-      "city": "Chilliwack",
-      "incentive_summary": "Limited-time opportunity to explore the site with private site tours., PPE Provided at check-in., We're now offering ...",
-      "project_url": "https://www.mikestewart.ca/presale/andmar-by-andmark-chilliwack-presales/",
       "headline_dollar": null
     }
   ]
