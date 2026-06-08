@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-06-07T14:47:07.387Z",
+  "scrapedAt": "2026-06-08T14:17:04.456Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
@@ -84,11 +84,11 @@
       "headline_dollar": "$128,888"
     },
     {
-      "project_name": "45511 Campus Drive – York Residences Chilliwack For Sale",
-      "city": "Chilliwack",
-      "incentive_summary": "Save up to $14,000 with Smart Start Boost or Big Move Bonus on remaining homes, Final three 2 Bed + 2 Bath homes avai...",
-      "project_url": "https://www.mikestewart.ca/presale/45511-campus-drive-york-residences-chilliwack-by-diverse-properties/",
-      "headline_dollar": "$14,000"
+      "project_name": "Liberty Encore by Platinum Group – Floorplans & Prices",
+      "city": "Surrey",
+      "incentive_summary": "Get Paid 100% before Christmas!, Get Paid 100% before Christmas, Write by December 8th & Get Paid 100% before Christm...",
+      "project_url": "https://www.mikestewart.ca/presale/liberty-encore-surrey-presales/",
+      "headline_dollar": null
     },
     {
       "project_name": "Queens on King George by Dawson + Sawyer – Plans & Pricing",
