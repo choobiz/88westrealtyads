@@ -1,11 +1,25 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-06-08T16:44:26.658Z",
+  "scrapedAt": "2026-06-09T14:17:03.681Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "Wren Vancouver Townhomes by Tavanco – Plans & Pricing",
+      "city": "Vancouver",
+      "incentive_summary": "Recent repricing, With recent repricing, homes are now starting from $749,000, With recent repricing, homes are now s...",
+      "project_url": "https://www.mikestewart.ca/presale/wren-townhomes-vancouver-presales/",
+      "headline_dollar": "$749,000,"
+    },
+    {
+      "project_name": "West 57th at Cambie Gardens Vancouver – Prices & Floor Plans",
+      "city": "Vancouver",
+      "incentive_summary": "best value on Vancouver’s Westside, Save up to $100,000 at Gilmore Place, Save up to $58,000 at Cambie Gardens, Save ...",
+      "project_url": "https://www.mikestewart.ca/presale/west-57th-at-cambie-gardens-vancouver-prices-floor-plans/",
+      "headline_dollar": "$100,000"
+    },
     {
       "project_name": "Frame Vancouver – 2727 Kingsway & 5189 Earles Street – Floor Plans & Prices",
       "city": "Vancouver",
@@ -63,25 +77,18 @@
       "headline_dollar": "$50,000"
     },
     {
-      "project_name": "Jethro Langley by Whitetail Homes – Pricing & Plans",
-      "city": "Langley",
-      "incentive_summary": "1 Beds Starting $359,900, Jr 2-Bedrooms Starting $379,900, 2 Bed | 1 Bath Starting $439,900, 2 Bed 2 Bath Starting $5...",
-      "project_url": "https://www.mikestewart.ca/presale/jethro-langley-by-whitetail/",
-      "headline_dollar": "$439,900,"
+      "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
+      "city": "Coquitlam",
+      "incentive_summary": "Ask About Our 3% Advance*, All homes qualify for a GST rebate.*, Limited-time incentive: 2 parking stalls included.*,...",
+      "project_url": "https://www.mikestewart.ca/presale/botanica-coquitlam-presale-condos-by-qualex-landmark/",
+      "headline_dollar": null
     },
     {
-      "project_name": "The Falls at Kanaka Springs by Epic Homes – Availability, Plans, Prices",
-      "city": "Maple Ridge",
-      "incentive_summary": "Special pricing on the final 3 homes under $800k., Special pricing on the final three 3 Bed + Den townhomes, starting...",
-      "project_url": "https://www.mikestewart.ca/presale/the-falls-at-kanaka-springs-by-epic-homes-presale-maple-ridge-townhomes/",
-      "headline_dollar": "$800k"
-    },
-    {
-      "project_name": "Rhodes Queen Elizabeth Park Vancouver – Plans & Pricing",
+      "project_name": "Ōku by Ulmus Development – Availability, Plans, Prices",
       "city": "Vancouver",
-      "incentive_summary": "Up to $100,000 Price Reduction, $28,888 in Lunar New Year Incentives, Up to $128,888 off your new home (combined pric...",
-      "project_url": "https://www.mikestewart.ca/presale/rhodes-vancouver-presale-condos/",
-      "headline_dollar": "$128,888"
+      "incentive_summary": "Enter the Oku Social Media Contest for a chance to win 2 tickets & parking to a Canucks Game., Holiday Buyer Incentiv...",
+      "project_url": "https://www.mikestewart.ca/presale/oku-west-side-vancouver-presale-condos-by-ulmus-development/",
+      "headline_dollar": null
     },
     {
       "project_name": "Liberty Encore by Platinum Group – Floorplans & Prices",
@@ -123,13 +130,6 @@
       "city": "Vancouver",
       "incentive_summary": "All promotions and incentives are available for a limited-time and are subject to change., All incentives will be pai...",
       "project_url": "https://www.mikestewart.ca/presale/v-on-e49-victoria-fraserview-east-vancouver-presale-condos/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
-      "city": "Coquitlam",
-      "incentive_summary": "Ask About Our 3% Advance*, All homes qualify for a GST rebate.*, Limited-time incentive: 2 parking stalls included.*,...",
-      "project_url": "https://www.mikestewart.ca/presale/botanica-coquitlam-presale-condos-by-qualex-landmark/",
       "headline_dollar": null
     }
   ]
