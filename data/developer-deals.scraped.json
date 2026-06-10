@@ -1,11 +1,39 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-06-09T15:50:15.947Z",
+  "scrapedAt": "2026-06-10T14:17:04.076Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "Whitford by Grosvenor-Citimark – 1006 West 37th Avenue",
+      "city": "Vancouver",
+      "incentive_summary": "New, improved pricing for our C5E home., Savings of $170,000 on unit #174 (C5E Plan)., Eligible for the NEW GST Rebat...",
+      "project_url": "https://www.mikestewart.ca/presale/whitford-shaughnessy-townhomes/",
+      "headline_dollar": "$170,000"
+    },
+    {
+      "project_name": "1335 Howe Street Vancouver",
+      "city": "Vancouver",
+      "incentive_summary": "Home 3503 (C1 floorplan), a new display home, is offered at $2,199,900. It is a 2 bedroom + flex home with 1,265 sq. ...",
+      "project_url": "https://www.mikestewart.ca/presale/1335-howe/",
+      "headline_dollar": "$2,199,900"
+    },
+    {
+      "project_name": "Lina at QE Park – 5212 Cambie Street",
+      "city": "Vancouver",
+      "incentive_summary": "5% Deposit, Up to $50,000 Incentive (for selected homes), $50 showing gift cards for qualified private showings (limi...",
+      "project_url": "https://www.mikestewart.ca/presale/lina-at-qe-park-cambie-corridor-vancouver-presale-condos-townhomes-by-everbright-properties/",
+      "headline_dollar": "$50,000"
+    },
+    {
+      "project_name": "Florin Coquitlam by Allaire Living",
+      "city": "Coquitlam",
+      "incentive_summary": "final release promotions offering savings up to $109,495, Savings up to $109,495, 5% Savings, 5% Deposit, 5% Deposit ...",
+      "project_url": "https://www.mikestewart.ca/presale/rochester-burquitlam-coquitlam-presale-condos-townhomes-by-allaire-living/",
+      "headline_dollar": "$109,495,"
+    },
     {
       "project_name": "Wren Vancouver Townhomes by Tavanco – Plans & Pricing",
       "city": "Vancouver",
@@ -63,18 +91,18 @@
       "headline_dollar": "$200"
     },
     {
-      "project_name": "Grafia Vancouver 2450 Garden Drive",
+      "project_name": "Little Mountain Vancouver by Holborn Properties",
       "city": "Vancouver",
-      "incentive_summary": "Sneak Peek Inside...Homes Starting at $499K, Tour our new, fully furnished Show Home this weekend to get a look at ou...",
-      "project_url": "https://www.mikestewart.ca/presale/grafia-on-garden-drive-grandview-woodland-east-vancouver-presale-condos-by-porte-homes/",
-      "headline_dollar": "$499K"
+      "incentive_summary": "Whistler Vacation Package & Cash Prizes!, Concrete construction at wood-frame pricing, Lucky Draws for amazing prizes...",
+      "project_url": "https://www.mikestewart.ca/presale/little-mountain/",
+      "headline_dollar": null
     },
     {
-      "project_name": "Moonlight Sonata Burnaby 3588 Wayburne Drive – Floor Plans & Prices",
-      "city": "Burnaby",
-      "incentive_summary": "Book your appointment before year-end, $50,000 Cash Incentive available to the next 5 homebuyers only., Limited-time ...",
-      "project_url": "https://www.mikestewart.ca/presale/moonlight-sonata-burnaby-south-presale-townhomes-by-symphony-homes-limited/",
-      "headline_dollar": "$50,000"
+      "project_name": "Ace on The Drive by Wesgroup – 1680 East 12th Avenue",
+      "city": "Vancouver",
+      "incentive_summary": "Own today with just 5% deposit.*, *Subject to terms and conditions. Contact the sales team for details., First-Time H...",
+      "project_url": "https://www.mikestewart.ca/presale/1650-e-12th-ave-ace-on-the-drive-by-wesgroup-grandview-woodland-homes/",
+      "headline_dollar": null
     },
     {
       "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
@@ -102,34 +130,6 @@
       "city": "Surrey",
       "incentive_summary": "We will be starting the new year with a promotion that is guaranteed to blow you away., We will be starting the new y...",
       "project_url": "https://www.mikestewart.ca/presale/queens-on-king-george-surrey/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Terrain Squamish by Polygon Squamish — Prices & Floor Plans",
-      "city": "Squamish",
-      "incentive_summary": "Select homes feature a secondary suite. Each suite features a private entrance, a separate kitchen, stacking laundry,...",
-      "project_url": "https://www.mikestewart.ca/presale/terrain-squamish-by-polygon-squamish-prices-floor-plans/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "The POCO by Rapture Developments – Plans & Pricing",
-      "city": "Port Coquitlam",
-      "incentive_summary": "Early pre-launch pricing is available for a limited time., Access to priority pricing and an exclusive first look for...",
-      "project_url": "https://www.mikestewart.ca/presale/the-poco-presale-condos/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Little Mountain Vancouver by Holborn Properties",
-      "city": "Vancouver",
-      "incentive_summary": "Whistler Vacation Package & Cash Prizes!, Concrete construction at wood-frame pricing, Lucky Draws for amazing prizes...",
-      "project_url": "https://www.mikestewart.ca/presale/little-mountain/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "V on E49 Condominiums – Availability, Plans, Prices",
-      "city": "Vancouver",
-      "incentive_summary": "All promotions and incentives are available for a limited-time and are subject to change., All incentives will be pai...",
-      "project_url": "https://www.mikestewart.ca/presale/v-on-e49-victoria-fraserview-east-vancouver-presale-condos/",
       "headline_dollar": null
     }
   ]
