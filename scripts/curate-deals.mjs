@@ -49,6 +49,13 @@ const IN_AREA_CITIES = new Set([
   "Surrey",
 ]);
 
+// Featured tier: top N deals shown unblurred above the fold. Everything else
+// renders blurred with a "Unlock" CTA. Goal: drive form submission via the
+// curiosity-gap pattern while keeping the visible set diverse and credible.
+const FEATURED_COUNT = 12;
+const FEATURED_SURREY_CAP = 1;           // at most 1 Surrey deal in the featured tier
+const FEATURED_MAX_PER_AREA = 2;         // at most 2 cards from the same neighborhood
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Display formatters
 
@@ -103,6 +110,44 @@ async function readJsonOptional(path, fallback) {
     if (err.code === "ENOENT") return fallback;
     throw err;
   }
+}
+
+/**
+ * Pick the FEATURED_COUNT deals to display unblurred above the fold.
+ * Greedy algorithm that walks deals in ascending-price order and accepts the
+ * first one that respects:
+ *   - max FEATURED_SURREY_CAP Surrey listings (breadth precedent only)
+ *   - max FEATURED_MAX_PER_AREA listings per neighborhood
+ * The rest of the in-area deals render blurred with an "Unlock" CTA — they're
+ * the curiosity-gap that converts browsers into form fills.
+ */
+function pickFeatured(sortedDeals) {
+  const featured = [];
+  const perArea = {};
+  let surreyCount = 0;
+
+  for (const d of sortedDeals) {
+    if (featured.length >= FEATURED_COUNT) break;
+    const isSurrey = d.area.endsWith(", Surrey");
+    if (isSurrey && surreyCount >= FEATURED_SURREY_CAP) continue;
+    if ((perArea[d.area] || 0) >= FEATURED_MAX_PER_AREA) continue;
+    featured.push(d);
+    perArea[d.area] = (perArea[d.area] || 0) + 1;
+    if (isSurrey) surreyCount++;
+  }
+
+  // Backfill if we couldn't hit FEATURED_COUNT under the caps (e.g., thin
+  // pipeline). Rather than ship an under-filled grid, relax the caps.
+  if (featured.length < FEATURED_COUNT) {
+    for (const d of sortedDeals) {
+      if (featured.length >= FEATURED_COUNT) break;
+      if (featured.includes(d)) continue;
+      featured.push(d);
+    }
+  }
+
+  const featuredSet = new Set(featured);
+  return { featured, locked: sortedDeals.filter((d) => !featuredSet.has(d)) };
 }
 
 async function main() {
@@ -162,6 +207,15 @@ async function main() {
   live.sort((a, b) => a._priceNum - b._priceNum);
   pending.sort((a, b) => a._priceNum - b._priceNum);
 
+  // Split into featured (above-the-fold, unblurred) and locked (blurred,
+  // curiosity-gap CTA). Both render in InventoryPreview; both open the
+  // same lead-form modal on click.
+  const { featured, locked } = pickFeatured(live);
+  const featuredIds = new Set(featured.map((d) => d._mls));
+  for (const d of live) {
+    d.featured = featuredIds.has(d._mls);
+  }
+
   // Build the LP-consumed JSON. Preserve the existing compliance metadata
   // structure for continuity.
   const liveOut = {
@@ -189,13 +243,15 @@ async function main() {
         scrapedTotal: scraped.uniqueCount,
         scrapedInArea: live.length + pending.length,
         liveOnLp: live.length,
+        featuredOnLp: featured.length,
+        lockedOnLp: locked.length,
         pendingPhoto: pending.length,
         manualOverrides: manualEntries.length,
         autoSourcedPhotos: Object.keys(photos.photoMap || {}).length,
       },
     },
     deals: live.map((d) => {
-      // Strip internal debug fields from public output
+      // Strip internal debug fields from public output, keep `featured` flag.
       const { _mls, _projectName, _imageSource, _priceNum, ...pub } = d;
       return pub;
     }),

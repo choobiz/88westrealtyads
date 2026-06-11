@@ -10,6 +10,8 @@
       "scrapedTotal": 118,
       "scrapedInArea": 94,
       "liveOnLp": 38,
+      "featuredOnLp": 12,
+      "lockedOnLp": 26,
       "pendingPhoto": 56,
       "manualOverrides": 6,
       "autoSourcedPhotos": 35
@@ -24,7 +26,8 @@
       "sqft": "497 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/ingastown.jpg",
-      "imageAlt": "Ingastown — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Ingastown — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
     },
     {
       "type": "Condo",
@@ -34,7 +37,8 @@
       "sqft": "928 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/timberlea.jpg",
-      "imageAlt": "Timberlea — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Timberlea — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
     },
     {
       "type": "Condo",
@@ -44,7 +48,8 @@
       "sqft": "722 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/the-savoy.jpg",
-      "imageAlt": "The Savoy — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "The Savoy — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
     },
     {
       "type": "Condo",
@@ -54,7 +59,8 @@
       "sqft": "716 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/central-lonsdale-nv.jpg",
-      "imageAlt": "Condo building of a current court-ordered listing in Central Lonsdale, North Vancouver."
+      "imageAlt": "Condo building of a current court-ordered listing in Central Lonsdale, North Vancouver.",
+      "featured": true
     },
     {
       "type": "Condo",
@@ -64,7 +70,8 @@
       "sqft": "687 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/westport.jpg",
-      "imageAlt": "Westport — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Westport — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
     },
     {
       "type": "Condo",
@@ -74,7 +81,8 @@
       "sqft": "826 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/parkcrest.jpg",
-      "imageAlt": "Parkcrest — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Parkcrest — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
     },
     {
       "type": "Condo",
@@ -84,7 +92,8 @@
       "sqft": "650 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/hastings-vancouver.jpg",
-      "imageAlt": "Condo building of a current court-ordered listing in Hastings, Vancouver."
+      "imageAlt": "Condo building of a current court-ordered listing in Hastings, Vancouver.",
+      "featured": true
     },
     {
       "type": "Condo",
@@ -94,7 +103,8 @@
       "sqft": "1,366 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/hyland-creek.jpg",
-      "imageAlt": "Hyland Creek — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Hyland Creek — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Condo",
@@ -104,7 +114,8 @@
       "sqft": "1,050 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/paris-block.jpg",
-      "imageAlt": "Paris Block — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Paris Block — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
     },
     {
       "type": "Condo",
@@ -114,7 +125,8 @@
       "sqft": "886 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/current-at-water-s-edge-by-polygon.jpg",
-      "imageAlt": "Current At Water's Edge By Polygon — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Current At Water's Edge By Polygon — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
     },
     {
       "type": "Condo",
@@ -124,7 +136,8 @@
       "sqft": "859 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/altadena.jpg",
-      "imageAlt": "Altadena — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Altadena — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Townhouse",
@@ -134,7 +147,8 @@
       "sqft": "1,950 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/palette-on-the-park.jpg",
-      "imageAlt": "Palette On The Park — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Palette On The Park — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Condo",
@@ -144,7 +158,8 @@
       "sqft": "522 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
-      "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
     },
     {
       "type": "Townhouse",
@@ -154,7 +169,8 @@
       "sqft": "1,521 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/springfield.jpg",
-      "imageAlt": "Springfield — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Springfield — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Condo",
@@ -164,7 +180,8 @@
       "sqft": "1,000 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/rhythm.jpg",
-      "imageAlt": "Rhythm — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Rhythm — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
     },
     {
       "type": "Condo",
@@ -174,7 +191,8 @@
       "sqft": "1,105 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/pacific-place-landmark.jpg",
-      "imageAlt": "Pacific Place Landmark — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Pacific Place Landmark — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
     },
     {
       "type": "Townhouse",
@@ -184,7 +202,8 @@
       "sqft": "1,567 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/vantage.jpg",
-      "imageAlt": "Vantage — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Vantage — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Townhouse",
@@ -194,7 +213,8 @@
       "sqft": "1,089 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/tennyson-mews.jpg",
-      "imageAlt": "Tennyson Mews — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Tennyson Mews — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Condo",
@@ -204,7 +224,8 @@
       "sqft": "983 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/currents-at-the-water-s-edge.jpg",
-      "imageAlt": "Currents At The Water's Edge — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Currents At The Water's Edge — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Condo",
@@ -214,7 +235,8 @@
       "sqft": "872 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/the-arc.jpg",
-      "imageAlt": "The Arc — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "The Arc — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Condo",
@@ -224,7 +246,8 @@
       "sqft": "702 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/alberni-by-kengo-kuma.jpg",
-      "imageAlt": "Alberni By Kengo Kuma — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Alberni By Kengo Kuma — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Townhouse",
@@ -234,7 +257,8 @@
       "sqft": "1,110 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/the-max.jpg",
-      "imageAlt": "The Max — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "The Max — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Condo",
@@ -244,7 +268,8 @@
       "sqft": "1,240 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/apex.jpg",
-      "imageAlt": "Apex — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Apex — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Condo",
@@ -254,7 +279,8 @@
       "sqft": "1,029 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/patina.jpg",
-      "imageAlt": "Patina — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Patina — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Condo",
@@ -264,7 +290,8 @@
       "sqft": "697 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
-      "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Townhouse",
@@ -274,7 +301,8 @@
       "sqft": "1,538 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/lynnmour-nv.jpg",
-      "imageAlt": "Townhouse of a current court-ordered listing in Lynnmour, North Vancouver."
+      "imageAlt": "Townhouse of a current court-ordered listing in Lynnmour, North Vancouver.",
+      "featured": false
     },
     {
       "type": "House",
@@ -284,7 +312,8 @@
       "sqft": "2,667 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/renfrew-heights-vancouver.jpg",
-      "imageAlt": "House of a current court-ordered listing in Renfrew Heights, Vancouver."
+      "imageAlt": "House of a current court-ordered listing in Renfrew Heights, Vancouver.",
+      "featured": false
     },
     {
       "type": "Condo",
@@ -294,7 +323,8 @@
       "sqft": "734 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/coal-harbour-vancouver.jpg",
-      "imageAlt": "Condo tower of a current court-ordered listing in Coal Harbour, Vancouver."
+      "imageAlt": "Condo tower of a current court-ordered listing in Coal Harbour, Vancouver.",
+      "featured": false
     },
     {
       "type": "Condo",
@@ -304,7 +334,8 @@
       "sqft": "1,038 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/laguna-parkside.jpg",
-      "imageAlt": "Laguna Parkside — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Laguna Parkside — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Condo",
@@ -314,7 +345,8 @@
       "sqft": "956 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/mirabel-english-bay.jpg",
-      "imageAlt": "Mirabel English Bay — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Mirabel English Bay — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Condo",
@@ -324,7 +356,8 @@
       "sqft": "1,557 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/wall-one.jpg",
-      "imageAlt": "Wall One — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Wall One — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Condo",
@@ -334,7 +367,8 @@
       "sqft": "1,158 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
-      "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Condo",
@@ -344,7 +378,8 @@
       "sqft": "1,190 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
-      "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "House",
@@ -354,7 +389,8 @@
       "sqft": "3,010 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/country-woods-hillview.jpg",
-      "imageAlt": "Country Woods/Hillview — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Country Woods/Hillview — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "House",
@@ -364,7 +400,8 @@
       "sqft": "4,362 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/morgan-creek-surrey.jpg",
-      "imageAlt": "House of a current court-ordered listing in Morgan Creek, Surrey."
+      "imageAlt": "House of a current court-ordered listing in Morgan Creek, Surrey.",
+      "featured": false
     },
     {
       "type": "House",
@@ -374,7 +411,8 @@
       "sqft": "4,266 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/dunbar.jpg",
-      "imageAlt": "Dunbar — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Dunbar — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "House",
@@ -384,7 +422,8 @@
       "sqft": "4,959 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/greencroft-estate.jpg",
-      "imageAlt": "Greencroft Estate — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Greencroft Estate — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "House",
@@ -394,7 +433,8 @@
       "sqft": "6,565 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/greencroft-estate.jpg",
-      "imageAlt": "Greencroft Estate — exterior view (representational, sourced from publicly indexed marketing material)."
+      "imageAlt": "Greencroft Estate — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     }
   ]
 }
