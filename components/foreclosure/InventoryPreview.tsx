@@ -15,6 +15,13 @@ type ForeclosureDeal = {
   price: string;
   sqft: string;
   courtOrdered: boolean;
+  // `image` is the public path to a Paragon-authorized photo for THIS specific
+  // listing. Photo authorization is per-listing, so newly-added listings that
+  // don't have an associated authorized photo use an empty string here, and
+  // the card renders a branded "photo + address on intro call" placeholder
+  // instead. This is consistent with the rest of the compliance posture
+  // (street numbers masked, MLS numbers omitted, full address shared on the
+  // intro call) — see data/foreclosure-deals.json compliance.note.
   image: string;
   imageAlt: string;
 };
@@ -52,13 +59,37 @@ export default function InventoryPreview() {
               className="text-left bg-white border border-eightyw-border rounded-2xl overflow-hidden hover:shadow-lg hover:border-brand-red/50 hover:-translate-y-0.5 transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-brand-red/40 focus:ring-offset-2"
             >
               <div className="relative aspect-[4/3] bg-eightyw-light">
-                <Image
-                  src={l.image}
-                  alt={l.imageAlt}
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover"
-                />
+                {l.image ? (
+                  <Image
+                    src={l.image}
+                    alt={l.imageAlt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover"
+                  />
+                ) : (
+                  // Branded placeholder — photo + full address shared on the
+                  // intro call (per compliance posture). Visual mix of imaged
+                  // and placeholder cards conveys an actively-refreshed
+                  // inventory rather than a stale-stock-photo look.
+                  <div
+                    className="absolute inset-0 bg-gradient-to-br from-eightyw-blue via-eightyw-blue to-[#0a1f3a] flex items-center justify-center"
+                    aria-label={`${l.type} in ${l.area} — photo and address shared on the intro call`}
+                  >
+                    <div className="text-center px-5">
+                      <p className="text-white/55 text-[10px] font-semibold uppercase tracking-[3px] mb-2">
+                        Photo + full address
+                      </p>
+                      <p className="text-white text-sm font-semibold tracking-wide">
+                        on intro call
+                      </p>
+                      <div className="w-10 h-px bg-brand-red/60 mx-auto my-3" />
+                      <p className="text-white/70 text-[11px] font-medium leading-tight">
+                        {l.area}
+                      </p>
+                    </div>
+                  </div>
+                )}
                 <span className="absolute top-3 left-3 px-3 py-1 bg-eightyw-blue text-white text-[10px] font-semibold rounded-full uppercase tracking-wider">
                   {l.type}
                 </span>
