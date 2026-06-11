@@ -1,10 +1,10 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-05-24T14:17:09.508Z",
+  "scrapedAt": "2026-06-11T07:37:08.106Z",
   "parserVersion": "1.0",
   "sourceCount": 3,
   "rawCount": 35,
-  "uniqueCount": 33,
+  "uniqueCount": 31,
   "perSource": [
     {
       "source": "Simon Clayton (Macdonald Realty)",
@@ -41,20 +41,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1244,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
-      "mls_number": "R3042688",
-      "property_type": "Townhouse",
-      "neighborhood": "False Creek",
-      "city": "Vancouver",
-      "fsa": "V6H",
-      "street_masked": "████ 1201 Lamey's Mill Road",
-      "price": 499000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 1057,
       "court_ordered_flag": true,
       "source": "Simon Clayton (Macdonald Realty)"
     },
@@ -115,20 +101,6 @@
       "source": "Simon Clayton (Macdonald Realty)"
     },
     {
-      "mls_number": "R3056253",
-      "property_type": "Condo",
-      "neighborhood": "College Park PM",
-      "city": "Port Moody",
-      "fsa": "V3H",
-      "street_masked": "████ 200 Westhill Place",
-      "price": 299000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 687,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
       "mls_number": "R3061048",
       "property_type": "Condo",
       "neighborhood": "Central Lonsdale",
@@ -139,34 +111,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 716,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
-      "mls_number": "R3067073",
-      "property_type": "Condo",
-      "neighborhood": "Park Royal",
-      "city": "West Vancouver",
-      "fsa": "V7T",
-      "street_masked": "3D 328 Taylor Way",
-      "price": 739000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 1286,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
-      "mls_number": "R3067303",
-      "property_type": "Condo",
-      "neighborhood": "Downtown VE",
-      "city": "Vancouver",
-      "fsa": "V6A",
-      "street_masked": "████ 41 Alexander Street",
-      "price": 699000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 942,
       "court_ordered_flag": true,
       "source": "Simon Clayton (Macdonald Realty)"
     },
@@ -185,16 +129,72 @@
       "source": "Simon Clayton (Macdonald Realty)"
     },
     {
-      "mls_number": "R3068526",
-      "property_type": "House",
-      "neighborhood": "Kerrisdale",
+      "mls_number": "R3069716",
+      "property_type": "Condo",
+      "neighborhood": "South Marine",
       "city": "Vancouver",
-      "fsa": "V6N",
-      "street_masked": "████ W 45th Avenue",
-      "price": 4100000,
+      "fsa": "V5S",
+      "street_masked": "████ 3188 Riverwalk Avenue",
+      "price": 709888,
       "bedrooms": null,
       "bathrooms": null,
-      "area_sqft": 4868,
+      "area_sqft": 886,
+      "court_ordered_flag": true,
+      "source": "Simon Clayton (Macdonald Realty)"
+    },
+    {
+      "mls_number": "R3070573",
+      "property_type": "Condo",
+      "neighborhood": "Sullivan Heights",
+      "city": "Burnaby",
+      "fsa": "V3J",
+      "street_masked": "████ 3755 Bartlett Court",
+      "price": 399000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 928,
+      "court_ordered_flag": true,
+      "source": "Simon Clayton (Macdonald Realty)"
+    },
+    {
+      "mls_number": "R3074742",
+      "property_type": "House",
+      "neighborhood": "Gilmore",
+      "city": "Richmond",
+      "fsa": "V7E",
+      "street_masked": "████ Gilbert Road",
+      "price": 5990000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 16289,
+      "court_ordered_flag": true,
+      "source": "Simon Clayton (Macdonald Realty)"
+    },
+    {
+      "mls_number": "R3078978",
+      "property_type": "House",
+      "neighborhood": "Marpole",
+      "city": "Vancouver",
+      "fsa": "V6P",
+      "street_masked": "████ W 60th Avenue",
+      "price": 2690000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 3072,
+      "court_ordered_flag": true,
+      "source": "Simon Clayton (Macdonald Realty)"
+    },
+    {
+      "mls_number": "R3080192",
+      "property_type": "Condo",
+      "neighborhood": "Coal Harbour",
+      "city": "Vancouver",
+      "fsa": "V6G",
+      "street_masked": "████ 588 Broughton Street",
+      "price": 975000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 958,
       "court_ordered_flag": true,
       "source": "Simon Clayton (Macdonald Realty)"
     },
@@ -209,6 +209,20 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": null,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3132336",
+      "property_type": "House",
+      "neighborhood": "Otter District",
+      "city": "Langley",
+      "fsa": "V4W",
+      "street_masked": "████ 248 Street",
+      "price": 7299000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 12367,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -241,20 +255,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3074742",
-      "property_type": "House",
-      "neighborhood": "Gilmore",
-      "city": "Richmond",
-      "fsa": "V7E",
-      "street_masked": "████ Gilbert Road",
-      "price": 5990000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 16289,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R2937552",
       "property_type": "Land",
       "neighborhood": "Brookswood Langley",
@@ -283,7 +283,7 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3106550",
+      "mls_number": "R3130977",
       "property_type": "House",
       "neighborhood": "Dunbar",
       "city": "Vancouver",
@@ -297,16 +297,16 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3078978",
+      "mls_number": "R3128961",
       "property_type": "House",
-      "neighborhood": "Marpole",
-      "city": "Vancouver",
-      "fsa": "V6P",
-      "street_masked": "████ W 60th Avenue",
-      "price": 2690000,
+      "neighborhood": "Coquitlam West",
+      "city": "Coquitlam",
+      "fsa": "V3K",
+      "street_masked": "████ Delestre Avenue",
+      "price": 2790000,
       "bedrooms": null,
       "bathrooms": null,
-      "area_sqft": 3072,
+      "area_sqft": 5612,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -321,20 +321,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 4362,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
-      "mls_number": "R3126896",
-      "property_type": "House",
-      "neighborhood": "Ironwood",
-      "city": "Richmond",
-      "fsa": "V7A",
-      "street_masked": "████ Seacrest Road",
-      "price": 2500000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 4900,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -363,20 +349,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1050,
-      "court_ordered_flag": true,
-      "source": "Realtyvibe (Sutton Premier)"
-    },
-    {
-      "mls_number": "R3113806",
-      "property_type": "Condo",
-      "neighborhood": "Yaletown",
-      "city": "Vancouver",
-      "fsa": "V6Z",
-      "street_masked": "████ 1480 Howe Street",
-      "price": 625000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 534,
       "court_ordered_flag": true,
       "source": "Realtyvibe (Sutton Premier)"
     },
@@ -437,20 +409,6 @@
       "source": "Realtyvibe (Sutton Premier)"
     },
     {
-      "mls_number": "R3083039",
-      "property_type": "Condo",
-      "neighborhood": "Yaletown",
-      "city": "Vancouver",
-      "fsa": "V6Z",
-      "street_masked": "████ 87 Nelson Street",
-      "price": 969000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 872,
-      "court_ordered_flag": true,
-      "source": "Realtyvibe (Sutton Premier)"
-    },
-    {
       "mls_number": "R3107171",
       "property_type": "Townhouse",
       "neighborhood": "Lynnmour",
@@ -489,6 +447,20 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 956,
+      "court_ordered_flag": true,
+      "source": "Realtyvibe (Sutton Premier)"
+    },
+    {
+      "mls_number": "R3112795",
+      "property_type": "Townhouse",
+      "neighborhood": "Furry Creek",
+      "city": "West Vancouver",
+      "fsa": "V0N",
+      "street_masked": "████ Beach Drive",
+      "price": 1550000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 3599,
       "court_ordered_flag": true,
       "source": "Realtyvibe (Sutton Premier)"
     }
