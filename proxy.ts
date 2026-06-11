@@ -32,13 +32,22 @@ const COOKIE_NAME = "_lp_ab_cohort";
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 30; // 30 days
 
 export function proxy(request: NextRequest) {
+  // QA / preview override: `?ab=A` or `?ab=B` forces the variant for the
+  // current visit AND persists the cookie. Used for stakeholder reviews and
+  // post-deploy spot checks. The override only fires when a query param is
+  // present — natural traffic still gets the random 50/50 assignment.
+  const forced = request.nextUrl.searchParams.get("ab");
+  const forcedVariant: "A" | "B" | null =
+    forced === "A" || forced === "B" ? forced : null;
+
   const existingCookie = request.cookies.get(COOKIE_NAME)?.value;
   const variant: "A" | "B" =
-    existingCookie === "A" || existingCookie === "B"
+    forcedVariant ??
+    (existingCookie === "A" || existingCookie === "B"
       ? existingCookie
       : Math.random() < 0.5
         ? "A"
-        : "B";
+        : "B");
 
   // Forward the assignment to the page via a request-scoped header so SSR sees
   // the correct variant on first visit (cookies()-read can't see what we're
@@ -50,8 +59,10 @@ export function proxy(request: NextRequest) {
     request: { headers: requestHeaders },
   });
 
-  // Persist the assignment in a cookie if it's new.
-  if (!existingCookie) {
+  // Persist the assignment in a cookie if it's new OR if the query param
+  // forced a different variant than the existing cookie (so the override
+  // sticks for follow-up page views without the ?ab= param).
+  if (!existingCookie || (forcedVariant && existingCookie !== variant)) {
     response.cookies.set({
       name: COOKIE_NAME,
       value: variant,
