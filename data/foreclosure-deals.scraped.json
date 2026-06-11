@@ -1,6 +1,6 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-06-11T07:37:08.106Z",
+  "scrapedAt": "2026-06-11T14:17:09.198Z",
   "parserVersion": "1.0",
   "sourceCount": 3,
   "rawCount": 35,
@@ -157,6 +157,20 @@
       "source": "Simon Clayton (Macdonald Realty)"
     },
     {
+      "mls_number": "R3074311",
+      "property_type": "Condo",
+      "neighborhood": "Metrotown",
+      "city": "Burnaby",
+      "fsa": "V5H",
+      "street_masked": "████ 5932 Patterson Avenue",
+      "price": 499000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 826,
+      "court_ordered_flag": true,
+      "source": "Simon Clayton (Macdonald Realty)"
+    },
+    {
       "mls_number": "R3074742",
       "property_type": "House",
       "neighborhood": "Gilmore",
@@ -181,20 +195,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 3072,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
-      "mls_number": "R3080192",
-      "property_type": "Condo",
-      "neighborhood": "Coal Harbour",
-      "city": "Vancouver",
-      "fsa": "V6G",
-      "street_masked": "████ 588 Broughton Street",
-      "price": 975000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 958,
       "court_ordered_flag": true,
       "source": "Simon Clayton (Macdonald Realty)"
     },
