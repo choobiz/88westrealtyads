@@ -1,0 +1,35 @@
+{
+  "sourcedAt": "2026-06-11T09:54:00.000Z",
+  "totalProjects": 36,
+  "cached": 0,
+  "sourced": 3,
+  "failed": 0,
+  "note": "Initial 3-building pilot run on 2026-06-11 to prove the project-name → Tavily → photo pipeline works end-to-end. Photos for the remaining 33 projects ship on the next run with TAVILY_API_KEY set. See scripts/source-listing-photos.mjs.",
+  "photoMap": {
+    "Chloe Kerrisdale": {
+      "path": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
+      "source": "https://www.mikestewart.ca/wp-content/uploads/2021/05/chloe-featured.jpg",
+      "description": "A modern multi-story building with large windows, balconies, and outdoor seating areas, situated on a busy street with pedestrians and parked cars, during a sunset or sunrise.",
+      "bytes": 242150,
+      "slug": "chloe-kerrisdale",
+      "downloadedAt": "2026-06-11T09:37:00.000Z"
+    },
+    "Current At Water's Edge By Polygon": {
+      "path": "/images/foreclosure/listings/auto/current-at-water-s-edge-by-polygon.jpg",
+      "source": "https://media.pixilinkserver.com/bccondosuploads/2021/12/14/currents_exterior_04_2280x1380-1440x872-1-1534x928_b_a.jpeg",
+      "description": "A modern multi-story condo building with large windows and glass balconies situated near a waterway, with a lush green landscape and trees in the background.",
+      "bytes": 248138,
+      "slug": "current-at-water-s-edge-by-polygon",
+      "downloadedAt": "2026-06-11T09:38:00.000Z"
+    },
+    "Timberlea": {
+      "path": "/images/foreclosure/listings/auto/timberlea.jpg",
+      "source": "https://cdn.realtor.ca/listings/TS639112753063300000/reb89/highres/5/R3108965_1.jpg",
+      "description": "A tall residential condo building with multiple balconies rises against a bright blue sky with scattered clouds, surrounded by other high-rise buildings and lush greenery at the base.",
+      "bytes": 248351,
+      "slug": "timberlea",
+      "downloadedAt": "2026-06-11T09:38:00.000Z"
+    }
+  },
+  "failures": []
+}

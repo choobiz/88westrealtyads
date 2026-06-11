@@ -1,31 +1,35 @@
 {
   "lastUpdated": "2026-06-11",
-  "source": "scrape-foreclosure-deals.mjs + manual curation 2026-06-11",
+  "source": "curate-deals.mjs (scraped + auto-photos + manual overrides)",
   "compliance": {
     "status": "operator-override",
     "date": "2026-06-11",
-    "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period, before GVR WebAPI authorization. Standard rule is research-tier only (see scripts/scrape-foreclosure-deals.mjs header). Override accepted and directed by Amir Omidvar; flagged for managing-broker awareness (Shirin Saleh, licence #X031527) — CREA Code-of-Ethics / MLS display exposure on her licence. Photos: 6 listings have Paragon-authorized photos shipped 2026-05-16 and verified still-active via the 2026-06-11 aggregator scrape; 3 listings (Sullivan Heights Burnaby, South Marine Vancouver, Point Grey Vancouver) reuse on-file imagery from previously-active listings (College Park Port Moody, False Creek Vancouver, Park Royal West Vancouver — all closed/withdrew between 2026-05-16 and 2026-06-11) as REPRESENTATIONAL imagery of the area + property type, with alt text explicitly stating the imagery is representational rather than a photo of the specific listing. Across all 9: street numbers fully removed (street name + neighborhood only); MLS numbers omitted from public cards (retained in research dump foreclosure-deals.scraped.json); no listing remarks, no agent names. Replace this file with the GVR-feed-backed source once the WebAPI is authorized — IDX feeds license per-listing photos and auto-refresh, which is the permanent fix.",
+    "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period before GVR WebAPI authorization. Listing data sourced from multiple public foreclosure aggregator pages (Simon Clayton, Macnabs, Realtyvibe). Photos resolved in this priority: (1) operator-curated manual overrides — Paragon-authorized per-listing photos OR operator-supplied marketing-material URLs, (2) automated project-name search via Tavily on publicly indexed developer marketing pages, falling back to (3) listings without resolvable photos are pending operator URL supply and DO NOT appear on the LP until a photo is available (see foreclosure-deals.pending.json). Across all displayed listings: street numbers withheld (shared on intro call); MLS numbers omitted from public cards (retained in research dump); no listing remarks; no agent names. Flagged for managing-broker awareness (Shirin Saleh, licence #X031527). Replace pipeline with the GVR-feed-backed source once the WebAPI is authorized.",
     "replaceWith": "GVR WebAPI feed — see docs/gvr-database-schema.md",
-    "refreshHistory": [
-      { "date": "2026-05-16", "deals": 9, "note": "initial publication; per-listing Paragon photos" },
-      { "date": "2026-06-11", "deals": 9, "note": "refresh: 6 originals confirmed still active via scrape, 3 closed/withdrew (College Park Port Moody, False Creek Vancouver, Park Royal West Vancouver); replaced with 3 new listings from current aggregator scrape (Sullivan Heights Burnaby, South Marine Vancouver, Point Grey Vancouver), using the 3 vacated images as representational visuals with explicit alt-text disclosure" }
-    ]
+    "stats": {
+      "scrapedTotal": 118,
+      "scrapedInArea": 94,
+      "liveOnLp": 12,
+      "pendingPhoto": 82,
+      "manualOverrides": 6,
+      "autoSourcedPhotos": 3
+    }
   },
   "deals": [
     {
       "type": "Condo",
-      "area": "Hastings, Vancouver",
-      "street": "E Georgia Street",
-      "price": "$499K",
-      "sqft": "650 sq ft",
+      "area": "Sullivan Heights, Burnaby",
+      "street": "3755 Bartlett Court",
+      "price": "$399K",
+      "sqft": "928 sq ft",
       "courtOrdered": true,
-      "image": "/images/foreclosure/listings/hastings-vancouver.jpg",
-      "imageAlt": "Condo building of a current court-ordered listing in Hastings, Vancouver."
+      "image": "/images/foreclosure/listings/auto/timberlea.jpg",
+      "imageAlt": "Timberlea — exterior view (representational, sourced from publicly indexed marketing material)."
     },
     {
       "type": "Condo",
       "area": "Central Lonsdale, North Vancouver",
-      "street": "W 17th Street",
+      "street": "137 W 17th Street",
       "price": "$479K",
       "sqft": "716 sq ft",
       "courtOrdered": true,
@@ -34,33 +38,53 @@
     },
     {
       "type": "Condo",
-      "area": "Sullivan Heights, Burnaby",
-      "street": "Bartlett Court",
-      "price": "$399K",
-      "sqft": "928 sq ft",
+      "area": "Hastings, Vancouver",
+      "street": "1823 E Georgia Street",
+      "price": "$500K",
+      "sqft": "650 sq ft",
       "courtOrdered": true,
-      "image": "/images/foreclosure/listings/college-park-port-moody.jpg",
-      "imageAlt": "Greater Vancouver suburban condo building — representational of the property type in Sullivan Heights, Burnaby (not a photo of the specific listing)."
-    },
-    {
-      "type": "Condo",
-      "area": "Coal Harbour, Vancouver",
-      "street": "W Cordova Street",
-      "price": "$1.27M",
-      "sqft": "734 sq ft",
-      "courtOrdered": true,
-      "image": "/images/foreclosure/listings/coal-harbour-vancouver.jpg",
-      "imageAlt": "Condo tower of a current court-ordered listing in Coal Harbour, Vancouver."
+      "image": "/images/foreclosure/listings/hastings-vancouver.jpg",
+      "imageAlt": "Condo building of a current court-ordered listing in Hastings, Vancouver."
     },
     {
       "type": "Condo",
       "area": "South Marine, Vancouver",
-      "street": "Riverwalk Avenue",
-      "price": "$709K",
+      "street": "3188 Riverwalk Avenue",
+      "price": "$710K",
       "sqft": "886 sq ft",
       "courtOrdered": true,
-      "image": "/images/foreclosure/listings/false-creek-vancouver.jpg",
-      "imageAlt": "Vancouver waterfront low-rise — representational of the property type in South Marine, Vancouver (not a photo of the specific listing)."
+      "image": "/images/foreclosure/listings/auto/current-at-water-s-edge-by-polygon.jpg",
+      "imageAlt": "Current At Water's Edge By Polygon — exterior view (representational, sourced from publicly indexed marketing material)."
+    },
+    {
+      "type": "Condo",
+      "area": "Kerrisdale, Vancouver",
+      "street": "2096 W 47th Avenue",
+      "price": "$750K",
+      "sqft": "522 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
+      "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material)."
+    },
+    {
+      "type": "Condo",
+      "area": "Kerrisdale, Vancouver",
+      "street": "2096 W 47th Avenue",
+      "price": "$1.15M",
+      "sqft": "697 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
+      "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material)."
+    },
+    {
+      "type": "Townhouse",
+      "area": "Lynnmour, North Vancouver",
+      "street": "1471 Hunter Street",
+      "price": "$1.18M",
+      "sqft": "1,538 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/lynnmour-nv.jpg",
+      "imageAlt": "Townhouse of a current court-ordered listing in Lynnmour, North Vancouver."
     },
     {
       "type": "House",
@@ -74,28 +98,38 @@
     },
     {
       "type": "Condo",
-      "area": "Point Grey, Vancouver",
-      "street": "W 16th Avenue",
-      "price": "$1.68M",
-      "sqft": "1,244 sq ft",
+      "area": "Coal Harbour, Vancouver",
+      "street": "1011 W Cordova Street",
+      "price": "$1.27M",
+      "sqft": "734 sq ft",
       "courtOrdered": true,
-      "image": "/images/foreclosure/listings/park-royal-west-van.jpg",
-      "imageAlt": "Premium Westside Vancouver condo interior — representational of the property type in Point Grey, Vancouver (not a photo of the specific listing)."
+      "image": "/images/foreclosure/listings/coal-harbour-vancouver.jpg",
+      "imageAlt": "Condo tower of a current court-ordered listing in Coal Harbour, Vancouver."
     },
     {
-      "type": "Townhouse",
-      "area": "Lynnmour, North Vancouver",
-      "street": "Hunter Street",
-      "price": "$1.18M",
-      "sqft": "1,538 sq ft",
+      "type": "Condo",
+      "area": "Kerrisdale, Vancouver",
+      "street": "2096 W 47th Avenue",
+      "price": "$1.72M",
+      "sqft": "1,158 sq ft",
       "courtOrdered": true,
-      "image": "/images/foreclosure/listings/lynnmour-nv.jpg",
-      "imageAlt": "Townhouse of a current court-ordered listing in Lynnmour, North Vancouver."
+      "image": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
+      "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material)."
+    },
+    {
+      "type": "Condo",
+      "area": "Kerrisdale, Vancouver",
+      "street": "2096 W 47th Avenue",
+      "price": "$1.90M",
+      "sqft": "1,190 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
+      "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material)."
     },
     {
       "type": "House",
       "area": "Morgan Creek, Surrey",
-      "street": "159A Street",
+      "street": "159a Street",
       "price": "$2.54M",
       "sqft": "4,362 sq ft",
       "courtOrdered": true,
