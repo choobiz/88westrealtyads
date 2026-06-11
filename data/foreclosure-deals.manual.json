@@ -1,0 +1,49 @@
+{
+  "source": "operator-curated manual overrides",
+  "lastUpdated": "2026-06-11",
+  "purpose": "Per-listing photo authorizations the pipeline should preserve verbatim, plus operator-supplied URLs for listings where the auto Tavily lookup returned nothing usable. Matched against scraped listings by `mls_number` first, then by `area + street` as a fallback. Operator instructions: to assign a new manually-sourced photo to a scraped listing, copy the photo file into /public/images/foreclosure/listings/, then add a record below with `mls_number` (preferred) or `area + street`, and re-run `node scripts/curate-deals.mjs`.",
+  "listings": [
+    {
+      "mls_number": "R3113630",
+      "area": "Hastings, Vancouver",
+      "street": "E Georgia Street",
+      "image": "/images/foreclosure/listings/hastings-vancouver.jpg",
+      "imageAlt": "Condo building of a current court-ordered listing in Hastings, Vancouver."
+    },
+    {
+      "mls_number": "R3061048",
+      "area": "Central Lonsdale, North Vancouver",
+      "street": "W 17th Street",
+      "image": "/images/foreclosure/listings/central-lonsdale-nv.jpg",
+      "imageAlt": "Condo building of a current court-ordered listing in Central Lonsdale, North Vancouver."
+    },
+    {
+      "mls_number": "R3115942",
+      "area": "Coal Harbour, Vancouver",
+      "street": "W Cordova Street",
+      "image": "/images/foreclosure/listings/coal-harbour-vancouver.jpg",
+      "imageAlt": "Condo tower of a current court-ordered listing in Coal Harbour, Vancouver."
+    },
+    {
+      "mls_number": "R3067667",
+      "area": "Renfrew Heights, Vancouver",
+      "street": "Nanaimo Street",
+      "image": "/images/foreclosure/listings/renfrew-heights-vancouver.jpg",
+      "imageAlt": "House of a current court-ordered listing in Renfrew Heights, Vancouver."
+    },
+    {
+      "mls_number": "R3107171",
+      "area": "Lynnmour, North Vancouver",
+      "street": "Hunter Street",
+      "image": "/images/foreclosure/listings/lynnmour-nv.jpg",
+      "imageAlt": "Townhouse of a current court-ordered listing in Lynnmour, North Vancouver."
+    },
+    {
+      "mls_number": "R3075724",
+      "area": "Morgan Creek, Surrey",
+      "street": "159a Street",
+      "image": "/images/foreclosure/listings/morgan-creek-surrey.jpg",
+      "imageAlt": "House of a current court-ordered listing in Morgan Creek, Surrey."
+    }
+  ]
+}

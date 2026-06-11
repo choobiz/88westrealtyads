@@ -41,20 +41,32 @@ const OUT_FILE = join(REPO_ROOT, "data", "foreclosure-deals.scraped.json");
 
 const ENABLE_SCRAPE = (process.env.ENABLE_SCRAPE ?? "true").toLowerCase() !== "false";
 
+// Each source: pageUrl(pageNum) returns the URL for that page. maxPages caps
+// how many pages we try; we stop earlier if a page returns < listingsPerPage
+// listings (signal we've hit the tail). Simon Clayton uses ?_pg=N, Macnabs
+// uses the WordPress ?paged=N convention, Realtyvibe is currently 403-blocked
+// from headless fetches (keeping in the list with maxPages=1 for parity; we
+// just gracefully skip it on failure).
 const SOURCES = [
   {
     name: "Simon Clayton (Macdonald Realty)",
-    url: "https://simonclayton.ca/foreclosures/",
+    pageUrl: (n) => `https://simonclayton.ca/foreclosures/?_pg=${n}`,
+    maxPages: 10,
     platform: "myrealpage",
   },
   {
     name: "Macnabs (Royal LePage Elite West)",
-    url: "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/",
+    pageUrl: (n) =>
+      n === 1
+        ? "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/"
+        : `https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=${n}`,
+    maxPages: 10,
     platform: "myrealpage",
   },
   {
     name: "Realtyvibe (Sutton Premier)",
-    url: "https://realtyvibe.ca/vancouver-foreclosures-for-sale/",
+    pageUrl: () => "https://realtyvibe.ca/vancouver-foreclosures-for-sale/",
+    maxPages: 1,
     platform: "myrealpage",
   },
 ];
@@ -68,6 +80,11 @@ const LISTING_TITLE_RE =
   /<h3[^>]*class=["']listing-item-entry-title["'][^>]*>\s*([\s\S]*?)<\/h3>/g;
 const TITLE_PARSE_RE =
   /^\s*(?<street>[^\n]+?) in (?<city>[A-Za-z .'-]+):\s*(?<subarea>[A-Za-z .'-]+?)\s+(?<propertyType>House|Condo|Townhouse|Apartment|Detached|Half-?duplex|Duplex|Multi[- ]Family|Manufactured|Land|Other)\s+for sale.*?MLS®#\s*(?<mls>[RV]\d{6,8})/i;
+// Project / building name lives in the title between &quot;…&quot; — e.g.
+// `… Condo for sale in &quot;Chloe Kerrisdale&quot; (Vancouver West) …`. Simon
+// Clayton's feed includes it consistently; Macnabs typically omits it. We
+// HTML-decode the entity at extract time.
+const PROJECT_NAME_RE = /for sale in\s*&quot;([^&]+?)&quot;/i;
 const ALT_BLOCK_RE = /<alt>([\s\S]*?)<\/alt>/g;
 const ALT_FIELD_RE = /<span\s+class=["']alt-(addr|subarea|city|postal-code)["']>\s*([^<]+?)\s*<\/span>/g;
 const PRICE_RE = /class=["']mrp-listing-price-container["'][^>]*>\s*\$?([0-9,]+)/;
@@ -110,6 +127,17 @@ function parseSqft(html) {
   return n >= 250 && n <= 20000 ? n : null;
 }
 
+function decodeHtmlEntities(s) {
+  // Minimal HTML entity decoder — covers what shows up in MyRealPage titles.
+  return s
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#039;/g, "'")
+    .replace(/&apos;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">");
+}
+
 function parseListings(html, sourceName) {
   const listings = [];
   // Split HTML into approximate per-listing chunks by finding consecutive
@@ -140,6 +168,10 @@ function parseListings(html, sourceName) {
 
     const courtFlag = COURT_FLAG_RE.test(chunk);
 
+    // Project / building name from the title — drives photo lookup downstream.
+    const projectMatch = titleClean.match(PROJECT_NAME_RE);
+    const projectName = projectMatch ? decodeHtmlEntities(projectMatch[1]).trim() : null;
+
     listings.push({
       mls_number: mls.toUpperCase(),
       property_type: propertyType,
@@ -147,6 +179,7 @@ function parseListings(html, sourceName) {
       city: city.trim(),
       fsa: fsa(postalCode),
       street_masked: maskStreet(street.trim()),
+      project_name: projectName,
       price: parsePrice(chunk),
       bedrooms: parseBeds(chunk),
       bathrooms: parseBaths(chunk),
@@ -159,21 +192,53 @@ function parseListings(html, sourceName) {
   return listings;
 }
 
-async function fetchAndParse(source) {
+async function fetchPage(url) {
   try {
-    const res = await fetch(source.url, {
+    const res = await fetch(url, {
       headers: { "User-Agent": USER_AGENT, Accept: "text/html" },
       signal: AbortSignal.timeout(20_000),
     });
     if (!res.ok) {
-      return { ok: false, listings: [], error: `${res.status} ${res.statusText}` };
+      return { ok: false, html: "", error: `${res.status} ${res.statusText}` };
     }
-    const html = await res.text();
-    const listings = parseListings(html, source.name);
-    return { ok: true, listings, bytes: html.length };
+    return { ok: true, html: await res.text() };
   } catch (err) {
-    return { ok: false, listings: [], error: String(err.message || err) };
+    return { ok: false, html: "", error: String(err.message || err) };
   }
+}
+
+async function fetchAndParse(source) {
+  // Walk pages 1..maxPages. Stop early when:
+  //   - a fetch fails (likely past the last page or rate-limited)
+  //   - a page yields zero listings (signal we've hit the tail)
+  //   - we see no NEW MLS numbers vs. the prior page (pagination broken,
+  //     page just re-serves the first batch)
+  const listings = [];
+  const seenMls = new Set();
+  const pageResults = [];
+
+  for (let p = 1; p <= source.maxPages; p++) {
+    const url = source.pageUrl(p);
+    const r = await fetchPage(url);
+    if (!r.ok) {
+      pageResults.push({ page: p, url, ok: false, listings: 0, error: r.error });
+      // First page failed = source dead. Subsequent failures = past the tail.
+      break;
+    }
+    const pageListings = parseListings(r.html, source.name);
+    const newOnPage = pageListings.filter((l) => !seenMls.has(l.mls_number));
+    newOnPage.forEach((l) => seenMls.add(l.mls_number));
+    listings.push(...newOnPage);
+    pageResults.push({ page: p, url, ok: true, listings: pageListings.length, newListings: newOnPage.length });
+
+    // Hit the tail conditions
+    if (pageListings.length === 0) break;
+    if (newOnPage.length === 0 && p > 1) break;
+  }
+
+  const ok = pageResults.some((p) => p.ok);
+  const lastError = pageResults.find((p) => !p.ok)?.error;
+  return { ok, listings, pages: pageResults, error: ok ? null : lastError };
 }
 
 function deduplicate(listings) {
@@ -193,38 +258,43 @@ async function main() {
     return;
   }
 
-  console.log(`[fcl-deals] scraping ${SOURCES.length} sources`);
+  console.log(`[fcl-deals] scraping ${SOURCES.length} sources, paginated`);
 
   const perSource = [];
   for (const src of SOURCES) {
     const r = await fetchAndParse(src);
-    perSource.push({ source: src.name, url: src.url, ...r });
+    perSource.push({ source: src.name, ...r });
+    const pagesOk = r.pages.filter((p) => p.ok).length;
     console.log(
-      `[fcl-deals]   ${r.ok ? `${r.listings.length} listings` : `error: ${r.error}`} · ${src.name}`,
+      `[fcl-deals]   ${r.listings.length.toString().padStart(3)} listings across ${pagesOk} page(s) · ${src.name}${r.error ? ` (last error: ${r.error})` : ""}`,
     );
   }
 
   const all = perSource.flatMap((r) => r.listings);
   const unique = deduplicate(all);
+  const withProjectName = unique.filter((l) => l.project_name).length;
 
   const out = {
     source: "scrape-foreclosure-deals.mjs",
     scrapedAt: new Date().toISOString(),
-    parserVersion: "1.0",
+    parserVersion: "1.1",
     sourceCount: SOURCES.length,
     rawCount: all.length,
     uniqueCount: unique.length,
+    withProjectName,
     perSource: perSource.map((r) => ({
       source: r.source,
-      url: r.url,
       ok: r.ok,
       listings: r.listings.length,
+      pages: r.pages,
       error: r.error ?? null,
     })),
     note:
       "Research dump. Bridge-period scraper pending GVR WebAPI replacement. " +
       "Address numbers masked (████). Postal codes stored as FSA only. " +
-      "No photo URLs / remarks / agent names captured.",
+      "No MLS photo URLs / remarks / agent names captured here — photo URLs " +
+      "(when sourced via project-name search) are written by " +
+      "scripts/source-listing-photos.mjs to a separate side-car file.",
     listings: unique,
   };
 

@@ -99,6 +99,7 @@ export function ForeclosureLeadForm({
   const [formStarted, setFormStarted] = useState(false);
   const [tracking, setTracking] = useState({
     gclid: "", utm_source: "", utm_medium: "", utm_campaign: "", utm_content: "", utm_term: "",
+    experiment_variant: "",
   });
 
   useEffect(() => {
@@ -111,6 +112,9 @@ export function ForeclosureLeadForm({
       utm_campaign: get("_lp_utm_campaign") || "",
       utm_content: get("_lp_utm_content") || "",
       utm_term: get("_lp_utm_term") || "",
+      // A/B cohort assigned by proxy.ts ('A' = control, 'B' = hero-inline-form variant).
+      // Forwarded to GHL webhook + dataLayer for conversion attribution.
+      experiment_variant: get("_lp_ab_cohort") || "",
     });
   }, []);
 

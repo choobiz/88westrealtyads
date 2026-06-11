@@ -1,46 +1,308 @@
 {
   "lastUpdated": "2026-06-11",
-  "source": "scrape-foreclosure-deals.mjs + manual curation 2026-06-11",
+  "source": "curate-deals.mjs (scraped + auto-photos + manual overrides)",
   "compliance": {
     "status": "operator-override",
     "date": "2026-06-11",
-    "note": "OPERATOR OVERRIDE — real court-ordered listing data AND real per-listing photos published on the public LP during the bridge period, before GVR WebAPI authorization. Standard rule is research-tier only (see scripts/scrape-foreclosure-deals.mjs header). Override accepted and directed by Amir Omidvar; flagged for managing-broker awareness (Shirin Saleh, licence #X031527) — CREA Code-of-Ethics / MLS display exposure on her licence. Listing photos were supplied by the managing broker from 88 West's own MLS member access (Paragon), per operator direction, on the stated basis of 88 West's display authorization. Photo authorization is per-listing — listings that close or withdraw are removed in subsequent refreshes (the 2026-05-16 set had 9 listings; 3 closed/withdrew between 2026-05-16 and 2026-06-11, so this refresh ships 6 confirmed-active listings rather than padding with photo-reuse). To stay as defensible as possible: street numbers fully removed (street name + neighbourhood only); MLS numbers removed from the published cards and from public-facing image filenames (retained only in the research dump foreclosure-deals.scraped.json); no listing remarks, no agent names. Replace this file with the GVR-feed-backed source once the WebAPI is authorized — IDX feeds license per-listing photos and auto-refresh, which is the permanent fix.",
+    "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period before GVR WebAPI authorization. Listing data sourced from multiple public foreclosure aggregator pages (Simon Clayton, Macnabs, Realtyvibe). Photos resolved in this priority: (1) operator-curated manual overrides — Paragon-authorized per-listing photos OR operator-supplied marketing-material URLs, (2) automated project-name search via Tavily on publicly indexed developer marketing pages, falling back to (3) listings without resolvable photos are pending operator URL supply and DO NOT appear on the LP until a photo is available (see foreclosure-deals.pending.json). Across all displayed listings: street numbers withheld (shared on intro call); MLS numbers omitted from public cards (retained in research dump); no listing remarks; no agent names. Flagged for managing-broker awareness (Shirin Saleh, licence #X031527). Replace pipeline with the GVR-feed-backed source once the WebAPI is authorized.",
     "replaceWith": "GVR WebAPI feed — see docs/gvr-database-schema.md",
-    "refreshHistory": [
-      { "date": "2026-05-16", "deals": 9, "note": "initial publication" },
-      { "date": "2026-06-11", "deals": 6, "note": "3 listings closed/withdrew (College Park Port Moody, False Creek Vancouver, Park Royal West Vancouver); 6 remaining confirmed active via 3-aggregator scrape" }
-    ]
+    "stats": {
+      "scrapedTotal": 118,
+      "scrapedInArea": 94,
+      "liveOnLp": 38,
+      "featuredOnLp": 12,
+      "lockedOnLp": 26,
+      "pendingPhoto": 56,
+      "manualOverrides": 6,
+      "autoSourcedPhotos": 35
+    }
   },
   "deals": [
     {
       "type": "Condo",
-      "area": "Hastings, Vancouver",
-      "street": "E Georgia Street",
-      "price": "$499K",
-      "sqft": "650 sq ft",
+      "area": "Downtown, Vancouver",
+      "street": "150 E Cordova Street",
+      "price": "$370K",
+      "sqft": "497 sq ft",
       "courtOrdered": true,
-      "image": "/images/foreclosure/listings/hastings-vancouver.jpg",
-      "imageAlt": "Condo building of a current court-ordered listing in Hastings, Vancouver."
+      "image": "/images/foreclosure/listings/auto/ingastown.jpg",
+      "imageAlt": "Ingastown — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
+    },
+    {
+      "type": "Condo",
+      "area": "Sullivan Heights, Burnaby",
+      "street": "3755 Bartlett Court",
+      "price": "$399K",
+      "sqft": "928 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/timberlea.jpg",
+      "imageAlt": "Timberlea — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
+    },
+    {
+      "type": "Condo",
+      "area": "West Newton, Surrey",
+      "street": "12739 72 Avenue",
+      "price": "$399K",
+      "sqft": "722 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/the-savoy.jpg",
+      "imageAlt": "The Savoy — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
     },
     {
       "type": "Condo",
       "area": "Central Lonsdale, North Vancouver",
-      "street": "W 17th Street",
+      "street": "137 W 17th Street",
       "price": "$479K",
       "sqft": "716 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/central-lonsdale-nv.jpg",
-      "imageAlt": "Condo building of a current court-ordered listing in Central Lonsdale, North Vancouver."
+      "imageAlt": "Condo building of a current court-ordered listing in Central Lonsdale, North Vancouver.",
+      "featured": true
     },
     {
       "type": "Condo",
-      "area": "Coal Harbour, Vancouver",
-      "street": "W Cordova Street",
-      "price": "$1.27M",
-      "sqft": "734 sq ft",
+      "area": "West End, Vancouver",
+      "street": "1435 Nelson Street",
+      "price": "$479K",
+      "sqft": "687 sq ft",
       "courtOrdered": true,
-      "image": "/images/foreclosure/listings/coal-harbour-vancouver.jpg",
-      "imageAlt": "Condo tower of a current court-ordered listing in Coal Harbour, Vancouver."
+      "image": "/images/foreclosure/listings/auto/westport.jpg",
+      "imageAlt": "Westport — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
+    },
+    {
+      "type": "Condo",
+      "area": "Metrotown, Burnaby",
+      "street": "5932 Patterson Avenue",
+      "price": "$499K",
+      "sqft": "826 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/parkcrest.jpg",
+      "imageAlt": "Parkcrest — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
+    },
+    {
+      "type": "Condo",
+      "area": "Hastings, Vancouver",
+      "street": "1823 E Georgia Street",
+      "price": "$500K",
+      "sqft": "650 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/hastings-vancouver.jpg",
+      "imageAlt": "Condo building of a current court-ordered listing in Hastings, Vancouver.",
+      "featured": true
+    },
+    {
+      "type": "Condo",
+      "area": "East Newton, Surrey",
+      "street": "6841 138 Street",
+      "price": "$515K",
+      "sqft": "1,366 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/hyland-creek.jpg",
+      "imageAlt": "Hyland Creek — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "Downtown, Vancouver",
+      "street": "53 W Hastings Street",
+      "price": "$597K",
+      "sqft": "1,050 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/paris-block.jpg",
+      "imageAlt": "Paris Block — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
+    },
+    {
+      "type": "Condo",
+      "area": "South Marine, Vancouver",
+      "street": "3188 Riverwalk Avenue",
+      "price": "$710K",
+      "sqft": "886 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/current-at-water-s-edge-by-polygon.jpg",
+      "imageAlt": "Current At Water's Edge By Polygon — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
+    },
+    {
+      "type": "Condo",
+      "area": "Downtown, Vancouver",
+      "street": "1238 Burrard Street",
+      "price": "$730K",
+      "sqft": "859 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/altadena.jpg",
+      "imageAlt": "Altadena — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Townhouse",
+      "area": "West Newton, Surrey",
+      "street": "12711 64 Avenue",
+      "price": "$749K",
+      "sqft": "1,950 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/palette-on-the-park.jpg",
+      "imageAlt": "Palette On The Park — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "Kerrisdale, Vancouver",
+      "street": "2096 W 47th Avenue",
+      "price": "$750K",
+      "sqft": "522 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
+      "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
+    },
+    {
+      "type": "Townhouse",
+      "area": "Fleetwood Tynehead, Surrey",
+      "street": "8676 158 Street",
+      "price": "$765K",
+      "sqft": "1,521 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/springfield.jpg",
+      "imageAlt": "Springfield — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "South Marine, Vancouver",
+      "street": "3281 E Kent Avenue North",
+      "price": "$766K",
+      "sqft": "1,000 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/rhythm.jpg",
+      "imageAlt": "Rhythm — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
+    },
+    {
+      "type": "Condo",
+      "area": "Yaletown, Vancouver",
+      "street": "930 Cambie Street",
+      "price": "$789K",
+      "sqft": "1,105 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/pacific-place-landmark.jpg",
+      "imageAlt": "Pacific Place Landmark — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
+    },
+    {
+      "type": "Townhouse",
+      "area": "Sullivan Station, Surrey",
+      "street": "6188 141 Street",
+      "price": "$835K",
+      "sqft": "1,567 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/vantage.jpg",
+      "imageAlt": "Vantage — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Townhouse",
+      "area": "Kitsilano, Vancouver",
+      "street": "B5 1855 W 10th Avenue",
+      "price": "$870K",
+      "sqft": "1,089 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/tennyson-mews.jpg",
+      "imageAlt": "Tennyson Mews — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "South Marine, Vancouver",
+      "street": "3188 Riverwalk Avenue",
+      "price": "$913K",
+      "sqft": "983 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/currents-at-the-water-s-edge.jpg",
+      "imageAlt": "Currents At The Water's Edge — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "Yaletown, Vancouver",
+      "street": "87 Nelson Street",
+      "price": "$960K",
+      "sqft": "872 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/the-arc.jpg",
+      "imageAlt": "The Arc — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "West End, Vancouver",
+      "street": "1568 Alberni Street",
+      "price": "$965K",
+      "sqft": "702 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/alberni-by-kengo-kuma.jpg",
+      "imageAlt": "Alberni By Kengo Kuma — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Townhouse",
+      "area": "Yaletown, Vancouver",
+      "street": "Beatty Street",
+      "price": "$1.04M",
+      "sqft": "1,110 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/the-max.jpg",
+      "imageAlt": "The Max — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "Lynnmour, North Vancouver",
+      "street": "1500 Fern Street",
+      "price": "$1.07M",
+      "sqft": "1,240 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/apex.jpg",
+      "imageAlt": "Apex — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "West End, Vancouver",
+      "street": "1028 Barclay Street",
+      "price": "$1.13M",
+      "sqft": "1,029 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/patina.jpg",
+      "imageAlt": "Patina — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "Kerrisdale, Vancouver",
+      "street": "2096 W 47th Avenue",
+      "price": "$1.15M",
+      "sqft": "697 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
+      "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Townhouse",
+      "area": "Lynnmour, North Vancouver",
+      "street": "1471 Hunter Street",
+      "price": "$1.18M",
+      "sqft": "1,538 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/lynnmour-nv.jpg",
+      "imageAlt": "Townhouse of a current court-ordered listing in Lynnmour, North Vancouver.",
+      "featured": false
     },
     {
       "type": "House",
@@ -50,27 +312,129 @@
       "sqft": "2,667 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/renfrew-heights-vancouver.jpg",
-      "imageAlt": "House of a current court-ordered listing in Renfrew Heights, Vancouver."
+      "imageAlt": "House of a current court-ordered listing in Renfrew Heights, Vancouver.",
+      "featured": false
     },
     {
-      "type": "Townhouse",
-      "area": "Lynnmour, North Vancouver",
-      "street": "Hunter Street",
-      "price": "$1.18M",
-      "sqft": "1,538 sq ft",
+      "type": "Condo",
+      "area": "Coal Harbour, Vancouver",
+      "street": "1011 W Cordova Street",
+      "price": "$1.27M",
+      "sqft": "734 sq ft",
       "courtOrdered": true,
-      "image": "/images/foreclosure/listings/lynnmour-nv.jpg",
-      "imageAlt": "Townhouse of a current court-ordered listing in Lynnmour, North Vancouver."
+      "image": "/images/foreclosure/listings/coal-harbour-vancouver.jpg",
+      "imageAlt": "Condo tower of a current court-ordered listing in Coal Harbour, Vancouver.",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "West End, Vancouver",
+      "street": "1925 Alberni Street",
+      "price": "$1.28M",
+      "sqft": "1,038 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/laguna-parkside.jpg",
+      "imageAlt": "Laguna Parkside — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "West End, Vancouver",
+      "street": "1365 Davie Street",
+      "price": "$1.35M",
+      "sqft": "956 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/mirabel-english-bay.jpg",
+      "imageAlt": "Mirabel English Bay — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "Downtown, Vancouver",
+      "street": "938 Nelson Street",
+      "price": "$1.57M",
+      "sqft": "1,557 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/wall-one.jpg",
+      "imageAlt": "Wall One — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "Kerrisdale, Vancouver",
+      "street": "2096 W 47th Avenue",
+      "price": "$1.72M",
+      "sqft": "1,158 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
+      "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "Kerrisdale, Vancouver",
+      "street": "2096 W 47th Avenue",
+      "price": "$1.90M",
+      "sqft": "1,190 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
+      "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Grandview Surrey, Surrey",
+      "street": "Hillview Place",
+      "price": "$2.48M",
+      "sqft": "3,010 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/country-woods-hillview.jpg",
+      "imageAlt": "Country Woods/Hillview — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "House",
       "area": "Morgan Creek, Surrey",
-      "street": "159A Street",
+      "street": "159a Street",
       "price": "$2.54M",
       "sqft": "4,362 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/morgan-creek-surrey.jpg",
-      "imageAlt": "House of a current court-ordered listing in Morgan Creek, Surrey."
+      "imageAlt": "House of a current court-ordered listing in Morgan Creek, Surrey.",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Dunbar, Vancouver",
+      "street": "W 38th Avenue",
+      "price": "$3.48M",
+      "sqft": "4,266 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/dunbar.jpg",
+      "imageAlt": "Dunbar — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Shaughnessy, Vancouver",
+      "street": "3838 Cypress Street",
+      "price": "$3.75M",
+      "sqft": "4,959 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/greencroft-estate.jpg",
+      "imageAlt": "Greencroft Estate — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Shaughnessy, Vancouver",
+      "street": "3838 Cypress Street",
+      "price": "$4.75M",
+      "sqft": "6,565 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/greencroft-estate.jpg",
+      "imageAlt": "Greencroft Estate — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     }
   ]
 }

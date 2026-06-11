@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import ForeclosureNavbar from "@/components/foreclosure/ForeclosureNavbar";
 import MedicalFooter from "@/components/medical/MedicalFooter";
 import ConsultationStickyMobileCTA from "@/components/shared/ConsultationStickyMobileCTA";
 import CookieConsent from "@/components/medical/CookieConsent";
 import ForeclosureHero from "@/components/foreclosure/ForeclosureHero";
+import ForeclosureHeroVariantB from "@/components/foreclosure/ForeclosureHeroVariantB";
 import InventoryPreview from "@/components/foreclosure/InventoryPreview";
 import ForeclosureFormSection from "@/components/foreclosure/ForeclosureFormSection";
 import MortgageCliffCallout from "@/components/foreclosure/MortgageCliffCallout";
@@ -83,14 +85,21 @@ function JsonLd() {
   );
 }
 
-export default function ForeclosurePage() {
+export default async function ForeclosurePage() {
+  // A/B variant — assigned by proxy.ts and forwarded via x-ab-variant header.
+  // Variant A = control (current hero, no inline form). Variant B = hero with
+  // inline form, ForeclosureFormSection hidden (form already captured above the fold).
+  // See proxy.ts + docs/audits/2026-06-11-foreclosure-lp-audit.md.
+  const requestHeaders = await headers();
+  const variant = requestHeaders.get("x-ab-variant") === "B" ? "B" : "A";
+
   return (
     <>
       <JsonLd />
       <ForeclosureNavbar />
-      <ForeclosureHero />
+      {variant === "B" ? <ForeclosureHeroVariantB /> : <ForeclosureHero />}
       <InventoryPreview />
-      <ForeclosureFormSection />
+      {variant === "A" && <ForeclosureFormSection />}
       <MortgageCliffCallout />
       <ProcessExplainer />
       <AudienceSplit />
