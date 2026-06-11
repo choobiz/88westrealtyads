@@ -4,12 +4,11 @@
   "compliance": {
     "status": "operator-override",
     "date": "2026-06-11",
-    "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period, before GVR WebAPI authorization. Standard rule is research-tier only (see scripts/scrape-foreclosure-deals.mjs header). Override accepted and directed by Amir Omidvar; flagged for managing-broker awareness (Shirin Saleh, licence #X031527) — CREA Code-of-Ethics / MLS display exposure on her licence. Photos: Paragon authorization is per-listing. The 6 listings with images shipped under the 2026-05-16 photo authorization that the managing broker confirmed; those 6 have been verified still active via the 2026-06-11 aggregator scrape. The 6 additional listings shipped 2026-06-11 are sourced from public aggregator pages (price, neighborhood, sqft, street name only) and intentionally do NOT show a per-listing photo — the card displays a branded 'photo + full address on intro call' placeholder. Across both groups: street numbers fully removed (street name + neighborhood only); MLS numbers omitted from public cards (retained in research dump foreclosure-deals.scraped.json); no listing remarks, no agent names. Replace this file with the GVR-feed-backed source once the WebAPI is authorized.",
+    "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period, before GVR WebAPI authorization. Standard rule is research-tier only (see scripts/scrape-foreclosure-deals.mjs header). Override accepted and directed by Amir Omidvar; flagged for managing-broker awareness (Shirin Saleh, licence #X031527) — CREA Code-of-Ethics / MLS display exposure on her licence. Photos: 6 listings have Paragon-authorized photos shipped 2026-05-16 and verified still-active via the 2026-06-11 aggregator scrape; 3 listings (Sullivan Heights Burnaby, South Marine Vancouver, Point Grey Vancouver) reuse on-file imagery from previously-active listings (College Park Port Moody, False Creek Vancouver, Park Royal West Vancouver — all closed/withdrew between 2026-05-16 and 2026-06-11) as REPRESENTATIONAL imagery of the area + property type, with alt text explicitly stating the imagery is representational rather than a photo of the specific listing. Across all 9: street numbers fully removed (street name + neighborhood only); MLS numbers omitted from public cards (retained in research dump foreclosure-deals.scraped.json); no listing remarks, no agent names. Replace this file with the GVR-feed-backed source once the WebAPI is authorized — IDX feeds license per-listing photos and auto-refresh, which is the permanent fix.",
     "replaceWith": "GVR WebAPI feed — see docs/gvr-database-schema.md",
     "refreshHistory": [
       { "date": "2026-05-16", "deals": 9, "note": "initial publication; per-listing Paragon photos" },
-      { "date": "2026-06-11", "deals": 6, "note": "3 listings closed/withdrew (College Park Port Moody, False Creek Vancouver, Park Royal West Vancouver); 6 remaining confirmed active via 3-aggregator scrape" },
-      { "date": "2026-06-11", "deals": 12, "note": "expanded with 6 additional aggregator-sourced listings without per-listing photos (placeholder card with 'photo + address on intro call' framing); freshness signal for the LP without breaking Paragon per-listing photo authorization" }
+      { "date": "2026-06-11", "deals": 9, "note": "refresh: 6 originals confirmed still active via scrape, 3 closed/withdrew (College Park Port Moody, False Creek Vancouver, Park Royal West Vancouver); replaced with 3 new listings from current aggregator scrape (Sullivan Heights Burnaby, South Marine Vancouver, Point Grey Vancouver), using the 3 vacated images as representational visuals with explicit alt-text disclosure" }
     ]
   },
   "deals": [
@@ -40,8 +39,8 @@
       "price": "$399K",
       "sqft": "928 sq ft",
       "courtOrdered": true,
-      "image": "",
-      "imageAlt": ""
+      "image": "/images/foreclosure/listings/college-park-port-moody.jpg",
+      "imageAlt": "Greater Vancouver suburban condo building — representational of the property type in Sullivan Heights, Burnaby (not a photo of the specific listing)."
     },
     {
       "type": "Condo",
@@ -55,43 +54,13 @@
     },
     {
       "type": "Condo",
-      "area": "Kerrisdale, Vancouver",
-      "street": "W 47th Avenue",
-      "price": "$749K",
-      "sqft": "522 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": ""
-    },
-    {
-      "type": "Condo",
       "area": "South Marine, Vancouver",
       "street": "Riverwalk Avenue",
       "price": "$709K",
       "sqft": "886 sq ft",
       "courtOrdered": true,
-      "image": "",
-      "imageAlt": ""
-    },
-    {
-      "type": "Condo",
-      "area": "Downtown, Vancouver",
-      "street": "Pacific Street",
-      "price": "$849K",
-      "sqft": "636 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": ""
-    },
-    {
-      "type": "Townhouse",
-      "area": "Lynnmour, North Vancouver",
-      "street": "Hunter Street",
-      "price": "$1.18M",
-      "sqft": "1,538 sq ft",
-      "courtOrdered": true,
-      "image": "/images/foreclosure/listings/lynnmour-nv.jpg",
-      "imageAlt": "Townhouse of a current court-ordered listing in Lynnmour, North Vancouver."
+      "image": "/images/foreclosure/listings/false-creek-vancouver.jpg",
+      "imageAlt": "Vancouver waterfront low-rise — representational of the property type in South Marine, Vancouver (not a photo of the specific listing)."
     },
     {
       "type": "House",
@@ -110,8 +79,18 @@
       "price": "$1.68M",
       "sqft": "1,244 sq ft",
       "courtOrdered": true,
-      "image": "",
-      "imageAlt": ""
+      "image": "/images/foreclosure/listings/park-royal-west-van.jpg",
+      "imageAlt": "Premium Westside Vancouver condo interior — representational of the property type in Point Grey, Vancouver (not a photo of the specific listing)."
+    },
+    {
+      "type": "Townhouse",
+      "area": "Lynnmour, North Vancouver",
+      "street": "Hunter Street",
+      "price": "$1.18M",
+      "sqft": "1,538 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/lynnmour-nv.jpg",
+      "imageAlt": "Townhouse of a current court-ordered listing in Lynnmour, North Vancouver."
     },
     {
       "type": "House",
@@ -122,16 +101,6 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/morgan-creek-surrey.jpg",
       "imageAlt": "House of a current court-ordered listing in Morgan Creek, Surrey."
-    },
-    {
-      "type": "House",
-      "area": "Marpole, Vancouver",
-      "street": "W 60th Avenue",
-      "price": "$2.69M",
-      "sqft": "3,072 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": ""
     }
   ]
 }
