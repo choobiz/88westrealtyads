@@ -1,16 +1,30 @@
 /**
- * proxy.ts — A/B cohort assignment for foreclosure LP test.
+ * proxy.ts — A/B/C cohort assignment for foreclosure LP test.
  *
  * Note: In Next.js 16+, what was "middleware" is now called "proxy".
  * File location, export name, and matcher config differ from older docs.
  * See node_modules/next/dist/docs/01-app/01-getting-started/16-proxy.md
  *
- * Test plan: ForeclosureHero (control / variant A — current 2-CTA hero, no inline form)
- *   vs. ForeclosureHeroVariantB (treatment / variant B — single-CTA hero with inline 3-field form).
+ * Test plan (3 arms as of 2026-06-12):
+ *   A — Control. ForeclosureHero (2-CTA hero) + InventoryPreview (gated card
+ *       grid) + ForeclosureFormSection (lower form).
+ *   B — Hero variant. ForeclosureHeroVariantB (single CTA + inline 3-field
+ *       form) + InventoryPreview (gated card grid). No lower form section
+ *       (the inline hero form covers it).
+ *   C — Inventory variant. ForeclosureHero (control hero) + PortfolioConsole
+ *       (financial-app + bento-grid inventory). No lower form section
+ *       (PortfolioConsole has its own Strategy Session CTA). Holds the hero
+ *       constant vs A so the experiment isolates the inventory-section
+ *       change.
+ *
+ * Comparisons:
+ *   A vs B = hero-section change isolated
+ *   A vs C = inventory-section change isolated
+ *   B vs C = both changed (composite — useful but harder to interpret)
  *
  * Assignment lifecycle:
  *   1. First visit: cookie `_lp_ab_cohort` is missing
- *      → assign A or B (50/50) via Math.random
+ *      → assign A, B, or C via VARIANT_SPLIT (Math.random thresholds below)
  *      → set cookie on response (30-day persistence)
  *      → also set a request-scoped header `x-ab-variant` so page.tsx can read
  *        the assignment on the SAME request (cookies() reads the request, not
@@ -19,35 +33,59 @@
  *   2. Subsequent visits: cookie is read, header is mirrored, no re-assignment
  *
  * Attribution: the form reads the cookie at submit time and forwards
- * `experiment_variant: 'A' | 'B'` to the GHL webhook + dataLayer payload.
+ * `experiment_variant: 'A' | 'B' | 'C'` to the GHL webhook + dataLayer payload.
  *
- * Sample size note: at current ~6 form submissions/month, detecting a 20% lift
- * with 90% confidence takes ~80 days. Run for at least 4 weeks before pulling
- * directional reads. See docs/audits/2026-06-11-foreclosure-lp-audit.md.
+ * Traffic feed:
+ *   - Organic / direct / referral: natural split via VARIANT_SPLIT below.
+ *   - Google Ads paid: can override per-ad via `final_url_suffix` on the
+ *     campaign (currently set to `ab=B` to force paid → B). Operator decides
+ *     the per-arm budget; ads-side override skips the random assignment.
+ *   - QA / preview: ?ab=A, ?ab=B, ?ab=C on the URL forces and persists.
  */
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
+type Variant = "A" | "B" | "C";
+
 const COOKIE_NAME = "_lp_ab_cohort";
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 30; // 30 days
 
+// Split thresholds for random assignment. Cumulative — Math.random() < threshold
+// picks that variant. Adjust to skew traffic.
+//
+//   { A: 0.33, B: 0.66, C: 1.00 }  → equal-ish thirds (default)
+//   { A: 0.20, B: 0.40, C: 1.00 }  → C-heavy (60% C, 20% A, 20% B)
+//   { A: 0.25, B: 0.50, C: 1.00 }  → balanced challenger split
+//
+// NOTE: paid Google Ads traffic is currently force-routed to B via the
+// campaign's `final_url_suffix=ab=B`. Until that's changed, this split only
+// affects organic / direct / referral traffic.
+const VARIANT_SPLIT = { A: 0.33, B: 0.66, C: 1.0 } as const;
+
+function isVariant(v: string | null | undefined): v is Variant {
+  return v === "A" || v === "B" || v === "C";
+}
+
+function assignFromRandom(): Variant {
+  const r = Math.random();
+  if (r < VARIANT_SPLIT.A) return "A";
+  if (r < VARIANT_SPLIT.B) return "B";
+  return "C";
+}
+
 export function proxy(request: NextRequest) {
-  // QA / preview override: `?ab=A` or `?ab=B` forces the variant for the
-  // current visit AND persists the cookie. Used for stakeholder reviews and
-  // post-deploy spot checks. The override only fires when a query param is
-  // present — natural traffic still gets the random 50/50 assignment.
+  // QA / preview override: `?ab=A` | `?ab=B` | `?ab=C` forces the variant
+  // for the current visit AND persists the cookie. Used for stakeholder
+  // reviews and post-deploy spot checks. The override only fires when a
+  // query param is present — natural traffic gets the VARIANT_SPLIT random
+  // assignment instead.
   const forced = request.nextUrl.searchParams.get("ab");
-  const forcedVariant: "A" | "B" | null =
-    forced === "A" || forced === "B" ? forced : null;
+  const forcedVariant: Variant | null = isVariant(forced) ? forced : null;
 
   const existingCookie = request.cookies.get(COOKIE_NAME)?.value;
-  const variant: "A" | "B" =
+  const variant: Variant =
     forcedVariant ??
-    (existingCookie === "A" || existingCookie === "B"
-      ? existingCookie
-      : Math.random() < 0.5
-        ? "A"
-        : "B");
+    (isVariant(existingCookie) ? existingCookie : assignFromRandom());
 
   // Forward the assignment to the page via a request-scoped header so SSR sees
   // the correct variant on first visit (cookies()-read can't see what we're
