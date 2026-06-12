@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { headers } from "next/headers";
 import ForeclosureNavbar from "@/components/foreclosure/ForeclosureNavbar";
 import MedicalFooter from "@/components/medical/MedicalFooter";
@@ -6,7 +7,6 @@ import ConsultationStickyMobileCTA from "@/components/shared/ConsultationStickyM
 import CookieConsent from "@/components/medical/CookieConsent";
 import ForeclosureHero from "@/components/foreclosure/ForeclosureHero";
 import ForeclosureHeroVariantB from "@/components/foreclosure/ForeclosureHeroVariantB";
-import InventoryPreview from "@/components/foreclosure/InventoryPreview";
 import ForeclosureFormSection from "@/components/foreclosure/ForeclosureFormSection";
 import MortgageCliffCallout from "@/components/foreclosure/MortgageCliffCallout";
 import ProcessExplainer from "@/components/foreclosure/ProcessExplainer";
@@ -14,6 +14,23 @@ import AudienceSplit from "@/components/foreclosure/AudienceSplit";
 import AgentTrust from "@/components/foreclosure/AgentTrust";
 import ForeclosureFAQ from "@/components/foreclosure/ForeclosureFAQ";
 import GuaranteeAndFinalCTA from "@/components/foreclosure/GuaranteeAndFinalCTA";
+
+// InventoryMap uses Leaflet which calls window/document on import → must
+// skip SSR. Replaces the card-grid InventoryPreview component per the
+// 2026-06-11 map-first redesign. See components/foreclosure/InventoryMap.tsx.
+const InventoryMap = dynamic(
+  () => import("@/components/foreclosure/InventoryMap"),
+  {
+    ssr: false,
+    loading: () => (
+      <section id="deals" className="bg-eightyw-light py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl overflow-hidden border border-eightyw-border bg-white animate-pulse" style={{ height: 680 }} />
+        </div>
+      </section>
+    ),
+  },
+);
 
 export const metadata: Metadata = {
   title: "Vancouver Foreclosure Specialist | Court-Ordered Sales Buyer Agent",
@@ -98,7 +115,7 @@ export default async function ForeclosurePage() {
       <JsonLd />
       <ForeclosureNavbar />
       {variant === "B" ? <ForeclosureHeroVariantB /> : <ForeclosureHero />}
-      <InventoryPreview />
+      <InventoryMap />
       {variant === "A" && <ForeclosureFormSection />}
       <MortgageCliffCallout />
       <ProcessExplainer />
