@@ -6,7 +6,7 @@ import ConsultationStickyMobileCTA from "@/components/shared/ConsultationStickyM
 import CookieConsent from "@/components/medical/CookieConsent";
 import ForeclosureHero from "@/components/foreclosure/ForeclosureHero";
 import ForeclosureHeroVariantB from "@/components/foreclosure/ForeclosureHeroVariantB";
-import InventoryPreview from "@/components/foreclosure/InventoryPreview";
+import PortfolioConsole from "@/components/foreclosure/PortfolioConsole";
 import ForeclosureFormSection from "@/components/foreclosure/ForeclosureFormSection";
 import MortgageCliffCallout from "@/components/foreclosure/MortgageCliffCallout";
 import ProcessExplainer from "@/components/foreclosure/ProcessExplainer";
@@ -98,7 +98,7 @@ export default async function ForeclosurePage() {
       <JsonLd />
       <ForeclosureNavbar />
       {variant === "B" ? <ForeclosureHeroVariantB /> : <ForeclosureHero />}
-      <InventoryPreview />
+      <PortfolioConsole />
       {variant === "A" && <ForeclosureFormSection />}
       <MortgageCliffCallout />
       <ProcessExplainer />
