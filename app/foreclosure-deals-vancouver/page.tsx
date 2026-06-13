@@ -7,6 +7,7 @@ import CookieConsent from "@/components/medical/CookieConsent";
 import ForeclosureHero from "@/components/foreclosure/ForeclosureHero";
 import ForeclosureHeroVariantB from "@/components/foreclosure/ForeclosureHeroVariantB";
 import InventoryPreview from "@/components/foreclosure/InventoryPreview";
+import PortfolioConsole from "@/components/foreclosure/PortfolioConsole";
 import ForeclosureFormSection from "@/components/foreclosure/ForeclosureFormSection";
 import MortgageCliffCallout from "@/components/foreclosure/MortgageCliffCallout";
 import ProcessExplainer from "@/components/foreclosure/ProcessExplainer";
@@ -85,20 +86,38 @@ function JsonLd() {
   );
 }
 
+type Variant = "A" | "B" | "C";
+
 export default async function ForeclosurePage() {
-  // A/B variant — assigned by proxy.ts and forwarded via x-ab-variant header.
-  // Variant A = control (current hero, no inline form). Variant B = hero with
-  // inline form, ForeclosureFormSection hidden (form already captured above the fold).
-  // See proxy.ts + docs/audits/2026-06-11-foreclosure-lp-audit.md.
+  // A/B/C variant — assigned by proxy.ts and forwarded via x-ab-variant
+  // header. See proxy.ts for the test plan and split ratios.
+  //
+  //   A — Control. ForeclosureHero (2-CTA) + InventoryPreview (gated cards)
+  //                + ForeclosureFormSection (lower form).
+  //   B — Hero variant. ForeclosureHeroVariantB (inline form) +
+  //                InventoryPreview. No lower form section.
+  //   C — Inventory variant. ForeclosureHero (control hero) +
+  //                PortfolioConsole (financial-app bento layout). No lower
+  //                form section — PortfolioConsole has its own Strategy
+  //                Session CTA tile.
   const requestHeaders = await headers();
-  const variant = requestHeaders.get("x-ab-variant") === "B" ? "B" : "A";
+  const headerVariant = requestHeaders.get("x-ab-variant");
+  const variant: Variant =
+    headerVariant === "B" ? "B" : headerVariant === "C" ? "C" : "A";
 
   return (
     <>
       <JsonLd />
       <ForeclosureNavbar />
+      {/* Hero — B gets the inline-form variant; A and C keep the control hero
+          so the inventory-section change in C is isolated from any hero
+          change. */}
       {variant === "B" ? <ForeclosureHeroVariantB /> : <ForeclosureHero />}
-      <InventoryPreview />
+      {/* Inventory — C gets the Portfolio Console; A and B keep the gated
+          card grid. */}
+      {variant === "C" ? <PortfolioConsole /> : <InventoryPreview />}
+      {/* Lower form section — only A renders it. B's hero already has the
+          form inline; C's Portfolio Console has its own Strategy Session CTA. */}
       {variant === "A" && <ForeclosureFormSection />}
       <MortgageCliffCallout />
       <ProcessExplainer />
