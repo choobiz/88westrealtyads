@@ -53,14 +53,19 @@ const COOKIE_MAX_AGE = 60 * 60 * 24 * 30; // 30 days
 // Split thresholds for random assignment. Cumulative — Math.random() < threshold
 // picks that variant. Adjust to skew traffic.
 //
-//   { A: 0.33, B: 0.66, C: 1.00 }  → equal-ish thirds (default)
-//   { A: 0.20, B: 0.40, C: 1.00 }  → C-heavy (60% C, 20% A, 20% B)
+//   { A: 0.33, B: 0.66, C: 1.00 }  → equal-ish thirds
+//   { A: 0.20, B: 0.40, C: 1.00 }  → C-heavy (60% C, 20% A, 20% B) ← current
 //   { A: 0.25, B: 0.50, C: 1.00 }  → balanced challenger split
 //
-// NOTE: paid Google Ads traffic is currently force-routed to B via the
-// campaign's `final_url_suffix=ab=B`. Until that's changed, this split only
-// affects organic / direct / referral traffic.
-const VARIANT_SPLIT = { A: 0.33, B: 0.66, C: 1.0 } as const;
+// 2026-06-13: operator chose C-heavy split (20/20/60). Portfolio Console is
+// the newest arm; pushing 60% of traffic there accumulates conversion data
+// on it ~2x faster than equal thirds while still keeping A (control) and B
+// (hero variant) accumulating enough to detect a winner if either beats C.
+//
+// NOTE: paid Google Ads traffic also flows through this proxy now (the
+// foreclosure campaign's `final_url_suffix` was cleared 2026-06-13), so this
+// single split governs ALL traffic — paid and organic alike.
+const VARIANT_SPLIT = { A: 0.20, B: 0.40, C: 1.0 } as const;
 
 function isVariant(v: string | null | undefined): v is Variant {
   return v === "A" || v === "B" || v === "C";
