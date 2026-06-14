@@ -1,7 +1,11 @@
+"use client";
+
 import { ArrowRight } from "lucide-react";
 import foreclosureStats from "@/data/foreclosure-stats.json";
+import { useForeclosureLeadModal } from "./ForeclosureLeadProvider";
 
 export default function GuaranteeAndFinalCTA() {
+  const { openLeadForm } = useForeclosureLeadModal();
   return (
     <section className="bg-eightyw-light border-t border-eightyw-border py-16 lg:py-24">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,13 +23,22 @@ export default function GuaranteeAndFinalCTA() {
             read, and a possession-risk rating. A $500 analysis, yours free with
             no obligation.
           </p>
-          <a
-            href="#register"
+          <button
+            type="button"
+            onClick={() =>
+              openLeadForm({
+                headline: "YOUR FREE 48-HOUR DEAL SHORTLIST",
+                subtitle:
+                  "Tell us your budget + areas — shortlist in your inbox within 48 hours.",
+                formLocation: "final_cta",
+                source: "guarantee_final_cta",
+              })
+            }
             className="inline-flex items-center justify-center h-[52px] px-8 bg-brand-red text-white font-semibold rounded-full hover:bg-brand-red-hover transition-all hover:-translate-y-0.5 gap-2 text-[15px] shadow-[0_10px_30px_rgba(197,34,4,0.3)]"
           >
             Find My Next Deal
             <ArrowRight className="w-4 h-4" />
-          </a>
+          </button>
           <p className="text-text-muted text-xs mt-4">
             We&apos;re tracking ~{foreclosureStats.marketingNumber} active BC court-ordered listings right now.
           </p>

@@ -25,7 +25,7 @@
  * Mobile collapses everything to single column with smaller text.
  */
 
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import Image from "next/image";
 import {
   ArrowRight,
@@ -38,8 +38,7 @@ import {
   MapPin,
   TrendingDown,
 } from "lucide-react";
-import LeadFormModal from "@/components/shared/LeadFormModal";
-import { ForeclosureLeadForm } from "./ForeclosureHero";
+import { useForeclosureLeadModal } from "./ForeclosureLeadProvider";
 import dealsData from "@/data/foreclosure-deals.json";
 import foreclosureStats from "@/data/foreclosure-stats.json";
 
@@ -54,8 +53,6 @@ type ForeclosureDeal = {
   imageAlt: string;
   featured?: boolean;
 };
-
-type ModalContext = { subtitle: string; isLocked: boolean } | null;
 
 const LISTINGS: ForeclosureDeal[] = dealsData.deals;
 const FEATURED = LISTINGS.filter((l) => l.featured !== false);
@@ -94,19 +91,29 @@ function priceFmt(n: number): string {
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function PortfolioConsole() {
-  const [modalCtx, setModalCtx] = useState<ModalContext>(null);
+  const { openLeadForm } = useForeclosureLeadModal();
 
   const openCard = (l: ForeclosureDeal, isLocked: boolean) => {
-    setModalCtx({
-      subtitle: `${l.type} · ${l.area} · ${l.price}`,
-      isLocked,
+    const subtitle = `${l.type} · ${l.area} · ${l.price}`;
+    openLeadForm({
+      headline: isLocked
+        ? "BOOK YOUR FORECLOSURE STRATEGY SESSION"
+        : "POSITION DETAILS",
+      subtitle,
+      selectedProperty: subtitle,
+      submitLabel: isLocked ? "Schedule Strategy Call" : "Send Me Position Details",
+      formLocation: "property_modal",
+      source: isLocked ? "console_locked_card" : "console_featured_card",
     });
   };
 
   const openConsult = () => {
-    setModalCtx({
+    openLeadForm({
+      headline: "BOOK YOUR FORECLOSURE STRATEGY SESSION",
       subtitle: `Strategy session · ${LISTINGS.length} active positions`,
-      isLocked: true,
+      submitLabel: "Schedule Strategy Call",
+      formLocation: "deals_section",
+      source: "console_strategy_cta",
     });
   };
 
@@ -185,24 +192,6 @@ export default function PortfolioConsole() {
           onUnlock={openConsult}
         />
       </div>
-
-      <LeadFormModal
-        open={modalCtx !== null}
-        onClose={() => setModalCtx(null)}
-        contextHeadline={
-          modalCtx?.isLocked
-            ? "BOOK YOUR FORECLOSURE STRATEGY SESSION"
-            : "POSITION DETAILS"
-        }
-        contextSubtitle={modalCtx?.subtitle}
-      >
-        <ForeclosureLeadForm
-          formLocation="property_modal"
-          selectedProperty={modalCtx?.subtitle}
-          submitLabel={modalCtx?.isLocked ? "Schedule Strategy Call" : "Send Me Position Details"}
-          bare
-        />
-      </LeadFormModal>
     </section>
   );
 }

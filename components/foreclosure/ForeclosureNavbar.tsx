@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Phone, Menu, X } from "lucide-react";
 import { COMPANY } from "@/lib/constants";
+import { useForeclosureLeadModal } from "./ForeclosureLeadProvider";
 
 const NAV_ITEMS = [
   { label: "This Week's Deals", href: "#deals" },
@@ -14,6 +15,14 @@ const NAV_ITEMS = [
 
 export default function ForeclosureNavbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { openLeadForm } = useForeclosureLeadModal();
+  const openCta = (source: string) =>
+    openLeadForm({
+      headline: "FIND YOUR NEXT FORECLOSURE",
+      subtitle: "Free intro call · 24h response · No fee to buyers",
+      formLocation: "final_cta",
+      source,
+    });
 
   return (
     <nav className="sticky top-0 z-50 bg-brand-red h-[72px] flex items-center">
@@ -35,18 +44,26 @@ export default function ForeclosureNavbar() {
             <Phone className="w-4 h-4" />
             {COMPANY.phone}
           </a>
-          <a href="#register" className="inline-flex items-center h-10 px-5 bg-white text-brand-red text-sm font-semibold rounded-full hover:bg-eightyw-light transition-colors">
+          <button
+            type="button"
+            onClick={() => openCta("navbar_desktop")}
+            className="inline-flex items-center h-10 px-5 bg-white text-brand-red text-sm font-semibold rounded-full hover:bg-eightyw-light transition-colors"
+          >
             Find My Deal
-          </a>
+          </button>
         </div>
 
         <div className="flex md:hidden items-center gap-2">
           <a href={`tel:${COMPANY.phoneClean}`} className="w-10 h-10 flex items-center justify-center text-white" aria-label="Call us">
             <Phone className="w-5 h-5" />
           </a>
-          <a href="#register" className="inline-flex items-center h-9 px-4 bg-white text-brand-red text-xs font-semibold rounded-full">
+          <button
+            type="button"
+            onClick={() => openCta("navbar_mobile")}
+            className="inline-flex items-center h-9 px-4 bg-white text-brand-red text-xs font-semibold rounded-full"
+          >
             Find My Deal
-          </a>
+          </button>
           <button onClick={() => setMobileOpen(!mobileOpen)} className="w-10 h-10 flex items-center justify-center text-white" aria-label="Toggle menu">
             {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
