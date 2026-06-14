@@ -1,10 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 import { ArrowRight, Lock, Sparkles, Eye } from "lucide-react";
-import LeadFormModal from "@/components/shared/LeadFormModal";
-import { ForeclosureLeadForm } from "./ForeclosureHero";
+import { useForeclosureLeadModal } from "./ForeclosureLeadProvider";
 import dealsData from "@/data/foreclosure-deals.json";
 import foreclosureStats from "@/data/foreclosure-stats.json";
 
@@ -28,22 +26,24 @@ type ForeclosureDeal = {
   featured?: boolean;
 };
 
-type ModalContext = {
-  subtitle: string;
-  isLocked: boolean;
-} | null;
-
 const LISTINGS: ForeclosureDeal[] = dealsData.deals;
 const FEATURED = LISTINGS.filter((l) => l.featured !== false);
 const LOCKED = LISTINGS.filter((l) => l.featured === false);
 
 export default function InventoryPreview() {
-  const [modalCtx, setModalCtx] = useState<ModalContext>(null);
+  const { openLeadForm } = useForeclosureLeadModal();
 
   const openCard = (l: ForeclosureDeal, isLocked: boolean) => {
-    setModalCtx({
-      subtitle: `${l.type} · ${l.area} · ${l.price}`,
-      isLocked,
+    const subtitle = `${l.type} · ${l.area} · ${l.price}`;
+    openLeadForm({
+      headline: isLocked
+        ? "UNLOCK THIS LISTING + THE FULL DEAL LIST"
+        : "GET DETAILS ON THIS LISTING",
+      subtitle,
+      selectedProperty: subtitle,
+      submitLabel: isLocked ? "Send Me the Full List" : "Send Me the Details",
+      formLocation: "property_modal",
+      source: isLocked ? "inventory_locked_card" : "inventory_featured_card",
     });
   };
 
@@ -102,9 +102,12 @@ export default function InventoryPreview() {
               <button
                 type="button"
                 onClick={() =>
-                  setModalCtx({
+                  openLeadForm({
+                    headline: "UNLOCK THIS LISTING + THE FULL DEAL LIST",
                     subtitle: `Unlock all ${LOCKED.length + FEATURED.length} active court-ordered listings`,
-                    isLocked: true,
+                    submitLabel: "Send Me the Full List",
+                    formLocation: "deals_section",
+                    source: "inventory_unlock_button",
                   })
                 }
                 className="inline-flex items-center justify-center h-[48px] px-6 bg-brand-red text-white font-semibold rounded-full hover:bg-brand-red-hover transition-all hover:-translate-y-0.5 gap-2 text-[15px] shadow-[0_10px_30px_rgba(197,34,4,0.25)] whitespace-nowrap"
@@ -131,20 +134,6 @@ export default function InventoryPreview() {
           Click any listing above to start the deal hunt — your specialist will walk you through it within 24 hours.
         </p>
       </div>
-
-      <LeadFormModal
-        open={modalCtx !== null}
-        onClose={() => setModalCtx(null)}
-        contextHeadline={modalCtx?.isLocked ? "UNLOCK THIS LISTING + THE FULL DEAL LIST" : "GET DETAILS ON THIS LISTING"}
-        contextSubtitle={modalCtx?.subtitle}
-      >
-        <ForeclosureLeadForm
-          formLocation="property_modal"
-          selectedProperty={modalCtx?.subtitle}
-          submitLabel={modalCtx?.isLocked ? "Send Me the Full List" : "Send Me the Details"}
-          bare
-        />
-      </LeadFormModal>
     </section>
   );
 }

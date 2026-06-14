@@ -6,6 +6,7 @@ import ConsultationStickyMobileCTA from "@/components/shared/ConsultationStickyM
 import CookieConsent from "@/components/medical/CookieConsent";
 import ForeclosureHero from "@/components/foreclosure/ForeclosureHero";
 import ForeclosureHeroVariantB from "@/components/foreclosure/ForeclosureHeroVariantB";
+import ForeclosureLeadProvider from "@/components/foreclosure/ForeclosureLeadProvider";
 import InventoryPreview from "@/components/foreclosure/InventoryPreview";
 import PortfolioConsole from "@/components/foreclosure/PortfolioConsole";
 import ForeclosureFormSection from "@/components/foreclosure/ForeclosureFormSection";
@@ -106,7 +107,7 @@ export default async function ForeclosurePage() {
     headerVariant === "B" ? "B" : headerVariant === "C" ? "C" : "A";
 
   return (
-    <>
+    <ForeclosureLeadProvider>
       <JsonLd />
       <ForeclosureNavbar />
       {/* Hero — B gets the inline-form variant; A and C keep the control hero
@@ -117,7 +118,10 @@ export default async function ForeclosurePage() {
           card grid. */}
       {variant === "C" ? <PortfolioConsole /> : <InventoryPreview />}
       {/* Lower form section — only A renders it. B's hero already has the
-          form inline; C's Portfolio Console has its own Strategy Session CTA. */}
+          form inline; C's Portfolio Console has its own Strategy Session CTA.
+          As of 2026-06-13 no CTA scrolls here anymore (all CTAs open the
+          modal via ForeclosureLeadProvider); this section persists as a
+          passive inline form for users who scroll past everything. */}
       {variant === "A" && <ForeclosureFormSection />}
       <MortgageCliffCallout />
       <ProcessExplainer />
@@ -128,6 +132,6 @@ export default async function ForeclosurePage() {
       <MedicalFooter />
       <ConsultationStickyMobileCTA />
       <CookieConsent />
-    </>
+    </ForeclosureLeadProvider>
   );
 }
