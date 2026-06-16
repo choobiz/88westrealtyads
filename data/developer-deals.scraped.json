@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-06-15T17:48:37.799Z",
+  "scrapedAt": "2026-06-16T14:17:03.486Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
@@ -70,18 +70,18 @@
       "headline_dollar": "$20K"
     },
     {
-      "project_name": "The Falls at Kanaka Springs by Epic Homes – Availability, Plans, Prices",
-      "city": "Maple Ridge",
-      "incentive_summary": "Special pricing on the final 3 homes under $800k., Special pricing on the final three 3 Bed + Den townhomes, starting...",
-      "project_url": "https://www.mikestewart.ca/presale/the-falls-at-kanaka-springs-by-epic-homes-presale-maple-ridge-townhomes/",
-      "headline_dollar": "$800k"
-    },
-    {
       "project_name": "Silverbrook Langley — Prices & Floor Plans",
       "city": "Langley",
       "incentive_summary": "$20,000 Price Savings, Only $20,000 Deposit Required",
       "project_url": "https://www.mikestewart.ca/presale/silverbrook-langley-prices-floor-plans/",
       "headline_dollar": "$20,000"
+    },
+    {
+      "project_name": "Landmark on Robson – 1408 Robson Street & 1482 Robson Street",
+      "city": "Vancouver",
+      "incentive_summary": "Save up to 15%, Save Up to 15% This Lunar New Year, Limited 2-Bedroom Homes with Special Pricing, Select 2-bedroom ho...",
+      "project_url": "https://www.mikestewart.ca/presale/landmark-on-robson/",
+      "headline_dollar": null
     },
     {
       "project_name": "Foster Martin – 1475 Foster Street",
