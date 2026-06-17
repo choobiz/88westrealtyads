@@ -1,6 +1,6 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-06-16T14:17:26.365Z",
+  "scrapedAt": "2026-06-17T14:17:25.168Z",
   "parserVersion": "1.1",
   "sourceCount": 3,
   "rawCount": 137,
@@ -10,7 +10,7 @@
     {
       "source": "Simon Clayton (Macdonald Realty)",
       "ok": true,
-      "listings": 67,
+      "listings": 66,
       "pages": [
         {
           "page": 1,
@@ -51,8 +51,8 @@
           "page": 6,
           "url": "https://simonclayton.ca/foreclosures/?_pg=6",
           "ok": true,
-          "listings": 8,
-          "newListings": 8
+          "listings": 7,
+          "newListings": 7
         },
         {
           "page": 7,
@@ -67,7 +67,7 @@
     {
       "source": "Macnabs (Royal LePage Elite West)",
       "ok": true,
-      "listings": 58,
+      "listings": 59,
       "pages": [
         {
           "page": 1,
@@ -108,8 +108,15 @@
           "page": 6,
           "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=6",
           "ok": true,
+          "listings": 1,
+          "newListings": 1
+        },
+        {
+          "page": 7,
+          "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=7",
+          "ok": false,
           "listings": 0,
-          "newListings": 0
+          "error": "404 Not Found"
         }
       ],
       "error": null
@@ -309,21 +316,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 3072,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
-      "mls_number": "R3080192",
-      "property_type": "Condo",
-      "neighborhood": "Coal Harbour",
-      "city": "Vancouver",
-      "fsa": "V6G",
-      "street_masked": "████ 588 Broughton Street",
-      "project_name": null,
-      "price": 975000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 958,
       "court_ordered_flag": true,
       "source": "Simon Clayton (Macdonald Realty)"
     },
@@ -1378,6 +1370,21 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
+      "mls_number": "R3136496",
+      "property_type": "Land",
+      "neighborhood": "County Line Glen Valley",
+      "city": "Langley",
+      "fsa": "V4W",
+      "street_masked": "████ 272 Street",
+      "project_name": null,
+      "price": 1790000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": null,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
       "mls_number": "R3084922",
       "property_type": "House",
       "neighborhood": "Guildford",
@@ -1498,21 +1505,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3103236",
-      "property_type": "House",
-      "neighborhood": "Queen Mary Park Surrey",
-      "city": "Surrey",
-      "fsa": "V3W",
-      "street_masked": "████ 84a Avenue",
-      "project_name": null,
-      "price": 1350000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 2820,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3104058",
       "property_type": "House",
       "neighborhood": "Queen Mary Park Surrey",
@@ -1539,6 +1531,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 2779,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3103236",
+      "property_type": "House",
+      "neighborhood": "Queen Mary Park Surrey",
+      "city": "Surrey",
+      "fsa": "V3W",
+      "street_masked": "████ 84a Avenue",
+      "project_name": null,
+      "price": 1250000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 2820,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
