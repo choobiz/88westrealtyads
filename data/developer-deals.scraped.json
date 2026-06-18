@@ -1,11 +1,53 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-06-17T16:33:37.131Z",
+  "scrapedAt": "2026-06-18T14:17:04.517Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "Jethro Langley by Whitetail Homes – Pricing & Plans",
+      "city": "Langley",
+      "incentive_summary": "1 Beds Starting $359,900, Jr 2-Bedrooms Starting $379,900, 2 Bed | 1 Bath Starting $439,900, 2 Bed 2 Bath Starting $5...",
+      "project_url": "https://www.mikestewart.ca/presale/jethro-langley-by-whitetail/",
+      "headline_dollar": "$439,900,"
+    },
+    {
+      "project_name": "Executive on the Park by Executive Group – Plans, Availability, Prices",
+      "city": "West Vancouver",
+      "incentive_summary": "Receive up to $88,888 Prosperity Incentive, $88,888 Prosperity Incentive on all 2-bedroom & 3-bedroom residences, $30...",
+      "project_url": "https://www.mikestewart.ca/presale/executive-on-the-park-west-vancouver-presale-condos-townhomes-by-executive-group-development/",
+      "headline_dollar": "$88,888"
+    },
+    {
+      "project_name": "Guildford the Greatest by Dawson + Sawyer – Prices, Plans, Availability",
+      "city": "Surrey",
+      "incentive_summary": "$20,000 Off the Price, Air Conditioning Included, 1 Parking + 1 Storage Locker Included, Only 2% Deposit (No further ...",
+      "project_url": "https://www.mikestewart.ca/presale/guildford-the-greatest-surrey-presale-condos/",
+      "headline_dollar": "$20,000"
+    },
+    {
+      "project_name": "Elle by Polygon Homes – Availability, Plans, Prices",
+      "city": "North Vancouver",
+      "incentive_summary": "Federal GST relief on new homes under $1,500,000 saving thousands, Chance to win great door prizes from local North V...",
+      "project_url": "https://www.mikestewart.ca/presale/elle-by-polygon-homes-north-vancouver-presale-condominiums/",
+      "headline_dollar": "$1,500,000"
+    },
+    {
+      "project_name": "The City of Lougheed First Neighbourhood by Shape Properties – Availability, Plans, Prices",
+      "city": "Burnaby",
+      "incentive_summary": "Special holiday pricing on 10 selected homes., Prices starting from $842 PPSF., Client receives a $5,000 discount on ...",
+      "project_url": "https://www.mikestewart.ca/presale/the-city-of-lougheed-first-neighbourhood-burnaby-presale-condos-by-shape-properties/",
+      "headline_dollar": "$5,000"
+    },
+    {
+      "project_name": "PKWY | Parkway by BlueSky – Prices, Availability, Plans",
+      "city": "Surrey",
+      "incentive_summary": "Get a corner two-bedroom for the price of a one-bedroom — a $160,000 value, Added space at no additional cost on all ...",
+      "project_url": "https://www.mikestewart.ca/presale/brightside-by-bluesky-surrey-city-centre-presale-condos-townhomes/",
+      "headline_dollar": "$160,000"
+    },
     {
       "project_name": "Eden by Zenterra Developments – Floorplans & Prices",
       "city": "Langley",
@@ -35,13 +77,6 @@
       "headline_dollar": "$29,500"
     },
     {
-      "project_name": "Elle by Polygon Homes – Availability, Plans, Prices",
-      "city": "North Vancouver",
-      "incentive_summary": "Federal GST relief on new homes under $1,500,000 saving thousands, Chance to win great door prizes from local North V...",
-      "project_url": "https://www.mikestewart.ca/presale/elle-by-polygon-homes-north-vancouver-presale-condominiums/",
-      "headline_dollar": "$1,500,000"
-    },
-    {
       "project_name": "Frame Vancouver – 2727 Kingsway & 5189 Earles Street – Floor Plans & Prices",
       "city": "Vancouver",
       "incentive_summary": "1-Bed + Den: $3,000 buyer incentive, Jr. 2-Bed + Den: $6,000 buyer incentive, 2-Bed & 2-Bath + Den: $6,000 buyer ince...",
@@ -49,17 +84,31 @@
       "headline_dollar": "$6,000"
     },
     {
-      "project_name": "Wren Vancouver Townhomes by Tavanco – Plans & Pricing",
+      "project_name": "Block by Amacon – Plans, Prices, Availability",
       "city": "Vancouver",
-      "incentive_summary": "Recent repricing, With recent repricing, homes are now starting from $749,000, With recent repricing, homes are now s...",
-      "project_url": "https://www.mikestewart.ca/presale/wren-townhomes-vancouver-presales/",
-      "headline_dollar": "$749,000,"
+      "incentive_summary": "All pricing is net of incentives., Save up to $80,000",
+      "project_url": "https://www.mikestewart.ca/presale/robson-by-amacon-yaletown-presale-luxury-condos/",
+      "headline_dollar": "$80,000"
     },
     {
-      "project_name": "Origin at The Beachlands by Reliance-Seacliff – Plans & Prices",
-      "city": "Colwood",
-      "incentive_summary": "Hosting a special Crazy Cookie House pop-up at the Experience Centre., Enjoy fresh treats from the beloved bakery whi...",
-      "project_url": "https://www.mikestewart.ca/presale/origin-at-the-beachlands-colwood/",
+      "project_name": "V on E49 Condominiums – Availability, Plans, Prices",
+      "city": "Vancouver",
+      "incentive_summary": "All promotions and incentives are available for a limited-time and are subject to change., All incentives will be pai...",
+      "project_url": "https://www.mikestewart.ca/presale/v-on-e49-victoria-fraserview-east-vancouver-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Rindall by Woodbridge Homes – Floorplans & Prices",
+      "city": "Port Coquitlam",
+      "incentive_summary": "*Value of incentives is based on home type and some conditions apply. Speak to sales team to learn more., Value of in...",
+      "project_url": "https://www.mikestewart.ca/presale/rindall-by-woodbridge-presale-townhomes/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Ace on The Drive by Wesgroup – 1680 East 12th Avenue",
+      "city": "Vancouver",
+      "incentive_summary": "Own today with just 5% deposit.*, *Subject to terms and conditions. Contact the sales team for details., First-Time H...",
+      "project_url": "https://www.mikestewart.ca/presale/1650-e-12th-ave-ace-on-the-drive-by-wesgroup-grandview-woodland-homes/",
       "headline_dollar": null
     },
     {
@@ -70,66 +119,17 @@
       "headline_dollar": null
     },
     {
+      "project_name": "Origin at The Beachlands by Reliance-Seacliff – Plans & Prices",
+      "city": "Colwood",
+      "incentive_summary": "Hosting a special Crazy Cookie House pop-up at the Experience Centre., Enjoy fresh treats from the beloved bakery whi...",
+      "project_url": "https://www.mikestewart.ca/presale/origin-at-the-beachlands-colwood/",
+      "headline_dollar": null
+    },
+    {
       "project_name": "Little Mountain Vancouver by Holborn Properties",
       "city": "Vancouver",
       "incentive_summary": "Whistler Vacation Package & Cash Prizes!, Concrete construction at wood-frame pricing, Lucky Draws for amazing prizes...",
       "project_url": "https://www.mikestewart.ca/presale/little-mountain/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "W16 Vancouver by Olson Kundig – 480 West 16th Avenue",
-      "city": "Vancouver",
-      "incentive_summary": "Take advantage of our limited-time savings this lunar new year., Attendees can enter our exclusive draw for a Leah Al...",
-      "project_url": "https://www.mikestewart.ca/presale/w16-by-olson-kundig-vancouver-presale-condos/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Westerly Row Duplexes Tsawwassen — Prices & Floor Plans",
-      "city": "Delta",
-      "incentive_summary": "Zero strata fees, Freehold, Detached single-car garage with L2 EV charger-ready plug, Heat pump with condensing unit ...",
-      "project_url": "https://www.mikestewart.ca/presale/westerly-row-duplexes-tsawwassen-prices-floor-plans/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Landmark on Robson – 1408 Robson Street & 1482 Robson Street",
-      "city": "Vancouver",
-      "incentive_summary": "Save up to 15%, Save Up to 15% This Lunar New Year, Limited 2-Bedroom Homes with Special Pricing, Select 2-bedroom ho...",
-      "project_url": "https://www.mikestewart.ca/presale/landmark-on-robson/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Foster Martin – 1475 Foster Street",
-      "city": "White Rock",
-      "incentive_summary": "Lunar New Year limited-time ownership incentive is currently available on a select collection of remaining homes., In...",
-      "project_url": "https://www.mikestewart.ca/presale/foster-martin-luxury-white-rock-presale-condos/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "308 Alderson Avenue – Soco by Anthem Coquitlam",
-      "city": "Coquitlam",
-      "incentive_summary": "Book a hard hat tour, Win one of two exclusive co-listing opportunities in Coquitlam within the Anthem portfolio by f...",
-      "project_url": "https://www.mikestewart.ca/presale/anthem-soco-lougheed-coquitlam-presale-condos/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Andmar Chilliwack – 46187 Thomas Road",
-      "city": "Chilliwack",
-      "incentive_summary": "Limited-time opportunity to explore the site with private site tours., PPE Provided at check-in., We're now offering ...",
-      "project_url": "https://www.mikestewart.ca/presale/andmar-by-andmark-chilliwack-presales/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Timber House – 310 Salter Street",
-      "city": "New Westminster",
-      "incentive_summary": "New reduced prices on all home types., Preferred mortgage rates with RBC for potential purchasers., Potential purchas...",
-      "project_url": "https://www.mikestewart.ca/presale/310-salter/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Quilchena West Richmond — Prices & Floor Plans",
-      "city": "Richmond",
-      "incentive_summary": "Lowest Prices Ever on 3 Home Types, Phase One 50% Sold, Phase Two Now Selling, Lunar New Year Savings on now",
-      "project_url": "https://www.mikestewart.ca/presale/quilchena-west-richmond-prices-floor-plans/",
       "headline_dollar": null
     }
   ]
