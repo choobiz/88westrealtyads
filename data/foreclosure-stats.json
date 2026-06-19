@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-06-19T14:17:06.509Z",
+  "scrapedAt": "2026-06-19T15:56:49.950Z",
   "sources": [
     {
       "name": "Simon Clayton (Macdonald Realty)",
@@ -10,9 +10,8 @@
     {
       "name": "Macnabs (Royal LePage Elite West)",
       "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/",
-      "ok": false,
-      "mlsCount": 0,
-      "error": "500 Internal Server Error"
+      "ok": true,
+      "mlsCount": 12
     },
     {
       "name": "Realtyvibe (Sutton Premier)",
