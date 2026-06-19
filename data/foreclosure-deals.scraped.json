@@ -1,6 +1,6 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-06-18T14:17:18.500Z",
+  "scrapedAt": "2026-06-19T14:17:16.587Z",
   "parserVersion": "1.1",
   "sourceCount": 3,
   "rawCount": 76,
@@ -555,7 +555,7 @@
       "fsa": "V6E",
       "street_masked": "████ 1365 Davie Street",
       "project_name": "Mirabel English Bay",
-      "price": 1349900,
+      "price": 1329900,
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 956,
