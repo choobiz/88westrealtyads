@@ -1,16 +1,16 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-06-21T14:17:15.377Z",
+  "scrapedAt": "2026-06-22T14:17:15.104Z",
   "parserVersion": "1.1",
   "sourceCount": 3,
-  "rawCount": 73,
-  "uniqueCount": 61,
-  "withProjectName": 30,
+  "rawCount": 72,
+  "uniqueCount": 60,
+  "withProjectName": 29,
   "perSource": [
     {
       "source": "Simon Clayton (Macdonald Realty)",
       "ok": true,
-      "listings": 61,
+      "listings": 60,
       "pages": [
         {
           "page": 1,
@@ -51,8 +51,8 @@
           "page": 6,
           "url": "https://simonclayton.ca/foreclosures/?_pg=6",
           "ok": true,
-          "listings": 2,
-          "newListings": 2
+          "listings": 1,
+          "newListings": 1
         },
         {
           "page": 7,
@@ -484,21 +484,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 561,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
-      "mls_number": "R3102134",
-      "property_type": "Condo",
-      "neighborhood": "Yaletown",
-      "city": "Vancouver",
-      "fsa": "V6Z",
-      "street_masked": "████ 87 Nelson Street",
-      "project_name": "The Arc",
-      "price": 959900,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 872,
       "court_ordered_flag": true,
       "source": "Simon Clayton (Macdonald Realty)"
     },

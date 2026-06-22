@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-06-21T15:07:38.766Z",
+  "scrapedAt": "2026-06-22T14:17:05.569Z",
   "sources": [
     {
       "name": "Simon Clayton (Macdonald Realty)",
@@ -10,14 +10,15 @@
     {
       "name": "Macnabs (Royal LePage Elite West)",
       "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/",
-      "ok": true,
-      "mlsCount": 12
+      "ok": false,
+      "mlsCount": 0,
+      "error": "500 Internal Server Error"
     },
     {
       "name": "Realtyvibe (Sutton Premier)",
       "url": "https://realtyvibe.ca/vancouver-foreclosures-for-sale/",
       "ok": true,
-      "mlsCount": 0
+      "mlsCount": 12
     },
     {
       "name": "Real Estate Coal Harbour — Vancouver",
