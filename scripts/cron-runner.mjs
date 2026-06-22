@@ -30,6 +30,12 @@ const SCRAPERS = [
   { name: "developer-deals",     script: "scripts/scrape-deals.mjs" },
   { name: "foreclosure-stats",   script: "scripts/scrape-foreclosure-stats.mjs" },
   { name: "foreclosure-deals",   script: "scripts/scrape-foreclosure-deals.mjs" },
+  // Curate must run AFTER the foreclosure-deals scraper — it joins the fresh
+  // scraped dump + photos into data/foreclosure-deals.json (the LP's source of
+  // truth). Without this the LP listings never refresh, only the raw dump does.
+  // Uses existing photos; brand-new buildings without a photo land in
+  // foreclosure-deals.pending.json until source-listing-photos.mjs is run.
+  { name: "foreclosure-curate",  script: "scripts/curate-deals.mjs" },
 ];
 
 function ts() {
