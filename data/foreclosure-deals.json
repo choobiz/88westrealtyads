@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-06-11",
+  "lastUpdated": "2026-06-22",
   "source": "curate-deals.mjs (scraped + auto-photos + manual overrides)",
   "compliance": {
     "status": "operator-override",
-    "date": "2026-06-11",
+    "date": "2026-06-22",
     "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period before GVR WebAPI authorization. Listing data sourced from multiple public foreclosure aggregator pages (Simon Clayton, Macnabs, Realtyvibe). Photos resolved in this priority: (1) operator-curated manual overrides — Paragon-authorized per-listing photos OR operator-supplied marketing-material URLs, (2) automated project-name search via Tavily on publicly indexed developer marketing pages, falling back to (3) listings without resolvable photos are pending operator URL supply and DO NOT appear on the LP until a photo is available (see foreclosure-deals.pending.json). Across all displayed listings: street numbers withheld (shared on intro call); MLS numbers omitted from public cards (retained in research dump); no listing remarks; no agent names. Flagged for managing-broker awareness (Shirin Saleh, licence #X031527). Replace pipeline with the GVR-feed-backed source once the WebAPI is authorized.",
     "replaceWith": "GVR WebAPI feed — see docs/gvr-database-schema.md",
     "stats": {
-      "scrapedTotal": 118,
-      "scrapedInArea": 94,
-      "liveOnLp": 38,
+      "scrapedTotal": 110,
+      "scrapedInArea": 86,
+      "liveOnLp": 34,
       "featuredOnLp": 12,
-      "lockedOnLp": 26,
-      "pendingPhoto": 56,
+      "lockedOnLp": 22,
+      "pendingPhoto": 52,
       "manualOverrides": 6,
       "autoSourcedPhotos": 35
     }
@@ -86,6 +86,17 @@
     },
     {
       "type": "Condo",
+      "area": "East Newton, Surrey",
+      "street": "6841 138 Street",
+      "price": "$499K",
+      "sqft": "1,366 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/hyland-creek.jpg",
+      "imageAlt": "Hyland Creek — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Condo",
       "area": "Hastings, Vancouver",
       "street": "1823 E Georgia Street",
       "price": "$500K",
@@ -97,20 +108,9 @@
     },
     {
       "type": "Condo",
-      "area": "East Newton, Surrey",
-      "street": "6841 138 Street",
-      "price": "$515K",
-      "sqft": "1,366 sq ft",
-      "courtOrdered": true,
-      "image": "/images/foreclosure/listings/auto/hyland-creek.jpg",
-      "imageAlt": "Hyland Creek — exterior view (representational, sourced from publicly indexed marketing material).",
-      "featured": false
-    },
-    {
-      "type": "Condo",
       "area": "Downtown, Vancouver",
       "street": "53 W Hastings Street",
-      "price": "$597K",
+      "price": "$581K",
       "sqft": "1,050 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/paris-block.jpg",
@@ -160,17 +160,6 @@
       "image": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
       "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material).",
       "featured": true
-    },
-    {
-      "type": "Townhouse",
-      "area": "Fleetwood Tynehead, Surrey",
-      "street": "8676 158 Street",
-      "price": "$765K",
-      "sqft": "1,521 sq ft",
-      "courtOrdered": true,
-      "image": "/images/foreclosure/listings/auto/springfield.jpg",
-      "imageAlt": "Springfield — exterior view (representational, sourced from publicly indexed marketing material).",
-      "featured": false
     },
     {
       "type": "Condo",
@@ -229,17 +218,6 @@
     },
     {
       "type": "Condo",
-      "area": "Yaletown, Vancouver",
-      "street": "87 Nelson Street",
-      "price": "$960K",
-      "sqft": "872 sq ft",
-      "courtOrdered": true,
-      "image": "/images/foreclosure/listings/auto/the-arc.jpg",
-      "imageAlt": "The Arc — exterior view (representational, sourced from publicly indexed marketing material).",
-      "featured": false
-    },
-    {
-      "type": "Condo",
       "area": "West End, Vancouver",
       "street": "1568 Alberni Street",
       "price": "$965K",
@@ -253,7 +231,7 @@
       "type": "Townhouse",
       "area": "Yaletown, Vancouver",
       "street": "Beatty Street",
-      "price": "$1.04M",
+      "price": "$1.01M",
       "sqft": "1,110 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/the-max.jpg",
@@ -341,7 +319,7 @@
       "type": "Condo",
       "area": "West End, Vancouver",
       "street": "1365 Davie Street",
-      "price": "$1.35M",
+      "price": "$1.33M",
       "sqft": "956 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/mirabel-english-bay.jpg",
@@ -352,7 +330,7 @@
       "type": "Condo",
       "area": "Downtown, Vancouver",
       "street": "938 Nelson Street",
-      "price": "$1.57M",
+      "price": "$1.54M",
       "sqft": "1,557 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/wall-one.jpg",
@@ -412,28 +390,6 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/dunbar.jpg",
       "imageAlt": "Dunbar — exterior view (representational, sourced from publicly indexed marketing material).",
-      "featured": false
-    },
-    {
-      "type": "House",
-      "area": "Shaughnessy, Vancouver",
-      "street": "3838 Cypress Street",
-      "price": "$3.75M",
-      "sqft": "4,959 sq ft",
-      "courtOrdered": true,
-      "image": "/images/foreclosure/listings/auto/greencroft-estate.jpg",
-      "imageAlt": "Greencroft Estate — exterior view (representational, sourced from publicly indexed marketing material).",
-      "featured": false
-    },
-    {
-      "type": "House",
-      "area": "Shaughnessy, Vancouver",
-      "street": "3838 Cypress Street",
-      "price": "$4.75M",
-      "sqft": "6,565 sq ft",
-      "courtOrdered": true,
-      "image": "/images/foreclosure/listings/auto/greencroft-estate.jpg",
-      "imageAlt": "Greencroft Estate — exterior view (representational, sourced from publicly indexed marketing material).",
       "featured": false
     }
   ]

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-11T20:57:06.612Z",
+  "generatedAt": "2026-06-22T08:08:04.183Z",
   "note": "Listings scraped + in-area but waiting on a photo URL. Operator action: supply a photo URL for any of these by adding an entry to data/foreclosure-deals.manual.json keyed by `mls_number`. Re-run `node scripts/curate-deals.mjs` to move them to live.",
-  "count": 56,
+  "count": 52,
   "listings": [
     {
       "type": "Condo",
@@ -48,6 +48,20 @@
     {
       "type": "Condo",
       "area": "South Marine, Vancouver",
+      "street": "3281 E Kent Avenue North",
+      "price": "$699K",
+      "sqft": "915 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "_mls": "R3114944",
+      "_projectName": null,
+      "_imageSource": null,
+      "_priceNum": 698880
+    },
+    {
+      "type": "Condo",
+      "area": "South Marine, Vancouver",
       "street": "3138 Riverwalk Avenue",
       "price": "$705K",
       "sqft": "933 sq ft",
@@ -58,20 +72,6 @@
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 705000
-    },
-    {
-      "type": "Condo",
-      "area": "South Marine, Vancouver",
-      "street": "3281 E Kent Avenue North",
-      "price": "$725K",
-      "sqft": "915 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3114944",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 724900
     },
     {
       "type": "Land",
@@ -186,48 +186,6 @@
       "_priceNum": 960000
     },
     {
-      "type": "Condo",
-      "area": "Coal Harbour, Vancouver",
-      "street": "588 Broughton Street",
-      "price": "$975K",
-      "sqft": "958 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3080192",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 975000
-    },
-    {
-      "type": "Townhouse",
-      "area": "Big Bend, Burnaby",
-      "street": "8485 New Haven Close",
-      "price": "$980K",
-      "sqft": "1,312 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3087013",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 980000
-    },
-    {
-      "type": "House",
-      "area": "Panorama Ridge, Surrey",
-      "street": "64 Avenue",
-      "price": "$995K",
-      "sqft": "3,119 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3085069",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 995000
-    },
-    {
       "type": "House",
       "area": "West Newton, Surrey",
       "street": "79a Avenue",
@@ -271,6 +229,20 @@
     },
     {
       "type": "House",
+      "area": "Queen Mary Park Surrey, Surrey",
+      "street": "84a Avenue",
+      "price": "$1.25M",
+      "sqft": "2,820 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "_mls": "R3103236",
+      "_projectName": null,
+      "_imageSource": null,
+      "_priceNum": 1250000
+    },
+    {
+      "type": "House",
       "area": "Renfrew, Vancouver",
       "street": "Venables Street",
       "price": "$1.30M",
@@ -285,14 +257,42 @@
     },
     {
       "type": "House",
-      "area": "Queen Mary Park Surrey, Surrey",
-      "street": "84a Avenue",
-      "price": "$1.35M",
-      "sqft": "2,820 sq ft",
+      "area": "Cloverdale BC, Surrey",
+      "street": "62 Avenue",
+      "price": "$1.30M",
+      "sqft": "2,779 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
-      "_mls": "R3103236",
+      "_mls": "R3135045",
+      "_projectName": null,
+      "_imageSource": null,
+      "_priceNum": 1299000
+    },
+    {
+      "type": "House",
+      "area": "Queen Mary Park Surrey, Surrey",
+      "street": "84a Avenue",
+      "price": "$1.35M",
+      "sqft": "4,194 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "_mls": "R3104058",
+      "_projectName": null,
+      "_imageSource": null,
+      "_priceNum": 1350000
+    },
+    {
+      "type": "House",
+      "area": "Bear Creek Green Timbers, Surrey",
+      "street": "91 Avenue",
+      "price": "$1.35M",
+      "sqft": "2,749 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "_mls": "R3137627",
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 1350000
@@ -327,48 +327,6 @@
     },
     {
       "type": "House",
-      "area": "Queen Mary Park Surrey, Surrey",
-      "street": "84a Avenue",
-      "price": "$1.50M",
-      "sqft": "4,194 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3104058",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 1499000
-    },
-    {
-      "type": "House",
-      "area": "South Slope, Burnaby",
-      "street": "Neville Street",
-      "price": "$1.50M",
-      "sqft": "2,682 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3101396",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 1500000
-    },
-    {
-      "type": "House",
-      "area": "West Newton, Surrey",
-      "street": "75a Avenue",
-      "price": "$1.50M",
-      "sqft": "3,726 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3134123",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 1500000
-    },
-    {
-      "type": "House",
       "area": "Whalley, Surrey",
       "street": "132a Street",
       "price": "$1.50M",
@@ -391,6 +349,20 @@
       "image": "",
       "imageAlt": "",
       "_mls": "R3121393",
+      "_projectName": null,
+      "_imageSource": null,
+      "_priceNum": 1500000
+    },
+    {
+      "type": "House",
+      "area": "West Newton, Surrey",
+      "street": "75a Avenue",
+      "price": "$1.50M",
+      "sqft": "3,726 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "_mls": "R3134123",
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 1500000
@@ -551,17 +523,17 @@
     },
     {
       "type": "House",
-      "area": "Big Bend, Burnaby",
-      "street": "Willard Street",
-      "price": "$2.25M",
-      "sqft": "2,561 sq ft",
+      "area": "Hazelmere, Surrey",
+      "street": "184 Street",
+      "price": "$2.30M",
+      "sqft": "2,819 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
-      "_mls": "R3115896",
+      "_mls": "R3099258",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 2250000
+      "_priceNum": 2300000
     },
     {
       "type": "House",
@@ -573,20 +545,6 @@
       "image": "",
       "imageAlt": "",
       "_mls": "R3127268",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 2300000
-    },
-    {
-      "type": "House",
-      "area": "Hazelmere, Surrey",
-      "street": "184 Street",
-      "price": "$2.30M",
-      "sqft": "2,819 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3099258",
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 2300000
@@ -679,7 +637,7 @@
       "type": "House",
       "area": "MacKenzie Heights, Vancouver",
       "street": "W 33 Avenue",
-      "price": "$2.84M",
+      "price": "$2.78M",
       "sqft": "3,780 sq ft",
       "courtOrdered": true,
       "image": "",
@@ -687,7 +645,7 @@
       "_mls": "R3110963",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 2837000
+      "_priceNum": 2782000
     },
     {
       "type": "House",
@@ -716,20 +674,6 @@
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 2999999
-    },
-    {
-      "type": "House",
-      "area": "Gilmore, Richmond",
-      "street": "Gilbert Road",
-      "price": "$5.99M",
-      "sqft": "16,289 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3074742",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 5990000
     },
     {
       "type": "House",
