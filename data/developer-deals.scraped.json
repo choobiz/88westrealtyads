@@ -1,11 +1,32 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-06-22T17:26:34.141Z",
+  "scrapedAt": "2026-06-23T14:17:05.265Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
-  "count": 18,
+  "count": 17,
   "projects": [
+    {
+      "project_name": "Jethro Langley by Whitetail Homes – Pricing & Plans",
+      "city": "Langley",
+      "incentive_summary": "1 Beds Starting $359,900, Jr 2-Bedrooms Starting $379,900, 2 Bed | 1 Bath Starting $439,900, 2 Bed 2 Bath Starting $5...",
+      "project_url": "https://www.mikestewart.ca/presale/jethro-langley-by-whitetail/",
+      "headline_dollar": "$439,900,"
+    },
+    {
+      "project_name": "Inlet District Port Moody – Price & Floor Plans",
+      "city": "Port Moody",
+      "incentive_summary": "LIMITED-TIME INCENTIVE, Buyer Incentives: $5K on Studios, Buyer Incentives: $8K on Jr. 2-Bedrooms, Buyer Incentives: ...",
+      "project_url": "https://www.mikestewart.ca/presale/coronation-park-port-moody-presale-condos-by-wesgroup-properties/",
+      "headline_dollar": "$8K"
+    },
+    {
+      "project_name": "Elle by Polygon Homes – Availability, Plans, Prices",
+      "city": "North Vancouver",
+      "incentive_summary": "Federal GST relief on new homes under $1,500,000 saving thousands, Chance to win great door prizes from local North V...",
+      "project_url": "https://www.mikestewart.ca/presale/elle-by-polygon-homes-north-vancouver-presale-condominiums/",
+      "headline_dollar": "$1,500,000"
+    },
     {
       "project_name": "Grafia Vancouver 2450 Garden Drive",
       "city": "Vancouver",
@@ -19,13 +40,6 @@
       "incentive_summary": "$4,000 bonus on your first deal, $8,000 bonus on every deal after, For a limited time purchasers will receive an opti...",
       "project_url": "https://www.mikestewart.ca/presale/eden-by-zenterra-langley/",
       "headline_dollar": "$8,000"
-    },
-    {
-      "project_name": "Jethro Langley by Whitetail Homes – Pricing & Plans",
-      "city": "Langley",
-      "incentive_summary": "1 Beds Starting $359,900, Jr 2-Bedrooms Starting $379,900, 2 Bed | 1 Bath Starting $439,900, 2 Bed 2 Bath Starting $5...",
-      "project_url": "https://www.mikestewart.ca/presale/jethro-langley-by-whitetail/",
-      "headline_dollar": "$439,900,"
     },
     {
       "project_name": "Trailside at the Lake by Seacliff Properties – Prices, Plans, Availability",
@@ -49,18 +63,18 @@
       "headline_dollar": "$749,000,"
     },
     {
-      "project_name": "Quintet Vancouver – Prices & Floor Plans",
-      "city": "Vancouver",
-      "incentive_summary": "$40,000 Decorating Allowance, Reduced Deposit: 8% of Purchase Price (normally 20%), Luxury Upgrades Included: Stair-s...",
-      "project_url": "https://www.mikestewart.ca/presale/quintet-vancouver-prices-floor-plans/",
-      "headline_dollar": "$40,000"
+      "project_name": "Belvedere Surrey –  9675 King George Boulevard",
+      "city": "Surrey",
+      "incentive_summary": "Belvedere Surrey – 9675 King George Boulevard Court-Ordered Pricing, Pre-growth pricing in Surrey Centre, Move-in-ready concrete homes complete with A/C, parking, ...",
+      "project_url": "https://www.mikestewart.ca/presale/belvedere-by-square-nine-developments-surrey-city-centre-presale-condos/",
+      "headline_dollar": null
     },
     {
-      "project_name": "Centràle Burnaby — Prices & Floor Plans",
-      "city": "Burnaby",
-      "incentive_summary": "$10,000 off all 1 Bedroom Homes, $15,000 off all 2 Bedroom Homes, Grand Opening Incentives still on",
-      "project_url": "https://www.mikestewart.ca/presale/centrale/",
-      "headline_dollar": "$15,000"
+      "project_name": "Little Mountain Vancouver by Holborn Properties",
+      "city": "Vancouver",
+      "incentive_summary": "Whistler Vacation Package & Cash Prizes!, Concrete construction at wood-frame pricing, Lucky Draws for amazing prizes...",
+      "project_url": "https://www.mikestewart.ca/presale/little-mountain/",
+      "headline_dollar": null
     },
     {
       "project_name": "Italia by Solterra – 2323 Fir Street",
@@ -102,27 +116,6 @@
       "city": "Langford",
       "incentive_summary": "Two parking stalls included on select two-bedroom homes. One stall is standard, the second is a limited-time upgrade ...",
       "project_url": "https://www.mikestewart.ca/presale/city-gate-langford-presales/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Elmwood by Marcon Coquitlam – Availability, Plans, Prices",
-      "city": "Coquitlam",
-      "incentive_summary": "First access to homes for priority list members, Limited collection of one, two, and three bedroom homes (Upper Resid...",
-      "project_url": "https://www.mikestewart.ca/presale/elmwood-burquitlam-west-coquitlam-presale-condos-by-marcon-developments/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "The POCO by Rapture Developments – Plans & Pricing",
-      "city": "Port Coquitlam",
-      "incentive_summary": "Early pre-launch pricing is available for a limited time., Access to priority pricing and an exclusive first look for...",
-      "project_url": "https://www.mikestewart.ca/presale/the-poco-presale-condos/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "King + Crescent by Zenterra Developments",
-      "city": "Surrey",
-      "incentive_summary": "Unit 505: 2 bedrooms, 2 bathrooms, 1,033 square feet corner home, Oversized patio complete with a gas connection for ...",
-      "project_url": "https://www.mikestewart.ca/presale/king-and-crescent-south-surrey-presale-condos-by-zenterra-developments/",
       "headline_dollar": null
     },
     {
