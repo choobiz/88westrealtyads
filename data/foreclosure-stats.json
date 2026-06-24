@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-06-23T15:44:01.183Z",
+  "scrapedAt": "2026-06-24T14:17:06.295Z",
   "sources": [
     {
       "name": "Simon Clayton (Macdonald Realty)",
@@ -10,8 +10,9 @@
     {
       "name": "Macnabs (Royal LePage Elite West)",
       "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/",
-      "ok": true,
-      "mlsCount": 12
+      "ok": false,
+      "mlsCount": 0,
+      "error": "500 Internal Server Error"
     },
     {
       "name": "Realtyvibe (Sutton Premier)",
@@ -22,23 +23,20 @@
     {
       "name": "Real Estate Coal Harbour — Vancouver",
       "url": "https://realestatecoalharbour.com/vancouver-foreclosure-listings",
-      "ok": false,
-      "mlsCount": 0,
-      "error": "403 Forbidden"
+      "ok": true,
+      "mlsCount": 0
     },
     {
       "name": "Real Estate Coal Harbour — North Van",
       "url": "https://realestatecoalharbour.com/north-vancouver-foreclosure-listings",
-      "ok": false,
-      "mlsCount": 0,
-      "error": "403 Forbidden"
+      "ok": true,
+      "mlsCount": 0
     },
     {
       "name": "Real Estate Coal Harbour — Burnaby",
       "url": "https://realestatecoalharbour.com/burnaby-foreclosure-listings",
-      "ok": false,
-      "mlsCount": 0,
-      "error": "403 Forbidden"
+      "ok": true,
+      "mlsCount": 0
     }
   ],
   "bestEstimate": 12,
