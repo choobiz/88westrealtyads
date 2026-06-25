@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-06-24",
+  "lastUpdated": "2026-06-25",
   "source": "curate-deals.mjs (scraped + auto-photos + manual overrides)",
   "compliance": {
     "status": "operator-override",
-    "date": "2026-06-24",
+    "date": "2026-06-25",
     "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period before GVR WebAPI authorization. Listing data sourced from multiple public foreclosure aggregator pages (Simon Clayton, Macnabs, Realtyvibe). Photos resolved in this priority: (1) operator-curated manual overrides — Paragon-authorized per-listing photos OR operator-supplied marketing-material URLs, (2) automated project-name search via Tavily on publicly indexed developer marketing pages, falling back to (3) listings without resolvable photos are pending operator URL supply and DO NOT appear on the LP until a photo is available (see foreclosure-deals.pending.json). Across all displayed listings: street numbers withheld (shared on intro call); MLS numbers omitted from public cards (retained in research dump); no listing remarks; no agent names. Flagged for managing-broker awareness (Shirin Saleh, licence #X031527). Replace pipeline with the GVR-feed-backed source once the WebAPI is authorized.",
     "replaceWith": "GVR WebAPI feed — see docs/gvr-database-schema.md",
     "stats": {
-      "scrapedTotal": 58,
-      "scrapedInArea": 53,
-      "liveOnLp": 26,
+      "scrapedTotal": 110,
+      "scrapedInArea": 86,
+      "liveOnLp": 33,
       "featuredOnLp": 12,
-      "lockedOnLp": 14,
-      "pendingPhoto": 27,
+      "lockedOnLp": 21,
+      "pendingPhoto": 53,
       "manualOverrides": 6,
       "autoSourcedPhotos": 35
     }
@@ -38,6 +38,17 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/timberlea.jpg",
       "imageAlt": "Timberlea — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
+    },
+    {
+      "type": "Condo",
+      "area": "West Newton, Surrey",
+      "street": "12739 72 Avenue",
+      "price": "$399K",
+      "sqft": "722 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/the-savoy.jpg",
+      "imageAlt": "The Savoy — exterior view (representational, sourced from publicly indexed marketing material).",
       "featured": true
     },
     {
@@ -75,6 +86,17 @@
     },
     {
       "type": "Condo",
+      "area": "East Newton, Surrey",
+      "street": "6841 138 Street",
+      "price": "$499K",
+      "sqft": "1,366 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/hyland-creek.jpg",
+      "imageAlt": "Hyland Creek — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Condo",
       "area": "Hastings, Vancouver",
       "street": "1823 E Georgia Street",
       "price": "$500K",
@@ -108,6 +130,28 @@
     },
     {
       "type": "Condo",
+      "area": "Downtown, Vancouver",
+      "street": "1238 Burrard Street",
+      "price": "$730K",
+      "sqft": "859 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/altadena.jpg",
+      "imageAlt": "Altadena — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Townhouse",
+      "area": "West Newton, Surrey",
+      "street": "12711 64 Avenue",
+      "price": "$749K",
+      "sqft": "1,950 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/palette-on-the-park.jpg",
+      "imageAlt": "Palette On The Park — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Condo",
       "area": "Kerrisdale, Vancouver",
       "street": "2096 W 47th Avenue",
       "price": "$750K",
@@ -127,6 +171,17 @@
       "image": "/images/foreclosure/listings/auto/rhythm.jpg",
       "imageAlt": "Rhythm — exterior view (representational, sourced from publicly indexed marketing material).",
       "featured": true
+    },
+    {
+      "type": "Townhouse",
+      "area": "Sullivan Station, Surrey",
+      "street": "6188 141 Street",
+      "price": "$835K",
+      "sqft": "1,567 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/vantage.jpg",
+      "imageAlt": "Vantage — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Townhouse",
@@ -159,7 +214,7 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/alberni-by-kengo-kuma.jpg",
       "imageAlt": "Alberni By Kengo Kuma — exterior view (representational, sourced from publicly indexed marketing material).",
-      "featured": true
+      "featured": false
     },
     {
       "type": "Townhouse",
@@ -291,6 +346,28 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
       "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Grandview Surrey, Surrey",
+      "street": "Hillview Place",
+      "price": "$2.48M",
+      "sqft": "3,010 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/country-woods-hillview.jpg",
+      "imageAlt": "Country Woods/Hillview — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Morgan Creek, Surrey",
+      "street": "159a Street",
+      "price": "$2.54M",
+      "sqft": "4,362 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/morgan-creek-surrey.jpg",
+      "imageAlt": "House of a current court-ordered listing in Morgan Creek, Surrey.",
       "featured": false
     },
     {

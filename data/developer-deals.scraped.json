@@ -1,11 +1,60 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-06-24T15:29:42.994Z",
+  "scrapedAt": "2026-06-25T14:17:08.913Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 17,
   "projects": [
+    {
+      "project_name": "Griffon Townhomes by Sunmark – 207 Street and 77A Avenue",
+      "city": "Langley",
+      "incentive_summary": "Only $30,000 deposit, $25,000 purchase incentive, Premium upgrades included: Air conditioning, Laminate flooring thro...",
+      "project_url": "https://www.mikestewart.ca/presale/griffon-townhomes-langley/",
+      "headline_dollar": "$30,000"
+    },
+    {
+      "project_name": "Cameron Maple Ridge by Paddington Properties – Prices & Floorplans",
+      "city": "Maple Ridge",
+      "incentive_summary": "Save $100,000 on select move-in ready homes, Spacious 6 & 7-bedroom family homes (up to 4,800 sq. ft.), Legal 2-bedro...",
+      "project_url": "https://www.mikestewart.ca/presale/cameron-by-paddington-maple-ridge-presales/",
+      "headline_dollar": "$100,000"
+    },
+    {
+      "project_name": "Guildford the Greatest by Dawson + Sawyer – Prices, Plans, Availability",
+      "city": "Surrey",
+      "incentive_summary": "$20,000 Off the Price, Air Conditioning Included, 1 Parking + 1 Storage Locker Included, Only 2% Deposit (No further ...",
+      "project_url": "https://www.mikestewart.ca/presale/guildford-the-greatest-surrey-presale-condos/",
+      "headline_dollar": "$20,000"
+    },
+    {
+      "project_name": "Inlet District Port Moody – Price & Floor Plans",
+      "city": "Port Moody",
+      "incentive_summary": "LIMITED-TIME INCENTIVE, Buyer Incentives: $5K on Studios, Buyer Incentives: $8K on Jr. 2-Bedrooms, Buyer Incentives: ...",
+      "project_url": "https://www.mikestewart.ca/presale/coronation-park-port-moody-presale-condos-by-wesgroup-properties/",
+      "headline_dollar": "$8K"
+    },
+    {
+      "project_name": "Satori Coquitlam by Everglade – Floorplans & Prices",
+      "city": "Coquitlam",
+      "incentive_summary": "A new incentive will be unlocked each week leading up to the Groundbreaking Ceremony, $20,000 off the E1 Townhome (4-...",
+      "project_url": "https://www.mikestewart.ca/presale/satori-townhomes-coquitlam/",
+      "headline_dollar": "$20,000"
+    },
+    {
+      "project_name": "6951 204 Street – Cascadia Langley Townhomes by StreetSide – Plans, Availability, Prices",
+      "city": "Langley",
+      "incentive_summary": "Eligible first-time home buyers can save up to $50,000 with no GST*, Save up to $50,000 with no GST for eligible firs...",
+      "project_url": "https://www.mikestewart.ca/presale/cascadia-willoughby-langley-presale-townhomes-by-streetside-developments/",
+      "headline_dollar": "$50,000"
+    },
+    {
+      "project_name": "Band Coquitlam by Townline – Availability, Plans, Prices",
+      "city": "Coquitlam",
+      "incentive_summary": "Save over $100k on all homes!, With savings of more than $100,000, now is a great time to shop the selection of homes...",
+      "project_url": "https://www.mikestewart.ca/presale/band-burquitlam-west-coquitlam-presale-condos-and-townhomes-by-townline/",
+      "headline_dollar": "$100k"
+    },
     {
       "project_name": "Harlin River District by Wesgroup – Prices, Plans, Availability",
       "city": "Vancouver",
@@ -21,52 +70,38 @@
       "headline_dollar": "$439,900,"
     },
     {
-      "project_name": "Inlet District Port Moody – Price & Floor Plans",
-      "city": "Port Moody",
-      "incentive_summary": "LIMITED-TIME INCENTIVE, Buyer Incentives: $5K on Studios, Buyer Incentives: $8K on Jr. 2-Bedrooms, Buyer Incentives: ...",
-      "project_url": "https://www.mikestewart.ca/presale/coronation-park-port-moody-presale-condos-by-wesgroup-properties/",
-      "headline_dollar": "$8K"
-    },
-    {
-      "project_name": "Elle by Polygon Homes – Availability, Plans, Prices",
-      "city": "North Vancouver",
-      "incentive_summary": "Federal GST relief on new homes under $1,500,000 saving thousands, Chance to win great door prizes from local North V...",
-      "project_url": "https://www.mikestewart.ca/presale/elle-by-polygon-homes-north-vancouver-presale-condominiums/",
-      "headline_dollar": "$1,500,000"
-    },
-    {
-      "project_name": "Grafia Vancouver 2450 Garden Drive",
-      "city": "Vancouver",
-      "incentive_summary": "Sneak Peek Inside...Homes Starting at $499K, Tour our new, fully furnished Show Home this weekend to get a look at ou...",
-      "project_url": "https://www.mikestewart.ca/presale/grafia-on-garden-drive-grandview-woodland-east-vancouver-presale-condos-by-porte-homes/",
-      "headline_dollar": "$499K"
-    },
-    {
-      "project_name": "Eden by Zenterra Developments – Floorplans & Prices",
-      "city": "Langley",
-      "incentive_summary": "$4,000 bonus on your first deal, $8,000 bonus on every deal after, For a limited time purchasers will receive an opti...",
-      "project_url": "https://www.mikestewart.ca/presale/eden-by-zenterra-langley/",
-      "headline_dollar": "$8,000"
-    },
-    {
-      "project_name": "Trailside at the Lake by Seacliff Properties – Prices, Plans, Availability",
-      "city": "Langford",
-      "incentive_summary": "For a limited time, GST is included in the purchase price, offering savings of up to $29,500*! *Terms and conditions ...",
-      "project_url": "https://www.mikestewart.ca/presale/trailside-at-the-lake-langford-presale-condos-by-seacliff-properties/",
-      "headline_dollar": "$29,500"
-    },
-    {
-      "project_name": "7381 Preston Boulevard – Skyview Mission",
-      "city": "Mission",
-      "incentive_summary": "YEAR-END SAVINGS on select move-in ready homes, NO GST for First Time Home Buyers, NO Property Transfer Tax, ONLY $5,...",
-      "project_url": "https://www.mikestewart.ca/presale/skyview-mission-presale-townhomes/",
-      "headline_dollar": "$5,"
+      "project_name": "Nature’s Walk by Onni – 19451 Sutton Avenue, Pitt Meadows",
+      "city": "Pitt Meadows",
+      "incentive_summary": "Nature’s Walk by Onni – 19451 Sutton Avenue, Pitt Meadows GST included on two spacious 4 bedroom townhomes (TH 169 and TH 15) for a limited time., GST included on two specific...",
+      "project_url": "https://www.mikestewart.ca/presale/natures-walk-by-onni-group-pitt-meadows-presale-townhomes/",
+      "headline_dollar": null
     },
     {
       "project_name": "Belvedere Surrey –  9675 King George Boulevard",
       "city": "Surrey",
       "incentive_summary": "Belvedere Surrey – 9675 King George Boulevard Court-Ordered Pricing, Pre-growth pricing in Surrey Centre, Move-in-ready concrete homes complete with A/C, parking, ...",
       "project_url": "https://www.mikestewart.ca/presale/belvedere-by-square-nine-developments-surrey-city-centre-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "The POCO by Rapture Developments – Plans & Pricing",
+      "city": "Port Coquitlam",
+      "incentive_summary": "Early pre-launch pricing is available for a limited time., Access to priority pricing and an exclusive first look for...",
+      "project_url": "https://www.mikestewart.ca/presale/the-poco-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "7433 Cambie & 7418 Paulson Condos for Sale – Cambie Gardens Vancouver by Onni Group Phase 1",
+      "city": "Vancouver",
+      "incentive_summary": "Pricing includes incentives, Pricing includes incentives and are subject to change without prior notice., Lunar New Y...",
+      "project_url": "https://www.mikestewart.ca/presale/cambie-gardens-presale-luxury-vancouver-onni-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Siena Burnaby by Landa Global – Plans, Prices, Availability",
+      "city": "Burnaby",
+      "incentive_summary": "Exclusive pre-public offering to secure a home at Siena before the public launch., Early window provides priority sel...",
+      "project_url": "https://www.mikestewart.ca/presale/siena-at-the-heights-by-i4-properties-presale-north-burnaby-condos/",
       "headline_dollar": null
     },
     {
@@ -88,41 +123,6 @@
       "city": "Delta",
       "incentive_summary": "Zero strata fees, Freehold, Detached single-car garage with L2 EV charger-ready plug, Heat pump with condensing unit ...",
       "project_url": "https://www.mikestewart.ca/presale/westerly-row-duplexes-tsawwassen-prices-floor-plans/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Little Mountain Vancouver by Holborn Properties",
-      "city": "Vancouver",
-      "incentive_summary": "Whistler Vacation Package & Cash Prizes!, Concrete construction at wood-frame pricing, Lucky Draws for amazing prizes...",
-      "project_url": "https://www.mikestewart.ca/presale/little-mountain/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Italia by Solterra – 2323 Fir Street",
-      "city": "Vancouver",
-      "incentive_summary": "For Monaco project: A few final units remain including the rare opportunity to own a penthouse unit!, For a limited t...",
-      "project_url": "https://www.mikestewart.ca/presale/solterra-italia/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Andmar Chilliwack – 46187 Thomas Road",
-      "city": "Chilliwack",
-      "incentive_summary": "Limited-time opportunity to explore the site with private site tours., PPE Provided at check-in., We're now offering ...",
-      "project_url": "https://www.mikestewart.ca/presale/andmar-by-andmark-chilliwack-presales/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Gardena by Intracorp – Floor Plans & Prices",
-      "city": "Coquitlam",
-      "incentive_summary": "Spring Spin to Win campaign: Book and complete a tour and your client receives a curated prize, Purchase a residence ...",
-      "project_url": "https://www.mikestewart.ca/presale/gardena-by-intracorp-west-coquitlam/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Blacktail Maple Ridge — Prices & Floor Plans",
-      "city": "Maple Ridge",
-      "incentive_summary": "ONLY 5% down for the first 5 homes sold!",
-      "project_url": "https://www.mikestewart.ca/presale/blacktail-maple-ridge-prices-floor-plans/",
       "headline_dollar": null
     }
   ]
