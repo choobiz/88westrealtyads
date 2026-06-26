@@ -1,10 +1,10 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-06-25T14:17:29.979Z",
+  "scrapedAt": "2026-06-26T14:17:30.113Z",
   "parserVersion": "1.1",
   "sourceCount": 3,
-  "rawCount": 129,
-  "uniqueCount": 110,
+  "rawCount": 131,
+  "uniqueCount": 112,
   "withProjectName": 35,
   "perSource": [
     {
@@ -60,7 +60,7 @@
     {
       "source": "Macnabs (Royal LePage Elite West)",
       "ok": true,
-      "listings": 58,
+      "listings": 60,
       "pages": [
         {
           "page": 1,
@@ -94,15 +94,22 @@
           "page": 5,
           "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=5",
           "ok": true,
-          "listings": 11,
-          "newListings": 11
+          "listings": 12,
+          "newListings": 12
         },
         {
           "page": 6,
           "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=6",
           "ok": true,
+          "listings": 1,
+          "newListings": 1
+        },
+        {
+          "page": 7,
+          "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=7",
+          "ok": false,
           "listings": 0,
-          "newListings": 0
+          "error": "404 Not Found"
         }
       ],
       "error": null
@@ -988,7 +995,7 @@
       "fsa": "V6G",
       "street_masked": "████ 1568 Alberni Street",
       "project_name": "Alberni By Kengo Kuma",
-      "price": 965000,
+      "price": 945000,
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 702,
@@ -1161,21 +1168,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3127268",
-      "property_type": "House",
-      "neighborhood": "Whalley",
-      "city": "Surrey",
-      "fsa": "V3T",
-      "street_masked": "████ 138 Street",
-      "project_name": null,
-      "price": 2300000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 1056,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3099258",
       "property_type": "House",
       "neighborhood": "Hazelmere",
@@ -1187,6 +1179,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 2819,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3127268",
+      "property_type": "House",
+      "neighborhood": "Whalley",
+      "city": "Surrey",
+      "fsa": "V3T",
+      "street_masked": "████ 138 Street",
+      "project_name": null,
+      "price": 2300000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 1056,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1277,6 +1284,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 3546,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3140025",
+      "property_type": "House",
+      "neighborhood": "South Arm",
+      "city": "Richmond",
+      "fsa": "V7A",
+      "street_masked": "████ Rosebank Crescent",
+      "project_name": null,
+      "price": 1525000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 2179,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1667,6 +1689,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1950,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3140119",
+      "property_type": "Townhouse",
+      "neighborhood": "Steveston South",
+      "city": "Richmond",
+      "fsa": "V7E",
+      "street_masked": "████ 6160 London Road",
+      "project_name": null,
+      "price": 730000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 859,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
