@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-26T14:17:30.302Z",
+  "generatedAt": "2026-06-27T14:17:47.831Z",
   "note": "Listings scraped + in-area but waiting on a photo URL. Operator action: supply a photo URL for any of these by adding an entry to data/foreclosure-deals.manual.json keyed by `mls_number`. Re-run `node scripts/curate-deals.mjs` to move them to live.",
-  "count": 55,
+  "count": 56,
   "listings": [
     {
       "type": "Condo",
@@ -30,6 +30,20 @@
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 395000
+    },
+    {
+      "type": "Condo",
+      "area": "Collingwood, Vancouver",
+      "street": "5488 Cecil Street",
+      "price": "$425K",
+      "sqft": "535 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "_mls": "R3140332",
+      "_projectName": "Cecil Hill",
+      "_imageSource": null,
+      "_priceNum": 424900
     },
     {
       "type": "Condo",
@@ -341,20 +355,6 @@
     },
     {
       "type": "House",
-      "area": "West Newton, Surrey",
-      "street": "75a Avenue",
-      "price": "$1.50M",
-      "sqft": "3,726 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3134123",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 1500000
-    },
-    {
-      "type": "House",
       "area": "Whalley, Surrey",
       "street": "132a Street",
       "price": "$1.50M",
@@ -377,6 +377,20 @@
       "image": "",
       "imageAlt": "",
       "_mls": "R3121393",
+      "_projectName": null,
+      "_imageSource": null,
+      "_priceNum": 1500000
+    },
+    {
+      "type": "House",
+      "area": "West Newton, Surrey",
+      "street": "75a Avenue",
+      "price": "$1.50M",
+      "sqft": "3,726 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "_mls": "R3134123",
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 1500000
@@ -551,20 +565,6 @@
     },
     {
       "type": "House",
-      "area": "Hazelmere, Surrey",
-      "street": "184 Street",
-      "price": "$2.30M",
-      "sqft": "2,819 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3099258",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 2300000
-    },
-    {
-      "type": "House",
       "area": "Whalley, Surrey",
       "street": "138 Street",
       "price": "$2.30M",
@@ -573,6 +573,20 @@
       "image": "",
       "imageAlt": "",
       "_mls": "R3127268",
+      "_projectName": null,
+      "_imageSource": null,
+      "_priceNum": 2300000
+    },
+    {
+      "type": "House",
+      "area": "Hazelmere, Surrey",
+      "street": "184 Street",
+      "price": "$2.30M",
+      "sqft": "2,819 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "_mls": "R3099258",
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 2300000

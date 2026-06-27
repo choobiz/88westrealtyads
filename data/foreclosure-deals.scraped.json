@@ -1,11 +1,11 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-06-26T14:17:30.113Z",
+  "scrapedAt": "2026-06-27T14:17:47.754Z",
   "parserVersion": "1.1",
   "sourceCount": 3,
-  "rawCount": 131,
-  "uniqueCount": 112,
-  "withProjectName": 35,
+  "rawCount": 132,
+  "uniqueCount": 113,
+  "withProjectName": 36,
   "perSource": [
     {
       "source": "Simon Clayton (Macdonald Realty)",
@@ -60,7 +60,7 @@
     {
       "source": "Macnabs (Royal LePage Elite West)",
       "ok": true,
-      "listings": 60,
+      "listings": 61,
       "pages": [
         {
           "page": 1,
@@ -101,8 +101,8 @@
           "page": 6,
           "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=6",
           "ok": true,
-          "listings": 1,
-          "newListings": 1
+          "listings": 2,
+          "newListings": 2
         },
         {
           "page": 7,
@@ -560,7 +560,7 @@
       "fsa": "V7J",
       "street_masked": "████ 1471 Hunter Street",
       "project_name": "Winford",
-      "price": 1181300,
+      "price": 1150000,
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1538,
@@ -845,7 +845,7 @@
       "fsa": "V6E",
       "street_masked": "████ 1028 Barclay Street",
       "project_name": "Patina",
-      "price": 1133100,
+      "price": 1103080,
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1029,
@@ -1153,17 +1153,17 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3076510",
-      "property_type": "Land",
-      "neighborhood": "Cottonwood MR",
-      "city": "Maple Ridge",
-      "fsa": "V2W",
-      "street_masked": "████ 240 Street",
+      "mls_number": "R3127268",
+      "property_type": "House",
+      "neighborhood": "Whalley",
+      "city": "Surrey",
+      "fsa": "V3T",
+      "street_masked": "████ 138 Street",
       "project_name": null,
-      "price": 2400000,
+      "price": 2300000,
       "bedrooms": null,
       "bathrooms": null,
-      "area_sqft": null,
+      "area_sqft": 1056,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1183,21 +1183,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3127268",
-      "property_type": "House",
-      "neighborhood": "Whalley",
-      "city": "Surrey",
-      "fsa": "V3T",
-      "street_masked": "████ 138 Street",
-      "project_name": null,
-      "price": 2300000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 1056,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3077231",
       "property_type": "House",
       "neighborhood": "Bear Creek Green Timbers",
@@ -1209,6 +1194,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 3914,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3076510",
+      "property_type": "Land",
+      "neighborhood": "Cottonwood MR",
+      "city": "Maple Ridge",
+      "fsa": "V2W",
+      "street_masked": "████ 240 Street",
+      "project_name": null,
+      "price": 1990888,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": null,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1303,21 +1303,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3134123",
-      "property_type": "House",
-      "neighborhood": "West Newton",
-      "city": "Surrey",
-      "fsa": "V3W",
-      "street_masked": "████ 75a Avenue",
-      "project_name": null,
-      "price": 1500000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 3726,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3121367",
       "property_type": "House",
       "neighborhood": "Whalley",
@@ -1344,6 +1329,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1171,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3134123",
+      "property_type": "House",
+      "neighborhood": "West Newton",
+      "city": "Surrey",
+      "fsa": "V3W",
+      "street_masked": "████ 75a Avenue",
+      "project_name": null,
+      "price": 1500000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 3726,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1764,6 +1764,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 963,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3140332",
+      "property_type": "Condo",
+      "neighborhood": "Collingwood VE",
+      "city": "Vancouver",
+      "fsa": "V5R",
+      "street_masked": "████ 5488 Cecil Street",
+      "project_name": "Cecil Hill",
+      "price": 424900,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 535,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },

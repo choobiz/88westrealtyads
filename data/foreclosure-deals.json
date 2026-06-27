@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-06-26",
+  "lastUpdated": "2026-06-27",
   "source": "curate-deals.mjs (scraped + auto-photos + manual overrides)",
   "compliance": {
     "status": "operator-override",
-    "date": "2026-06-26",
+    "date": "2026-06-27",
     "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period before GVR WebAPI authorization. Listing data sourced from multiple public foreclosure aggregator pages (Simon Clayton, Macnabs, Realtyvibe). Photos resolved in this priority: (1) operator-curated manual overrides — Paragon-authorized per-listing photos OR operator-supplied marketing-material URLs, (2) automated project-name search via Tavily on publicly indexed developer marketing pages, falling back to (3) listings without resolvable photos are pending operator URL supply and DO NOT appear on the LP until a photo is available (see foreclosure-deals.pending.json). Across all displayed listings: street numbers withheld (shared on intro call); MLS numbers omitted from public cards (retained in research dump); no listing remarks; no agent names. Flagged for managing-broker awareness (Shirin Saleh, licence #X031527). Replace pipeline with the GVR-feed-backed source once the WebAPI is authorized.",
     "replaceWith": "GVR WebAPI feed — see docs/gvr-database-schema.md",
     "stats": {
-      "scrapedTotal": 112,
-      "scrapedInArea": 88,
+      "scrapedTotal": 113,
+      "scrapedInArea": 89,
       "liveOnLp": 33,
       "featuredOnLp": 12,
       "lockedOnLp": 21,
-      "pendingPhoto": 55,
+      "pendingPhoto": 56,
       "manualOverrides": 6,
       "autoSourcedPhotos": 35
     }
@@ -242,7 +242,7 @@
       "type": "Condo",
       "area": "West End, Vancouver",
       "street": "1028 Barclay Street",
-      "price": "$1.13M",
+      "price": "$1.10M",
       "sqft": "1,029 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/patina.jpg",
@@ -264,7 +264,7 @@
       "type": "Townhouse",
       "area": "Lynnmour, North Vancouver",
       "street": "1471 Hunter Street",
-      "price": "$1.18M",
+      "price": "$1.15M",
       "sqft": "1,538 sq ft",
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/lynnmour-nv.jpg",
