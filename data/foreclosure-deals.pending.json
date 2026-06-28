@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T14:17:47.831Z",
+  "generatedAt": "2026-06-28T14:17:26.359Z",
   "note": "Listings scraped + in-area but waiting on a photo URL. Operator action: supply a photo URL for any of these by adding an entry to data/foreclosure-deals.manual.json keyed by `mls_number`. Re-run `node scripts/curate-deals.mjs` to move them to live.",
   "count": 56,
   "listings": [
@@ -355,6 +355,20 @@
     },
     {
       "type": "House",
+      "area": "West Newton, Surrey",
+      "street": "75a Avenue",
+      "price": "$1.50M",
+      "sqft": "3,726 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "_mls": "R3134123",
+      "_projectName": null,
+      "_imageSource": null,
+      "_priceNum": 1500000
+    },
+    {
+      "type": "House",
       "area": "Whalley, Surrey",
       "street": "132a Street",
       "price": "$1.50M",
@@ -377,20 +391,6 @@
       "image": "",
       "imageAlt": "",
       "_mls": "R3121393",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 1500000
-    },
-    {
-      "type": "House",
-      "area": "West Newton, Surrey",
-      "street": "75a Avenue",
-      "price": "$1.50M",
-      "sqft": "3,726 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3134123",
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 1500000
