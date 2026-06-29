@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T14:17:26.359Z",
+  "generatedAt": "2026-06-29T14:17:25.881Z",
   "note": "Listings scraped + in-area but waiting on a photo URL. Operator action: supply a photo URL for any of these by adding an entry to data/foreclosure-deals.manual.json keyed by `mls_number`. Re-run `node scripts/curate-deals.mjs` to move them to live.",
   "count": 56,
   "listings": [
