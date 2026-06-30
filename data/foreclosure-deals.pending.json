@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T14:17:25.881Z",
+  "generatedAt": "2026-06-30T14:17:24.999Z",
   "note": "Listings scraped + in-area but waiting on a photo URL. Operator action: supply a photo URL for any of these by adding an entry to data/foreclosure-deals.manual.json keyed by `mls_number`. Re-run `node scripts/curate-deals.mjs` to move them to live.",
-  "count": 56,
+  "count": 54,
   "listings": [
     {
       "type": "Condo",
@@ -86,20 +86,6 @@
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 698880
-    },
-    {
-      "type": "Townhouse",
-      "area": "Steveston South, Richmond",
-      "street": "6160 London Road",
-      "price": "$730K",
-      "sqft": "859 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3140119",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 730000
     },
     {
       "type": "Land",
@@ -551,17 +537,17 @@
     },
     {
       "type": "House",
-      "area": "Bear Creek Green Timbers, Surrey",
-      "street": "82 Avenue",
-      "price": "$2.00M",
-      "sqft": "3,914 sq ft",
+      "area": "Hazelmere, Surrey",
+      "street": "184 Street",
+      "price": "$2.30M",
+      "sqft": "2,819 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
-      "_mls": "R3077231",
+      "_mls": "R3099258",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1999000
+      "_priceNum": 2300000
     },
     {
       "type": "House",
@@ -579,17 +565,17 @@
     },
     {
       "type": "House",
-      "area": "Hazelmere, Surrey",
-      "street": "184 Street",
-      "price": "$2.30M",
-      "sqft": "2,819 sq ft",
+      "area": "Central Park BS, Burnaby",
+      "street": "Halley Avenue",
+      "price": "$2.35M",
+      "sqft": "2,692 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
-      "_mls": "R3099258",
+      "_mls": "R3112834",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 2300000
+      "_priceNum": 2350000
     },
     {
       "type": "House",
@@ -618,20 +604,6 @@
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 2410000
-    },
-    {
-      "type": "House",
-      "area": "Central Park BS, Burnaby",
-      "street": "Halley Avenue",
-      "price": "$2.50M",
-      "sqft": "2,692 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3112834",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 2498000
     },
     {
       "type": "House",
@@ -679,7 +651,7 @@
       "type": "House",
       "area": "MacKenzie Heights, Vancouver",
       "street": "W 33 Avenue",
-      "price": "$2.78M",
+      "price": "$2.73M",
       "sqft": "3,780 sq ft",
       "courtOrdered": true,
       "image": "",
@@ -687,7 +659,7 @@
       "_mls": "R3110963",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 2782000
+      "_priceNum": 2725000
     },
     {
       "type": "House",
@@ -763,7 +735,7 @@
       "type": "House",
       "area": "University, Vancouver",
       "street": "College Highroad",
-      "price": "$9.58M",
+      "price": "$9.00M",
       "sqft": "7,454 sq ft",
       "courtOrdered": true,
       "image": "",
@@ -771,7 +743,7 @@
       "_mls": "R3123556",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 9580000
+      "_priceNum": 8999000
     },
     {
       "type": "Land",

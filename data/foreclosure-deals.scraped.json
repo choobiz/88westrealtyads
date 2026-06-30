@@ -1,10 +1,10 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-06-29T14:17:25.812Z",
+  "scrapedAt": "2026-06-30T14:17:24.914Z",
   "parserVersion": "1.1",
   "sourceCount": 3,
-  "rawCount": 132,
-  "uniqueCount": 113,
+  "rawCount": 130,
+  "uniqueCount": 111,
   "withProjectName": 36,
   "perSource": [
     {
@@ -60,7 +60,7 @@
     {
       "source": "Macnabs (Royal LePage Elite West)",
       "ok": true,
-      "listings": 61,
+      "listings": 59,
       "pages": [
         {
           "page": 1,
@@ -94,15 +94,15 @@
           "page": 5,
           "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=5",
           "ok": true,
-          "listings": 12,
-          "newListings": 12
+          "listings": 11,
+          "newListings": 11
         },
         {
           "page": 6,
           "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=6",
           "ok": true,
-          "listings": 2,
-          "newListings": 2
+          "listings": 1,
+          "newListings": 1
         },
         {
           "page": 7,
@@ -635,7 +635,7 @@
       "fsa": "V6N",
       "street_masked": "████ W 33 Avenue",
       "project_name": null,
-      "price": 2782000,
+      "price": 2725000,
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 3780,
@@ -695,7 +695,7 @@
       "fsa": "V5H",
       "street_masked": "████ Halley Avenue",
       "project_name": null,
-      "price": 2498000,
+      "price": 2350000,
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 2692,
@@ -785,7 +785,7 @@
       "fsa": "V7J",
       "street_masked": "████ 1500 Fern Street",
       "project_name": "Apex",
-      "price": 1070000,
+      "price": 1035000,
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1240,
@@ -965,7 +965,7 @@
       "fsa": "V6T",
       "street_masked": "████ College Highroad",
       "project_name": null,
-      "price": 9580000,
+      "price": 8999000,
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 7454,
@@ -1153,21 +1153,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3127268",
-      "property_type": "House",
-      "neighborhood": "Whalley",
-      "city": "Surrey",
-      "fsa": "V3T",
-      "street_masked": "████ 138 Street",
-      "project_name": null,
-      "price": 2300000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 1056,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3099258",
       "property_type": "House",
       "neighborhood": "Hazelmere",
@@ -1183,17 +1168,17 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3077231",
+      "mls_number": "R3127268",
       "property_type": "House",
-      "neighborhood": "Bear Creek Green Timbers",
+      "neighborhood": "Whalley",
       "city": "Surrey",
-      "fsa": "V3W",
-      "street_masked": "████ 82 Avenue",
+      "fsa": "V3T",
+      "street_masked": "████ 138 Street",
       "project_name": null,
-      "price": 1999000,
+      "price": 2300000,
       "bedrooms": null,
       "bathrooms": null,
-      "area_sqft": 3914,
+      "area_sqft": 1056,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1243,21 +1228,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3136496",
-      "property_type": "Land",
-      "neighborhood": "County Line Glen Valley",
-      "city": "Langley",
-      "fsa": "V4W",
-      "street_masked": "████ 272 Street",
-      "project_name": null,
-      "price": 1790000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": null,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3129384",
       "property_type": "House",
       "neighborhood": "Coquitlam West",
@@ -1269,6 +1239,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 2302,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3136496",
+      "property_type": "Land",
+      "neighborhood": "County Line Glen Valley",
+      "city": "Langley",
+      "fsa": "V4W",
+      "street_masked": "████ 272 Street",
+      "project_name": null,
+      "price": 1790000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": null,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1689,21 +1674,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1950,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
-      "mls_number": "R3140119",
-      "property_type": "Townhouse",
-      "neighborhood": "Steveston South",
-      "city": "Richmond",
-      "fsa": "V7E",
-      "street_masked": "████ 6160 London Road",
-      "project_name": null,
-      "price": 730000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 859,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
