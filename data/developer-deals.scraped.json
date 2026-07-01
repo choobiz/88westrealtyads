@@ -1,11 +1,25 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-06-30T15:23:45.675Z",
+  "scrapedAt": "2026-07-01T14:17:04.087Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "Gradience Langley – Prices & Floor Plans",
+      "city": "Langley",
+      "incentive_summary": "Up to $50,000 back for eligible first-time buyers through the federal First-Time Home Buyer GST Rebate., Rebate is re...",
+      "project_url": "https://www.mikestewart.ca/presale/gradience-langley-prices-floor-plans/",
+      "headline_dollar": "$50,000"
+    },
+    {
+      "project_name": "Harlin River District by Wesgroup – Prices, Plans, Availability",
+      "city": "Vancouver",
+      "incentive_summary": "10% deposits, $10K credit on studios & 1-bed, $15K credit on 2-beds, $20K credit on 3-beds, Significant savings of up...",
+      "project_url": "https://www.mikestewart.ca/presale/harlin-at-river-district-by-wesgroup-presale-east-vancouver-condos-and-townhomes/",
+      "headline_dollar": "$20K"
+    },
     {
       "project_name": "Pura Surrey by Adera – Floor Plans & Price",
       "city": "Surrey",
@@ -42,25 +56,39 @@
       "headline_dollar": "$1M"
     },
     {
-      "project_name": "Solhouse 6035 by Bosa Properties",
+      "project_name": "Crofton by Atrium Group – Plans, Prices, Availability",
+      "city": "Langley",
+      "incentive_summary": "$30,000 Decorating Allowance for the next two firm sales, Low strata fee $0.12 per sq.ft., Final 5 homes remaining",
+      "project_url": "https://www.mikestewart.ca/presale/crofton-by-atrium-group-willoughby-langley-presale-townhomes/",
+      "headline_dollar": "$30,000"
+    },
+    {
+      "project_name": "Belvedere Surrey –  9675 King George Boulevard",
+      "city": "Surrey",
+      "incentive_summary": "Belvedere Surrey – 9675 King George Boulevard Court-Ordered Pricing, Pre-growth pricing in Surrey Centre, Move-in-ready concrete homes complete with A/C, parking, ...",
+      "project_url": "https://www.mikestewart.ca/presale/belvedere-by-square-nine-developments-surrey-city-centre-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Little Mountain Vancouver by Holborn Properties",
+      "city": "Vancouver",
+      "incentive_summary": "Whistler Vacation Package & Cash Prizes!, Concrete construction at wood-frame pricing, Lucky Draws for amazing prizes...",
+      "project_url": "https://www.mikestewart.ca/presale/little-mountain/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Nolia by Handmade Homes – Pricing & Plans",
+      "city": "Vancouver",
+      "incentive_summary": "Exclusive opportunity to tour our boutique Passive House townhomes., New-Spring-Incentives for motivated buyers., SPR...",
+      "project_url": "https://www.mikestewart.ca/presale/nolia-vancouver/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Artesia Metrotown – 5685 Halley Avenue –",
       "city": "Burnaby",
-      "incentive_summary": "The Perfect 10 Deposit Builder: a new, lower initial deposit and the potential to earn up to $94,326 in credit on com...",
-      "project_url": "https://www.mikestewart.ca/presale/solhouse-6035-metrotown-condos/",
-      "headline_dollar": "$94,326"
-    },
-    {
-      "project_name": "7381 Preston Boulevard – Skyview Mission",
-      "city": "Mission",
-      "incentive_summary": "YEAR-END SAVINGS on select move-in ready homes, NO GST for First Time Home Buyers, NO Property Transfer Tax, ONLY $5,...",
-      "project_url": "https://www.mikestewart.ca/presale/skyview-mission-presale-townhomes/",
-      "headline_dollar": "$5,"
-    },
-    {
-      "project_name": "Pier West by Bosa Development 660 Quayside Drive & 680 Quayside Drive",
-      "city": "New Westminster",
-      "incentive_summary": "Festive bonuses of up to $20,000, $10K on 2 bedroom homes at Pier West",
-      "project_url": "https://www.mikestewart.ca/presale/bosa-pier-west-new-westminster-presale-condos/",
-      "headline_dollar": "$20,000,"
+      "incentive_summary": "Credits exclude GST and are for a limited time only and subject to change without notice., Credits available, Credits...",
+      "project_url": "https://www.mikestewart.ca/presale/artesia-by-qualex-landmark/",
+      "headline_dollar": null
     },
     {
       "project_name": "Water Street by the Park by Orchard Park Properties – Plans Availability Prices",
@@ -84,13 +112,6 @@
       "headline_dollar": null
     },
     {
-      "project_name": "Little Mountain Vancouver by Holborn Properties",
-      "city": "Vancouver",
-      "incentive_summary": "Whistler Vacation Package & Cash Prizes!, Concrete construction at wood-frame pricing, Lucky Draws for amazing prizes...",
-      "project_url": "https://www.mikestewart.ca/presale/little-mountain/",
-      "headline_dollar": null
-    },
-    {
       "project_name": "Ōku by Ulmus Development – Availability, Plans, Prices",
       "city": "Vancouver",
       "incentive_summary": "Enter the Oku Social Media Contest for a chance to win 2 tickets & parking to a Canucks Game., Holiday Buyer Incentiv...",
@@ -102,27 +123,6 @@
       "city": "Coquitlam",
       "incentive_summary": "Book a hard hat tour, Win one of two exclusive co-listing opportunities in Coquitlam within the Anthem portfolio by f...",
       "project_url": "https://www.mikestewart.ca/presale/anthem-soco-lougheed-coquitlam-presale-condos/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Timber House – 310 Salter Street",
-      "city": "New Westminster",
-      "incentive_summary": "New reduced prices on all home types., Preferred mortgage rates with RBC for potential purchasers., Potential purchas...",
-      "project_url": "https://www.mikestewart.ca/presale/310-salter/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Hue Port Moody by Marcon @ 2015 St. Johns Street & 125 Albert Street",
-      "city": "Port Moody",
-      "incentive_summary": "Receive a complimentary eucalyptus room spray by attending the Open House., Limited quantities available on a first-c...",
-      "project_url": "https://www.mikestewart.ca/presale/hue-seaview-port-moody-presale-condos-by-marcon-developments/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Bromley Langley — Prices & Floor Plans",
-      "city": "Langley",
-      "incentive_summary": "1% initial deposit to start, Total deposit of 5% payable in stages through construction, 15 customization options ava...",
-      "project_url": "https://www.mikestewart.ca/presale/bromley-langley-prices-floor-plans/",
       "headline_dollar": null
     },
     {

@@ -1,16 +1,16 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-06-30T14:17:24.914Z",
+  "scrapedAt": "2026-07-01T14:17:27.139Z",
   "parserVersion": "1.1",
   "sourceCount": 3,
-  "rawCount": 130,
-  "uniqueCount": 111,
+  "rawCount": 128,
+  "uniqueCount": 110,
   "withProjectName": 36,
   "perSource": [
     {
       "source": "Simon Clayton (Macdonald Realty)",
       "ok": true,
-      "listings": 59,
+      "listings": 57,
       "pages": [
         {
           "page": 1,
@@ -44,8 +44,8 @@
           "page": 5,
           "url": "https://simonclayton.ca/foreclosures/?_pg=5",
           "ok": true,
-          "listings": 12,
-          "newListings": 12
+          "listings": 10,
+          "newListings": 10
         },
         {
           "page": 6,
@@ -204,21 +204,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 697,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
-      "mls_number": "R3061048",
-      "property_type": "Condo",
-      "neighborhood": "Central Lonsdale",
-      "city": "North Vancouver",
-      "fsa": "V7M",
-      "street_masked": "████ 137 W 17th Street",
-      "project_name": null,
-      "price": 479000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 716,
       "court_ordered_flag": true,
       "source": "Simon Clayton (Macdonald Realty)"
     },
@@ -530,7 +515,7 @@
       "fsa": "V6E",
       "street_masked": "████ 1365 Davie Street",
       "project_name": "Mirabel English Bay",
-      "price": 1329900,
+      "price": 1315900,
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 956,
@@ -579,21 +564,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 2196,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
-      "mls_number": "R3108479",
-      "property_type": "House",
-      "neighborhood": "East Burnaby",
-      "city": "Burnaby",
-      "fsa": "V3N",
-      "street_masked": "████ 14th Avenue",
-      "project_name": null,
-      "price": 1570000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 3344,
       "court_ordered_flag": true,
       "source": "Simon Clayton (Macdonald Realty)"
     },
@@ -680,7 +650,7 @@
       "fsa": "V0N",
       "street_masked": "████ Beach Drive",
       "project_name": "Olivers Landing - Furry Creek",
-      "price": 1550000,
+      "price": 1509900,
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 3599,
@@ -1153,21 +1123,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3099258",
-      "property_type": "House",
-      "neighborhood": "Hazelmere",
-      "city": "Surrey",
-      "fsa": "V3Z",
-      "street_masked": "████ 184 Street",
-      "project_name": null,
-      "price": 2300000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 2819,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3127268",
       "property_type": "House",
       "neighborhood": "Whalley",
@@ -1179,6 +1134,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1056,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3099258",
+      "property_type": "House",
+      "neighborhood": "Hazelmere",
+      "city": "Surrey",
+      "fsa": "V3Z",
+      "street_masked": "████ 184 Street",
+      "project_name": null,
+      "price": 2300000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 2819,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1228,21 +1198,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3129384",
-      "property_type": "House",
-      "neighborhood": "Coquitlam West",
-      "city": "Coquitlam",
-      "fsa": "V3K",
-      "street_masked": "████ Delestre Avenue",
-      "project_name": null,
-      "price": 1790000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 2302,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3136496",
       "property_type": "Land",
       "neighborhood": "County Line Glen Valley",
@@ -1254,6 +1209,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": null,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3129384",
+      "property_type": "House",
+      "neighborhood": "Coquitlam West",
+      "city": "Coquitlam",
+      "fsa": "V3K",
+      "street_masked": "████ Delestre Avenue",
+      "project_name": null,
+      "price": 1790000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 2302,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1393,21 +1363,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3137627",
-      "property_type": "House",
-      "neighborhood": "Bear Creek Green Timbers",
-      "city": "Surrey",
-      "fsa": "V3V",
-      "street_masked": "████ 91 Avenue",
-      "project_name": null,
-      "price": 1350000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 2749,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3104058",
       "property_type": "House",
       "neighborhood": "Queen Mary Park Surrey",
@@ -1419,6 +1374,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 4194,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3137627",
+      "property_type": "House",
+      "neighborhood": "Bear Creek Green Timbers",
+      "city": "Surrey",
+      "fsa": "V3V",
+      "street_masked": "████ 91 Avenue",
+      "project_name": null,
+      "price": 1350000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 2749,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1796,6 +1766,21 @@
       "area_sqft": 634,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3080132",
+      "property_type": "House",
+      "neighborhood": "Caulfeild",
+      "city": "West Vancouver",
+      "fsa": "V7W",
+      "street_masked": "████ Headland Drive",
+      "project_name": null,
+      "price": 2175000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 2240,
+      "court_ordered_flag": true,
+      "source": "Realtyvibe (Sutton Premier)"
     }
   ]
 }

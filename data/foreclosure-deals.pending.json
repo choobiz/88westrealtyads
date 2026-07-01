@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T14:17:24.999Z",
+  "generatedAt": "2026-07-01T14:17:27.217Z",
   "note": "Listings scraped + in-area but waiting on a photo URL. Operator action: supply a photo URL for any of these by adding an entry to data/foreclosure-deals.manual.json keyed by `mls_number`. Re-run `node scripts/curate-deals.mjs` to move them to live.",
-  "count": 54,
+  "count": 53,
   "listings": [
     {
       "type": "Condo",
@@ -285,20 +285,6 @@
     },
     {
       "type": "House",
-      "area": "Bear Creek Green Timbers, Surrey",
-      "street": "91 Avenue",
-      "price": "$1.35M",
-      "sqft": "2,749 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3137627",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 1350000
-    },
-    {
-      "type": "House",
       "area": "Queen Mary Park Surrey, Surrey",
       "street": "84a Avenue",
       "price": "$1.35M",
@@ -307,6 +293,20 @@
       "image": "",
       "imageAlt": "",
       "_mls": "R3104058",
+      "_projectName": null,
+      "_imageSource": null,
+      "_priceNum": 1350000
+    },
+    {
+      "type": "House",
+      "area": "Bear Creek Green Timbers, Surrey",
+      "street": "91 Avenue",
+      "price": "$1.35M",
+      "sqft": "2,749 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "_mls": "R3137627",
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 1350000
@@ -394,20 +394,6 @@
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 1525000
-    },
-    {
-      "type": "House",
-      "area": "East Burnaby, Burnaby",
-      "street": "14th Avenue",
-      "price": "$1.57M",
-      "sqft": "3,344 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3108479",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 1570000
     },
     {
       "type": "House",
@@ -537,20 +523,6 @@
     },
     {
       "type": "House",
-      "area": "Hazelmere, Surrey",
-      "street": "184 Street",
-      "price": "$2.30M",
-      "sqft": "2,819 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3099258",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 2300000
-    },
-    {
-      "type": "House",
       "area": "Whalley, Surrey",
       "street": "138 Street",
       "price": "$2.30M",
@@ -559,6 +531,20 @@
       "image": "",
       "imageAlt": "",
       "_mls": "R3127268",
+      "_projectName": null,
+      "_imageSource": null,
+      "_priceNum": 2300000
+    },
+    {
+      "type": "House",
+      "area": "Hazelmere, Surrey",
+      "street": "184 Street",
+      "price": "$2.30M",
+      "sqft": "2,819 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "_mls": "R3099258",
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 2300000
