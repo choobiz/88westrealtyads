@@ -8,7 +8,6 @@ import ForeclosureHero from "@/components/foreclosure/ForeclosureHero";
 import ForeclosureHeroVariantB from "@/components/foreclosure/ForeclosureHeroVariantB";
 import ForeclosureLeadProvider from "@/components/foreclosure/ForeclosureLeadProvider";
 import InventoryPreview from "@/components/foreclosure/InventoryPreview";
-import PortfolioConsole from "@/components/foreclosure/PortfolioConsole";
 import ForeclosureFormSection from "@/components/foreclosure/ForeclosureFormSection";
 import MortgageCliffCallout from "@/components/foreclosure/MortgageCliffCallout";
 import ProcessExplainer from "@/components/foreclosure/ProcessExplainer";
@@ -114,9 +113,10 @@ export default async function ForeclosurePage() {
           so the inventory-section change in C is isolated from any hero
           change. */}
       {variant === "B" ? <ForeclosureHeroVariantB /> : <ForeclosureHero />}
-      {/* Inventory — C gets the Portfolio Console; A and B keep the gated
-          card grid. */}
-      {variant === "C" ? <PortfolioConsole /> : <InventoryPreview />}
+      {/* Inventory — all variants show the full, unblurred card grid
+          (2026-07-02: dropped the blurred "locked" tier + the variant-C
+          Portfolio Console; every listing is visible, click → lead modal). */}
+      <InventoryPreview />
       {/* Lower form section — only A renders it. B's hero already has the
           form inline; C's Portfolio Console has its own Strategy Session CTA.
           As of 2026-06-13 no CTA scrolls here anymore (all CTAs open the
