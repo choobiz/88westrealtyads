@@ -45,7 +45,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-type Variant = "A" | "B" | "C";
+type Variant = "A" | "B" | "C" | "D";
 
 const COOKIE_NAME = "_lp_ab_cohort";
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 30; // 30 days
@@ -57,25 +57,26 @@ const COOKIE_MAX_AGE = 60 * 60 * 24 * 30; // 30 days
 //   { A: 0.20, B: 0.40, C: 1.00 }  → C-heavy (60% C, 20% A, 20% B) ← current
 //   { A: 0.25, B: 0.50, C: 1.00 }  → balanced challenger split
 //
-// 2026-06-13: operator chose C-heavy split (20/20/60). Portfolio Console is
-// the newest arm; pushing 60% of traffic there accumulates conversion data
-// on it ~2x faster than equal thirds while still keeping A (control) and B
-// (hero variant) accumulating enough to detect a winner if either beats C.
+// 2026-07-02: added Variant D (ForeclosureListExplorer — ungated searchable
+// list + map). Split is now 20/20/30/30 (A/B/C/D) — A control + B hero kept
+// small; the two challengers (C console, D list) share the bulk so both
+// accumulate conversion data. Adjust to skew.
 //
 // NOTE: paid Google Ads traffic also flows through this proxy now (the
 // foreclosure campaign's `final_url_suffix` was cleared 2026-06-13), so this
 // single split governs ALL traffic — paid and organic alike.
-const VARIANT_SPLIT = { A: 0.20, B: 0.40, C: 1.0 } as const;
+const VARIANT_SPLIT = { A: 0.20, B: 0.40, C: 0.70, D: 1.0 } as const;
 
 function isVariant(v: string | null | undefined): v is Variant {
-  return v === "A" || v === "B" || v === "C";
+  return v === "A" || v === "B" || v === "C" || v === "D";
 }
 
 function assignFromRandom(): Variant {
   const r = Math.random();
   if (r < VARIANT_SPLIT.A) return "A";
   if (r < VARIANT_SPLIT.B) return "B";
-  return "C";
+  if (r < VARIANT_SPLIT.C) return "C";
+  return "D";
 }
 
 export function proxy(request: NextRequest) {

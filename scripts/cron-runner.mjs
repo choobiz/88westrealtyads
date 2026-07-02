@@ -36,6 +36,9 @@ const SCRAPERS = [
   // Uses existing photos; brand-new buildings without a photo land in
   // foreclosure-deals.pending.json until source-listing-photos.mjs is run.
   { name: "foreclosure-curate",  script: "scripts/curate-deals.mjs" },
+  // Explorer dataset (Variant D) — merges shown + pending listings, geocodes
+  // (cached), writes data/foreclosure-explorer-deals.json. Runs AFTER curate.
+  { name: "foreclosure-explorer", script: "scripts/build-explorer-deals.mjs" },
 ];
 
 function ts() {

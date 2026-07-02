@@ -9,6 +9,7 @@ import ForeclosureHeroVariantB from "@/components/foreclosure/ForeclosureHeroVar
 import ForeclosureLeadProvider from "@/components/foreclosure/ForeclosureLeadProvider";
 import InventoryPreview from "@/components/foreclosure/InventoryPreview";
 import PortfolioConsole from "@/components/foreclosure/PortfolioConsole";
+import ForeclosureListExplorer from "@/components/foreclosure/ForeclosureListExplorer";
 import ForeclosureFormSection from "@/components/foreclosure/ForeclosureFormSection";
 import MortgageCliffCallout from "@/components/foreclosure/MortgageCliffCallout";
 import ProcessExplainer from "@/components/foreclosure/ProcessExplainer";
@@ -87,10 +88,10 @@ function JsonLd() {
   );
 }
 
-type Variant = "A" | "B" | "C";
+type Variant = "A" | "B" | "C" | "D";
 
 export default async function ForeclosurePage() {
-  // A/B/C variant — assigned by proxy.ts and forwarded via x-ab-variant
+  // A/B/C/D variant — assigned by proxy.ts and forwarded via x-ab-variant
   // header. See proxy.ts for the test plan and split ratios.
   //
   //   A — Control. ForeclosureHero (2-CTA) + InventoryPreview (gated cards)
@@ -98,13 +99,14 @@ export default async function ForeclosurePage() {
   //   B — Hero variant. ForeclosureHeroVariantB (inline form) +
   //                InventoryPreview. No lower form section.
   //   C — Inventory variant. ForeclosureHero (control hero) +
-  //                PortfolioConsole (financial-app bento layout). No lower
-  //                form section — PortfolioConsole has its own Strategy
-  //                Session CTA tile.
+  //                PortfolioConsole (financial-app bento layout).
+  //   D — Explorer variant. ForeclosureHero (control hero) +
+  //                ForeclosureListExplorer (ungated searchable list + map,
+  //                35s dwell modal). No lower form.
   const requestHeaders = await headers();
   const headerVariant = requestHeaders.get("x-ab-variant");
   const variant: Variant =
-    headerVariant === "B" ? "B" : headerVariant === "C" ? "C" : "A";
+    headerVariant === "B" ? "B" : headerVariant === "C" ? "C" : headerVariant === "D" ? "D" : "A";
 
   return (
     <ForeclosureLeadProvider>
@@ -114,9 +116,9 @@ export default async function ForeclosurePage() {
           so the inventory-section change in C is isolated from any hero
           change. */}
       {variant === "B" ? <ForeclosureHeroVariantB /> : <ForeclosureHero />}
-      {/* Inventory — C gets the Portfolio Console; A and B keep the gated
-          card grid. */}
-      {variant === "C" ? <PortfolioConsole /> : <InventoryPreview />}
+      {/* Inventory — C = Portfolio Console; D = ungated searchable list/map
+          explorer; A and B keep the gated card grid. */}
+      {variant === "C" ? <PortfolioConsole /> : variant === "D" ? <ForeclosureListExplorer /> : <InventoryPreview />}
       {/* Lower form section — only A renders it. B's hero already has the
           form inline; C's Portfolio Console has its own Strategy Session CTA.
           As of 2026-06-13 no CTA scrolls here anymore (all CTAs open the

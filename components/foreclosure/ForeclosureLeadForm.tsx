@@ -33,7 +33,7 @@ import { FORECLOSURE_WEBHOOK_URL, TRACKING } from "@/lib/constants";
 import foreclosureStats from "@/data/foreclosure-stats.json";
 
 export interface ForeclosureLeadFormProps {
-  formLocation?: "hero_inline" | "final_cta" | "deals_section" | "property_modal";
+  formLocation?: "hero_inline" | "final_cta" | "deals_section" | "property_modal" | "list_explorer";
   selectedProperty?: string;
   bare?: boolean;
   submitLabel?: string;
@@ -140,6 +140,8 @@ export default function ForeclosureLeadForm({
         ...payload,
       });
       setSubmitted(true);
+      // Stops the list-explorer (Variant D) 35s dwell auto-open once a lead is captured.
+      try { localStorage.setItem("_lp_lead_submitted", "1"); } catch {}
     } catch {
       setError("Something went wrong. Please call 604-281-1828.");
     } finally {
