@@ -7,7 +7,6 @@
   "lat": 49.2504608,
   "lng": -122.8992249
  },
- "12739 72 Avenue, West Newton, Surrey": null,
  "1435 Nelson Street, West End, Vancouver": {
   "lat": 49.2863807,
   "lng": -123.1333957
@@ -16,7 +15,6 @@
   "lat": 49.2304056,
   "lng": -123.0122951
  },
- "6841 138 Street, East Newton, Surrey": null,
  "1823 E Georgia Street, Hastings, Vancouver": {
   "lat": 49.278265,
   "lng": -123.0401588
@@ -25,15 +23,10 @@
   "lat": 49.2821284,
   "lng": -123.1063039
  },
- "3188 Riverwalk Avenue, South Marine, Vancouver": null,
  "1238 Burrard Street, Downtown, Vancouver": {
   "lat": 49.2868569,
   "lng": -123.1174419
  },
- "12711 64 Avenue, West Newton, Surrey": null,
- "3281 E Kent Avenue North, South Marine, Vancouver": null,
- "6188 141 Street, Sullivan Station, Surrey": null,
- "B5 1855 W 10th Avenue, Kitsilano, Vancouver": null,
  "1568 Alberni Street, West End, Vancouver": {
   "lat": 49.289764,
   "lng": -123.1312598
@@ -50,12 +43,10 @@
   "lat": 49.2821801,
   "lng": -123.12597
  },
- "1471 Hunter Street, Lynnmour, North Vancouver": null,
  "1925 Alberni Street, West End, Vancouver": {
   "lat": 49.2938235,
   "lng": -123.1365328
  },
- "Nanaimo Street, Renfrew Heights, Vancouver": null,
  "1011 W Cordova Street, Coal Harbour, Vancouver": {
   "lat": 49.2896204,
   "lng": -123.123057
@@ -80,7 +71,6 @@
   "lat": 49.2375827,
   "lng": -123.1722557
  },
- "7280 Lindsay Road, Granville, Richmond": null,
  "9280 Salish Court, Sullivan Heights, Burnaby": {
   "lat": 49.2517573,
   "lng": -122.9026943
@@ -89,47 +79,30 @@
   "lat": 49.2347443,
   "lng": -123.0363915
  },
- "3996 Dumfries Street, Knight, Vancouver": null,
- "3138 Riverwalk Avenue, South Marine, Vancouver": null,
- "115 Avenue, Bolivar Heights, Surrey": null,
  "889 Pacific Street, Downtown, Vancouver": {
   "lat": 49.2763659,
   "lng": -123.1307785
  },
- "138a Street, Bolivar Heights, Surrey": null,
  "2651 Library Lane, Lynn Valley, North Vancouver": {
   "lat": 49.3325032,
   "lng": -123.0398488
  },
- "114 Avenue, Bolivar Heights, Surrey": null,
  "1228 W Hastings Street, Coal Harbour, Vancouver": {
   "lat": 49.2888449,
   "lng": -123.1239553
  },
- "79a Avenue, West Newton, Surrey": null,
  "124 Street, West Newton, Surrey": {
   "lat": 49.1299897,
   "lng": -122.8012491
  },
- "8588 Cornish Street, S.W. Marine, Vancouver": null,
- "84a Avenue, Queen Mary Park Surrey, Surrey": null,
- "Venables Street, Renfrew, Vancouver": null,
  "62 Avenue, Cloverdale BC, Surrey": {
   "lat": 49.1152535,
   "lng": -122.6843046
  },
- "91 Avenue, Bear Creek Green Timbers, Surrey": null,
- "E 54th Avenue, South Vancouver, Vancouver": null,
- "82 Avenue, Bear Creek Green Timbers, Surrey": null,
- "75a Avenue, West Newton, Surrey": null,
  "132a Street, Whalley, Surrey": {
   "lat": 49.211641,
   "lng": -122.8550543
  },
- "Rosebank Crescent, South Arm, Richmond": null,
- "E 2nd Avenue, Renfrew, Vancouver": null,
- "Wescott Street, Steveston South, Richmond": null,
- "Augusta Avenue, Simon Fraser Univer., Burnaby": null,
  "W 64th Avenue, Marpole, Vancouver": {
   "lat": 49.2123256,
   "lng": -123.1221014
@@ -146,8 +119,6 @@
   "lat": 49.1770056,
   "lng": -122.7010417
  },
- "Braelawn Drive, Parkcrest, Burnaby": null,
- "Livingstone Place, Granville, Richmond": null,
  "184 Street, Hazelmere, Surrey": {
   "lat": 49.0112607,
   "lng": -122.7133425
@@ -156,13 +127,10 @@
   "lat": 49.2088054,
   "lng": -122.8397249
  },
- "Halley Avenue, Central Park BS, Burnaby": null,
- "&amp; 2577 Parker Street, Renfrew, Vancouver": null,
  "E 60th Avenue, Fraserview, Vancouver": {
   "lat": 49.2154389,
   "lng": -123.0736062
  },
- "Vanness Avenue, Renfrew Heights, Vancouver": null,
  "W 60th Avenue, Marpole, Vancouver": {
   "lat": 49.2160904,
   "lng": -123.1256279
@@ -171,7 +139,6 @@
   "lat": 49.1701022,
   "lng": -123.1166449
  },
- "W 33 Avenue, MacKenzie Heights, Vancouver": null,
  "W 36th Avenue, Dunbar, Vancouver": {
   "lat": 49.2394632,
   "lng": -123.1670541
@@ -188,5 +155,38 @@
   "lat": 49.2689048,
   "lng": -123.2436019
  },
+ "12739 72 Avenue, West Newton, Surrey": null,
+ "6841 138 Street, East Newton, Surrey": null,
+ "3188 Riverwalk Avenue, South Marine, Vancouver": null,
+ "12711 64 Avenue, West Newton, Surrey": null,
+ "3281 E Kent Avenue North, South Marine, Vancouver": null,
+ "6188 141 Street, Sullivan Station, Surrey": null,
+ "B5 1855 W 10th Avenue, Kitsilano, Vancouver": null,
+ "1471 Hunter Street, Lynnmour, North Vancouver": null,
+ "Nanaimo Street, Renfrew Heights, Vancouver": null,
+ "7280 Lindsay Road, Granville, Richmond": null,
+ "3996 Dumfries Street, Knight, Vancouver": null,
+ "3138 Riverwalk Avenue, South Marine, Vancouver": null,
+ "115 Avenue, Bolivar Heights, Surrey": null,
+ "138a Street, Bolivar Heights, Surrey": null,
+ "114 Avenue, Bolivar Heights, Surrey": null,
+ "79a Avenue, West Newton, Surrey": null,
+ "8588 Cornish Street, S.W. Marine, Vancouver": null,
+ "84a Avenue, Queen Mary Park Surrey, Surrey": null,
+ "Venables Street, Renfrew, Vancouver": null,
+ "91 Avenue, Bear Creek Green Timbers, Surrey": null,
+ "E 54th Avenue, South Vancouver, Vancouver": null,
+ "82 Avenue, Bear Creek Green Timbers, Surrey": null,
+ "75a Avenue, West Newton, Surrey": null,
+ "Rosebank Crescent, South Arm, Richmond": null,
+ "E 2nd Avenue, Renfrew, Vancouver": null,
+ "Wescott Street, Steveston South, Richmond": null,
+ "Augusta Avenue, Simon Fraser Univer., Burnaby": null,
+ "Braelawn Drive, Parkcrest, Burnaby": null,
+ "Livingstone Place, Granville, Richmond": null,
+ "Halley Avenue, Central Park BS, Burnaby": null,
+ "&amp; 2577 Parker Street, Renfrew, Vancouver": null,
+ "Vanness Avenue, Renfrew Heights, Vancouver": null,
+ "W 33 Avenue, MacKenzie Heights, Vancouver": null,
  "+ 17101 80 Avenue, Fleetwood Tynehead, Surrey": null
 }

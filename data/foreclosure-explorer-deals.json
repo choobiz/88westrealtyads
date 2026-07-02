@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-07-02T19:53:21.239Z",
+ "generatedAt": "2026-07-02T21:29:31.844Z",
  "count": 80,
- "withPhoto": 27,
+ "withPhoto": 29,
  "geocoded": 41,
  "regions": [
   "Burnaby",
@@ -59,6 +59,21 @@
    "imageAlt": "The Savoy — exterior view (representational, sourced from publicly indexed marketing material).",
    "courtOrdered": true,
    "mls": null
+  },
+  {
+   "type": "Condo",
+   "area": "Collingwood, Vancouver",
+   "region": "Vancouver",
+   "street": "5488 Cecil Street",
+   "price": "$425K",
+   "priceNum": 425000,
+   "sqft": "535 sq ft",
+   "image": "/images/foreclosure/listings/auto/cecil-hill.jpg",
+   "imageAlt": "Cecil Hill — exterior view (representational, sourced from publicly indexed marketing material).",
+   "courtOrdered": true,
+   "mls": null,
+   "lat": 49.2347443,
+   "lng": -123.0363915
   },
   {
    "type": "Condo",
@@ -199,6 +214,21 @@
    "imageAlt": "Vantage — exterior view (representational, sourced from publicly indexed marketing material).",
    "courtOrdered": true,
    "mls": null
+  },
+  {
+   "type": "Condo",
+   "area": "Downtown, Vancouver",
+   "region": "Vancouver",
+   "street": "889 Pacific Street",
+   "price": "$850K",
+   "priceNum": 850000,
+   "sqft": "636 sq ft",
+   "image": "/images/foreclosure/listings/auto/the-pacific.jpg",
+   "imageAlt": "The Pacific — exterior view (representational, sourced from publicly indexed marketing material).",
+   "courtOrdered": true,
+   "mls": null,
+   "lat": 49.2763659,
+   "lng": -123.1307785
   },
   {
    "type": "Townhouse",
@@ -434,21 +464,6 @@
   },
   {
    "type": "Condo",
-   "area": "Collingwood, Vancouver",
-   "region": "Vancouver",
-   "street": "5488 Cecil Street",
-   "price": "$425K",
-   "priceNum": 424900,
-   "sqft": "535 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": "R3140332",
-   "lat": 49.2347443,
-   "lng": -123.0363915
-  },
-  {
-   "type": "Condo",
    "area": "Knight, Vancouver",
    "region": "Vancouver",
    "street": "3996 Dumfries Street",
@@ -498,21 +513,6 @@
    "imageAlt": "",
    "courtOrdered": true,
    "mls": "R3122147"
-  },
-  {
-   "type": "Condo",
-   "area": "Downtown, Vancouver",
-   "region": "Vancouver",
-   "street": "889 Pacific Street",
-   "price": "$850K",
-   "priceNum": 849900,
-   "sqft": "636 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": "R3108518",
-   "lat": 49.2763659,
-   "lng": -123.1307785
   },
   {
    "type": "Land",

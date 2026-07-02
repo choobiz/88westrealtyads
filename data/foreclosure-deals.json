@@ -9,12 +9,12 @@
     "stats": {
       "scrapedTotal": 106,
       "scrapedInArea": 81,
-      "liveOnLp": 28,
+      "liveOnLp": 30,
       "featuredOnLp": 12,
-      "lockedOnLp": 16,
-      "pendingPhoto": 53,
+      "lockedOnLp": 18,
+      "pendingPhoto": 51,
       "manualOverrides": 6,
-      "autoSourcedPhotos": 35
+      "autoSourcedPhotos": 32
     }
   },
   "deals": [
@@ -49,6 +49,17 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/the-savoy.jpg",
       "imageAlt": "The Savoy — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
+    },
+    {
+      "type": "Condo",
+      "area": "Collingwood, Vancouver",
+      "street": "5488 Cecil Street",
+      "price": "$425K",
+      "sqft": "535 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/cecil-hill.jpg",
+      "imageAlt": "Cecil Hill — exterior view (representational, sourced from publicly indexed marketing material).",
       "featured": true
     },
     {
@@ -162,6 +173,17 @@
       "featured": false
     },
     {
+      "type": "Condo",
+      "area": "Downtown, Vancouver",
+      "street": "889 Pacific Street",
+      "price": "$850K",
+      "sqft": "636 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/the-pacific.jpg",
+      "imageAlt": "The Pacific — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
       "type": "Townhouse",
       "area": "Kitsilano, Vancouver",
       "street": "B5 1855 W 10th Avenue",
@@ -203,7 +225,7 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/the-max.jpg",
       "imageAlt": "The Max — exterior view (representational, sourced from publicly indexed marketing material).",
-      "featured": true
+      "featured": false
     },
     {
       "type": "Condo",

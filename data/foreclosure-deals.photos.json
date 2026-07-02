@@ -1,15 +1,10 @@
 {
-  "sourcedAt": "2026-06-11T19:42:16.970Z",
-  "totalProjects": 36,
-  "cached": 3,
-  "sourced": 32,
-  "failed": 1,
+  "sourcedAt": "2026-07-02T21:27:54.380Z",
+  "totalProjects": 32,
+  "cached": 30,
+  "sourced": 2,
+  "failed": 0,
   "photoMap": {
-    "Chloe Kerrisdale": {
-      "path": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
-      "source": "cached",
-      "slug": "chloe-kerrisdale"
-    },
     "Current At Water's Edge By Polygon": {
       "path": "/images/foreclosure/listings/auto/current-at-water-s-edge-by-polygon.jpg",
       "source": "cached",
@@ -22,265 +17,160 @@
     },
     "Parkcrest": {
       "path": "/images/foreclosure/listings/auto/parkcrest.jpg",
-      "source": "https://assets-listings.rew.ca/listing/brc_idx_rew/263127233/00_59771b64aba2a558c0af480ca9968f17.jpeg?auto=format&trim=auto&fit=crop&w=480&h=287&sharp=25",
-      "description": "A multi-story residential building with a distinctive curved design is situated along Patterson Avenue in Burnaby, surrounded by trees, with high-rise buildings and a construction crane visible in the background.",
-      "bytes": 61527,
-      "slug": "parkcrest",
-      "downloadedAt": "2026-06-11T19:34:02.398Z"
+      "source": "cached",
+      "slug": "parkcrest"
     },
     "Sanctuary": {
       "path": "/images/foreclosure/listings/auto/sanctuary.jpg",
-      "source": "https://www.mikestewart.ca/wp-content/uploads/2020/11/horseshoe-bay-residences-750x513.jpg",
-      "description": "A modern multi-story building with a docked marina in front, set against a densely forested hillside.",
-      "bytes": 77192,
-      "slug": "sanctuary",
-      "downloadedAt": "2026-06-11T19:34:11.530Z"
-    },
-    "Pacific Place Landmark": {
-      "path": "/images/foreclosure/listings/auto/pacific-place-landmark.jpg",
-      "source": "https://d2d56882uwwjpl.cloudfront.net/large_IMG_7522_1_023522a761.jpg",
-      "description": "A tall, modern glass-clad building with a sharp, rectangular shape dominates the street scene, surrounded by leafless trees and a cloudy sky.",
-      "bytes": 213290,
-      "slug": "pacific-place-landmark",
-      "downloadedAt": "2026-06-11T19:34:21.137Z"
+      "source": "cached",
+      "slug": "sanctuary"
     },
     "Dunbar": {
       "path": "/images/foreclosure/listings/auto/dunbar.jpg",
-      "source": "https://i.ytimg.com/vi/RzjrpmEBcUE/sddefault.jpg",
-      "description": "A modern multi-story building with large glass windows and a spacious outdoor seating area, illuminated against a dark blue evening sky, located on Dunbar W 38th Avenue in Vancouver.",
-      "bytes": 78339,
-      "slug": "dunbar",
-      "downloadedAt": "2026-06-11T19:34:36.767Z"
+      "source": "cached",
+      "slug": "dunbar"
     },
     "Westport": {
       "path": "/images/foreclosure/listings/auto/westport.jpg",
-      "source": "https://shared-s3.property.ca/public/images/archive_listings/r2405328/r2405328_1.jpg?v=1",
-      "description": "A multi-story residential building with a warm-toned exterior, surrounded by lush greenery and a well-maintained sidewalk, with a sign displaying \"1435 Westport\" in Vancouver.",
-      "bytes": 107002,
-      "slug": "westport",
-      "downloadedAt": "2026-06-11T19:34:56.955Z"
+      "source": "cached",
+      "slug": "westport"
     },
     "Corbeau By Mosaic": {
       "path": "/images/foreclosure/listings/auto/corbeau-by-mosaic.jpg",
-      "source": "https://iss-cdn.myrealpage.com/OdLb9ObzeKi8b3rsd3ctGNSmJhWNgdrsZDJRIHVfNEM/rs:auto:800:600:0/g:sm/aHR0cDovL3MzLmFtYXpvbmF3cy5jb20vbXJwLWxpc3RpbmdzLzQvNS8zLzEwODA5NzM1NC9jYzA3M2QyN2QzYThhZTBhMDc4Zjk1MGE1YjRlOTc2ZS5qcGVn",
-      "description": "A three-story townhouse with beige and brick exterior, blue shutters, and attached garage, situated next to a tree and greenery, with a no parking sign in front.",
-      "bytes": 153043,
-      "slug": "corbeau-by-mosaic",
-      "downloadedAt": "2026-06-11T19:35:15.975Z"
-    },
-    "Greencroft Estate": {
-      "path": "/images/foreclosure/listings/auto/greencroft-estate.jpg",
-      "source": "https://photos.prod.cirrussystem.net/110/39d0b479750c20b6b405117f9eb6a89c/2099916892.jpeg?d=l",
-      "description": "A large, whimsical house with a conical tower, multiple rounded and irregularly shaped windows, and a mix of dark and light exterior materials surrounded by a landscaped garden with a stone pathway.",
-      "bytes": 54655,
-      "slug": "greencroft-estate",
-      "downloadedAt": "2026-06-11T19:35:29.781Z"
-    },
-    "The Arc": {
-      "path": "/images/foreclosure/listings/auto/the-arc.jpg",
-      "source": "https://media.pixilinkserver.com/upload/house/images/condo/140229/4176759.jpg",
-      "description": "A modern, high-rise building with a distinctive archway connecting two sections, featuring curved balconies and a glass exterior, located at the intersection on Nelson Street in Vancouver.",
-      "bytes": 792980,
-      "slug": "the-arc",
-      "downloadedAt": "2026-06-11T19:35:57.690Z"
+      "source": "cached",
+      "slug": "corbeau-by-mosaic"
     },
     "Tennyson Mews": {
       "path": "/images/foreclosure/listings/auto/tennyson-mews.jpg",
-      "source": "https://assets-listings.rew.ca/listing/brc_idx_rew/263126044/00_6b6e1f467280c7c2c7b9438ebaf94dc0.jpeg?auto=format&trim=auto&fit=crop&w=480&h=287&sharp=25",
-      "description": "A two-story residential building with a light-colored exterior, surrounded by neatly trimmed bushes and a large tree, located on 1855 West 10th Avenue in Vancouver.",
-      "bytes": 52754,
-      "slug": "tennyson-mews",
-      "downloadedAt": "2026-06-11T19:36:15.952Z"
+      "source": "cached",
+      "slug": "tennyson-mews"
     },
     "Mirabel English Bay": {
       "path": "/images/foreclosure/listings/auto/mirabel-english-bay.jpg",
-      "source": "https://admin.homebaba.ca/media/2021_12_22_06_25_32_mirabel_exterior.webp",
-      "description": "A modern multi-story building with glass balconies and large windows overlooks a body of water, with a clear blue sky and distant shoreline in the background.",
-      "bytes": 104198,
-      "slug": "mirabel-english-bay",
-      "downloadedAt": "2026-06-11T19:36:28.588Z"
+      "source": "cached",
+      "slug": "mirabel-english-bay"
     },
     "Winford": {
       "path": "/images/foreclosure/listings/auto/winford.jpg",
-      "source": "https://iss-cdn.myrealpage.com/-G47H4E3qOHA36DDo6G8QqQUQhjHr-9He0RlR2hN80c/rs:auto:0:0:0/g:sm/aHR0cDovL3MzLmFtYXpvbmF3cy5jb20vbXJwLWxpc3RpbmdzLzIvMS8zLzEwNTA4ODMxMi9iOTBiODhjOTNhZjM4ZTQzM2FlODIzZGZhYjVjMDZmMS5qcGVn",
-      "description": "A tall modern apartment building with glass balconies and a distinctive yellow and blue exterior stands in front of an industrial area and bridge across a river, with a city skyline in the distance under a partly cloudy sky.",
-      "bytes": 887679,
-      "slug": "winford",
-      "downloadedAt": "2026-06-11T19:36:44.120Z"
+      "source": "cached",
+      "slug": "winford"
+    },
+    "The Pacific": {
+      "path": "/images/foreclosure/listings/auto/the-pacific.jpg",
+      "source": "https://cdn.liv.rent/3840x/filters:quality(70)/static_files/building/16143/1/building_61f4907ec8f72_3",
+      "description": "The image shows a modern urban exterior with high-rise buildings, trees, and a landscaped courtyard area, likely part of the Pacific 889 building complex on Pacific Street in Vancouver.",
+      "bytes": 594044,
+      "slug": "the-pacific",
+      "downloadedAt": "2026-07-02T21:27:39.883Z"
     },
     "Currents At The Water's Edge": {
       "path": "/images/foreclosure/listings/auto/currents-at-the-water-s-edge.jpg",
-      "source": "https://media.pixilinkserver.com/bccondosuploads/2021/12/14/currents_exterior_04_2280x1380-1440x872-1-1534x928_b_a.jpeg?w=800&h=600",
-      "description": "A modern residential building with glass balconies and large windows overlooks a lush, green area near water, reflecting a contemporary architectural style.",
-      "bytes": 100689,
-      "slug": "currents-at-the-water-s-edge",
-      "downloadedAt": "2026-06-11T19:37:09.380Z"
+      "source": "cached",
+      "slug": "currents-at-the-water-s-edge"
     },
     "Paris Block": {
       "path": "/images/foreclosure/listings/auto/paris-block.jpg",
-      "source": "https://d2d56882uwwjpl.cloudfront.net/large_53_West_Hastings_Street_the_paris_block_rent_it_furnished_2_807e2272e9.jpg",
-      "description": "The building features a historic stone facade with large windows and decorative columns, adjacent to a modern glass and metal structure, situated along a street with trees and pedestrians.",
-      "bytes": 129315,
-      "slug": "paris-block",
-      "downloadedAt": "2026-06-11T19:37:22.603Z"
+      "source": "cached",
+      "slug": "paris-block"
     },
     "Olivers Landing - Furry Creek": {
       "path": "/images/foreclosure/listings/auto/olivers-landing-furry-creek.jpg",
-      "source": "https://www.realestatenorthshore.com/media/CACHE/images/mls/7CwYxa-5/9fdb2d7b7ca0d0aa0196a8cd1a8a0bdb.webp?sm",
-      "description": "A row of large, multi-story beachfront houses with a lush green forested hillside and mountains in the background, situated along the coastline at Furry Creek in West Vancouver.",
-      "bytes": 62212,
-      "slug": "olivers-landing-furry-creek",
-      "downloadedAt": "2026-06-11T19:37:37.877Z"
+      "source": "cached",
+      "slug": "olivers-landing-furry-creek"
     },
     "Georgia Court": {
       "path": "/images/foreclosure/listings/auto/georgia-court.jpg",
-      "source": "https://www.thewesthavengroup.com/wp-content/uploads/2021/08/19579.jpeg",
-      "description": "A multi-story residential building with beige siding, large windows, and balconies, situated under a partly cloudy sky with leafless trees in front.",
-      "bytes": 206816,
-      "slug": "georgia-court",
-      "downloadedAt": "2026-06-11T19:37:54.475Z"
+      "source": "cached",
+      "slug": "georgia-court"
     },
     "The Max": {
       "path": "/images/foreclosure/listings/auto/the-max.jpg",
-      "source": "https://vadapm.com/sites/default/files/styles/scale_width_720/public/building-teasers/2110/max-928-beatty-street-vancouver-1_20.jpg.webp?itok=iw3w9Bp2",
-      "description": "A tall, modern glass-clad skyscraper with protruding balconies and a curved exterior, situated on Max Beatty Street in Vancouver, with a leafless tree and a 7 Days Coffee shop at its base.",
-      "bytes": 134734,
-      "slug": "the-max",
-      "downloadedAt": "2026-06-11T19:38:13.494Z"
+      "source": "cached",
+      "slug": "the-max"
     },
     "Apex": {
       "path": "/images/foreclosure/listings/auto/apex.jpg",
-      "source": "https://vadapm.com/sites/default/files/styles/scale_width_720/public/building-teasers/1923/apex-1500-fern-street-north-vancouver-1a_23.jpg.webp?itok=6pE7GCy4",
-      "description": "A modern high-rise building with a curved, glass facade and multiple balconies rises above the surrounding trees in a cityscape at sunset.",
-      "bytes": 81634,
-      "slug": "apex",
-      "downloadedAt": "2026-06-11T19:38:29.158Z"
+      "source": "cached",
+      "slug": "apex"
     },
     "Rhythm": {
       "path": "/images/foreclosure/listings/auto/rhythm.jpg",
-      "source": "https://birdsnestproperties.ca/wp-content/uploads/2020/01/3281-east-kent-av-north-vancouver-condo-09.jpg",
-      "description": "A modern, two-story building with large glass windows, wooden beams, and a sloped roof, situated next to a taller apartment building on a partly cloudy day.",
-      "bytes": 212161,
-      "slug": "rhythm",
-      "downloadedAt": "2026-06-11T19:38:45.693Z"
+      "source": "cached",
+      "slug": "rhythm"
     },
     "Patina": {
       "path": "/images/foreclosure/listings/auto/patina.jpg",
-      "source": "https://shared-s3.property.ca/public/images/buildings/2434/patina-1028-barclay-st-original-1.jpg",
-      "description": "A tall modern building with a rounded, glass exterior towers over historic stone and brick structures, surrounded by trees and parked cars in an urban setting.",
-      "bytes": 460278,
-      "slug": "patina",
-      "downloadedAt": "2026-06-11T19:39:01.163Z"
+      "source": "cached",
+      "slug": "patina"
     },
     "Wall One": {
       "path": "/images/foreclosure/listings/auto/wall-one.jpg",
-      "source": "https://assets-listings.rew.ca/listing/brc_idx_rew/263140614/00_de07855aa0c9da3a1da93dff930747dd.jpeg?auto=format&trim=auto&fit=crop&w=480&h=287&sharp=25",
-      "description": "A tall, modern skyscraper with a sleek, curved design dominates the Vancouver skyline near Nelson Street, surrounded by other high-rise buildings and lush green trees under a partly cloudy sky.",
-      "bytes": 58290,
-      "slug": "wall-one",
-      "downloadedAt": "2026-06-11T19:39:17.255Z"
+      "source": "cached",
+      "slug": "wall-one"
     },
     "Laguna Parkside": {
       "path": "/images/foreclosure/listings/auto/laguna-parkside.jpg",
-      "source": "https://d2d56882uwwjpl.cloudfront.net/vancouver/2019/08/building-1.jpg",
-      "description": "The image shows the entrance to the Laguna Parkside building at 1925 Alberni Street in Vancouver, with two small trees, colorful flower beds, and a modern glass and concrete façade.",
-      "bytes": 81172,
-      "slug": "laguna-parkside",
-      "downloadedAt": "2026-06-11T19:39:34.324Z"
+      "source": "cached",
+      "slug": "laguna-parkside"
     },
     "Ingastown": {
       "path": "/images/foreclosure/listings/auto/ingastown.jpg",
-      "source": "https://d2d56882uwwjpl.cloudfront.net/vancouver/2017/03/building-exterior-1024x768.jpg",
-      "description": "A modern multi-story building with large glass windows and a dark exterior, located at 150 E Cordova Street in Vancouver, with pedestrians walking by and cars parked on the street during dusk or early evening.",
-      "bytes": 251889,
-      "slug": "ingastown",
-      "downloadedAt": "2026-06-11T19:39:50.252Z"
+      "source": "cached",
+      "slug": "ingastown"
     },
     "Alberni By Kengo Kuma": {
       "path": "/images/foreclosure/listings/auto/alberni-by-kengo-kuma.jpg",
-      "source": "https://photos.zillowstatic.com/fp/044e9268d26c261570f68d266cd07a8c-cc_ft_960.jpg",
-      "description": "The building designed by Kengo Kuma features an innovative, twisting architectural form with a facade of angled, layered elements, standing tall at the intersection of Alberni Street and Vancouver streets, surrounded by other modern high-rises.",
-      "bytes": 220032,
-      "slug": "alberni-by-kengo-kuma",
-      "downloadedAt": "2026-06-11T19:39:56.513Z"
+      "source": "cached",
+      "slug": "alberni-by-kengo-kuma"
     },
     "Sophia Living": {
       "path": "/images/foreclosure/listings/auto/sophia-living.jpg",
-      "source": "https://static.youlive.ca/_static/building/13768/logo/logo-i8yz.jpg",
-      "description": "A multi-story residential building with beige and light green exterior siding, black roof, and large windows, situated at the corner of Elgin and Clarke Streets in Port Moody, with trees, a sidewalk, and a parked car nearby.",
-      "bytes": 122497,
-      "slug": "sophia-living",
-      "downloadedAt": "2026-06-11T19:40:11.194Z"
+      "source": "cached",
+      "slug": "sophia-living"
     },
     "Country Woods/Hillview": {
       "path": "/images/foreclosure/listings/auto/country-woods-hillview.jpg",
-      "source": "https://photos.zillowstatic.com/fp/2987679f5d64fe22b2734fed577a9da9-cc_ft_960.jpg",
-      "description": "A charming two-story house with three dormer windows and a front porch, surrounded by tall trees and lush greenery in a rural area of Surrey.",
-      "bytes": 234619,
-      "slug": "country-woods-hillview",
-      "downloadedAt": "2026-06-11T19:40:27.837Z"
+      "source": "cached",
+      "slug": "country-woods-hillview"
     },
     "Crest": {
       "path": "/images/foreclosure/listings/auto/crest.jpg",
-      "source": "https://photos.zolo.ca/7-7716-207-street-langley-R3130449-1-p.jpg?2026-06-07+17%3A23%3A42",
-      "description": "A modern, multi-story residential building with a combination of dark gray and light gray exterior siding, featuring large windows, small balconies with black railings, and a black picket fence along the front sidewalk.",
-      "bytes": 206635,
-      "slug": "crest",
-      "downloadedAt": "2026-06-11T19:40:42.756Z"
+      "source": "cached",
+      "slug": "crest"
     },
     "Vantage": {
       "path": "/images/foreclosure/listings/auto/vantage.jpg",
-      "source": "https://cdn.repliers.io/rebgv/IMG-R3002256_1.jpg?width=32010",
-      "description": "A modern multi-story building with gray and white siding, featuring balconies with black railings, is surrounded by greenery and trees, with a sign in front indicating the address as 6188 141 Street and additional signage for units for sale.",
-      "bytes": 477253,
-      "slug": "vantage",
-      "downloadedAt": "2026-06-11T19:40:57.155Z"
-    },
-    "Springfield": {
-      "path": "/images/foreclosure/listings/auto/springfield.jpg",
-      "source": "https://shared-s3.property.ca/public/images/buildings/6988/springfield-village-8676-158-st-original-1.jpg",
-      "description": "A row of modern, multi-story townhouses with balconies and awnings, green trees in front, and a gray van parked on the street under a clear blue sky.",
-      "bytes": 542344,
-      "slug": "springfield",
-      "downloadedAt": "2026-06-11T19:41:12.659Z"
+      "source": "cached",
+      "slug": "vantage"
     },
     "Palette On The Park": {
       "path": "/images/foreclosure/listings/auto/palette-on-the-park.jpg",
-      "source": "https://media.pixilinkserver.com/bccondosuploads/2018/04/23/12711_64_ave_surrey_bc_v3w_4b4_canada_4_a.png?h=500&w=700",
-      "description": "A two-story building with a welcoming front porch, surrounded by lush greenery and vibrant flower beds, has a blue sign indicating it is \"Palette on the Park\" located at 12711 64 Avenue in Surrey.",
-      "bytes": 669453,
-      "slug": "palette-on-the-park",
-      "downloadedAt": "2026-06-11T19:41:28.357Z"
+      "source": "cached",
+      "slug": "palette-on-the-park"
     },
     "Altadena": {
       "path": "/images/foreclosure/listings/auto/altadena.jpg",
-      "source": "https://shared-s3.property.ca/public/images/buildings/2316/altadena-1238-burrard-st-original-1.jpg",
-      "description": "A tall beige residential building with multiple balconies and large windows is situated on Burrard Street in Vancouver, with trees and storefronts at the street level.",
-      "bytes": 623304,
-      "slug": "altadena",
-      "downloadedAt": "2026-06-11T19:41:45.490Z"
+      "source": "cached",
+      "slug": "altadena"
     },
     "Hyland Creek": {
       "path": "/images/foreclosure/listings/auto/hyland-creek.jpg",
-      "source": "https://media.pixilinkserver.com/upload/house/images/condo/7807/2698139.jpg?h=500&w=700",
-      "description": "A large, two-story house with a three-car garage, white siding, brick accents, a balcony above the garage, and a well-maintained front yard with green grass and red and green shrubs.",
-      "bytes": 117396,
-      "slug": "hyland-creek",
-      "downloadedAt": "2026-06-11T19:42:01.292Z"
+      "source": "cached",
+      "slug": "hyland-creek"
+    },
+    "Cecil Hill": {
+      "path": "/images/foreclosure/listings/auto/cecil-hill.jpg",
+      "source": "https://media.pixilinkserver.com/bccondosuploads/2012/03/14/screen_shot_2012-03-14_at_43400_pm-small.png?w=800&h=600",
+      "description": "The building at Cecil Hill 5488 Cecil Street Vancouver features a modern exterior with large glass windows and a dark-colored facade, situated on a street with a parked car and banners hanging from a lamppost.",
+      "bytes": 542445,
+      "slug": "cecil-hill",
+      "downloadedAt": "2026-07-02T21:27:54.379Z"
     },
     "The Savoy": {
       "path": "/images/foreclosure/listings/auto/the-savoy.jpg",
-      "source": "https://media.pixilinkserver.com/upload/house/images/condo/691/2001069.jpg",
-      "description": "The exterior of a multi-story residential building with light-colored siding, a covered entrance, and surrounding planters, located at 12739 72 Avenue in Surrey.",
-      "bytes": 951972,
-      "slug": "the-savoy",
-      "downloadedAt": "2026-06-11T19:42:16.968Z"
+      "source": "cached",
+      "slug": "the-savoy"
     }
   },
-  "failures": [
-    {
-      "name": "The Pacific",
-      "reason": "The operation was aborted due to timeout"
-    }
-  ]
+  "failures": []
 }

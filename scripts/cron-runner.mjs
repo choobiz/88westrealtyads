@@ -20,9 +20,25 @@
 import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { readFileSync, existsSync } from "node:fs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = join(__dirname, "..");
+
+// Load REPO_ROOT/.env (git-ignored) so secrets like TAVILY_API_KEY reach the
+// spawned scrapers without being committed or hardcoded in ecosystem.config.cjs.
+const envFile = join(REPO_ROOT, ".env");
+if (existsSync(envFile)) {
+  for (const line of readFileSync(envFile, "utf8").split("\n")) {
+    const t = line.trim();
+    if (!t || t.startsWith("#")) continue;
+    const i = t.indexOf("=");
+    if (i < 0) continue;
+    const k = t.slice(0, i).trim();
+    const v = t.slice(i + 1).trim().replace(/^['"]|['"]$/g, "");
+    if (!process.env[k]) process.env[k] = v;
+  }
+}
 
 const ENABLE_CRON = (process.env.ENABLE_CRON ?? "true").toLowerCase() !== "false";
 
@@ -30,6 +46,12 @@ const SCRAPERS = [
   { name: "developer-deals",     script: "scripts/scrape-deals.mjs" },
   { name: "foreclosure-stats",   script: "scripts/scrape-foreclosure-stats.mjs" },
   { name: "foreclosure-deals",   script: "scripts/scrape-foreclosure-deals.mjs" },
+  // Photo sourcing must run AFTER the deals scrape and BEFORE curate — it
+  // sources exterior photos (Tavily) for newly-scraped NAMED buildings so they
+  // land in the shown set, not pending. Needs TAVILY_API_KEY (loaded from .env
+  // above). Nameless plain-address houses can't be matched and stay pending
+  // (they still appear ungated in Variant D's list/map).
+  { name: "foreclosure-photos",  script: "scripts/source-listing-photos.mjs" },
   // Curate must run AFTER the foreclosure-deals scraper — it joins the fresh
   // scraped dump + photos into data/foreclosure-deals.json (the LP's source of
   // truth). Without this the LP listings never refresh, only the raw dump does.
