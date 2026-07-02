@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { ArrowRight, Lock, Sparkles, Eye } from "lucide-react";
 import { useForeclosureLeadModal } from "./ForeclosureLeadProvider";
+import BrandedPlaceholder from "./BrandedPlaceholder";
 import dealsData from "@/data/foreclosure-deals.json";
 import foreclosureStats from "@/data/foreclosure-stats.json";
 
@@ -179,21 +180,8 @@ function InventoryDealCard({
             ].join(" ")}
           />
         ) : (
-          <div
-            className={[
-              "absolute inset-0 bg-gradient-to-br from-eightyw-blue via-eightyw-blue to-[#0a1f3a] flex items-center justify-center",
-              locked ? "blur-md" : "",
-            ].join(" ")}
-            aria-label={`${l.type} in ${l.area} — photo and address shared on the intro call`}
-          >
-            <div className="text-center px-5">
-              <p className="text-white/55 text-[10px] font-semibold uppercase tracking-[3px] mb-2">
-                Photo + full address
-              </p>
-              <p className="text-white text-sm font-semibold tracking-wide">
-                on intro call
-              </p>
-            </div>
+          <div className={locked ? "blur-md absolute inset-0" : "absolute inset-0"} aria-label={`${l.type} in ${l.area} — photo shared on the intro call`}>
+            <BrandedPlaceholder type={l.type} area={l.area} />
           </div>
         )}
 

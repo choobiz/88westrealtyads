@@ -128,6 +128,7 @@ function pickFeatured(sortedDeals) {
 
   for (const d of sortedDeals) {
     if (featured.length >= FEATURED_COUNT) break;
+    if (!d.image) continue; // never feature a placeholder — keep the unblurred hero tier on real photos
     const isSurrey = d.area.endsWith(", Surrey");
     if (isSurrey && surreyCount >= FEATURED_SURREY_CAP) continue;
     if ((perArea[d.area] || 0) >= FEATURED_MAX_PER_AREA) continue;
@@ -196,11 +197,13 @@ async function main() {
       _priceNum: l.price,
     };
 
-    if (image) {
-      live.push(deal);
-    } else {
-      pending.push(deal);
-    }
+    // 2026-07-02: photo-less deals now SHOW too, with a branded 88 West
+    // placeholder (rendered by the LP component when image === ""), so the LP
+    // surfaces the full inventory instead of hiding photo-less listings. They
+    // never enter the unblurred featured tier (see pickFeatured). pending.json
+    // is still written as the ops "needs a real photo" worklist.
+    live.push(deal);
+    if (!image) pending.push(deal);
   }
 
   // Sort live deals by ascending price (entry-level first, anchors trust).
@@ -231,9 +234,11 @@ async function main() {
         "Realtyvibe). Photos resolved in this priority: (1) operator-curated manual " +
         "overrides — Paragon-authorized per-listing photos OR operator-supplied marketing-" +
         "material URLs, (2) automated project-name search via Tavily on publicly indexed " +
-        "developer marketing pages, falling back to (3) listings without resolvable photos " +
-        "are pending operator URL supply and DO NOT appear on the LP until a photo is " +
-        "available (see foreclosure-deals.pending.json). Across all displayed listings: " +
+        "developer marketing pages, falling back to (3) listings without a resolvable photo " +
+        "appear with a branded 88 West placeholder graphic (NO third-party image) and are " +
+        "never featured in the unblurred hero tier; they remain listed in " +
+        "foreclosure-deals.pending.json as the ops worklist for supplying a real photo URL. " +
+        "Across all displayed listings: " +
         "street numbers withheld (shared on intro call); MLS numbers omitted from public " +
         "cards (retained in research dump); no listing remarks; no agent names. Flagged for " +
         "managing-broker awareness (Shirin Saleh, licence #X031527). Replace pipeline with " +

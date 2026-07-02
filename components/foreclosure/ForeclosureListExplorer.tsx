@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import { MapPin, List as ListIcon, ArrowUpDown, X, ArrowRight } from "lucide-react";
 import { useForeclosureLeadModal } from "./ForeclosureLeadProvider";
+import BrandedPlaceholder from "./BrandedPlaceholder";
 import explorerData from "@/data/foreclosure-explorer-deals.json";
 
 type Deal = {
@@ -195,9 +196,7 @@ function DealRow({ d, onClick }: { d: Deal; onClick: () => void }) {
         {d.image ? (
           <Image src={d.image} alt={d.imageAlt} fill sizes="112px" className="object-cover" />
         ) : (
-          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-eightyw-blue to-[#0a1f3a]">
-            <span className="text-white/60 text-[9px] font-semibold uppercase tracking-wider text-center px-2">Photo on call</span>
-          </div>
+          <BrandedPlaceholder type={d.type} size="row" />
         )}
       </div>
       <div className="flex-1 p-3 min-w-0">

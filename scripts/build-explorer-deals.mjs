@@ -81,9 +81,15 @@ function normalize(d) {
 }
 
 async function main() {
+  // foreclosure-deals.json (shown) now contains the FULL curated set (photo-less
+  // deals included, with placeholders) — so it's the single source of truth.
+  // Pending is only a fallback for any photo-less deal not already in shown.
   const shown = readJson(SHOWN, { deals: [] }).deals || [];
   const pendingRaw = readJson(PENDING, { listings: [] });
-  const pending = pendingRaw.listings || pendingRaw.deals || [];
+  const shownKeys = new Set(shown.map((d) => `${d.street}|${d.area}`.toLowerCase().replace(/\s+/g, " ").trim()));
+  const pending = (pendingRaw.listings || pendingRaw.deals || []).filter(
+    (d) => !shownKeys.has(`${d.street}|${d.area}`.toLowerCase().replace(/\s+/g, " ").trim()),
+  );
   // Retry nulls: keep only successful coords in the persisted cache so failed
   // geocodes get another chance next build.
   const rawCache = readJson(GEOCACHE, {});
@@ -92,15 +98,10 @@ async function main() {
 
   const merged = [...shown, ...pending].map(normalize);
 
-  // Dedup by mls, else street+area.
-  const seen = new Set();
-  const deals = [];
-  for (const d of merged) {
-    const k = (d.mls || `${d.street}|${d.area}`).toLowerCase();
-    if (seen.has(k)) continue;
-    seen.add(k);
-    deals.push(d);
-  }
+  // No dedup: `shown` is already the curator's canonical unique set (distinct
+  // same-building units are intentionally separate), and `pending` was filtered
+  // to non-overlapping deals above.
+  const deals = merged;
 
   let geocoded = 0;
   for (const d of deals) {

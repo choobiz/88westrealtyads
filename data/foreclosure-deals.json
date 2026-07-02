@@ -4,20 +4,31 @@
   "compliance": {
     "status": "operator-override",
     "date": "2026-07-02",
-    "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period before GVR WebAPI authorization. Listing data sourced from multiple public foreclosure aggregator pages (Simon Clayton, Macnabs, Realtyvibe). Photos resolved in this priority: (1) operator-curated manual overrides — Paragon-authorized per-listing photos OR operator-supplied marketing-material URLs, (2) automated project-name search via Tavily on publicly indexed developer marketing pages, falling back to (3) listings without resolvable photos are pending operator URL supply and DO NOT appear on the LP until a photo is available (see foreclosure-deals.pending.json). Across all displayed listings: street numbers withheld (shared on intro call); MLS numbers omitted from public cards (retained in research dump); no listing remarks; no agent names. Flagged for managing-broker awareness (Shirin Saleh, licence #X031527). Replace pipeline with the GVR-feed-backed source once the WebAPI is authorized.",
+    "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period before GVR WebAPI authorization. Listing data sourced from multiple public foreclosure aggregator pages (Simon Clayton, Macnabs, Realtyvibe). Photos resolved in this priority: (1) operator-curated manual overrides — Paragon-authorized per-listing photos OR operator-supplied marketing-material URLs, (2) automated project-name search via Tavily on publicly indexed developer marketing pages, falling back to (3) listings without a resolvable photo appear with a branded 88 West placeholder graphic (NO third-party image) and are never featured in the unblurred hero tier; they remain listed in foreclosure-deals.pending.json as the ops worklist for supplying a real photo URL. Across all displayed listings: street numbers withheld (shared on intro call); MLS numbers omitted from public cards (retained in research dump); no listing remarks; no agent names. Flagged for managing-broker awareness (Shirin Saleh, licence #X031527). Replace pipeline with the GVR-feed-backed source once the WebAPI is authorized.",
     "replaceWith": "GVR WebAPI feed — see docs/gvr-database-schema.md",
     "stats": {
       "scrapedTotal": 106,
-      "scrapedInArea": 81,
-      "liveOnLp": 30,
+      "scrapedInArea": 132,
+      "liveOnLp": 81,
       "featuredOnLp": 12,
-      "lockedOnLp": 18,
+      "lockedOnLp": 69,
       "pendingPhoto": 51,
       "manualOverrides": 6,
       "autoSourcedPhotos": 32
     }
   },
   "deals": [
+    {
+      "type": "Condo",
+      "area": "Granville, Richmond",
+      "street": "7280 Lindsay Road",
+      "price": "$176K",
+      "sqft": "634 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
     {
       "type": "Condo",
       "area": "Downtown, Vancouver",
@@ -28,6 +39,17 @@
       "image": "/images/foreclosure/listings/auto/ingastown.jpg",
       "imageAlt": "Ingastown — exterior view (representational, sourced from publicly indexed marketing material).",
       "featured": true
+    },
+    {
+      "type": "Condo",
+      "area": "Sullivan Heights, Burnaby",
+      "street": "9280 Salish Court",
+      "price": "$395K",
+      "sqft": "730 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
     },
     {
       "type": "Condo",
@@ -119,6 +141,39 @@
     },
     {
       "type": "Condo",
+      "area": "Knight, Vancouver",
+      "street": "3996 Dumfries Street",
+      "price": "$599K",
+      "sqft": "561 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "South Marine, Vancouver",
+      "street": "3138 Riverwalk Avenue",
+      "price": "$675K",
+      "sqft": "933 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "South Marine, Vancouver",
+      "street": "3281 E Kent Avenue North",
+      "price": "$699K",
+      "sqft": "915 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "Condo",
       "area": "South Marine, Vancouver",
       "street": "3188 Riverwalk Avenue",
       "price": "$710K",
@@ -162,6 +217,17 @@
       "featured": true
     },
     {
+      "type": "Land",
+      "area": "Bolivar Heights, Surrey",
+      "street": "115 Avenue",
+      "price": "$825K",
+      "sqft": "4,312 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
       "type": "Townhouse",
       "area": "Sullivan Station, Surrey",
       "street": "6188 141 Street",
@@ -184,6 +250,39 @@
       "featured": false
     },
     {
+      "type": "Land",
+      "area": "Bolivar Heights, Surrey",
+      "street": "138a Street",
+      "price": "$855K",
+      "sqft": "4,570 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "Land",
+      "area": "Bolivar Heights, Surrey",
+      "street": "138a Street",
+      "price": "$860K",
+      "sqft": "4,975 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "Lynn Valley, North Vancouver",
+      "street": "2651 Library Lane",
+      "price": "$865K",
+      "sqft": "930 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
       "type": "Townhouse",
       "area": "Kitsilano, Vancouver",
       "street": "B5 1855 W 10th Avenue",
@@ -193,6 +292,17 @@
       "image": "/images/foreclosure/listings/auto/tennyson-mews.jpg",
       "imageAlt": "Tennyson Mews — exterior view (representational, sourced from publicly indexed marketing material).",
       "featured": true
+    },
+    {
+      "type": "Land",
+      "area": "Bolivar Heights, Surrey",
+      "street": "138a Street",
+      "price": "$900K",
+      "sqft": "6,656 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
     },
     {
       "type": "Condo",
@@ -217,6 +327,28 @@
       "featured": true
     },
     {
+      "type": "Land",
+      "area": "Bolivar Heights, Surrey",
+      "street": "114 Avenue",
+      "price": "$950K",
+      "sqft": "3,995 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "Coal Harbour, Vancouver",
+      "street": "1228 W Hastings Street",
+      "price": "$960K",
+      "sqft": "926 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
       "type": "Townhouse",
       "area": "Yaletown, Vancouver",
       "street": "Beatty Street",
@@ -236,6 +368,17 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/apex.jpg",
       "imageAlt": "Apex — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "West Newton, Surrey",
+      "street": "79a Avenue",
+      "price": "$1.06M",
+      "sqft": "2,392 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
       "featured": false
     },
     {
@@ -261,6 +404,28 @@
       "featured": false
     },
     {
+      "type": "Land",
+      "area": "West Newton, Surrey",
+      "street": "124 Street",
+      "price": "$1.15M",
+      "sqft": "—",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "S.W. Marine, Vancouver",
+      "street": "8588 Cornish Street",
+      "price": "$1.20M",
+      "sqft": "1,325 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
       "type": "Condo",
       "area": "West End, Vancouver",
       "street": "1925 Alberni Street",
@@ -283,6 +448,17 @@
       "featured": false
     },
     {
+      "type": "House",
+      "area": "Queen Mary Park Surrey, Surrey",
+      "street": "84a Avenue",
+      "price": "$1.25M",
+      "sqft": "2,820 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
       "type": "Condo",
       "area": "Coal Harbour, Vancouver",
       "street": "1011 W Cordova Street",
@@ -294,6 +470,28 @@
       "featured": false
     },
     {
+      "type": "House",
+      "area": "Renfrew, Vancouver",
+      "street": "Venables Street",
+      "price": "$1.30M",
+      "sqft": "1,492 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Cloverdale BC, Surrey",
+      "street": "62 Avenue",
+      "price": "$1.30M",
+      "sqft": "2,779 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
       "type": "Condo",
       "area": "West End, Vancouver",
       "street": "1365 Davie Street",
@@ -302,6 +500,94 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/mirabel-english-bay.jpg",
       "imageAlt": "Mirabel English Bay — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Queen Mary Park Surrey, Surrey",
+      "street": "84a Avenue",
+      "price": "$1.35M",
+      "sqft": "4,194 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Bear Creek Green Timbers, Surrey",
+      "street": "91 Avenue",
+      "price": "$1.35M",
+      "sqft": "2,749 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "South Vancouver, Vancouver",
+      "street": "E 54th Avenue",
+      "price": "$1.40M",
+      "sqft": "2,362 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Bear Creek Green Timbers, Surrey",
+      "street": "82 Avenue",
+      "price": "$1.50M",
+      "sqft": "4,065 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "West Newton, Surrey",
+      "street": "75a Avenue",
+      "price": "$1.50M",
+      "sqft": "3,726 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Whalley, Surrey",
+      "street": "132a Street",
+      "price": "$1.50M",
+      "sqft": "1,045 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Whalley, Surrey",
+      "street": "132a Street",
+      "price": "$1.50M",
+      "sqft": "1,171 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "South Arm, Richmond",
+      "street": "Rosebank Crescent",
+      "price": "$1.52M",
+      "sqft": "2,179 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
       "featured": false
     },
     {
@@ -317,6 +603,160 @@
     },
     {
       "type": "House",
+      "area": "Renfrew, Vancouver",
+      "street": "E 2nd Avenue",
+      "price": "$1.60M",
+      "sqft": "2,418 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Steveston South, Richmond",
+      "street": "Wescott Street",
+      "price": "$1.60M",
+      "sqft": "2,709 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Simon Fraser Univer., Burnaby",
+      "street": "Augusta Avenue",
+      "price": "$1.65M",
+      "sqft": "2,519 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Marpole, Vancouver",
+      "street": "W 64th Avenue",
+      "price": "$1.68M",
+      "sqft": "758 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "Condo",
+      "area": "Point Grey, Vancouver",
+      "street": "3639 W 16th Avenue",
+      "price": "$1.68M",
+      "sqft": "1,244 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "East Cambie, Richmond",
+      "street": "Aztec Street",
+      "price": "$1.70M",
+      "sqft": "3,303 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Guildford, Surrey",
+      "street": "96 Avenue",
+      "price": "$1.70M",
+      "sqft": "3,546 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Parkcrest, Burnaby",
+      "street": "Braelawn Drive",
+      "price": "$1.84M",
+      "sqft": "5,006 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Granville, Richmond",
+      "street": "Livingstone Place",
+      "price": "$1.88M",
+      "sqft": "2,747 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Hazelmere, Surrey",
+      "street": "184 Street",
+      "price": "$2.30M",
+      "sqft": "2,819 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Whalley, Surrey",
+      "street": "138 Street",
+      "price": "$2.30M",
+      "sqft": "1,056 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Central Park BS, Burnaby",
+      "street": "Halley Avenue",
+      "price": "$2.35M",
+      "sqft": "2,692 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Renfrew, Vancouver",
+      "street": "&amp; 2577 Parker Street",
+      "price": "$2.40M",
+      "sqft": "2,468 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Fraserview, Vancouver",
+      "street": "E 60th Avenue",
+      "price": "$2.41M",
+      "sqft": "4,075 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
       "area": "Grandview Surrey, Surrey",
       "street": "Hillview Place",
       "price": "$2.48M",
@@ -324,6 +764,17 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/country-woods-hillview.jpg",
       "imageAlt": "Country Woods/Hillview — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Renfrew Heights, Vancouver",
+      "street": "Vanness Avenue",
+      "price": "$2.50M",
+      "sqft": "3,097 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
       "featured": false
     },
     {
@@ -339,6 +790,61 @@
     },
     {
       "type": "House",
+      "area": "Marpole, Vancouver",
+      "street": "W 60th Avenue",
+      "price": "$2.69M",
+      "sqft": "3,072 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "McLennan, Richmond",
+      "street": "Westminster Highway",
+      "price": "$2.70M",
+      "sqft": "7,105 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "MacKenzie Heights, Vancouver",
+      "street": "W 33 Avenue",
+      "price": "$2.73M",
+      "sqft": "3,780 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Renfrew Heights, Vancouver",
+      "street": "Vanness Avenue",
+      "price": "$2.92M",
+      "sqft": "3,218 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Dunbar, Vancouver",
+      "street": "W 36th Avenue",
+      "price": "$3.00M",
+      "sqft": "3,893 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
       "area": "Dunbar, Vancouver",
       "street": "W 38th Avenue",
       "price": "$3.48M",
@@ -346,6 +852,61 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/dunbar.jpg",
       "imageAlt": "Dunbar — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Gilmore, Richmond",
+      "street": "Gilbert Road",
+      "price": "$5.99M",
+      "sqft": "16,289 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Oakridge, Vancouver",
+      "street": "W 41st Avenue",
+      "price": "$6.00M",
+      "sqft": "2,770 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Oakridge, Vancouver",
+      "street": "W 41st Avenue",
+      "price": "$6.00M",
+      "sqft": "2,196 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "University, Vancouver",
+      "street": "College Highroad",
+      "price": "$9.00M",
+      "sqft": "7,454 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "Land",
+      "area": "Fleetwood Tynehead, Surrey",
+      "street": "+ 17101 80 Avenue",
+      "price": "$11.6M",
+      "sqft": "—",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
       "featured": false
     }
   ]

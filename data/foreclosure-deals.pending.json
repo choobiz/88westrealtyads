@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T21:28:14.385Z",
+  "generatedAt": "2026-07-02T21:42:09.455Z",
   "note": "Listings scraped + in-area but waiting on a photo URL. Operator action: supply a photo URL for any of these by adding an entry to data/foreclosure-deals.manual.json keyed by `mls_number`. Re-run `node scripts/curate-deals.mjs` to move them to live.",
   "count": 51,
   "listings": [
@@ -15,7 +15,8 @@
       "_mls": "R3116809",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 176000
+      "_priceNum": 176000,
+      "featured": false
     },
     {
       "type": "Condo",
@@ -29,7 +30,8 @@
       "_mls": "R3129279",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 395000
+      "_priceNum": 395000,
+      "featured": false
     },
     {
       "type": "Condo",
@@ -43,7 +45,8 @@
       "_mls": "R3100244",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 599000
+      "_priceNum": 599000,
+      "featured": false
     },
     {
       "type": "Condo",
@@ -57,7 +60,8 @@
       "_mls": "R3081811",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 675000
+      "_priceNum": 675000,
+      "featured": false
     },
     {
       "type": "Condo",
@@ -71,7 +75,8 @@
       "_mls": "R3114944",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 698880
+      "_priceNum": 698880,
+      "featured": false
     },
     {
       "type": "Land",
@@ -85,7 +90,8 @@
       "_mls": "R3122147",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 824900
+      "_priceNum": 824900,
+      "featured": false
     },
     {
       "type": "Land",
@@ -99,7 +105,8 @@
       "_mls": "R3118710",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 855000
+      "_priceNum": 855000,
+      "featured": false
     },
     {
       "type": "Land",
@@ -113,7 +120,8 @@
       "_mls": "R3120714",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 859900
+      "_priceNum": 859900,
+      "featured": false
     },
     {
       "type": "Condo",
@@ -127,7 +135,8 @@
       "_mls": "R3128217",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 865000
+      "_priceNum": 865000,
+      "featured": false
     },
     {
       "type": "Land",
@@ -141,7 +150,8 @@
       "_mls": "R3120717",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 900000
+      "_priceNum": 900000,
+      "featured": false
     },
     {
       "type": "Land",
@@ -155,7 +165,8 @@
       "_mls": "R3120719",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 950000
+      "_priceNum": 950000,
+      "featured": false
     },
     {
       "type": "Condo",
@@ -169,7 +180,8 @@
       "_mls": "R3121143",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 960000
+      "_priceNum": 960000,
+      "featured": false
     },
     {
       "type": "House",
@@ -183,7 +195,8 @@
       "_mls": "R3129226",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1060000
+      "_priceNum": 1060000,
+      "featured": false
     },
     {
       "type": "Land",
@@ -197,7 +210,8 @@
       "_mls": "R3119556",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1150000
+      "_priceNum": 1150000,
+      "featured": false
     },
     {
       "type": "Condo",
@@ -211,7 +225,8 @@
       "_mls": "R3118399",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1199000
+      "_priceNum": 1199000,
+      "featured": false
     },
     {
       "type": "House",
@@ -225,7 +240,8 @@
       "_mls": "R3103236",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1250000
+      "_priceNum": 1250000,
+      "featured": false
     },
     {
       "type": "House",
@@ -239,7 +255,8 @@
       "_mls": "R3087113",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1299000
+      "_priceNum": 1299000,
+      "featured": false
     },
     {
       "type": "House",
@@ -253,7 +270,8 @@
       "_mls": "R3135045",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1299000
+      "_priceNum": 1299000,
+      "featured": false
     },
     {
       "type": "House",
@@ -267,7 +285,8 @@
       "_mls": "R3104058",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1350000
+      "_priceNum": 1350000,
+      "featured": false
     },
     {
       "type": "House",
@@ -281,7 +300,8 @@
       "_mls": "R3137627",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1350000
+      "_priceNum": 1350000,
+      "featured": false
     },
     {
       "type": "House",
@@ -295,7 +315,8 @@
       "_mls": "R3130656",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1399000
+      "_priceNum": 1399000,
+      "featured": false
     },
     {
       "type": "House",
@@ -309,7 +330,8 @@
       "_mls": "R3094119",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1498000
+      "_priceNum": 1498000,
+      "featured": false
     },
     {
       "type": "House",
@@ -323,7 +345,8 @@
       "_mls": "R3134123",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1500000
+      "_priceNum": 1500000,
+      "featured": false
     },
     {
       "type": "House",
@@ -337,7 +360,8 @@
       "_mls": "R3121367",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1500000
+      "_priceNum": 1500000,
+      "featured": false
     },
     {
       "type": "House",
@@ -351,7 +375,8 @@
       "_mls": "R3121393",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1500000
+      "_priceNum": 1500000,
+      "featured": false
     },
     {
       "type": "House",
@@ -365,7 +390,8 @@
       "_mls": "R3140025",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1525000
+      "_priceNum": 1525000,
+      "featured": false
     },
     {
       "type": "House",
@@ -379,7 +405,8 @@
       "_mls": "R3122588",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1598000
+      "_priceNum": 1598000,
+      "featured": false
     },
     {
       "type": "House",
@@ -393,7 +420,8 @@
       "_mls": "R3082521",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1598880
+      "_priceNum": 1598880,
+      "featured": false
     },
     {
       "type": "House",
@@ -407,7 +435,8 @@
       "_mls": "R3090788",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1650000
+      "_priceNum": 1650000,
+      "featured": false
     },
     {
       "type": "House",
@@ -421,7 +450,8 @@
       "_mls": "R3123809",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1679000
+      "_priceNum": 1679000,
+      "featured": false
     },
     {
       "type": "Condo",
@@ -435,7 +465,8 @@
       "_mls": "R3028601",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1680000
+      "_priceNum": 1680000,
+      "featured": false
     },
     {
       "type": "House",
@@ -449,7 +480,8 @@
       "_mls": "R3110870",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1699000
+      "_priceNum": 1699000,
+      "featured": false
     },
     {
       "type": "House",
@@ -463,7 +495,8 @@
       "_mls": "R3084922",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1700000
+      "_priceNum": 1700000,
+      "featured": false
     },
     {
       "type": "House",
@@ -477,7 +510,8 @@
       "_mls": "R3118091",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1840000
+      "_priceNum": 1840000,
+      "featured": false
     },
     {
       "type": "House",
@@ -491,7 +525,8 @@
       "_mls": "R3114648",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1875000
+      "_priceNum": 1875000,
+      "featured": false
     },
     {
       "type": "House",
@@ -505,7 +540,8 @@
       "_mls": "R3099258",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 2300000
+      "_priceNum": 2300000,
+      "featured": false
     },
     {
       "type": "House",
@@ -519,7 +555,8 @@
       "_mls": "R3127268",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 2300000
+      "_priceNum": 2300000,
+      "featured": false
     },
     {
       "type": "House",
@@ -533,7 +570,8 @@
       "_mls": "R3112834",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 2350000
+      "_priceNum": 2350000,
+      "featured": false
     },
     {
       "type": "House",
@@ -547,7 +585,8 @@
       "_mls": "R3087384",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 2399000
+      "_priceNum": 2399000,
+      "featured": false
     },
     {
       "type": "House",
@@ -561,7 +600,8 @@
       "_mls": "R3099272",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 2410000
+      "_priceNum": 2410000,
+      "featured": false
     },
     {
       "type": "House",
@@ -575,7 +615,8 @@
       "_mls": "R3119673",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 2499000
+      "_priceNum": 2499000,
+      "featured": false
     },
     {
       "type": "House",
@@ -589,7 +630,8 @@
       "_mls": "R3078978",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 2690000
+      "_priceNum": 2690000,
+      "featured": false
     },
     {
       "type": "House",
@@ -603,7 +645,8 @@
       "_mls": "R3093692",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 2698000
+      "_priceNum": 2698000,
+      "featured": false
     },
     {
       "type": "House",
@@ -617,7 +660,8 @@
       "_mls": "R3110963",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 2725000
+      "_priceNum": 2725000,
+      "featured": false
     },
     {
       "type": "House",
@@ -631,7 +675,8 @@
       "_mls": "R3123512",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 2920888
+      "_priceNum": 2920888,
+      "featured": false
     },
     {
       "type": "House",
@@ -645,7 +690,8 @@
       "_mls": "R3130977",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 2999999
+      "_priceNum": 2999999,
+      "featured": false
     },
     {
       "type": "House",
@@ -659,7 +705,8 @@
       "_mls": "R3074742",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 5990000
+      "_priceNum": 5990000,
+      "featured": false
     },
     {
       "type": "House",
@@ -673,7 +720,8 @@
       "_mls": "R3106759",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 6000000
+      "_priceNum": 6000000,
+      "featured": false
     },
     {
       "type": "House",
@@ -687,7 +735,8 @@
       "_mls": "R3107374",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 6000000
+      "_priceNum": 6000000,
+      "featured": false
     },
     {
       "type": "House",
@@ -701,7 +750,8 @@
       "_mls": "R3123556",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 8999000
+      "_priceNum": 8999000,
+      "featured": false
     },
     {
       "type": "Land",
@@ -715,7 +765,8 @@
       "_mls": "R3084535",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 11600000
+      "_priceNum": 11600000,
+      "featured": false
     }
   ]
 }
