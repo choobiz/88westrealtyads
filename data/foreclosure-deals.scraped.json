@@ -1,16 +1,16 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-07-01T14:17:27.139Z",
+  "scrapedAt": "2026-07-02T14:17:25.329Z",
   "parserVersion": "1.1",
   "sourceCount": 3,
-  "rawCount": 128,
-  "uniqueCount": 110,
-  "withProjectName": 36,
+  "rawCount": 124,
+  "uniqueCount": 106,
+  "withProjectName": 32,
   "perSource": [
     {
       "source": "Simon Clayton (Macdonald Realty)",
       "ok": true,
-      "listings": 57,
+      "listings": 53,
       "pages": [
         {
           "page": 1,
@@ -44,8 +44,8 @@
           "page": 5,
           "url": "https://simonclayton.ca/foreclosures/?_pg=5",
           "ok": true,
-          "listings": 10,
-          "newListings": 10
+          "listings": 6,
+          "newListings": 6
         },
         {
           "page": 6,
@@ -144,66 +144,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1244,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
-      "mls_number": "R3046036",
-      "property_type": "Condo",
-      "neighborhood": "Kerrisdale",
-      "city": "Vancouver",
-      "fsa": "V6M",
-      "street_masked": "████ 2096 W 47th Avenue",
-      "project_name": "Chloe Kerrisdale",
-      "price": 1899900,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 1190,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
-      "mls_number": "R3048952",
-      "property_type": "Condo",
-      "neighborhood": "Kerrisdale",
-      "city": "Vancouver",
-      "fsa": "V6M",
-      "street_masked": "████ 2096 W 47th Avenue",
-      "project_name": "Chloe Kerrisdale",
-      "price": 1724900,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 1158,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
-      "mls_number": "R3048957",
-      "property_type": "Condo",
-      "neighborhood": "Kerrisdale",
-      "city": "Vancouver",
-      "fsa": "V6M",
-      "street_masked": "████ 2096 W 47th Avenue",
-      "project_name": "Chloe Kerrisdale",
-      "price": 749900,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 522,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
-      "mls_number": "R3048959",
-      "property_type": "Condo",
-      "neighborhood": "Kerrisdale",
-      "city": "Vancouver",
-      "fsa": "V6M",
-      "street_masked": "████ 2096 W 47th Avenue",
-      "project_name": "Chloe Kerrisdale",
-      "price": 1149900,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 697,
       "court_ordered_flag": true,
       "source": "Simon Clayton (Macdonald Realty)"
     },
@@ -1123,21 +1063,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3127268",
-      "property_type": "House",
-      "neighborhood": "Whalley",
-      "city": "Surrey",
-      "fsa": "V3T",
-      "street_masked": "████ 138 Street",
-      "project_name": null,
-      "price": 2300000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 1056,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3099258",
       "property_type": "House",
       "neighborhood": "Hazelmere",
@@ -1149,6 +1074,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 2819,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3127268",
+      "property_type": "House",
+      "neighborhood": "Whalley",
+      "city": "Surrey",
+      "fsa": "V3T",
+      "street_masked": "████ 138 Street",
+      "project_name": null,
+      "price": 2300000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 1056,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
