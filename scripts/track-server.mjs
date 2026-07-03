@@ -116,7 +116,9 @@ function dashboardHtml(agg, token) {
 <style>
   body{margin:0;background:#0f1216;color:#e6edf3;font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif}
   .wrap{max-width:1000px;margin:0 auto;padding:28px 18px}
-  h1{font-size:22px;margin:0 0 4px}.sub{color:#8b97a6;font-size:13px;margin-bottom:20px}
+  h1{font-size:22px;margin:0 0 8px}.sub{color:#8b97a6;font-size:13px;margin-bottom:20px}
+  .lpbar{background:#161b22;border:1px solid #263040;border-radius:10px;padding:10px 14px;margin-bottom:8px;font-size:13px;color:#9fb0c3}
+  .lpurl{color:#c25a3a;font-weight:700;font-size:14px;word-break:break-all}
   .cards{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px}
   .kpi{background:#161b22;border:1px solid #263040;border-radius:12px;padding:14px 18px;min-width:120px}
   .kpi .v{font-size:26px;font-weight:800}.kpi .l{color:#8b97a6;font-size:11px;text-transform:uppercase;letter-spacing:1px}
@@ -129,7 +131,8 @@ function dashboardHtml(agg, token) {
   .note{color:#8b97a6;font-size:12px;margin-top:14px}.red{color:#c25a3a}
 </style></head><body><div class="wrap">
   <h1>Foreclosure LP — Variant Performance</h1>
-  <div class="sub">go.88westrealty.com/foreclosure-deals-vancouver · updated ${agg.generatedAt} · auto-refresh 60s</div>
+  <div class="lpbar">Live landing page: <a href="${LP}" target="_blank" class="lpurl">${LP} ↗</a></div>
+  <div class="sub">updated ${agg.generatedAt} · auto-refresh 60s</div>
   <div class="cards">
     <div class="kpi"><div class="v">${t.sessions}</div><div class="l">Sessions</div></div>
     <div class="kpi"><div class="v">${t.leads}</div><div class="l">Leads</div></div>
