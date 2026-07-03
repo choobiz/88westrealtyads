@@ -46,6 +46,7 @@ import {
   type ReactNode,
 } from "react";
 import LeadFormModal from "@/components/shared/LeadFormModal";
+import { trackEvent } from "@/lib/track";
 import ForeclosureLeadForm, {
   type ForeclosureLeadFormProps,
 } from "./ForeclosureLeadForm";
@@ -141,6 +142,9 @@ export default function ForeclosureLeadProvider({
   }, []);
 
   const closeLeadForm = useCallback(() => setArgs(null), []);
+
+  // First-party variant tracking — one "view" per session on page load.
+  useEffect(() => { trackEvent("view"); }, []);
 
   // Esc-to-close is handled inside LeadFormModal already; here we just
   // listen for a global event name so external scripts (e.g. legacy

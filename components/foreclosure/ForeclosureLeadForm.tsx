@@ -30,6 +30,7 @@
 import { useEffect, useState, type FormEvent } from "react";
 import { ArrowRight, Check, Loader2 } from "lucide-react";
 import { FORECLOSURE_WEBHOOK_URL, TRACKING } from "@/lib/constants";
+import { trackEvent } from "@/lib/track";
 import foreclosureStats from "@/data/foreclosure-stats.json";
 
 export interface ForeclosureLeadFormProps {
@@ -142,6 +143,7 @@ export default function ForeclosureLeadForm({
       setSubmitted(true);
       // Stops the list-explorer (Variant D) 35s dwell auto-open once a lead is captured.
       try { localStorage.setItem("_lp_lead_submitted", "1"); } catch {}
+      trackEvent("lead", formLocation); // first-party variant conversion tracking
     } catch {
       setError("Something went wrong. Please call 604-281-1828.");
     } finally {

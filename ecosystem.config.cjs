@@ -29,5 +29,18 @@ module.exports = {
         ENABLE_SCRAPE: 'true',
       },
     },
+    {
+      // First-party A/B/C/D variant tracker. Always-on HTTP service on
+      // 127.0.0.1:8088, fronted by nginx at /88w-track/. Reads TRACK_STATS_TOKEN
+      // from the git-ignored .env. Data at /home/amir/88w-track/events.jsonl.
+      name: '88w-track',
+      script: 'scripts/track-server.mjs',
+      cwd: '/home/amir/88west-go-landing',
+      autorestart: true,
+      watch: false,
+      env: {
+        TRACK_PORT: '8088',
+      },
+    },
   ],
 };
