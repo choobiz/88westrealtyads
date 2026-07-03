@@ -85,7 +85,7 @@ function aggregate() {
 }
 
 // Configured traffic split — MIRROR of proxy.ts VARIANT_SPLIT. Update both together.
-const SPLIT = { A: 20, B: 20, C: 30, D: 30 };
+const SPLIT = { A: 25, B: 25, C: 25, D: 25 };
 const LP = "https://go.88westrealty.com/foreclosure-deals-vancouver";
 const META = {
   A: "Control — gated cards + 2-CTA hero + lower form",

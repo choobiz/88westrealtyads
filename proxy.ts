@@ -57,15 +57,15 @@ const COOKIE_MAX_AGE = 60 * 60 * 24 * 30; // 30 days
 //   { A: 0.20, B: 0.40, C: 1.00 }  → C-heavy (60% C, 20% A, 20% B) ← current
 //   { A: 0.25, B: 0.50, C: 1.00 }  → balanced challenger split
 //
-// 2026-07-02: added Variant D (ForeclosureListExplorer — ungated searchable
-// list + map). Split is now 20/20/30/30 (A/B/C/D) — A control + B hero kept
-// small; the two challengers (C console, D list) share the bulk so both
-// accumulate conversion data. Adjust to skew.
+// 2026-07-03: even 25/25/25/25 (A/B/C/D) — start all four on equal ground now
+// that first-party tracking is live; skew later as sessions accumulate.
+// (Mirror this in scripts/track-server.mjs `SPLIT` so the dashboard's
+// "configured %" matches.)
 //
 // NOTE: paid Google Ads traffic also flows through this proxy now (the
 // foreclosure campaign's `final_url_suffix` was cleared 2026-06-13), so this
 // single split governs ALL traffic — paid and organic alike.
-const VARIANT_SPLIT = { A: 0.20, B: 0.40, C: 0.70, D: 1.0 } as const;
+const VARIANT_SPLIT = { A: 0.25, B: 0.50, C: 0.75, D: 1.0 } as const;
 
 function isVariant(v: string | null | undefined): v is Variant {
   return v === "A" || v === "B" || v === "C" || v === "D";
