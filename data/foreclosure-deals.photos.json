@@ -1,8 +1,8 @@
 {
-  "sourcedAt": "2026-07-02T21:27:54.380Z",
+  "sourcedAt": "2026-07-03T14:17:24.327Z",
   "totalProjects": 32,
-  "cached": 30,
-  "sourced": 2,
+  "cached": 32,
+  "sourced": 0,
   "failed": 0,
   "photoMap": {
     "Current At Water's Edge By Polygon": {
@@ -57,11 +57,8 @@
     },
     "The Pacific": {
       "path": "/images/foreclosure/listings/auto/the-pacific.jpg",
-      "source": "https://cdn.liv.rent/3840x/filters:quality(70)/static_files/building/16143/1/building_61f4907ec8f72_3",
-      "description": "The image shows a modern urban exterior with high-rise buildings, trees, and a landscaped courtyard area, likely part of the Pacific 889 building complex on Pacific Street in Vancouver.",
-      "bytes": 594044,
-      "slug": "the-pacific",
-      "downloadedAt": "2026-07-02T21:27:39.883Z"
+      "source": "cached",
+      "slug": "the-pacific"
     },
     "Currents At The Water's Edge": {
       "path": "/images/foreclosure/listings/auto/currents-at-the-water-s-edge.jpg",
@@ -160,11 +157,8 @@
     },
     "Cecil Hill": {
       "path": "/images/foreclosure/listings/auto/cecil-hill.jpg",
-      "source": "https://media.pixilinkserver.com/bccondosuploads/2012/03/14/screen_shot_2012-03-14_at_43400_pm-small.png?w=800&h=600",
-      "description": "The building at Cecil Hill 5488 Cecil Street Vancouver features a modern exterior with large glass windows and a dark-colored facade, situated on a street with a parked car and banners hanging from a lamppost.",
-      "bytes": 542445,
-      "slug": "cecil-hill",
-      "downloadedAt": "2026-07-02T21:27:54.379Z"
+      "source": "cached",
+      "slug": "cecil-hill"
     },
     "The Savoy": {
       "path": "/images/foreclosure/listings/auto/the-savoy.jpg",
