@@ -84,6 +84,65 @@ function aggregate() {
   return { generatedAt: new Date().toISOString(), totals: { sessions: totS, leads: totL, cvr: totS ? +(100 * totL / totS).toFixed(2) : 0 }, byVariant: rows };
 }
 
+// Configured traffic split — MIRROR of proxy.ts VARIANT_SPLIT. Update both together.
+const SPLIT = { A: 20, B: 20, C: 30, D: 30 };
+const LP = "https://go.88westrealty.com/foreclosure-deals-vancouver";
+const META = {
+  A: "Control — gated cards + 2-CTA hero + lower form",
+  B: "Hero variant — inline-form hero + gated cards",
+  C: "Portfolio Console — financial-app bento layout",
+  D: "Interactive explorer — ungated searchable list + map + 35s modal",
+};
+
+function dashboardHtml(agg, token) {
+  const t = agg.totals;
+  const bestCvr = Math.max(0, ...agg.byVariant.filter((r) => r.sessions >= 5).map((r) => r.cvr));
+  const rows = agg.byVariant.map((r) => {
+    const obs = t.sessions ? Math.round((100 * r.sessions) / t.sessions) : 0;
+    const win = r.cvr === bestCvr && bestCvr > 0 && r.sessions >= 5;
+    return `<tr class="${win ? "win" : ""}">
+      <td><b>${r.variant}</b></td>
+      <td class="desc">${META[r.variant] || ""}</td>
+      <td class="num">${SPLIT[r.variant] ?? "–"}%</td>
+      <td class="num">${obs}%</td>
+      <td class="num">${r.sessions}</td>
+      <td class="num">${r.leads}</td>
+      <td class="num cvr">${r.cvr}%${win ? " ★" : ""}</td>
+      <td><a href="${LP}?ab=${r.variant}" target="_blank">?ab=${r.variant} ↗</a></td>
+    </tr>`;
+  }).join("");
+  return `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="refresh" content="60"><title>Foreclosure LP — Variant Performance</title>
+<style>
+  body{margin:0;background:#0f1216;color:#e6edf3;font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif}
+  .wrap{max-width:1000px;margin:0 auto;padding:28px 18px}
+  h1{font-size:22px;margin:0 0 4px}.sub{color:#8b97a6;font-size:13px;margin-bottom:20px}
+  .cards{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+  .kpi{background:#161b22;border:1px solid #263040;border-radius:12px;padding:14px 18px;min-width:120px}
+  .kpi .v{font-size:26px;font-weight:800}.kpi .l{color:#8b97a6;font-size:11px;text-transform:uppercase;letter-spacing:1px}
+  table{width:100%;border-collapse:collapse;background:#161b22;border:1px solid #263040;border-radius:12px;overflow:hidden}
+  th,td{padding:11px 12px;text-align:left;border-bottom:1px solid #232c38;font-size:14px}
+  th{background:#1b2530;color:#9fb0c3;font-size:11px;text-transform:uppercase;letter-spacing:1px}
+  td.num{text-align:right;font-variant-numeric:tabular-nums}td.cvr{font-weight:700;color:#3fb984}
+  td.desc{color:#9fb0c3;font-size:12.5px}tr.win{background:#13251c}tr.win td.cvr{color:#5fe0a0}
+  a{color:#c25a3a;text-decoration:none;font-weight:600;font-size:12px}
+  .note{color:#8b97a6;font-size:12px;margin-top:14px}.red{color:#c25a3a}
+</style></head><body><div class="wrap">
+  <h1>Foreclosure LP — Variant Performance</h1>
+  <div class="sub">go.88westrealty.com/foreclosure-deals-vancouver · updated ${agg.generatedAt} · auto-refresh 60s</div>
+  <div class="cards">
+    <div class="kpi"><div class="v">${t.sessions}</div><div class="l">Sessions</div></div>
+    <div class="kpi"><div class="v">${t.leads}</div><div class="l">Leads</div></div>
+    <div class="kpi"><div class="v" style="color:#3fb984">${t.cvr}%</div><div class="l">Overall CVR</div></div>
+  </div>
+  <table>
+    <thead><tr><th>Variant</th><th>Design</th><th>Traffic (set)</th><th>Traffic (observed)</th><th>Sessions</th><th>Leads</th><th>Conv. rate</th><th>Preview</th></tr></thead>
+    <tbody>${rows}</tbody>
+  </table>
+  <p class="note">★ = best conversion rate (min 5 sessions to qualify). "Traffic (set)" = configured split in proxy.ts; "observed" = actual sessions share. Tracking started fresh 2026-07-03 — allow a few days of traffic before drawing conclusions. <span class="red">First-party data (not GA4).</span></p>
+</div></body></html>`;
+}
+
 const server = http.createServer(async (req, res) => {
   cors(res);
   const url = new URL(req.url, "http://x");
@@ -106,6 +165,12 @@ const server = http.createServer(async (req, res) => {
     if (!TOKEN || url.searchParams.get("token") !== TOKEN) { res.writeHead(401); return res.end("unauthorized"); }
     res.writeHead(200, { "Content-Type": "application/json" });
     return res.end(JSON.stringify(aggregate(), null, 2));
+  }
+
+  if (req.method === "GET" && path.endsWith("/dashboard")) {
+    if (!TOKEN || url.searchParams.get("token") !== TOKEN) { res.writeHead(401, { "Content-Type": "text/html" }); return res.end("<h1>401</h1><p>Append ?token=…</p>"); }
+    res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
+    return res.end(dashboardHtml(aggregate(), url.searchParams.get("token")));
   }
 
   if (req.method === "GET" && path.endsWith("/health")) { res.writeHead(200); return res.end("ok"); }
