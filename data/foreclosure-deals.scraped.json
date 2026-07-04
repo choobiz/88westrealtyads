@@ -1,10 +1,10 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-07-03T14:17:24.243Z",
+  "scrapedAt": "2026-07-04T14:17:23.435Z",
   "parserVersion": "1.1",
   "sourceCount": 3,
-  "rawCount": 124,
-  "uniqueCount": 106,
+  "rawCount": 125,
+  "uniqueCount": 107,
   "withProjectName": 32,
   "perSource": [
     {
@@ -60,7 +60,7 @@
     {
       "source": "Macnabs (Royal LePage Elite West)",
       "ok": true,
-      "listings": 59,
+      "listings": 60,
       "pages": [
         {
           "page": 1,
@@ -94,8 +94,8 @@
           "page": 5,
           "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=5",
           "ok": true,
-          "listings": 11,
-          "newListings": 11
+          "listings": 12,
+          "newListings": 12
         },
         {
           "page": 6,
@@ -1003,6 +1003,21 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
+      "mls_number": "R3142335",
+      "property_type": "Land",
+      "neighborhood": "Bolivar Heights",
+      "city": "Surrey",
+      "fsa": "V3R",
+      "street_masked": "████ 115 Avenue",
+      "project_name": null,
+      "price": 2875000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": null,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
       "mls_number": "R3128961",
       "property_type": "House",
       "neighborhood": "Coquitlam West",
@@ -1063,21 +1078,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3127268",
-      "property_type": "House",
-      "neighborhood": "Whalley",
-      "city": "Surrey",
-      "fsa": "V3T",
-      "street_masked": "████ 138 Street",
-      "project_name": null,
-      "price": 2300000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 1056,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3099258",
       "property_type": "House",
       "neighborhood": "Hazelmere",
@@ -1089,6 +1089,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 2819,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3127268",
+      "property_type": "House",
+      "neighborhood": "Whalley",
+      "city": "Surrey",
+      "fsa": "V3T",
+      "street_masked": "████ 138 Street",
+      "project_name": null,
+      "price": 2300000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 1056,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1198,6 +1213,21 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
+      "mls_number": "R3134123",
+      "property_type": "House",
+      "neighborhood": "West Newton",
+      "city": "Surrey",
+      "fsa": "V3W",
+      "street_masked": "████ 75a Avenue",
+      "project_name": null,
+      "price": 1500000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 3726,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
       "mls_number": "R3121367",
       "property_type": "House",
       "neighborhood": "Whalley",
@@ -1224,21 +1254,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1171,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
-      "mls_number": "R3134123",
-      "property_type": "House",
-      "neighborhood": "West Newton",
-      "city": "Surrey",
-      "fsa": "V3W",
-      "street_masked": "████ 75a Avenue",
-      "project_name": null,
-      "price": 1500000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 3726,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1303,21 +1318,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3104058",
-      "property_type": "House",
-      "neighborhood": "Queen Mary Park Surrey",
-      "city": "Surrey",
-      "fsa": "V3W",
-      "street_masked": "████ 84a Avenue",
-      "project_name": null,
-      "price": 1350000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 4194,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3137627",
       "property_type": "House",
       "neighborhood": "Bear Creek Green Timbers",
@@ -1333,17 +1333,17 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3135045",
+      "mls_number": "R3104058",
       "property_type": "House",
-      "neighborhood": "Cloverdale BC",
+      "neighborhood": "Queen Mary Park Surrey",
       "city": "Surrey",
-      "fsa": "V3S",
-      "street_masked": "████ 62 Avenue",
+      "fsa": "V3W",
+      "street_masked": "████ 84a Avenue",
       "project_name": null,
-      "price": 1299000,
+      "price": 1350000,
       "bedrooms": null,
       "bathrooms": null,
-      "area_sqft": 2779,
+      "area_sqft": 4194,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1374,6 +1374,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 2820,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3135045",
+      "property_type": "House",
+      "neighborhood": "Cloverdale BC",
+      "city": "Surrey",
+      "fsa": "V3S",
+      "street_masked": "████ 62 Avenue",
+      "project_name": null,
+      "price": 1249000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 2779,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1543,21 +1558,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3075260",
-      "property_type": "House",
-      "neighborhood": "Abbotsford West",
-      "city": "Abbotsford",
-      "fsa": "V2T",
-      "street_masked": "████ Clinton Avenue",
-      "project_name": null,
-      "price": 828000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 1608,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3122147",
       "property_type": "Land",
       "neighborhood": "Bolivar Heights",
@@ -1584,6 +1584,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1950,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3140119",
+      "property_type": "Townhouse",
+      "neighborhood": "Steveston South",
+      "city": "Richmond",
+      "fsa": "V7E",
+      "street_masked": "████ 6160 London Road",
+      "project_name": null,
+      "price": 730000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 859,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },

@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-07-03T14:18:18.404Z",
- "count": 81,
+ "generatedAt": "2026-07-04T14:18:17.303Z",
+ "count": 83,
  "withPhoto": 30,
  "geocoded": 41,
  "regions": [
@@ -242,6 +242,19 @@
    "mls": null,
    "lat": 49.2868569,
    "lng": -123.1174419
+  },
+  {
+   "type": "Townhouse",
+   "area": "Steveston South, Richmond",
+   "region": "Richmond",
+   "street": "6160 London Road",
+   "price": "$730K",
+   "priceNum": 730000,
+   "sqft": "859 sq ft",
+   "image": "",
+   "imageAlt": "",
+   "courtOrdered": true,
+   "mls": null
   },
   {
    "type": "Townhouse",
@@ -562,6 +575,21 @@
   },
   {
    "type": "House",
+   "area": "Cloverdale BC, Surrey",
+   "region": "Surrey",
+   "street": "62 Avenue",
+   "price": "$1.25M",
+   "priceNum": 1250000,
+   "sqft": "2,779 sq ft",
+   "image": "",
+   "imageAlt": "",
+   "courtOrdered": true,
+   "mls": null,
+   "lat": 49.1152535,
+   "lng": -122.6843046
+  },
+  {
+   "type": "House",
    "area": "Renfrew Heights, Vancouver",
    "region": "Vancouver",
    "street": "Nanaimo Street",
@@ -602,21 +630,6 @@
    "mls": null
   },
   {
-   "type": "House",
-   "area": "Cloverdale BC, Surrey",
-   "region": "Surrey",
-   "street": "62 Avenue",
-   "price": "$1.30M",
-   "priceNum": 1300000,
-   "sqft": "2,779 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null,
-   "lat": 49.1152535,
-   "lng": -122.6843046
-  },
-  {
    "type": "Condo",
    "area": "West End, Vancouver",
    "region": "Vancouver",
@@ -633,12 +646,12 @@
   },
   {
    "type": "House",
-   "area": "Queen Mary Park Surrey, Surrey",
+   "area": "Bear Creek Green Timbers, Surrey",
    "region": "Surrey",
-   "street": "84a Avenue",
+   "street": "91 Avenue",
    "price": "$1.35M",
    "priceNum": 1350000,
-   "sqft": "4,194 sq ft",
+   "sqft": "2,749 sq ft",
    "image": "",
    "imageAlt": "",
    "courtOrdered": true,
@@ -646,12 +659,12 @@
   },
   {
    "type": "House",
-   "area": "Bear Creek Green Timbers, Surrey",
+   "area": "Queen Mary Park Surrey, Surrey",
    "region": "Surrey",
-   "street": "91 Avenue",
+   "street": "84a Avenue",
    "price": "$1.35M",
    "priceNum": 1350000,
-   "sqft": "2,749 sq ft",
+   "sqft": "4,194 sq ft",
    "image": "",
    "imageAlt": "",
    "courtOrdered": true,
@@ -678,6 +691,19 @@
    "price": "$1.50M",
    "priceNum": 1500000,
    "sqft": "4,065 sq ft",
+   "image": "",
+   "imageAlt": "",
+   "courtOrdered": true,
+   "mls": null
+  },
+  {
+   "type": "House",
+   "area": "West Newton, Surrey",
+   "region": "Surrey",
+   "street": "75a Avenue",
+   "price": "$1.50M",
+   "priceNum": 1500000,
+   "sqft": "3,726 sq ft",
    "image": "",
    "imageAlt": "",
    "courtOrdered": true,
@@ -712,19 +738,6 @@
    "mls": null,
    "lat": 49.211641,
    "lng": -122.8550543
-  },
-  {
-   "type": "House",
-   "area": "West Newton, Surrey",
-   "region": "Surrey",
-   "street": "75a Avenue",
-   "price": "$1.50M",
-   "priceNum": 1500000,
-   "sqft": "3,726 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null
   },
   {
    "type": "House",
@@ -881,21 +894,6 @@
   },
   {
    "type": "House",
-   "area": "Whalley, Surrey",
-   "region": "Surrey",
-   "street": "138 Street",
-   "price": "$2.30M",
-   "priceNum": 2300000,
-   "sqft": "1,056 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null,
-   "lat": 49.2088054,
-   "lng": -122.8397249
-  },
-  {
-   "type": "House",
    "area": "Hazelmere, Surrey",
    "region": "Surrey",
    "street": "184 Street",
@@ -908,6 +906,21 @@
    "mls": null,
    "lat": 49.0112607,
    "lng": -122.7133425
+  },
+  {
+   "type": "House",
+   "area": "Whalley, Surrey",
+   "region": "Surrey",
+   "street": "138 Street",
+   "price": "$2.30M",
+   "priceNum": 2300000,
+   "sqft": "1,056 sq ft",
+   "image": "",
+   "imageAlt": "",
+   "courtOrdered": true,
+   "mls": null,
+   "lat": 49.2088054,
+   "lng": -122.8397249
   },
   {
    "type": "House",
@@ -1031,6 +1044,19 @@
    "price": "$2.73M",
    "priceNum": 2730000,
    "sqft": "3,780 sq ft",
+   "image": "",
+   "imageAlt": "",
+   "courtOrdered": true,
+   "mls": null
+  },
+  {
+   "type": "Land",
+   "area": "Bolivar Heights, Surrey",
+   "region": "Surrey",
+   "street": "115 Avenue",
+   "price": "$2.88M",
+   "priceNum": 2880000,
+   "sqft": "—",
    "image": "",
    "imageAlt": "",
    "courtOrdered": true,

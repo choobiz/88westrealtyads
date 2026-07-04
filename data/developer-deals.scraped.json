@@ -1,80 +1,108 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-07-03T15:02:45.654Z",
+  "scrapedAt": "2026-07-04T14:17:03.582Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
-  "count": 18,
+  "count": 17,
   "projects": [
     {
-      "project_name": "Crofton Langley by Atrium Group – 20763 76 Avenue, Langley",
-      "city": "Langley",
-      "incentive_summary": "Crofton Langley by Atrium Group – 20763 76 Avenue, Langley $30,000 Decorating Allowance for the next two firm sales, Low strata fee $0.12 per sq.ft., Final 5 homes remaining",
-      "project_url": "https://www.mikestewart.ca/presale/crofton-by-atrium-group-willoughby-langley-presale-townhomes/",
-      "headline_dollar": "$30,000"
+      "project_name": "7381 Preston Boulevard – Skyview Mission",
+      "city": "Mission",
+      "incentive_summary": "YEAR-END SAVINGS on select move-in ready homes, NO GST for First Time Home Buyers, NO Property Transfer Tax, ONLY $5,...",
+      "project_url": "https://www.mikestewart.ca/presale/skyview-mission-presale-townhomes/",
+      "headline_dollar": "$5,"
     },
     {
-      "project_name": "Nova by Mortise – ﻿Pricing & Floor Plans",
-      "city": "Surrey",
-      "incentive_summary": "Nova by Mortise – Pricing & Floor Plans $10,000 off remaining 2nd-floor homes, 2.5% deposit, up to $100,000 in value, AC, parking, and storage included in ev...",
-      "project_url": "https://www.mikestewart.ca/presale/nova-by-mortise/",
-      "headline_dollar": "$100,000"
+      "project_name": "Ravir Coquitlam – 1051 James Avenue – Plans & Prices",
+      "city": "Coquitlam",
+      "incentive_summary": "Up to $70,000 off your new home, FREE A/C Heat Pump (studio does not include A/C), Qualifies for No GST under the new...",
+      "project_url": "https://www.mikestewart.ca/presale/ravir-maillardville-presale-condos/",
+      "headline_dollar": "$70,000"
     },
     {
-      "project_name": "South Hill at Cooper Meadows Abbotsford — Prices & Floor Plans",
-      "city": "Abbotsford",
-      "incentive_summary": "Get up to 6 extra months to sell your home – or receive $10K closing credit if you close on time* (*Terms & condition...",
-      "project_url": "https://www.mikestewart.ca/presale/south-hill-at-cooper-meadows-abbotsford-prices-floor-plans/",
-      "headline_dollar": "$10K"
+      "project_name": "Eminence at Knox Mountain by Meridian – Prices, Availability, Plans",
+      "city": "Kelowna",
+      "incentive_summary": "Save $50,000 on all \"C\" type 2 bedroom & 2 bath floor plans., Save $50,000 on all 'C' type 2 bedroom & 2 bath floor p...",
+      "project_url": "https://www.mikestewart.ca/presale/eminence-glenmore-kelowna-presale-condos-by-meridian-development/",
+      "headline_dollar": "$50,000"
     },
     {
-      "project_name": "Grafia Vancouver 2450 Garden Drive",
-      "city": "Vancouver",
-      "incentive_summary": "Sneak Peek Inside...Homes Starting at $499K, Tour our new, fully furnished Show Home this weekend to get a look at ou...",
-      "project_url": "https://www.mikestewart.ca/presale/grafia-on-garden-drive-grandview-woodland-east-vancouver-presale-condos-by-porte-homes/",
-      "headline_dollar": "$499K"
-    },
-    {
-      "project_name": "Quintet Vancouver – Prices & Floor Plans",
-      "city": "Vancouver",
-      "incentive_summary": "$40,000 Decorating Allowance, Reduced Deposit: 8% of Purchase Price (normally 20%), Luxury Upgrades Included: Stair-s...",
-      "project_url": "https://www.mikestewart.ca/presale/quintet-vancouver-prices-floor-plans/",
+      "project_name": "388 Duncan Street – Mercer Village by Plat:form + Domus – Plans & Prices",
+      "city": "New Westminster",
+      "incentive_summary": "New limited-time purchase incentives will be available soon., Over $40,000 in savings for homebuyers, Full incentive ...",
+      "project_url": "https://www.mikestewart.ca/presale/mercer-village-new-west-presale-townhomes/",
       "headline_dollar": "$40,000"
     },
     {
-      "project_name": "128 Woodstock Avenue – Oakhaus Vancouver Townhomes by Everglade",
-      "city": "Vancouver",
-      "incentive_summary": "Special Boxing Week incentives are ongoing., Zero GST, Up to $200K in savings, Move-in ready homes, 2 to 4 bedroom la...",
-      "project_url": "https://www.mikestewart.ca/presale/oakhaus-cambie-corridor-vancouver-presale-townhomes-by-everglade-development/",
-      "headline_dollar": "$200K"
+      "project_name": "602 East 2nd Street – Morrison Walk North Vancouver",
+      "city": "North Vancouver",
+      "incentive_summary": "Client Benefit: Up to $100,000 in total value., Client Incentive: $15,000 Decorator Allowance., Client Incentive: A/C...",
+      "project_url": "https://www.mikestewart.ca/presale/morrison-walk-north-vancouver-presale-townhomes/",
+      "headline_dollar": "$100,000"
     },
     {
-      "project_name": "Towns at Burke Coquitlam — Prices & Floor Plans",
-      "city": "Coquitlam",
-      "incentive_summary": "Over $1,000 in exciting prizes, Apple prizes given away throughout the event, Custom beers from Tinhouse Brewery, Pre...",
-      "project_url": "https://www.mikestewart.ca/presale/towns-at-burke-coquitlam-prices-floor-plans/",
-      "headline_dollar": "$1,000"
+      "project_name": "1515 Rupert North Vancouver",
+      "city": "North Vancouver",
+      "incentive_summary": "Enjoy New Year’s savings of $100,000+., New, highly competitive pricing on 3-bedroom townhomes, Air conditioning for ...",
+      "project_url": "https://www.mikestewart.ca/presale/1515-rupert-by-areva-living-prices-plans-availability/",
+      "headline_dollar": "$100,000"
     },
     {
-      "project_name": "The Loop South Surrey at 2350 165th Street",
-      "city": "Surrey",
-      "incentive_summary": "Up to $174,000 in savings, Free A/C (valued up to $8,500), Free BBQ Gasline (valued at $700), 5% deposit only, Move i...",
-      "project_url": "https://www.mikestewart.ca/presale/the-loop-grandview-heights-surrey-presale-townhomes-by-gramercy-developments/",
-      "headline_dollar": "$174,000"
-    },
-    {
-      "project_name": "Everwood Townhomes Maple Ridge – Prices & Floorplans",
-      "city": "Maple Ridge",
-      "incentive_summary": "Spring Grill + Chill Promotion including Air Conditioning + Dual Gas BBQ Outlet, valued at $10,000, Save $30,000 on F...",
-      "project_url": "https://www.mikestewart.ca/presale/everwood-townhomes-maple-ridge/",
-      "headline_dollar": "$30,000"
-    },
-    {
-      "project_name": "The Hive Willoughby Town Centre at 7920 206 Street, Langley",
+      "project_name": "Jethro Langley by Whitetail Homes – Pricing & Plans",
       "city": "Langley",
-      "incentive_summary": "Save $60,000 for a limited time only, $15,000 off all homes, one year of free strata fees, just 2.5% deposit, additio...",
-      "project_url": "https://www.mikestewart.ca/presale/the-hive-at-willoughby-town-centre-by-apcon-group-langley-presale-condos/",
-      "headline_dollar": "$60,000"
+      "incentive_summary": "1 Beds Starting $359,900, Jr 2-Bedrooms Starting $379,900, 2 Bed | 1 Bath Starting $439,900, 2 Bed 2 Bath Starting $5...",
+      "project_url": "https://www.mikestewart.ca/presale/jethro-langley-by-whitetail/",
+      "headline_dollar": "$439,900,"
+    },
+    {
+      "project_name": "Centràle Burnaby — Prices & Floor Plans",
+      "city": "Burnaby",
+      "incentive_summary": "$10,000 off all 1 Bedroom Homes, $15,000 off all 2 Bedroom Homes, Grand Opening Incentives still on",
+      "project_url": "https://www.mikestewart.ca/presale/centrale/",
+      "headline_dollar": "$15,000"
+    },
+    {
+      "project_name": "EIGHT in Edgemont Village by I4 – 3175 Canfield Crescent",
+      "city": "North Vancouver",
+      "incentive_summary": "Only four homes remain, Move-in ready duplex homes, Refined design, generous layouts, and a level of finish rarely se...",
+      "project_url": "https://www.mikestewart.ca/presale/canfield-edgemont-village-north-vancouver-presale-townhomes-by-i4-property-group/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Rindall by Woodbridge Homes – Floorplans & Prices",
+      "city": "Port Coquitlam",
+      "incentive_summary": "*Value of incentives is based on home type and some conditions apply. Speak to sales team to learn more., Value of in...",
+      "project_url": "https://www.mikestewart.ca/presale/rindall-by-woodbridge-presale-townhomes/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "King + Crescent by Zenterra Developments",
+      "city": "Surrey",
+      "incentive_summary": "Unit 505: 2 bedrooms, 2 bathrooms, 1,033 square feet corner home, Oversized patio complete with a gas connection for ...",
+      "project_url": "https://www.mikestewart.ca/presale/king-and-crescent-south-surrey-presale-condos-by-zenterra-developments/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Kinsley Vancouver by Intergulf – Plans & Pricing",
+      "city": "Vancouver",
+      "incentive_summary": "RSVP & Attend for a Chance to Win a dining experience at Elio Volpe, Feature Listing: 1 Bed, 1 Bath Garden Home for $...",
+      "project_url": "https://www.mikestewart.ca/presale/kinsley-vancouver-presale-townhomes/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Emerson by Frame in Oaklands – Plans & Pricing",
+      "city": "Victoria",
+      "incentive_summary": "Ask about Emerson's Green Mortgage Program. You could save hundreds per month with our energy-efficient homes., If yo...",
+      "project_url": "https://www.mikestewart.ca/presale/emerson-by-frame-victoria-presale-townhomes/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "The POCO by Rapture Developments – Plans & Pricing",
+      "city": "Port Coquitlam",
+      "incentive_summary": "Early pre-launch pricing is available for a limited time., Access to priority pricing and an exclusive first look for...",
+      "project_url": "https://www.mikestewart.ca/presale/the-poco-presale-condos/",
+      "headline_dollar": null
     },
     {
       "project_name": "Harth Surrey — Prices & Floor Plans",
@@ -84,52 +112,17 @@
       "headline_dollar": null
     },
     {
-      "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
-      "city": "Coquitlam",
-      "incentive_summary": "Ask About Our 3% Advance*, All homes qualify for a GST rebate.*, Limited-time incentive: 2 parking stalls included.*,...",
-      "project_url": "https://www.mikestewart.ca/presale/botanica-coquitlam-presale-condos-by-qualex-landmark/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Blacktail Maple Ridge — Prices & Floor Plans",
-      "city": "Maple Ridge",
-      "incentive_summary": "ONLY 5% down for the first 5 homes sold!, Only 1 Duplex and 1 Triplex will be released, Homes will be sold on a first...",
-      "project_url": "https://www.mikestewart.ca/presale/blacktail-maple-ridge-prices-floor-plans/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "The Cut East Van Phase 2 – Plans & Pricing",
+      "project_name": "Claridge House by Polygon – Prices, Availability, Plans",
       "city": "Vancouver",
-      "incentive_summary": "exciting limited-time incentives available, Limited-time incentives available, Qualifies for the RBC Green Home Mortg...",
-      "project_url": "https://www.mikestewart.ca/presale/the-cut-phase-2-vancouver-presales/",
+      "incentive_summary": "1, 2 and 3 bedroom homes ranging in size from 594 to 1,278 square feet",
+      "project_url": "https://www.mikestewart.ca/presale/claridge-house-oakrige-west-side-vancouver-presale-condos-by-polygon-homes/",
       "headline_dollar": null
     },
     {
-      "project_name": "Italia by Solterra – 2323 Fir Street",
-      "city": "Vancouver",
-      "incentive_summary": "For Monaco project: A few final units remain including the rare opportunity to own a penthouse unit!, For a limited t...",
-      "project_url": "https://www.mikestewart.ca/presale/solterra-italia/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Ōku at 8080 Oak Street – Ulmus Development",
-      "city": "Vancouver",
-      "incentive_summary": "Enter the Oku Social Media Contest for a chance to win 2 tickets & parking to a Canucks Game., Holiday Buyer Incentiv...",
-      "project_url": "https://www.mikestewart.ca/presale/oku/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "639 Aspen Street – The Grove by Foster Living",
-      "city": "Coquitlam",
-      "incentive_summary": "secure yours today with only a 5% deposit, Open House This Saturday from 12-4 PM, Limited Homes Remaining, Move in Th...",
-      "project_url": "https://www.mikestewart.ca/presale/the-grove-by-foster-living/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Elmwood by Marcon Coquitlam – Availability, Plans, Prices",
-      "city": "Coquitlam",
-      "incentive_summary": "First access to homes for priority list members, Limited collection of one, two, and three bedroom homes (Upper Resid...",
-      "project_url": "https://www.mikestewart.ca/presale/elmwood-burquitlam-west-coquitlam-presale-condos-by-marcon-developments/",
+      "project_name": "Coast Sidney at 9522 Lochside Drive",
+      "city": "Sidney",
+      "incentive_summary": "Refreshments from Farmer's Daughter at the Realtor Preview Event",
+      "project_url": "https://www.mikestewart.ca/presale/9522-lochside-drive-sidney-presales/",
       "headline_dollar": null
     }
   ]

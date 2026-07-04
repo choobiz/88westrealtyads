@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-07-03",
+  "lastUpdated": "2026-07-04",
   "source": "curate-deals.mjs (scraped + auto-photos + manual overrides)",
   "compliance": {
     "status": "operator-override",
-    "date": "2026-07-03",
+    "date": "2026-07-04",
     "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period before GVR WebAPI authorization. Listing data sourced from multiple public foreclosure aggregator pages (Simon Clayton, Macnabs, Realtyvibe). Photos resolved in this priority: (1) operator-curated manual overrides — Paragon-authorized per-listing photos OR operator-supplied marketing-material URLs, (2) automated project-name search via Tavily on publicly indexed developer marketing pages, falling back to (3) listings without a resolvable photo appear with a branded 88 West placeholder graphic (NO third-party image) and are never featured in the unblurred hero tier; they remain listed in foreclosure-deals.pending.json as the ops worklist for supplying a real photo URL. Across all displayed listings: street numbers withheld (shared on intro call); MLS numbers omitted from public cards (retained in research dump); no listing remarks; no agent names. Flagged for managing-broker awareness (Shirin Saleh, licence #X031527). Replace pipeline with the GVR-feed-backed source once the WebAPI is authorized.",
     "replaceWith": "GVR WebAPI feed — see docs/gvr-database-schema.md",
     "stats": {
-      "scrapedTotal": 106,
-      "scrapedInArea": 132,
-      "liveOnLp": 81,
+      "scrapedTotal": 107,
+      "scrapedInArea": 136,
+      "liveOnLp": 83,
       "featuredOnLp": 12,
-      "lockedOnLp": 69,
-      "pendingPhoto": 51,
+      "lockedOnLp": 71,
+      "pendingPhoto": 53,
       "manualOverrides": 6,
       "autoSourcedPhotos": 32
     }
@@ -192,6 +192,17 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/altadena.jpg",
       "imageAlt": "Altadena — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Townhouse",
+      "area": "Steveston South, Richmond",
+      "street": "6160 London Road",
+      "price": "$730K",
+      "sqft": "859 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
       "featured": false
     },
     {
@@ -449,6 +460,17 @@
     },
     {
       "type": "House",
+      "area": "Cloverdale BC, Surrey",
+      "street": "62 Avenue",
+      "price": "$1.25M",
+      "sqft": "2,779 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
       "area": "Renfrew Heights, Vancouver",
       "street": "Nanaimo Street",
       "price": "$1.25M",
@@ -481,17 +503,6 @@
       "featured": false
     },
     {
-      "type": "House",
-      "area": "Cloverdale BC, Surrey",
-      "street": "62 Avenue",
-      "price": "$1.30M",
-      "sqft": "2,779 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "featured": false
-    },
-    {
       "type": "Condo",
       "area": "West End, Vancouver",
       "street": "1365 Davie Street",
@@ -504,10 +515,10 @@
     },
     {
       "type": "House",
-      "area": "Queen Mary Park Surrey, Surrey",
-      "street": "84a Avenue",
+      "area": "Bear Creek Green Timbers, Surrey",
+      "street": "91 Avenue",
       "price": "$1.35M",
-      "sqft": "4,194 sq ft",
+      "sqft": "2,749 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -515,10 +526,10 @@
     },
     {
       "type": "House",
-      "area": "Bear Creek Green Timbers, Surrey",
-      "street": "91 Avenue",
+      "area": "Queen Mary Park Surrey, Surrey",
+      "street": "84a Avenue",
       "price": "$1.35M",
-      "sqft": "2,749 sq ft",
+      "sqft": "4,194 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -548,6 +559,17 @@
     },
     {
       "type": "House",
+      "area": "West Newton, Surrey",
+      "street": "75a Avenue",
+      "price": "$1.50M",
+      "sqft": "3,726 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
       "area": "Whalley, Surrey",
       "street": "132a Street",
       "price": "$1.50M",
@@ -563,17 +585,6 @@
       "street": "132a Street",
       "price": "$1.50M",
       "sqft": "1,171 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "featured": false
-    },
-    {
-      "type": "House",
-      "area": "West Newton, Surrey",
-      "street": "75a Avenue",
-      "price": "$1.50M",
-      "sqft": "3,726 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -702,10 +713,10 @@
     },
     {
       "type": "House",
-      "area": "Whalley, Surrey",
-      "street": "138 Street",
+      "area": "Hazelmere, Surrey",
+      "street": "184 Street",
       "price": "$2.30M",
-      "sqft": "1,056 sq ft",
+      "sqft": "2,819 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -713,10 +724,10 @@
     },
     {
       "type": "House",
-      "area": "Hazelmere, Surrey",
-      "street": "184 Street",
+      "area": "Whalley, Surrey",
+      "street": "138 Street",
       "price": "$2.30M",
-      "sqft": "2,819 sq ft",
+      "sqft": "1,056 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -816,6 +827,17 @@
       "street": "W 33 Avenue",
       "price": "$2.73M",
       "sqft": "3,780 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "Land",
+      "area": "Bolivar Heights, Surrey",
+      "street": "115 Avenue",
+      "price": "$2.88M",
+      "sqft": "—",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
