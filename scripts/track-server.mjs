@@ -85,13 +85,14 @@ function aggregate() {
 }
 
 // Configured traffic split — MIRROR of proxy.ts VARIANT_SPLIT. Update both together.
-const SPLIT = { A: 25, B: 25, C: 25, D: 25 };
+// A retired 2026-07-03 (its 25% → B). All live variants use the inline-form hero.
+const SPLIT = { A: 0, B: 50, C: 25, D: 25 };
 const LP = "https://go.88westrealty.com/foreclosure-deals-vancouver";
 const META = {
-  A: "Control — gated cards + 2-CTA hero + lower form",
-  B: "Hero variant — inline-form hero + gated cards",
-  C: "Portfolio Console — financial-app bento layout",
-  D: "Interactive explorer — ungated searchable list + map + 35s modal",
+  A: "RETIRED — control 2-CTA hero (historical data only)",
+  B: "Inline-form hero + gated cards",
+  C: "Inline-form hero + Portfolio Console (bento layout)",
+  D: "Inline-form hero + interactive explorer (list + map, 35s modal)",
 };
 
 function dashboardHtml(agg, token) {

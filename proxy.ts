@@ -45,7 +45,10 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-type Variant = "A" | "B" | "C" | "D";
+// Variant A (control hero) retired 2026-07-03 — the inline-form hero (B) won,
+// so it's now the hero for every variant and A's traffic folds into B. Live
+// cohorts differ only by their inventory section (B=cards, C=console, D=explorer).
+type Variant = "B" | "C" | "D";
 
 const COOKIE_NAME = "_lp_ab_cohort";
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 30; // 30 days
@@ -65,15 +68,15 @@ const COOKIE_MAX_AGE = 60 * 60 * 24 * 30; // 30 days
 // NOTE: paid Google Ads traffic also flows through this proxy now (the
 // foreclosure campaign's `final_url_suffix` was cleared 2026-06-13), so this
 // single split governs ALL traffic — paid and organic alike.
-const VARIANT_SPLIT = { A: 0.25, B: 0.50, C: 0.75, D: 1.0 } as const;
+// A retired → its 25% folds into B. B 50% / C 25% / D 25%.
+const VARIANT_SPLIT = { B: 0.50, C: 0.75, D: 1.0 } as const;
 
 function isVariant(v: string | null | undefined): v is Variant {
-  return v === "A" || v === "B" || v === "C" || v === "D";
+  return v === "B" || v === "C" || v === "D";
 }
 
 function assignFromRandom(): Variant {
   const r = Math.random();
-  if (r < VARIANT_SPLIT.A) return "A";
   if (r < VARIANT_SPLIT.B) return "B";
   if (r < VARIANT_SPLIT.C) return "C";
   return "D";
@@ -89,9 +92,11 @@ export function proxy(request: NextRequest) {
   const forcedVariant: Variant | null = isVariant(forced) ? forced : null;
 
   const existingCookie = request.cookies.get(COOKIE_NAME)?.value;
+  // Migrate any stale Variant-A cohort to B (A was retired).
+  const migratedCookie = existingCookie === "A" ? "B" : existingCookie;
   const variant: Variant =
     forcedVariant ??
-    (isVariant(existingCookie) ? existingCookie : assignFromRandom());
+    (isVariant(migratedCookie) ? migratedCookie : assignFromRandom());
 
   // Forward the assignment to the page via a request-scoped header so SSR sees
   // the correct variant on first visit (cookies()-read can't see what we're
@@ -106,7 +111,7 @@ export function proxy(request: NextRequest) {
   // Persist the assignment in a cookie if it's new OR if the query param
   // forced a different variant than the existing cookie (so the override
   // sticks for follow-up page views without the ?ab= param).
-  if (!existingCookie || (forcedVariant && existingCookie !== variant)) {
+  if (!existingCookie || existingCookie === "A" || (forcedVariant && existingCookie !== variant)) {
     response.cookies.set({
       name: COOKIE_NAME,
       value: variant,

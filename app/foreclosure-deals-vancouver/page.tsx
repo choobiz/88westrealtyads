@@ -4,13 +4,11 @@ import ForeclosureNavbar from "@/components/foreclosure/ForeclosureNavbar";
 import MedicalFooter from "@/components/medical/MedicalFooter";
 import ConsultationStickyMobileCTA from "@/components/shared/ConsultationStickyMobileCTA";
 import CookieConsent from "@/components/medical/CookieConsent";
-import ForeclosureHero from "@/components/foreclosure/ForeclosureHero";
 import ForeclosureHeroVariantB from "@/components/foreclosure/ForeclosureHeroVariantB";
 import ForeclosureLeadProvider from "@/components/foreclosure/ForeclosureLeadProvider";
 import InventoryPreview from "@/components/foreclosure/InventoryPreview";
 import PortfolioConsole from "@/components/foreclosure/PortfolioConsole";
 import ForeclosureListExplorer from "@/components/foreclosure/ForeclosureListExplorer";
-import ForeclosureFormSection from "@/components/foreclosure/ForeclosureFormSection";
 import MortgageCliffCallout from "@/components/foreclosure/MortgageCliffCallout";
 import ProcessExplainer from "@/components/foreclosure/ProcessExplainer";
 import AudienceSplit from "@/components/foreclosure/AudienceSplit";
@@ -88,43 +86,33 @@ function JsonLd() {
   );
 }
 
-type Variant = "A" | "B" | "C" | "D";
+type Variant = "B" | "C" | "D";
 
 export default async function ForeclosurePage() {
-  // A/B/C/D variant — assigned by proxy.ts and forwarded via x-ab-variant
-  // header. See proxy.ts for the test plan and split ratios.
+  // B/C/D variant — assigned by proxy.ts and forwarded via x-ab-variant header.
+  // Variant A (control hero) was retired 2026-07-03: the inline-form hero won,
+  // so ALL variants now use it; they differ only by inventory section.
   //
-  //   A — Control. ForeclosureHero (2-CTA) + InventoryPreview (gated cards)
-  //                + ForeclosureFormSection (lower form).
-  //   B — Hero variant. ForeclosureHeroVariantB (inline form) +
-  //                InventoryPreview. No lower form section.
-  //   C — Inventory variant. ForeclosureHero (control hero) +
-  //                PortfolioConsole (financial-app bento layout).
-  //   D — Explorer variant. ForeclosureHero (control hero) +
-  //                ForeclosureListExplorer (ungated searchable list + map,
-  //                35s dwell modal). No lower form.
+  //   B — inline-form hero + InventoryPreview (gated cards).
+  //   C — inline-form hero + PortfolioConsole (financial-app bento layout).
+  //   D — inline-form hero + ForeclosureListExplorer (ungated list + map,
+  //                35s dwell modal).
   const requestHeaders = await headers();
   const headerVariant = requestHeaders.get("x-ab-variant");
   const variant: Variant =
-    headerVariant === "B" ? "B" : headerVariant === "C" ? "C" : headerVariant === "D" ? "D" : "A";
+    headerVariant === "C" ? "C" : headerVariant === "D" ? "D" : "B";
 
   return (
     <ForeclosureLeadProvider>
       <JsonLd />
       <ForeclosureNavbar />
-      {/* Hero — B gets the inline-form variant; A and C keep the control hero
-          so the inventory-section change in C is isolated from any hero
-          change. */}
-      {variant === "B" ? <ForeclosureHeroVariantB /> : <ForeclosureHero />}
+      {/* Hero — every variant now uses the inline-form hero (above-the-fold
+          lead form). This was the winning Variant-B hero; A's control hero is
+          retired. */}
+      <ForeclosureHeroVariantB />
       {/* Inventory — C = Portfolio Console; D = ungated searchable list/map
-          explorer; A and B keep the gated card grid. */}
+          explorer; B keeps the gated card grid. */}
       {variant === "C" ? <PortfolioConsole /> : variant === "D" ? <ForeclosureListExplorer /> : <InventoryPreview />}
-      {/* Lower form section — only A renders it. B's hero already has the
-          form inline; C's Portfolio Console has its own Strategy Session CTA.
-          As of 2026-06-13 no CTA scrolls here anymore (all CTAs open the
-          modal via ForeclosureLeadProvider); this section persists as a
-          passive inline form for users who scroll past everything. */}
-      {variant === "A" && <ForeclosureFormSection />}
       <MortgageCliffCallout />
       <ProcessExplainer />
       <AudienceSplit />
