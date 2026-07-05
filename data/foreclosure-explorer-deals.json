@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-04T14:18:17.303Z",
+ "generatedAt": "2026-07-05T14:18:21.372Z",
  "count": 83,
  "withPhoto": 30,
  "geocoded": 41,
@@ -698,19 +698,6 @@
   },
   {
    "type": "House",
-   "area": "West Newton, Surrey",
-   "region": "Surrey",
-   "street": "75a Avenue",
-   "price": "$1.50M",
-   "priceNum": 1500000,
-   "sqft": "3,726 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null
-  },
-  {
-   "type": "House",
    "area": "Whalley, Surrey",
    "region": "Surrey",
    "street": "132a Street",
@@ -738,6 +725,19 @@
    "mls": null,
    "lat": 49.211641,
    "lng": -122.8550543
+  },
+  {
+   "type": "House",
+   "area": "West Newton, Surrey",
+   "region": "Surrey",
+   "street": "75a Avenue",
+   "price": "$1.50M",
+   "priceNum": 1500000,
+   "sqft": "3,726 sq ft",
+   "image": "",
+   "imageAlt": "",
+   "courtOrdered": true,
+   "mls": null
   },
   {
    "type": "House",
