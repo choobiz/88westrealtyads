@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-07-05",
+  "lastUpdated": "2026-07-06",
   "source": "curate-deals.mjs (scraped + auto-photos + manual overrides)",
   "compliance": {
     "status": "operator-override",
-    "date": "2026-07-05",
+    "date": "2026-07-06",
     "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period before GVR WebAPI authorization. Listing data sourced from multiple public foreclosure aggregator pages (Simon Clayton, Macnabs, Realtyvibe). Photos resolved in this priority: (1) operator-curated manual overrides — Paragon-authorized per-listing photos OR operator-supplied marketing-material URLs, (2) automated project-name search via Tavily on publicly indexed developer marketing pages, falling back to (3) listings without a resolvable photo appear with a branded 88 West placeholder graphic (NO third-party image) and are never featured in the unblurred hero tier; they remain listed in foreclosure-deals.pending.json as the ops worklist for supplying a real photo URL. Across all displayed listings: street numbers withheld (shared on intro call); MLS numbers omitted from public cards (retained in research dump); no listing remarks; no agent names. Flagged for managing-broker awareness (Shirin Saleh, licence #X031527). Replace pipeline with the GVR-feed-backed source once the WebAPI is authorized.",
     "replaceWith": "GVR WebAPI feed — see docs/gvr-database-schema.md",
     "stats": {
@@ -515,10 +515,10 @@
     },
     {
       "type": "House",
-      "area": "Bear Creek Green Timbers, Surrey",
-      "street": "91 Avenue",
+      "area": "Queen Mary Park Surrey, Surrey",
+      "street": "84a Avenue",
       "price": "$1.35M",
-      "sqft": "2,749 sq ft",
+      "sqft": "4,194 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -526,10 +526,10 @@
     },
     {
       "type": "House",
-      "area": "Queen Mary Park Surrey, Surrey",
-      "street": "84a Avenue",
+      "area": "Bear Creek Green Timbers, Surrey",
+      "street": "91 Avenue",
       "price": "$1.35M",
-      "sqft": "4,194 sq ft",
+      "sqft": "2,749 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",

@@ -1,8 +1,8 @@
 {
-  "sourcedAt": "2026-07-05T14:17:25.936Z",
+  "sourcedAt": "2026-07-06T14:17:39.896Z",
   "totalProjects": 32,
-  "cached": 32,
-  "sourced": 0,
+  "cached": 31,
+  "sourced": 1,
   "failed": 0,
   "photoMap": {
     "Current At Water's Edge By Polygon": {
@@ -50,10 +50,13 @@
       "source": "cached",
       "slug": "mirabel-english-bay"
     },
-    "Winford": {
-      "path": "/images/foreclosure/listings/auto/winford.jpg",
-      "source": "cached",
-      "slug": "winford"
+    "Hunter": {
+      "path": "/images/foreclosure/listings/auto/hunter.jpg",
+      "source": "https://www.vistarealty.net/wp-content/uploads/2022/08/1601-1471hunter-1-1200x853.jpg",
+      "description": "A tall modern residential building with glass balconies and a sleek exterior stands prominently, surrounded by other high-rise structures under a clear blue sky.",
+      "bytes": 181933,
+      "slug": "hunter",
+      "downloadedAt": "2026-07-06T14:17:39.889Z"
     },
     "The Pacific": {
       "path": "/images/foreclosure/listings/auto/the-pacific.jpg",

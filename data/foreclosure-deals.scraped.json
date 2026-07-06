@@ -1,6 +1,6 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-07-05T14:17:25.870Z",
+  "scrapedAt": "2026-07-06T14:17:25.057Z",
   "parserVersion": "1.1",
   "sourceCount": 3,
   "rawCount": 125,
@@ -484,7 +484,7 @@
       "city": "North Vancouver",
       "fsa": "V7J",
       "street_masked": "████ 1471 Hunter Street",
-      "project_name": "Winford",
+      "project_name": "Hunter",
       "price": 1150000,
       "bedrooms": null,
       "bathrooms": null,
@@ -1153,21 +1153,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3136496",
-      "property_type": "Land",
-      "neighborhood": "County Line Glen Valley",
-      "city": "Langley",
-      "fsa": "V4W",
-      "street_masked": "████ 272 Street",
-      "project_name": null,
-      "price": 1790000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": null,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3129384",
       "property_type": "House",
       "neighborhood": "Coquitlam West",
@@ -1179,6 +1164,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 2302,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3136496",
+      "property_type": "Land",
+      "neighborhood": "County Line Glen Valley",
+      "city": "Langley",
+      "fsa": "V4W",
+      "street_masked": "████ 272 Street",
+      "project_name": null,
+      "price": 1790000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": null,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1318,21 +1318,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3137627",
-      "property_type": "House",
-      "neighborhood": "Bear Creek Green Timbers",
-      "city": "Surrey",
-      "fsa": "V3V",
-      "street_masked": "████ 91 Avenue",
-      "project_name": null,
-      "price": 1350000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 2749,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3104058",
       "property_type": "House",
       "neighborhood": "Queen Mary Park Surrey",
@@ -1344,6 +1329,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 4194,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3137627",
+      "property_type": "House",
+      "neighborhood": "Bear Creek Green Timbers",
+      "city": "Surrey",
+      "fsa": "V3V",
+      "street_masked": "████ 91 Avenue",
+      "project_name": null,
+      "price": 1350000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 2749,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
