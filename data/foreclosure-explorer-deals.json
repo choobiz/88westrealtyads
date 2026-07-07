@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-07-06T14:18:36.828Z",
- "count": 83,
+ "generatedAt": "2026-07-07T14:18:19.501Z",
+ "count": 82,
  "withPhoto": 30,
  "geocoded": 41,
  "regions": [
@@ -17,19 +17,6 @@
   "Townhouse"
  ],
  "deals": [
-  {
-   "type": "Condo",
-   "area": "Granville, Richmond",
-   "region": "Richmond",
-   "street": "7280 Lindsay Road",
-   "price": "$176K",
-   "priceNum": 176000,
-   "sqft": "634 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null
-  },
   {
    "type": "Condo",
    "area": "Downtown, Vancouver",
@@ -646,19 +633,6 @@
   },
   {
    "type": "House",
-   "area": "Queen Mary Park Surrey, Surrey",
-   "region": "Surrey",
-   "street": "84a Avenue",
-   "price": "$1.35M",
-   "priceNum": 1350000,
-   "sqft": "4,194 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null
-  },
-  {
-   "type": "House",
    "area": "Bear Creek Green Timbers, Surrey",
    "region": "Surrey",
    "street": "91 Avenue",
@@ -672,11 +646,24 @@
   },
   {
    "type": "House",
+   "area": "Queen Mary Park Surrey, Surrey",
+   "region": "Surrey",
+   "street": "84a Avenue",
+   "price": "$1.35M",
+   "priceNum": 1350000,
+   "sqft": "4,194 sq ft",
+   "image": "",
+   "imageAlt": "",
+   "courtOrdered": true,
+   "mls": null
+  },
+  {
+   "type": "House",
    "area": "South Vancouver, Vancouver",
    "region": "Vancouver",
    "street": "E 54th Avenue",
-   "price": "$1.40M",
-   "priceNum": 1400000,
+   "price": "$1.38M",
+   "priceNum": 1380000,
    "sqft": "2,362 sq ft",
    "image": "",
    "imageAlt": "",

@@ -1,23 +1,8 @@
 {
-  "generatedAt": "2026-07-06T14:17:40.078Z",
+  "generatedAt": "2026-07-07T14:17:24.540Z",
   "note": "Listings scraped + in-area but waiting on a photo URL. Operator action: supply a photo URL for any of these by adding an entry to data/foreclosure-deals.manual.json keyed by `mls_number`. Re-run `node scripts/curate-deals.mjs` to move them to live.",
-  "count": 53,
+  "count": 52,
   "listings": [
-    {
-      "type": "Condo",
-      "area": "Granville, Richmond",
-      "street": "7280 Lindsay Road",
-      "price": "$176K",
-      "sqft": "634 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3116809",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 176000,
-      "featured": false
-    },
     {
       "type": "Condo",
       "area": "Sullivan Heights, Burnaby",
@@ -290,21 +275,6 @@
     },
     {
       "type": "House",
-      "area": "Queen Mary Park Surrey, Surrey",
-      "street": "84a Avenue",
-      "price": "$1.35M",
-      "sqft": "4,194 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3104058",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 1350000,
-      "featured": false
-    },
-    {
-      "type": "House",
       "area": "Bear Creek Green Timbers, Surrey",
       "street": "91 Avenue",
       "price": "$1.35M",
@@ -320,9 +290,24 @@
     },
     {
       "type": "House",
+      "area": "Queen Mary Park Surrey, Surrey",
+      "street": "84a Avenue",
+      "price": "$1.35M",
+      "sqft": "4,194 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "_mls": "R3104058",
+      "_projectName": null,
+      "_imageSource": null,
+      "_priceNum": 1350000,
+      "featured": false
+    },
+    {
+      "type": "House",
       "area": "South Vancouver, Vancouver",
       "street": "E 54th Avenue",
-      "price": "$1.40M",
+      "price": "$1.38M",
       "sqft": "2,362 sq ft",
       "courtOrdered": true,
       "image": "",
@@ -330,7 +315,7 @@
       "_mls": "R3130656",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1399000,
+      "_priceNum": 1375000,
       "featured": false
     },
     {

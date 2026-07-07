@@ -1,34 +1,23 @@
 {
-  "lastUpdated": "2026-07-06",
+  "lastUpdated": "2026-07-07",
   "source": "curate-deals.mjs (scraped + auto-photos + manual overrides)",
   "compliance": {
     "status": "operator-override",
-    "date": "2026-07-06",
+    "date": "2026-07-07",
     "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period before GVR WebAPI authorization. Listing data sourced from multiple public foreclosure aggregator pages (Simon Clayton, Macnabs, Realtyvibe). Photos resolved in this priority: (1) operator-curated manual overrides — Paragon-authorized per-listing photos OR operator-supplied marketing-material URLs, (2) automated project-name search via Tavily on publicly indexed developer marketing pages, falling back to (3) listings without a resolvable photo appear with a branded 88 West placeholder graphic (NO third-party image) and are never featured in the unblurred hero tier; they remain listed in foreclosure-deals.pending.json as the ops worklist for supplying a real photo URL. Across all displayed listings: street numbers withheld (shared on intro call); MLS numbers omitted from public cards (retained in research dump); no listing remarks; no agent names. Flagged for managing-broker awareness (Shirin Saleh, licence #X031527). Replace pipeline with the GVR-feed-backed source once the WebAPI is authorized.",
     "replaceWith": "GVR WebAPI feed — see docs/gvr-database-schema.md",
     "stats": {
-      "scrapedTotal": 107,
-      "scrapedInArea": 136,
-      "liveOnLp": 83,
+      "scrapedTotal": 105,
+      "scrapedInArea": 134,
+      "liveOnLp": 82,
       "featuredOnLp": 12,
-      "lockedOnLp": 71,
-      "pendingPhoto": 53,
+      "lockedOnLp": 70,
+      "pendingPhoto": 52,
       "manualOverrides": 6,
       "autoSourcedPhotos": 32
     }
   },
   "deals": [
-    {
-      "type": "Condo",
-      "area": "Granville, Richmond",
-      "street": "7280 Lindsay Road",
-      "price": "$176K",
-      "sqft": "634 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "featured": false
-    },
     {
       "type": "Condo",
       "area": "Downtown, Vancouver",
@@ -515,17 +504,6 @@
     },
     {
       "type": "House",
-      "area": "Queen Mary Park Surrey, Surrey",
-      "street": "84a Avenue",
-      "price": "$1.35M",
-      "sqft": "4,194 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "featured": false
-    },
-    {
-      "type": "House",
       "area": "Bear Creek Green Timbers, Surrey",
       "street": "91 Avenue",
       "price": "$1.35M",
@@ -537,9 +515,20 @@
     },
     {
       "type": "House",
+      "area": "Queen Mary Park Surrey, Surrey",
+      "street": "84a Avenue",
+      "price": "$1.35M",
+      "sqft": "4,194 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
       "area": "South Vancouver, Vancouver",
       "street": "E 54th Avenue",
-      "price": "$1.40M",
+      "price": "$1.38M",
       "sqft": "2,362 sq ft",
       "courtOrdered": true,
       "image": "",

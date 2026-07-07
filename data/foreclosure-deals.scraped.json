@@ -1,10 +1,10 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-07-06T14:17:25.057Z",
+  "scrapedAt": "2026-07-07T14:17:24.387Z",
   "parserVersion": "1.1",
   "sourceCount": 3,
-  "rawCount": 125,
-  "uniqueCount": 107,
+  "rawCount": 112,
+  "uniqueCount": 105,
   "withProjectName": 32,
   "perSource": [
     {
@@ -60,7 +60,7 @@
     {
       "source": "Macnabs (Royal LePage Elite West)",
       "ok": true,
-      "listings": 60,
+      "listings": 59,
       "pages": [
         {
           "page": 1,
@@ -100,16 +100,9 @@
         {
           "page": 6,
           "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=6",
-          "ok": true,
-          "listings": 1,
-          "newListings": 1
-        },
-        {
-          "page": 7,
-          "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=7",
           "ok": false,
           "listings": 0,
-          "error": "404 Not Found"
+          "error": "429 Too Many Requests"
         }
       ],
       "error": null
@@ -117,14 +110,14 @@
     {
       "source": "Realtyvibe (Sutton Premier)",
       "ok": true,
-      "listings": 12,
+      "listings": 0,
       "pages": [
         {
           "page": 1,
           "url": "https://realtyvibe.ca/vancouver-foreclosures-for-sale/",
           "ok": true,
-          "listings": 12,
-          "newListings": 12
+          "listings": 0,
+          "newListings": 0
         }
       ],
       "error": null
@@ -1310,25 +1303,10 @@
       "fsa": "V5X",
       "street_masked": "████ E 54th Avenue",
       "project_name": null,
-      "price": 1399000,
+      "price": 1375000,
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 2362,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
-      "mls_number": "R3104058",
-      "property_type": "House",
-      "neighborhood": "Queen Mary Park Surrey",
-      "city": "Surrey",
-      "fsa": "V3W",
-      "street_masked": "████ 84a Avenue",
-      "project_name": null,
-      "price": 1350000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 4194,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1344,6 +1322,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 2749,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3104058",
+      "property_type": "House",
+      "neighborhood": "Queen Mary Park Surrey",
+      "city": "Surrey",
+      "fsa": "V3W",
+      "street_masked": "████ 84a Avenue",
+      "project_name": null,
+      "price": 1350000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 4194,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1706,36 +1699,6 @@
       "area_sqft": 730,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
-      "mls_number": "R3116809",
-      "property_type": "Condo",
-      "neighborhood": "Granville",
-      "city": "Richmond",
-      "fsa": "V7C",
-      "street_masked": "████ 7280 Lindsay Road",
-      "project_name": null,
-      "price": 176000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 634,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
-      "mls_number": "R3080132",
-      "property_type": "House",
-      "neighborhood": "Caulfeild",
-      "city": "West Vancouver",
-      "fsa": "V7W",
-      "street_masked": "████ Headland Drive",
-      "project_name": null,
-      "price": 2175000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 2240,
-      "court_ordered_flag": true,
-      "source": "Realtyvibe (Sutton Premier)"
     }
   ]
 }
