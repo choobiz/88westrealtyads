@@ -1,23 +1,34 @@
 {
-  "lastUpdated": "2026-07-07",
+  "lastUpdated": "2026-07-08",
   "source": "curate-deals.mjs (scraped + auto-photos + manual overrides)",
   "compliance": {
     "status": "operator-override",
-    "date": "2026-07-07",
+    "date": "2026-07-08",
     "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period before GVR WebAPI authorization. Listing data sourced from multiple public foreclosure aggregator pages (Simon Clayton, Macnabs, Realtyvibe). Photos resolved in this priority: (1) operator-curated manual overrides — Paragon-authorized per-listing photos OR operator-supplied marketing-material URLs, (2) automated project-name search via Tavily on publicly indexed developer marketing pages, falling back to (3) listings without a resolvable photo appear with a branded 88 West placeholder graphic (NO third-party image) and are never featured in the unblurred hero tier; they remain listed in foreclosure-deals.pending.json as the ops worklist for supplying a real photo URL. Across all displayed listings: street numbers withheld (shared on intro call); MLS numbers omitted from public cards (retained in research dump); no listing remarks; no agent names. Flagged for managing-broker awareness (Shirin Saleh, licence #X031527). Replace pipeline with the GVR-feed-backed source once the WebAPI is authorized.",
     "replaceWith": "GVR WebAPI feed — see docs/gvr-database-schema.md",
     "stats": {
       "scrapedTotal": 105,
-      "scrapedInArea": 134,
-      "liveOnLp": 82,
+      "scrapedInArea": 131,
+      "liveOnLp": 80,
       "featuredOnLp": 12,
-      "lockedOnLp": 70,
-      "pendingPhoto": 52,
+      "lockedOnLp": 68,
+      "pendingPhoto": 51,
       "manualOverrides": 6,
-      "autoSourcedPhotos": 32
+      "autoSourcedPhotos": 31
     }
   },
   "deals": [
+    {
+      "type": "Condo",
+      "area": "Granville, Richmond",
+      "street": "7280 Lindsay Road",
+      "price": "$176K",
+      "sqft": "634 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
     {
       "type": "Condo",
       "area": "Downtown, Vancouver",
@@ -39,17 +50,6 @@
       "image": "",
       "imageAlt": "",
       "featured": false
-    },
-    {
-      "type": "Condo",
-      "area": "Sullivan Heights, Burnaby",
-      "street": "3755 Bartlett Court",
-      "price": "$399K",
-      "sqft": "928 sq ft",
-      "courtOrdered": true,
-      "image": "/images/foreclosure/listings/auto/timberlea.jpg",
-      "imageAlt": "Timberlea — exterior view (representational, sourced from publicly indexed marketing material).",
-      "featured": true
     },
     {
       "type": "Condo",
@@ -357,7 +357,7 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/the-max.jpg",
       "imageAlt": "The Max — exterior view (representational, sourced from publicly indexed marketing material).",
-      "featured": false
+      "featured": true
     },
     {
       "type": "Condo",
@@ -504,10 +504,10 @@
     },
     {
       "type": "House",
-      "area": "Bear Creek Green Timbers, Surrey",
-      "street": "91 Avenue",
+      "area": "Queen Mary Park Surrey, Surrey",
+      "street": "84a Avenue",
       "price": "$1.35M",
-      "sqft": "2,749 sq ft",
+      "sqft": "4,194 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -515,10 +515,10 @@
     },
     {
       "type": "House",
-      "area": "Queen Mary Park Surrey, Surrey",
-      "street": "84a Avenue",
+      "area": "Bear Creek Green Timbers, Surrey",
+      "street": "91 Avenue",
       "price": "$1.35M",
-      "sqft": "4,194 sq ft",
+      "sqft": "2,749 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -548,6 +548,17 @@
     },
     {
       "type": "House",
+      "area": "West Newton, Surrey",
+      "street": "75a Avenue",
+      "price": "$1.50M",
+      "sqft": "3,726 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
       "area": "Whalley, Surrey",
       "street": "132a Street",
       "price": "$1.50M",
@@ -563,17 +574,6 @@
       "street": "132a Street",
       "price": "$1.50M",
       "sqft": "1,171 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "featured": false
-    },
-    {
-      "type": "House",
-      "area": "West Newton, Surrey",
-      "street": "75a Avenue",
-      "price": "$1.50M",
-      "sqft": "3,726 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -702,10 +702,10 @@
     },
     {
       "type": "House",
-      "area": "Hazelmere, Surrey",
-      "street": "184 Street",
+      "area": "Whalley, Surrey",
+      "street": "138 Street",
       "price": "$2.30M",
-      "sqft": "2,819 sq ft",
+      "sqft": "1,056 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -713,10 +713,10 @@
     },
     {
       "type": "House",
-      "area": "Whalley, Surrey",
-      "street": "138 Street",
+      "area": "Hazelmere, Surrey",
+      "street": "184 Street",
       "price": "$2.30M",
-      "sqft": "1,056 sq ft",
+      "sqft": "2,819 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -805,28 +805,6 @@
       "street": "Westminster Highway",
       "price": "$2.70M",
       "sqft": "7,105 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "featured": false
-    },
-    {
-      "type": "House",
-      "area": "MacKenzie Heights, Vancouver",
-      "street": "W 33 Avenue",
-      "price": "$2.73M",
-      "sqft": "3,780 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "featured": false
-    },
-    {
-      "type": "Land",
-      "area": "Bolivar Heights, Surrey",
-      "street": "115 Avenue",
-      "price": "$2.88M",
-      "sqft": "—",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",

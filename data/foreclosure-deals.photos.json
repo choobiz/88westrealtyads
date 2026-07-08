@@ -1,7 +1,7 @@
 {
-  "sourcedAt": "2026-07-07T14:17:24.468Z",
-  "totalProjects": 32,
-  "cached": 32,
+  "sourcedAt": "2026-07-08T14:17:25.225Z",
+  "totalProjects": 31,
+  "cached": 31,
   "sourced": 0,
   "failed": 0,
   "photoMap": {
@@ -9,11 +9,6 @@
       "path": "/images/foreclosure/listings/auto/current-at-water-s-edge-by-polygon.jpg",
       "source": "cached",
       "slug": "current-at-water-s-edge-by-polygon"
-    },
-    "Timberlea": {
-      "path": "/images/foreclosure/listings/auto/timberlea.jpg",
-      "source": "cached",
-      "slug": "timberlea"
     },
     "Parkcrest": {
       "path": "/images/foreclosure/listings/auto/parkcrest.jpg",
