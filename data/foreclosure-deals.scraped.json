@@ -1,6 +1,6 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-07-08T14:17:25.126Z",
+  "scrapedAt": "2026-07-09T14:17:32.765Z",
   "parserVersion": "1.1",
   "sourceCount": 3,
   "rawCount": 123,
@@ -1033,21 +1033,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3127268",
-      "property_type": "House",
-      "neighborhood": "Whalley",
-      "city": "Surrey",
-      "fsa": "V3T",
-      "street_masked": "████ 138 Street",
-      "project_name": null,
-      "price": 2300000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 1056,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3099258",
       "property_type": "House",
       "neighborhood": "Hazelmere",
@@ -1059,6 +1044,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 2819,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3127268",
+      "property_type": "House",
+      "neighborhood": "Whalley",
+      "city": "Surrey",
+      "fsa": "V3T",
+      "street_masked": "████ 138 Street",
+      "project_name": null,
+      "price": 2300000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 1056,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1108,21 +1108,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3136496",
-      "property_type": "Land",
-      "neighborhood": "County Line Glen Valley",
-      "city": "Langley",
-      "fsa": "V4W",
-      "street_masked": "████ 272 Street",
-      "project_name": null,
-      "price": 1790000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": null,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3129384",
       "property_type": "House",
       "neighborhood": "Coquitlam West",
@@ -1134,6 +1119,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 2302,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3136496",
+      "property_type": "Land",
+      "neighborhood": "County Line Glen Valley",
+      "city": "Langley",
+      "fsa": "V4W",
+      "street_masked": "████ 272 Street",
+      "project_name": null,
+      "price": 1790000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": null,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1348,21 +1348,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3096574",
-      "property_type": "House",
-      "neighborhood": "Langley City",
-      "city": "Langley",
-      "fsa": "V3A",
-      "street_masked": "████ 48 Avenue",
-      "project_name": null,
-      "price": 1200000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 2244,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3131913",
       "property_type": "House",
       "neighborhood": "Uptown NW",
@@ -1389,6 +1374,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": null,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3096574",
+      "property_type": "House",
+      "neighborhood": "Langley City",
+      "city": "Langley",
+      "fsa": "V3A",
+      "street_masked": "████ 48 Avenue",
+      "project_name": null,
+      "price": 1110000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 2244,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
