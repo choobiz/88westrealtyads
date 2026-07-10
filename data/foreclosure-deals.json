@@ -1,20 +1,20 @@
 {
-  "lastUpdated": "2026-07-09",
+  "lastUpdated": "2026-07-10",
   "source": "curate-deals.mjs (scraped + auto-photos + manual overrides)",
   "compliance": {
     "status": "operator-override",
-    "date": "2026-07-09",
+    "date": "2026-07-10",
     "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period before GVR WebAPI authorization. Listing data sourced from multiple public foreclosure aggregator pages (Simon Clayton, Macnabs, Realtyvibe). Photos resolved in this priority: (1) operator-curated manual overrides — Paragon-authorized per-listing photos OR operator-supplied marketing-material URLs, (2) automated project-name search via Tavily on publicly indexed developer marketing pages, falling back to (3) listings without a resolvable photo appear with a branded 88 West placeholder graphic (NO third-party image) and are never featured in the unblurred hero tier; they remain listed in foreclosure-deals.pending.json as the ops worklist for supplying a real photo URL. Across all displayed listings: street numbers withheld (shared on intro call); MLS numbers omitted from public cards (retained in research dump); no listing remarks; no agent names. Flagged for managing-broker awareness (Shirin Saleh, licence #X031527). Replace pipeline with the GVR-feed-backed source once the WebAPI is authorized.",
     "replaceWith": "GVR WebAPI feed — see docs/gvr-database-schema.md",
     "stats": {
-      "scrapedTotal": 105,
-      "scrapedInArea": 131,
-      "liveOnLp": 80,
+      "scrapedTotal": 103,
+      "scrapedInArea": 128,
+      "liveOnLp": 78,
       "featuredOnLp": 12,
-      "lockedOnLp": 68,
-      "pendingPhoto": 51,
+      "lockedOnLp": 66,
+      "pendingPhoto": 50,
       "manualOverrides": 6,
-      "autoSourcedPhotos": 31
+      "autoSourcedPhotos": 30
     }
   },
   "deals": [
@@ -283,17 +283,6 @@
       "featured": false
     },
     {
-      "type": "Townhouse",
-      "area": "Kitsilano, Vancouver",
-      "street": "B5 1855 W 10th Avenue",
-      "price": "$870K",
-      "sqft": "1,089 sq ft",
-      "courtOrdered": true,
-      "image": "/images/foreclosure/listings/auto/tennyson-mews.jpg",
-      "imageAlt": "Tennyson Mews — exterior view (representational, sourced from publicly indexed marketing material).",
-      "featured": true
-    },
-    {
       "type": "Land",
       "area": "Bolivar Heights, Surrey",
       "street": "138a Street",
@@ -368,7 +357,7 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/apex.jpg",
       "imageAlt": "Apex — exterior view (representational, sourced from publicly indexed marketing material).",
-      "featured": false
+      "featured": true
     },
     {
       "type": "House",
@@ -504,10 +493,10 @@
     },
     {
       "type": "House",
-      "area": "Queen Mary Park Surrey, Surrey",
-      "street": "84a Avenue",
+      "area": "Bear Creek Green Timbers, Surrey",
+      "street": "91 Avenue",
       "price": "$1.35M",
-      "sqft": "4,194 sq ft",
+      "sqft": "2,749 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -515,10 +504,10 @@
     },
     {
       "type": "House",
-      "area": "Bear Creek Green Timbers, Surrey",
-      "street": "91 Avenue",
+      "area": "Queen Mary Park Surrey, Surrey",
+      "street": "84a Avenue",
       "price": "$1.35M",
-      "sqft": "2,749 sq ft",
+      "sqft": "4,194 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -548,17 +537,6 @@
     },
     {
       "type": "House",
-      "area": "West Newton, Surrey",
-      "street": "75a Avenue",
-      "price": "$1.50M",
-      "sqft": "3,726 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "featured": false
-    },
-    {
-      "type": "House",
       "area": "Whalley, Surrey",
       "street": "132a Street",
       "price": "$1.50M",
@@ -574,6 +552,17 @@
       "street": "132a Street",
       "price": "$1.50M",
       "sqft": "1,171 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "West Newton, Surrey",
+      "street": "75a Avenue",
+      "price": "$1.50M",
+      "sqft": "3,726 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -627,7 +616,7 @@
       "type": "House",
       "area": "Simon Fraser Univer., Burnaby",
       "street": "Augusta Avenue",
-      "price": "$1.65M",
+      "price": "$1.61M",
       "sqft": "2,519 sq ft",
       "courtOrdered": true,
       "image": "",
@@ -660,7 +649,7 @@
       "type": "House",
       "area": "East Cambie, Richmond",
       "street": "Aztec Street",
-      "price": "$1.70M",
+      "price": "$1.69M",
       "sqft": "3,303 sq ft",
       "courtOrdered": true,
       "image": "",
@@ -786,17 +775,6 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/morgan-creek-surrey.jpg",
       "imageAlt": "House of a current court-ordered listing in Morgan Creek, Surrey.",
-      "featured": false
-    },
-    {
-      "type": "House",
-      "area": "Marpole, Vancouver",
-      "street": "W 60th Avenue",
-      "price": "$2.69M",
-      "sqft": "3,072 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
       "featured": false
     },
     {

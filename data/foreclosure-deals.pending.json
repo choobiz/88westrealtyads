@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-09T14:17:32.898Z",
+  "generatedAt": "2026-07-10T14:17:25.594Z",
   "note": "Listings scraped + in-area but waiting on a photo URL. Operator action: supply a photo URL for any of these by adding an entry to data/foreclosure-deals.manual.json keyed by `mls_number`. Re-run `node scripts/curate-deals.mjs` to move them to live.",
-  "count": 51,
+  "count": 50,
   "listings": [
     {
       "type": "Condo",
@@ -290,21 +290,6 @@
     },
     {
       "type": "House",
-      "area": "Queen Mary Park Surrey, Surrey",
-      "street": "84a Avenue",
-      "price": "$1.35M",
-      "sqft": "4,194 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3104058",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 1350000,
-      "featured": false
-    },
-    {
-      "type": "House",
       "area": "Bear Creek Green Timbers, Surrey",
       "street": "91 Avenue",
       "price": "$1.35M",
@@ -313,6 +298,21 @@
       "image": "",
       "imageAlt": "",
       "_mls": "R3137627",
+      "_projectName": null,
+      "_imageSource": null,
+      "_priceNum": 1350000,
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Queen Mary Park Surrey, Surrey",
+      "street": "84a Avenue",
+      "price": "$1.35M",
+      "sqft": "4,194 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "_mls": "R3104058",
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 1350000,
@@ -350,21 +350,6 @@
     },
     {
       "type": "House",
-      "area": "West Newton, Surrey",
-      "street": "75a Avenue",
-      "price": "$1.50M",
-      "sqft": "3,726 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3134123",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 1500000,
-      "featured": false
-    },
-    {
-      "type": "House",
       "area": "Whalley, Surrey",
       "street": "132a Street",
       "price": "$1.50M",
@@ -388,6 +373,21 @@
       "image": "",
       "imageAlt": "",
       "_mls": "R3121393",
+      "_projectName": null,
+      "_imageSource": null,
+      "_priceNum": 1500000,
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "West Newton, Surrey",
+      "street": "75a Avenue",
+      "price": "$1.50M",
+      "sqft": "3,726 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "_mls": "R3134123",
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 1500000,
@@ -442,7 +442,7 @@
       "type": "House",
       "area": "Simon Fraser Univer., Burnaby",
       "street": "Augusta Avenue",
-      "price": "$1.65M",
+      "price": "$1.61M",
       "sqft": "2,519 sq ft",
       "courtOrdered": true,
       "image": "",
@@ -450,7 +450,7 @@
       "_mls": "R3090788",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1650000,
+      "_priceNum": 1610000,
       "featured": false
     },
     {
@@ -487,7 +487,7 @@
       "type": "House",
       "area": "East Cambie, Richmond",
       "street": "Aztec Street",
-      "price": "$1.70M",
+      "price": "$1.69M",
       "sqft": "3,303 sq ft",
       "courtOrdered": true,
       "image": "",
@@ -495,7 +495,7 @@
       "_mls": "R3110870",
       "_projectName": null,
       "_imageSource": null,
-      "_priceNum": 1699000,
+      "_priceNum": 1688000,
       "featured": false
     },
     {
@@ -631,21 +631,6 @@
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 2499000,
-      "featured": false
-    },
-    {
-      "type": "House",
-      "area": "Marpole, Vancouver",
-      "street": "W 60th Avenue",
-      "price": "$2.69M",
-      "sqft": "3,072 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3078978",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 2690000,
       "featured": false
     },
     {

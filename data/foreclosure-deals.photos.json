@@ -1,7 +1,7 @@
 {
-  "sourcedAt": "2026-07-09T14:17:32.834Z",
-  "totalProjects": 31,
-  "cached": 31,
+  "sourcedAt": "2026-07-10T14:17:25.521Z",
+  "totalProjects": 30,
+  "cached": 30,
   "sourced": 0,
   "failed": 0,
   "photoMap": {
@@ -34,11 +34,6 @@
       "path": "/images/foreclosure/listings/auto/corbeau-by-mosaic.jpg",
       "source": "cached",
       "slug": "corbeau-by-mosaic"
-    },
-    "Tennyson Mews": {
-      "path": "/images/foreclosure/listings/auto/tennyson-mews.jpg",
-      "source": "cached",
-      "slug": "tennyson-mews"
     },
     "Mirabel English Bay": {
       "path": "/images/foreclosure/listings/auto/mirabel-english-bay.jpg",
