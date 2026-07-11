@@ -1,6 +1,6 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-07-10T14:17:25.452Z",
+  "scrapedAt": "2026-07-11T14:17:19.851Z",
   "parserVersion": "1.1",
   "sourceCount": 3,
   "rawCount": 120,
@@ -1243,21 +1243,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3137627",
-      "property_type": "House",
-      "neighborhood": "Bear Creek Green Timbers",
-      "city": "Surrey",
-      "fsa": "V3V",
-      "street_masked": "████ 91 Avenue",
-      "project_name": null,
-      "price": 1350000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 2749,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3104058",
       "property_type": "House",
       "neighborhood": "Queen Mary Park Surrey",
@@ -1269,6 +1254,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 4194,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3137627",
+      "property_type": "House",
+      "neighborhood": "Bear Creek Green Timbers",
+      "city": "Surrey",
+      "fsa": "V3V",
+      "street_masked": "████ 91 Avenue",
+      "project_name": null,
+      "price": 1350000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 2749,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
