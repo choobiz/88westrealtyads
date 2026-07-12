@@ -1,6 +1,6 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-07-11T14:17:19.851Z",
+  "scrapedAt": "2026-07-12T14:17:27.214Z",
   "parserVersion": "1.1",
   "sourceCount": 3,
   "rawCount": 120,
@@ -770,7 +770,7 @@
       "fsa": "V6A",
       "street_masked": "████ 150 E Cordova Street",
       "project_name": "Ingastown",
-      "price": 355000,
+      "price": 345000,
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 497,

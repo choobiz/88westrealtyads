@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-07-11T14:18:48.970Z",
+  "scrapedAt": "2026-07-12T14:17:05.850Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 17,
@@ -70,11 +70,11 @@
       "headline_dollar": "$749,000,"
     },
     {
-      "project_name": "Nolita Kelowna by Fifth Avenue Properties – Price, Plans , Availability",
-      "city": "Kelowna",
-      "incentive_summary": "Up to $40,000 off select homes, FREE condo fees for one year on eligible purchases",
-      "project_url": "https://www.mikestewart.ca/presale/nolita-downtown-kelowna-presale-condos-and-townhomes-by-fifth-avenue-properties/",
-      "headline_dollar": "$40,000"
+      "project_name": "V on E49 Condominiums – Availability, Plans, Prices",
+      "city": "Vancouver",
+      "incentive_summary": "All promotions and incentives are available for a limited-time and are subject to change., All incentives will be pai...",
+      "project_url": "https://www.mikestewart.ca/presale/v-on-e49-victoria-fraserview-east-vancouver-presale-condos/",
+      "headline_dollar": null
     },
     {
       "project_name": "Finch Drive Squamish by Diamond Head – Plans, Prices, Availability",

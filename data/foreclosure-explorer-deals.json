@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-11T14:18:11.899Z",
+ "generatedAt": "2026-07-12T14:18:20.805Z",
  "count": 78,
  "withPhoto": 28,
  "geocoded": 39,
@@ -35,8 +35,8 @@
    "area": "Downtown, Vancouver",
    "region": "Vancouver",
    "street": "150 E Cordova Street",
-   "price": "$355K",
-   "priceNum": 355000,
+   "price": "$345K",
+   "priceNum": 345000,
    "sqft": "497 sq ft",
    "image": "/images/foreclosure/listings/auto/ingastown.jpg",
    "imageAlt": "Ingastown — exterior view (representational, sourced from publicly indexed marketing material).",
