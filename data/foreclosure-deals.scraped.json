@@ -1,10 +1,10 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-07-12T14:17:27.214Z",
+  "scrapedAt": "2026-07-13T14:17:27.133Z",
   "parserVersion": "1.1",
   "sourceCount": 3,
-  "rawCount": 120,
-  "uniqueCount": 103,
+  "rawCount": 121,
+  "uniqueCount": 104,
   "withProjectName": 30,
   "perSource": [
     {
@@ -60,7 +60,7 @@
     {
       "source": "Macnabs (Royal LePage Elite West)",
       "ok": true,
-      "listings": 59,
+      "listings": 60,
       "pages": [
         {
           "page": 1,
@@ -94,8 +94,8 @@
           "page": 5,
           "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=5",
           "ok": true,
-          "listings": 11,
-          "newListings": 11
+          "listings": 12,
+          "newListings": 12
         },
         {
           "page": 6,
@@ -1003,21 +1003,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3099258",
-      "property_type": "House",
-      "neighborhood": "Hazelmere",
-      "city": "Surrey",
-      "fsa": "V3Z",
-      "street_masked": "████ 184 Street",
-      "project_name": null,
-      "price": 2300000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 2819,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3127268",
       "property_type": "House",
       "neighborhood": "Whalley",
@@ -1029,6 +1014,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1056,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3099258",
+      "property_type": "House",
+      "neighborhood": "Hazelmere",
+      "city": "Surrey",
+      "fsa": "V3Z",
+      "street_masked": "████ 184 Street",
+      "project_name": null,
+      "price": 2300000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 2819,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1078,21 +1078,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3136496",
-      "property_type": "Land",
-      "neighborhood": "County Line Glen Valley",
-      "city": "Langley",
-      "fsa": "V4W",
-      "street_masked": "████ 272 Street",
-      "project_name": null,
-      "price": 1790000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": null,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3129384",
       "property_type": "House",
       "neighborhood": "Coquitlam West",
@@ -1104,6 +1089,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 2302,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3136496",
+      "property_type": "Land",
+      "neighborhood": "County Line Glen Valley",
+      "city": "Langley",
+      "fsa": "V4W",
+      "street_masked": "████ 272 Street",
+      "project_name": null,
+      "price": 1790000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": null,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1509,6 +1509,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 4312,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3124149",
+      "property_type": "House",
+      "neighborhood": "Chilliwack Proper East",
+      "city": "Chilliwack",
+      "fsa": "V2P",
+      "street_masked": "████ Hazel Street",
+      "project_name": null,
+      "price": 799000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 2370,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-12T14:18:20.805Z",
+ "generatedAt": "2026-07-13T14:18:18.971Z",
  "count": 78,
  "withPhoto": 28,
  "geocoded": 39,
@@ -866,21 +866,6 @@
   },
   {
    "type": "House",
-   "area": "Hazelmere, Surrey",
-   "region": "Surrey",
-   "street": "184 Street",
-   "price": "$2.30M",
-   "priceNum": 2300000,
-   "sqft": "2,819 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null,
-   "lat": 49.0112607,
-   "lng": -122.7133425
-  },
-  {
-   "type": "House",
    "area": "Whalley, Surrey",
    "region": "Surrey",
    "street": "138 Street",
@@ -893,6 +878,21 @@
    "mls": null,
    "lat": 49.2088054,
    "lng": -122.8397249
+  },
+  {
+   "type": "House",
+   "area": "Hazelmere, Surrey",
+   "region": "Surrey",
+   "street": "184 Street",
+   "price": "$2.30M",
+   "priceNum": 2300000,
+   "sqft": "2,819 sq ft",
+   "image": "",
+   "imageAlt": "",
+   "courtOrdered": true,
+   "mls": null,
+   "lat": 49.0112607,
+   "lng": -122.7133425
   },
   {
    "type": "House",

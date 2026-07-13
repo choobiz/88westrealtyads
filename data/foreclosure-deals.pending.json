@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T14:17:27.510Z",
+  "generatedAt": "2026-07-13T14:17:27.266Z",
   "note": "Listings scraped + in-area but waiting on a photo URL. Operator action: supply a photo URL for any of these by adding an entry to data/foreclosure-deals.manual.json keyed by `mls_number`. Re-run `node scripts/curate-deals.mjs` to move them to live.",
   "count": 50,
   "listings": [
@@ -545,21 +545,6 @@
     },
     {
       "type": "House",
-      "area": "Hazelmere, Surrey",
-      "street": "184 Street",
-      "price": "$2.30M",
-      "sqft": "2,819 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3099258",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 2300000,
-      "featured": false
-    },
-    {
-      "type": "House",
       "area": "Whalley, Surrey",
       "street": "138 Street",
       "price": "$2.30M",
@@ -568,6 +553,21 @@
       "image": "",
       "imageAlt": "",
       "_mls": "R3127268",
+      "_projectName": null,
+      "_imageSource": null,
+      "_priceNum": 2300000,
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Hazelmere, Surrey",
+      "street": "184 Street",
+      "price": "$2.30M",
+      "sqft": "2,819 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "_mls": "R3099258",
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 2300000,
