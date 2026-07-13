@@ -86,7 +86,8 @@ function aggregate() {
 
 // Configured traffic split — MIRROR of proxy.ts VARIANT_SPLIT. Update both together.
 // A retired 2026-07-03 (its 25% → B). All live variants use the inline-form hero.
-const SPLIT = { A: 0, B: 50, C: 25, D: 25 };
+// 2026-07-12: B won on conversions → skewed to the winner. B 70% / C 15% / D 15%.
+const SPLIT = { A: 0, B: 70, C: 15, D: 15 };
 const LP = "https://go.88westrealty.com/foreclosure-deals-vancouver";
 const META = {
   A: "RETIRED — control 2-CTA hero (historical data only)",

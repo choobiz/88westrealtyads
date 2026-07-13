@@ -68,8 +68,10 @@ const COOKIE_MAX_AGE = 60 * 60 * 24 * 30; // 30 days
 // NOTE: paid Google Ads traffic also flows through this proxy now (the
 // foreclosure campaign's `final_url_suffix` was cleared 2026-06-13), so this
 // single split governs ALL traffic — paid and organic alike.
-// A retired → its 25% folds into B. B 50% / C 25% / D 25%.
-const VARIANT_SPLIT = { B: 0.50, C: 0.75, D: 1.0 } as const;
+// A retired → its 25% folds into B.
+// 2026-07-12: B won on conversions-per-LP → skew to the winner, keep C and D
+// live as challengers. B 70% / C 15% / D 15%.
+const VARIANT_SPLIT = { B: 0.70, C: 0.85, D: 1.0 } as const;
 
 function isVariant(v: string | null | undefined): v is Variant {
   return v === "B" || v === "C" || v === "D";
