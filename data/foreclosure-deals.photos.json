@@ -1,7 +1,7 @@
 {
-  "sourcedAt": "2026-07-13T14:17:27.201Z",
-  "totalProjects": 30,
-  "cached": 30,
+  "sourcedAt": "2026-07-14T14:17:24.104Z",
+  "totalProjects": 28,
+  "cached": 28,
   "sourced": 0,
   "failed": 0,
   "photoMap": {
@@ -49,11 +49,6 @@
       "path": "/images/foreclosure/listings/auto/the-pacific.jpg",
       "source": "cached",
       "slug": "the-pacific"
-    },
-    "Currents At The Water's Edge": {
-      "path": "/images/foreclosure/listings/auto/currents-at-the-water-s-edge.jpg",
-      "source": "cached",
-      "slug": "currents-at-the-water-s-edge"
     },
     "Paris Block": {
       "path": "/images/foreclosure/listings/auto/paris-block.jpg",
@@ -119,11 +114,6 @@
       "path": "/images/foreclosure/listings/auto/country-woods-hillview.jpg",
       "source": "cached",
       "slug": "country-woods-hillview"
-    },
-    "Crest": {
-      "path": "/images/foreclosure/listings/auto/crest.jpg",
-      "source": "cached",
-      "slug": "crest"
     },
     "Vantage": {
       "path": "/images/foreclosure/listings/auto/vantage.jpg",

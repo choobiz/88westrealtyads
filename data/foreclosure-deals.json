@@ -1,20 +1,20 @@
 {
-  "lastUpdated": "2026-07-13",
+  "lastUpdated": "2026-07-14",
   "source": "curate-deals.mjs (scraped + auto-photos + manual overrides)",
   "compliance": {
     "status": "operator-override",
-    "date": "2026-07-13",
+    "date": "2026-07-14",
     "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period before GVR WebAPI authorization. Listing data sourced from multiple public foreclosure aggregator pages (Simon Clayton, Macnabs, Realtyvibe). Photos resolved in this priority: (1) operator-curated manual overrides — Paragon-authorized per-listing photos OR operator-supplied marketing-material URLs, (2) automated project-name search via Tavily on publicly indexed developer marketing pages, falling back to (3) listings without a resolvable photo appear with a branded 88 West placeholder graphic (NO third-party image) and are never featured in the unblurred hero tier; they remain listed in foreclosure-deals.pending.json as the ops worklist for supplying a real photo URL. Across all displayed listings: street numbers withheld (shared on intro call); MLS numbers omitted from public cards (retained in research dump); no listing remarks; no agent names. Flagged for managing-broker awareness (Shirin Saleh, licence #X031527). Replace pipeline with the GVR-feed-backed source once the WebAPI is authorized.",
     "replaceWith": "GVR WebAPI feed — see docs/gvr-database-schema.md",
     "stats": {
-      "scrapedTotal": 104,
-      "scrapedInArea": 128,
-      "liveOnLp": 78,
+      "scrapedTotal": 102,
+      "scrapedInArea": 125,
+      "liveOnLp": 76,
       "featuredOnLp": 12,
-      "lockedOnLp": 66,
-      "pendingPhoto": 50,
+      "lockedOnLp": 64,
+      "pendingPhoto": 49,
       "manualOverrides": 6,
-      "autoSourcedPhotos": 30
+      "autoSourcedPhotos": 28
     }
   },
   "deals": [
@@ -127,17 +127,6 @@
       "image": "/images/foreclosure/listings/auto/paris-block.jpg",
       "imageAlt": "Paris Block — exterior view (representational, sourced from publicly indexed marketing material).",
       "featured": true
-    },
-    {
-      "type": "Condo",
-      "area": "Knight, Vancouver",
-      "street": "3996 Dumfries Street",
-      "price": "$599K",
-      "sqft": "561 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "featured": false
     },
     {
       "type": "Condo",
@@ -291,17 +280,6 @@
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
-      "featured": false
-    },
-    {
-      "type": "Condo",
-      "area": "South Marine, Vancouver",
-      "street": "3188 Riverwalk Avenue",
-      "price": "$913K",
-      "sqft": "983 sq ft",
-      "courtOrdered": true,
-      "image": "/images/foreclosure/listings/auto/currents-at-the-water-s-edge.jpg",
-      "imageAlt": "Currents At The Water's Edge — exterior view (representational, sourced from publicly indexed marketing material).",
       "featured": false
     },
     {
@@ -493,10 +471,10 @@
     },
     {
       "type": "House",
-      "area": "Queen Mary Park Surrey, Surrey",
-      "street": "84a Avenue",
+      "area": "Bear Creek Green Timbers, Surrey",
+      "street": "91 Avenue",
       "price": "$1.35M",
-      "sqft": "4,194 sq ft",
+      "sqft": "2,749 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -504,10 +482,10 @@
     },
     {
       "type": "House",
-      "area": "Bear Creek Green Timbers, Surrey",
-      "street": "91 Avenue",
+      "area": "Queen Mary Park Surrey, Surrey",
+      "street": "84a Avenue",
       "price": "$1.35M",
-      "sqft": "2,749 sq ft",
+      "sqft": "4,194 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -537,6 +515,17 @@
     },
     {
       "type": "House",
+      "area": "West Newton, Surrey",
+      "street": "75a Avenue",
+      "price": "$1.50M",
+      "sqft": "3,726 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
       "area": "Whalley, Surrey",
       "street": "132a Street",
       "price": "$1.50M",
@@ -552,17 +541,6 @@
       "street": "132a Street",
       "price": "$1.50M",
       "sqft": "1,171 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "featured": false
-    },
-    {
-      "type": "House",
-      "area": "West Newton, Surrey",
-      "street": "75a Avenue",
-      "price": "$1.50M",
-      "sqft": "3,726 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -614,6 +592,17 @@
     },
     {
       "type": "House",
+      "area": "Guildford, Surrey",
+      "street": "96 Avenue",
+      "price": "$1.60M",
+      "sqft": "3,546 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
       "area": "Simon Fraser Univer., Burnaby",
       "street": "Augusta Avenue",
       "price": "$1.61M",
@@ -651,17 +640,6 @@
       "street": "Aztec Street",
       "price": "$1.69M",
       "sqft": "3,303 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "featured": false
-    },
-    {
-      "type": "House",
-      "area": "Guildford, Surrey",
-      "street": "96 Avenue",
-      "price": "$1.70M",
-      "sqft": "3,546 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
