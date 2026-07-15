@@ -1,7 +1,7 @@
 {
-  "sourcedAt": "2026-07-14T14:17:24.104Z",
-  "totalProjects": 28,
-  "cached": 28,
+  "sourcedAt": "2026-07-15T14:17:24.689Z",
+  "totalProjects": 27,
+  "cached": 27,
   "sourced": 0,
   "failed": 0,
   "photoMap": {
@@ -109,11 +109,6 @@
       "path": "/images/foreclosure/listings/auto/sophia-living.jpg",
       "source": "cached",
       "slug": "sophia-living"
-    },
-    "Country Woods/Hillview": {
-      "path": "/images/foreclosure/listings/auto/country-woods-hillview.jpg",
-      "source": "cached",
-      "slug": "country-woods-hillview"
     },
     "Vantage": {
       "path": "/images/foreclosure/listings/auto/vantage.jpg",

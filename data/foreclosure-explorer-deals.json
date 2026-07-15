@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-07-14T14:18:16.072Z",
- "count": 76,
- "withPhoto": 27,
- "geocoded": 39,
+ "generatedAt": "2026-07-15T14:18:11.001Z",
+ "count": 68,
+ "withPhoto": 26,
+ "geocoded": 36,
  "regions": [
   "Burnaby",
   "North Vancouver",
@@ -78,8 +78,8 @@
    "area": "Collingwood, Vancouver",
    "region": "Vancouver",
    "street": "5488 Cecil Street",
-   "price": "$425K",
-   "priceNum": 425000,
+   "price": "$400K",
+   "priceNum": 400000,
    "sqft": "535 sq ft",
    "image": "/images/foreclosure/listings/auto/cecil-hill.jpg",
    "imageAlt": "Cecil Hill — exterior view (representational, sourced from publicly indexed marketing material).",
@@ -423,19 +423,6 @@
    "lng": -123.0314429
   },
   {
-   "type": "House",
-   "area": "West Newton, Surrey",
-   "region": "Surrey",
-   "street": "79a Avenue",
-   "price": "$1.06M",
-   "priceNum": 1060000,
-   "sqft": "2,392 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null
-  },
-  {
    "type": "Condo",
    "area": "West End, Vancouver",
    "region": "Vancouver",
@@ -563,19 +550,6 @@
    "lng": -123.123057
   },
   {
-   "type": "House",
-   "area": "Queen Mary Park Surrey, Surrey",
-   "region": "Surrey",
-   "street": "84a Avenue",
-   "price": "$1.25M",
-   "priceNum": 1250000,
-   "sqft": "2,820 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null
-  },
-  {
    "type": "Condo",
    "area": "West End, Vancouver",
    "region": "Vancouver",
@@ -605,19 +579,6 @@
   },
   {
    "type": "House",
-   "area": "Queen Mary Park Surrey, Surrey",
-   "region": "Surrey",
-   "street": "84a Avenue",
-   "price": "$1.35M",
-   "priceNum": 1350000,
-   "sqft": "4,194 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null
-  },
-  {
-   "type": "House",
    "area": "South Vancouver, Vancouver",
    "region": "Vancouver",
    "street": "E 54th Avenue",
@@ -637,19 +598,6 @@
    "price": "$1.50M",
    "priceNum": 1500000,
    "sqft": "4,065 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null
-  },
-  {
-   "type": "House",
-   "area": "West Newton, Surrey",
-   "region": "Surrey",
-   "street": "75a Avenue",
-   "price": "$1.50M",
-   "priceNum": 1500000,
-   "sqft": "3,726 sq ft",
    "image": "",
    "imageAlt": "",
    "courtOrdered": true,
@@ -684,6 +632,19 @@
    "mls": null,
    "lat": 49.211641,
    "lng": -122.8550543
+  },
+  {
+   "type": "House",
+   "area": "West Newton, Surrey",
+   "region": "Surrey",
+   "street": "75a Avenue",
+   "price": "$1.50M",
+   "priceNum": 1500000,
+   "sqft": "3,726 sq ft",
+   "image": "",
+   "imageAlt": "",
+   "courtOrdered": true,
+   "mls": null
   },
   {
    "type": "House",
@@ -728,34 +689,6 @@
   },
   {
    "type": "House",
-   "area": "Steveston South, Richmond",
-   "region": "Richmond",
-   "street": "Wescott Street",
-   "price": "$1.60M",
-   "priceNum": 1600000,
-   "sqft": "2,709 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null
-  },
-  {
-   "type": "House",
-   "area": "Guildford, Surrey",
-   "region": "Surrey",
-   "street": "96 Avenue",
-   "price": "$1.60M",
-   "priceNum": 1600000,
-   "sqft": "3,546 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null,
-   "lat": 49.1770056,
-   "lng": -122.7010417
-  },
-  {
-   "type": "House",
    "area": "Simon Fraser Univer., Burnaby",
    "region": "Burnaby",
    "street": "Augusta Avenue",
@@ -781,21 +714,6 @@
    "mls": null,
    "lat": 49.2123256,
    "lng": -123.1221014
-  },
-  {
-   "type": "Condo",
-   "area": "Point Grey, Vancouver",
-   "region": "Vancouver",
-   "street": "3639 W 16th Avenue",
-   "price": "$1.68M",
-   "priceNum": 1680000,
-   "sqft": "1,244 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null,
-   "lat": 49.2581476,
-   "lng": -123.1938292
   },
   {
    "type": "House",
@@ -840,21 +758,6 @@
   },
   {
    "type": "House",
-   "area": "Whalley, Surrey",
-   "region": "Surrey",
-   "street": "138 Street",
-   "price": "$2.30M",
-   "priceNum": 2300000,
-   "sqft": "1,056 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null,
-   "lat": 49.2088054,
-   "lng": -122.8397249
-  },
-  {
-   "type": "House",
    "area": "Hazelmere, Surrey",
    "region": "Surrey",
    "street": "184 Street",
@@ -867,6 +770,21 @@
    "mls": null,
    "lat": 49.0112607,
    "lng": -122.7133425
+  },
+  {
+   "type": "House",
+   "area": "Whalley, Surrey",
+   "region": "Surrey",
+   "street": "138 Street",
+   "price": "$2.30M",
+   "priceNum": 2300000,
+   "sqft": "1,056 sq ft",
+   "image": "",
+   "imageAlt": "",
+   "courtOrdered": true,
+   "mls": null,
+   "lat": 49.2088054,
+   "lng": -122.8397249
   },
   {
    "type": "House",
@@ -911,21 +829,6 @@
   },
   {
    "type": "House",
-   "area": "Grandview Surrey, Surrey",
-   "region": "Surrey",
-   "street": "Hillview Place",
-   "price": "$2.48M",
-   "priceNum": 2480000,
-   "sqft": "3,010 sq ft",
-   "image": "/images/foreclosure/listings/auto/country-woods-hillview.jpg",
-   "imageAlt": "Country Woods/Hillview — exterior view (representational, sourced from publicly indexed marketing material).",
-   "courtOrdered": true,
-   "mls": null,
-   "lat": 49.0565062,
-   "lng": -122.7428843
-  },
-  {
-   "type": "House",
    "area": "Renfrew Heights, Vancouver",
    "region": "Vancouver",
    "street": "Vanness Avenue",
@@ -966,19 +869,6 @@
    "mls": null,
    "lat": 49.1701022,
    "lng": -123.1166449
-  },
-  {
-   "type": "House",
-   "area": "Renfrew Heights, Vancouver",
-   "region": "Vancouver",
-   "street": "Vanness Avenue",
-   "price": "$2.92M",
-   "priceNum": 2920000,
-   "sqft": "3,218 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null
   },
   {
    "type": "House",

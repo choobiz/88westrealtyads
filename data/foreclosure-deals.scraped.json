@@ -1,23 +1,23 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-07-14T14:17:24.021Z",
+  "scrapedAt": "2026-07-15T14:17:24.612Z",
   "parserVersion": "1.1",
   "sourceCount": 3,
-  "rawCount": 117,
-  "uniqueCount": 102,
-  "withProjectName": 28,
+  "rawCount": 107,
+  "uniqueCount": 93,
+  "withProjectName": 27,
   "perSource": [
     {
       "source": "Simon Clayton (Macdonald Realty)",
       "ok": true,
-      "listings": 47,
+      "listings": 44,
       "pages": [
         {
           "page": 1,
           "url": "https://simonclayton.ca/foreclosures/?_pg=1",
           "ok": true,
-          "listings": 12,
-          "newListings": 12
+          "listings": 11,
+          "newListings": 11
         },
         {
           "page": 2,
@@ -37,8 +37,8 @@
           "page": 4,
           "url": "https://simonclayton.ca/foreclosures/?_pg=4",
           "ok": true,
-          "listings": 12,
-          "newListings": 12
+          "listings": 10,
+          "newListings": 10
         },
         {
           "page": 5,
@@ -53,7 +53,7 @@
     {
       "source": "Macnabs (Royal LePage Elite West)",
       "ok": true,
-      "listings": 58,
+      "listings": 52,
       "pages": [
         {
           "page": 1,
@@ -66,15 +66,15 @@
           "page": 2,
           "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=2",
           "ok": true,
-          "listings": 12,
-          "newListings": 12
+          "listings": 11,
+          "newListings": 11
         },
         {
           "page": 3,
           "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=3",
           "ok": true,
-          "listings": 12,
-          "newListings": 12
+          "listings": 9,
+          "newListings": 9
         },
         {
           "page": 4,
@@ -87,15 +87,15 @@
           "page": 5,
           "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=5",
           "ok": true,
-          "listings": 11,
-          "newListings": 11
+          "listings": 9,
+          "newListings": 9
         },
         {
           "page": 6,
           "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=6",
-          "ok": true,
+          "ok": false,
           "listings": 0,
-          "newListings": 0
+          "error": "404 Not Found"
         }
       ],
       "error": null
@@ -103,14 +103,14 @@
     {
       "source": "Realtyvibe (Sutton Premier)",
       "ok": true,
-      "listings": 12,
+      "listings": 11,
       "pages": [
         {
           "page": 1,
           "url": "https://realtyvibe.ca/vancouver-foreclosures-for-sale/",
           "ok": true,
-          "listings": 12,
-          "newListings": 12
+          "listings": 11,
+          "newListings": 11
         }
       ],
       "error": null
@@ -118,21 +118,6 @@
   ],
   "note": "Research dump. Bridge-period scraper pending GVR WebAPI replacement. Address numbers masked (████). Postal codes stored as FSA only. No MLS photo URLs / remarks / agent names captured here — photo URLs (when sourced via project-name search) are written by scripts/source-listing-photos.mjs to a separate side-car file.",
   "listings": [
-    {
-      "mls_number": "R3028601",
-      "property_type": "Condo",
-      "neighborhood": "Point Grey",
-      "city": "Vancouver",
-      "fsa": "V6R",
-      "street_masked": "████ 3639 W 16th Avenue",
-      "project_name": null,
-      "price": 1680000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 1244,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
     {
       "mls_number": "R3067667",
       "property_type": "House",
@@ -205,21 +190,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 933,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
-      "mls_number": "R3082521",
-      "property_type": "House",
-      "neighborhood": "Steveston South",
-      "city": "Richmond",
-      "fsa": "V3E",
-      "street_masked": "████ Wescott Street",
-      "project_name": null,
-      "price": 1598880,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 2709,
       "court_ordered_flag": true,
       "source": "Simon Clayton (Macdonald Realty)"
     },
@@ -749,21 +719,6 @@
       "source": "Simon Clayton (Macdonald Realty)"
     },
     {
-      "mls_number": "R3123512",
-      "property_type": "House",
-      "neighborhood": "Renfrew Heights",
-      "city": "Vancouver",
-      "fsa": "V5R",
-      "street_masked": "████ Vanness Avenue",
-      "project_name": null,
-      "price": 2920888,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 3218,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
       "mls_number": "R3123556",
       "property_type": "House",
       "neighborhood": "University VW",
@@ -944,17 +899,17 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3104157",
+      "mls_number": "R3099258",
       "property_type": "House",
-      "neighborhood": "Grandview Surrey",
+      "neighborhood": "Hazelmere",
       "city": "Surrey",
       "fsa": "V3Z",
-      "street_masked": "████ Hillview Place",
-      "project_name": "Country Woods/Hillview",
-      "price": 2475000,
+      "street_masked": "████ 184 Street",
+      "project_name": null,
+      "price": 2300000,
       "bedrooms": null,
       "bathrooms": null,
-      "area_sqft": 3010,
+      "area_sqft": 2819,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -970,21 +925,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1056,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
-      "mls_number": "R3099258",
-      "property_type": "House",
-      "neighborhood": "Hazelmere",
-      "city": "Surrey",
-      "fsa": "V3Z",
-      "street_masked": "████ 184 Street",
-      "project_name": null,
-      "price": 2300000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 2819,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1064,21 +1004,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3084922",
-      "property_type": "House",
-      "neighborhood": "Guildford",
-      "city": "Surrey",
-      "fsa": "V3R",
-      "street_masked": "████ 96 Avenue",
-      "project_name": null,
-      "price": 1600000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 3546,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3140025",
       "property_type": "House",
       "neighborhood": "South Arm",
@@ -1090,21 +1015,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 2179,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
-      "mls_number": "R3134123",
-      "property_type": "House",
-      "neighborhood": "West Newton",
-      "city": "Surrey",
-      "fsa": "V3W",
-      "street_masked": "████ 75a Avenue",
-      "project_name": null,
-      "price": 1500000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 3726,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1139,6 +1049,21 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
+      "mls_number": "R3134123",
+      "property_type": "House",
+      "neighborhood": "West Newton",
+      "city": "Surrey",
+      "fsa": "V3W",
+      "street_masked": "████ 75a Avenue",
+      "project_name": null,
+      "price": 1500000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 3726,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
       "mls_number": "R3094119",
       "property_type": "House",
       "neighborhood": "Bear Creek Green Timbers",
@@ -1165,21 +1090,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": null,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
-      "mls_number": "R3109534",
-      "property_type": "House",
-      "neighborhood": "Canyon Springs",
-      "city": "Coquitlam",
-      "fsa": "V3B",
-      "street_masked": "████ Delahaye Drive",
-      "project_name": null,
-      "price": 1425000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 3987,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1214,21 +1124,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3104058",
-      "property_type": "House",
-      "neighborhood": "Queen Mary Park Surrey",
-      "city": "Surrey",
-      "fsa": "V3W",
-      "street_masked": "████ 84a Avenue",
-      "project_name": null,
-      "price": 1350000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 4194,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3138640",
       "property_type": "House",
       "neighborhood": "Tsawwassen Central",
@@ -1240,21 +1135,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 2250,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
-      "mls_number": "R3103236",
-      "property_type": "House",
-      "neighborhood": "Queen Mary Park Surrey",
-      "city": "Surrey",
-      "fsa": "V3W",
-      "street_masked": "████ 84a Avenue",
-      "project_name": null,
-      "price": 1250000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 2820,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1315,21 +1195,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 2244,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
-      "mls_number": "R3129226",
-      "property_type": "House",
-      "neighborhood": "West Newton",
-      "city": "Surrey",
-      "fsa": "V3W",
-      "street_masked": "████ 79a Avenue",
-      "project_name": null,
-      "price": 1060000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 2392,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1566,7 +1431,7 @@
       "fsa": "V5R",
       "street_masked": "████ 5488 Cecil Street",
       "project_name": "Cecil Hill",
-      "price": 424900,
+      "price": 400000,
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 535,

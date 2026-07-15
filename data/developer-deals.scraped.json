@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-07-14T14:42:45.132Z",
+  "scrapedAt": "2026-07-15T14:17:05.090Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
@@ -19,6 +19,20 @@
       "incentive_summary": "Raven’s Park by Urban Coast – 9688 182a Street, Surrey Save Up To $55,000 on select move-in ready homes, GST Included on Select Homes, Free A/C Upgrade, Free EV Charger Ins...",
       "project_url": "https://www.mikestewart.ca/presale/ravens-park-presale-townhomes/",
       "headline_dollar": "$55,000"
+    },
+    {
+      "project_name": "Hartley Surrey – 10488 138A Street",
+      "city": "Surrey",
+      "incentive_summary": "Buyers Save $25,000, The first 10 purchasers will save $25,000, First 10 purchasers will save $25,000, First 10 purch...",
+      "project_url": "https://www.mikestewart.ca/presale/hartley-surrey-city-centre-presale-condos-townhomes-by-porte-homes/",
+      "headline_dollar": "$25,000,"
+    },
+    {
+      "project_name": "Carmel Collection by Ikonik Homes – Prices & Floorplans",
+      "city": "Surrey",
+      "incentive_summary": "Exclusive $10,000 VIP purchaser incentive, Custom kitchen bar upgrade with a floating shelf, Gas BBQ outlet, Epoxy fl...",
+      "project_url": "https://www.mikestewart.ca/presale/carmel-collection-presale-townhomes/",
+      "headline_dollar": "$10,000"
     },
     {
       "project_name": "Solana Langley by Zenterra – 19958 77 Avenue & 7698 198B Street",
@@ -63,18 +77,32 @@
       "headline_dollar": "$5,000"
     },
     {
-      "project_name": "Umbra at Portwood by Edgar Development – Availability, Plans, Prices",
-      "city": "Port Moody",
-      "incentive_summary": "5% Deposit Program: Own with only 5% down, Zero GST for First-Time Buyers: skip the GST on homes up to $1M, $10,000 B...",
-      "project_url": "https://www.mikestewart.ca/presale/umbra-at-portwood-presale-port-moody-condos-and-townhomes-by-edgar-development/",
-      "headline_dollar": "$1M"
-    },
-    {
       "project_name": "Nolita Kelowna by Fifth Avenue Properties – Price, Plans , Availability",
       "city": "Kelowna",
       "incentive_summary": "Up to $40,000 off select homes, FREE condo fees for one year on eligible purchases, Save up to $40,000 off select homes",
       "project_url": "https://www.mikestewart.ca/presale/nolita-downtown-kelowna-presale-condos-and-townhomes-by-fifth-avenue-properties/",
       "headline_dollar": "$40,000"
+    },
+    {
+      "project_name": "Belvedere Surrey –  9675 King George Boulevard",
+      "city": "Surrey",
+      "incentive_summary": "Belvedere Surrey – 9675 King George Boulevard Court-Ordered Pricing, Pre-growth pricing in Surrey Centre, Move-in-ready concrete homes complete with A/C, parking, ...",
+      "project_url": "https://www.mikestewart.ca/presale/belvedere-by-square-nine-developments-surrey-city-centre-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "V on E49 Condominiums – Availability, Plans, Prices",
+      "city": "Vancouver",
+      "incentive_summary": "All promotions and incentives are available for a limited-time and are subject to change., All incentives will be pai...",
+      "project_url": "https://www.mikestewart.ca/presale/v-on-e49-victoria-fraserview-east-vancouver-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Artesia Metrotown – 5685 Halley Avenue –",
+      "city": "Burnaby",
+      "incentive_summary": "Credits exclude GST and are for a limited time only and subject to change without notice., Credits available, Credits...",
+      "project_url": "https://www.mikestewart.ca/presale/artesia-by-qualex-landmark/",
+      "headline_dollar": null
     },
     {
       "project_name": "The Cut East Van Phase 2 – Plans & Pricing",
@@ -91,13 +119,6 @@
       "headline_dollar": null
     },
     {
-      "project_name": "V on E49 Condominiums – Availability, Plans, Prices",
-      "city": "Vancouver",
-      "incentive_summary": "All promotions and incentives are available for a limited-time and are subject to change., All incentives will be pai...",
-      "project_url": "https://www.mikestewart.ca/presale/v-on-e49-victoria-fraserview-east-vancouver-presale-condos/",
-      "headline_dollar": null
-    },
-    {
       "project_name": "Finch Drive Squamish by Diamond Head – Plans, Prices, Availability",
       "city": "Squamish",
       "incentive_summary": "Exclusive incentives currently offered for market rate rentals, Recently improved pricing on market rate rentals, Bel...",
@@ -109,27 +130,6 @@
       "city": "West Kelowna",
       "incentive_summary": "D Plan features 3 Bedroom + Flex, 2.5 baths, 1,428 sq.ft interior space, 175 sq.ft outdoor space, and a private two c...",
       "project_url": "https://www.mikestewart.ca/presale/shannon-lynn-on-the-lake-townhomes/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Ōku at 8080 Oak Street – Ulmus Development",
-      "city": "Vancouver",
-      "incentive_summary": "Enter the Oku Social Media Contest for a chance to win 2 tickets & parking to a Canucks Game., Holiday Buyer Incentiv...",
-      "project_url": "https://www.mikestewart.ca/presale/oku/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Portwood by Edgar Development – Plans, Availability, Prices",
-      "city": "Port Moody",
-      "incentive_summary": "Early access to two accelerated delivery homes, Developer is motivated to achieve a near-term milestone indicating po...",
-      "project_url": "https://www.mikestewart.ca/presale/woodland-park-seaview-port-moody-presale-condos-and-townhomes-by-edgar-development/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Aqua Waterfront Village by Mission Group – Availability, Prices, Plans",
-      "city": "Kelowna",
-      "incentive_summary": "Event guests will be entered to win one of two incredible prizes: a half-day private boat tour or an exclusive surf s...",
-      "project_url": "https://www.mikestewart.ca/presale/aqua-by-mission-group-lower-mission-kelowna-presale-condos-townhomes/",
       "headline_dollar": null
     }
   ]
