@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-07-15T14:17:05.090Z",
+  "scrapedAt": "2026-07-15T14:42:44.990Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
@@ -91,6 +91,13 @@
       "headline_dollar": null
     },
     {
+      "project_name": "Queens on King George by Dawson + Sawyer – Plans & Pricing",
+      "city": "Surrey",
+      "incentive_summary": "We will be starting the new year with a promotion that is guaranteed to blow you away., We will be starting the new y...",
+      "project_url": "https://www.mikestewart.ca/presale/queens-on-king-george-surrey/",
+      "headline_dollar": null
+    },
+    {
       "project_name": "V on E49 Condominiums – Availability, Plans, Prices",
       "city": "Vancouver",
       "incentive_summary": "All promotions and incentives are available for a limited-time and are subject to change., All incentives will be pai...",
@@ -123,13 +130,6 @@
       "city": "Squamish",
       "incentive_summary": "Exclusive incentives currently offered for market rate rentals, Recently improved pricing on market rate rentals, Bel...",
       "project_url": "https://www.mikestewart.ca/presale/finch-drive-squamish-presale-condominiums-and-townhomes-by-diamond-head-development/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Shannon Lynn on the Lake Kelowna by Landmark West Group – 72 Understated West Kelowna Townhomes",
-      "city": "West Kelowna",
-      "incentive_summary": "D Plan features 3 Bedroom + Flex, 2.5 baths, 1,428 sq.ft interior space, 175 sq.ft outdoor space, and a private two c...",
-      "project_url": "https://www.mikestewart.ca/presale/shannon-lynn-on-the-lake-townhomes/",
       "headline_dollar": null
     }
   ]
