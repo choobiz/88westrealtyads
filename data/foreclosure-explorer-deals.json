@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-07-15T14:18:11.001Z",
- "count": 68,
- "withPhoto": 26,
- "geocoded": 36,
+ "generatedAt": "2026-07-16T14:18:38.095Z",
+ "count": 64,
+ "withPhoto": 25,
+ "geocoded": 33,
  "regions": [
   "Burnaby",
   "North Vancouver",
@@ -44,21 +44,6 @@
    "mls": null,
    "lat": 49.2822056,
    "lng": -123.1006004
-  },
-  {
-   "type": "Condo",
-   "area": "Sullivan Heights, Burnaby",
-   "region": "Burnaby",
-   "street": "9280 Salish Court",
-   "price": "$395K",
-   "priceNum": 395000,
-   "sqft": "730 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null,
-   "lat": 49.2517573,
-   "lng": -122.9026943
   },
   {
    "type": "Condo",
@@ -145,21 +130,6 @@
    "mls": null,
    "lat": 49.278265,
    "lng": -123.0401588
-  },
-  {
-   "type": "Condo",
-   "area": "Downtown, Vancouver",
-   "region": "Vancouver",
-   "street": "53 W Hastings Street",
-   "price": "$581K",
-   "priceNum": 581000,
-   "sqft": "1,050 sq ft",
-   "image": "/images/foreclosure/listings/auto/paris-block.jpg",
-   "imageAlt": "Paris Block — exterior view (representational, sourced from publicly indexed marketing material).",
-   "courtOrdered": true,
-   "mls": null,
-   "lat": 49.2821284,
-   "lng": -123.1063039
   },
   {
    "type": "Condo",
@@ -467,19 +437,6 @@
   },
   {
    "type": "Condo",
-   "area": "S.W. Marine, Vancouver",
-   "region": "Vancouver",
-   "street": "8588 Cornish Street",
-   "price": "$1.20M",
-   "priceNum": 1200000,
-   "sqft": "1,325 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null
-  },
-  {
-   "type": "Condo",
    "area": "West End, Vancouver",
    "region": "Vancouver",
    "street": "1925 Alberni Street",
@@ -758,21 +715,6 @@
   },
   {
    "type": "House",
-   "area": "Hazelmere, Surrey",
-   "region": "Surrey",
-   "street": "184 Street",
-   "price": "$2.30M",
-   "priceNum": 2300000,
-   "sqft": "2,819 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null,
-   "lat": 49.0112607,
-   "lng": -122.7133425
-  },
-  {
-   "type": "House",
    "area": "Whalley, Surrey",
    "region": "Surrey",
    "street": "138 Street",
@@ -785,6 +727,21 @@
    "mls": null,
    "lat": 49.2088054,
    "lng": -122.8397249
+  },
+  {
+   "type": "House",
+   "area": "Hazelmere, Surrey",
+   "region": "Surrey",
+   "street": "184 Street",
+   "price": "$2.30M",
+   "priceNum": 2300000,
+   "sqft": "2,819 sq ft",
+   "image": "",
+   "imageAlt": "",
+   "courtOrdered": true,
+   "mls": null,
+   "lat": 49.0112607,
+   "lng": -122.7133425
   },
   {
    "type": "House",
@@ -944,21 +901,6 @@
    "mls": null,
    "lat": 49.2339611,
    "lng": -123.1298702
-  },
-  {
-   "type": "House",
-   "area": "University, Vancouver",
-   "region": "Vancouver",
-   "street": "College Highroad",
-   "price": "$9.00M",
-   "priceNum": 9000000,
-   "sqft": "7,454 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null,
-   "lat": 49.2689048,
-   "lng": -123.2436019
   },
   {
    "type": "Land",

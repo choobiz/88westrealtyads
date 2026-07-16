@@ -1,8 +1,8 @@
 {
-  "sourcedAt": "2026-07-15T14:17:24.689Z",
+  "sourcedAt": "2026-07-16T14:17:53.208Z",
   "totalProjects": 27,
-  "cached": 27,
-  "sourced": 0,
+  "cached": 26,
+  "sourced": 1,
   "failed": 0,
   "photoMap": {
     "Current At Water's Edge By Polygon": {
@@ -49,11 +49,6 @@
       "path": "/images/foreclosure/listings/auto/the-pacific.jpg",
       "source": "cached",
       "slug": "the-pacific"
-    },
-    "Paris Block": {
-      "path": "/images/foreclosure/listings/auto/paris-block.jpg",
-      "source": "cached",
-      "slug": "paris-block"
     },
     "Olivers Landing - Furry Creek": {
       "path": "/images/foreclosure/listings/auto/olivers-landing-furry-creek.jpg",
@@ -139,6 +134,14 @@
       "path": "/images/foreclosure/listings/auto/the-savoy.jpg",
       "source": "cached",
       "slug": "the-savoy"
+    },
+    "Gleneagles": {
+      "path": "/images/foreclosure/listings/auto/gleneagles.jpg",
+      "source": "https://dyhx7is8pu014.cloudfront.net/www.brocksmeaton.com/homes/60500/web/ge_clubhouse_exterior_16-dwv-parksanstuff-sjp_00650.jpg?timestamp=1522366360",
+      "description": "A single-story building with a wooden exterior and a metal roof is situated amidst lush green trees and a well-maintained lawn, with two children playing golf in front of it.",
+      "bytes": 485128,
+      "slug": "gleneagles",
+      "downloadedAt": "2026-07-16T14:17:53.207Z"
     }
   },
   "failures": []

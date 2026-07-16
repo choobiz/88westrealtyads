@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-07-15",
+  "lastUpdated": "2026-07-16",
   "source": "curate-deals.mjs (scraped + auto-photos + manual overrides)",
   "compliance": {
     "status": "operator-override",
-    "date": "2026-07-15",
+    "date": "2026-07-16",
     "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period before GVR WebAPI authorization. Listing data sourced from multiple public foreclosure aggregator pages (Simon Clayton, Macnabs, Realtyvibe). Photos resolved in this priority: (1) operator-curated manual overrides — Paragon-authorized per-listing photos OR operator-supplied marketing-material URLs, (2) automated project-name search via Tavily on publicly indexed developer marketing pages, falling back to (3) listings without a resolvable photo appear with a branded 88 West placeholder graphic (NO third-party image) and are never featured in the unblurred hero tier; they remain listed in foreclosure-deals.pending.json as the ops worklist for supplying a real photo URL. Across all displayed listings: street numbers withheld (shared on intro call); MLS numbers omitted from public cards (retained in research dump); no listing remarks; no agent names. Flagged for managing-broker awareness (Shirin Saleh, licence #X031527). Replace pipeline with the GVR-feed-backed source once the WebAPI is authorized.",
     "replaceWith": "GVR WebAPI feed — see docs/gvr-database-schema.md",
     "stats": {
-      "scrapedTotal": 93,
-      "scrapedInArea": 110,
-      "liveOnLp": 68,
+      "scrapedTotal": 90,
+      "scrapedInArea": 103,
+      "liveOnLp": 64,
       "featuredOnLp": 12,
-      "lockedOnLp": 56,
-      "pendingPhoto": 42,
+      "lockedOnLp": 52,
+      "pendingPhoto": 39,
       "manualOverrides": 6,
       "autoSourcedPhotos": 27
     }
@@ -39,17 +39,6 @@
       "image": "/images/foreclosure/listings/auto/ingastown.jpg",
       "imageAlt": "Ingastown — exterior view (representational, sourced from publicly indexed marketing material).",
       "featured": true
-    },
-    {
-      "type": "Condo",
-      "area": "Sullivan Heights, Burnaby",
-      "street": "9280 Salish Court",
-      "price": "$395K",
-      "sqft": "730 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "featured": false
     },
     {
       "type": "Condo",
@@ -119,17 +108,6 @@
     },
     {
       "type": "Condo",
-      "area": "Downtown, Vancouver",
-      "street": "53 W Hastings Street",
-      "price": "$581K",
-      "sqft": "1,050 sq ft",
-      "courtOrdered": true,
-      "image": "/images/foreclosure/listings/auto/paris-block.jpg",
-      "imageAlt": "Paris Block — exterior view (representational, sourced from publicly indexed marketing material).",
-      "featured": true
-    },
-    {
-      "type": "Condo",
       "area": "South Marine, Vancouver",
       "street": "3138 Riverwalk Avenue",
       "price": "$675K",
@@ -170,7 +148,7 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/altadena.jpg",
       "imageAlt": "Altadena — exterior view (representational, sourced from publicly indexed marketing material).",
-      "featured": false
+      "featured": true
     },
     {
       "type": "Townhouse",
@@ -365,17 +343,6 @@
       "street": "124 Street",
       "price": "$1.15M",
       "sqft": "—",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "featured": false
-    },
-    {
-      "type": "Condo",
-      "area": "S.W. Marine, Vancouver",
-      "street": "8588 Cornish Street",
-      "price": "$1.20M",
-      "sqft": "1,325 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -603,10 +570,10 @@
     },
     {
       "type": "House",
-      "area": "Hazelmere, Surrey",
-      "street": "184 Street",
+      "area": "Whalley, Surrey",
+      "street": "138 Street",
       "price": "$2.30M",
-      "sqft": "2,819 sq ft",
+      "sqft": "1,056 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -614,10 +581,10 @@
     },
     {
       "type": "House",
-      "area": "Whalley, Surrey",
-      "street": "138 Street",
+      "area": "Hazelmere, Surrey",
+      "street": "184 Street",
       "price": "$2.30M",
-      "sqft": "1,056 sq ft",
+      "sqft": "2,819 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -739,17 +706,6 @@
       "street": "W 41st Avenue",
       "price": "$6.00M",
       "sqft": "2,196 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "featured": false
-    },
-    {
-      "type": "House",
-      "area": "University, Vancouver",
-      "street": "College Highroad",
-      "price": "$9.00M",
-      "sqft": "7,454 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",

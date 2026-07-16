@@ -1,44 +1,44 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-07-15T14:17:24.612Z",
+  "scrapedAt": "2026-07-16T14:17:37.691Z",
   "parserVersion": "1.1",
   "sourceCount": 3,
-  "rawCount": 107,
-  "uniqueCount": 93,
+  "rawCount": 103,
+  "uniqueCount": 90,
   "withProjectName": 27,
   "perSource": [
     {
       "source": "Simon Clayton (Macdonald Realty)",
       "ok": true,
-      "listings": 44,
+      "listings": 41,
       "pages": [
         {
           "page": 1,
           "url": "https://simonclayton.ca/foreclosures/?_pg=1",
           "ok": true,
-          "listings": 11,
-          "newListings": 11
+          "listings": 12,
+          "newListings": 12
         },
         {
           "page": 2,
           "url": "https://simonclayton.ca/foreclosures/?_pg=2",
           "ok": true,
-          "listings": 12,
-          "newListings": 12
+          "listings": 11,
+          "newListings": 11
         },
         {
           "page": 3,
           "url": "https://simonclayton.ca/foreclosures/?_pg=3",
           "ok": true,
-          "listings": 11,
-          "newListings": 11
+          "listings": 10,
+          "newListings": 10
         },
         {
           "page": 4,
           "url": "https://simonclayton.ca/foreclosures/?_pg=4",
           "ok": true,
-          "listings": 10,
-          "newListings": 10
+          "listings": 8,
+          "newListings": 8
         },
         {
           "page": 5,
@@ -53,7 +53,7 @@
     {
       "source": "Macnabs (Royal LePage Elite West)",
       "ok": true,
-      "listings": 52,
+      "listings": 51,
       "pages": [
         {
           "page": 1,
@@ -73,8 +73,8 @@
           "page": 3,
           "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=3",
           "ok": true,
-          "listings": 9,
-          "newListings": 9
+          "listings": 8,
+          "newListings": 8
         },
         {
           "page": 4,
@@ -434,21 +434,6 @@
       "source": "Simon Clayton (Macdonald Realty)"
     },
     {
-      "mls_number": "R3112066",
-      "property_type": "Condo",
-      "neighborhood": "Downtown VW",
-      "city": "Vancouver",
-      "fsa": "V6B",
-      "street_masked": "████ 53 W Hastings Street",
-      "project_name": "Paris Block",
-      "price": 581300,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 1050,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
       "mls_number": "R3112795",
       "property_type": "Townhouse",
       "neighborhood": "Furry Creek",
@@ -599,21 +584,6 @@
       "source": "Simon Clayton (Macdonald Realty)"
     },
     {
-      "mls_number": "R3118399",
-      "property_type": "Condo",
-      "neighborhood": "S.W. Marine",
-      "city": "Vancouver",
-      "fsa": "V6P",
-      "street_masked": "████ 8588 Cornish Street",
-      "project_name": null,
-      "price": 1199000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 1325,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
       "mls_number": "R3118932",
       "property_type": "Condo",
       "neighborhood": "West End VW",
@@ -715,21 +685,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 2418,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
-      "mls_number": "R3123556",
-      "property_type": "House",
-      "neighborhood": "University VW",
-      "city": "Vancouver",
-      "fsa": "V6T",
-      "street_masked": "████ College Highroad",
-      "project_name": null,
-      "price": 8999000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 7454,
       "court_ordered_flag": true,
       "source": "Simon Clayton (Macdonald Realty)"
     },
@@ -899,21 +854,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3099258",
-      "property_type": "House",
-      "neighborhood": "Hazelmere",
-      "city": "Surrey",
-      "fsa": "V3Z",
-      "street_masked": "████ 184 Street",
-      "project_name": null,
-      "price": 2300000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 2819,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3127268",
       "property_type": "House",
       "neighborhood": "Whalley",
@@ -925,6 +865,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1056,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3099258",
+      "property_type": "House",
+      "neighborhood": "Hazelmere",
+      "city": "Surrey",
+      "fsa": "V3Z",
+      "street_masked": "████ 184 Street",
+      "project_name": null,
+      "price": 2300000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 2819,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1454,21 +1409,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3129279",
-      "property_type": "Condo",
-      "neighborhood": "Sullivan Heights",
-      "city": "Burnaby",
-      "fsa": "V3J",
-      "street_masked": "████ 9280 Salish Court",
-      "project_name": null,
-      "price": 395000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 730,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3116809",
       "property_type": "Condo",
       "neighborhood": "Granville",
@@ -1510,6 +1450,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1936,
+      "court_ordered_flag": true,
+      "source": "Realtyvibe (Sutton Premier)"
+    },
+    {
+      "mls_number": "R3115597",
+      "property_type": "House",
+      "neighborhood": "Gleneagles",
+      "city": "West Vancouver",
+      "fsa": "V7W",
+      "street_masked": "████ Summit Avenue",
+      "project_name": "Gleneagles",
+      "price": 2998000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 4874,
       "court_ordered_flag": true,
       "source": "Realtyvibe (Sutton Premier)"
     }

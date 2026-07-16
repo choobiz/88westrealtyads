@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-15T14:17:24.767Z",
+  "generatedAt": "2026-07-16T14:17:53.320Z",
   "note": "Listings scraped + in-area but waiting on a photo URL. Operator action: supply a photo URL for any of these by adding an entry to data/foreclosure-deals.manual.json keyed by `mls_number`. Re-run `node scripts/curate-deals.mjs` to move them to live.",
-  "count": 42,
+  "count": 39,
   "listings": [
     {
       "type": "Condo",
@@ -16,21 +16,6 @@
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 176000,
-      "featured": false
-    },
-    {
-      "type": "Condo",
-      "area": "Sullivan Heights, Burnaby",
-      "street": "9280 Salish Court",
-      "price": "$395K",
-      "sqft": "730 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3129279",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 395000,
       "featured": false
     },
     {
@@ -196,21 +181,6 @@
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 1150000,
-      "featured": false
-    },
-    {
-      "type": "Condo",
-      "area": "S.W. Marine, Vancouver",
-      "street": "8588 Cornish Street",
-      "price": "$1.20M",
-      "sqft": "1,325 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3118399",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 1199000,
       "featured": false
     },
     {
@@ -440,21 +410,6 @@
     },
     {
       "type": "House",
-      "area": "Hazelmere, Surrey",
-      "street": "184 Street",
-      "price": "$2.30M",
-      "sqft": "2,819 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3099258",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 2300000,
-      "featured": false
-    },
-    {
-      "type": "House",
       "area": "Whalley, Surrey",
       "street": "138 Street",
       "price": "$2.30M",
@@ -463,6 +418,21 @@
       "image": "",
       "imageAlt": "",
       "_mls": "R3127268",
+      "_projectName": null,
+      "_imageSource": null,
+      "_priceNum": 2300000,
+      "featured": false
+    },
+    {
+      "type": "House",
+      "area": "Hazelmere, Surrey",
+      "street": "184 Street",
+      "price": "$2.30M",
+      "sqft": "2,819 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "_mls": "R3099258",
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 2300000,
@@ -601,21 +571,6 @@
       "_projectName": null,
       "_imageSource": null,
       "_priceNum": 6000000,
-      "featured": false
-    },
-    {
-      "type": "House",
-      "area": "University, Vancouver",
-      "street": "College Highroad",
-      "price": "$9.00M",
-      "sqft": "7,454 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "_mls": "R3123556",
-      "_projectName": null,
-      "_imageSource": null,
-      "_priceNum": 8999000,
       "featured": false
     },
     {
