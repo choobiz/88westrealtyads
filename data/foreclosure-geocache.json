@@ -156,13 +156,30 @@
   "lng": -123.2436019
  },
  "7280 Lindsay Road, Granville, Richmond": null,
+ "2024 Fullerton Avenue, Pemberton NV, North Vancouver": null,
  "12739 72 Avenue, West Newton, Surrey": null,
+ "2450 Cornwall Avenue, Kitsilano, Vancouver": {
+  "lat": 49.2724112,
+  "lng": -123.161207
+ },
  "6841 138 Street, East Newton, Surrey": null,
+ "928 Richards Street, Yaletown, Vancouver": {
+  "lat": 49.2784012,
+  "lng": -123.1199554
+ },
+ "2096 W 47th Avenue, Kerrisdale, Vancouver": {
+  "lat": 49.2285474,
+  "lng": -123.1548146
+ },
  "3138 Riverwalk Avenue, South Marine, Vancouver": null,
  "3281 E Kent Avenue North, South Marine, Vancouver": null,
  "3188 Riverwalk Avenue, South Marine, Vancouver": null,
  "6160 London Road, Steveston South, Richmond": null,
  "12711 64 Avenue, West Newton, Surrey": null,
+ "1288 W Georgia Street, West End, Vancouver": {
+  "lat": 49.2936315,
+  "lng": -123.1353448
+ },
  "115 Avenue, Bolivar Heights, Surrey": null,
  "6188 141 Street, Sullivan Station, Surrey": null,
  "138a Street, Bolivar Heights, Surrey": null,

@@ -1,16 +1,16 @@
 {
   "source": "scrape-foreclosure-deals.mjs",
-  "scrapedAt": "2026-07-16T14:17:37.691Z",
+  "scrapedAt": "2026-07-17T14:17:27.790Z",
   "parserVersion": "1.1",
   "sourceCount": 3,
   "rawCount": 103,
-  "uniqueCount": 90,
-  "withProjectName": 27,
+  "uniqueCount": 93,
+  "withProjectName": 31,
   "perSource": [
     {
       "source": "Simon Clayton (Macdonald Realty)",
       "ok": true,
-      "listings": 41,
+      "listings": 40,
       "pages": [
         {
           "page": 1,
@@ -23,8 +23,8 @@
           "page": 2,
           "url": "https://simonclayton.ca/foreclosures/?_pg=2",
           "ok": true,
-          "listings": 11,
-          "newListings": 11
+          "listings": 12,
+          "newListings": 12
         },
         {
           "page": 3,
@@ -37,8 +37,8 @@
           "page": 4,
           "url": "https://simonclayton.ca/foreclosures/?_pg=4",
           "ok": true,
-          "listings": 8,
-          "newListings": 8
+          "listings": 6,
+          "newListings": 6
         },
         {
           "page": 5,
@@ -53,7 +53,7 @@
     {
       "source": "Macnabs (Royal LePage Elite West)",
       "ok": true,
-      "listings": 51,
+      "listings": 52,
       "pages": [
         {
           "page": 1,
@@ -73,8 +73,8 @@
           "page": 3,
           "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/?_pg=3",
           "ok": true,
-          "listings": 8,
-          "newListings": 8
+          "listings": 9,
+          "newListings": 9
         },
         {
           "page": 4,
@@ -235,21 +235,6 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1038,
-      "court_ordered_flag": true,
-      "source": "Simon Clayton (Macdonald Realty)"
-    },
-    {
-      "mls_number": "R3088282",
-      "property_type": "House",
-      "neighborhood": "Dunbar",
-      "city": "Vancouver",
-      "fsa": "V6N",
-      "street_masked": "████ W 38th Avenue",
-      "project_name": "Dunbar",
-      "price": 3480000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 4266,
       "court_ordered_flag": true,
       "source": "Simon Clayton (Macdonald Realty)"
     },
@@ -561,7 +546,7 @@
       "fsa": "V5S",
       "street_masked": "████ 3281 E Kent Avenue North",
       "project_name": "Rhythm",
-      "price": 765900,
+      "price": 739900,
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": 1000,
@@ -974,6 +959,21 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
+      "mls_number": "R3134123",
+      "property_type": "House",
+      "neighborhood": "West Newton",
+      "city": "Surrey",
+      "fsa": "V3W",
+      "street_masked": "████ 75a Avenue",
+      "project_name": null,
+      "price": 1500000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 3726,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
       "mls_number": "R3121367",
       "property_type": "House",
       "neighborhood": "Whalley",
@@ -1004,21 +1004,6 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3134123",
-      "property_type": "House",
-      "neighborhood": "West Newton",
-      "city": "Surrey",
-      "fsa": "V3W",
-      "street_masked": "████ 75a Avenue",
-      "project_name": null,
-      "price": 1500000,
-      "bedrooms": null,
-      "bathrooms": null,
-      "area_sqft": 3726,
-      "court_ordered_flag": true,
-      "source": "Macnabs (Royal LePage Elite West)"
-    },
-    {
       "mls_number": "R3094119",
       "property_type": "House",
       "neighborhood": "Bear Creek Green Timbers",
@@ -1045,6 +1030,21 @@
       "bedrooms": null,
       "bathrooms": null,
       "area_sqft": null,
+      "court_ordered_flag": true,
+      "source": "Macnabs (Royal LePage Elite West)"
+    },
+    {
+      "mls_number": "R3109534",
+      "property_type": "House",
+      "neighborhood": "Canyon Springs",
+      "city": "Coquitlam",
+      "fsa": "V3B",
+      "street_masked": "████ Delahaye Drive",
+      "project_name": null,
+      "price": 1425000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 3987,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1104,7 +1104,7 @@
       "price": 1249000,
       "bedrooms": null,
       "bathrooms": null,
-      "area_sqft": 2779,
+      "area_sqft": 2179,
       "court_ordered_flag": true,
       "source": "Macnabs (Royal LePage Elite West)"
     },
@@ -1424,47 +1424,92 @@
       "source": "Macnabs (Royal LePage Elite West)"
     },
     {
-      "mls_number": "R3080132",
-      "property_type": "House",
-      "neighborhood": "Caulfeild",
-      "city": "West Vancouver",
-      "fsa": "V7W",
-      "street_masked": "████ Headland Drive",
-      "project_name": null,
-      "price": 2175000,
+      "mls_number": "R3139207",
+      "property_type": "Condo",
+      "neighborhood": "Pemberton NV",
+      "city": "North Vancouver",
+      "fsa": "V7P",
+      "street_masked": "████ 2024 Fullerton Avenue",
+      "project_name": "Woodcroft Estates/Capilano Building",
+      "price": 392000,
       "bedrooms": null,
       "bathrooms": null,
-      "area_sqft": 2240,
+      "area_sqft": 789,
       "court_ordered_flag": true,
       "source": "Realtyvibe (Sutton Premier)"
     },
     {
-      "mls_number": "R3116324",
-      "property_type": "House",
-      "neighborhood": "Dundarave",
-      "city": "West Vancouver",
-      "fsa": "V7V",
-      "street_masked": "████ Ottawa Avenue",
-      "project_name": null,
-      "price": 2788000,
+      "mls_number": "R3136858",
+      "property_type": "Condo",
+      "neighborhood": "Kitsilano",
+      "city": "Vancouver",
+      "fsa": "V6K",
+      "street_masked": "████ 2450 Cornwall Avenue",
+      "project_name": "Ocean's Door",
+      "price": 479800,
       "bedrooms": null,
       "bathrooms": null,
-      "area_sqft": 1936,
+      "area_sqft": 563,
       "court_ordered_flag": true,
       "source": "Realtyvibe (Sutton Premier)"
     },
     {
-      "mls_number": "R3115597",
-      "property_type": "House",
-      "neighborhood": "Gleneagles",
-      "city": "West Vancouver",
-      "fsa": "V7W",
-      "street_masked": "████ Summit Avenue",
-      "project_name": "Gleneagles",
-      "price": 2998000,
+      "mls_number": "R3140385",
+      "property_type": "Condo",
+      "neighborhood": "Yaletown",
+      "city": "Vancouver",
+      "fsa": "V6B",
+      "street_masked": "████ 928 Richards Street",
+      "project_name": "Savoy",
+      "price": 588000,
       "bedrooms": null,
       "bathrooms": null,
-      "area_sqft": 4874,
+      "area_sqft": 608,
+      "court_ordered_flag": true,
+      "source": "Realtyvibe (Sutton Premier)"
+    },
+    {
+      "mls_number": "R3145268",
+      "property_type": "Condo",
+      "neighborhood": "Kerrisdale",
+      "city": "Vancouver",
+      "fsa": "V6M",
+      "street_masked": "████ 2096 W 47th Avenue",
+      "project_name": "Chloe Kerrisdale",
+      "price": 649900,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 522,
+      "court_ordered_flag": true,
+      "source": "Realtyvibe (Sutton Premier)"
+    },
+    {
+      "mls_number": "R3144074",
+      "property_type": "Condo",
+      "neighborhood": "West End VW",
+      "city": "Vancouver",
+      "fsa": "V6E",
+      "street_masked": "████ 1288 W Georgia Street",
+      "project_name": "Residences On Georgia",
+      "price": 799900,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 852,
+      "court_ordered_flag": true,
+      "source": "Realtyvibe (Sutton Premier)"
+    },
+    {
+      "mls_number": "R3145269",
+      "property_type": "Condo",
+      "neighborhood": "Kerrisdale",
+      "city": "Vancouver",
+      "fsa": "V6M",
+      "street_masked": "████ 2096 W 47th Avenue",
+      "project_name": "Chloe Kerrisdale",
+      "price": 919900,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_sqft": 697,
       "court_ordered_flag": true,
       "source": "Realtyvibe (Sutton Premier)"
     }

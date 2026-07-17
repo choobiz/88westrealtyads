@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-07-16T14:18:38.095Z",
- "count": 64,
- "withPhoto": 25,
- "geocoded": 33,
+ "generatedAt": "2026-07-17T14:19:19.081Z",
+ "count": 69,
+ "withPhoto": 29,
+ "geocoded": 37,
  "regions": [
   "Burnaby",
   "North Vancouver",
@@ -44,6 +44,19 @@
    "mls": null,
    "lat": 49.2822056,
    "lng": -123.1006004
+  },
+  {
+   "type": "Condo",
+   "area": "Pemberton NV, North Vancouver",
+   "region": "North Vancouver",
+   "street": "2024 Fullerton Avenue",
+   "price": "$392K",
+   "priceNum": 392000,
+   "sqft": "789 sq ft",
+   "image": "/images/foreclosure/listings/auto/woodcroft-estates-capilano-building.jpg",
+   "imageAlt": "Woodcroft Estates/Capilano Building — exterior view (representational, sourced from publicly indexed marketing material).",
+   "courtOrdered": true,
+   "mls": null
   },
   {
    "type": "Condo",
@@ -90,6 +103,21 @@
   },
   {
    "type": "Condo",
+   "area": "Kitsilano, Vancouver",
+   "region": "Vancouver",
+   "street": "2450 Cornwall Avenue",
+   "price": "$480K",
+   "priceNum": 480000,
+   "sqft": "563 sq ft",
+   "image": "",
+   "imageAlt": "",
+   "courtOrdered": true,
+   "mls": null,
+   "lat": 49.2724112,
+   "lng": -123.161207
+  },
+  {
+   "type": "Condo",
    "area": "Metrotown, Burnaby",
    "region": "Burnaby",
    "street": "5932 Patterson Avenue",
@@ -130,6 +158,36 @@
    "mls": null,
    "lat": 49.278265,
    "lng": -123.0401588
+  },
+  {
+   "type": "Condo",
+   "area": "Yaletown, Vancouver",
+   "region": "Vancouver",
+   "street": "928 Richards Street",
+   "price": "$588K",
+   "priceNum": 588000,
+   "sqft": "608 sq ft",
+   "image": "/images/foreclosure/listings/auto/savoy.jpg",
+   "imageAlt": "Savoy — exterior view (representational, sourced from publicly indexed marketing material).",
+   "courtOrdered": true,
+   "mls": null,
+   "lat": 49.2784012,
+   "lng": -123.1199554
+  },
+  {
+   "type": "Condo",
+   "area": "Kerrisdale, Vancouver",
+   "region": "Vancouver",
+   "street": "2096 W 47th Avenue",
+   "price": "$650K",
+   "priceNum": 650000,
+   "sqft": "522 sq ft",
+   "image": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
+   "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material).",
+   "courtOrdered": true,
+   "mls": null,
+   "lat": 49.2285474,
+   "lng": -123.1548146
   },
   {
    "type": "Condo",
@@ -199,6 +257,19 @@
    "mls": null
   },
   {
+   "type": "Condo",
+   "area": "South Marine, Vancouver",
+   "region": "Vancouver",
+   "street": "3281 E Kent Avenue North",
+   "price": "$740K",
+   "priceNum": 740000,
+   "sqft": "1,000 sq ft",
+   "image": "/images/foreclosure/listings/auto/rhythm.jpg",
+   "imageAlt": "Rhythm — exterior view (representational, sourced from publicly indexed marketing material).",
+   "courtOrdered": true,
+   "mls": null
+  },
+  {
    "type": "Townhouse",
    "area": "West Newton, Surrey",
    "region": "Surrey",
@@ -213,16 +284,18 @@
   },
   {
    "type": "Condo",
-   "area": "South Marine, Vancouver",
+   "area": "West End, Vancouver",
    "region": "Vancouver",
-   "street": "3281 E Kent Avenue North",
-   "price": "$766K",
-   "priceNum": 766000,
-   "sqft": "1,000 sq ft",
-   "image": "/images/foreclosure/listings/auto/rhythm.jpg",
-   "imageAlt": "Rhythm — exterior view (representational, sourced from publicly indexed marketing material).",
+   "street": "1288 W Georgia Street",
+   "price": "$800K",
+   "priceNum": 800000,
+   "sqft": "852 sq ft",
+   "image": "/images/foreclosure/listings/auto/residences-on-georgia.jpg",
+   "imageAlt": "Residences On Georgia — exterior view (representational, sourced from publicly indexed marketing material).",
    "courtOrdered": true,
-   "mls": null
+   "mls": null,
+   "lat": 49.2936315,
+   "lng": -123.1353448
   },
   {
    "type": "Land",
@@ -318,6 +391,21 @@
    "imageAlt": "",
    "courtOrdered": true,
    "mls": null
+  },
+  {
+   "type": "Condo",
+   "area": "Kerrisdale, Vancouver",
+   "region": "Vancouver",
+   "street": "2096 W 47th Avenue",
+   "price": "$920K",
+   "priceNum": 920000,
+   "sqft": "697 sq ft",
+   "image": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
+   "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material).",
+   "courtOrdered": true,
+   "mls": null,
+   "lat": 49.2285474,
+   "lng": -123.1548146
   },
   {
    "type": "Condo",
@@ -470,7 +558,7 @@
    "street": "62 Avenue",
    "price": "$1.25M",
    "priceNum": 1250000,
-   "sqft": "2,779 sq ft",
+   "sqft": "2,179 sq ft",
    "image": "",
    "imageAlt": "",
    "courtOrdered": true,
@@ -562,6 +650,19 @@
   },
   {
    "type": "House",
+   "area": "West Newton, Surrey",
+   "region": "Surrey",
+   "street": "75a Avenue",
+   "price": "$1.50M",
+   "priceNum": 1500000,
+   "sqft": "3,726 sq ft",
+   "image": "",
+   "imageAlt": "",
+   "courtOrdered": true,
+   "mls": null
+  },
+  {
+   "type": "House",
    "area": "Whalley, Surrey",
    "region": "Surrey",
    "street": "132a Street",
@@ -589,19 +690,6 @@
    "mls": null,
    "lat": 49.211641,
    "lng": -122.8550543
-  },
-  {
-   "type": "House",
-   "area": "West Newton, Surrey",
-   "region": "Surrey",
-   "street": "75a Avenue",
-   "price": "$1.50M",
-   "priceNum": 1500000,
-   "sqft": "3,726 sq ft",
-   "image": "",
-   "imageAlt": "",
-   "courtOrdered": true,
-   "mls": null
   },
   {
    "type": "House",
@@ -841,21 +929,6 @@
    "mls": null,
    "lat": 49.2394632,
    "lng": -123.1670541
-  },
-  {
-   "type": "House",
-   "area": "Dunbar, Vancouver",
-   "region": "Vancouver",
-   "street": "W 38th Avenue",
-   "price": "$3.48M",
-   "priceNum": 3480000,
-   "sqft": "4,266 sq ft",
-   "image": "/images/foreclosure/listings/auto/dunbar.jpg",
-   "imageAlt": "Dunbar — exterior view (representational, sourced from publicly indexed marketing material).",
-   "courtOrdered": true,
-   "mls": null,
-   "lat": 49.2375827,
-   "lng": -123.1722557
   },
   {
    "type": "House",

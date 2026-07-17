@@ -1,9 +1,9 @@
 {
-  "sourcedAt": "2026-07-16T14:17:53.208Z",
-  "totalProjects": 27,
+  "sourcedAt": "2026-07-17T14:18:25.224Z",
+  "totalProjects": 30,
   "cached": 26,
-  "sourced": 1,
-  "failed": 0,
+  "sourced": 3,
+  "failed": 1,
   "photoMap": {
     "Current At Water's Edge By Polygon": {
       "path": "/images/foreclosure/listings/auto/current-at-water-s-edge-by-polygon.jpg",
@@ -19,11 +19,6 @@
       "path": "/images/foreclosure/listings/auto/sanctuary.jpg",
       "source": "cached",
       "slug": "sanctuary"
-    },
-    "Dunbar": {
-      "path": "/images/foreclosure/listings/auto/dunbar.jpg",
-      "source": "cached",
-      "slug": "dunbar"
     },
     "Westport": {
       "path": "/images/foreclosure/listings/auto/westport.jpg",
@@ -135,14 +130,40 @@
       "source": "cached",
       "slug": "the-savoy"
     },
-    "Gleneagles": {
-      "path": "/images/foreclosure/listings/auto/gleneagles.jpg",
-      "source": "https://dyhx7is8pu014.cloudfront.net/www.brocksmeaton.com/homes/60500/web/ge_clubhouse_exterior_16-dwv-parksanstuff-sjp_00650.jpg?timestamp=1522366360",
-      "description": "A single-story building with a wooden exterior and a metal roof is situated amidst lush green trees and a well-maintained lawn, with two children playing golf in front of it.",
-      "bytes": 485128,
-      "slug": "gleneagles",
-      "downloadedAt": "2026-07-16T14:17:53.207Z"
+    "Woodcroft Estates/Capilano Building": {
+      "path": "/images/foreclosure/listings/auto/woodcroft-estates-capilano-building.jpg",
+      "source": "https://i.realtyninja.com/1_263160834_1.jpg?width=735",
+      "description": "A tall, modern residential building with multiple balconies, situated on a landscaped area with trees and shrubs, under a partly cloudy sky.",
+      "bytes": 99503,
+      "slug": "woodcroft-estates-capilano-building",
+      "downloadedAt": "2026-07-17T14:17:42.720Z"
+    },
+    "Savoy": {
+      "path": "/images/foreclosure/listings/auto/savoy.jpg",
+      "source": "https://s.realtyninja.com/static/images/buildings/hd/7650_b1d66a34_Entrance.JPG",
+      "description": "The building at 928 Richards Street in Vancouver features a modern exterior with large glass windows, brick facades, and balconies, partly shaded by leafy green trees.",
+      "bytes": 563090,
+      "slug": "savoy",
+      "downloadedAt": "2026-07-17T14:18:17.621Z"
+    },
+    "Chloe Kerrisdale": {
+      "path": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
+      "source": "cached",
+      "slug": "chloe-kerrisdale"
+    },
+    "Residences On Georgia": {
+      "path": "/images/foreclosure/listings/auto/residences-on-georgia.jpg",
+      "source": "https://vadapm.com/sites/default/files/styles/scale_width_720/public/building-teasers/5832/residences-on-georgia-1288-west-georgia-street-vancouver-0_7.jpg.webp?itok=ZyHO5x_F",
+      "description": "A tall modern glass residential building stands prominently against a partly cloudy blue sky, with green trees and a lamppost at its base.",
+      "bytes": 61916,
+      "slug": "residences-on-georgia",
+      "downloadedAt": "2026-07-17T14:18:25.223Z"
     }
   },
-  "failures": []
+  "failures": [
+    {
+      "name": "Ocean's Door",
+      "reason": "The operation was aborted due to timeout"
+    }
+  ]
 }

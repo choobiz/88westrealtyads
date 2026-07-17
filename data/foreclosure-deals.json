@@ -1,20 +1,20 @@
 {
-  "lastUpdated": "2026-07-16",
+  "lastUpdated": "2026-07-17",
   "source": "curate-deals.mjs (scraped + auto-photos + manual overrides)",
   "compliance": {
     "status": "operator-override",
-    "date": "2026-07-16",
+    "date": "2026-07-17",
     "note": "OPERATOR OVERRIDE — real court-ordered listing data published on the public LP during the bridge period before GVR WebAPI authorization. Listing data sourced from multiple public foreclosure aggregator pages (Simon Clayton, Macnabs, Realtyvibe). Photos resolved in this priority: (1) operator-curated manual overrides — Paragon-authorized per-listing photos OR operator-supplied marketing-material URLs, (2) automated project-name search via Tavily on publicly indexed developer marketing pages, falling back to (3) listings without a resolvable photo appear with a branded 88 West placeholder graphic (NO third-party image) and are never featured in the unblurred hero tier; they remain listed in foreclosure-deals.pending.json as the ops worklist for supplying a real photo URL. Across all displayed listings: street numbers withheld (shared on intro call); MLS numbers omitted from public cards (retained in research dump); no listing remarks; no agent names. Flagged for managing-broker awareness (Shirin Saleh, licence #X031527). Replace pipeline with the GVR-feed-backed source once the WebAPI is authorized.",
     "replaceWith": "GVR WebAPI feed — see docs/gvr-database-schema.md",
     "stats": {
-      "scrapedTotal": 90,
-      "scrapedInArea": 103,
-      "liveOnLp": 64,
+      "scrapedTotal": 93,
+      "scrapedInArea": 109,
+      "liveOnLp": 69,
       "featuredOnLp": 12,
-      "lockedOnLp": 52,
-      "pendingPhoto": 39,
+      "lockedOnLp": 57,
+      "pendingPhoto": 40,
       "manualOverrides": 6,
-      "autoSourcedPhotos": 27
+      "autoSourcedPhotos": 29
     }
   },
   "deals": [
@@ -38,6 +38,17 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/ingastown.jpg",
       "imageAlt": "Ingastown — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
+    },
+    {
+      "type": "Condo",
+      "area": "Pemberton NV, North Vancouver",
+      "street": "2024 Fullerton Avenue",
+      "price": "$392K",
+      "sqft": "789 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/woodcroft-estates-capilano-building.jpg",
+      "imageAlt": "Woodcroft Estates/Capilano Building — exterior view (representational, sourced from publicly indexed marketing material).",
       "featured": true
     },
     {
@@ -75,6 +86,17 @@
     },
     {
       "type": "Condo",
+      "area": "Kitsilano, Vancouver",
+      "street": "2450 Cornwall Avenue",
+      "price": "$480K",
+      "sqft": "563 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "Condo",
       "area": "Metrotown, Burnaby",
       "street": "5932 Patterson Avenue",
       "price": "$499K",
@@ -104,6 +126,28 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/hastings-vancouver.jpg",
       "imageAlt": "Condo building of a current court-ordered listing in Hastings, Vancouver.",
+      "featured": true
+    },
+    {
+      "type": "Condo",
+      "area": "Yaletown, Vancouver",
+      "street": "928 Richards Street",
+      "price": "$588K",
+      "sqft": "608 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/savoy.jpg",
+      "imageAlt": "Savoy — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
+    },
+    {
+      "type": "Condo",
+      "area": "Kerrisdale, Vancouver",
+      "street": "2096 W 47th Avenue",
+      "price": "$650K",
+      "sqft": "522 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
+      "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material).",
       "featured": true
     },
     {
@@ -162,6 +206,17 @@
       "featured": false
     },
     {
+      "type": "Condo",
+      "area": "South Marine, Vancouver",
+      "street": "3281 E Kent Avenue North",
+      "price": "$740K",
+      "sqft": "1,000 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/rhythm.jpg",
+      "imageAlt": "Rhythm — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": true
+    },
+    {
       "type": "Townhouse",
       "area": "West Newton, Surrey",
       "street": "12711 64 Avenue",
@@ -174,14 +229,14 @@
     },
     {
       "type": "Condo",
-      "area": "South Marine, Vancouver",
-      "street": "3281 E Kent Avenue North",
-      "price": "$766K",
-      "sqft": "1,000 sq ft",
+      "area": "West End, Vancouver",
+      "street": "1288 W Georgia Street",
+      "price": "$800K",
+      "sqft": "852 sq ft",
       "courtOrdered": true,
-      "image": "/images/foreclosure/listings/auto/rhythm.jpg",
-      "imageAlt": "Rhythm — exterior view (representational, sourced from publicly indexed marketing material).",
-      "featured": true
+      "image": "/images/foreclosure/listings/auto/residences-on-georgia.jpg",
+      "imageAlt": "Residences On Georgia — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
     },
     {
       "type": "Land",
@@ -262,6 +317,17 @@
     },
     {
       "type": "Condo",
+      "area": "Kerrisdale, Vancouver",
+      "street": "2096 W 47th Avenue",
+      "price": "$920K",
+      "sqft": "697 sq ft",
+      "courtOrdered": true,
+      "image": "/images/foreclosure/listings/auto/chloe-kerrisdale.jpg",
+      "imageAlt": "Chloe Kerrisdale — exterior view (representational, sourced from publicly indexed marketing material).",
+      "featured": false
+    },
+    {
+      "type": "Condo",
       "area": "Coal Harbour, Vancouver",
       "street": "1228 W Hastings Street",
       "price": "$935K",
@@ -280,7 +346,7 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/alberni-by-kengo-kuma.jpg",
       "imageAlt": "Alberni By Kengo Kuma — exterior view (representational, sourced from publicly indexed marketing material).",
-      "featured": true
+      "featured": false
     },
     {
       "type": "Land",
@@ -302,7 +368,7 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/the-max.jpg",
       "imageAlt": "The Max — exterior view (representational, sourced from publicly indexed marketing material).",
-      "featured": true
+      "featured": false
     },
     {
       "type": "Condo",
@@ -313,7 +379,7 @@
       "courtOrdered": true,
       "image": "/images/foreclosure/listings/auto/apex.jpg",
       "imageAlt": "Apex — exterior view (representational, sourced from publicly indexed marketing material).",
-      "featured": true
+      "featured": false
     },
     {
       "type": "Condo",
@@ -375,7 +441,7 @@
       "area": "Cloverdale BC, Surrey",
       "street": "62 Avenue",
       "price": "$1.25M",
-      "sqft": "2,779 sq ft",
+      "sqft": "2,179 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -449,6 +515,17 @@
     },
     {
       "type": "House",
+      "area": "West Newton, Surrey",
+      "street": "75a Avenue",
+      "price": "$1.50M",
+      "sqft": "3,726 sq ft",
+      "courtOrdered": true,
+      "image": "",
+      "imageAlt": "",
+      "featured": false
+    },
+    {
+      "type": "House",
       "area": "Whalley, Surrey",
       "street": "132a Street",
       "price": "$1.50M",
@@ -464,17 +541,6 @@
       "street": "132a Street",
       "price": "$1.50M",
       "sqft": "1,171 sq ft",
-      "courtOrdered": true,
-      "image": "",
-      "imageAlt": "",
-      "featured": false
-    },
-    {
-      "type": "House",
-      "area": "West Newton, Surrey",
-      "street": "75a Avenue",
-      "price": "$1.50M",
-      "sqft": "3,726 sq ft",
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
@@ -665,17 +731,6 @@
       "courtOrdered": true,
       "image": "",
       "imageAlt": "",
-      "featured": false
-    },
-    {
-      "type": "House",
-      "area": "Dunbar, Vancouver",
-      "street": "W 38th Avenue",
-      "price": "$3.48M",
-      "sqft": "4,266 sq ft",
-      "courtOrdered": true,
-      "image": "/images/foreclosure/listings/auto/dunbar.jpg",
-      "imageAlt": "Dunbar — exterior view (representational, sourced from publicly indexed marketing material).",
       "featured": false
     },
     {
