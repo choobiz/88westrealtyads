@@ -1,10 +1,10 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-07-21T14:56:54.386Z",
+  "scrapedAt": "2026-07-22T14:58:02.934Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
-  "count": 18,
+  "count": 17,
   "projects": [
     {
       "project_name": "45511 Campus Drive – York Residences Chilliwack For Sale",
@@ -14,6 +14,27 @@
       "headline_dollar": "$14,000"
     },
     {
+      "project_name": "Towns at Burke Coquitlam — Prices & Floor Plans",
+      "city": "Coquitlam",
+      "incentive_summary": "Over $1,000 in exciting prizes, Apple prizes given away throughout the event, Custom beers from Tinhouse Brewery, Pre...",
+      "project_url": "https://www.mikestewart.ca/presale/towns-at-burke-coquitlam-prices-floor-plans/",
+      "headline_dollar": "$1,000"
+    },
+    {
+      "project_name": "West 57th at Cambie Gardens Vancouver – Prices & Floor Plans",
+      "city": "Vancouver",
+      "incentive_summary": "best value on Vancouver’s Westside, Save up to $100,000 at Gilmore Place, Save up to $58,000 at Cambie Gardens, Save ...",
+      "project_url": "https://www.mikestewart.ca/presale/west-57th-at-cambie-gardens-vancouver-prices-floor-plans/",
+      "headline_dollar": "$100,000"
+    },
+    {
+      "project_name": "Hartley Surrey – 10488 138A Street",
+      "city": "Surrey",
+      "incentive_summary": "Buyers Save $25,000, The first 10 purchasers will save $25,000, First 10 purchasers will save $25,000, First 10 purch...",
+      "project_url": "https://www.mikestewart.ca/presale/hartley-surrey-city-centre-presale-condos-townhomes-by-porte-homes/",
+      "headline_dollar": "$25,000,"
+    },
+    {
       "project_name": "South Hill at Cooper Meadows Abbotsford — Prices & Floor Plans",
       "city": "Abbotsford",
       "incentive_summary": "Get up to 6 extra months to sell your home – or receive $10K closing credit if you close on time* (*Terms & condition...",
@@ -21,39 +42,32 @@
       "headline_dollar": "$10K"
     },
     {
-      "project_name": "Quintet Vancouver – Prices & Floor Plans",
+      "project_name": "Oakwoods Esquimalt by Aragon at 429 Lampson Street  – Prices, Availability, Plans",
+      "city": "Victoria",
+      "incentive_summary": "Oakwoods Esquimalt by Aragon at 429 Lampson Street – Prices, Availability, Plans Access to preferred mortgage rates through RBC., Visit before August 14 to be automatically entered for a chance to w...",
+      "project_url": "https://www.mikestewart.ca/presale/oakwoods-esquimalt-victoria-presale-condos-and-townhomes-by-aragon-properties/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Aria Abbotsford by Diverse Properties – Plans & Pricing",
+      "city": "Abbotsford",
+      "incentive_summary": "Final 15 homes available, Tour 2 incredible Show Homes, Interact with Lumon solariums, Lumon solariums for year-round...",
+      "project_url": "https://www.mikestewart.ca/presale/aria-abbotsford-by-diverse-properties-plans-pricing/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Westerly Row Duplexes Tsawwassen — Prices & Floor Plans",
+      "city": "Delta",
+      "incentive_summary": "Zero strata fees, Freehold, Detached single-car garage with L2 EV charger-ready plug, Heat pump with condensing unit ...",
+      "project_url": "https://www.mikestewart.ca/presale/westerly-row-duplexes-tsawwassen-prices-floor-plans/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Willa at 950 W 57th Avenue – Pricing & Floor Plans",
       "city": "Vancouver",
-      "incentive_summary": "$40,000 Decorating Allowance, Reduced Deposit: 8% of Purchase Price (normally 20%), Luxury Upgrades Included: Stair-s...",
-      "project_url": "https://www.mikestewart.ca/presale/quintet-vancouver-prices-floor-plans/",
-      "headline_dollar": "$40,000"
-    },
-    {
-      "project_name": "Trailside at the Lake by Seacliff Properties – Prices, Plans, Availability",
-      "city": "Langford",
-      "incentive_summary": "For a limited time, GST is included in the purchase price, offering savings of up to $29,500*! *Terms and conditions ...",
-      "project_url": "https://www.mikestewart.ca/presale/trailside-at-the-lake-langford-presale-condos-by-seacliff-properties/",
-      "headline_dollar": "$29,500"
-    },
-    {
-      "project_name": "7381 Preston Boulevard – Skyview Mission",
-      "city": "Mission",
-      "incentive_summary": "YEAR-END SAVINGS on select move-in ready homes, NO GST for First Time Home Buyers, NO Property Transfer Tax, ONLY $5,...",
-      "project_url": "https://www.mikestewart.ca/presale/skyview-mission-presale-townhomes/",
-      "headline_dollar": "$5,"
-    },
-    {
-      "project_name": "6951 204 Street – Cascadia Langley Townhomes by StreetSide – Plans, Availability, Prices",
-      "city": "Langley",
-      "incentive_summary": "Eligible first-time home buyers can save up to $50,000 with no GST*, Save up to $50,000 with no GST for eligible firs...",
-      "project_url": "https://www.mikestewart.ca/presale/cascadia-willoughby-langley-presale-townhomes-by-streetside-developments/",
-      "headline_dollar": "$50,000"
-    },
-    {
-      "project_name": "Bailey Vancouver – 4928 Quebec Street",
-      "city": "Vancouver",
-      "incentive_summary": "New lower pricing, Parking included, Parking included with homes starting from $629,900, First-Time Home Buyers’ GST ...",
-      "project_url": "https://www.mikestewart.ca/presale/bailey-riley-park-vancouver-presale-condos-by-streetside-developments/",
-      "headline_dollar": "$629,900,"
+      "incentive_summary": "Preview Event: First Look before the Public, Curated bites, drinks, and bubble tea provided, Curated bites, drinks, a...",
+      "project_url": "https://www.mikestewart.ca/presale/willa-at-950-w-57th-avenue-pricing-floor-plans/",
+      "headline_dollar": null
     },
     {
       "project_name": "Concord Metrotown Sky Park – Plans, Availability, Prices",
@@ -109,27 +123,6 @@
       "city": "Surrey",
       "incentive_summary": "Early bird incentives available prior to the official opening, Premium SMEG appliance package included, Private rooft...",
       "project_url": "https://www.mikestewart.ca/presale/finestra-surrey-presale-townhomes/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Guilden Guildford by RDG Management – Prices & Floorplans",
-      "city": "Surrey",
-      "incentive_summary": "Exclusive closing specials and limited-time incentives, 2 air conditioning units for year-round comfort included, EV ...",
-      "project_url": "https://www.mikestewart.ca/presale/guilden-guildford-presale-condos/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Hue Port Moody by Marcon @ 2015 St. Johns Street & 125 Albert Street",
-      "city": "Port Moody",
-      "incentive_summary": "Receive a complimentary eucalyptus room spray by attending the Open House., Limited quantities available on a first-c...",
-      "project_url": "https://www.mikestewart.ca/presale/hue-seaview-port-moody-presale-condos-by-marcon-developments/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Timber House – 310 Salter Street",
-      "city": "New Westminster",
-      "incentive_summary": "New reduced prices on all home types., Preferred mortgage rates with RBC for potential purchasers., Potential purchas...",
-      "project_url": "https://www.mikestewart.ca/presale/310-salter/",
       "headline_dollar": null
     }
   ]
