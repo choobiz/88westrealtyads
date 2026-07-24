@@ -1,9 +1,136 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-07-23T15:02:44.290Z",
+  "scrapedAt": "2026-07-24T14:47:05.735Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
-  "count": 0,
-  "projects": []
+  "count": 18,
+  "projects": [
+    {
+      "project_name": "7381 Preston Boulevard – Skyview Mission",
+      "city": "Mission",
+      "incentive_summary": "YEAR-END SAVINGS on select move-in ready homes, NO GST for First Time Home Buyers, NO Property Transfer Tax, ONLY $5,...",
+      "project_url": "https://www.mikestewart.ca/presale/skyview-mission-presale-townhomes/",
+      "headline_dollar": "$5,"
+    },
+    {
+      "project_name": "Wren Vancouver Townhomes by Tavanco – Plans & Pricing",
+      "city": "Vancouver",
+      "incentive_summary": "Recent repricing, With recent repricing, homes are now starting from $749,000, With recent repricing, homes are now s...",
+      "project_url": "https://www.mikestewart.ca/presale/wren-townhomes-vancouver-presales/",
+      "headline_dollar": "$749,000,"
+    },
+    {
+      "project_name": "The Loop South Surrey at 2350 165th Street",
+      "city": "Surrey",
+      "incentive_summary": "Up to $174,000 in savings, Free A/C (valued up to $8,500), Free BBQ Gasline (valued at $700), 5% deposit only, Move i...",
+      "project_url": "https://www.mikestewart.ca/presale/the-loop-grandview-heights-surrey-presale-townhomes-by-gramercy-developments/",
+      "headline_dollar": "$174,000"
+    },
+    {
+      "project_name": "Townside Village Townhomes by Warwickshire – Plans & Prices",
+      "city": "Langley",
+      "incentive_summary": "Get $15,000 Off and Free Strata Fees for 1 Year on All Homes at The Hive for a Limited Time Only, Final Opportunity f...",
+      "project_url": "https://www.mikestewart.ca/presale/townside-village-townhomes-langley/",
+      "headline_dollar": "$15,000"
+    },
+    {
+      "project_name": "Frame Vancouver – 2727 Kingsway & 5189 Earles Street – Floor Plans & Prices",
+      "city": "Vancouver",
+      "incentive_summary": "1-Bed + Den: $3,000 buyer incentive, Jr. 2-Bed + Den: $6,000 buyer incentive, 2-Bed & 2-Bath + Den: $6,000 buyer ince...",
+      "project_url": "https://www.mikestewart.ca/presale/frame-vancouver-by-coromandel-and-peterson-plans-availability-prices/",
+      "headline_dollar": "$6,000"
+    },
+    {
+      "project_name": "South Hill at Cooper Meadows Abbotsford — Prices & Floor Plans",
+      "city": "Abbotsford",
+      "incentive_summary": "Get up to 6 extra months to sell your home – or receive $10K closing credit if you close on time* (*Terms & condition...",
+      "project_url": "https://www.mikestewart.ca/presale/south-hill-at-cooper-meadows-abbotsford-prices-floor-plans/",
+      "headline_dollar": "$10K"
+    },
+    {
+      "project_name": "The Hive Willoughby Town Centre at 7920 206 Street, Langley",
+      "city": "Langley",
+      "incentive_summary": "$25,000 in savings on select 2 bedroom homes, Complimentary A/C unit, 2 storage lockers, Net pricing inclusive of $25...",
+      "project_url": "https://www.mikestewart.ca/presale/the-hive-at-willoughby-town-centre-by-apcon-group-langley-presale-condos/",
+      "headline_dollar": "$25,000"
+    },
+    {
+      "project_name": "Cultus Grove – Prices & Floor Plans",
+      "city": "Chilliwack",
+      "incentive_summary": "Initial deposit of just $20,000 on top floor B1 Studio units, Limited time $5,000 decorating allowance, Parking stall...",
+      "project_url": "https://www.mikestewart.ca/presale/cultus-grove-prices-floor-plans/",
+      "headline_dollar": "$20,000"
+    },
+    {
+      "project_name": "Jethro Langley by Whitetail Homes – Pricing & Plans",
+      "city": "Langley",
+      "incentive_summary": "1 Beds Starting $359,900, Jr 2-Bedrooms Starting $379,900, 2 Bed | 1 Bath Starting $439,900, 2 Bed 2 Bath Starting $5...",
+      "project_url": "https://www.mikestewart.ca/presale/jethro-langley-by-whitetail/",
+      "headline_dollar": "$439,900,"
+    },
+    {
+      "project_name": "The City of Lougheed First Neighbourhood by Shape Properties – Availability, Plans, Prices",
+      "city": "Burnaby",
+      "incentive_summary": "Special holiday pricing on 10 selected homes., Prices starting from $842 PPSF., Client receives a $5,000 discount on ...",
+      "project_url": "https://www.mikestewart.ca/presale/the-city-of-lougheed-first-neighbourhood-burnaby-presale-condos-by-shape-properties/",
+      "headline_dollar": "$5,000"
+    },
+    {
+      "project_name": "Archer at Latimer by North Arc – Prices, Availability, Plans",
+      "city": "Langley Township",
+      "incentive_summary": "Waitlist available for sold out events, Over $80,000 in savings on Plan B duplex homes, No strata fees, Over $80,000 ...",
+      "project_url": "https://www.mikestewart.ca/presale/archer-at-latimer-langley-presale-townhomes-by-north-arc-properties/",
+      "headline_dollar": "$80,000"
+    },
+    {
+      "project_name": "133 West 49th Avenue – Thesis Vancouver by Alabaster Homes",
+      "city": "Vancouver",
+      "incentive_summary": "First-Time Buyer GST Rebate: eligible buyers can receive up to $50,000 back when purchasing a new home, Homes under $...",
+      "project_url": "https://www.mikestewart.ca/presale/thesis-oakridge-vancouver-presale-condos-by-alabaster-homes/",
+      "headline_dollar": "$50,000"
+    },
+    {
+      "project_name": "Rhodes Queen Elizabeth Park Vancouver – Plans & Pricing",
+      "city": "Vancouver",
+      "incentive_summary": "Up to $100,000 Price Reduction, $28,888 in Lunar New Year Incentives, Up to $128,888 off your new home (combined pric...",
+      "project_url": "https://www.mikestewart.ca/presale/rhodes-vancouver-presale-condos/",
+      "headline_dollar": "$128,888"
+    },
+    {
+      "project_name": "V on E49 Condominiums – Availability, Plans, Prices",
+      "city": "Vancouver",
+      "incentive_summary": "All promotions and incentives are available for a limited-time and are subject to change., All incentives will be pai...",
+      "project_url": "https://www.mikestewart.ca/presale/v-on-e49-victoria-fraserview-east-vancouver-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Edgewood South Surrey — Prices & Floor Plans",
+      "city": "Surrey",
+      "incentive_summary": "Separate, rental-ready 1- or 2-bedroom suite or coach house (mortgage helpers), Comprehensive 2-5-10 year new home wa...",
+      "project_url": "https://www.mikestewart.ca/presale/edgewood-south-surrey-prices-floor-plans/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Little Mountain Vancouver by Holborn Properties",
+      "city": "Vancouver",
+      "incentive_summary": "Whistler Vacation Package & Cash Prizes!, Concrete construction at wood-frame pricing, Lucky Draws for amazing prizes...",
+      "project_url": "https://www.mikestewart.ca/presale/little-mountain/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "W16 Vancouver by Olson Kundig – 480 West 16th Avenue",
+      "city": "Vancouver",
+      "incentive_summary": "Take advantage of our limited-time savings this lunar new year., Attendees can enter our exclusive draw for a Leah Al...",
+      "project_url": "https://www.mikestewart.ca/presale/w16-by-olson-kundig-vancouver-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "First & Royal – 82 First Street, New Westminster",
+      "city": "New Westminster",
+      "incentive_summary": "Parking & storage included, Zoned A/C in every home, Full 1-2-5-10 new home warranty, Samsung & AEG appliances",
+      "project_url": "https://www.mikestewart.ca/presale/first-and-royal-downtown-new-westminster-presale-condos-and-townhomes-by-areva-living/",
+      "headline_dollar": null
+    }
+  ]
 }
