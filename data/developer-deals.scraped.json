@@ -1,11 +1,18 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-07-26T14:24:36.549Z",
+  "scrapedAt": "2026-07-27T15:37:29.201Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "Chelsea at The Boroughs South Surrey — Prices & Floor Plans",
+      "city": "Surrey",
+      "incentive_summary": "$50,000 price reduction on select F1 plans, Limited time pricing on F1 plans, Limited time pricing on F1 plans (4 bed...",
+      "project_url": "https://www.mikestewart.ca/presale/chelsea-at-the-boroughs-south-surrey-prices-floor-plans/",
+      "headline_dollar": "$50,000"
+    },
     {
       "project_name": "45511 Campus Drive – York Residences Chilliwack For Sale",
       "city": "Chilliwack",
@@ -42,11 +49,11 @@
       "headline_dollar": "$5000K"
     },
     {
-      "project_name": "Chelsea at Longwood Nanaimo – Floor Plans & Pricing for 5690 Edgwater Lane",
-      "city": "Nanaimo",
-      "incentive_summary": "Save up to $64,000, $50,000 off Phase 1 homes, 5% off Phase 2 homes, Holiday Pricing Event with new lower pricing, Li...",
-      "project_url": "https://www.mikestewart.ca/presale/chelsea-at-longwood-nanaimo-floor-plans-pricing-for-5690-edgwater-lane/",
-      "headline_dollar": "$64,000,"
+      "project_name": "Edgewood South Surrey — Prices & Floor Plans",
+      "city": "Surrey",
+      "incentive_summary": "Separate, rental-ready 1- or 2-bedroom suite or coach house (mortgage helpers), Comprehensive 2-5-10 year new home wa...",
+      "project_url": "https://www.mikestewart.ca/presale/edgewood-south-surrey-prices-floor-plans/",
+      "headline_dollar": null
     },
     {
       "project_name": "Nolia by Handmade Homes – Pricing & Plans",
@@ -60,13 +67,6 @@
       "city": "Port Coquitlam",
       "incentive_summary": "*Value of incentives is based on home type and some conditions apply. Speak to sales team to learn more., Value of in...",
       "project_url": "https://www.mikestewart.ca/presale/rindall-by-woodbridge-presale-townhomes/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Edgewood South Surrey — Prices & Floor Plans",
-      "city": "Surrey",
-      "incentive_summary": "Separate, rental-ready 1- or 2-bedroom suite or coach house (mortgage helpers), Comprehensive 2-5-10 year new home wa...",
-      "project_url": "https://www.mikestewart.ca/presale/edgewood-south-surrey-prices-floor-plans/",
       "headline_dollar": null
     },
     {
