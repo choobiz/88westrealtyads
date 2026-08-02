@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-08-01T14:22:57.372Z",
+  "scrapedAt": "2026-08-02T14:24:03.083Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
@@ -63,6 +63,20 @@
       "headline_dollar": "$1M"
     },
     {
+      "project_name": "South Grove Tsawwassen by Maple Leaf Homes – Plans, Prices, Availability",
+      "city": "Delta",
+      "incentive_summary": "First Home Club promotions available to help first time buyers get into homes, First Home Club promotions - designed ...",
+      "project_url": "https://www.mikestewart.ca/presale/south-grove-by-maple-leaf-homes-tsawwassen-delta-presale-townhomes/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Nolia by Handmade Homes – Pricing & Plans",
+      "city": "Vancouver",
+      "incentive_summary": "Exclusive opportunity to tour our boutique Passive House townhomes., New-Spring-Incentives for motivated buyers., SPR...",
+      "project_url": "https://www.mikestewart.ca/presale/nolia-vancouver/",
+      "headline_dollar": null
+    },
+    {
       "project_name": "The POCO by Rapture Developments – Plans & Pricing",
       "city": "Port Coquitlam",
       "incentive_summary": "Early pre-launch pricing is available for a limited time., Access to priority pricing and an exclusive first look for...",
@@ -116,20 +130,6 @@
       "city": "Vancouver",
       "incentive_summary": "Whistler Vacation Package & Cash Prizes!, Concrete construction at wood-frame pricing, Lucky Draws for amazing prizes...",
       "project_url": "https://www.mikestewart.ca/presale/little-mountain/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Emerson by Frame in Oaklands – Plans & Pricing",
-      "city": "Victoria",
-      "incentive_summary": "Ask about Emerson's Green Mortgage Program. You could save hundreds per month with our energy-efficient homes., If yo...",
-      "project_url": "https://www.mikestewart.ca/presale/emerson-by-frame-victoria-presale-townhomes/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "South Grove Tsawwassen by Maple Leaf Homes – Plans, Prices, Availability",
-      "city": "Delta",
-      "incentive_summary": "First Home Club promotions available to help first time buyers get into homes",
-      "project_url": "https://www.mikestewart.ca/presale/south-grove-by-maple-leaf-homes-tsawwassen-delta-presale-townhomes/",
       "headline_dollar": null
     }
   ]
