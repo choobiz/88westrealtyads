@@ -1,11 +1,18 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-08-08T13:38:49.312Z",
+  "scrapedAt": "2026-08-09T13:41:54.802Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "Towns at Burke Coquitlam — Prices & Floor Plans",
+      "city": "Coquitlam",
+      "incentive_summary": "Over $1,000 in exciting prizes, Apple prizes given away throughout the event, Custom beers from Tinhouse Brewery, Pre...",
+      "project_url": "https://www.mikestewart.ca/presale/towns-at-burke-coquitlam-prices-floor-plans/",
+      "headline_dollar": "$1,000"
+    },
     {
       "project_name": "Hartley Surrey – 10488 138A Street",
       "city": "Surrey",
@@ -82,13 +89,6 @@
       "incentive_summary": "Savings ranging from $202,300 to $633,600, Interior Design Package from Once a Tree: City Collection Plans ($75,000),...",
       "project_url": "https://www.mikestewart.ca/presale/tesoro/",
       "headline_dollar": "$633,600,"
-    },
-    {
-      "project_name": "7381 Preston Boulevard – Skyview Mission",
-      "city": "Mission",
-      "incentive_summary": "YEAR-END SAVINGS on select move-in ready homes, NO GST for First Time Home Buyers, NO Property Transfer Tax, ONLY $5,...",
-      "project_url": "https://www.mikestewart.ca/presale/skyview-mission-presale-townhomes/",
-      "headline_dollar": "$5,"
     },
     {
       "project_name": "Nolia by Handmade Homes – Pricing & Plans",
