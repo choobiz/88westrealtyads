@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-08-09T13:41:54.802Z",
+  "scrapedAt": "2026-08-10T14:14:42.313Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
@@ -84,11 +84,11 @@
       "headline_dollar": "$100,000"
     },
     {
-      "project_name": "Tesoro Vancouver at 1601 Quebec Street",
-      "city": "Vancouver",
-      "incentive_summary": "Savings ranging from $202,300 to $633,600, Interior Design Package from Once a Tree: City Collection Plans ($75,000),...",
-      "project_url": "https://www.mikestewart.ca/presale/tesoro/",
-      "headline_dollar": "$633,600,"
+      "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
+      "city": "Coquitlam",
+      "incentive_summary": "Ask About Our 3% Advance*, All homes qualify for a GST rebate.*, Limited-time incentive: 2 parking stalls included.*,...",
+      "project_url": "https://www.mikestewart.ca/presale/botanica-coquitlam-presale-condos-by-qualex-landmark/",
+      "headline_dollar": null
     },
     {
       "project_name": "Nolia by Handmade Homes – Pricing & Plans",
