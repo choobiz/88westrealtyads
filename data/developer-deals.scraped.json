@@ -1,11 +1,32 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-08-11T14:13:29.624Z",
+  "scrapedAt": "2026-08-12T14:15:13.847Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "South Hill at Cooper Meadows Abbotsford — Prices & Floor Plans",
+      "city": "Abbotsford",
+      "incentive_summary": "Get up to 6 extra months to sell your home – or receive $10K closing credit if you close on time* (*Terms & condition...",
+      "project_url": "https://www.mikestewart.ca/presale/south-hill-at-cooper-meadows-abbotsford-prices-floor-plans/",
+      "headline_dollar": "$10K"
+    },
+    {
+      "project_name": "Nolita Kelowna by Fifth Avenue Properties – Price, Plans , Availability",
+      "city": "Kelowna",
+      "incentive_summary": "Up to $40,000 off select homes, FREE condo fees for one year on eligible purchases, Save up to $40,000 off select hom...",
+      "project_url": "https://www.mikestewart.ca/presale/nolita-downtown-kelowna-presale-condos-and-townhomes-by-fifth-avenue-properties/",
+      "headline_dollar": "$40,000"
+    },
+    {
+      "project_name": "Atlin at Clayton Crest by Zenterra Developments – Floorplans & Prices",
+      "city": "Surrey",
+      "incentive_summary": "$10,000 credit on purchase, Air conditioning included, Vinyl plank flooring upgrade in the bedrooms, Storage locker i...",
+      "project_url": "https://www.mikestewart.ca/presale/atlin-at-clayton-crest-presales/",
+      "headline_dollar": "$10,000"
+    },
     {
       "project_name": "133 West 49th Avenue – Thesis Vancouver by Alabaster Homes",
       "city": "Vancouver",
@@ -63,32 +84,39 @@
       "headline_dollar": "$800k"
     },
     {
-      "project_name": "Ironwood Coquitlam 609 Tyndall Street – Plans & Pricing",
+      "project_name": "Rindall by Woodbridge Homes – 2150 Rindall Ave, Port Coquitlam",
+      "city": "Port Coquitlam",
+      "incentive_summary": "Rindall by Woodbridge Homes – 2150 Rindall Ave, Port Coquitlam *Value of incentives is based on home type and some conditions apply. Speak to sales team to learn more., Value of in...",
+      "project_url": "https://www.mikestewart.ca/presale/rindall-by-woodbridge-presale-townhomes/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Siena Burnaby by Landa Global – Plans, Prices, Availability",
+      "city": "Burnaby",
+      "incentive_summary": "Exclusive pre-public offering to secure a home at Siena before the public launch., Early window provides priority sel...",
+      "project_url": "https://www.mikestewart.ca/presale/siena-at-the-heights-by-i4-properties-presale-north-burnaby-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Aavand by Canada West Group – Prices, Plans, Availability",
       "city": "Coquitlam",
-      "incentive_summary": "GST REBATES UP TO $50,000 OFF NEW HOMES UNDER $1M FOR FTHB*, Prices are inclusive of current incentives., GST Rebates...",
-      "project_url": "https://www.mikestewart.ca/presale/ironwood-coquitlam-by-qualex-landmark-plans-pricing/",
-      "headline_dollar": "$1M"
+      "incentive_summary": "Significant price adjustments, Repriced remaining inventory, Immediate possession available, No presale timelines, no...",
+      "project_url": "https://www.mikestewart.ca/presale/aavand-burquitlam-presale-coquitlam-condos-by-canada-west-group/",
+      "headline_dollar": null
     },
     {
-      "project_name": "Harlin River District by Wesgroup – Prices, Plans, Availability",
-      "city": "Vancouver",
-      "incentive_summary": "10% deposits, $10K credit on studios & 1-bed, $15K credit on 2-beds, $20K credit on 3-beds, Significant savings of up...",
-      "project_url": "https://www.mikestewart.ca/presale/harlin-at-river-district-by-wesgroup-presale-east-vancouver-condos-and-townhomes/",
-      "headline_dollar": "$20K"
+      "project_name": "RC at CF Richmond Centre – Plans, Availability, Prices",
+      "city": "Richmond",
+      "incentive_summary": "The Final 15 Homes Now Selling, Move-In Ready homes available now, Buy direct from the developer, Final Homes Package...",
+      "project_url": "https://www.mikestewart.ca/presale/cf-richmond-centre-presale-condos-office-retail/",
+      "headline_dollar": null
     },
     {
-      "project_name": "York by Listraor @ 5381 Willow Street and 5383 Willow Street",
-      "city": "Vancouver",
-      "incentive_summary": "$88,000 Off Your New Home, Limited-time Lunar New Year incentives, Available on the final collection of townhomes, Lu...",
-      "project_url": "https://www.mikestewart.ca/presale/york-by-listraor-townhomes/",
-      "headline_dollar": "$88,000"
-    },
-    {
-      "project_name": "602 East 2nd Street – Morrison Walk North Vancouver",
-      "city": "North Vancouver",
-      "incentive_summary": "Client Benefit: Up to $100,000 in total value., Client Incentive: $15,000 Decorator Allowance., Client Incentive: A/C...",
-      "project_url": "https://www.mikestewart.ca/presale/morrison-walk-north-vancouver-presale-townhomes/",
-      "headline_dollar": "$100,000"
+      "project_name": "Landon Gate Abbotsford — Prices & Floor Plans",
+      "city": "Abbotsford",
+      "incentive_summary": "No strata fees, Quick completions available, Free-standing overheight garage, TELUS Residential SmartHome features in...",
+      "project_url": "https://www.mikestewart.ca/presale/landon-gate-abbotsford-prices-floor-plans/",
+      "headline_dollar": null
     },
     {
       "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
@@ -102,34 +130,6 @@
       "city": "Vancouver",
       "incentive_summary": "Exclusive opportunity to tour our boutique Passive House townhomes., New-Spring-Incentives for motivated buyers., SPR...",
       "project_url": "https://www.mikestewart.ca/presale/nolia-vancouver/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "EIGHT in Edgemont Village by I4 – 3175 Canfield Crescent",
-      "city": "North Vancouver",
-      "incentive_summary": "Only four homes remain, Move-in ready duplex homes, Refined design, generous layouts, and a level of finish rarely se...",
-      "project_url": "https://www.mikestewart.ca/presale/canfield-edgemont-village-north-vancouver-presale-townhomes-by-i4-property-group/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Kinsley Vancouver by Intergulf – Plans & Pricing",
-      "city": "Vancouver",
-      "incentive_summary": "RSVP & Attend for a Chance to Win a dining experience at Elio Volpe, Feature Listing: 1 Bed, 1 Bath Garden Home for $...",
-      "project_url": "https://www.mikestewart.ca/presale/kinsley-vancouver-presale-townhomes/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Jinju Anthem – 537 Cottonwood Avenue",
-      "city": "Coquitlam",
-      "incentive_summary": "Win a co-listing at NUVO by filming and submitting a video, Film content of the newly completed building for a chance...",
-      "project_url": "https://www.mikestewart.ca/presale/jinju-burquitlam-prices-plans-availability/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Hue Port Moody by Marcon @ 2015 St. Johns Street & 125 Albert Street",
-      "city": "Port Moody",
-      "incentive_summary": "Receive a complimentary eucalyptus room spray by attending the Open House., Limited quantities available on a first-c...",
-      "project_url": "https://www.mikestewart.ca/presale/hue-seaview-port-moody-presale-condos-by-marcon-developments/",
       "headline_dollar": null
     }
   ]
