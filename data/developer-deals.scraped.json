@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-08-15T13:23:49.782Z",
+  "scrapedAt": "2026-08-16T13:24:23.716Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
@@ -12,6 +12,13 @@
       "incentive_summary": "Raven’s Park by Urban Coast – 9688 182a Street, Surrey Save Up To $55,000 on select move-in ready homes, GST Included on Select Homes, Free A/C Upgrade, Free EV Charger Ins...",
       "project_url": "https://www.mikestewart.ca/presale/ravens-park-presale-townhomes/",
       "headline_dollar": "$55,000"
+    },
+    {
+      "project_name": "Century City Holland Park by Century Group – Plans, Prices, Availability",
+      "city": "Surrey",
+      "incentive_summary": "Prize draws for attending featuring gift cards to Combine Cafe & Bar and Dominion Bar + Kitchen., $500 grand-prize st...",
+      "project_url": "https://www.mikestewart.ca/presale/holland-parkside-by-century-group-surrey-city-centre-presale-condos/",
+      "headline_dollar": "$500"
     },
     {
       "project_name": "Ironwood Coquitlam 609 Tyndall Street – Plans & Pricing",
@@ -63,31 +70,31 @@
       "headline_dollar": "$8,888"
     },
     {
-      "project_name": "7381 Preston Boulevard – Skyview Mission",
-      "city": "Mission",
-      "incentive_summary": "YEAR-END SAVINGS on select move-in ready homes, NO GST for First Time Home Buyers, NO Property Transfer Tax, ONLY $5,...",
-      "project_url": "https://www.mikestewart.ca/presale/skyview-mission-presale-townhomes/",
-      "headline_dollar": "$5,"
-    },
-    {
-      "project_name": "388 Duncan Street – Mercer Village by Plat:form + Domus – Plans & Prices",
-      "city": "New Westminster",
-      "incentive_summary": "New limited-time purchase incentives will be available soon., Over $40,000 in savings for homebuyers, Full incentive ...",
-      "project_url": "https://www.mikestewart.ca/presale/mercer-village-new-west-presale-townhomes/",
-      "headline_dollar": "$40,000"
-    },
-    {
-      "project_name": "The Hive Willoughby Town Centre at 7920 206 Street, Langley",
-      "city": "Langley",
-      "incentive_summary": "$25,000 in savings on select 2 bedroom homes, Complimentary A/C unit, 2 storage lockers, Net pricing inclusive of $25...",
-      "project_url": "https://www.mikestewart.ca/presale/the-hive-at-willoughby-town-centre-by-apcon-group-langley-presale-condos/",
-      "headline_dollar": "$25,000"
-    },
-    {
       "project_name": "Oakwoods Esquimalt by Aragon at 429 Lampson Street  – Prices, Availability, Plans",
       "city": "Victoria",
       "incentive_summary": "Oakwoods Esquimalt by Aragon at 429 Lampson Street – Prices, Availability, Plans Access to preferred mortgage rates through RBC., Visit before August 14 to be automatically entered for a chance to w...",
       "project_url": "https://www.mikestewart.ca/presale/oakwoods-esquimalt-victoria-presale-condos-and-townhomes-by-aragon-properties/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Nolia by Handmade Homes – Pricing & Plans",
+      "city": "Vancouver",
+      "incentive_summary": "Exclusive opportunity to tour our boutique Passive House townhomes., New-Spring-Incentives for motivated buyers., SPR...",
+      "project_url": "https://www.mikestewart.ca/presale/nolia-vancouver/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Queens on King George by Dawson + Sawyer – Plans & Pricing",
+      "city": "Surrey",
+      "incentive_summary": "We will be starting the new year with a promotion that is guaranteed to blow you away., We will be starting the new y...",
+      "project_url": "https://www.mikestewart.ca/presale/queens-on-king-george-surrey/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
+      "city": "Coquitlam",
+      "incentive_summary": "Ask About Our 3% Advance*, All homes qualify for a GST rebate.*, Limited-time incentive: 2 parking stalls included.*,...",
+      "project_url": "https://www.mikestewart.ca/presale/botanica-coquitlam-presale-condos-by-qualex-landmark/",
       "headline_dollar": null
     },
     {
@@ -116,13 +123,6 @@
       "city": "Surrey",
       "incentive_summary": "Opening prices guaranteed on the first 30 homes sold, Enjoy lunch on us at the Presentation Centre Grand Opening, FRE...",
       "project_url": "https://www.mikestewart.ca/presale/harth-surrey-prices-floor-plans/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Landmark on Robson – 1408 Robson Street & 1482 Robson Street",
-      "city": "Vancouver",
-      "incentive_summary": "Save up to 15%, Save Up to 15% This Lunar New Year, Limited 2-Bedroom Homes with Special Pricing, Select 2-bedroom ho...",
-      "project_url": "https://www.mikestewart.ca/presale/landmark-on-robson/",
       "headline_dollar": null
     },
     {
