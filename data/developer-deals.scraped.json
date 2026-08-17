@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-08-16T13:24:23.716Z",
+  "scrapedAt": "2026-08-17T13:33:11.914Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
@@ -14,18 +14,18 @@
       "headline_dollar": "$55,000"
     },
     {
-      "project_name": "Century City Holland Park by Century Group – Plans, Prices, Availability",
-      "city": "Surrey",
-      "incentive_summary": "Prize draws for attending featuring gift cards to Combine Cafe & Bar and Dominion Bar + Kitchen., $500 grand-prize st...",
-      "project_url": "https://www.mikestewart.ca/presale/holland-parkside-by-century-group-surrey-city-centre-presale-condos/",
-      "headline_dollar": "$500"
-    },
-    {
       "project_name": "Ironwood Coquitlam 609 Tyndall Street – Plans & Pricing",
       "city": "Coquitlam",
       "incentive_summary": "GST REBATES UP TO $50,000 OFF NEW HOMES UNDER $1M FOR FTHB*, Prices are inclusive of current incentives., GST Rebates...",
       "project_url": "https://www.mikestewart.ca/presale/ironwood-coquitlam-by-qualex-landmark-plans-pricing/",
       "headline_dollar": "$1M"
+    },
+    {
+      "project_name": "Century City Holland Park by Century Group – Plans, Prices, Availability",
+      "city": "Surrey",
+      "incentive_summary": "Prize draws for attending featuring gift cards to Combine Cafe & Bar and Dominion Bar + Kitchen., $500 grand-prize st...",
+      "project_url": "https://www.mikestewart.ca/presale/holland-parkside-by-century-group-surrey-city-centre-presale-condos/",
+      "headline_dollar": "$500"
     },
     {
       "project_name": "Townside Village Townhomes by Warwickshire – Plans & Prices",
@@ -77,6 +77,13 @@
       "headline_dollar": null
     },
     {
+      "project_name": "Hawthorne by Otivo – Prices & Floorplans",
+      "city": "Port Coquitlam",
+      "incentive_summary": "Last remaining top-floor home (Unit 404) available., Unit 404 is a Junior 3-bedroom with 2 baths, featuring 1152 sq. ...",
+      "project_url": "https://www.mikestewart.ca/presale/hawthorne-by-otivo-poco-presale-condos/",
+      "headline_dollar": null
+    },
+    {
       "project_name": "Nolia by Handmade Homes – Pricing & Plans",
       "city": "Vancouver",
       "incentive_summary": "Exclusive opportunity to tour our boutique Passive House townhomes., New-Spring-Incentives for motivated buyers., SPR...",
@@ -123,13 +130,6 @@
       "city": "Surrey",
       "incentive_summary": "Opening prices guaranteed on the first 30 homes sold, Enjoy lunch on us at the Presentation Centre Grand Opening, FRE...",
       "project_url": "https://www.mikestewart.ca/presale/harth-surrey-prices-floor-plans/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "2250 East 1st Avenue – Templeton by Dimex Group",
-      "city": "Vancouver",
-      "incentive_summary": "Passive House design offering up to 90% savings in heating costs",
-      "project_url": "https://www.mikestewart.ca/presale/templeton-2250-east-1-st-avenue/",
       "headline_dollar": null
     }
   ]
