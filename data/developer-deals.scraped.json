@@ -1,10 +1,10 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-08-17T13:33:11.914Z",
+  "scrapedAt": "2026-08-18T13:35:43.270Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
-  "count": 18,
+  "count": 17,
   "projects": [
     {
       "project_name": "Raven’s Park by Urban Coast – 9688 182a Street, Surrey",
@@ -63,17 +63,17 @@
       "headline_dollar": "$5000K"
     },
     {
-      "project_name": "Versant Burke Mountain – 3546 Monson Crescent",
+      "project_name": "Aavand by Canada West Group – Prices, Plans, Availability",
       "city": "Coquitlam",
-      "incentive_summary": "Limited new release of 3-Bedroom A Plan homes., Clients enjoy a limited time savings of $8,888 in savings on all home...",
-      "project_url": "https://www.mikestewart.ca/presale/versant-by-infinity-townhomes/",
-      "headline_dollar": "$8,888"
+      "incentive_summary": "Significant price adjustments, Repriced remaining inventory, Immediate possession available, No presale timelines, no...",
+      "project_url": "https://www.mikestewart.ca/presale/aavand-burquitlam-presale-coquitlam-condos-by-canada-west-group/",
+      "headline_dollar": null
     },
     {
-      "project_name": "Oakwoods Esquimalt by Aragon at 429 Lampson Street  – Prices, Availability, Plans",
-      "city": "Victoria",
-      "incentive_summary": "Oakwoods Esquimalt by Aragon at 429 Lampson Street – Prices, Availability, Plans Access to preferred mortgage rates through RBC., Visit before August 14 to be automatically entered for a chance to w...",
-      "project_url": "https://www.mikestewart.ca/presale/oakwoods-esquimalt-victoria-presale-condos-and-townhomes-by-aragon-properties/",
+      "project_name": "Aqua Waterfront Village by Mission Group – Availability, Prices, Plans",
+      "city": "Kelowna",
+      "incentive_summary": "Event guests will be entered to win one of two incredible prizes: a half-day private boat tour or an exclusive surf s...",
+      "project_url": "https://www.mikestewart.ca/presale/aqua-by-mission-group-lower-mission-kelowna-presale-condos-townhomes/",
       "headline_dollar": null
     },
     {
@@ -123,13 +123,6 @@
       "city": "Vancouver",
       "incentive_summary": "Own today with just 5% deposit.*, *Subject to terms and conditions. Contact the sales team for details., First-Time H...",
       "project_url": "https://www.mikestewart.ca/presale/1650-e-12th-ave-ace-on-the-drive-by-wesgroup-grandview-woodland-homes/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Harth Surrey — Prices & Floor Plans",
-      "city": "Surrey",
-      "incentive_summary": "Opening prices guaranteed on the first 30 homes sold, Enjoy lunch on us at the Presentation Centre Grand Opening, FRE...",
-      "project_url": "https://www.mikestewart.ca/presale/harth-surrey-prices-floor-plans/",
       "headline_dollar": null
     }
   ]
