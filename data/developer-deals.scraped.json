@@ -1,9 +1,129 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-08-20T13:39:04.647Z",
+  "scrapedAt": "2026-08-21T13:38:17.588Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
-  "count": 0,
-  "projects": []
+  "count": 17,
+  "projects": [
+    {
+      "project_name": "Finestra by MetroVan – Prices & Floorplans",
+      "city": "Surrey",
+      "incentive_summary": "Early bird incentives available prior to the offic..., Premium SMEG appliance package included, Private rooftop patios included with every home, $10,000 bonus, Exclusive early bird offer worth $50,000 in includ..., Rooftop Pavers ($15,000 Value), Air Conditioning ($10,000 Value), Feature Wall and Fireplace ($7,500 Valu",
+      "project_url": "https://www.mikestewart.ca/presale/finestra-surrey-presale-townhomes/",
+      "headline_dollar": "$50,000"
+    },
+    {
+      "project_name": "Grafia Vancouver 2450 Garden Drive",
+      "city": "Vancouver",
+      "incentive_summary": "Sneak Peek Inside...Homes Starting at $499K, Tour our new, fully furnished Show Home this weekend to get a look at ou...",
+      "project_url": "https://www.mikestewart.ca/presale/grafia-on-garden-drive-grandview-woodland-east-vancouver-presale-condos-by-porte-homes/",
+      "headline_dollar": "$499K"
+    },
+    {
+      "project_name": "South Hill at Cooper Meadows Abbotsford — Prices & Floor Plans",
+      "city": "Abbotsford",
+      "incentive_summary": "Get up to 6 extra months to sell your home – or receive $10K closing credit if you close on time* (*Terms & condition...",
+      "project_url": "https://www.mikestewart.ca/presale/south-hill-at-cooper-meadows-abbotsford-prices-floor-plans/",
+      "headline_dollar": "$10K"
+    },
+    {
+      "project_name": "Florin Coquitlam by Allaire Living",
+      "city": "Coquitlam",
+      "incentive_summary": "final release promotions offering savings up to $109,495, Savings up to $109,495, 5% Savings, 5% Deposit, 5% Deposit ...",
+      "project_url": "https://www.mikestewart.ca/presale/rochester-burquitlam-coquitlam-presale-condos-townhomes-by-allaire-living/",
+      "headline_dollar": "$109,495,"
+    },
+    {
+      "project_name": "The Hive Willoughby Town Centre at 7920 206 Street, Langley",
+      "city": "Langley",
+      "incentive_summary": "$25,000 in savings on select 2 bedroom homes, Complimentary A/C unit, 2 storage lockers, Net pricing inclusive of $25...",
+      "project_url": "https://www.mikestewart.ca/presale/the-hive-at-willoughby-town-centre-by-apcon-group-langley-presale-condos/",
+      "headline_dollar": "$25,000"
+    },
+    {
+      "project_name": "The Loop South Surrey at 2350 165th Street",
+      "city": "Surrey",
+      "incentive_summary": "Up to $174,000 in savings, Free A/C (valued up to $8,500), Free BBQ Gasline (valued at $700), 5% deposit only, Move i...",
+      "project_url": "https://www.mikestewart.ca/presale/the-loop-grandview-heights-surrey-presale-townhomes-by-gramercy-developments/",
+      "headline_dollar": "$174,000"
+    },
+    {
+      "project_name": "Hartley Surrey – 10488 138A Street",
+      "city": "Surrey",
+      "incentive_summary": "Buyers Save $25,000, The first 10 purchasers will save $25,000, First 10 purchasers will save $25,000, First 10 purch...",
+      "project_url": "https://www.mikestewart.ca/presale/hartley-surrey-city-centre-presale-condos-townhomes-by-porte-homes/",
+      "headline_dollar": "$25,000,"
+    },
+    {
+      "project_name": "Pine and Glen Onni in Coquitlam – Prices & Floor Plans",
+      "city": "Coquitlam",
+      "incentive_summary": "Price includes applicable incentives, GST relief (subject to government eligibility requ..., Property transfer tax exemptions (subject to gover..., GST relief and property transfer tax exemptions ar..., Prices include applicable incentives, Prices include applicable incentives, GST relief and property transfer tax exem",
+      "project_url": "https://www.mikestewart.ca/presale/1175-pinetree-way-coquitlam-city-centre-onni-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Oakwoods Esquimalt by Aragon at 429 Lampson Street  – Prices, Availability, Plans",
+      "city": "Victoria",
+      "incentive_summary": "Oakwoods Esquimalt by Aragon at 429 Lampson Street – Prices, Availability, Plans Access to preferred mortgage rates through RBC., Visit before August 14 to be automatically entered for a chance to w...",
+      "project_url": "https://www.mikestewart.ca/presale/oakwoods-esquimalt-victoria-presale-condos-and-townhomes-by-aragon-properties/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Lakewood by Dimex Group – Availability, Plans, Prices",
+      "city": "Vancouver",
+      "incentive_summary": "Six homes remaining, each including air conditioning, HRV air filtration, one parking stall, and one storage locker, ...",
+      "project_url": "https://www.mikestewart.ca/presale/lakewood-by-dimex-group-grandview-woodland-vancouver-presale-condos-townhomes/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Concord Metrotown Sky Park – Plans, Availability, Prices",
+      "city": "Burnaby",
+      "incentive_summary": "Existing home purchase incentives conclude on July 31st, Upcoming Grand Summit Experience and Sky Rewards - an exclus...",
+      "project_url": "https://www.mikestewart.ca/presale/concord-metrotown-metro-downtown-burnaby-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Hue Port Moody by Marcon @ 2015 St. Johns Street & 125 Albert Street",
+      "city": "Port Moody",
+      "incentive_summary": "Receive a complimentary eucalyptus room spray by attending the Open House., Limited quantities available on a first-c...",
+      "project_url": "https://www.mikestewart.ca/presale/hue-seaview-port-moody-presale-condos-by-marcon-developments/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "639 Aspen Street – The Grove by Foster Living",
+      "city": "Coquitlam",
+      "incentive_summary": "secure yours today with only a 5% deposit, Open House This Saturday from 12-4 PM, Limited Homes Remaining, Move in Th...",
+      "project_url": "https://www.mikestewart.ca/presale/the-grove-by-foster-living/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Emerson by Frame in Oaklands – Plans & Pricing",
+      "city": "Victoria",
+      "incentive_summary": "Ask about Emerson's Green Mortgage Program. You could save hundreds per month with our energy-efficient homes., If yo...",
+      "project_url": "https://www.mikestewart.ca/presale/emerson-by-frame-victoria-presale-townhomes/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Siena Burnaby by Landa Global – Plans, Prices, Availability",
+      "city": "Burnaby",
+      "incentive_summary": "Exclusive pre-public offering to secure a home at Siena before the public launch., Early window provides priority sel...",
+      "project_url": "https://www.mikestewart.ca/presale/siena-at-the-heights-by-i4-properties-presale-north-burnaby-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Fraser E49 Vancouver — Prices & Floor Plans",
+      "city": "Vancouver",
+      "incentive_summary": "Newly improved pricing across the entire collection, Eligible first-time buyers may qualify for the federal First-Tim...",
+      "project_url": "https://www.mikestewart.ca/presale/fraser-e49-vancouver-prices-floor-plans/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Elwynn Green Townhomes – 7895 162 Street Surrey",
+      "city": "Surrey",
+      "incentive_summary": "Last move-in ready unit available for immediate occupancy., The last move-in ready unit is a spacious 3-bedroom + fle...",
+      "project_url": "https://www.mikestewart.ca/presale/elwynn-green-surrey-fleetwood-presale-townhomes-by-elegant-development/",
+      "headline_dollar": null
+    }
+  ]
 }
