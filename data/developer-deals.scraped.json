@@ -1,11 +1,39 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-08-22T13:25:07.746Z",
+  "scrapedAt": "2026-08-23T13:25:47.907Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 17,
   "projects": [
+    {
+      "project_name": "Satori Coquitlam by Everglade – Floorplans & Prices",
+      "city": "Coquitlam",
+      "incentive_summary": "A new incentive will be unlocked each week leading up to the Groundbreaking Ceremony, $20,000 off the E1 Townhome (4-...",
+      "project_url": "https://www.mikestewart.ca/presale/satori-townhomes-coquitlam/",
+      "headline_dollar": "$20,000"
+    },
+    {
+      "project_name": "Chelsea at The Boroughs South Surrey — Prices & Floor Plans",
+      "city": "Surrey",
+      "incentive_summary": "$50,000 price reduction on select F1 plans, Limited time pricing on F1 plans, Limited time pricing on F1 plans (4 bed...",
+      "project_url": "https://www.mikestewart.ca/presale/chelsea-at-the-boroughs-south-surrey-prices-floor-plans/",
+      "headline_dollar": "$50,000"
+    },
+    {
+      "project_name": "Rocklin on the Creek – 1220 Rocklin Street, Coquitlam",
+      "city": "Coquitlam",
+      "incentive_summary": "Receive up to a $30,000 credit on select homes, Complete suite of SMEG appliances, including a refrigerator, inductio...",
+      "project_url": "https://www.mikestewart.ca/presale/rocklin-on-the-creek-by-woodbridge-homes-burke-mountain-coquitlam-presale-townhomes/",
+      "headline_dollar": "$30,000"
+    },
+    {
+      "project_name": "602 East 2nd Street – Morrison Walk North Vancouver",
+      "city": "North Vancouver",
+      "incentive_summary": "Client Benefit: Up to $100,000 in total value., Client Incentive: $15,000 Decorator Allowance., Client Incentive: A/C...",
+      "project_url": "https://www.mikestewart.ca/presale/morrison-walk-north-vancouver-presale-townhomes/",
+      "headline_dollar": "$100,000"
+    },
     {
       "project_name": "7381 Preston Boulevard – Skyview Mission",
       "city": "Mission",
@@ -56,20 +84,6 @@
       "headline_dollar": "$88,000"
     },
     {
-      "project_name": "Grafia Vancouver 2450 Garden Drive",
-      "city": "Vancouver",
-      "incentive_summary": "Sneak Peek Inside...Homes Starting at $499K, Tour our new, fully furnished Show Home this weekend to get a look at ou...",
-      "project_url": "https://www.mikestewart.ca/presale/grafia-on-garden-drive-grandview-woodland-east-vancouver-presale-condos-by-porte-homes/",
-      "headline_dollar": "$499K"
-    },
-    {
-      "project_name": "South Hill at Cooper Meadows Abbotsford — Prices & Floor Plans",
-      "city": "Abbotsford",
-      "incentive_summary": "Get up to 6 extra months to sell your home – or receive $10K closing credit if you close on time* (*Terms & condition...",
-      "project_url": "https://www.mikestewart.ca/presale/south-hill-at-cooper-meadows-abbotsford-prices-floor-plans/",
-      "headline_dollar": "$10K"
-    },
-    {
       "project_name": "Rindall by Woodbridge Homes – 2150 Rindall Ave, Port Coquitlam",
       "city": "Port Coquitlam",
       "incentive_summary": "Rindall by Woodbridge Homes – 2150 Rindall Ave, Port Coquitlam *Value of incentives is based on home type and some conditions apply. Speak to sales team to learn more., Value of in...",
@@ -77,17 +91,24 @@
       "headline_dollar": null
     },
     {
-      "project_name": "The POCO by Rapture Developments – Plans & Pricing",
-      "city": "Port Coquitlam",
-      "incentive_summary": "Early pre-launch pricing is available for a limited time., Access to priority pricing and an exclusive first look for...",
-      "project_url": "https://www.mikestewart.ca/presale/the-poco-presale-condos/",
-      "headline_dollar": null
-    },
-    {
       "project_name": "308 Alderson Avenue – Soco by Anthem Coquitlam",
       "city": "Coquitlam",
       "incentive_summary": "Book a hard hat tour, Win one of two exclusive co-listing opportunities in Coquitlam within the Anthem portfolio by f...",
       "project_url": "https://www.mikestewart.ca/presale/anthem-soco-lougheed-coquitlam-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
+      "city": "Coquitlam",
+      "incentive_summary": "Ask About Our 3% Advance*, All homes qualify for a GST rebate.*, Limited-time incentive: 2 parking stalls included.*,...",
+      "project_url": "https://www.mikestewart.ca/presale/botanica-coquitlam-presale-condos-by-qualex-landmark/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "The POCO by Rapture Developments – Plans & Pricing",
+      "city": "Port Coquitlam",
+      "incentive_summary": "Early pre-launch pricing is available for a limited time., Access to priority pricing and an exclusive first look for...",
+      "project_url": "https://www.mikestewart.ca/presale/the-poco-presale-condos/",
       "headline_dollar": null
     },
     {
@@ -102,27 +123,6 @@
       "city": "Surrey",
       "incentive_summary": "Opening prices guaranteed on the first 30 homes sold, Enjoy lunch on us at the Presentation Centre Grand Opening, FRE...",
       "project_url": "https://www.mikestewart.ca/presale/harth-surrey-prices-floor-plans/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "2250 East 1st Avenue – Templeton by Dimex Group",
-      "city": "Vancouver",
-      "incentive_summary": "Passive House design offering up to 90% savings in heating costs, High performance passive homes offering up to 90% s...",
-      "project_url": "https://www.mikestewart.ca/presale/templeton-2250-east-1-st-avenue/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Lakewood by Dimex Group – Availability, Plans, Prices",
-      "city": "Vancouver",
-      "incentive_summary": "Six homes remaining, each including air conditioning, HRV air filtration, one parking stall, and one storage locker, ...",
-      "project_url": "https://www.mikestewart.ca/presale/lakewood-by-dimex-group-grandview-woodland-vancouver-presale-condos-townhomes/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Concord Metrotown Sky Park – Plans, Availability, Prices",
-      "city": "Burnaby",
-      "incentive_summary": "Existing home purchase incentives conclude on July 31st, Upcoming Grand Summit Experience and Sky Rewards - an exclus...",
-      "project_url": "https://www.mikestewart.ca/presale/concord-metrotown-metro-downtown-burnaby-presale-condos/",
       "headline_dollar": null
     }
   ]
