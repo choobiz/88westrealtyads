@@ -1,11 +1,25 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-08-23T13:25:47.907Z",
+  "scrapedAt": "2026-08-24T13:42:52.246Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 17,
   "projects": [
+    {
+      "project_name": "Inlet District Port Moody – Price & Floor Plans",
+      "city": "Port Moody",
+      "incentive_summary": "LIMITED-TIME INCENTIVE, Buyer Incentives: $5K on Studios, Buyer Incentives: $8K on Jr. 2-Bedrooms, Buyer Incentives: ...",
+      "project_url": "https://www.mikestewart.ca/presale/coronation-park-port-moody-presale-condos-by-wesgroup-properties/",
+      "headline_dollar": "$8K"
+    },
+    {
+      "project_name": "Atlin at Clayton Crest by Zenterra Developments – Floorplans & Prices",
+      "city": "Surrey",
+      "incentive_summary": "$10,000 credit on purchase, Air conditioning included, Vinyl plank flooring upgrade in the bedrooms, Storage locker i...",
+      "project_url": "https://www.mikestewart.ca/presale/atlin-at-clayton-crest-presales/",
+      "headline_dollar": "$10,000"
+    },
     {
       "project_name": "Satori Coquitlam by Everglade – Floorplans & Prices",
       "city": "Coquitlam",
@@ -70,24 +84,17 @@
       "headline_dollar": "$5000K"
     },
     {
-      "project_name": "Frame Vancouver – 2727 Kingsway & 5189 Earles Street – Floor Plans & Prices",
-      "city": "Vancouver",
-      "incentive_summary": "1-Bed + Den: $3,000 buyer incentive, Jr. 2-Bed + Den: $6,000 buyer incentive, 2-Bed & 2-Bath + Den: $6,000 buyer ince...",
-      "project_url": "https://www.mikestewart.ca/presale/frame-vancouver-by-coromandel-and-peterson-plans-availability-prices/",
-      "headline_dollar": "$6,000"
+      "project_name": "Bute West Clayton — Prices & Floor Plans",
+      "city": "Surrey",
+      "incentive_summary": "Save $40,000 off 1 bedroom + den homes, Secure your new home today with just a 10% deposit",
+      "project_url": "https://www.mikestewart.ca/presale/bute-west-clayton-prices-floor-plans/",
+      "headline_dollar": "$40,000"
     },
     {
-      "project_name": "York by Listraor @ 5381 Willow Street and 5383 Willow Street",
+      "project_name": "Willa at 950 W 57th Avenue – Pricing & Floor Plans",
       "city": "Vancouver",
-      "incentive_summary": "$88,000 Off Your New Home, Limited-time Lunar New Year incentives, Available on the final collection of townhomes, Lu...",
-      "project_url": "https://www.mikestewart.ca/presale/york-by-listraor-townhomes/",
-      "headline_dollar": "$88,000"
-    },
-    {
-      "project_name": "Rindall by Woodbridge Homes – 2150 Rindall Ave, Port Coquitlam",
-      "city": "Port Coquitlam",
-      "incentive_summary": "Rindall by Woodbridge Homes – 2150 Rindall Ave, Port Coquitlam *Value of incentives is based on home type and some conditions apply. Speak to sales team to learn more., Value of in...",
-      "project_url": "https://www.mikestewart.ca/presale/rindall-by-woodbridge-presale-townhomes/",
+      "incentive_summary": "Preview Event: First Look before the Public, Curated bites, drinks, and bubble tea provided, Curated bites, drinks, a...",
+      "project_url": "https://www.mikestewart.ca/presale/willa-at-950-w-57th-avenue-pricing-floor-plans/",
       "headline_dollar": null
     },
     {
@@ -116,13 +123,6 @@
       "city": "Chilliwack",
       "incentive_summary": "Limited-time opportunity to explore the site with private site tours., PPE Provided at check-in., We're now offering ...",
       "project_url": "https://www.mikestewart.ca/presale/andmar-by-andmark-chilliwack-presales/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Harth Surrey — Prices & Floor Plans",
-      "city": "Surrey",
-      "incentive_summary": "Opening prices guaranteed on the first 30 homes sold, Enjoy lunch on us at the Presentation Centre Grand Opening, FRE...",
-      "project_url": "https://www.mikestewart.ca/presale/harth-surrey-prices-floor-plans/",
       "headline_dollar": null
     }
   ]
