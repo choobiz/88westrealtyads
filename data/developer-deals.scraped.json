@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-08-29T16:55:40.820Z",
+  "scrapedAt": "2026-08-30T17:05:41.328Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
@@ -56,17 +56,17 @@
       "headline_dollar": "$20,000"
     },
     {
-      "project_name": "7381 Preston Boulevard – Skyview Mission",
-      "city": "Mission",
-      "incentive_summary": "YEAR-END SAVINGS on select move-in ready homes, NO GST for First Time Home Buyers, NO Property Transfer Tax, ONLY $5,...",
-      "project_url": "https://www.mikestewart.ca/presale/skyview-mission-presale-townhomes/",
-      "headline_dollar": "$5,"
-    },
-    {
       "project_name": "Rindall by Woodbridge Homes – 2150 Rindall Ave, Port Coquitlam",
       "city": "Port Coquitlam",
       "incentive_summary": "Rindall by Woodbridge Homes – 2150 Rindall Ave, Port Coquitlam *Value of incentives is based on home type and some conditions apply. Speak to sales team to learn more., Value of in...",
       "project_url": "https://www.mikestewart.ca/presale/rindall-by-woodbridge-presale-townhomes/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Hawthorne by Otivo – Prices & Floorplans",
+      "city": "Port Coquitlam",
+      "incentive_summary": "Last remaining top-floor home (Unit 404) available., Unit 404 is a Junior 3-bedroom with 2 baths, featuring 1152 sq. ...",
+      "project_url": "https://www.mikestewart.ca/presale/hawthorne-by-otivo-poco-presale-condos/",
       "headline_dollar": null
     },
     {
