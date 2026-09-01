@@ -1,11 +1,18 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-08-31T19:18:56.156Z",
+  "scrapedAt": "2026-09-01T17:04:29.004Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "Century City Holland Park by Century Group – Plans, Prices, Availability",
+      "city": "Surrey",
+      "incentive_summary": "Prize draws for attending featuring gift cards to Combine Cafe & Bar and Dominion Bar + Kitchen., $500 grand-prize st...",
+      "project_url": "https://www.mikestewart.ca/presale/holland-parkside-by-century-group-surrey-city-centre-presale-condos/",
+      "headline_dollar": "$500"
+    },
     {
       "project_name": "Trailside at the Lake by Seacliff Properties – Prices, Plans, Availability",
       "city": "Langford",
@@ -49,17 +56,10 @@
       "headline_dollar": "$100,000"
     },
     {
-      "project_name": "Satori Coquitlam by Everglade – Floorplans & Prices",
-      "city": "Coquitlam",
-      "incentive_summary": "A new incentive will be unlocked each week leading up to the Groundbreaking Ceremony, $20,000 off the E1 Townhome (4-...",
-      "project_url": "https://www.mikestewart.ca/presale/satori-townhomes-coquitlam/",
-      "headline_dollar": "$20,000"
-    },
-    {
-      "project_name": "Rindall by Woodbridge Homes – 2150 Rindall Ave, Port Coquitlam",
-      "city": "Port Coquitlam",
-      "incentive_summary": "Rindall by Woodbridge Homes – 2150 Rindall Ave, Port Coquitlam *Value of incentives is based on home type and some conditions apply. Speak to sales team to learn more., Value of in...",
-      "project_url": "https://www.mikestewart.ca/presale/rindall-by-woodbridge-presale-townhomes/",
+      "project_name": "Sage Abbotsford by Diverse Properties – Floorplans & Prices",
+      "city": "Abbotsford",
+      "incentive_summary": "Full federal GST exemption on new homes, All homes are priced under the threshold so qualified buyers can receive the...",
+      "project_url": "https://www.mikestewart.ca/presale/sage-by-diverse-presale-condos/",
       "headline_dollar": null
     },
     {
