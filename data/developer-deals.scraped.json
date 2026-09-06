@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-09-05T15:42:57.224Z",
+  "scrapedAt": "2026-09-06T15:55:01.405Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
@@ -12,6 +12,13 @@
       "incentive_summary": "Raven’s Park by Urban Coast – 9688 182a Street, Surrey Save Up To $55,000 on select move-in ready homes, GST Included on Select Homes, Free A/C Upgrade, Free EV Charger Ins...",
       "project_url": "https://www.mikestewart.ca/presale/ravens-park-presale-townhomes/",
       "headline_dollar": "$55,000"
+    },
+    {
+      "project_name": "Jericho Langley by Essence – Plans & Pricing",
+      "city": "Langley",
+      "incentive_summary": "A limited-time 5% deposit is currently available., $20K credit on ALL homes, Free parking stall for the next 5 homes,...",
+      "project_url": "https://www.mikestewart.ca/presale/jericho-phase-1-langley-presales/",
+      "headline_dollar": "$20K"
     },
     {
       "project_name": "7381 Preston Boulevard – Skyview Mission",
@@ -70,11 +77,18 @@
       "headline_dollar": "$100,000"
     },
     {
-      "project_name": "Grafia Vancouver 2450 Garden Drive",
+      "project_name": "Nolia by Handmade Homes – Pricing & Plans",
       "city": "Vancouver",
-      "incentive_summary": "Sneak Peek Inside...Homes Starting at $499K, Tour our new, fully furnished Show Home this weekend to get a look at ou...",
-      "project_url": "https://www.mikestewart.ca/presale/grafia-on-garden-drive-grandview-woodland-east-vancouver-presale-condos-by-porte-homes/",
-      "headline_dollar": "$499K"
+      "incentive_summary": "Exclusive opportunity to tour our boutique Passive House townhomes., New-Spring-Incentives for motivated buyers., SPR...",
+      "project_url": "https://www.mikestewart.ca/presale/nolia-vancouver/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
+      "city": "Coquitlam",
+      "incentive_summary": "Ask About Our 3% Advance*, All homes qualify for a GST rebate.*, Limited-time incentive: 2 parking stalls included.*,...",
+      "project_url": "https://www.mikestewart.ca/presale/botanica-coquitlam-presale-condos-by-qualex-landmark/",
+      "headline_dollar": null
     },
     {
       "project_name": "The POCO by Rapture Developments – Plans & Pricing",
@@ -116,20 +130,6 @@
       "city": "Vancouver",
       "incentive_summary": "Newly improved pricing across the entire collection, Eligible first-time buyers may qualify for the federal First-Tim...",
       "project_url": "https://www.mikestewart.ca/presale/fraser-e49-vancouver-prices-floor-plans/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "The Butterfly Building Vancouver | 1033 Nelson St Condos by Westbank",
-      "city": "Vancouver",
-      "incentive_summary": "Enter photo contest on Instagram with hashtag #AllAboutTheArt to win a private dinner in a Butterfly exhibit estate h...",
-      "project_url": "https://www.mikestewart.ca/presale/burrard-and-nelson/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Park George II by Concord Pacific – Prices, Availability, Plans",
-      "city": "Surrey",
-      "incentive_summary": "0.99% 3-Year Mortgage Rate (subsidy payment based on assumptions and calculations determined solely by the Developers...",
-      "project_url": "https://www.mikestewart.ca/presale/park-george-ii-by-concord-pacific-surrey-city-centre-presale-condominiums-and-townhomes/",
       "headline_dollar": null
     }
   ]
