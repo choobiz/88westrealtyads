@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-09-07T18:00:20.872Z",
+  "scrapedAt": "2026-09-08T16:56:35.634Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
@@ -12,6 +12,13 @@
       "incentive_summary": "Raven’s Park by Urban Coast – 9688 182a Street, Surrey Save Up To $55,000 on select move-in ready homes, GST Included on Select Homes, Free A/C Upgrade, Free EV Charger Ins...",
       "project_url": "https://www.mikestewart.ca/presale/ravens-park-presale-townhomes/",
       "headline_dollar": "$55,000"
+    },
+    {
+      "project_name": "Oasis Brentwood – Plans, Availability, Prices",
+      "city": "Burnaby",
+      "incentive_summary": "Sky Rewards incentive package, Up to $50,000 move-in allowance, Up to 36 months of strata fees reimbursement, Parking...",
+      "project_url": "https://www.mikestewart.ca/presale/oasis-at-concord-brentwood-burnaby-presale-condos-by-concord-pacific/",
+      "headline_dollar": "$50,000 m"
     },
     {
       "project_name": "Jericho Langley by Essence – Plans & Pricing",
@@ -63,18 +70,32 @@
       "headline_dollar": "$40,000"
     },
     {
-      "project_name": "Ironwood Coquitlam 609 Tyndall Street – Plans & Pricing",
-      "city": "Coquitlam",
-      "incentive_summary": "GST REBATES UP TO $50,000 OFF NEW HOMES UNDER $1M FOR FTHB*, Prices are inclusive of current incentives., GST Rebates...",
-      "project_url": "https://www.mikestewart.ca/presale/ironwood-coquitlam-by-qualex-landmark-plans-pricing/",
-      "headline_dollar": "$1M"
+      "project_name": "Siena Burnaby by Landa Global – Plans, Prices, Availability",
+      "city": "Burnaby",
+      "incentive_summary": "Exclusive pre-public offering to secure a home at Siena before the public launch., Early window provides priority sel...",
+      "project_url": "https://www.mikestewart.ca/presale/siena-at-the-heights-by-i4-properties-presale-north-burnaby-condos/",
+      "headline_dollar": null
     },
     {
-      "project_name": "602 East 2nd Street – Morrison Walk North Vancouver",
+      "project_name": "Magnolia at Edgemont by Black Creek Group – Plans & Prices",
       "city": "North Vancouver",
-      "incentive_summary": "Client Benefit: Up to $100,000 in total value., Client Incentive: $15,000 Decorator Allowance., Client Incentive: A/C...",
-      "project_url": "https://www.mikestewart.ca/presale/morrison-walk-north-vancouver-presale-townhomes/",
-      "headline_dollar": "$100,000"
+      "incentive_summary": "Own Today With 10% Down, 3 BED 4 BATH | 3,008 SQFT, Sub penthouse residence, Private 2 car garage, Private wine cella...",
+      "project_url": "https://www.mikestewart.ca/presale/magnolia-at-edgemont-north-vancouver/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Park George II by Concord Pacific – Prices, Availability, Plans",
+      "city": "Surrey",
+      "incentive_summary": "0.99% 3-Year Mortgage Rate (subsidy payment based on assumptions and calculations determined solely by the Developers...",
+      "project_url": "https://www.mikestewart.ca/presale/park-george-ii-by-concord-pacific-surrey-city-centre-presale-condominiums-and-townhomes/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Greenhouse by Concord Pacific – Prices, Floor Plans, & Availability",
+      "city": "Burnaby",
+      "incentive_summary": "0.99% 3-Year Mortgage Rate, 5% GST & Property Transfer Tax Exemptions, Additional incentives include a further price ...",
+      "project_url": "https://www.mikestewart.ca/presale/greenhouse-by-concord-pacific-metrotown/",
+      "headline_dollar": null
     },
     {
       "project_name": "Nolia by Handmade Homes – Pricing & Plans",
@@ -109,27 +130,6 @@
       "city": "Burnaby",
       "incentive_summary": "New Pricing, Move-in ready and standing with confidence, 10 homes sold last month, B2 Plan (1 Bedroom) starting from ...",
       "project_url": "https://www.mikestewart.ca/presale/the-standard-by-anthem/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Ace on The Drive by Wesgroup – 1680 East 12th Avenue",
-      "city": "Vancouver",
-      "incentive_summary": "Own today with just 5% deposit.*, *Subject to terms and conditions. Contact the sales team for details., First-Time H...",
-      "project_url": "https://www.mikestewart.ca/presale/1650-e-12th-ave-ace-on-the-drive-by-wesgroup-grandview-woodland-homes/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Water Street by the Park by Orchard Park Properties – Plans Availability Prices",
-      "city": "Kelowna",
-      "incentive_summary": "Limited time price reductions available on select floorplans, Clients can secure a completed home with preferred pric...",
-      "project_url": "https://www.mikestewart.ca/presale/water-street-by-the-park-by-orchard-park-properties-plans-availability-prices/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Fraser E49 Vancouver — Prices & Floor Plans",
-      "city": "Vancouver",
-      "incentive_summary": "Newly improved pricing across the entire collection, Eligible first-time buyers may qualify for the federal First-Tim...",
-      "project_url": "https://www.mikestewart.ca/presale/fraser-e49-vancouver-prices-floor-plans/",
       "headline_dollar": null
     }
   ]
