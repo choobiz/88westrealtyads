@@ -1,11 +1,32 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-09-14T18:16:43.404Z",
+  "scrapedAt": "2026-09-15T17:24:30.515Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "The Westminster in Surrey — Prices & Floor Plans",
+      "city": "Surrey",
+      "incentive_summary": "A 1.99% mortgage rate, exclusive to The Westminster, $100 gift card giveaway every hour during the grand opening, Fre...",
+      "project_url": "https://www.mikestewart.ca/presale/the-westminster-in-surrey-prices-floor-plans/",
+      "headline_dollar": "$100"
+    },
+    {
+      "project_name": "Harlin River District by Wesgroup – Prices, Plans, Availability",
+      "city": "Vancouver",
+      "incentive_summary": "10% deposits, $10K credit on studios & 1-bed, $15K credit on 2-beds, $20K credit on 3-beds, Significant savings of up...",
+      "project_url": "https://www.mikestewart.ca/presale/harlin-at-river-district-by-wesgroup-presale-east-vancouver-condos-and-townhomes/",
+      "headline_dollar": "$20K"
+    },
+    {
+      "project_name": "2186 Gilmore Avenue & 4186 Lougheed Highway – Gilmore Place Burnaby By Onni Developments",
+      "city": "Burnaby",
+      "incentive_summary": "Save up to $100,000 at the Lunar New Year Festival event., Project-specific savings include: up to $20,000 at West 57...",
+      "project_url": "https://www.mikestewart.ca/presale/gilmore-place-burnaby-by-onni-developments/",
+      "headline_dollar": "$100,000"
+    },
     {
       "project_name": "The City of Lougheed First Neighbourhood by Shape Properties – Availability, Plans, Prices",
       "city": "Burnaby",
@@ -19,27 +40,6 @@
       "incentive_summary": "Up to $100,000 Price Reduction, $28,888 in Lunar New Year Incentives, Up to $128,888 off your new home (combined pric...",
       "project_url": "https://www.mikestewart.ca/presale/rhodes-vancouver-presale-condos/",
       "headline_dollar": "$128,888"
-    },
-    {
-      "project_name": "Reign Metrotown by Wesgroup Properties – 6325 Cassie Avenue & 6263 Cassie Avenue",
-      "city": "Burnaby",
-      "incentive_summary": "limited-time savings of up to $88,888.*, Attendees can enter our exclusive draw for a Leah Alexandra horseshoe gold b...",
-      "project_url": "https://www.mikestewart.ca/presale/reign-at-metrotown-by-wesgroup-properties-burnaby-presale-condos/",
-      "headline_dollar": "$88,888"
-    },
-    {
-      "project_name": "602 East 2nd Street – Morrison Walk North Vancouver",
-      "city": "North Vancouver",
-      "incentive_summary": "Client Benefit: Up to $100,000 in total value., Client Incentive: $15,000 Decorator Allowance., Client Incentive: A/C...",
-      "project_url": "https://www.mikestewart.ca/presale/morrison-walk-north-vancouver-presale-townhomes/",
-      "headline_dollar": "$100,000"
-    },
-    {
-      "project_name": "Bute West Clayton — Prices & Floor Plans",
-      "city": "Surrey",
-      "incentive_summary": "Save $40,000 off 1 bedroom + den homes, Secure your new home today with just a 10% deposit",
-      "project_url": "https://www.mikestewart.ca/presale/bute-west-clayton-prices-floor-plans/",
-      "headline_dollar": "$40,000"
     },
     {
       "project_name": "The Levette at Finch Drive by Diamond Head – Plans & Pricing",
@@ -67,6 +67,20 @@
       "city": "Victoria",
       "incentive_summary": "Ask about Emerson's Green Mortgage Program. You could save hundreds per month with our energy-efficient homes., If yo...",
       "project_url": "https://www.mikestewart.ca/presale/emerson-by-frame-victoria-presale-townhomes/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "The POCO by Rapture Developments – Plans & Pricing",
+      "city": "Port Coquitlam",
+      "incentive_summary": "Early pre-launch pricing is available for a limited time., Access to priority pricing and an exclusive first look for...",
+      "project_url": "https://www.mikestewart.ca/presale/the-poco-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
+      "city": "Coquitlam",
+      "incentive_summary": "Ask About Our 3% Advance*, All homes qualify for a GST rebate.*, Limited-time incentive: 2 parking stalls included.*,...",
+      "project_url": "https://www.mikestewart.ca/presale/botanica-coquitlam-presale-condos-by-qualex-landmark/",
       "headline_dollar": null
     },
     {
@@ -116,20 +130,6 @@
       "city": "Coquitlam",
       "incentive_summary": "secure yours today with only a 5% deposit, Open House This Saturday from 12-4 PM, Limited Homes Remaining, Move in Th...",
       "project_url": "https://www.mikestewart.ca/presale/the-grove-by-foster-living/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
-      "city": "Coquitlam",
-      "incentive_summary": "Ask About Our 3% Advance*, All homes qualify for a GST rebate.*, Limited-time incentive: 2 parking stalls included.*,...",
-      "project_url": "https://www.mikestewart.ca/presale/botanica-coquitlam-presale-condos-by-qualex-landmark/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Porthaven by NorthStar – 2525 Donald Street",
-      "city": "Port Coquitlam",
-      "incentive_summary": "Visit the Presentation Centre to enjoy a complimentary luxury hot cocoa station., Porthaven's special layaway deposit...",
-      "project_url": "https://www.mikestewart.ca/presale/porthaven-by-northstar-poco-presale-condos/",
       "headline_dollar": null
     }
   ]
