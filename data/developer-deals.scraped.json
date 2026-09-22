@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-09-21T18:24:04.435Z",
+  "scrapedAt": "2026-09-22T17:27:03.421Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
@@ -63,11 +63,11 @@
       "headline_dollar": "$1M"
     },
     {
-      "project_name": "Bute West Clayton — Prices & Floor Plans",
-      "city": "Surrey",
-      "incentive_summary": "Save $40,000 off 1 bedroom + den homes, Secure your new home today with just a 10% deposit, Secure your new home toda...",
-      "project_url": "https://www.mikestewart.ca/presale/bute-west-clayton-prices-floor-plans/",
-      "headline_dollar": "$40,000"
+      "project_name": "Siena Burnaby by Landa Global – Plans, Prices, Availability",
+      "city": "Burnaby",
+      "incentive_summary": "Exclusive pre-public offering to secure a home at Siena before the public launch., Early window provides priority sel...",
+      "project_url": "https://www.mikestewart.ca/presale/siena-at-the-heights-by-i4-properties-presale-north-burnaby-condos/",
+      "headline_dollar": null
     },
     {
       "project_name": "Savannah Vancouver – 7789 Yukon Street",
