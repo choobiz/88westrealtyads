@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-09-26T16:50:09.179Z",
+  "scrapedAt": "2026-09-27T17:22:09.467Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
@@ -56,11 +56,11 @@
       "headline_dollar": "$100,000"
     },
     {
-      "project_name": "Townside Village Townhomes by Warwickshire – Plans & Prices",
-      "city": "Langley",
-      "incentive_summary": "Get $15,000 Off and Free Strata Fees for 1 Year on All Homes at The Hive for a Limited Time Only, Final Opportunity f...",
-      "project_url": "https://www.mikestewart.ca/presale/townside-village-townhomes-langley/",
-      "headline_dollar": "$15,000"
+      "project_name": "Emerson by Frame in Oaklands – Plans & Pricing",
+      "city": "Victoria",
+      "incentive_summary": "Ask about Emerson's Green Mortgage Program. You could save hundreds per month with our energy-efficient homes., If yo...",
+      "project_url": "https://www.mikestewart.ca/presale/emerson-by-frame-victoria-presale-townhomes/",
+      "headline_dollar": null
     },
     {
       "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
