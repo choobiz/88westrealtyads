@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-09-27T17:22:09.467Z",
+  "scrapedAt": "2026-09-28T19:55:04.116Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
@@ -49,11 +49,11 @@
       "headline_dollar": "$1,000"
     },
     {
-      "project_name": "West 57th at Cambie Gardens Vancouver – Prices & Floor Plans",
+      "project_name": "Little Mountain Vancouver by Holborn Properties",
       "city": "Vancouver",
-      "incentive_summary": "best value on Vancouver’s Westside, Save up to $100,000 at Gilmore Place, Save up to $58,000 at Cambie Gardens, Save ...",
-      "project_url": "https://www.mikestewart.ca/presale/west-57th-at-cambie-gardens-vancouver-prices-floor-plans/",
-      "headline_dollar": "$100,000"
+      "incentive_summary": "Whistler Vacation Package & Cash Prizes!, Concrete construction at wood-frame pricing, Lucky Draws for amazing prizes...",
+      "project_url": "https://www.mikestewart.ca/presale/little-mountain/",
+      "headline_dollar": null
     },
     {
       "project_name": "Emerson by Frame in Oaklands – Plans & Pricing",

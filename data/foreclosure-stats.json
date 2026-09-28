@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-27T17:22:11.501Z",
+  "scrapedAt": "2026-09-28T19:55:08.008Z",
   "sources": [
     {
       "name": "Simon Clayton (Macdonald Realty)",
@@ -28,8 +28,9 @@
     {
       "name": "Real Estate Coal Harbour — North Van",
       "url": "https://realestatecoalharbour.com/north-vancouver-foreclosure-listings",
-      "ok": true,
-      "mlsCount": 0
+      "ok": false,
+      "mlsCount": 0,
+      "error": "fetch failed"
     },
     {
       "name": "Real Estate Coal Harbour — Burnaby",
