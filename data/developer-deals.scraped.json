@@ -1,11 +1,25 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-10-03T16:53:38.408Z",
+  "scrapedAt": "2026-10-04T17:12:27.817Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "The Westminster in Surrey — Prices & Floor Plans",
+      "city": "Surrey",
+      "incentive_summary": "A 1.99% mortgage rate, exclusive to The Westminster, $100 gift card giveaway every hour during the grand opening, Fre...",
+      "project_url": "https://www.mikestewart.ca/presale/the-westminster-in-surrey-prices-floor-plans/",
+      "headline_dollar": "$100"
+    },
+    {
+      "project_name": "Bute West Clayton — Prices & Floor Plans",
+      "city": "Surrey",
+      "incentive_summary": "Save $40,000 off 1 bedroom + den homes, Secure your new home today with just a 10% deposit, Secure your new home toda...",
+      "project_url": "https://www.mikestewart.ca/presale/bute-west-clayton-prices-floor-plans/",
+      "headline_dollar": "$40,000"
+    },
     {
       "project_name": "Century City Holland Park by Century Group – Plans, Prices, Availability",
       "city": "Surrey",
@@ -42,10 +56,17 @@
       "headline_dollar": "$800k"
     },
     {
-      "project_name": "Lennox on Lonsdale by Polygon Homes – 110 17th Street E, North Vancouver",
-      "city": "North Vancouver",
-      "incentive_summary": "Lennox on Lonsdale by Polygon Homes – 110 17th Street E, North Vancouver Final 6 move-in ready homes remaining, Studio, 1 bedroom, 1 bedroom plus den, and 2 bedroom apartments available, The...",
-      "project_url": "https://www.mikestewart.ca/presale/lennox-on-lonsdale-north-vancouver-presale-condos-by-polygon-homes/",
+      "project_name": "Ōku at 8080 Oak Street – Ulmus Development",
+      "city": "Vancouver",
+      "incentive_summary": "Enter the Oku Social Media Contest for a chance to win 2 tickets & parking to a Canucks Game., Holiday Buyer Incentiv...",
+      "project_url": "https://www.mikestewart.ca/presale/oku/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Lodana Coquitlam by The Circadian Group – Prices, Plans, Availability",
+      "city": "Coquitlam",
+      "incentive_summary": "First five purchasers will receive Bubbles for a Year (a gift of champagne for a year), Limited Time Incentive Up To ...",
+      "project_url": "https://www.mikestewart.ca/presale/lodana-coquitlam/",
       "headline_dollar": null
     },
     {
@@ -109,27 +130,6 @@
       "city": "Vancouver",
       "incentive_summary": "New pricing reflecting today's market on final 3 bed homes, Homes come complete with Italian Veneta Cucine cabinets, ...",
       "project_url": "https://www.mikestewart.ca/presale/popolo-2235-east-broadway-vancouver/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "EIGHT in Edgemont Village by I4 – 3175 Canfield Crescent",
-      "city": "North Vancouver",
-      "incentive_summary": "Only four homes remain, Move-in ready duplex homes, Refined design, generous layouts, and a level of finish rarely se...",
-      "project_url": "https://www.mikestewart.ca/presale/canfield-edgemont-village-north-vancouver-presale-townhomes-by-i4-property-group/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Park George II by Concord Pacific – Prices, Availability, Plans",
-      "city": "Surrey",
-      "incentive_summary": "0.99% 3-Year Mortgage Rate (subsidy payment based on assumptions and calculations determined solely by the Developers...",
-      "project_url": "https://www.mikestewart.ca/presale/park-george-ii-by-concord-pacific-surrey-city-centre-presale-condominiums-and-townhomes/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Cultus Grove – Prices & Floor Plans",
-      "city": "Chilliwack",
-      "incentive_summary": "Short-term rentals permitted 365 days a year, No principal residence requirement, No foreign buyer ban, Freehold stra...",
-      "project_url": "https://www.mikestewart.ca/presale/cultus-grove-prices-floor-plans/",
       "headline_dollar": null
     }
   ]
