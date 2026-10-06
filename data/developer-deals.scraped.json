@@ -1,11 +1,18 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-10-05T20:53:31.068Z",
+  "scrapedAt": "2026-10-06T18:42:31.049Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 17,
   "projects": [
+    {
+      "project_name": "Rockford by Cressey in Ocean Park – Floorplans & Prices",
+      "city": "Surrey",
+      "incentive_summary": "15% total deposit paid over time., $10,000 at writing the contract., 5% (minus $10,000) when the contract goes firm a...",
+      "project_url": "https://www.mikestewart.ca/presale/rockford-by-cressey-surrey-presale-condos/",
+      "headline_dollar": "$10,000"
+    },
     {
       "project_name": "Spera Surrey by Northwest Development – Floorplans & Prices",
       "city": "Surrey",
@@ -28,25 +35,39 @@
       "headline_dollar": "$40,000"
     },
     {
-      "project_name": "Century City Holland Park by Century Group – Plans, Prices, Availability",
-      "city": "Surrey",
-      "incentive_summary": "Move-in ready homes, Century City: 1 bedroom homes starting from $427,900, Move-in ready homes available today, Chat ...",
-      "project_url": "https://www.mikestewart.ca/presale/holland-parkside-by-century-group-surrey-city-centre-presale-condos/",
-      "headline_dollar": "$427,900, M"
+      "project_name": "Oakwoods Esquimalt by Aragon at 429 Lampson Street  – Prices, Availability, Plans",
+      "city": "Victoria",
+      "incentive_summary": "Oakwoods Esquimalt by Aragon at 429 Lampson Street – Prices, Availability, Plans Access to preferred mortgage rates through RBC., Visit before August 14 to be automatically entered for a chance to w...",
+      "project_url": "https://www.mikestewart.ca/presale/oakwoods-esquimalt-victoria-presale-condos-and-townhomes-by-aragon-properties/",
+      "headline_dollar": null
     },
     {
-      "project_name": "Trailside at Lynn by Mosaic – Plans & Pricing",
-      "city": "North Vancouver",
-      "incentive_summary": "First-timers can save up to $50,000 with the GST rebate on new homes, 30-Year Amortization for First-Timers, Save up ...",
-      "project_url": "https://www.mikestewart.ca/presale/trailside-at-lynn-presale-condos/",
-      "headline_dollar": "$50,000"
+      "project_name": "Siena Burnaby by Landa Global – Plans, Prices, Availability",
+      "city": "Burnaby",
+      "incentive_summary": "Exclusive pre-public offering to secure a home at Siena before the public launch., Early window provides priority sel...",
+      "project_url": "https://www.mikestewart.ca/presale/siena-at-the-heights-by-i4-properties-presale-north-burnaby-condos/",
+      "headline_dollar": null
     },
     {
-      "project_name": "7381 Preston Boulevard – Skyview Mission",
-      "city": "Mission",
-      "incentive_summary": "YEAR-END SAVINGS on select move-in ready homes, NO GST for First Time Home Buyers, NO Property Transfer Tax, ONLY $5,...",
-      "project_url": "https://www.mikestewart.ca/presale/skyview-mission-presale-townhomes/",
-      "headline_dollar": "$5,"
+      "project_name": "Andmar Chilliwack – 46187 Thomas Road",
+      "city": "Chilliwack",
+      "incentive_summary": "Limited-time opportunity to explore the site with private site tours., PPE Provided at check-in., We're now offering ...",
+      "project_url": "https://www.mikestewart.ca/presale/andmar-by-andmark-chilliwack-presales/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "The POCO by Rapture Developments – Plans & Pricing",
+      "city": "Port Coquitlam",
+      "incentive_summary": "Early pre-launch pricing is available for a limited time., Access to priority pricing and an exclusive first look for...",
+      "project_url": "https://www.mikestewart.ca/presale/the-poco-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Fraser E49 Vancouver — Prices & Floor Plans",
+      "city": "Vancouver",
+      "incentive_summary": "Newly improved pricing across the entire collection, Eligible first-time buyers may qualify for the federal First-Tim...",
+      "project_url": "https://www.mikestewart.ca/presale/fraser-e49-vancouver-prices-floor-plans/",
+      "headline_dollar": null
     },
     {
       "project_name": "W16 Vancouver by Olson Kundig – 480 West 16th Avenue",
@@ -98,31 +119,10 @@
       "headline_dollar": null
     },
     {
-      "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
-      "city": "Coquitlam",
-      "incentive_summary": "Ask About Our 3% Advance*, All homes qualify for a GST rebate.*, Limited-time incentive: 2 parking stalls included.*,...",
-      "project_url": "https://www.mikestewart.ca/presale/botanica-coquitlam-presale-condos-by-qualex-landmark/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "First & Royal – 82 First Street, New Westminster",
-      "city": "New Westminster",
-      "incentive_summary": "Parking & storage included, Zoned A/C in every home, Full 1-2-5-10 new home warranty, Samsung & AEG appliances, Quart...",
-      "project_url": "https://www.mikestewart.ca/presale/first-and-royal-downtown-new-westminster-presale-condos-and-townhomes-by-areva-living/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Fraser E49 Vancouver — Prices & Floor Plans",
-      "city": "Vancouver",
-      "incentive_summary": "Newly improved pricing across the entire collection, Eligible first-time buyers may qualify for the federal First-Tim...",
-      "project_url": "https://www.mikestewart.ca/presale/fraser-e49-vancouver-prices-floor-plans/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "2250 East 1st Avenue – Templeton by Dimex Group",
-      "city": "Vancouver",
-      "incentive_summary": "Passive House design offering up to 90% savings in heating costs, High performance passive homes offering up to 90% s...",
-      "project_url": "https://www.mikestewart.ca/presale/templeton-2250-east-1-st-avenue/",
+      "project_name": "Chroma by Forte Living – Prices, Plans, Availability",
+      "city": "Port Moody",
+      "incentive_summary": "5% Decoration Allowance for buyers, 5% Decoration Allowance for buyers with an accepted offer this October",
+      "project_url": "https://www.mikestewart.ca/presale/chroma-port-moody-presale-tri-cities-condos-by-forte-living/",
       "headline_dollar": null
     }
   ]
