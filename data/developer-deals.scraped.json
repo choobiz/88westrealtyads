@@ -1,11 +1,39 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-10-06T18:42:31.049Z",
+  "scrapedAt": "2026-10-07T19:08:52.483Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 17,
   "projects": [
+    {
+      "project_name": "Emerald North Vancouver at Lions Gate Village – Availability, Plans, Prices",
+      "city": "North Vancouver",
+      "incentive_summary": "$10,000 off Garden Homes, $20,000 off City Homes, $30,000 off Townhomes, 5% deposit, only 5% deposit, limited-time pr...",
+      "project_url": "https://www.mikestewart.ca/presale/emerald-at-lions-gate-village-north-vancouver-presale-townhomes-by-citimark-and-woodbridge-homes/",
+      "headline_dollar": "$30,000"
+    },
+    {
+      "project_name": "The Amazing Brentwood Tower 6 by Shape – Prices, Availability, Plans",
+      "city": "Burnaby",
+      "incentive_summary": "5% total deposit (Applicable to all standard homes, not applicable to penthouse homes), $15,000 off all homes, New pr...",
+      "project_url": "https://www.mikestewart.ca/presale/the-amazing-brentwood-tower-6-burnaby-presale-condos-by-shape-properties/",
+      "headline_dollar": "$15,000"
+    },
+    {
+      "project_name": "York by Listraor @ 5381 Willow Street and 5383 Willow Street",
+      "city": "Vancouver",
+      "incentive_summary": "$88,000 Off Your New Home, Limited-time Lunar New Year incentives, Available on the final collection of townhomes, Lu...",
+      "project_url": "https://www.mikestewart.ca/presale/york-by-listraor-townhomes/",
+      "headline_dollar": "$88,000"
+    },
+    {
+      "project_name": "388 Duncan Street – Mercer Village by Plat:form + Domus – Plans & Prices",
+      "city": "New Westminster",
+      "incentive_summary": "New limited-time purchase incentives will be available soon., Over $40,000 in savings for homebuyers, Full incentive ...",
+      "project_url": "https://www.mikestewart.ca/presale/mercer-village-new-west-presale-townhomes/",
+      "headline_dollar": "$40,000"
+    },
     {
       "project_name": "Rockford by Cressey in Ocean Park – Floorplans & Prices",
       "city": "Surrey",
@@ -21,24 +49,31 @@
       "headline_dollar": "$20K"
     },
     {
-      "project_name": "The Westminster in Surrey — Prices & Floor Plans",
-      "city": "Surrey",
-      "incentive_summary": "A 1.99% mortgage rate, exclusive to The Westminster, $100 gift card giveaway every hour during the grand opening, Fre...",
-      "project_url": "https://www.mikestewart.ca/presale/the-westminster-in-surrey-prices-floor-plans/",
-      "headline_dollar": "$100"
-    },
-    {
-      "project_name": "Bute West Clayton — Prices & Floor Plans",
-      "city": "Surrey",
-      "incentive_summary": "Save $40,000 off 1 bedroom + den homes, Secure your new home today with just a 10% deposit, Secure your new home toda...",
-      "project_url": "https://www.mikestewart.ca/presale/bute-west-clayton-prices-floor-plans/",
-      "headline_dollar": "$40,000"
-    },
-    {
       "project_name": "Oakwoods Esquimalt by Aragon at 429 Lampson Street  – Prices, Availability, Plans",
       "city": "Victoria",
       "incentive_summary": "Oakwoods Esquimalt by Aragon at 429 Lampson Street – Prices, Availability, Plans Access to preferred mortgage rates through RBC., Visit before August 14 to be automatically entered for a chance to w...",
       "project_url": "https://www.mikestewart.ca/presale/oakwoods-esquimalt-victoria-presale-condos-and-townhomes-by-aragon-properties/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Queens on King George by Dawson + Sawyer – Plans & Pricing",
+      "city": "Surrey",
+      "incentive_summary": "Guaranteed 5% Upside: For the next 10 homes sold, the home's market value is guaranteed to be at least 5% higher than...",
+      "project_url": "https://www.mikestewart.ca/presale/queens-on-king-george-surrey/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Lodana Coquitlam by The Circadian Group – Prices, Plans, Availability",
+      "city": "Coquitlam",
+      "incentive_summary": "First five purchasers will receive Bubbles for a Year (a gift of champagne for a year), Limited Time Incentive Up To ...",
+      "project_url": "https://www.mikestewart.ca/presale/lodana-coquitlam/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Rove Condominiums by Staburn Group – Plans, Availability, Prices",
+      "city": "North Vancouver",
+      "incentive_summary": "Final, exclusive release of developer-held inventory that is move-in ready now, Full building access before going pub...",
+      "project_url": "https://www.mikestewart.ca/presale/rove-pemberton-heights-north-vancouver-presale-condos-by-staburn-group/",
       "headline_dollar": null
     },
     {
@@ -81,41 +116,6 @@
       "city": "Coquitlam",
       "incentive_summary": "Early preview package with floorplans available upon request, Early preview package with floorplans available by requ...",
       "project_url": "https://www.mikestewart.ca/presale/stirling-block-by-polygon/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Baden Park by Anthem 938 Lytton Street – Prices, Availability, Plans",
-      "city": "North Vancouver",
-      "incentive_summary": "2 parking stalls included, 2 parking stalls included with Feature Home 110, For Feature Home 110 (3 Bed + Den Townhom...",
-      "project_url": "https://www.mikestewart.ca/presale/904-944-lytton-street-north-vancouver-prices-availability-plans/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Hue Port Moody by Marcon @ 2015 St. Johns Street & 125 Albert Street",
-      "city": "Port Moody",
-      "incentive_summary": "Receive a complimentary eucalyptus room spray by attending the Open House., Limited quantities available on a first-c...",
-      "project_url": "https://www.mikestewart.ca/presale/hue-seaview-port-moody-presale-condos-by-marcon-developments/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Mojave Living by Kaiya – A Resort-Style Oasis of 50 Townhomes",
-      "city": "Osoyoos",
-      "incentive_summary": "Every home comes with a private 405 sq ft rooftop deck and a double garage, Access to resort amenity area with an 18'...",
-      "project_url": "https://www.mikestewart.ca/presale/mojave-living-by-kaiya-townhomes/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Ōku at 8080 Oak Street – Ulmus Development",
-      "city": "Vancouver",
-      "incentive_summary": "Enter the Oku Social Media Contest for a chance to win 2 tickets & parking to a Canucks Game., Holiday Buyer Incentiv...",
-      "project_url": "https://www.mikestewart.ca/presale/oku/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Lodana Coquitlam by The Circadian Group – Prices, Plans, Availability",
-      "city": "Coquitlam",
-      "incentive_summary": "First five purchasers will receive Bubbles for a Year (a gift of champagne for a year), Limited Time Incentive Up To ...",
-      "project_url": "https://www.mikestewart.ca/presale/lodana-coquitlam/",
       "headline_dollar": null
     },
     {
