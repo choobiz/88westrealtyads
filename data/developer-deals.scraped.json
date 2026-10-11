@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-10-10T17:33:15.330Z",
+  "scrapedAt": "2026-10-11T17:51:11.200Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 17,
@@ -63,17 +63,24 @@
       "headline_dollar": "$800k"
     },
     {
-      "project_name": "Ironwood Coquitlam 609 Tyndall Street – Plans & Pricing",
-      "city": "Coquitlam",
-      "incentive_summary": "GST REBATES UP TO $50,000 OFF NEW HOMES UNDER $1M FOR FTHB*, Prices are inclusive of current incentives., GST Rebates...",
-      "project_url": "https://www.mikestewart.ca/presale/ironwood-coquitlam-by-qualex-landmark-plans-pricing/",
-      "headline_dollar": "$1M"
-    },
-    {
       "project_name": "Belvedere Surrey –  9675 King George Boulevard",
       "city": "Surrey",
       "incentive_summary": "Belvedere Surrey – 9675 King George Boulevard Court-Ordered Pricing, Pre-growth pricing in Surrey Centre, Move-in-ready concrete homes complete with A/C, parking, ...",
       "project_url": "https://www.mikestewart.ca/presale/belvedere-by-square-nine-developments-surrey-city-centre-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Elwynn Green Townhomes – 7895 162 Street Surrey",
+      "city": "Surrey",
+      "incentive_summary": "Last move-in ready unit available for immediate occupancy., The last move-in ready unit is a spacious 3-bedroom + fle...",
+      "project_url": "https://www.mikestewart.ca/presale/elwynn-green-surrey-fleetwood-presale-townhomes-by-elegant-development/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Mojave Living by Kaiya – A Resort-Style Oasis of 50 Townhomes",
+      "city": "Osoyoos",
+      "incentive_summary": "Every home comes with a private 405 sq ft rooftop deck and a double garage, Access to resort amenity area with an 18'...",
+      "project_url": "https://www.mikestewart.ca/presale/mojave-living-by-kaiya-townhomes/",
       "headline_dollar": null
     },
     {
@@ -116,13 +123,6 @@
       "city": "North Vancouver",
       "incentive_summary": "2 parking stalls included, 2 parking stalls included with Feature Home 110, For Feature Home 110 (3 Bed + Den Townhom...",
       "project_url": "https://www.mikestewart.ca/presale/904-944-lytton-street-north-vancouver-prices-availability-plans/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Aavand by Canada West Group – Prices, Plans, Availability",
-      "city": "Coquitlam",
-      "incentive_summary": "Significant price adjustments, Repriced remaining inventory, Immediate possession available, No presale timelines, no...",
-      "project_url": "https://www.mikestewart.ca/presale/aavand-burquitlam-presale-coquitlam-condos-by-canada-west-group/",
       "headline_dollar": null
     }
   ]
