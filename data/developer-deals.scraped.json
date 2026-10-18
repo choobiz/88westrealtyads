@@ -1,11 +1,32 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-10-17T16:02:49.014Z",
+  "scrapedAt": "2026-10-18T16:15:33.754Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "Ironwood Coquitlam 609 Tyndall Street – Plans & Pricing",
+      "city": "Coquitlam",
+      "incentive_summary": "GST REBATES UP TO $50,000 OFF NEW HOMES UNDER $1M FOR FTHB*, Prices are inclusive of current incentives., GST Rebates...",
+      "project_url": "https://www.mikestewart.ca/presale/ironwood-coquitlam-by-qualex-landmark-plans-pricing/",
+      "headline_dollar": "$1M"
+    },
+    {
+      "project_name": "Towns at Burke Coquitlam — Prices & Floor Plans",
+      "city": "Coquitlam",
+      "incentive_summary": "Over $1,000 in exciting prizes, Apple prizes given away throughout the event, Custom beers from Tinhouse Brewery, Pre...",
+      "project_url": "https://www.mikestewart.ca/presale/towns-at-burke-coquitlam-prices-floor-plans/",
+      "headline_dollar": "$1,000"
+    },
+    {
+      "project_name": "Camden by the Parks Langley — Prices & Floor Plans",
+      "city": "Langley",
+      "incentive_summary": "$45K in buyer incentives (Cash discounts and free upgrades), 1% down for now (The rest of your 5% deposit is customiz...",
+      "project_url": "https://www.mikestewart.ca/presale/camden-by-the-parks-langley-prices-floor-plans/",
+      "headline_dollar": "$45K"
+    },
     {
       "project_name": "Trailside at Lynn by Mosaic – Plans & Pricing",
       "city": "North Vancouver",
@@ -56,46 +77,18 @@
       "headline_dollar": "$100,000"
     },
     {
-      "project_name": "45511 Campus Drive – York Residences Chilliwack For Sale",
-      "city": "Chilliwack",
-      "incentive_summary": "Save up to $14,000 with Smart Start Boost or Big Move Bonus on remaining homes, Final three 2 Bed + 2 Bath homes avai...",
-      "project_url": "https://www.mikestewart.ca/presale/45511-campus-drive-york-residences-chilliwack-by-diverse-properties/",
-      "headline_dollar": "$14,000"
+      "project_name": "The POCO by Rapture Developments – Plans & Pricing",
+      "city": "Port Coquitlam",
+      "incentive_summary": "Early pre-launch pricing is available for a limited time., Access to priority pricing and an exclusive first look for...",
+      "project_url": "https://www.mikestewart.ca/presale/the-poco-presale-condos/",
+      "headline_dollar": null
     },
     {
-      "project_name": "The Hive Willoughby Town Centre at 7920 206 Street, Langley",
-      "city": "Langley",
-      "incentive_summary": "$25,000 in savings on select 2 bedroom homes, Complimentary A/C unit, 2 storage lockers, Net pricing inclusive of $25...",
-      "project_url": "https://www.mikestewart.ca/presale/the-hive-at-willoughby-town-centre-by-apcon-group-langley-presale-condos/",
-      "headline_dollar": "$25,000"
-    },
-    {
-      "project_name": "Florin Coquitlam by Allaire Living",
-      "city": "Coquitlam",
-      "incentive_summary": "final release promotions offering savings up to $109,495, Savings up to $109,495, 5% Savings, 5% Deposit, 5% Deposit ...",
-      "project_url": "https://www.mikestewart.ca/presale/rochester-burquitlam-coquitlam-presale-condos-townhomes-by-allaire-living/",
-      "headline_dollar": "$109,495,"
-    },
-    {
-      "project_name": "Grafia Vancouver 2450 Garden Drive",
+      "project_name": "Popolo – 2235 East Broadway",
       "city": "Vancouver",
-      "incentive_summary": "Sneak Peek Inside...Homes Starting at $499K, Tour our new, fully furnished Show Home this weekend to get a look at ou...",
-      "project_url": "https://www.mikestewart.ca/presale/grafia-on-garden-drive-grandview-woodland-east-vancouver-presale-condos-by-porte-homes/",
-      "headline_dollar": "$499K"
-    },
-    {
-      "project_name": "133 West 49th Avenue – Thesis Vancouver by Alabaster Homes",
-      "city": "Vancouver",
-      "incentive_summary": "First-Time Buyer GST Rebate: eligible buyers can receive up to $50,000 back when purchasing a new home, Homes under $...",
-      "project_url": "https://www.mikestewart.ca/presale/thesis-oakridge-vancouver-presale-condos-by-alabaster-homes/",
-      "headline_dollar": "$50,000"
-    },
-    {
-      "project_name": "The Loop South Surrey at 2350 165th Street",
-      "city": "Surrey",
-      "incentive_summary": "Up to $174,000 in savings, Free A/C (valued up to $8,500), Free BBQ Gasline (valued at $700), 5% deposit only, Move i...",
-      "project_url": "https://www.mikestewart.ca/presale/the-loop-grandview-heights-surrey-presale-townhomes-by-gramercy-developments/",
-      "headline_dollar": "$174,000"
+      "incentive_summary": "New pricing reflecting today's market on final 3 bed homes, Homes come complete with Italian Veneta Cucine cabinets, ...",
+      "project_url": "https://www.mikestewart.ca/presale/popolo-2235-east-broadway-vancouver/",
+      "headline_dollar": null
     },
     {
       "project_name": "Italia by Solterra – 2323 Fir Street",
@@ -130,6 +123,13 @@
       "city": "Vancouver",
       "incentive_summary": "Exclusive opportunity to tour our boutique Passive House townhomes., New-Spring-Incentives for motivated buyers., SPR...",
       "project_url": "https://www.mikestewart.ca/presale/nolia-vancouver/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Quill Coquitlam — Prices & Floor Plans",
+      "city": "Coquitlam",
+      "incentive_summary": "Own with just 5% down from now until Completion, No further payments are required until you arrange financing",
+      "project_url": "https://www.mikestewart.ca/presale/quill-coquitlam-prices-floor-plans/",
       "headline_dollar": null
     }
   ]
