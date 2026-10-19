@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-10-18T16:15:33.754Z",
+  "scrapedAt": "2026-10-19T18:55:04.011Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
@@ -70,11 +70,11 @@
       "headline_dollar": "$849,900"
     },
     {
-      "project_name": "602 East 2nd Street – Morrison Walk North Vancouver",
-      "city": "North Vancouver",
-      "incentive_summary": "Client Benefit: Up to $100,000 in total value., Client Incentive: $15,000 Decorator Allowance., Client Incentive: A/C...",
-      "project_url": "https://www.mikestewart.ca/presale/morrison-walk-north-vancouver-presale-townhomes/",
-      "headline_dollar": "$100,000"
+      "project_name": "Savannah Vancouver – 7789 Yukon Street",
+      "city": "Vancouver",
+      "incentive_summary": "*On select homes only. All promotions are subject to change without notice. Speak with a sales representative for mor...",
+      "project_url": "https://www.mikestewart.ca/presale/savannah-cambie-corridor-vancouver-presale-condos-and-townhomes-by-imani-development/",
+      "headline_dollar": null
     },
     {
       "project_name": "The POCO by Rapture Developments – Plans & Pricing",
@@ -105,13 +105,6 @@
       "headline_dollar": null
     },
     {
-      "project_name": "Savannah Vancouver – 7789 Yukon Street",
-      "city": "Vancouver",
-      "incentive_summary": "*On select homes only. All promotions are subject to change without notice. Speak with a sales representative for mor...",
-      "project_url": "https://www.mikestewart.ca/presale/savannah-cambie-corridor-vancouver-presale-condos-and-townhomes-by-imani-development/",
-      "headline_dollar": null
-    },
-    {
       "project_name": "Botanica Coquitlam by Qualex-Landmark – Plans & Prices",
       "city": "Coquitlam",
       "incentive_summary": "Ask About Our 3% Advance*, All homes qualify for a GST rebate.*, Limited-time incentive: 2 parking stalls included.*,...",
@@ -130,6 +123,13 @@
       "city": "Coquitlam",
       "incentive_summary": "Own with just 5% down from now until Completion, No further payments are required until you arrange financing",
       "project_url": "https://www.mikestewart.ca/presale/quill-coquitlam-prices-floor-plans/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Vesa Little Mountain by Holborn – Plans & Pricing",
+      "city": "Vancouver",
+      "incentive_summary": "Price Protection Program, Holborn Price Protection",
+      "project_url": "https://www.mikestewart.ca/presale/vesa-at-little-mountain-presales/",
       "headline_dollar": null
     }
   ]
