@@ -1,11 +1,25 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-11-02T22:02:06.257Z",
+  "scrapedAt": "2026-11-03T19:54:47.891Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "Satori Coquitlam by Everglade – Floorplans & Prices",
+      "city": "Coquitlam",
+      "incentive_summary": "A new incentive will be unlocked each week leading up to the Groundbreaking Ceremony, $20,000 off the E1 Townhome (4-...",
+      "project_url": "https://www.mikestewart.ca/presale/satori-townhomes-coquitlam/",
+      "headline_dollar": "$20,000"
+    },
+    {
+      "project_name": "Rhodes Queen Elizabeth Park Vancouver – Plans & Pricing",
+      "city": "Vancouver",
+      "incentive_summary": "Up to $100,000 Price Reduction, $28,888 in Lunar New Year Incentives, Up to $128,888 off your new home (combined pric...",
+      "project_url": "https://www.mikestewart.ca/presale/rhodes-vancouver-presale-condos/",
+      "headline_dollar": "$128,888"
+    },
     {
       "project_name": "The Westminster in Surrey — Prices & Floor Plans",
       "city": "Surrey",
@@ -49,31 +63,31 @@
       "headline_dollar": "$40,000"
     },
     {
-      "project_name": "Grafia Vancouver 2450 Garden Drive",
-      "city": "Vancouver",
-      "incentive_summary": "Sneak Peek Inside...Homes Starting at $499K, Tour our new, fully furnished Show Home this weekend to get a look at ou...",
-      "project_url": "https://www.mikestewart.ca/presale/grafia-on-garden-drive-grandview-woodland-east-vancouver-presale-condos-by-porte-homes/",
-      "headline_dollar": "$499K"
+      "project_name": "Rove Condominiums by Staburn Group – Plans, Availability, Prices",
+      "city": "North Vancouver",
+      "incentive_summary": "Final, exclusive release of developer-held inventory that is move-in ready now, Full building access before going pub...",
+      "project_url": "https://www.mikestewart.ca/presale/rove-pemberton-heights-north-vancouver-presale-condos-by-staburn-group/",
+      "headline_dollar": null
     },
     {
-      "project_name": "Frame Vancouver – 2727 Kingsway & 5189 Earles Street – Floor Plans & Prices",
-      "city": "Vancouver",
-      "incentive_summary": "1-Bed + Den: $3,000 buyer incentive, Jr. 2-Bed + Den: $6,000 buyer incentive, 2-Bed & 2-Bath + Den: $6,000 buyer ince...",
-      "project_url": "https://www.mikestewart.ca/presale/frame-vancouver-by-coromandel-and-peterson-plans-availability-prices/",
-      "headline_dollar": "$6,000"
+      "project_name": "Water Street by the Park by Orchard Park Properties – Plans Availability Prices",
+      "city": "Kelowna",
+      "incentive_summary": "Limited time price reductions available on select floorplans, Preferred pricing on completed homes, Secure a complete...",
+      "project_url": "https://www.mikestewart.ca/presale/water-street-by-the-park-by-orchard-park-properties-plans-availability-prices/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Artesia Metrotown – 5685 Halley Avenue –",
+      "city": "Burnaby",
+      "incentive_summary": "Credits exclude GST and are for a limited time only and subject to change without notice., Credits available, Credits...",
+      "project_url": "https://www.mikestewart.ca/presale/artesia-by-qualex-landmark/",
+      "headline_dollar": null
     },
     {
       "project_name": "Concord Metrotown Sky Park – Plans, Availability, Prices",
       "city": "Burnaby",
       "incentive_summary": "Existing home purchase incentives conclude on July 31st, Upcoming Grand Summit Experience and Sky Rewards - an exclus...",
       "project_url": "https://www.mikestewart.ca/presale/concord-metrotown-metro-downtown-burnaby-presale-condos/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Rove Condominiums by Staburn Group – Plans, Availability, Prices",
-      "city": "North Vancouver",
-      "incentive_summary": "Final, exclusive release of developer-held inventory that is move-in ready now, Full building access before going pub...",
-      "project_url": "https://www.mikestewart.ca/presale/rove-pemberton-heights-north-vancouver-presale-condos-by-staburn-group/",
       "headline_dollar": null
     },
     {
@@ -116,20 +130,6 @@
       "city": "North Vancouver",
       "incentive_summary": "2 parking stalls included, 2 parking stalls included with Feature Home 110, For Feature Home 110 (3 Bed + Den Townhom...",
       "project_url": "https://www.mikestewart.ca/presale/904-944-lytton-street-north-vancouver-prices-availability-plans/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Unity South Langley by Whitetail Homes – Plans, Availability, Prices",
-      "city": "Langley",
-      "incentive_summary": "Pricing Incentives available (Contact sales team), Immediate possession opportunities on move-in ready homes, Limited...",
-      "project_url": "https://www.mikestewart.ca/presale/unity-south-langley-by-whitetail-homes-presale-langley-city-condos/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Savannah Vancouver – 7789 Yukon Street",
-      "city": "Vancouver",
-      "incentive_summary": "*On select homes only. All promotions are subject to change without notice. Speak with a sales representative for mor...",
-      "project_url": "https://www.mikestewart.ca/presale/savannah-cambie-corridor-vancouver-presale-condos-and-townhomes-by-imani-development/",
       "headline_dollar": null
     }
   ]
