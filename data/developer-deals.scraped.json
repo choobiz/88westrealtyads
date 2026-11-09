@@ -1,11 +1,18 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-11-08T18:10:21.098Z",
+  "scrapedAt": "2026-11-09T22:48:09.906Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
-  "count": 17,
+  "count": 18,
   "projects": [
+    {
+      "project_name": "Pura Surrey by Adera – Floor Plans & Price",
+      "city": "Surrey",
+      "incentive_summary": "Save up to $100,000*, Newly improved pricing, Chinese New Year Special Pricing, SAVINGS UP TO OVER $100,000, LIMITED ...",
+      "project_url": "https://www.mikestewart.ca/presale/pura-surrey-city-centre-presale-condos-by-adera-development/",
+      "headline_dollar": "$100,000"
+    },
     {
       "project_name": "Trailside at Lynn by Mosaic – Plans & Pricing",
       "city": "North Vancouver",
@@ -35,17 +42,24 @@
       "headline_dollar": "$1,800,0"
     },
     {
-      "project_name": "Millennium Central Lonsdale – Floor Plans & Price",
-      "city": "North Vancouver",
-      "incentive_summary": "Savings of up to $200,000 on select 2-3 bedroom homes, EV-ready parking stall valued at $75,000 on select homes, Secu...",
-      "project_url": "https://www.mikestewart.ca/presale/123-145-east-13th-street-presale-millennium-condos/",
-      "headline_dollar": "$200,000"
+      "project_name": "Linden House Vancouver — Prices & Floor Plans",
+      "city": "Vancouver",
+      "incentive_summary": "For the first two homes bought, buyers also receive a $25,000 buyer credit on completion.",
+      "project_url": "https://www.mikestewart.ca/presale/linden-house-vancouver-prices-floor-plans/",
+      "headline_dollar": "$25,000"
     },
     {
-      "project_name": "The Merchant Langley at 20619 Eastleigh Crescent by Wesmont Homes at  – Floorplans & Prices",
-      "city": "Langley",
-      "incentive_summary": "The Merchant Langley at 20619 Eastleigh Crescent by Wesmont Homes at – Floorplans & Prices Receive Air Conditioning included with your new home purchase., Receive Laminate Flooring throughout included with yo...",
-      "project_url": "https://www.mikestewart.ca/presale/the-merchant-langley-presale-condos/",
+      "project_name": "7433 Cambie & 7418 Paulson Condos for Sale – Cambie Gardens Vancouver by Onni Group Phase 1",
+      "city": "Vancouver",
+      "incentive_summary": "Pricing includes incentives, Pricing includes incentives and are subject to change without prior notice., Lunar New Y...",
+      "project_url": "https://www.mikestewart.ca/presale/cambie-gardens-presale-luxury-vancouver-onni-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Little Mountain Vancouver by Holborn Properties",
+      "city": "Vancouver",
+      "incentive_summary": "Whistler Vacation Package & Cash Prizes!, Concrete construction at wood-frame pricing, Lucky Draws for amazing prizes...",
+      "project_url": "https://www.mikestewart.ca/presale/little-mountain/",
       "headline_dollar": null
     },
     {
@@ -116,13 +130,6 @@
       "city": "Langley",
       "incentive_summary": "Festive treats, red envelopes, and joyful moments at Lunar New Year open house, Move-in ready homes available, Lunar ...",
       "project_url": "https://www.mikestewart.ca/presale/azure-grove-langley-presale-condos/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Savannah Vancouver – 7789 Yukon Street",
-      "city": "Vancouver",
-      "incentive_summary": "*On select homes only. All promotions are subject to change without notice. Speak with a sales representative for mor...",
-      "project_url": "https://www.mikestewart.ca/presale/savannah-cambie-corridor-vancouver-presale-condos-and-townhomes-by-imani-development/",
       "headline_dollar": null
     }
   ]
