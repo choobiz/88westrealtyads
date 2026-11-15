@@ -1,11 +1,32 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-11-14T18:36:43.201Z",
+  "scrapedAt": "2026-11-15T19:12:01.790Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "Bute West Clayton — Prices & Floor Plans",
+      "city": "Surrey",
+      "incentive_summary": "Save $40,000 off 1 bedroom + den homes, Secure your new home today with just a 10% deposit, Secure your new home toda...",
+      "project_url": "https://www.mikestewart.ca/presale/bute-west-clayton-prices-floor-plans/",
+      "headline_dollar": "$40,000"
+    },
+    {
+      "project_name": "Ironwood Coquitlam 609 Tyndall Street – Plans & Pricing",
+      "city": "Coquitlam",
+      "incentive_summary": "GST REBATES UP TO $50,000 OFF NEW HOMES UNDER $1M FOR FTHB*, Prices are inclusive of current incentives., GST Rebates...",
+      "project_url": "https://www.mikestewart.ca/presale/ironwood-coquitlam-by-qualex-landmark-plans-pricing/",
+      "headline_dollar": "$1M"
+    },
+    {
+      "project_name": "388 Duncan Street – Mercer Village by Plat:form + Domus – Plans & Prices",
+      "city": "New Westminster",
+      "incentive_summary": "New limited-time purchase incentives will be available soon., Over $40,000 in savings for homebuyers, Full incentive ...",
+      "project_url": "https://www.mikestewart.ca/presale/mercer-village-new-west-presale-townhomes/",
+      "headline_dollar": "$40,000"
+    },
     {
       "project_name": "Ossa North at Finch Drive by Diamond Head – Prices & Floorplans",
       "city": "Squamish",
@@ -33,13 +54,6 @@
       "incentive_summary": "First-timers can save up to $50,000 with the GST rebate on new homes, 30-Year Amortization for First-Timers, Save up ...",
       "project_url": "https://www.mikestewart.ca/presale/trailside-at-lynn-presale-condos/",
       "headline_dollar": "$50,000"
-    },
-    {
-      "project_name": "Bute West Clayton — Prices & Floor Plans",
-      "city": "Surrey",
-      "incentive_summary": "Save $40,000 off 1 bedroom + den homes, Secure your new home today with just a 10% deposit, Secure your new home toda...",
-      "project_url": "https://www.mikestewart.ca/presale/bute-west-clayton-prices-floor-plans/",
-      "headline_dollar": "$40,000"
     },
     {
       "project_name": "Satori Coquitlam by Everglade – Floorplans & Prices",
@@ -112,24 +126,10 @@
       "headline_dollar": null
     },
     {
-      "project_name": "EIGHT in Edgemont Village by I4 – 3175 Canfield Crescent",
-      "city": "North Vancouver",
-      "incentive_summary": "Only four homes remain, Move-in ready duplex homes, Refined design, generous layouts, and a level of finish rarely se...",
-      "project_url": "https://www.mikestewart.ca/presale/canfield-edgemont-village-north-vancouver-presale-townhomes-by-i4-property-group/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Nolia by Handmade Homes – Pricing & Plans",
-      "city": "Vancouver",
-      "incentive_summary": "Exclusive opportunity to tour our boutique Passive House townhomes., New-Spring-Incentives for motivated buyers., SPR...",
-      "project_url": "https://www.mikestewart.ca/presale/nolia-vancouver/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Savannah Vancouver – 7789 Yukon Street",
-      "city": "Vancouver",
-      "incentive_summary": "*On select homes only. All promotions are subject to change without notice. Speak with a sales representative for mor...",
-      "project_url": "https://www.mikestewart.ca/presale/savannah-cambie-corridor-vancouver-presale-condos-and-townhomes-by-imani-development/",
+      "project_name": "Marlow by Enrich Developments – Plans, Availability, Prices",
+      "city": "Port Coquitlam",
+      "incentive_summary": "Special holiday campaign incentives",
+      "project_url": "https://www.mikestewart.ca/presale/marlow-by-enrich-developments-central-port-coquitlam-presale-condos/",
       "headline_dollar": null
     }
   ]
