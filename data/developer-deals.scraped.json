@@ -1,11 +1,32 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-11-16T22:41:04.157Z",
+  "scrapedAt": "2026-11-17T21:27:54.823Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
+    {
+      "project_name": "The Ridge at Vista Point – Pricing & Plans",
+      "city": "Langford",
+      "incentive_summary": "All homes are now $5,000 off list price, Ask about our Sunrise incentive!, Terms and conditions apply, prices and inc...",
+      "project_url": "https://www.mikestewart.ca/presale/the-ridge-at-vista-point-victoria-presales/",
+      "headline_dollar": "$5,000"
+    },
+    {
+      "project_name": "Savoy on Clement by Alliston at Home – Prices, Availability, Plans",
+      "city": "Kelowna",
+      "incentive_summary": "Special reduced pricing, FINAL TWO BEDROOM HOMES NOW $749,900, FINAL TWO BEDROOM + DEN HOMES NOW $799,900, Special re...",
+      "project_url": "https://www.mikestewart.ca/presale/savoy-on-clement-downtown-kelowna-presale-condos-townhomes-by-alliston-group/",
+      "headline_dollar": "$799,900,"
+    },
+    {
+      "project_name": "Scott + 77 by Realco Properties – Floorplans & Pricing",
+      "city": "Delta",
+      "incentive_summary": "Save over $100,000 below previous asking prices, 1 Bed • 1 Bath: Save $85,000, Jr. 2 Bed • 1 Bath: Save $100,000, 2 B...",
+      "project_url": "https://www.mikestewart.ca/presale/scott-77-delta-presale-condos/",
+      "headline_dollar": "$100,000"
+    },
     {
       "project_name": "Bute West Clayton — Prices & Floor Plans",
       "city": "Surrey",
@@ -33,13 +54,6 @@
       "incentive_summary": "Receive up to $12,770 in strata fee savings when purchasing a home at Ossa North. The amount is equal to two years of...",
       "project_url": "https://www.mikestewart.ca/presale/ossa-north-squamish-presales/",
       "headline_dollar": "$12,770"
-    },
-    {
-      "project_name": "Scott + 77 by Realco Properties – Floorplans & Pricing",
-      "city": "Delta",
-      "incentive_summary": "Save over $100,000 below previous asking prices, 1 Bed • 1 Bath: Save $85,000, Jr. 2 Bed • 1 Bath: Save $100,000, 2 B...",
-      "project_url": "https://www.mikestewart.ca/presale/scott-77-delta-presale-condos/",
-      "headline_dollar": "$100,000"
     },
     {
       "project_name": "1515 Rupert North Vancouver",
@@ -84,45 +98,31 @@
       "headline_dollar": "$25,000,"
     },
     {
+      "project_name": "Italia by Solterra – 2323 Fir Street",
+      "city": "Vancouver",
+      "incentive_summary": "For Monaco project: A few final units remain including the rare opportunity to own a penthouse unit!, For a limited t...",
+      "project_url": "https://www.mikestewart.ca/presale/solterra-italia/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Portwood by Edgar Development – Plans, Availability, Prices",
+      "city": "Port Moody",
+      "incentive_summary": "Early access to two accelerated delivery homes, Developer is motivated to achieve a near-term milestone indicating po...",
+      "project_url": "https://www.mikestewart.ca/presale/woodland-park-seaview-port-moody-presale-condos-and-townhomes-by-edgar-development/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Little Mountain Vancouver by Holborn Properties",
+      "city": "Vancouver",
+      "incentive_summary": "Whistler Vacation Package & Cash Prizes!, Concrete construction at wood-frame pricing, Lucky Draws for amazing prizes...",
+      "project_url": "https://www.mikestewart.ca/presale/little-mountain/",
+      "headline_dollar": null
+    },
+    {
       "project_name": "Gardena by Intracorp – Floor Plans & Prices",
       "city": "Coquitlam",
       "incentive_summary": "Spring Spin to Win campaign: Book and complete a tour and your client receives a curated prize, Purchase a residence ...",
       "project_url": "https://www.mikestewart.ca/presale/gardena-by-intracorp-west-coquitlam/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Water Street by the Park by Orchard Park Properties – Plans Availability Prices",
-      "city": "Kelowna",
-      "incentive_summary": "Limited time price reductions available on select floorplans, Preferred pricing on completed homes, Secure a complete...",
-      "project_url": "https://www.mikestewart.ca/presale/water-street-by-the-park-by-orchard-park-properties-plans-availability-prices/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Aqua Waterfront Village by Mission Group – Availability, Prices, Plans",
-      "city": "Kelowna",
-      "incentive_summary": "Event guests will be entered to win one of two incredible prizes: a half-day private boat tour or an exclusive surf s...",
-      "project_url": "https://www.mikestewart.ca/presale/aqua-by-mission-group-lower-mission-kelowna-presale-condos-townhomes/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Parkview Coquitlam — Prices & Floor Plans",
-      "city": "Coquitlam",
-      "incentive_summary": "2 more homes just released: The Victoria Plan on Lots 14 & 16, Victoria Plan features a 3600 sq.ft. 3 bedroom home wi...",
-      "project_url": "https://www.mikestewart.ca/presale/parkview-coquitlam-prices-floor-plans/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Quill Coquitlam — Prices & Floor Plans",
-      "city": "Coquitlam",
-      "incentive_summary": "Own with just 5% down from now until Completion, No further payments are required until you arrange financing, Own wi...",
-      "project_url": "https://www.mikestewart.ca/presale/quill-coquitlam-prices-floor-plans/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Origin at The Beachlands by Reliance-Seacliff – Plans & Prices",
-      "city": "Colwood",
-      "incentive_summary": "Hosting a special Crazy Cookie House pop-up at the Experience Centre., Enjoy fresh treats from the beloved bakery whi...",
-      "project_url": "https://www.mikestewart.ca/presale/origin-at-the-beachlands-colwood/",
       "headline_dollar": null
     },
     {
