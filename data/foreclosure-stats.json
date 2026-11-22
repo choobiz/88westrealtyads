@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-21T19:53:47.928Z",
+  "scrapedAt": "2026-11-22T20:04:18.455Z",
   "sources": [
     {
       "name": "Simon Clayton (Macdonald Realty)",
@@ -11,7 +11,7 @@
       "name": "Macnabs (Royal LePage Elite West)",
       "url": "https://www.themacnabs.com/foreclosures-and-court-ordered-sales/",
       "ok": true,
-      "mlsCount": 12
+      "mlsCount": 13
     },
     {
       "name": "Realtyvibe (Sutton Premier)",
@@ -38,7 +38,7 @@
       "mlsCount": 0
     }
   ],
-  "bestEstimate": 12,
+  "bestEstimate": 13,
   "marketingNumber": 389,
   "note": "Stat scrape only — no listing details captured. Lightweight HTTP fetch, no headless browser, so JS-rendered pages return 0. Replace this entire script with a SQL count once GVR WebAPI is provisioned (see docs/gvr-database-schema.md)."
 }
