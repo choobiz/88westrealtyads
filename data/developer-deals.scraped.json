@@ -1,7 +1,7 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-11-24T00:30:43.238Z",
+  "scrapedAt": "2026-11-24T22:51:36.600Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
@@ -70,6 +70,13 @@
       "headline_dollar": null
     },
     {
+      "project_name": "Katsura Vancouver — Prices & Floor Plans",
+      "city": "Vancouver",
+      "incentive_summary": "4 distinct residences (2 half duplex homes and 2 detached homes), 5 bedroom residences, 2 designated on-site parking ...",
+      "project_url": "https://www.mikestewart.ca/presale/katsura-vancouver-prices-floor-plans/",
+      "headline_dollar": null
+    },
+    {
       "project_name": "Cultus Grove – Prices & Floor Plans",
       "city": "Chilliwack",
       "incentive_summary": "Short-term rentals permitted 365 days a year, No principal residence requirement, No foreign buyer ban, Freehold stra...",
@@ -81,13 +88,6 @@
       "city": "Coquitlam",
       "incentive_summary": "Price adjustments on select homes across Nuvo, Jinju and SOCO Two to reflect current market opportunities, Limited-ti...",
       "project_url": "https://www.mikestewart.ca/presale/jinju-burquitlam-prices-plans-availability/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Katsura Vancouver — Prices & Floor Plans",
-      "city": "Vancouver",
-      "incentive_summary": "4 distinct residences (2 half duplex homes and 2 detached homes), 5 bedroom residences, 2 designated on-site parking ...",
-      "project_url": "https://www.mikestewart.ca/presale/katsura-vancouver-prices-floor-plans/",
       "headline_dollar": null
     },
     {
