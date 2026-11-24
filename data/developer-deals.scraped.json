@@ -1,31 +1,24 @@
 {
   "source": "mikestewart.ca/vancouver-presale-condo-incentives",
   "sourceUrl": "https://www.mikestewart.ca/vancouver-presale-condo-incentives/",
-  "scrapedAt": "2026-11-22T20:04:16.144Z",
+  "scrapedAt": "2026-11-24T00:30:43.238Z",
   "parserVersion": "1.0",
   "note": "Internal research output. Curate into data/developer-deals.json before publishing on the LP. Schema: project_name, city, incentive_summary (truncated), project_url, headline_dollar (largest $ mentioned).",
   "count": 18,
   "projects": [
     {
-      "project_name": "Trailside at Lynn by Mosaic – Plans & Pricing",
-      "city": "North Vancouver",
-      "incentive_summary": "First-timers can save up to $50,000 with the GST rebate on new homes, 30-Year Amortization for First-Timers, Save up ...",
-      "project_url": "https://www.mikestewart.ca/presale/trailside-at-lynn-presale-condos/",
-      "headline_dollar": "$50,000"
+      "project_name": "Rail District Abbotsford by Infinity Properties – Plans, Prices, Availability",
+      "city": "Abbotsford",
+      "incentive_summary": "$10,000 buyer credit, Secure your home with just a 5% deposit, A full GST rebate is available for eligible first-time...",
+      "project_url": "https://www.mikestewart.ca/presale/the-rail-district-historic-downtown-abbotsford-presale-condos-townhomes-by-infinity-properties/",
+      "headline_dollar": "$10,000"
     },
     {
-      "project_name": "Scott + 77 by Realco Properties – Floorplans & Pricing",
-      "city": "Delta",
-      "incentive_summary": "Save over $100,000 below previous asking prices, 1 Bed • 1 Bath: Save $85,000, Jr. 2 Bed • 1 Bath: Save $100,000, 2 B...",
-      "project_url": "https://www.mikestewart.ca/presale/scott-77-delta-presale-condos/",
-      "headline_dollar": "$100,000"
-    },
-    {
-      "project_name": "Bailey Vancouver – 4928 Quebec Street",
-      "city": "Vancouver",
-      "incentive_summary": "New lower pricing, Parking included, Parking included with homes starting from $629,900, First-Time Home Buyers’ GST ...",
-      "project_url": "https://www.mikestewart.ca/presale/bailey-riley-park-vancouver-presale-condos-by-streetside-developments/",
-      "headline_dollar": "$629,900,"
+      "project_name": "Florin Coquitlam by Allaire Living",
+      "city": "Coquitlam",
+      "incentive_summary": "final release promotions offering savings up to $109,495, Savings up to $109,495, 5% Savings, 5% Deposit, 5% Deposit ...",
+      "project_url": "https://www.mikestewart.ca/presale/rochester-burquitlam-coquitlam-presale-condos-townhomes-by-allaire-living/",
+      "headline_dollar": "$109,495,"
     },
     {
       "project_name": "The Ridge at Vista Point – Pricing & Plans",
@@ -35,6 +28,27 @@
       "headline_dollar": "$5,000"
     },
     {
+      "project_name": "Scott + 77 by Realco Properties – Floorplans & Pricing",
+      "city": "Delta",
+      "incentive_summary": "Save over $100,000 below previous asking prices, 1 Bed • 1 Bath: Save $85,000, Jr. 2 Bed • 1 Bath: Save $100,000, 2 B...",
+      "project_url": "https://www.mikestewart.ca/presale/scott-77-delta-presale-condos/",
+      "headline_dollar": "$100,000"
+    },
+    {
+      "project_name": "Trailside at Lynn by Mosaic – Plans & Pricing",
+      "city": "North Vancouver",
+      "incentive_summary": "First-timers can save up to $50,000 with the GST rebate on new homes, 30-Year Amortization for First-Timers, Save up ...",
+      "project_url": "https://www.mikestewart.ca/presale/trailside-at-lynn-presale-condos/",
+      "headline_dollar": "$50,000"
+    },
+    {
+      "project_name": "Bailey Vancouver – 4928 Quebec Street",
+      "city": "Vancouver",
+      "incentive_summary": "New lower pricing, Parking included, Parking included with homes starting from $629,900, First-Time Home Buyers’ GST ...",
+      "project_url": "https://www.mikestewart.ca/presale/bailey-riley-park-vancouver-presale-condos-by-streetside-developments/",
+      "headline_dollar": "$629,900,"
+    },
+    {
       "project_name": "Hartley Surrey – 10488 138A Street",
       "city": "Surrey",
       "incentive_summary": "Buyers Save $25,000, The first 10 purchasers will save $25,000, First 10 purchasers will save $25,000, First 10 purch...",
@@ -42,24 +56,45 @@
       "headline_dollar": "$25,000,"
     },
     {
-      "project_name": "Bute West Clayton — Prices & Floor Plans",
-      "city": "Surrey",
-      "incentive_summary": "Save $40,000 off 1 bedroom + den homes, Secure your new home today with just a 10% deposit, Secure your new home toda...",
-      "project_url": "https://www.mikestewart.ca/presale/bute-west-clayton-prices-floor-plans/",
-      "headline_dollar": "$40,000"
-    },
-    {
-      "project_name": "Grafia Vancouver 2450 Garden Drive",
+      "project_name": "Harlowe House by Crescent Legacy – Prices & Floorplans",
       "city": "Vancouver",
-      "incentive_summary": "Sneak Peek Inside...Homes Starting at $499K, Tour our new, fully furnished Show Home this weekend to get a look at ou...",
-      "project_url": "https://www.mikestewart.ca/presale/grafia-on-garden-drive-grandview-woodland-east-vancouver-presale-condos-by-porte-homes/",
-      "headline_dollar": "$499K"
+      "incentive_summary": "Exclusive Black Friday Offer, UNIT A LIMITED-TIME OFFER: $1,690,000",
+      "project_url": "https://www.mikestewart.ca/presale/harlowe-house-vancouver-presales/",
+      "headline_dollar": "$1,690,000"
     },
     {
       "project_name": "Belvedere Surrey –  9675 King George Boulevard",
       "city": "Surrey",
       "incentive_summary": "Belvedere Surrey – 9675 King George Boulevard Court-Ordered Pricing, Pre-growth pricing in Surrey Centre, Move-in-ready concrete homes complete with A/C, parking, ...",
       "project_url": "https://www.mikestewart.ca/presale/belvedere-by-square-nine-developments-surrey-city-centre-presale-condos/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Cultus Grove – Prices & Floor Plans",
+      "city": "Chilliwack",
+      "incentive_summary": "Short-term rentals permitted 365 days a year, No principal residence requirement, No foreign buyer ban, Freehold stra...",
+      "project_url": "https://www.mikestewart.ca/presale/cultus-grove-prices-floor-plans/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Jinju Anthem – 537 Cottonwood Avenue",
+      "city": "Coquitlam",
+      "incentive_summary": "Price adjustments on select homes across Nuvo, Jinju and SOCO Two to reflect current market opportunities, Limited-ti...",
+      "project_url": "https://www.mikestewart.ca/presale/jinju-burquitlam-prices-plans-availability/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Katsura Vancouver — Prices & Floor Plans",
+      "city": "Vancouver",
+      "incentive_summary": "4 distinct residences (2 half duplex homes and 2 detached homes), 5 bedroom residences, 2 designated on-site parking ...",
+      "project_url": "https://www.mikestewart.ca/presale/katsura-vancouver-prices-floor-plans/",
+      "headline_dollar": null
+    },
+    {
+      "project_name": "Finestra by MetroVan – Prices & Floorplans",
+      "city": "Surrey",
+      "incentive_summary": "Early bird incentives available prior to the official opening, Premium SMEG appliance package included, Private rooft...",
+      "project_url": "https://www.mikestewart.ca/presale/finestra-surrey-presale-townhomes/",
       "headline_dollar": null
     },
     {
@@ -91,45 +126,10 @@
       "headline_dollar": null
     },
     {
-      "project_name": "2250 East 1st Avenue – Templeton by Dimex Group",
-      "city": "Vancouver",
-      "incentive_summary": "Passive House design offering up to 90% savings in heating costs, High performance passive homes offering up to 90% s...",
-      "project_url": "https://www.mikestewart.ca/presale/templeton-2250-east-1-st-avenue/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Savannah Vancouver – 7789 Yukon Street",
-      "city": "Vancouver",
-      "incentive_summary": "*On select homes only. All promotions are subject to change without notice. Speak with a sales representative for mor...",
-      "project_url": "https://www.mikestewart.ca/presale/savannah-cambie-corridor-vancouver-presale-condos-and-townhomes-by-imani-development/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "W16 Vancouver by Olson Kundig – 480 West 16th Avenue",
-      "city": "Vancouver",
-      "incentive_summary": "Take advantage of our limited-time savings this lunar new year., Attendees can enter our exclusive draw for a Leah Al...",
-      "project_url": "https://www.mikestewart.ca/presale/w16-by-olson-kundig-vancouver-presale-condos/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Jinju Anthem – 537 Cottonwood Avenue",
-      "city": "Coquitlam",
-      "incentive_summary": "Price adjustments on select homes across Nuvo, Jinju and SOCO Two to reflect current market opportunities, Limited-ti...",
-      "project_url": "https://www.mikestewart.ca/presale/jinju-burquitlam-prices-plans-availability/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Nolia by Handmade Homes – Pricing & Plans",
-      "city": "Vancouver",
-      "incentive_summary": "Exclusive opportunity to tour our boutique Passive House townhomes., New-Spring-Incentives for motivated buyers., SPR...",
-      "project_url": "https://www.mikestewart.ca/presale/nolia-vancouver/",
-      "headline_dollar": null
-    },
-    {
-      "project_name": "Artesia Metrotown – 5685 Halley Avenue –",
-      "city": "Burnaby",
-      "incentive_summary": "Credits exclude GST and are for a limited time only and subject to change without notice., Credits available, Credits...",
-      "project_url": "https://www.mikestewart.ca/presale/artesia-by-qualex-landmark/",
+      "project_name": "Brighouse 22 by South Street – Availability, Plans, Prices",
+      "city": "Richmond",
+      "incentive_summary": "Four remaining homes have been priced to move with incredible new prices, Four remaining homes have been priced to move",
+      "project_url": "https://www.mikestewart.ca/presale/brighouse-22-richmond-city-centre-presale-townhomes-by-south-street-development-group/",
       "headline_dollar": null
     }
   ]
